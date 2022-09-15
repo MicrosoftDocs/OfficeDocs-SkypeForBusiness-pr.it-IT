@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Informazioni sulla gestione di Microsoft Teams Rooms.
-ms.openlocfilehash: 93a4c2ff7d9c6a1f982a06ec8df6dabf790f8739
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 85979448c425f2ab0de9a5956ba4e74b2a5697cc
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67272221"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706663"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Microsoft Teams Rooms la manutenzione e le operazioni
  
@@ -61,7 +61,7 @@ Per ottenere Teams Rooms'esperienza progettata, gli schermi della sala devono so
 
 Per impostare la scala e la risoluzione della schermata Front of Rooms in remoto, vedere [Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML](xml-config-file.md#set-front-of-room-scale-and-resolution).
 
-Per impostare manualmente la scala e la risoluzione nelle impostazioni di amministrazione di Teams Room:
+Per impostare manualmente la scala e la risoluzione nelle impostazioni di amministrazione di Teams Rooms:
 
 1. Nella chat room di Teams passare alla [modalità amministratore](#switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-is-running)
 
@@ -84,7 +84,7 @@ Per impostare manualmente la scala e la risoluzione nelle impostazioni di ammini
 ## <a name="microsoft-teams-rooms-reset-factory-restore"></a>ripristino Microsoft Teams Rooms (ripristino delle impostazioni predefinite)
 <a name="Reset"> </a>
 
-Se Microsoft Teams Rooms non funziona bene, il ripristino delle impostazioni predefinite può risultare utile. A questo scopo, usare lo [strumento di ripristino della sala di Microsoft Teams](recovery-tool.md) e seguire le istruzioni di ripristino delle impostazioni di fabbrica.
+Se Microsoft Teams Rooms non funziona bene, il ripristino delle impostazioni predefinite può risultare utile. A tale scopo, usa lo [strumento di ripristino Microsoft Teams Rooms](recovery-tool.md) e segui le istruzioni di ripristino delle impostazioni di fabbrica.
 
 > [!NOTE]
 > Esiste un problema noto a causa del quale il Microsoft Teams Rooms può diventare inutilizzabile se l'opzione **Mantieni i miei file - Rimuove app e impostazioni, ma mantiene selezionata l'opzione per i file personali** durante il processo di reimpostazione di Windows. *Non* usare questa opzione.
@@ -222,11 +222,13 @@ Copy-Item $movefile $targetDevice
 ## <a name="software-updates"></a>Aggiornamenti software
 <a name="SWupdate"> </a>
 
-Per impostazione predefinita, Microsoft Teams Rooms tenta di connettersi a Windows Store per ottenere l'ultima versione del software Microsoft Teams Rooms. Pertanto, Teams Rooms richiede un accesso a Internet regolare. Prima di contattare Microsoft con problemi di supporto, assicurati che Microsoft Teams Rooms sia caricata con l'ultima versione dell'app.
+Per impostazione predefinita, Microsoft Teams Rooms si connette a Windows Update per recuperare gli aggiornamenti del firmware del sistema operativo e delle periferiche USB e li installa al di fuori degli orari di ufficio configurati. È possibile configurare l'orario di ufficio accedendo all'account amministratore ed eseguendo l'app **Impostazioni** .
   
-Microsoft Teams Rooms si connette a Windows Update per recuperare gli aggiornamenti del firmware del sistema operativo e delle periferiche. Si connette anche a Microsoft Store per recuperare gli aggiornamenti delle applicazioni.
+Se vuoi gestire manualmente gli aggiornamenti e non riesci a seguire la normale procedura per [Microsoft Store per le aziende](https://businessstore.microsoft.com/store) distribuire [le app offline](/microsoft-store/distribute-offline-apps), puoi acquisire ed eseguire lo script MTR-Update più recente da [Aggiornare manualmente un dispositivo Microsoft Teams Rooms](/microsoftteams/rooms/manual-update).
 
-Se è necessario gestire manualmente gli aggiornamenti delle applicazioni, ma non è possibile seguire la normale procedura per [Microsoft Store per le aziende](https://businessstore.microsoft.com/store) [distribuire le app offline](/microsoft-store/distribute-offline-apps), è possibile acquisire pacchetti di aggiornamento Teams Rooms per eseguire gli aggiornamenti delle app nei sistemi operativi supportati. Il rilascio dell'aggiornamento potrebbe essere in ritardo rispetto al rilascio dello Store e potrebbe non corrispondere sempre all'ultima build disponibile. Per altre informazioni, vedi [Aggiornare manualmente un dispositivo Microsoft Teams Rooms](manual-update.md).
+Per impostazione predefinita, Microsoft Teams Rooms tenta di connettersi a Windows Store per ottenere l'ultima versione del software Microsoft Teams Rooms. Pertanto, Teams Rooms richiede un accesso a Internet regolare. Prima di contattare Microsoft con problemi di supporto, assicurati che Microsoft Teams Rooms sia caricata con l'ultima versione dell'app.
+
+
 
 ## <a name="admin-mode-and-device-management"></a>modalità Amministrazione e gestione dei dispositivi
 <a name="AdminMode"> </a>

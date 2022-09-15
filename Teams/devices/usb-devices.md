@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Scopri quali periferiche e dispositivi USB (ad esempio cuffie, altoparlanti, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: d7bc08eedf4c70222554b7aed05c0b2a150064e0
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: ad020877a9d6d8ba3a0af3b87e2307b69e7510c8
+ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268551"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706065"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -175,7 +175,7 @@ Se sei un produttore e vuoi partecipare al programma di certificazione, vedi [Co
 |Jabra                |Visore VR Evolve 40                                          |8/23/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
 |Jabra                |Visore VR Evolve 30 II                                       |8/23/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
 |Jabra                |Visore VR Evolve 20                                          |8/23/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
-|EPOS/Sennhesier      |COMANDO 260 USB PTT                                        |8/20/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
+|EPOS/Sennheiser      |COMANDO 260 USB PTT                                        |8/20/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
 |EPOS/Sennheiser      |Impact SC 660 con connettore USB-ED CC 01 MS               |8/20/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
 |EPOS/Sennheiser      |Impact SC 630 con connettore USB-ED CC 01 MS               |8/20/2020       |Skype for Business con aggiornamento a Microsoft Teams      |
 |EPOS/Sennheiser      |Impact SC 260 con connettore USB-ED CC 01 MS               |8/20/2020       |Skype for Business con aggiornamento a Microsoft Teams      |

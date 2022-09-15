@@ -18,12 +18,12 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4f9c4cf77b544e731e143f245a30e710417bebca
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 20c479760b2093e355bf2f0b3cbd8be0a1599002
+ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67272371"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706045"
 ---
 # <a name="teams-devices-for-shared-spaces-feature-comparison-between-windows-and-android"></a>Confronto delle funzionalità dei dispositivi Teams per gli spazi condivisi tra Windows e Android 
 Microsoft Teams Rooms esperienze sono progettate pensando ai clienti. Ogni cliente ha esigenze specifiche ed è per questo che Microsoft offre un'ampia gamma di opzioni, tra cui Teams Rooms su Windows e Android. 
@@ -46,6 +46,7 @@ Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puo
 ||Partecipazione guest diretta |Disponibile  |Disponibile |
 |**Coinvolgimento e collaborazione nelle riunioni**|Esperienza app intuitiva e appositamente costruita |Disponibile  |Disponibile |
 ||Layout video e contenuto (ad esempio modalità Insieme, raccolta di grandi dimensioni, solo raccolta, raccolta e contenuto) |Disponibile  |Disponibile |
+||Layout prima riga|Disponibile|Non disponibile|
 ||Bolle di chat|Disponibile |Prossimamente |
 ||Alzare la mano, abbassare tutte le mani |Disponibile  |Disponibile |
 ||Aggiungere più partecipanti |Disponibile  |Prossimamente |

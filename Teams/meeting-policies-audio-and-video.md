@@ -1,7 +1,7 @@
 ---
 title: Gestire i criteri delle riunioni per audio e video
-author: CarolynRowe
-ms.author: crowe
+ms.author: mabond
+author: mkbond007
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.audioandvideo
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per audio e video.
-ms.openlocfilehash: cb53cfa52b9e3be28b6400ab87a9fc3b329406b9
-ms.sourcegitcommit: a31c02892e35babbbcf5e7c303c7f14d7ba5cb52
+ms.openlocfilehash: ac5c58c00f5069638c087d04a033e8e0ff3d4822
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64784690"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706846"
 ---
 # <a name="meeting-policy-settings-for-audio--video"></a>Impostazioni dei criteri riunione per audio & video
 
@@ -50,7 +50,7 @@ Questo è un criterio per utente. Questa impostazione controlla se l'audio può 
 |**Audio in uscita e in arrivo abilitato**    |Per impostazione predefinita, sia l’audio in entrata che in uscita sono consentiti nella riunione. |
 |**Non abilitato**     |L'audio in uscita e in arrivo è disattivato nella riunione.     |
 
-Se è impostato su **Non abilitato** per un utente, l'utente può comunque pianificare e organizzare riunioni, ma non può usare l'audio. Per partecipare a una riunione, deve connettersi telefonicamente tramite la rete PSTN (Public Switched Telephone Network) o dal telefono. Per i partecipanti alla riunione che non hanno criteri assegnati (ad esempio, i partecipanti anonimi), questa opzione è impostata su **Audio in uscita e in arrivo abilitato** per impostazione predefinita. Nei client per dispositivi mobili Teams, se questa impostazione non è abilitata, l'utente deve accedere alla riunione tramite PSTN.
+Se è impostato su **Non abilitato** per un utente, l'utente può comunque pianificare e organizzare riunioni, ma non può usare l'audio. Per partecipare a una riunione, deve connettersi telefonicamente tramite la rete PSTN (Public Switched Telephone Network) o dal telefono. Per i partecipanti alla riunione che non hanno criteri assegnati (ad esempio, i partecipanti anonimi), questa opzione è impostata su **Audio in uscita e in arrivo abilitato** per impostazione predefinita. Nei client mobili di Teams, se questa impostazione non è abilitata, l'utente deve accedere alla riunione tramite PSTN.
 
 Questa impostazione non si applica alle chiamate tra due persone. Per limitare le chiamate tra due persone, configurare un [criterio di chiamata](teams-calling-policy.md) di Teams e disabilitare l'impostazione **Effettua chiamate private**. Questa impostazione non si applica nemmeno ai dispositivi delle sale riunioni come i dispositivi Surface Hub e Microsoft Teams Rooms.
 
@@ -80,7 +80,7 @@ Per altre informazioni, vedere [Gestire audio/video per i partecipanti alle riun
 
 ### <a name="ip-video"></a>Video IP
 
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni, gli amministratori possono volere un maggiore controllo sugli utenti che possono usare il video nelle riunioni. Questa impostazione controlla se è possibile attivare il video nelle riunioni ospitate da un utente e nelle chiamate tra due persone e di gruppo avviate da un utente. In Teams client mobili, questa impostazione controlla se gli utenti possono condividere foto e video in una riunione.
+Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni, gli amministratori possono volere un maggiore controllo sugli utenti che possono usare il video nelle riunioni. Questa impostazione controlla se è possibile attivare il video nelle riunioni ospitate da un utente e nelle chiamate tra due persone e di gruppo avviate da un utente. Nei client mobili di Teams, questa impostazione controlla se gli utenti possono condividere foto e video in una riunione.
 
 Le riunioni organizzate da un utente che ha questa impostazione di criteri abilitata consentono la condivisione di video nella riunione da parte dei partecipanti, se anche questi ultimi hanno l'impostazione di criteri abilitata. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi e federati, ereditano i criteri dell'organizzatore della riunione.
 
@@ -134,7 +134,7 @@ Vengono applicati i criteri più restrittivi tra i criteri dell'organizzatore de
 
 #### <a name="teams-mobile-clients"></a>Client Teams per dispositivi mobili
 
-Per gli utenti di client mobili Teams, la possibilità di condividere foto e video durante una riunione dipende anche dall'impostazione della modalità **video IP** o **VIDEO IP**. A seconda dell'impostazione di criteri che ha la precedenza, la possibilità di condividere video e foto non sarà disponibile. Questa impostazione non interessa la condivisione dello schermo, che si configura usando un'impostazione [Modalità di condivisione dello schermo](meeting-policies-content-sharing.md#screen-sharing-mode) separata. Inoltre, è possibile impostare un [criterio per dispositivi mobili di Teams](/powershell/module/skype/new-csteamsmobilitypolicy) per impedire agli utenti di dispositivi mobili di usare il video IP tramite una rete cellulare, il che significa che devono usare una connessione WiFi.
+Per gli utenti dei client mobili di Teams, la possibilità di condividere foto e video durante una riunione è determinata anche  dall'impostazione della **modalità video IP o video IP**. A seconda dell'impostazione di criteri che ha la precedenza, la possibilità di condividere video e foto non sarà disponibile. Questa impostazione non interessa la condivisione dello schermo, che si configura usando un'impostazione [Modalità di condivisione dello schermo](meeting-policies-content-sharing.md#screen-sharing-mode) separata. Inoltre, è possibile impostare un [criterio per dispositivi mobili di Teams](/powershell/module/skype/new-csteamsmobilitypolicy) per impedire agli utenti di dispositivi mobili di usare il video IP tramite una rete cellulare, il che significa che devono usare una connessione WiFi.
 
 ### <a name="media-bit-rate-kbs"></a>Velocità in bit supporto (KB)
 
@@ -150,11 +150,11 @@ Per le riunioni che necessitano di un'esperienza video di qualità ottimale, ad 
 
 Questo è un criterio per utente. Questa impostazione controlla se gli utenti possono personalizzare lo sfondo del video in una riunione.
 
-Per impostare questo criterio, è possibile usare sia Teams'interfaccia di amministrazione che PowerShell. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e quindi assegnarlo agli utenti.
+È possibile usare sia l'interfaccia di amministrazione di Teams che PowerShell per impostare questo criterio. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e quindi assegnarlo agli utenti.
 
-Per specificare se gli utenti possono personalizzare lo sfondo video in una riunione, impostare il parametro **VideoFiltersMode** (**impostazione Seleziona filtri video** nell Teams a interfaccia di amministrazione) come segue:
+Per specificare se gli utenti possono personalizzare lo sfondo video in una riunione, impostare il parametro **VideoFiltersMode** (**impostazione Seleziona filtri video** nell'interfaccia di amministrazione di Teams) come segue:
 
-|Valore dell'impostazione in PowerShell|Impostazione del valore nell Teams interfaccia di amministrazione |Comportamento  |
+|Valore dell'impostazione in PowerShell|Impostazione del valore nell'interfaccia di amministrazione di Teams |Comportamento  |
 |---------|---------|---------|
 |**NoFilters** |**Nessun filtro**    |Un utente non può personalizzare lo sfondo del video.|
 |**BlurOnly**     |**Solo sfocatura dello sfondo**|Gli utenti hanno la possibilità di sfocare lo sfondo del video. |
@@ -166,11 +166,11 @@ Per specificare se gli utenti possono personalizzare lo sfondo video in una riun
 
 ### <a name="allow-custom-background-settings"></a>Consenti impostazioni di sfondo personalizzate
 
-È possibile aggiungere immagini di sfondo personalizzate da usare per ogni tenant. Questa funzionalità consente alle aziende di applicare il marchio aziendale alle riunioni Teams.
+È possibile aggiungere immagini di sfondo personalizzate da usare per ogni tenant. Questa funzionalità consente alle aziende di applicare il branding aziendale alle riunioni di Teams.
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Selezionare **RiunioniMeeting** >  CriteriPersonalizzare  > **le immagini delle riunioni**.
+2. Selezionare **Criteri** > **riunione****Personalizza immagini riunione** > .
 
    ![Selezione dei criteri riunione con il pulsante Personalizza immagini riunione evidenziato.](media/custom-background-image-button.png)
 
@@ -199,11 +199,11 @@ I partecipanti alla riunione vedranno una selezione di immagini di sfondo che po
 > L'applicazione delle modifiche può richiedere fino a 24 ore.
 
 > [!NOTE]
-> Questa caratteristica è temporaneamente disponibile in anteprima pubblica per tutti i clienti Microsoft Teams. Per ottenere questa funzionalità dopo l'anteprima, ogni utente avrà bisogno della licenza per il componente aggiuntivo Advanced Communications. Per ulteriori informazioni, vedere [Componente aggiuntivo per comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).
+> Questa funzionalità è temporaneamente disponibile in anteprima pubblica per tutti i clienti di Microsoft Teams. Per ottenere questa funzionalità dopo l'anteprima, ogni utente avrà bisogno della licenza per il componente aggiuntivo Advanced Communications. Per ulteriori informazioni, vedere [Componente aggiuntivo per comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).
 
 ### <a name="far-end-camera-control-fecc-for-point-tilt-zoom-ptz-cameras"></a>Controllo della fotocamera estremi (FECC) per le fotocamere con zoom di inclinazione del punto (PTZ)
 
-Il controllo della fotocamera all'estremita' è un criterio che può essere assegnato a Teams Rooms in Windows account delle risorse. Consente alle videocamere PTZ connesse a una sala Teams di essere controllate dai partecipanti alla riunione nell'app client Teams durante le riunioni.
+Il controllo della fotocamera estremo è un criterio che può essere assegnato a Teams Rooms sugli account delle risorse di Windows. Consente alle videocamere PTZ connesse a una sala riunioni di Teams di essere controllate dai partecipanti alla riunione nell'app client di Teams durante le riunioni.
 
 Per usare il controllo della fotocamera lontano, i partecipanti alla riunione dovranno ottenere l'app **Controlli fotocamera PTZ** .  Vedere [Consentire e bloccare app](manage-apps.md#allow-and-block-apps) per informazioni su come rendere l'app disponibile nell'app store dell'organizzazione.
 
@@ -213,11 +213,11 @@ Per specificare chi può utilizzare il controllo della fotocamera di estremi in 
 |---------------|----------|
 |Disattiva | Questa è l'impostazione predefinita. Quando è impostata su "disabilitata", nessuno può utilizzare i controlli della fotocamera PTZ. |
 |AutoAcceptAll | I controlli della fotocamera PTZ sono automaticamente disponibili per qualsiasi partecipante alla riunione. |
-|AutoAcceptInTenant | I controlli della fotocamera PTZ sono disponibili automaticamente solo per i partecipanti della stessa organizzazione della sala Teams. |
+|AutoAcceptInTenant | I controlli della fotocamera PTZ sono disponibili automaticamente solo per i partecipanti nella stessa organizzazione della sala riunioni di Teams. |
 
-Quando `TeamsCameraFarEndPTZMode` è impostata su `AutoAcceptAll` o `AutoAcceptInTenant`, il controllo della fotocamera può comunque essere disattivato manualmente dalla sala Teams in qualsiasi momento durante una riunione. Il controllo della fotocamera non è disponibile anche quando la fotocamera è disattivata.
+Quando `TeamsCameraFarEndPTZMode` è impostato su `AutoAcceptAll` o `AutoAcceptInTenant`, il controllo della fotocamera può comunque essere disattivato manualmente dalla sala di Teams in qualsiasi momento durante una riunione. Il controllo della fotocamera non è disponibile anche quando la fotocamera è disattivata.
 
-È supportata qualsiasi fotocamera con controlli meccanici PTZ e UVC. Per un elenco delle fotocamere certificate per Teams, incluse le fotocamere PTZ e non PTZ, vedi [Versioni certificate del firmware per le periferiche audio e video USB](rooms/requirements.md#certified-firmware-versions-for-usb-audio-and-video-peripherals). Questa funzionalità non è ancora supportata nelle fotocamere con controlli PTZ digitali o su Teams Rooms su Android.  
+È supportata qualsiasi fotocamera con controlli meccanici PTZ e UVC. Per un elenco delle fotocamere certificate per Teams, incluse le fotocamere PTZ e non PTZ, vedi [Versioni certificate del firmware per periferiche audio e video USB](rooms/requirements.md#certified-firmware-versions-for-usb-audio-and-video-peripherals). Questa funzionalità non è ancora supportata nelle fotocamere con controlli PTZ digitali o su Teams Rooms su Android.  
 
 > [!NOTE]
 > Aggiorna il firmware della fotocamera prima di testare i controlli PTZ. Vedi la documentazione dell'OEM (Original Equipment Manufacturer) per aggiornare il firmware.

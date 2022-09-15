@@ -19,12 +19,12 @@ description: Informazioni su come gestire le app di Teams. Informazioni su come 
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: ca49ca15b026048d2c495d30a51eac0f809244b5
-ms.sourcegitcommit: ebffec34c050421dc8d09a16907644657ce323f4
+ms.openlocfilehash: 3278d7cdbc144f839bbb6a675ff8f3e5168c80ed
+ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "67637049"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705825"
 ---
 # <a name="manage-teams-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app di Teams nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -93,7 +93,7 @@ Ad esempio, Contoso Electronics è uno sviluppatore di app che ha creato un'app 
 
 :::image type="content" source="media/blocked-by-publisher.png" alt-text="Screenshot dello stato Bloccato dall'autore nell'interfaccia di amministrazione di Teams.":::
 
-Per informazioni su come gli sviluppatori possono bloccare un'app per impostazione predefinita, vedere [Nascondere l'app finché l'amministratore non l'approva](/microsoftteams/platform/concepts/design/enable-app-customization#hide-teams-app-until-admin-approves).
+Per informazioni su come gli sviluppatori bloccano un'app per impostazione predefinita, vedere [Abilitare il blocco delle app finché un amministratore non lo consente](/microsoftteams/platform/concepts/design/enable-app-customization#hide-teams-app-until-admin-approves).
 
 ## <a name="manage-org-wide-app-settings"></a>Gestire le impostazioni dell'app a livello di organizzazione
 

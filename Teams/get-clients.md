@@ -17,12 +17,12 @@ f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b5b67137aa581aae5a27ccc18935f621f51d5093
-ms.sourcegitcommit: 9bee7cb9433bfc687387647a102f814dc52c8591
-ms.translationtype: HT
+ms.openlocfilehash: 3ec6958c481cf8d16477aeb7728b82b76de8f78b
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64839017"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706713"
 ---
 # <a name="get-clients-for-microsoft-teams"></a>Ottenere i client per Microsoft Teams
 
@@ -63,7 +63,7 @@ Gli amministratori IT Pros possono usare il proprio metodo preferito per distrib
 
 Teams in Windows offre programmi di installazione MSI scaricabili in architetture a [32-bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true), [64-bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true) e [ARM64](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=arm64&managedInstaller=true&download=true). L'architettura x86 (a 32 bit e a 64 bit) di Teams è agnostica rispetto all'architettura di Windows e Office installata. È consigliabile usare la versione a 64 bit di Teams nei sistemi a 64 bit.
 
-Teams richiede .NET Framework 4.5 o versione successiva. Se .NET Framework o versione successiva non è installato, il programma di installazione di Teams darà la possibilità di installarlo all’utente.
+Teams richiede .NET Framework 4.5 o versione successiva. Se .NET Framework o versione successiva non è installato, il programma di installazione di Teams offrirà l'installazione per l'utente.
 
 Il client Windows viene distribuito nella cartella AppData, all'interno del profilo dell'utente. La distribuzione nel profilo locale dell'utente consente di installare il client senza bisogno di diritti elevati. Il client Windows utilizza le posizioni seguenti:
 
@@ -138,9 +138,9 @@ La chiave di firma per abilitare l'aggiornamento automatico usando il gestore pa
 Installare manualmente nelle distribuzioni Debian e Ubuntu:
 
 ```bash
-curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+curl https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -o /usr/share/keyrings/microsoft-archive-keyring.gpg
 
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/ms-teams stable main" > /etc/apt/sources.list.d/teams.list'
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft-archive-keyring.gpg] https://packages.microsoft.com/repos/ms-teams stable main" > /etc/apt/sources.list.d/teams.list'
 
 sudo apt update
 sudo apt install teams

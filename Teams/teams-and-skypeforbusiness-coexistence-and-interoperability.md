@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6d1b5604d5b76d0f642fe26a4ec9777060b9d5ef
-ms.sourcegitcommit: 9de6b0b03f433e71fe239d292387eed33c11b531
+ms.openlocfilehash: b2a83a0ec3b93f44da5f22e0423ff6199f2ce0c5
+ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67657336"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705855"
 ---
 # <a name="understand-microsoft-teams-and-skype-for-business-coexistence-and-interoperability"></a>Comprendere Microsoft Teams e coesistenza e interoperabilità di Skype for Business
 
@@ -36,7 +36,7 @@ Questo articolo fa parte della fase di definizione del progetto del percorso di 
 - [Ha raggruppato gli stakeholder del progetto](upgrade-enlist-stakeholders.md)
 - [Definito l'ambito del progetto](./upgrade-define-project-scope.md)
 
-Se l'organizzazione usa Skype for Business oggi e si inizia a usare Teams insieme a Skype for Business o si inizia ad eseguire l'aggiornamento a Teams, è importante capire come coesistono le due applicazioni, quando e come interagiscono e come gestire la migrazione degli utenti fino all'eventuale aggiornamento da Skype for Business a Teams.
+Se la tua organizzazione usa Skype for Business oggi e inizi a usare Teams insieme a Skype for Business - o stai iniziando ad eseguire l'aggiornamento a Teams - è importante capire come coesistono le due applicazioni, quando e come interagiscono e come gestire la migrazione degli utenti fino al loro eventuale aggiornamento da Skype for Business a Teams.
 
 > [!Tip]
 > Guardare la sessione seguente per informazioni sulla [coesistenza e l'interoperabilità](https://aka.ms/teams-upgrade-coexistence-interop).
@@ -47,36 +47,21 @@ Se l'organizzazione usa Skype for Business oggi e si inizia a usare Teams insiem
 
 ## <a name="coexistence-of-teams-and-skype-for-business-overview"></a>Panoramica sulla coesistenza di Teams e Skype for Business
 
-Le sezioni seguenti descrivono le modalità di coesistenza disponibili quando si decide di eseguire l'aggiornamento a Teams e le funzionalità offerte da ogni modalità. Inoltre, descriviamo l'interoperabilità (interoperabilità) che si verifica tra gli utenti dei client Skype-for-Business e gli utenti dei client di Teams e come l'interoperabilità sia influenzato dalla modalità di coesistenza scelta.
+Dal ritiro di Skype for Business Online, tutti gli utenti di un'organizzazione online pura (ovvero un'organizzazione che non ha una distribuzione locale di Skype for Business) hanno una modalità di coesistenza di TeamsOnly. La modalità TeamsOnly assicura agli utenti la piena funzionalità di Teams. Tuttavia, le organizzazioni con una distribuzione locale di Skype for Business Server potrebbero avere utenti che sono ancora ospitati in locale. Questi utenti non possono essere TeamsOnly. Gli utenti con un account di Skype for Business Server locale possono avere una modalità di coesistenza *diversa da TeamsOnly.* Le sezioni seguenti descrivono le modalità di coesistenza disponibili prima di decidere di eseguire l'aggiornamento di Utenti in locale Skype for Business a TeamsOnly e le funzionalità offerte da ogni modalità. Inoltre, le sezioni descrivono l'interoperabilità (interoperabilità) che si verifica tra gli utenti dei client di Skype for Business e gli utenti nei client di Teams e il modo in cui l'interoperabilità è influenzato dalla modalità di coesistenza scelta.
 
-Teams offre funzionalità di collaborazione, chat, chiamate e riunioni. A seconda di come si sceglie di distribuire Teams, queste funzionalità potrebbero sovrapporsi alle funzionalità fornite da Skype for Business per un determinato utente. La modalità predefinita consiste nell'eseguire Teams insieme a Skype for Business con le funzionalità sovrapposte. Tuttavia, a un utente può essere assegnata una delle diverse modalità di coesistenza (note anche come modalità di aggiornamento) progettate per garantire che queste funzionalità non si sovrappongano per l'utente (nel qual caso è disponibile l'interoperabilità tra Teams e Skype for Business). Ad esempio, se si hanno risorse Skype for Business Server locali significative con una distribuzione VoIP aziendale complessa, ma si vuole che gli utenti possano usare le riunioni moderne il più rapidamente possibile, è consigliabile valutare [Riunioni prima](meetings-first.md) come percorso alternativo.
+Teams offre funzionalità di collaborazione, chat, chiamate e riunioni.  La funzionalità chat, chiamate e riunioni era sempre disponibile in Skype for Business. A seconda della configurazione scelta quando si fornisce Teams, queste funzionalità possono sovrapporsi alle funzionalità fornite da Skype for Business per un determinato utente. La modalità di coesistenza predefinita per gli utenti locali è Isole. La modalità Isole consente all'utente di eseguire Teams insieme a Skype for Business con funzionalità simili disponibili in entrambi i client, ovvero le funzionalità si sovrappongono. Tuttavia, a un utente possono essere assegnate altre modalità di coesistenza per evitare che questa funzionalità si sovrapponga all'utente, nel qual caso è disponibile l'interoperabilità tra Teams e Skype for Business. Ad esempio, se si hanno risorse Skype for Business Server locali significative con una distribuzione VoIP aziendale complessa, ma si vuole consentire agli utenti di usare le riunioni moderne il più rapidamente possibile, è consigliabile valutare l'uso della Skype for Business con la modalità Collaborazione e riunioni di Teams, nota anche come [Riunioni prima di tutto ](meetings-first.md).
 
 È consigliabile rivedere le seguenti modalità di coesistenza per determinare il percorso più adatto alla propria organizzazione.
 
 > [!Important]
 > Le modalità di coesistenza continuano a esistere dopo il ritiro di Skype for Business Online, tuttavia gli utenti ospitati online possono avere solo una modalità TeamsOnly. Non è più possibile assegnare una modalità diversa da TeamsOnly a un utente ospitato online.  Come è stato fatto prima del ritiro di Skype for Business Online, agli utenti ospitati localmente può essere assegnata qualsiasi modalità *diversa da TeamsOnly*.
 
-### <a name="islands-mode"></a>Modalità Isole
-
-Per impostazione predefinita, gli utenti possono eseguire Teams insieme a Skype for Business come due soluzioni separate che offrono funzionalità simili e sovrapposte. Le funzionalità includono presenza, chat, chiamate e riunioni. Gli utenti di Teams possono anche sfruttare le nuove funzionalità di collaborazione come team e canali, l'accesso ai file in Microsoft 365 e le applicazioni.
-
-In questa modalità di coesistenza, denominata **Isole**, ognuna delle applicazioni client funziona come un'isola separata. Skype for Business parla con Skype for Business e teams con Teams. Gli utenti devono eseguire entrambi i client in qualsiasi momento e possono comunicare in modo nativo nel client da cui è stata avviata la comunicazione. Di conseguenza, non è necessaria l'interoperabilità nella modalità **Isole** .
-
-Per evitare un'esperienza di Skype for Business confusione o regresso, il Skype for Business gestisce le integrazioni seguenti che non vengono gestite in modalità **Isole** Teams:
-
-- Comunicazioni esterne (federate).
-- Servizi vocali PSTN e applicazioni vocali, integrazione di Office.
-- Controlli HID per dispositivi USB.
-- Diverse altre integrazioni.
-
-Sistema telefonico non è supportato in Teams in modalità **Isole** . **La modalità Isole** non supporta VoIP aziendale client è Skype for Business.
-
-> [!Important]
-> In modalità **Isole**, tutti i messaggi e le chiamate provenienti da utenti federati (persone esterne all'organizzazione) vengono recapitati a Skype for Business. Dopo l'aggiornamento alla modalità **Solo Teams** , tutti i messaggi e le chiamate dall'esterno dell'organizzazione vengono recapitati a Teams.
 
 ### <a name="teams-only"></a>Solo teams
 
-Un utente **solo di Teams** (denominato anche utente *aggiornato* ) ha accesso a tutte le funzionalità di Teams. Possono mantenere il client Skype for Business per partecipare alle riunioni su Skype for Business che sono state organizzate da utenti non aggiornati o da parti esterne. Un utente aggiornato può continuare a comunicare con altri utenti dell'organizzazione che usano ancora Skype for Business utilizzando le funzionalità di interoperabilità tra Teams e Skype for Business (a condizione che gli utenti Skype for Business non siano in modalità **Isole**). Tuttavia, un utente aggiornato non può avviare una Skype for Business chat, una chiamata o una riunione.
+**Solo Teams** è l'unica modalità disponibile per gli utenti online. Un utente **solo di Teams** (in passato, a volte chiamato utente *aggiornato*) ha accesso a tutte le funzionalità in Teams e può continuare a comunicare con qualsiasi altro utente (nella stessa organizzazione o esterna) che usa ancora Skype for Business (a condizione che gli utenti Skype for Business non siano in modalità **Isole**). **Solo** gli utenti di Teams ricevono chat e chiamate in arrivo in Teams, oltre a pianificare riunioni in Teams. Non possono avviare chat o chiamate o pianificare riunioni in Skype for Business. 
+
+**Solo** gli utenti di Teams possono mantenere il client Skype for Business per partecipare a qualsiasi Skype for Business riunioni che già hanno o possono ricevere in futuro, ovvero da parti esterne o eventualmente da utenti Skype for Business Server locali nella propria organizzazione. *Tuttavia, dopo che Microsoft rimuove l'infrastruttura Skype for Business Online per un determinato utente solo di Teams, gli utenti di Teams Only possono partecipare alle riunioni Skype for Business solo in forma anonima.* Dopo il 30 giugno 2022, il provisioning dei nuovi utenti di TeamsOnly non verrà più eseguito con l'infrastruttura di Skype for Business Online. Se questi utenti sono invitati a una riunione Skype for Business, dovranno partecipare in forma anonima. Dopo ottobre 2022, il provisioning degli utenti dall'ambiente locale al cloud (ovvero diventano TeamsOnly) non verrà più eseguito con l'infrastruttura di Skype for Business Online.  Se questi utenti sono invitati a una riunione di Skype for Business, dovranno partecipare anche in forma anonima.
 
 Non appena l'organizzazione è pronta per alcuni o tutti gli utenti a usare Teams come unico strumento di comunicazione e collaborazione, aggiorna questi utenti alla modalità **Solo teams** . Se stai effettuando l'aggiornamento dalla modalità **Isole** , ti consigliamo di saturare l'adozione di Teams in tutta l'organizzazione prima di iniziare il processo di aggiornamento. Questa adozione evita scenari di comunicazione interrotti a causa della modalità **Isole** che non fornisce interoperabilità.
 
@@ -85,6 +70,27 @@ In modalità **Solo Teams** , Teams è l'app predefinita per il protocollo SIP/T
 Per altre considerazioni sul passaggio alla modalità **Solo Teams** , vedere [Considerazioni sulla modalità Solo teams](teams-only-mode-considerations.md).
 
 ![Schermata del messaggio di conferma di Teams.](media/teams-and-skypeforbusiness-coexistence-and-interop-image1.png "Skype for Business client in esecuzione in una modalità speciale dopo l'aggiornamento dell'utente come utente solo di Teams")
+
+
+### <a name="islands-mode"></a>Modalità Isole
+
+In modalità **Isole**, gli utenti possono eseguire Teams insieme a Skype for Business come due soluzioni separate che offrono funzionalità simili e sovrapposte. Le funzionalità includono presenza, chat, chiamate e riunioni. Gli utenti di Teams possono anche sfruttare le nuove funzionalità di collaborazione come team e canali, l'accesso ai file in Microsoft 365 e le applicazioni.
+
+In questa modalità di coesistenza, ognuna delle applicazioni client funziona come un'isola separata. Skype for Business parla con Skype for Business e teams con Teams. Gli utenti devono eseguire entrambi i client in qualsiasi momento e possono comunicare in modo nativo nel client da cui è stata avviata la comunicazione. Di conseguenza, non è necessaria l'interoperabilità nella modalità **Isole** .
+
+Per evitare un'esperienza di Skype for Business confusione o regresso, il Skype for Business gestisce le integrazioni seguenti che non vengono gestite in modalità **Isole** Teams:
+
+- Comunicazioni esterne (federate).
+- Servizi vocali PSTN e applicazioni vocali, integrazione di Office.
+- Controlli HID per dispositivi USB.
+- Diverse altre integrazioni.
+
+Telefono di Microsoft Teams Sistema non è supportato in Teams in modalità **Isole**. 
+
+> [!Important]
+>  - In modalità **Isole**, tutti i messaggi e le chiamate provenienti da utenti federati (persone esterne all'organizzazione) vengono recapitati a Skype for Business. Dopo l'aggiornamento alla modalità **Solo Teams** , tutti i messaggi e le chiamate dall'esterno dell'organizzazione vengono recapitati a Teams.
+>  - È consigliabile richiedere agli utenti di Islands di pianificare sempre le riunioni in Teams assegnando loro un'istanza di TeamsMeetingPolicy con PreferredMeetingProviderForIslandsMode=Teams. Ciò assicura che tutti gli utenti pianifichino le riunioni con Teams, che supporta l'accesso autenticato e la partecipazione alle riunioni per qualsiasi utente dell'organizzazione, indipendentemente dal fatto che l'utente sia TeamsOnly o che usi ancora Skype for Business Server. Al contrario, dopo che Microsoft ha ritirato l'infrastruttura legacy di Skype for Business Online per le organizzazioni ibride a partire da ottobre 2022, TeamsOnly gli utenti potranno partecipare alle riunioni Skype for Business solo in forma anonima.
+
 
 ### <a name="skype-for-business-only"></a>Solo Skype for Business
 
@@ -102,20 +108,23 @@ Usare questa modalità per presentare Teams nel proprio ambiente mentre si conti
 
 Le chat private di Teams, le chiamate e la pianificazione delle riunioni sono disattivate per impostazione predefinita in questa modalità.
 
-Le organizzazioni con un punto di partenza di Skype for Business Server locale o ibrido devono considerare questa modalità come un'alternativa alla modalità **Islands** se vogliono offrire agli utenti interoperabilità e prevedibilità per le loro comunicazioni, oltre ad avere una sequenza temporale prevedibile per l'aggiornamento a Teams (anziché affidarsi alla saturazione di adozione in modalità **Islands**).
+Le organizzazioni che iniziano con Skype for Business Server locale hanno questa modalità come alternativa alla modalità **Islands** se vogliono offrire agli utenti interoperabilità e prevedibilità per le loro comunicazioni durante la migrazione. Questa modalità fornisce anche una sequenza temporale prevedibile per l'aggiornamento a Teams (anziché affidarsi alla saturazione dell'adozione in modalità **Isole** ).
 
 ### <a name="skype-for-business-with-teams-collaboration-and-meetings-also-known-as-meetings-first"></a>Skype for Business con le riunioni e la collaborazione di Teams, note anche come Riunioni per prime
 
-Usare questa modalità di coesistenza per accelerare la disponibilità delle funzionalità di collaborazione e riunione di Teams nell'organizzazione. La modalità di coesistenza consente agli utenti di sfruttare l'esperienza di riunione di Teams superiore:
+In questa modalità, la funzionalità di chiamata e chat privata rimane attiva Skype for Business mentre Teams viene utilizzato per pianificare e condurre riunioni, oltre che per la collaborazione tramite conversazioni basate sui canali.  Questa modalità di coesistenza consente di accelerare la disponibilità delle funzionalità di collaborazione e riunione di Teams nell'organizzazione e consente agli utenti di sfruttare l'esperienza di riunioni di Teams superiore:
 
 - Ottima qualità.
 - Trascrizione e traduzione.
 - Sfocatura dello sfondo.
 - Esperienza utente superiore su tutte le piattaforme, inclusi i dispositivi mobili e i browser.
 
-Oltre a usare Teams per i team e le conversazioni basate sui canali in questa modalità, gli utenti useranno Teams per pianificare e condurre le loro riunioni. Le chat private e le chiamate rimangono Skype for Business. Teams e Skype for Business beneficiare di una gamma di funzionalità "insieme migliori", come la riconciliazione della presenza, il blocco/annullamento automatico e il supporto per dispositivi HID in entrambe le applicazioni. È possibile nascondere team e canali, se lo si desidera, usando i criteri di configurazione delle app.
+Teams e Skype for Business beneficiare di una gamma di funzionalità "insieme migliori", come la riconciliazione della presenza, il blocco/annullamento automatico e il supporto per dispositivi HID in entrambe le applicazioni. È possibile nascondere team e canali, se lo si desidera, usando i criteri di configurazione delle app di Teams.
 
 Questa modalità di coesistenza è particolarmente utile per le organizzazioni con Skype for Business distribuzioni locali con VoIP aziendale. È probabile che queste organizzazioni impiegano del tempo per eseguire l'aggiornamento a Teams e vogliono trarre vantaggio dalle riunioni superiori di Teams il prima possibile.
+
+> [!NOTE]
+> A partire da ottobre 2022, questa modalità è consigliata per tutti gli utenti locali assegnati in precedenza **Skype for Business Solo** o **Skype for Business con le modalità di collaborazione di Teams**. Questa modalità offre le stesse funzionalità delle altre due, tranne le nuove riunioni pianificate dall'utente saranno le riunioni di Teams invece di Skype for Business riunioni. Ciò assicura agli utenti di pianificare le riunioni come riunioni di Teams, che supporta l'accesso autenticato e la partecipazione alle riunioni per qualsiasi utente dell'organizzazione, indipendentemente dal fatto che l'utente sia TeamsOnly o che usi ancora Skype for Business Server.  Al contrario, quando Microsoft ritira l'infrastruttura legacy di Skype for Business Online, Gli utenti di TeamsOnly non potranno più eseguire l'autenticazione quando partecipano a riunioni Skype for Business, ma possono comunque partecipare in forma anonima. Per informazioni dettagliate, vedere [Cosa aspettarsi dopo il ritiro](skype-for-business-online-retirement.md#what-to-expect-post-retirement).
 
 > [!TIP]
 > Per identificare la modalità di aggiornamento consigliata in base alle funzionalità che si desidera abilitare in Teams mentre Skype for Business è ancora in uso, usare [l'Aggiornamento guidato da Skype a Teams](https://aka.ms/SkypeToTeamsWizard).
@@ -144,7 +153,7 @@ L'interoperabilità è disciplinata dalla modalità di coesistenza (nota anche c
 Esistono due tipi di esperienze di interoperabilità: escalation nativa e di interoperabilità.
 
 - Nel client attualmente in uso si verifica un'esperienza di _interoperabilità nativa_ . Un utente sarà nel client Skype for Business, l'altro in Teams. Un'esperienza di interoperabilità nativa non li porterà a un altro client per comunicare. Gli utenti saranno in grado di condurre la conversazione nel client in uso. Le esperienze di interoperabilità native sono chat e chiamate uno-a-uno.
-- Un'esperienza di _escalation dell'interoperabilità_ significa che, nell'ambito di aiutare gli utenti a eseguire un'azione avanzata (come la condivisione del desktop), il client facilita la creazione di una riunione a cui gli utenti possono partecipare per continuare l'esperienza nella riunione. La riunione viene creata sulla piattaforma dell'iniziatore dell'azione. L'utente o gli utenti che non sono su quella piattaforma ricevono un collegamento di partecipazione alla riunione. Facendo clic su questo collegamento, vengono aggiunti alla riunione in un client compatibile (browser, app Web o client completo, a seconda della configurazione). L'escalation di interoperabilità da Skype for Business richiede un client recente. L'escalation di interoperabilità da Teams è ora disponibile. Entrambi sono supportati nelle esperienze di interoperabilità nel tenant e per le comunicazioni federate tra tenant.
+- Un'esperienza di _escalation dell'interoperabilità_ significa che, nell'ambito di aiutare gli utenti a eseguire un'azione avanzata (come la condivisione del desktop), il client facilita la creazione di una riunione a cui gli utenti possono partecipare per continuare l'esperienza nella riunione. La riunione viene creata sulla piattaforma dell'iniziatore dell'azione. L'utente o gli utenti che non sono su quella piattaforma ricevono un collegamento di partecipazione alla riunione. Quando fanno clic su questo collegamento, accedono alla riunione in un client compatibile ( browser, app Web o client completo, a seconda della configurazione). L'escalation di interoperabilità da Skype for Business richiede un client recente. L'escalation di interoperabilità da Teams è ora disponibile. Entrambi sono supportati nelle esperienze di interoperabilità nel tenant e per le comunicazioni federate tra tenant.
 
 #### <a name="native-interop-experiences"></a>Esperienze di interoperabilità native
 
@@ -161,7 +170,7 @@ Skype for Business gli utenti possono effettuare chiamate vocali e videochiamate
 > [!Important]
 > Le esperienze di interoperabilità con una distribuzione locale di Skype for Business richiedono che l'ambiente locale sia in modalità ibrida con Teams. Per informazioni dettagliate, [configurare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365](/SkypeForBusiness/hybrid/configure-hybrid-connectivity).
 
-Queste esperienze di interoperabilità sono disponibili per e tra gli utenti a cui è assegnata una delle seguenti modalità di coesistenza: **Skype for Business con collaborazione in Teams**, **Skype for Business con la collaborazione e le riunioni di Teams**, **solo Skype for Business** o **Solo teams**. Non esiste interoperabilità per gli utenti nella modalità **Isole** .
+Queste esperienze di interoperabilità sono disponibili per e tra gli utenti a cui è assegnata una delle seguenti modalità di coesistenza: **Skype for Business con collaborazione in Teams**, **Skype for Business con la collaborazione e le riunioni di Teams**, **solo Skype for Business** o **Solo teams**. Non esiste interoperabilità per gli utenti in modalità **Isole** .
 
 #### <a name="native-interop-experience-limitations"></a>Limitazioni dell'esperienza di interoperabilità nativo
 
@@ -185,21 +194,21 @@ L'escalation dell'interoperabilità consiste nell'integrare le funzionalità di 
 
 Quando l'utente di Teams attiva l'escalation dell'interoperabilità, viene creata una riunione di Teams. Quando viene attivata dall'utente Skype for Business, viene creata una riunione Skype for Business. In entrambi i casi, la riunione creata è una riunione **Riunione** immediata, che non viene riportata nel calendario dell'utente.
 
-L'altra parte riceve il collegamento di partecipazione alla riunione tramite chat di interoperabilità e partecipa facendo clic su tale collegamento. Se l'utente Skype for Business ha un account di Teams ed è invitato dall'utente di Teams, parteciperà alla riunione autenticato. In caso contrario, parteciperanno come partecipanti anonimi. Al contrario, gli utenti di Teams hanno quasi sempre un account Skype for Business e un client Skype for Business che possono usare per partecipare a una riunione Skype for Business come partecipante autenticato, ma potrebbero anche partecipare come partecipanti anonimi, ad esempio usando l'app Riunione Skype.
+L'altra parte riceve il collegamento di partecipazione alla riunione tramite chat di interoperabilità e partecipa facendo clic su tale collegamento. Se l'utente Skype for Business ha un account di Teams ed è invitato dall'utente di Teams, parteciperà alla riunione autenticato. In caso contrario, parteciperanno come partecipanti anonimi. Gli utenti di Teams hanno quasi sempre un account di Skype for Business e un client Skype for Business che possono usare per partecipare a una riunione Skype for Business come partecipante autenticato, ma possono anche partecipare come partecipanti anonimi, ad esempio usando l'app Riunione Skype.
 
 Una volta che le parti hanno aderito alla riunione, possono condurre qualsiasi attività supportata nelle riunioni, come la condivisione di desktop o contenuti, la condivisione o il trasferimento di file, l'aggiunta di altri partecipanti e così via.
 
 #### <a name="interop-escalation-from-skype-for-business"></a>Escalation di interoperabilità da Skype for Business
 
-L'escalation di interoperabilità e interoperabilità da Skype for Business è stata aggiornata nella build mensile del C2R di luglio 2019. In precedenza, Skype for Business non avevano la consapevolezza avanzata che la parte remota utilizzava Teams. Ha ipotizzato che dalla segnalazione ricevuta dopo una sessione è stata stabilita.
+L'escalation di interoperabilità e interoperabilità da Skype for Business è stata aggiornata nella build mensile del C2R di luglio 2019. In precedenza, Skype for Business non aveva la consapevolezza avanzata che la parte remota stava usando Teams. Ha ipotizzato che dalla segnalazione ricevuta dopo una sessione è stata stabilita.
 
-Quando la segnalazione indicava che la risposta proviene (o attraverso) dal gateway di interoperabilità, veniva visualizzata la barra (banner) di colore giallo che indicava che l'altra parte non utilizzava Skype for Business. Con l'evoluzione del nostro servizio, ciò ha portato a falsi positivi in cui Skype for Business utenti vedevano la barra aziendale quando erano connessi al servizio Cloud Voicemail o ad altri servizi vocali cloud, piuttosto che a un effettivo utente **di Teams Only**.
+Quando la segnalazione indicava che la risposta proviene (o attraverso) dal gateway di interoperabilità, veniva visualizzata la barra aziendale (banner) gialla indicante che l'altra parte non usava Skype for Business. Con l'evoluzione del nostro servizio, ciò ha portato a falsi positivi in cui Skype for Business utenti vedevano la barra aziendale quando erano connessi al servizio Cloud Voicemail o ad altri servizi vocali cloud, piuttosto che a un effettivo utente **di Teams Only**.
 
-Per evitare questi falsi positivi, il servizio presenza ora informa il client Skype for Business quando l'altra parte è un utente effettivo **di Teams**. In questo modo Skype for Business di essere consapevoli della necessità di creare una conversazione interoperativo prima che sia stata creata e che la finestra di conversazione deve essere specifica per l'interoperabilità.
+Per evitare falsi positivi, il servizio presenza sta informando il client Skype for Business quando l'altra parte è un utente effettivo **di Teams**. In questo modo Skype for Business di creare una conversazione interoperativo e la finestra di conversazione è specifica di interoperabilità.
 
 ![Screenshot del messaggio di Teams per creare una conversazione interoperativo con un utente Skype for Business.](media/teams-and-skypeforbusiness-coexistence-and-interop-create-conversation-with-skype-user.png)
 
-Se ad esempio l'utente Skype for Business vuole condividere il proprio desktop, viene informato che microsoft avvierà una riunione e ne verrà illustrata la procedura.
+Se ad esempio l'utente Skype for Business vuole condividere il desktop, viene informato che verrà avviata una riunione e i passaggi sono illustrati in dettaglio.
 
 ![Schermata del messaggio di Teams per avviare una riunione con un utente di Teams.](media/teams-and-skypeforbusiness-coexistence-and-interop-start-meeting-with-teams-user.png)
 
@@ -213,9 +222,9 @@ L'escalation di interoperabilità da Teams a una riunione di Teams è ora dispon
 
 Questa funzionalità è supportata nel client desktop di Teams per Windows, nel client desktop di Teams per Mac e nel client Web di Teams nei browser in cui è supportata la condivisione di contenuti, durante le comunicazioni con qualsiasi versione client Skype for Business.
 
-Nei thread di interoperabilità e nei thread di interoperabilità federativo, l'utente di Teams ha ora i controlli (pulsante) per avviare la condivisione del contenuto. Quando l'utente di Teams seleziona il pulsante, viene visualizzato un menu aggiuntivo che informa che per condividere il contenuto, dovrà avviare una riunione di Teams.
+Nei thread di interoperabilità e nei thread di interoperabilità federativo, l'utente di Teams ha ora i controlli (pulsante) per avviare la condivisione del contenuto. Quando l'utente di Teams seleziona il pulsante, viene visualizzato un menu aggiuntivo che informa che per condividere contenuti, dovrà avviare una riunione di Teams.
 
-Se gli utenti erano in una chiamata, il menu li avvisa anche che la chiamata corrente tra Teams e Skype for Business verrà terminata man mano che vengono inseriti in una riunione di Teams. Se lo desiderano, possono avvisare l'utente Skype for Business prima di accettare.
+Se gli utenti erano in una chiamata, il menu li avvisa che la chiamata corrente tra Teams e Skype for Business verrà terminata quando vengono inseriti in una riunione di Teams. Se lo desiderano, possono avvisare l'utente Skype for Business prima di accettare.
 
 ![Schermata del messaggio di Teams per condividere una riunione con un utente Skype for Business.](media/teams-and-skypeforbusiness-coexistence-and-interop-share-meeting-with-skype-user.png)
 
@@ -242,7 +251,7 @@ Le sezioni seguenti riepilogano il comportamento che può verificarsi durante l'
 
 Indipendentemente dalla modalità, gli utenti possono sempre partecipare a qualsiasi tipo di riunione a cui sono invitati, che si tratti di Skype for Business o Teams.  Tuttavia, gli utenti devono partecipare alla riunione con un client corrispondente che corrisponde al tipo di riunione:
 
-- Se la riunione è una riunione di Teams, tutti i partecipanti (che si tratti di Utenti di TeamsOnly, Isole o Skype for Business) usano il client teams per partecipare alla riunione. Se Teams non è installato, l'utente verrà indirizzato al Web quando tenta di partecipare a una riunione.
+- Se la riunione è una riunione di Teams, tutti i partecipanti (che si tratti di Utenti di TeamsOnly, Islands o Skype for Business) usano il client teams per partecipare alla riunione. Se Teams non è installato, l'utente verrà indirizzato al Web quando tenta di partecipare a una riunione.
 
 - Se la riunione è una riunione Skype for Business, tutti i partecipanti (che si tratti di utenti di TeamsOnly, Islands o Skype for Business) usano il client Skype for Business per partecipare alla riunione. Se il client Skype for Business non è installato, l'utente verrà indirizzato al Web per partecipare tramite l'app Riunione Skype. 
 
@@ -253,18 +262,18 @@ Durante l'organizzazione delle riunioni, il tipo di riunione pianificato si basa
 | Modalità di organizzatore    |      Comportamento |
 | :------------------ | :---------------- |
 | TeamsOnly, SfbWithTeamsCollabAndMeetings | Tutte le riunioni pianificate in Teams. Skype for Business componente aggiuntivo non è disponibile in Outlook. |
-| SfbWithTeamsCollab, SfbOnly | Tutte le riunioni pianificate in Skype for Business. Il componente aggiuntivo Teams non è disponibile in Outlook. |
+| SfbWithTeamsCollab, SfbOnly | Tutte le riunioni pianificate in Skype for Business. Il componente aggiuntivo Teams non è disponibile in Outlook. È consigliabile usare SfbWithTeamsCollabAndMeetings, che consente a tutti gli utenti, sia in locale che in TeamsOnly, di usare Teams per le riunioni.|
 | Isole | Per impostazione predefinita, le riunioni possono essere pianificate in Skype for Business o Teams. Entrambi i componenti aggiuntivi sono disponibili in Outlook. Tuttavia, è possibile richiedere facoltativamente che gli utenti nelle isole pianifichino sempre le riunioni in Teams assegnando loro un'istanza di TeamsMeetingPolicy con PreferredMeetingProviderForIslandsMode=Teams.|
 
 ### <a name="interoperability"></a>Interoperabilità
 
-Come descritto in precedenza in [Interoperability of Teams and Skype for Business](#interoperability-of-teams-and-skype-for-business), Teams supporta l'interoperabilità con Skype for Business in determinati scenari. Comunicazione di interoperabilità si riferisce a una chat o chiamata tra un utente Skype for Business e un utente di Teams.  La comunicazione di interoperabilità è possibile solo tra due utenti; non è supportata la chat o le chiamate multi-party o l'aggiunta di altri utenti.
+Come descritto in precedenza in [Interoperability of Teams and Skype for Business](#interoperability-of-teams-and-skype-for-business), Teams supporta l'interoperabilità con Skype for Business in determinati scenari. Comunicazione di interoperabilità si riferisce a una chat o chiamata tra un utente Skype for Business e un utente di Teams. La comunicazione di interoperabilità è possibile solo tra due utenti; non è supportata la chat o le chiamate multi-party o l'aggiunta di altri utenti.
 
 Una chiamata o una chat di interoperabilità tra due utenti viene creata quando si verificano le condizioni seguenti:
 
 - Un utente usa Teams e l'altro usa Skype for Business.
 
-- La modalità del destinatario della comunicazione iniziale non è Isole (altrimenti la comunicazione sarirebbe nello stesso cliente) se entrambi gli utenti fanno parte della stessa organizzazione. Negli scenari federati, l'utente mittente usa Teams e il destinatario non è in modalità TeamsOnly.
+- La modalità del destinatario della comunicazione iniziale non è Isole (altrimenti la comunicazione sarirebbe nello stesso client) se entrambi gli utenti fanno parte della stessa organizzazione. Negli scenari federati, l'utente mittente usa Teams e il destinatario non è in modalità TeamsOnly.
 
 - L'utente di Teams NON ha anche un account Skype for Business ospitato in locale.
 
@@ -272,7 +281,7 @@ All'interno della comunicazione di interoperabilità, la chat è solo testo norm
 
 - Se l'utente di Teams prova a condividere lo schermo, viene creata automaticamente una riunione di Teams su richiesta e viene inviato un collegamento di invito alla riunione al client dell'utente Skype for Business. Facendo clic sul collegamento, l'utente Skype for Business aprirà Teams e parteciperà alla riunione. Entrambi gli utenti sono ora in una riunione di Teams e possono condividerli in base alle esigenze.
 
-- Se l'utente Skype for Business usa un client dal 2018 o versione successiva e prova a condividere qualsiasi contenuto, viene creata automaticamente una riunione Skype for Business su richiesta e viene inviato un collegamento di invito alla riunione al client dell'utente di Teams. Dopo aver fatto clic sul collegamento, l'utente di Teams tenterà di partecipare alla riunione Skype for Business. Se l'utente di Teams ha installato il client Skype for Business, verrà aperto e all'utente verrà chiesto di accedere (se non ha già eseguito l'accesso).  Se l'utente di Teams non ha installato il client Skype for Business, all'utente verrà richiesto di usare la versione Web. Dopo aver eseguito l'accesso, entrambi gli utenti partecipano a una riunione Skype for Business e possono condividerli in base alle esigenze.
+- Se l'utente Skype for Business usa un client dal 2018 o versione successiva e prova a condividere qualsiasi contenuto, viene creata automaticamente una riunione Skype for Business su richiesta e viene inviato un collegamento di invito alla riunione al client dell'utente di Teams. Dopo aver fatto clic sul collegamento, l'utente di Teams tenterà di partecipare alla riunione Skype for Business. Se l'utente di Teams ha installato il client Skype for Business, verrà aperto e all'utente viene chiesto di accedere (se non ha già eseguito l'accesso).  Se l'utente di Teams non ha installato il client Skype for Business, all'utente verrà richiesto di usare la versione Web. Dopo aver eseguito l'accesso, entrambi gli utenti partecipano a una riunione Skype for Business e possono condividerli in base alle esigenze.
 
 ### <a name="interop-versus-native-conversation-threads"></a>Confronto tra thread di conversazione nativi e interoperabilità
 
@@ -307,7 +316,7 @@ Il comportamento di pubblicazione della presenza si basa sulla modalità dell'ut
 
 - Se un utente è in modalità Isole, la presenza pubblicata in Skype for Business e Teams sono indipendenti, quindi la presenza mostrata agli utenti all'interno della stessa organizzazione dipenderà dal client dell'altro utente. Gli utenti delle organizzazioni federate vedranno la presenza dell'utente in base all'attività di Skype for Business, poiché il traffico federato verso un utente in modalità Isole passa in Skype for Business.
 
-Si supponga, ad esempio, che l'utente A sia in modalità Isole. Se l'utente A è attivo in Teams ma non ha eseguito l'accesso a Skype for Business, gli altri utenti vedrebbero l'utente A come attivo dal client teams, ma nel client Skype for Business vedrebbero l'utente A come offline. Si tratta di un'operazione da progettazione, poiché l'utente A non può essere raggiunto se non esegue il client.
+Si supponga, ad esempio, che l'utente A sia in modalità Isole. Se l'utente A è attivo in Teams ma non ha eseguito l'accesso a Skype for Business, gli altri utenti vedrebbero l'utente A come attivo dal client di Teams, ma nel client Skype for Business vedrebbero l'utente A come offline. Si tratta di un'operazione da progettazione, dal momento che l'utente A non può essere raggiunto se non esegue il client.
 
 
 ### <a name="federation"></a>Federazione
@@ -320,7 +329,7 @@ La federazione da Teams a un altro utente che usa Skype for Business richiede ch
 
 Una chat federata può essere un thread nativo o un thread di interoperabilità. Vedere [Confronto tra thread di conversazione nativi e interoperabili](#interop-versus-native-conversation-threads).
 
-- Se il destinatario e il mittente sono entrambi in modalità di aggiornamento di TeamsOnly, la conversazione sarà un'esperienza di chat nativa che include tutte le funzionalità avanzate di messaggistica e chiamata. Per altre informazioni, vedere [Esperienza di chat nativa per utenti esterni (federati) in Teams](native-chat-for-external-users.md).
+- Se il destinatario e il mittente sono entrambi in modalità di aggiornamento di TeamsOnly, la conversazione sarà un'esperienza di chat nativa, che include tutte le funzionalità avanzate di messaggistica e chiamata. Per altre informazioni, vedere [Esperienza di chat nativa per utenti esterni (federati) in Teams](native-chat-for-external-users.md).
 
 - Se uno dei partecipanti alla conversazione NON è in modalità di aggiornamento di TeamsOnly, la conversazione rimane un'esperienza di interoperabilità con i messaggi di sola lettura. L'interfaccia utente espone le chat federate in modo simile ai thread di interoperabilità dello stesso tenant, con la differenza che esiste una nota che indica che l'utente è esterno.
 
@@ -330,7 +339,7 @@ Per altri dettagli, vedere [Gestire l'accesso esterno in Microsoft Teams](manage
 
 Teams e Skype for Business hanno elenchi di contatti separati. Ciò significa che le aggiunte ai contatti, la rimozione e le modifiche apportate in un sistema non vengono sincronizzate con l'altro sistema. Tuttavia, i contatti di Skype for Business vengono automaticamente copiati in Teams quando si verifica uno dei due eventi specifici:
 
-- Per qualsiasi utente Skype for Business Online, la prima volta che accede a Teams, i contatti di Skype for Business verranno copiati in Teams.  Questo comportamento non è disponibile per gli utenti con un account locale in Skype for Business Server.
+- Per qualsiasi utente Skype for Business Online, la prima volta che accede a Teams, i contatti di Skype for Business verranno copiati in Teams. Questo comportamento non è disponibile per gli utenti con un account locale in Skype for Business Server.
 
 - Dopo l'aggiornamento di un utente a TeamsOnly (tramite l'assegnazione di TeamsUpgradePolicy o tramite Move-CsUser -MoveToTeams), la volta successiva che un utente accede a Teams, i contatti esistenti in Skype for Business verranno uniti ai contatti esistenti già presenti in Teams. Questo comportamento si verifica se l'utente è stato spostato in TeamsOnly da locale o online.
 

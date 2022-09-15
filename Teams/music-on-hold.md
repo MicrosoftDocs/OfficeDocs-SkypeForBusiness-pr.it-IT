@@ -15,12 +15,12 @@ appliesto:
 ms.localizationpriority: medium
 ms.custom: ''
 description: Scopri come gestire la funzionalità Musica in attesa nel sistema telefonico.
-ms.openlocfilehash: 9d8fa247ffdc982c5d41777c68f6b620a92644e3
-ms.sourcegitcommit: 8fc2d6a824e1e119f54ea2347bc5c10cc076956d
+ms.openlocfilehash: e218de46e56c2e2f85ed2b19cea21cbc4d4679be
+ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773755"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706175"
 ---
 # <a name="music-on-hold"></a>Musica in attesa
 
@@ -129,6 +129,8 @@ La tabella seguente indica le funzionalità in quali client e dispositivi suppor
 | :------------| :------- | :------- | :------- | :------- | :------- |
 | Mettere in attesa una chiamata PSTN 1:1 | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa |
 | Mettere in attesa la chiamata di Teams 1:1 | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa |
+| Attesa trasferimento su chiamata PSTN 1:1 | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa | | |
+| Mettere in attesa il trasferimento su una chiamata di Teams 1:1 | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa| | | |
 | Mettere in attesa il trasferimento suggerito su una chiamata PSTN 1:1 |-Musica in attesa<br>-Musica personalizzata in attesa || -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa |
 | Mettere in attesa il trasferimento suggerito su una chiamata di Teams 1:1 |-Musica in attesa<br>-Musica personalizzata in attesa || -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa | -Musica in attesa<br>-Musica personalizzata in attesa |
 

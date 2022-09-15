@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Visualizzare l'integrità delle sale riunioni.
 f1keywords: ''
-ms.openlocfilehash: d76f1f68e0cc73d2abd554ec5c2fc115139a6a0f
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 3587e1ab6e19fa7eac2519ccffe7c8f3bd19f2fc
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269211"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67707013"
 ---
 # <a name="microsoft-managed-meeting-rooms-portal"></a>Portale delle sale riunioni gestite da Microsoft
 
@@ -62,7 +62,7 @@ Ecco i termini usati di frequente nel portale.
 |**Soppresso** |Se un dispositivo è noto per essere in manutenzione e gli avvisi devono essere ignorati, il dispositivo può essere soppresso deliberatamente. |
 |**Onboarding** |Lo stato di un dispositivo della sala durante l'aggiunta della configurazione, ma non è pronto come sala regolarmente supportata. |
 |**Incidente** |Un problema che interessa le esperienze di riunione degli utenti finali che richiedono un intervento. |
-|**Configurazione non configurata correttamente** |La configurazione rilevata non è corretta/ comunemente usata. |
+|**Configurazione non configurata correttamente** |La configurazione rilevata non è corretta/ usata comunemente. |
 |**Ticket di supporto** |Identificatore di monitoraggio Microsoft interno che tiene traccia di tutte le comunicazioni/azioni relative a un evento imprevisto. |
 
 ## <a name="incidents-view"></a>Visualizzazione Eventi imprevisti
@@ -97,14 +97,14 @@ Se si fa clic su uno degli elementi con lo stato "**Azione necessaria**", vengon
 
 Gli incidenti sono classificati in due tipi di gravità generali:
 
-- **Importante**: gli eventi imprevisti che causano probabilmente problemi nelle riunioni e che devono essere classificati in ordine di priorità.
+- **Importante**: eventi imprevisti che probabilmente causano problemi nelle riunioni e che devono essere classificati in ordine di priorità.
 - **Avviso** : eventi imprevisti che sono notifiche per pianificare azioni di manutenzione. Se non vengono curate, nel corso del tempo è più probabile che le stanze riscontreranno un problema. Gli avvisi hanno lo scopo di dare tempo per pianificare e orchestrare il supporto.
 
 Un avviso potrebbe passare a "**Importante**" se non ha partecipato per un po'.
 
 ## <a name="health-status-of-device-and-incidents"></a>Stato di integrità del dispositivo e eventi imprevisti
 
-Gli incidenti classificati come **"Importanti"** in gravità influiscono sullo stato di integrità di un dispositivo. Se è presente almeno un evento di **gravità = "Importante"** associato a un dispositivo, viene classificato come dispositivo **_non integro_** .
+Gli incidenti classificati come **"Importanti"** in gravità influiscono sullo stato di integrità di un dispositivo. Se è presente almeno un incidente di **Gravità = "Importante"** associato a un dispositivo, viene classificato come dispositivo **_non integro_** .
 
 Gli incidenti classificati come **gravità "Avviso"** non influiscono sullo stato di integrità segnalato su un dispositivo. Tuttavia, se a un dispositivo sono associati incidenti di livello di avviso, lo stato di integrità del dispositivo viene indicato come segue.
 
@@ -118,18 +118,18 @@ Ecco alcuni tipi di incidenti che potrebbero essere visualizzati e le spiegazion
 | :- | :- |
 |**Schermo** |Lo schermo collegato al dispositivo non sembra essere integro.|
 |**Microfono conferenza, altoparlante conferenza** |I dispositivi audio (microfono/altoparlante) sembrano non essere configurati correttamente. |
-|**Fotocamera** |La fotocamera collegata al dispositivo non sembra integra. |
+|**Fotocamera** |La fotocamera collegata al dispositivo non sembra essere integro. |
 |**HDMI Ingest** |L'ingerito HDMI non è sano. |
-|**Accesso** (Exchange) |L'app Sala Microsoft Teams accede alle informazioni del calendario da Exchange e qualsiasi problema relativo al successo dell'accesso verrà segnalato con un evento imprevisto di accesso. |
-|**Accesso** (Teams) |L'app Microsoft Teams Room accede al dispositivo e l'accesso non viene segnalato in questo evento imprevisto (se il cliente usa Teams). |
-|**Accesso** (Skype for Business) |L'app Microsoft Teams Room accede al dispositivo e l'accesso non viene segnalato in questo evento imprevisto (se il cliente usa Skype for Business) |
-|**Sensore di prossimità** |L'app Sala di Microsoft Teams invita i partecipanti a partecipare a una riunione se si trovano nelle vicinanze. Gli errori in questa funzionalità verranno segnalati in base a questo evento imprevisto. |
+|**Accesso** (Exchange) |Microsoft Teams Rooms'app accede alle informazioni del calendario da Exchange e qualsiasi problema relativo all'esito positivo dell'accesso verrà segnalato con un evento imprevisto di accesso. |
+|**Accesso** (Teams) |Microsoft Teams Rooms'app accede al dispositivo e l'errore di accesso verrà segnalato con questo evento imprevisto (se il cliente usa Teams). |
+|**Accesso** (Skype for Business) |Microsoft Teams Rooms'app accede al dispositivo e l'errore di accesso verrà segnalato con questo evento imprevisto (se il cliente usa Skype for Business). |
+|**Sensore di prossimità** |Microsoft Teams Rooms'app invita i partecipanti a partecipare a una riunione se si trovano nelle vicinanze. Gli errori in questa funzionalità verranno segnalati in base a questo evento imprevisto. |
 
 **Tabella 2: eventi imprevisti con gravità "Avviso"**
 
 |Tipo |Spiegazione |
 | :- | :- |
-|**Versione dell'app** |La versione dell'app Microsoft Teams Room in esecuzione nel dispositivo non è aggiornata. Le versioni non aggiornate sono cause note dei problemi riscontrati dagli utenti. |
+|**Versione dell'app** |La versione dell'app Microsoft Teams Room in esecuzione sul dispositivo non è aggiornata. Le versioni non aggiornate sono cause note dei problemi riscontrati dagli utenti. |
 |**Versione del sistema operativo** |La versione del sistema operativo Windows in esecuzione nella sala riunioni non è più consigliata. |
 |**Rete** |Ciò verrà rimosso come tipo di avviso a breve termine a causa del lavoro aggiuntivo richiesto dopo la valutazione. |
 
@@ -168,15 +168,15 @@ Ogni dispositivo è un proxy per una stanza e le relative periferiche connesse. 
 
 ![Screenshot che mostra una panoramica dell'integrità di una chat room](../media/rooms-monitor-007.jpg)
 
-**Sano, non sano, disconnesso** Il riquadro superiore della visualizzazione Sale fornisce un rapido snapshot del numero di dispositivi in uno stato di buono stato ("Integro"), del numero di dispositivi interessati da problemi ("Non integro"), del numero di dispositivi che non forniscono la telemetria ("Disconnesso") e del numero di dispositivi per i quali non viene eseguito l'avviso (come override). Le camere sono monitorate per la salute utilizzando criteri ed euristica in evoluzione. L'obiettivo è riflettere la realtà dell'esperienza utente nella stanza nel modo più accurato possibile e renderla fruibile.
+**Sano, non sano, disconnesso** Il riquadro superiore della visualizzazione Sale fornisce un rapido snapshot del numero di dispositivi in uno stato di buono stato("Integro"), del numero di dispositivi interessati da problemi ("Non integro"), del numero di dispositivi che non forniscono la telemetria ("Disconnesso") e del numero di dispositivi per i quali non viene eseguito l'avviso (come override). Le camere sono monitorate per la salute utilizzando criteri ed euristica in evoluzione. L'obiettivo è riflettere la realtà dell'esperienza utente nella stanza nel modo più accurato possibile e renderla fruibile.
 
 **Stanze sane/non sane**:
 
-I dispositivi/periferiche che non presentano incidenti di gravità "Importante" soddisfano gli attuali criteri di integrità sono contrassegnati come integri. Tuttavia, non implica che ci sia un'interruzione di sala per ogni dispositivo non sano nel portale. La descrizione e l'azione dell'incidente contengono dettagli più specifici sul problema e il potenziale impatto sull'esperienza utente.
+I dispositivi/periferiche che non presentano incidenti di gravità "Importante" soddisfano gli attuali criteri di integrità sono contrassegnati come integri. Tuttavia, non implica che ci sia un'interruzione di stanza per ogni dispositivo non integro nel portale. La descrizione e l'azione dell'incidente contengono dettagli più specifici sul problema e il potenziale impatto sull'esperienza utente.
 
 **Dispositivo disconnesso:**
 
-L'agente di monitoraggio Microsoft distribuito nell'ambito del progetto pilota Managed Rooms viene disconnesso dai servizi cloud delle chat room gestite. Non stiamo ricevendo dati di telemetria sulla stanza e non abbiamo lo stato di integrità più recente. Ciò può verificarsi a causa di problemi di rete, modifiche ai criteri del firewall o se sono state apportate modifiche all'immagine del dispositivo.
+L'agente di monitoraggio Microsoft distribuito nell'ambito del progetto pilota Managed Rooms viene disconnesso dai servizi cloud delle chat room gestite. Non riceviamo dati di telemetria sulla stanza e non abbiamo lo stato di integrità più recente. Ciò può verificarsi a causa di problemi di rete, modifiche ai criteri del firewall o se sono state apportate modifiche all'immagine del dispositivo.
 
 ## <a name="room-detail-status-and-changes"></a>Dettagli sala: stato e modifiche
 
@@ -204,7 +204,7 @@ Ogni evento imprevisto creato identifica il problema rilevato e le azioni corret
 
 ![Screenshot che mostra una panoramica del ticket attivo](../media/rooms-monitor-012.png)
 
-Ticket attivo: messaggi L'interfaccia utente dei messaggi è lo strumento di comunicazione principale per interagire con i tecnici del servizio Microsoft che lavorano per risolvere il problema identificato. È importante riconoscere le comunicazioni di Microsoft per garantire la fornitura del servizio migliore possibile. Se sono state intraprese le azioni consigliate, rispondere a questo evento con le note nella casella Rispondi e assegnarle a Microsoft facendo clic su "Assegna a Microsoft" prima di pubblicare.
+Ticket attivo: messaggi L'interfaccia utente dei messaggi è lo strumento di comunicazione principale per interagire con i tecnici del servizio Microsoft che lavorano per risolvere il problema identificato. È importante riconoscere le comunicazioni di Microsoft per garantire che venga fornito il miglior servizio possibile. Se sono state intraprese le azioni consigliate, rispondere a questo evento con le note nella casella Rispondi e assegnarle a Microsoft facendo clic su "Assegna a Microsoft" prima di pubblicare.
 È anche possibile che la notifica non sia corretta in base alla tua recensione. In tal caso, fornisci il feedback e riassci a Microsoft.
 Infine, se vuoi aggiungere un commento per fornire ulteriore contesto al tuo team o al team Microsoft, pubblica semplicemente il messaggio senza attivare "Assegna a Microsoft
 

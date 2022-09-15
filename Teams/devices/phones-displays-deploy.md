@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Questo articolo fornisce una panoramica e le funzionalità supportate dai dispositivi Android di Microsoft Teams.
-ms.openlocfilehash: ef30268ef966eca00a75a583c9acb6ae608a7a81
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 388848019806740074401400d0fad6847751489e
+ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67267801"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705995"
 ---
 # <a name="deploy-teams-phones-teams-displays-teams-panels-and-microsoft-teams-rooms-on-android-using-intune"></a>Distribuire telefoni, schermi di Teams, pannelli di Teams e Microsoft Teams Rooms su Android usando Intune
 
@@ -30,7 +30,7 @@ Questo articolo offre una panoramica su come distribuire telefoni, schermi di Te
 
 ## <a name="conditional-access"></a>Accesso condizionale
 
-L'accesso condizionale è una funzionalità di Azure Active Directory (Azure AD) che consente di garantire che i dispositivi che accedono alle risorse Office 365 siano gestiti correttamente e siano sicuri.  Se si applicano criteri di accesso condizionale al servizio Teams, i dispositivi Android (inclusi i telefoni Teams, gli schermi di Teams, i pannelli di Teams e Microsoft Teams Rooms su Android) che accedono a Teams devono essere registrati in Intune e le relative impostazioni devono essere conformi ai criteri.  Se il dispositivo non è registrato in Intune o se è registrato ma le impostazioni non sono conformi ai criteri, l'accesso condizionale impedirà a un utente di accedere o usare l'app Teams nel dispositivo.
+L'accesso condizionale è una funzionalità di Azure Active Directory (Azure AD) che consente di garantire che i dispositivi che accedono alle risorse Office 365 siano gestiti e protetti correttamente. Se si applicano criteri di accesso condizionale al servizio Teams, i dispositivi Android (inclusi i telefoni Teams, gli schermi di Teams, i pannelli di Teams e Microsoft Teams Rooms su Android) che accedono a Teams devono essere registrati in Intune e le relative impostazioni devono essere conformi ai criteri.  Se il dispositivo non è registrato in Intune o se è registrato ma le impostazioni non sono conformi ai criteri, l'accesso condizionale impedirà a un utente di accedere o usare l'app Teams nel dispositivo.
 
 In genere, i criteri di conformità definiti all'interno di Intune vengono assegnati a gruppi di utenti.  Ciò significa che se si assegnano criteri di conformità Android a user@contoso.com, tali criteri verranno applicati allo stesso modo al proprio smartphone Android e a qualsiasi dispositivo Teams basato su Android a cui user@contoso.com accede.
 
@@ -46,6 +46,7 @@ I dispositivi basati su Android di Teams sono gestiti da Intune tramite la gesti
 > [!NOTE]
 > - Se gli amministratori del tenant vogliono che i telefoni dell'area comune siano registrati in Intune, devono aggiungere una licenza di Intune all'account e seguire la procedura per Intune registrazione.
 > - Se l'account utente usato per accedere a un dispositivo Teams non è concesso in licenza per Intune, è necessario disabilitare i criteri di conformità Intune e le restrizioni di registrazione per l'account.
+> - Se l'account utente usato per accedere a un dispositivo Teams è concesso in licenza per Intune, il dispositivo Teams verrà registrato automaticamente in Intune.
 
 
 

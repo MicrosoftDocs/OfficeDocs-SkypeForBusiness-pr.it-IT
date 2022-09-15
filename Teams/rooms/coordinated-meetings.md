@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Configura Teams Rooms dispositivi e Surface Hub per partecipare alle riunioni quando un dispositivo o l'altro partecipa a una riunione.
-ms.openlocfilehash: f34e3637c9c9716c6f8ec87865c3c570820a0357
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 759574015f2138476e0b03ef6fa85b8b105d81ef
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270481"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706983"
 ---
 # <a name="set-up-coordinated-meetings-with-microsoft-teams-rooms-and-surface-hub"></a>Configurare riunioni coordinate con Microsoft Teams Rooms e Surface Hub
 
@@ -73,7 +73,7 @@ In un'app foglio di calcolo aggiungere le righe seguenti nella prima colonna:
 | **Video abilitato**      | Determina se i partecipanti a una riunione possono attivare o disattivare la fotocamera. Puoi impostare questa `true` opzione su su qualsiasi altro dispositivo nei partecipanti all'evento che vogliono condividere prospettive video diverse (ad esempio se un partecipante usa la lavagna di Surface Hub). Se non si vuole che i partecipanti attivino o disattivino una fotocamera in un dispositivo, impostare questa `false`opzione su .<p> Se **l'impostazione predefinita video** è `true`, questa impostazione viene ignorata e i partecipanti possono attivare o disattivare la fotocamera.         |
 | **Impostazione predefinita lavagna** | Determina se il dispositivo Teams Rooms visualizzerà una lavagna condivisa da uno dei partecipanti alla riunione. Ti consigliamo di impostare questa opzione su `false` se hai un Surface Hub e `true` se non ne hai uno. Questa impostazione non ha alcun effetto su Surface Hub. Surface Hubs mostrerà sempre una lavagna condivisa dai partecipanti alla riunione.         |
 | **Lavagna abilitata** | Determina se i partecipanti a una riunione possono attivare o disattivare la lavagna. Se non vuoi che i partecipanti attivino o disabilitino la lavagna in un dispositivo, imposta questa `false`opzione su . <p>Se **l'impostazione predefinita di Whiteboard** è `true`, questa impostazione viene ignorata e i partecipanti possono attivare o disattivare la lavagna.
-| **Account attendibili**   | Si tratta di un elenco separato da virgole di UPN per ogni dispositivo Teams Room o Surface Hub da cui il dispositivo deve accettare le convocazioni di partecipazione a riunioni o a cui devono essere inviate le convocazioni di partecipazione. |
+| **Account attendibili**   | Si tratta di un elenco di UPN separati da virgole per ogni dispositivo Teams Rooms o Surface Hub da cui il dispositivo deve accettare convocazioni di partecipazione a riunioni o a cui devono essere inviate le convocazioni di partecipazione. |
 
 Nelle colonne successive aggiungi ogni dispositivo Teams Rooms e Surface Hub. In ogni colonna immettere i valori che corrispondono all'esperienza desiderata per la sala riunioni. Ecco un esempio con un dispositivo Teams Rooms e un dispositivo Surface Hub:
 

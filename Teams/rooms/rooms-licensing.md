@@ -22,12 +22,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni su e confrontare le licenze disponibili per i diversi tipi di funzionalità per chiamate e riunioni in Microsoft Teams Rooms.
-ms.openlocfilehash: f2815dd99cb2b1882ec0783fc834d58db60c1b0d
-ms.sourcegitcommit: 087254ba68d75ea4f9205a972f1d8d554d9176c7
+ms.openlocfilehash: df84e94ebda02020e88d8bfc19fa42c86561b07d
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67650818"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706673"
 ---
 # <a name="microsoft-teams-rooms-licenses"></a>licenze Microsoft Teams Rooms
 
@@ -80,7 +80,7 @@ Se l'organizzazione ha un Enterprise Agreement, è possibile continuare a usare 
 
 <sup>*</sup>I tecnici del servizio Microsoft non fungeranno più da intermediari per la risposta agli eventi imprevisti a partire dal 1° ottobre 2022.
 
-## <a name="teams-rooms-console-and-teams-client-feature-comparison"></a>confronto delle funzionalità della console di Teams Rooms e del client teams
+## <a name="teams-rooms-basic-and-teams-rooms-pro-feature-comparison"></a>confronto delle funzionalità di base e Teams Rooms Pro Teams Rooms
 
 Le tabelle seguenti confrontano le licenze Teams Rooms Basic e Teams Rooms Pro e mostrano le funzionalità disponibili per ognuna di esse. Se una funzionalità non è disponibile per una licenza, non può essere usata in Teams Rooms dispositivi a cui è stata assegnata la licenza. Per usare una funzionalità in un dispositivo Teams Rooms, assegnare la licenza in cui tale funzionalità è disponibile per tale dispositivo.
 

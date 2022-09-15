@@ -3,8 +3,8 @@ title: Riunioni e conferenze in Microsoft Teams
 ms.reviewer: ''
 description: Usare queste risorse per la distribuzione per istruzioni su come implementare riunioni e audioconferenze in Microsoft Teams.
 ms.topic: article
-author: CarolynRowe
-ms.author: crowe
+author: MicrosoftHeidi
+ms.author: heidip
 manager: serdars
 ms.service: msteams
 ms.subservice: meetings
@@ -20,12 +20,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020; intro-get-started
-ms.openlocfilehash: d6667564c326552cd5671c480bb1ee66a3311c93
-ms.sourcegitcommit: 7a1fb6e15c21368afa34cd212865437781f721e2
+ms.openlocfilehash: efb18d7a4674fa990f5a133576ec10ed4d377e35
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466004"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706493"
 ---
 # <a name="meetings-and-conferencing-in-microsoft-teams"></a>Riunioni e conferenze in Microsoft Teams
 

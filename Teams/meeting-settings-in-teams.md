@@ -1,7 +1,7 @@
 ---
 title: Gestire le impostazioni delle riunioni
-author: CarolynRowe
-ms.author: crowe
+ms.author: mabond
+author: mkbond007
 manager: serdars
 ms.reviewer: sonua
 ms.topic: article
@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: c76267ae5cd9a19cae272d995a24077a58a7ec6f
-ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
-ms.translationtype: HT
+ms.openlocfilehash: c25405dd305a8556309559d4941dd731331e6d75
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66789791"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706503"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -179,7 +179,7 @@ Tipo di traffico multimediale| Intervallo di porte di origine client \* |Protoco
 |:---             |:---                         |:---    |:---      |:---      |
 |Audio            | 50.000–50.019               |TCP/UDP |46        |Expedited Forwarding (EF)|
 |Video            | 50.020–50.039               |TCP/UDP |34        |Assured Forwarding (AF41)|
-|Condivisione di applicazioni/schermi| 50.040–50.059      |TCP/UDP |18         |Assured Forwarding (AF21)|
+|Condivisione di applicazioni/schermi| 50.040–50.059      |TCP/UDP |18        |Assured Forwarding (AF21)|
 | | | | |
 
 \* Gli intervalli porta assegnati non possono sovrapporsi e dovrebbero trovarsi uno accanto all'altro.

@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Questo articolo descrive come usare lo strumento di ripristino per Microsoft Teams Rooms, che si userebbe per trasformare un sistema non aggiornato in uno stato supportato.
-ms.openlocfilehash: c50b59ff4ed1ee997b990b0776ef4a7ee0ac29c2
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 70b2d199c4fe13138e2f46fd0b49e95efbd18e9c
+ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271161"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706165"
 ---
 # <a name="use-the-microsoft-teams-rooms-recovery-tool"></a>Utilizza lo strumento di ripristino di Microsoft Teams Rooms
 
@@ -30,7 +30,7 @@ Questo articolo descrive come usare lo strumento di ripristino per Microsoft Tea
 Scarica l'ultimo [pacchetto di installazione Microsoft Teams Rooms](https://go.microsoft.com/fwlink/?linkid=851168) ed estrailo in un memory stick USB o una condivisione di rete accessibile a Microsoft Teams Rooms.
 
 > [!NOTE]
-> L'estrazione dei file dal file MSI può essere eseguita con molti mezzi. Qualsiasi meccanismo che estrae tutti i file e mantiene la struttura della directory è accettabile. Uno di questi modi consiste nell'usare il comando `msiexec /a PathToMsi /qb TARGETDIR=PathToTarget` in cui rappresenta il percorso completo del pacchetto di installazione della sala di Microsoft Teams e `PathToTarget` rappresenta il percorso completo della cartella in cui `PathToMsi` si vogliono estrarre i file.
+> L'estrazione dei file dal file MSI può essere eseguita con molti mezzi. Qualsiasi meccanismo che estrae tutti i file e mantiene la struttura della directory è accettabile. Uno di questi modi consiste nell'usare il comando `msiexec /a PathToMsi /qb TARGETDIR=PathToTarget` in cui rappresenta il percorso completo del pacchetto di installazione di Microsoft Teams Rooms e `PathToTarget` rappresenta il percorso completo della cartella in cui `PathToMsi` si vogliono estrarre i file.
 
 ## <a name="running-the-tool"></a>Esecuzione dello strumento
 

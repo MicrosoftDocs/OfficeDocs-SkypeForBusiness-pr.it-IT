@@ -1,7 +1,7 @@
 ---
 title: Interoperabilità video nel cloud per Microsoft Teams.
-author: CarolynRowe
-ms.author: crowe
+ms.author: mabond
+author: mkbond007
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 91ec337ad94341e20b07cd376be5156a526d8cd0
-ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.openlocfilehash: 3c732cc01a525a4895fafe45c954c965fe960853
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66789361"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706453"
 ---
 # <a name="cloud-video-interop-for-microsoft-teams"></a>Interoperabilità video nel cloud per Microsoft Teams.
 
@@ -85,7 +85,7 @@ Quando si distribuisce una soluzione di interoperabilità video cloud, è import
 
 Durante la fase del piano, è necessario identificare i dispositivi che non si sostituiranno con un dispositivo Teams nativo e trovare un partner di interoperabilità video cloud in grado di supportare questi dispositivi.  
 
-È anche importante tenere presente che è necessaria una licenza per ogni utente che pianificare le riunioni a cui si vuole partecipare a un dispositivo abilitato all'interoperabilità di Cloud Video. Si noti che i requisiti di licenza esatti possono essere ottenuti dal partner Cloud Video Interop. Assicurarsi che sia chiaro prima di avviare la distribuzione.
+È anche importante tenere presente che è necessaria una licenza per ogni utente che pianificherà le riunioni a cui si vuole partecipare a un dispositivo abilitato all'interoperabilità dei video cloud. Si noti che i requisiti di licenza esatti possono essere ottenuti dal partner Cloud Video Interop. Assicurarsi che sia chiaro prima di avviare la distribuzione.
 
 ### <a name="configure"></a>Configurare
 

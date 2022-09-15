@@ -14,16 +14,16 @@ ms.reviewer: mhayrapetyan
 search.appverid: MET150
 f1keywords:
 - ms.teamsadmincenter.manageapps.overview
-description: Informazioni su come gestire e configurare le richieste degli utenti finali per consentire le app bloccate in un'organizzazione.
+description: Informazioni su come gestire e configurare la richiesta dell'utente finale per l'approvazione delle app bloccate in un'organizzazione.
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 62d34aae25ef1ebff585ea430aeb3db20856669a
-ms.sourcegitcommit: 9de6b0b03f433e71fe239d292387eed33c11b531
+ms.openlocfilehash: 0967aec80bb88dff12141040fead94af9aae0616
+ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/13/2022
-ms.locfileid: "67657326"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706225"
 ---
 # <a name="manage-user-requests"></a>Gestire le richieste degli utenti
 
@@ -75,18 +75,18 @@ Per configurare un messaggio personalizzato e reindirizzare gli utenti a un URL 
 
 1. Nell'angolo in alto a destra seleziona **Impostazioni app a livello di organizzazione**.
 
-1. Per visualizzare un messaggio o un'istruzione personalizzata nell'archivio di Teams, immettere un SMS nel campo di testo in **Configurazione richieste utente**.
+1. Per visualizzare un messaggio o un'istruzione personalizzata nell'archivio di Teams, immettere un SMS nel campo di testo in **Configurazione richieste utente**. Il campo ha un limite di 300 caratteri.
 
 1. Per fornire un URL specifico dell'organizzazione per raccogliere le richieste degli utenti, seguire questa procedura:
 
    1. Attiva l'interruttore **Reindirizza le richieste a un collegamento esterno** .
    1. Fornisci l'URL specifico dell'organizzazione.
 
-      :::image type="content" source="media/user-request-config-org-wide-setting.png" alt-text="Screenshot per attivare o disattivare la personalizzazione dell'URL per la richiesta dell'utente di sbloccare l'app nell'interfaccia utente delle impostazioni a livello di organizzazione.":::
+      :::image type="content" source="media/user-request-config-org-wide-setting.png" alt-text="Screenshot per attivare o disattivare la personalizzazione dell'URL per le richieste utente nell'interfaccia utente delle impostazioni a livello di organizzazione.":::
 
 1. Selezionare **Salva**.
 
-I metodi per valutare e consentire le app richieste rimangono invariati.
+Se si sceglie di eseguire questa operazione, i metodi per valutare le app di terze parti e consentire le app richieste rimangono invariati.
 
 ## <a name="dismiss-user-requests"></a>Ignorare le richieste degli utenti
 

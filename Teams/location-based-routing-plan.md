@@ -16,12 +16,12 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 795433f832d57767a7937be1a9d3e7f31e73f240
-ms.sourcegitcommit: 41a75f1ba5ceb09f8db7d468aa41b63a89ab9c30
+ms.openlocfilehash: f7b6b360f51c803aef3eb7811b15c17a748df5f0
+ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67647440"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705835"
 ---
 # <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -397,7 +397,7 @@ Se l'utente abilitato per il routing Location-Based partecipa alla conferenza te
 
 I servizi di conferenza on-network per i servizi di audioconferenza NON devono essere distribuiti con apparecchiature di telefonia in India.
 
-Un utente abilitato per il routing Location-Based in una chiamata PSTN non è autorizzato a unire la chiamata con un'altra chiamata.
+Un utente abilitato per il routing Location-Based in una chiamata PSTN non è autorizzato a unire la chiamata con un'altra chiamata. I seguenti non sono supportati: registrazione della chiamata PSTN e registrazione della conformità della chiamata PSTN.
 
 ### <a name="media-bypass-requirement-for-location-based-routing"></a>Requisito per il bypass multimediale per il routing Location-Based
 

@@ -1,5 +1,5 @@
 ---
-title: Autenticazione in Microsoft Teams Rooms
+title: Autenticazione in Microsoft Teams Rooms in Windows
 ms.author: dstrome
 author: dstrome
 ms.reviewer: sohailta
@@ -14,15 +14,15 @@ ms.assetid: ''
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Rooms
-description: Informazioni su come configurare l'autenticazione moderna per Microsoft Teams Rooms
-ms.openlocfilehash: ef576c2d785f3e3fb16afd42e6136b607711c28b
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+description: Scopri come configurare l'autenticazione moderna per Microsoft Teams Rooms in Windows
+ms.openlocfilehash: 23e08b48c5d161caf8091068abc4c9cda0061122
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268241"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706433"
 ---
-# <a name="authentication-in-microsoft-teams-rooms"></a>Autenticazione in Microsoft Teams Rooms
+# <a name="authentication-in-microsoft-teams-rooms-on-windows"></a>Autenticazione in Microsoft Teams Rooms in Windows
 
 La gestione degli account per Microsoft Teams Rooms viene gestita a livello di applicazione. L'applicazione si connette a Microsoft Teams, Skype for Business ed Exchange per ottenere risorse per l'account della risorsa per abilitare le esperienze di chiamata e riunione. Teams Rooms usa un account di risorse dedicato per consentire funzionalità sempre attivate, scenari di chiamata (per i dispositivi configurati con un piano di chiamata) e meccanismi di blocco personalizzati. Ciò significa che l'autenticazione per Teams Rooms avviene in modo diverso rispetto ai dispositivi degli utenti finali.  
 

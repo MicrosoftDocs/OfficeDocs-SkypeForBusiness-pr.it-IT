@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui log debug, multimediali e desktop prodotti da Microsoft Teams, dove sono disponibili e su come possono essere utili per il monitoraggio e la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2ab00f7a1eedf2b1341819c7ec1c67abeb5f6e38
-ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
+ms.openlocfilehash: 2edddca64bf0cb50dc29758fd60bc397cbc00f8b
+ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67486891"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67705815"
 ---
 # <a name="configure-log-files-for-monitoring-and-troubleshooting-in-teams"></a>Configurare i file di log per il monitoraggio e la risoluzione dei problemi in Teams
 
@@ -34,6 +34,8 @@ Esistono tre tipi di file di log prodotti automaticamente dal client, che posson
 -   [Log desktop](#desktop-logs)
 
 Questo articolo descrive questi log e come vengono usati. Per informazioni sulla risoluzione di problemi specifici, vedere: [Risoluzione dei problemi di Teams](/MicrosoftTeams/troubleshoot/teams). 
+
+Per informazioni sulla raccolta di log da Microsoft Teams Rooms dispositivi, vedere [Scaricare i log dei dispositivi](/microsoftteams/rooms/rooms-manage#download-device-logs).
 
 Per informazioni su come contattare il supporto tecnico, vedere [Ottenere supporto](/microsoft-365/business-video/get-help-support).
 

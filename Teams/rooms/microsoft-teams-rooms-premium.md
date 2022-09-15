@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sul servizio gestito Microsoft Teams Rooms.
 f1keywords: ''
-ms.openlocfilehash: 5e59312d3febe2dc6b4178874bae21fc27fe77d2
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: 07b18a45e376c594d23f836ff12f24474f25968b
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606285"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706473"
 ---
 # <a name="microsoft-teams-rooms-managed-service"></a>servizio gestito Microsoft Teams Rooms
 
@@ -124,7 +124,7 @@ La licenza Microsoft Teams Rooms Pro è disponibile nei paesi seguenti senza aud
 |Contenuto |Elementi esclusi |Canali di supporto per gli elementi esclusi  |
 |---------|---------|---------|
 |**Configurazione del servizio**   |         |         |
-|Analisi e indicazioni per Microsoft Teams Rooms configurazione di Windows, tra cui le impostazioni delle app Microsoft Teams Rooms, la configurazione di rete di prima parte, la configurazione software di prima parte e le impostazioni di alimentazione e configurazione consigliate.     |Eventuali configurazioni software di terze parti e indagini che non fanno direttamente parte dell'app Microsoft Teams Room. Inoltre, tutte le configurazioni specifiche di OEM che richiedono la configurazione all'esterno delle finestre di prima parte o delle impostazioni dell'app Room di Microsoft Teams.         |Canali di supporto standard di terze parti         |
+|Analisi e indicazioni per Microsoft Teams Rooms configurazione di Windows, tra cui le impostazioni delle app Microsoft Teams Rooms, la configurazione di rete di prima parte, la configurazione software di prima parte e le impostazioni di alimentazione e configurazione consigliate.     |Eventuali configurazioni software di terze parti e indagini che non fanno direttamente parte dell'app Microsoft Teams Rooms. Inoltre, eventuali configurazioni specifiche di OEM che richiedono la configurazione all'esterno di finestre di terze parti o Microsoft Teams Rooms impostazioni delle app.         |Canali di supporto standard di terze parti         |
 |**Configurazione dell'account della sala**    |         |         |
 |Indicazioni per la documentazione disponibile per la configurazione dell'account della sala su richiesta. Per i problemi di accesso o di configurazione dell'account, viene eseguita l'indagine iniziale.     |Esecuzione di correzioni consigliate o problemi di esecuzione della correzione consigliata, configurazione di provider di autenticazione di terze parti e configurazione delle funzionalità per singoli account.        |Supporto Mainstream Microsoft e supporto del provider di autenticazione di terze parti         |
 |**Supporto per le periferiche**    |         |         |

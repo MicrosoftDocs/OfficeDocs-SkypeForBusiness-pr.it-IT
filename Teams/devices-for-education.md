@@ -18,12 +18,12 @@ f1.keywords:
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5dcab13a6ee0c54e9fc88901c2fe022f35309e88
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: bd97dad2f50a2f5f60d13d9521b1b751da3ebdcf
+ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606855"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706075"
 ---
 # <a name="teams-devices-for-education"></a>Dispositivi Teams per l'istruzione
 
@@ -143,7 +143,7 @@ Le riunioni di Teams vanno oltre le semplici chiamate audio e video per i partec
 
 Uno scenario comune è la condivisione di contenuti direttamente dal dispositivo di un partecipante. I singoli utenti possono condividere l'esperienza audio e visiva completa dalle singole applicazioni o dall'intero contenuto dello schermo direttamente alla riunione per consentire a tutti di visualizzarla. Questo vale anche per tutti gli spazi condivisi con i dispositivi installati. Microsoft Teams Rooms anche la possibilità di usare una connessione a monitor cablata per consentire ai partecipanti di condividere anche se non hanno la possibilità di partecipare alla riunione singolarmente.
 
-Per i contenuti provenienti dal mondo fisico, gli spazi con i sistemi Microsoft Teams Room possono gestire una lavagna o una fotocamera di documenti che consente la revisione coordinata e la discussione del contenuto dallo spazio.
+Per i contenuti provenienti dal mondo fisico, gli spazi con sistemi di Microsoft Teams Rooms possono gestire una lavagna o una fotocamera documento che consente la revisione coordinata e la discussione del contenuto dallo spazio.
 
 Per un'esperienza completamente interattiva, gli schermi interattivi (come la famiglia di prodotti Surface Hub e la lavagna digitale Microsoft) semplificano la creazione interattiva di contenuti per studenti di persona e studenti remoti.
 
@@ -239,8 +239,8 @@ Uno schermo di grandi dimensioni offre ai partecipanti remoti una presenza fisic
 
 *Dispositivi visualizzati:*
 
-- Room System - [Microsoft Surface Hub 2S](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/microsoft-surface-hub-2s/822)
-  - Tieni presente che la soluzione Surface Hub rappresenta un'esperienza premium per la collaborazione e l'utilizzo interattivo. Una [soluzione Room di Microsoft Teams](https://www.microsoft.com/microsoft-teams/across-devices/devices/category/teams-rooms/20?page=1&filterIds=) abbinata a uno schermo di grandi dimensioni può essere usata come alternativa in questo stesso scenario.
+- sistema Teams Rooms - [Microsoft Surface Hub 2S](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/microsoft-surface-hub-2s/822)
+  - Tieni presente che la soluzione Surface Hub rappresenta un'esperienza premium per la collaborazione e l'utilizzo interattivo. La [soluzione Microsoft Teams Rooms](https://www.microsoft.com/microsoft-teams/across-devices/devices/category/teams-rooms/20?page=1&filterIds=) associata a uno schermo di grandi dimensioni può essere usata come alternativa in questo stesso scenario.
 
 - Acquisizione analogica della lavagna - [Logitech Brio Content Camera Kit](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/logitech-brio-content-camera-kit/349)
 
@@ -268,7 +268,7 @@ I partecipanti remoti possono vedere lo stesso campo vedrai che hanno i partecip
 
 *Dispositivi visualizzati:*
 
-- Room System - [Crestron Flex C100 per Teams](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Integrator-Kits/UC-C100-T) con un proiettore installato e uno schermo basato su carrello
+- sistema Teams Rooms - [Crestron Flex C100 per Teams](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Integrator-Kits/UC-C100-T) con un proiettore installato e uno schermo basato su carrello
 
 - Lavagna digitale facoltativa - [Microsoft Surface Hub 2S](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/microsoft-surface-hub-2s/822)
 
@@ -278,7 +278,7 @@ I partecipanti remoti possono vedere lo stesso campo vedrai che hanno i partecip
 
 *L'installazione o la configurazione di questa soluzione è:*
 
-Molto complesso. Questa sala dispone di un'installazione fisica che richiederà un partner di distribuzione AV esperto per pianificare e distribuire correttamente le soluzioni audio e della fotocamera in modo che funzionino senza problemi per gli utenti finali nello spazio. L'installazione richiede competenze in relazione al cablaggio, alla configurazione audio e alla corretta configurazione del sistema Room di Microsoft Teams e del dispositivo Surface Hub 2 associato.
+Molto complesso. Questa sala dispone di un'installazione fisica che richiederà un partner di distribuzione AV esperto per pianificare e distribuire correttamente le soluzioni audio e della fotocamera in modo che funzionino senza problemi per gli utenti finali nello spazio. L'installazione richiede competenze in relazione al cablaggio, alla configurazione audio e alla corretta configurazione del sistema Microsoft Teams Rooms e del dispositivo Surface Hub 2 associato.
 
 ### <a name="multi-purpose-spaces"></a>Spazi multiuso
 
@@ -292,7 +292,7 @@ Un sistema per sale con un grande schermo anteriore della sala basato su proiett
 
 *Dispositivi visualizzati:*
 
-- Room System - [Crestron Flex C100 per Teams](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Integrator-Kits/UC-C100-T) con proiettore installato
+- sistema Teams Rooms - [Crestron Flex C100 per Teams](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Integrator-Kits/UC-C100-T) con proiettore installato
 
 - Lavagne digitali duali facoltative - [Microsoft Surface Hub 2S](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/microsoft-surface-hub-2s/822)
 
@@ -302,7 +302,7 @@ Un sistema per sale con un grande schermo anteriore della sala basato su proiett
 
 *L'installazione o la configurazione di questa soluzione è:*
 
-Molto complesso. Uno spazio multiuso come descritto richiede un partner di distribuzione AV esperto per pianificare e distribuire correttamente lo schermo basato su proiettore e le soluzioni di fotocamera e audio, nonché per configurare correttamente sia il sistema Room di Microsoft Teams che i dispositivi Surface Hub 2 associati in modo che funzionino senza problemi per gli utenti finali nello spazio.
+Molto complesso. Uno spazio multiuso, come descritto, richiede un partner di distribuzione AV esperto per pianificare e distribuire correttamente lo schermo basato su proiettore e le soluzioni di fotocamera e audio, nonché per configurare correttamente sia il sistema Microsoft Teams Rooms che i dispositivi Surface Hub 2 associati in modo che funzionino senza problemi per gli utenti finali nello spazio.
 
 ## <a name="dont-forget-security"></a>Non dimenticare la sicurezza
 
@@ -318,4 +318,4 @@ Per altre informazioni su dispositivi e partner di Teams, vedere le pagine segue
 
 [Altre informazioni su Microsoft Teams Rooms](/microsoftteams/rooms), una guida alla Microsoft Teams Rooms che illustra pianificazione, distribuzione e utilizzo
 
-[Programma per i partner della sala riunioni di Teams](https://cloudpartners.transform.microsoft.com/teams-mrpp) : un elenco di partner in tutto il mondo disponibili per la pianificazione e la distribuzione dei sistemi Sala riunioni di Teams
+[Microsoft Teams Rooms Programma per i partner](https://cloudpartners.transform.microsoft.com/teams-mrpp): elenco di partner internazionali disponibili per la pianificazione e la distribuzione di sistemi Teams Rooms

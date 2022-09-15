@@ -1,7 +1,7 @@
 ---
 title: Gestire i criteri delle riunioni generali
-author: CarolynRowe
-ms.author: crowe
+ms.author: mabond
+author: mkbond007
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -18,29 +18,29 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.general
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni dei criteri generali per le riunioni in Teams.
-ms.openlocfilehash: 2582327261e52f1d834cd3b368c79aa55ca7f103
-ms.sourcegitcommit: 4847f24e8c644336d2b2f48aa09e2cf91360e4dd
+description: Informazioni su come gestire le impostazioni dei criteri generali delle riunioni in Teams.
+ms.openlocfilehash: 0278133ff33e811cc4f08e1ad2973f52615d1426
+ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64686343"
+ms.lasthandoff: 09/14/2022
+ms.locfileid: "67706955"
 ---
 # <a name="meeting-policy-settings---general"></a>Impostazioni dei criteri di riunione - Generale
 
 <a name="bkgeneral"> </a>
 
-Questo articolo descrive le seguenti impostazioni dei criteri generali per le riunioni Teams:
+Questo articolo descrive le seguenti impostazioni dei criteri generali per le riunioni di Teams:
 
 - [Riunione immediata nei canali](#meet-now-in-channels)
-- [Outlook componente aggiuntivo](#outlook-add-in)
+- [Componente aggiuntivo di Outlook](#outlook-add-in)
 - [Pianificazione delle riunioni di canale](#channel-meeting-scheduling)
 - [Pianificazione riunione privata](#private-meeting-scheduling)
 - [Riunione immediata in riunioni private](#meet-now-in-private-meetings)
 - [Modalità ruolo relatore designato](#designated-presenter-role-mode)
 - [Report sull'impegno](#engagement-report)
 - [Registrazione riunione](#meeting-registration)
-- [Who possibile registrarsi](#who-can-register)
+- [Chi può registrarsi](#who-can-register)
 - [Provider di riunioni per la modalità Isole](#meeting-provider-for-islands-mode)
 - [Speaker Coach](#speaker-coach)
 
@@ -50,7 +50,7 @@ Questo è un criterio per utente e si applica prima dell'inizio di una riunione.
 
 [![Screenshot che mostra l'icona Riunione immediata sotto un messaggio.](media/meeting-policies-meet-now.png) ](media/meeting-policies-meet-now.png#lightbox)
 
-## <a name="outlook-add-in"></a>Outlook componente aggiuntivo
+## <a name="outlook-add-in"></a>Componente aggiuntivo di Outlook
 
 Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione consente di controllare se è possibile pianificare riunioni di Teams dall'interno di Outlook (Windows, Mac, Web e Mobile).
 
@@ -125,24 +125,24 @@ Dopo aver impostato il valore predefinito, gli organizzatori delle riunioni poss
 
 Questo è un criterio per utente. Questa impostazione controlla se gli organizzatori delle riunioni possono scaricare il [Rapporto partecipazione a riunione](teams-analytics-and-reports/meeting-attendance-report.md).
 
-Questo criterio è attivato per impostazione predefinita e consente agli organizzatori di vedere chi si è registrato e ha partecipato alle riunioni e ai webinar configurati. Per disattivarlo nell'interfaccia di amministrazione di Teams, passare a **Criteri di** **RiunioniMeeting** >  e impostare l'impostazione Report **impegno** su **Disattivato**.
+Questo criterio è attivato per impostazione predefinita e consente agli organizzatori di vedere chi si è registrato e ha partecipato alle riunioni e ai webinar configurati. Per disattivarlo nell'interfaccia di amministrazione di Teams, passare a Criteri **riunione** **riunioni** >  e impostare l'impostazione **Report impegni** su **Disattivato**.
 
-Puoi anche modificare un criterio di riunione Teams esistente utilizzando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
+È anche possibile modificare un criterio riunione di Teams esistente utilizzando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) . In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
 Per impostazione predefinita, il parametro **AllowEngagementReport** è impostato su **Abilitato** in PowerShell. Per impedire a un organizzatore della riunione di scaricare il report sulla partecipazione alla riunione, impostare il parametro **AllowEngagementReport** su **Disabled**.
 
 Quando questo criterio è abilitato, l'opzione per scaricare il report presenze alla riunione viene visualizzata nel riquadro **Partecipanti** .
 
 > [!NOTE]
-> Gli amministratori non possono visualizzare il report presenze per le riunioni che non si organizzano. Tuttavia, è possibile visualizzare i dettagli dei partecipanti per una determinata riunione entro 24 ore dalla riunione. Nell'interfaccia di amministrazione di Teams passare a **UtentiGesti** >  utenti. Scegliere il nome visualizzato per l'organizzatore della riunione. Selezionare la scheda **Riunioni & chiamate** e quindi scegliere l'ID riunione o l'ID chiamata appropriato. Selezionare quindi **Dettagli partecipante**.
+> Gli amministratori non possono visualizzare il report presenze per le riunioni che non si organizzano. Tuttavia, è possibile visualizzare i dettagli dei partecipanti per una determinata riunione entro 24 ore dalla riunione. Nell'interfaccia di amministrazione di Teams passare a **Gestisci utenti** > **.** Scegliere il nome visualizzato per l'organizzatore della riunione. Selezionare la scheda **Riunioni & chiamate** e quindi scegliere l'ID riunione o l'ID chiamata appropriato. Selezionare quindi **Dettagli partecipante**.
 
-Per altre informazioni, inclusi i limiti del report sull'impegno, vedere [Visualizzare e scaricare report sulla partecipazione alle riunioni in Teams](https://support.microsoft.com/office/view-and-download-meeting-attendance-reports-in-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
+Per altre informazioni, inclusi i limiti del report sull'impegno, vedere [Visualizzare e scaricare i report sulla partecipazione alle riunioni in Teams](https://support.microsoft.com/office/view-and-download-meeting-attendance-reports-in-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
 
 ## <a name="meeting-registration"></a>Registrazione riunione
 
 Questo è un criterio per utente. Se si attiva questa opzione, gli utenti dell'organizzazione possono configurare webinar. Questo criterio è abilitato per impostazione predefinita.
 
-Per modificare questo criterio nell'interfaccia di amministrazione di Teams, passare a Criteri di **RiunioniMeeting** > . Per disattivare la registrazione della riunione, impostare il criterio su **Disattivato**.
+Per modificare questo criterio nell'interfaccia di amministrazione di Teams, passare a **Criteri riunione** >  riunioni. Per disattivare la registrazione della riunione, impostare il criterio su **Disattivato**.
 
 È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
@@ -150,14 +150,14 @@ Per attivare la registrazione della riunione, impostare il parametro  **MeetingR
 
 Per disattivare la registrazione delle riunioni e impedire agli utenti di pianificare webinar, impostare il parametro **su False**.
 
-## <a name="who-can-register"></a>Who possibile registrarsi
+## <a name="who-can-register"></a>Chi può registrarsi
 
 Questo criterio controlla quali utenti possono registrarsi e partecipare ai webinar. Questo criterio include due opzioni, che sono disponibili solo se la **registrazione riunione** è attivata.
 
-- Impostare **Who possibile iscriversi** a **Tutti** se si vuole consentire a tutti, inclusi gli utenti anonimi, di registrarsi e partecipare a webinar configurati dall'utente nell'organizzazione.
-- Impostare **Who possono registrarsi** **in Tutti gli utenti dell'organizzazione** se si vuole consentire solo agli utenti dell'organizzazione di registrarsi e partecipare a webinar.
+- Impostare **Chi può registrarsi** su **Tutti** se si vuole consentire a tutti, inclusi gli utenti anonimi, di registrarsi e partecipare a webinar configurati dall'utente dell'organizzazione.
+- Impostare **Chi può registrarsi** **su Tutti gli utenti dell'organizzazione** se si vuole consentire solo agli utenti dell'organizzazione di registrarsi e partecipare a webinar.
 
-Per impostazione predefinita, **Who possibile registrare** è impostato su **Tutti**. Per modificare questo criterio nell'interfaccia di amministrazione di Teams, passare a Criteri di **RiunioniMeeting** > .
+Per impostazione predefinita, **Chi può registrarsi** è impostato su **Tutti**. Per modificare questo criterio nell'interfaccia di amministrazione di Teams, passare a **Criteri riunione** >  riunioni.
 
 È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
@@ -188,7 +188,7 @@ Le reazioni nelle riunioni sono disattivate per impostazione predefinita. Se si 
 
 ## <a name="speaker-coach"></a>Speaker Coach
 
-Questa impostazione consente agli utenti di attivare Speaker Coach durante una riunione Teams. Speaker Coach ascolta l'audio dell'utente durante la presentazione e fornisce feedback privati in tempo reale e suggerimenti per il miglioramento. L'utente riceve anche un riepilogo del feedback dopo la riunione.
+Questa impostazione consente agli utenti di attivare Speaker Coach durante una riunione di Teams. Speaker Coach ascolta l'audio dell'utente durante la presentazione e fornisce feedback privati in tempo reale e suggerimenti per il miglioramento. L'utente riceve anche un riepilogo del feedback dopo la riunione.
 
 > [!NOTE]
 > L'utente che ha attivato Speaker Coach durante la riunione è l'unico che può vedere il report di riepilogo del feedback. Gli amministratori non avranno accesso a questi dati.
