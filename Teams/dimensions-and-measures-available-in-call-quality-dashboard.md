@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottieni informazioni dettagliate sulle dimensioni e le misure utilizzate da Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 8dda15990385db8e8ca9aeba7c56eba9d6b400ce
-ms.sourcegitcommit: 830357674103c0c5c99bd73d40261afe02a2da49
+ms.openlocfilehash: e59454349daf8121c759cef1cae350cf7294c1df
+ms.sourcegitcommit: 0181a62c8d5a3f5b28fbb5a15645f0e82a1b8f35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67291422"
+ms.lasthandoff: 09/15/2022
+ms.locfileid: "67734620"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili in Call Quality Dashboard (CQD)
 
@@ -399,6 +399,14 @@ La tabella seguente elenca le dimensioni attualmente disponibili in Call Quality
 | Good  | Boolean  | Vero se lo stream dispone di dati sufficienti per essere classificato di qualità buona o scarsa e viene classificato buono. Falso negli altri casi.   |   |
 | Unclassified  | Boolean  | False se il flusso dispone di dati sufficienti per essere classificato di qualità buona o scarsa. True altrimenti. <br/>**Valore di esempio:** 1 |   |
 | OnePercent PacketLoss  | Boolean  | True se la perdita di pacchetti ha superato l'1%, False negli altri casi.  |   |
+| Problema di rete in ingresso rilevato | Boolean | Se true, indica un'elevata probabilità che un flusso multimediale possa essere stato interessato a causa della rete in ingresso. | &bull; Questa dimensione si applica solo ai flussi in cui *la direzione del flusso == Dal primo al secondo* |
+| Problema di uplink rilevato| Boolean | Se true, indica un'elevata probabilità che un flusso multimediale possa essere stato interessato a causa del uplink di rete. | &bull; Questa dimensione non si applica alle chiamate P2P. |
+| Problema di dispositivo di input remoto rilevato | Boolean | Se true, indica un'elevata probabilità che un flusso multimediale possa essere stato interessato a causa del dispositivo di acquisizione remota. |
+| Problema del dispositivo di input locale rilevato | Boolean | Se true, indica un'elevata probabilità che un flusso multimediale possa essere stato interessato a causa del dispositivo di rendering sul primo endpoint. | &bull; Questa dimensione si applica solo ai flussi in cui *la direzione del flusso == Dal primo al secondo* |
+| Eco rilevato| Boolean | Se true, indica un'elevata probabilità che un flusso multimediale possa essere stato interessato dall'eco.|
+| Problema di elaborazione remota rilevato | Boolean | Se true, indica un'elevata probabilità che un flusso multimediale possa essere stato interessato a causa delle risorse di calcolo sul lato remoto. |
+| Problema di calcolo locale rilevato | Boolean | Se true, indica un'elevata probabilità che un flusso multimediale possa essere stato interessato a causa delle risorse di calcolo locali. | &bull; Questa dimensione si applica solo ai flussi in cui *la direzione del flusso == Dal primo al secondo* |
+| Problema relativo alla modalità di supporto rilevato | Boolean | Se true, indica una probabilità elevata che l'esperienza dell'utente del flusso multimediale in ingresso sia scadente. | &bull; Questa dimensione si applica solo ai flussi in cui *la direzione del flusso == Dal primo al secondo* |
 |**Voto**||||
 | First Feedback Rating  | Valutazione utente (1-5)  | Valutazione della chiamata associata al flusso dal primo endpoint su una scala da 1 a 5, in cui 5 = eccellente. 0 indica che all'utente è stata presentata la richiesta di valutazione della chiamata, ma non ha valutato l'esperienza.<br/> **Valore di esempio:** 5 | &bull; Al primo endpoint non è stato mostrato alcun sondaggio  |
 | Second Feedback Rating  | Valutazione utente (1-5)  | Valutazione della chiamata associata al flusso dal secondo endpoint su una scala da 1 a 5 in cui 5 = eccellente. 0 indica che all'utente è stata presentata la richiesta di valutazione della chiamata, ma non ha valutato l'esperienza.<br/> **Valore di esempio:** 5 | &bull; Nessun sondaggio è stato mostrato al secondo endpoint   |
