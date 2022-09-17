@@ -12,12 +12,12 @@ ms.collection:
 description: Informazioni sull'autenticazione basata su applicazioni nel modulo PowerShell di Teams, usato per l'amministrazione di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ea836225658292c312490704305261210ba0991c
-ms.sourcegitcommit: 44d9f15f7f7c00b3651a11ff1e8b37dda1716a52
+ms.openlocfilehash: 479dd64d6eece46335545e79e8f618b797e85f77
+ms.sourcegitcommit: 89e3681a88f06a9c6860d9eaea598e57b928b68a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67732783"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67795065"
 ---
 # <a name="application-based-authentication-in-teams-powershell-module"></a>Autenticazione basata su applicazioni nel modulo di Teams PowerShell
 
@@ -80,10 +80,14 @@ Il modulo PowerShell di Teams recupera il token basato sull'app usando l'ID appl
 Per l'autenticazione tramite oggetti applicazione è necessario un onboarding iniziale. L'entità applicazione e l'entità servizio vengono usate in modo intercambiabile, ma un'applicazione è simile a un oggetto di classe mentre un'entità servizio è come un'istanza della classe. Per altre informazioni su questi oggetti, vedere [Oggetti entità applicazione e servizio in Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).
 
 Di seguito sono indicati i passaggi di alto livello per la creazione di applicazioni in Azure Ad, per i passaggi dettagliati fare riferimento a questo [articolo](/azure/active-directory/develop/howto-create-service-principal-portal).
-  1. Registrare l'applicazione in Azure AD
-  2. Generare un certificato autofirma
-  3. Allegare il certificato all'applicazione Azure AD
-  4. Assegnare ruoli di Azure AD all'applicazione
+
+1. Registrare l'applicazione in Azure AD
+2. Assegnare autorizzazioni API all'applicazione
+   - Per \*i cmdlet -Cs: non sono necessarie autorizzazioni API.
+   - Per i cmdlet non \*Cs- le autorizzazioni di Microsoft API Graph necessarie sono `User.Read.All`, , `Group.ReadWrite.All`, `AppCatalog.ReadWrite.All``TeamSettings.ReadWrite.All`, `Channel.Delete.All`, `ChannelSettings.ReadWrite.All`, `ChannelMember.ReadWrite.All`.  
+3. Generare un certificato autofirma
+4. Allegare il certificato all'applicazione Azure AD
+5. Assegnare ruoli di Azure AD all'applicazione
 
 All'applicazione devono essere assegnati i ruoli RBAC appropriati. Poiché il provisioning delle app viene eseguito in Azure AD, è possibile usare uno qualsiasi dei ruoli predefiniti supportati.
  

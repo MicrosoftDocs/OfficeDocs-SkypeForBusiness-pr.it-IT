@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e468622d4aac30756e54127072045831374c5425
-ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
+ms.openlocfilehash: 0e0b9c5a7ffef07a1d9245d2b1266a071b4ee0c2
+ms.sourcegitcommit: 89e3681a88f06a9c6860d9eaea598e57b928b68a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67418645"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67795055"
 ---
 # <a name="overview-of-loop-components-in-teams"></a>Panoramica dei componenti loop in Teams
 
@@ -82,7 +82,7 @@ Se si disabilitano queste esperienze come descritto nella sezione [Gestione dell
 
 - Il punto di ingresso di creazione/inserimento all'interno della messaggistica di Teams verrà nascosto. Gli utenti non saranno in grado di creare nuovi file .fluid.
 - I messaggi esistenti che in precedenza sarebbero stati sottoposti a rendering come componente loop interattivo verranno invece visualizzati come collegamento ipertestuale "Componente ciclo". All'interno di Teams non verrà visualizzato alcun contenuto interattivo.
-- Quando un utente finale fa clic sul collegamento ipertestuale "Loop component" o passa a un file .fluid in OneDrive for Business e fa clic per aprirlo, il file verrà aperto in una scheda del browser separata, ma gli utenti finali non saranno in grado di modificare il file.
+- Quando un utente finale fa clic sul collegamento ipertestuale "Loop component" o passa a un file .fluid in OneDrive for Business e fa clic per aprirlo, il file verrà aperto in una scheda del browser separata. Gli utenti finali saranno comunque in grado di modificare il file.
 
 ## <a name="known-issues"></a>Problemi noti
 

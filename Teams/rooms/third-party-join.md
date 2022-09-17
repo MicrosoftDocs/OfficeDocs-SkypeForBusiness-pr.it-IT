@@ -14,12 +14,12 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 description: Questo articolo illustra come configurare l'organizzazione e Teams Rooms dispositivi per supportare la partecipazione a riunioni di terze parti a Cisco Webex e Zoom.
-ms.openlocfilehash: 1cbcd54983c9122467fbf133cc97b2c189857c96
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 70d2cf03dea3fcfef3d08c07f4f771bd8a2ea70e
+ms.sourcegitcommit: 89e3681a88f06a9c6860d9eaea598e57b928b68a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268201"
+ms.lasthandoff: 09/16/2022
+ms.locfileid: "67794995"
 ---
 # <a name="enable-teams-rooms-devices-to-join-third-party-meetings"></a>Abilitare Teams Rooms dispositivi per partecipare a riunioni di terze parti
 
@@ -27,12 +27,15 @@ Microsoft Teams Rooms dispositivi supportano un'esperienza con un tocco per part
 
 Dispositivi e servizi supportati:
 
-- MTR su Windows, tutti i modelli certificati – Zoom, Cisco Webex
+- Teams Rooms su Windows, tutti i modelli certificati - Zoom, Cisco Webex
 
-- MTR su modelli certificati Android, Poly, Yealink e Logitech - Zoom
+- Teams Rooms su Android, tutti i modelli certificati – Zoom, Cisco Webex
+
+    > [!NOTE]
+    > Microsoft rilascia regolarmente nuove funzionalità per Teams Rooms su Android. Tuttavia, può esserci un ritardo tra il rilascio delle funzionalità e la data di disponibilità in un dispositivo. Se una funzionalità non è disponibile nel tuo dispositivo, contatta il produttore del dispositivo per informazioni su quando potrebbe diventare disponibile.
 
 > [!NOTE]
-> Per partecipare a una riunione Cisco Webex da un dispositivo Teams Rooms, la riunione Cisco deve essere ospitata in Webex Meetings Pro con l'applicazione Web Cisco Webex versione WBS 40.7 o successiva. 
+> Per partecipare a una riunione Cisco Webex da un dispositivo Teams Rooms, la riunione Cisco deve essere ospitata in Webex Meetings Pro con l'applicazione Web Cisco Webex versione WBS 40.7 o successiva.
 
 Prima di partecipare a riunioni di terze parti da Teams Rooms, è necessario eseguire le operazioni seguenti:
 
