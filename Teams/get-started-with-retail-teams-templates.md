@@ -20,14 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3e8d908a0c6183f4d305b0b622060cfd2ed78922
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: d8c6af4cc86051c9233e06d0bf6c67abe1a4ad39
+ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67396297"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67837336"
 ---
 # <a name="use-retail-team-templates"></a>Usare i modelli di team di vendita al dettaglio
+
+## <a name="overview"></a>Panoramica
 
 I modelli di Microsoft Teams consentono di creare team in modo rapido e semplice fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
@@ -50,26 +52,28 @@ Per altre informazioni sui modelli di team in generale, vedere Introduzione ai m
 
 Attualmente sono disponibili i modelli di team di vendita al dettaglio predefiniti seguenti. Per visualizzarli, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare a modelli **Teams**  >  **team.**
 
-### <a name="organize-a-store"></a>Organizzare un negozio
+> [!NOTE]
+> Un asterisco (*) indica che il modello è *connesso a Microsoft 365*. Quando gli utenti creano un team usando il modello, il modello di SharePoint connesso viene applicato al sito e al team. I componenti di SharePoint, ad esempio pagine, elenchi e integrazioni Power Platform, vengono aggiunti e aggiunti automaticamente come schede al canale Generale nel team. Gli utenti possono modificare queste pagine ed elenchi direttamente da Teams.
+>
+> Per altre informazioni sui modelli di SharePoint, vedere [Applicare e personalizzare modelli di sito di SharePoint](https://support.microsoft.com/office/apply-and-customize-sharepoint-site-templates-39382463-0e45-4d1b-be27-0e96aeec8398#ID0EDBJ=Team_site_templates).
 
-Unisci i tuoi dipendenti in un'unica esperienza centralizzata per gestire attività, condividere documenti e risolvere i problemi correlati ai clienti. Integra applicazioni aggiuntive per ottimizzare i processi di inizio e fine turno.
+### <a name="manage-a-store"></a>Gestisci uno Store*
 
-| Tipo di modello |TemplateId | Proprietà del modello |
-| ------------------|-- |----------------------------------------------------- |
-|Organizzare un negozio| `retailStore` |Canali: <ul><li>Generale<li>Passaggio di consegne del turno</li><li>Conformità dello Store<ul><li>Ispezione&sup1;</li></ul></li><li>Apprendimento</li></ul> App: <ul><li>Wiki</li><li>Attività</li><li>Turni</li><li>Ispezione</li></ul>|
+Unisci i tuoi dipendenti in un'unica esperienza centralizzata per gestire attività, condividere documenti e risolvere i problemi correlati ai clienti. Integrare applicazioni aggiuntive per semplificare i processi di inizio e fine del turno.
 
-&sup1; App aggiunta al canale come scheda
+> [!div class="mx-tdBreakAll"]
+>| Tipo di modello |TemplateId | Proprietà del modello |
+>| ------------------|-- |----------------------------------------------------- |
+>| Gestire uno Store| `retailStore` |Canali: <ul><li>Generale<li>Shift Handoff</li><li>Preparazione negozio</li><li>Apprendimento</li></ul> App: <ul><li>Approvazioni</li><li>Ispezione</li><li>Elenchi<ul><li>Elenco inventario</li></ul></li><li>Pagine SharePoint<ul><li>Il nostro negozio</li></ul></li><li>Turni</li><li>Attività per Planner e To Do</li><li>Wiki</li></ul>|
 
-### <a name="manager-collaboration"></a>Collaborazione tra responsabili
+### <a name="retail-for-managers"></a>Vendita al dettaglio per manager*
 
-Il modello Collaborazione tra responsabili è perfetto per creare un team formato da un gruppo di responsabili e agevolare la loro collaborazione tra negozi/aree geografiche, ecc. Ad esempio, se l'organizzazione è suddivisa in più aree geografiche, si potrebbe creare un team di Collaborazione tra responsabili per l'area californiana e includere tutti gli Store manager in quella regione, come anche gli Area manager di quello Stato.
+Creare un team per un gruppo di responsabili che collabori tra punti vendita o aree geografiche. Ad esempio, se l'organizzazione ha aree geografiche, è possibile creare un team per l'area geografica della California e includere tutti i responsabili negozio in tale area geografica, insieme al responsabile regionale per tale area geografica.
 
-| Tipo di modello| TemplateId | Proprietà del modello |
-| ------------------|- |----------------------------------------------------- |
-|Vendita al dettaglio per i responsabili|`retailManagerCollaboration` |Canali: <ul><li>Generale<li>Operazioni<ul><li>Attività (Attività operative)&sup1;</li><li>Ispezione&sup1;</li></ul></li><li>Apprendimento<ul><li>Attività (Learning)&sup1;</li></ul></li></ul> App: <ul><li>Wiki</li><li>Attività</li><li>Ispezione</li></ul>|
-||||
-
-&sup1; App aggiunta al canale come scheda
+> [!div class="mx-tdBreakAll"]
+>| Tipo di modello| TemplateId | Proprietà del modello |
+>| ------------------|- |----------------------------------------------------- |
+>| Vendita al dettaglio per i manager| `retailManagerCollaboration` |Canali: <ul><li>Generale<li>Operazioni</li><li>Apprendimento</li></ul> App: <ul><li>Approvazioni</li><li>Ispezione</li><li>Pagine SharePoint<ul><li>Il nostro negozio</li></ul></li><li>Attività per Planner e To Do</li><li>Wiki</li></ul>|
 
 ## <a name="use-team-templates-with-microsoft-graph"></a>Usare i modelli di Teams con Microsoft Graph
 
@@ -77,16 +81,19 @@ Gli sviluppatori possono usare Microsoft Graph per creare team dai modelli di te
 
 Ecco i modelli predefiniti del team di vendita al dettaglio.
 
-### <a name="store"></a>Store
+> [!NOTE]
+> Un asterisco (*) indica che il modello è *connesso a Microsoft 365*. Quando gli utenti creano un team usando il modello, il modello di SharePoint connesso viene applicato al sito e al team. I componenti di SharePoint, ad esempio pagine, elenchi e integrazioni Power Platform, vengono aggiunti e aggiunti automaticamente come schede al canale Generale nel team. Gli utenti possono modificare queste pagine ed elenchi direttamente da Teams.
+>
+> Per altre informazioni sui modelli di SharePoint, vedere [Applicare e personalizzare modelli di sito di SharePoint](https://support.microsoft.com/office/apply-and-customize-sharepoint-site-templates-39382463-0e45-4d1b-be27-0e96aeec8398#ID0EDBJ=Team_site_templates).
 
-Il modello Store è ideale per creare un team che rappresenta la sede di un singolo punto vendita per la vendita al dettaglio. Con il modello Store è possibile creare un team per ogni punto vendita per la vendita al dettaglio nell'organizzazione.
+### <a name="manage-a-store"></a>Gestisci uno Store*
 
-| Tipo di modello | TemplateId | Canali del modello |
-| ------------------ | -------------- | ----------------------------------------------------- |
-| Retail - <br>Store | `https://graph.microsoft.com/beta/teamsTemplates('retailStore')`| Canali <ul><li>Generale</li><li>Maiusc handoff&sup2;</li><li>Conformità dello Store</li><li>Learning&sup2;</li></ul>Proprietà del team <ul><li>Visibilità del team impostata su Public</li></ul> <br>Autorizzazioni dei membri <ul><li>Non è possibile creare, aggiornare o eliminare canali </li><li>Non è possibile aggiungere o rimuovere app </li><li>Non è possibile creare, aggiornare o rimuovere schede</li><li>Non è possibile creare, aggiornare o rimuovere connettori</li><ul>|
-||||
+Usare questo modello per creare un team per ogni punto vendita al dettaglio dell'organizzazione.
 
-&sup2; Canali preferiti automaticamente
+> [!div class="mx-tdBreakAll"]
+>| Tipo di modello | TemplateId | Canali del modello |
+>| ------------------ | -------------- | ----------------------------------------------------- |
+>| Retail - <br>Store | `https://graph.microsoft.com/beta/teamsTemplates('retailStore')`| Canali <ul><li>Generale</li><li>Shift Handoff</li><li>Preparazione negozio</li><li>Apprendimento</li></ul>Proprietà del team <ul><li>Visibilità del team impostata su Public</li></ul> <br>Autorizzazioni dei membri <ul><li>Non è possibile creare, aggiornare o eliminare canali </li><li>Non è possibile aggiungere o rimuovere app </li><li>Non è possibile creare, aggiornare o rimuovere schede</li><li>Non è possibile creare, aggiornare o rimuovere connettori</li><ul>|
 
 Modi consigliati per personalizzare il modello Store per l'organizzazione:
 
@@ -94,16 +101,14 @@ Modi consigliati per personalizzare il modello Store per l'organizzazione:
 
 - Se l'organizzazione prevede siti Web interni, ad esempio un sito di SharePoint, è opportuno aggiungerli come schede nel canale del team pertinente.
 
-### <a name="manager-collaboration"></a>Collaborazione tra responsabili
+### <a name="retail-for-managers"></a>Vendita al dettaglio per manager*
 
-Il modello Collaborazione tra responsabili è perfetto per creare un team formato da un gruppo di responsabili e agevolare la loro collaborazione tra negozi/aree geografiche, ecc. Ad esempio, se l'organizzazione è suddivisa in più aree geografiche, si potrebbe creare un team di Collaborazione tra responsabili per l'area californiana e includere tutti gli Store manager in quella regione, come anche gli Area manager di quello Stato.
+Usare questo modello per creare un team per un gruppo di responsabili che possono collaborare in più punti vendita o aree geografiche. Ad esempio, se l'organizzazione ha aree geografiche, è possibile creare un team per l'area geografica della California e includere tutti i responsabili negozio in tale area geografica, insieme al responsabile regionale per tale area geografica.
 
-| Tipo di modello | TemplateId | Canali del modello |
-| ------------------ | -------------- | ----------------------------------------------------- |
-| Retail - <br>Store | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailManagerCollaboration')`| Canali <ul><li>Generale</li><li>Operazioni&sup2;</li><li>Learning&sup2;</li></ul>Proprietà del team <ul><li>Visibilità del team impostata su Private</li></ul> <br>Autorizzazioni dei membri <ul><li>Può creare, aggiornare ed eliminare canali </li><li>Può aggiungere e rimuovere app </li><li>Può creare, aggiornare e rimuovere schede</li><li>Può creare, aggiornare e rimuovere connettori</li><ul>|
-||||
-
-&sup2; Canali preferiti automaticamente
+> [!div class="mx-tdBreakAll"]
+>| Tipo di modello | TemplateId | Canali del modello |
+>| ------------------ | -------------- | ----------------------------------------------------- |
+>| Retail - <br>Collaborazione tra responsabili | `https://graph.microsoft.com/beta/teamsTemplates('retailManagerCollaboration')`| Canali <ul><li>Generale</li><li>Operazioni</li><li>Apprendimento</li></ul>Proprietà del team <ul><li>Visibilità del team impostata su Private</li></ul> <br>Autorizzazioni dei membri <ul><li>Può creare, aggiornare ed eliminare canali </li><li>Può aggiungere e rimuovere app </li><li>Può creare, aggiornare e rimuovere schede</li><li>Può creare, aggiornare e rimuovere connettori</li><ul>|
 
 Modi consigliati per personalizzare il modello Manager Collaboration per l'organizzazione:
 
@@ -131,6 +136,9 @@ Per usare questi modelli, modificare la proprietà "template@odata.bind" nel cor
   ]
 }
 ```
+
+> [!NOTE]
+> Se si usa Microsoft Graph per creare un team da un gruppo o un team di Microsoft 365 esistente usando un modello connesso a Microsoft 365, il modello di SharePoint connesso non viene applicato automaticamente al sito o al team. Sarà necessario applicare manualmente il modello di sito di SharePoint dopo la creazione del team. In Teams, passare al team, selezionare **Altre opzioni** nell'angolo in alto a destra > **Apri in SharePoint**. Quindi scegliere **Impostazioni** > **Applica modello di sito** e selezionare il modello di sito corrispondente.
 
 ## <a name="related-articles"></a>Articoli correlati
 
