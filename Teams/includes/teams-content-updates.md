@@ -3,6 +3,29 @@
 
 
 
+## <a name="week-of-september-12-2022"></a>Settimana del 12 settembre 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 9/12/2022 | [Usare la personalizzazione delle app per personalizzare le app in base alle esigenze dell'organizzazione](/MicrosoftTeams/customize-apps) | Volta |
+| 9/12/2022 | [Richieste degli utenti per gli amministratori di consentire le app](/MicrosoftTeams/user-requests-approve-apps) | Volta |
+| 9/13/2022 | [Monitorare l'instradamento diretto](/MicrosoftTeams/direct-routing-monitor-and-troubleshoot) | Volta |
+| 9/13/2022 | [Richieste degli utenti per gli amministratori](/MicrosoftTeams/user-requests-approve-apps) | Volta |
+| 9/13/2022 | [Trasferire i numeri di telefono nel sistema telefonico di Teams con il piano per chiamate](/MicrosoftTeams/business-voice/port-phone-numbers) | Volta |
+| 9/13/2022 | [Contattare il team di Telephone Number Services](/MicrosoftTeams/manage-phone-numbers-for-your-organization/contact-tns-service-desk) | Volta |
+| 9/14/2022 | [Dispositivi Teams per l'istruzione](/MicrosoftTeams/devices-for-education) | Volta |
+| 9/14/2022 | [Ritiro di Skype for Business Online](/MicrosoftTeams/skype-for-business-online-retirement) | Volta |
+| 9/14/2022 | [Comprendere Microsoft Teams e coesistenza e interoperabilità di Skype for Business](/MicrosoftTeams/teams-and-skypeforbusiness-coexistence-and-interoperability) | Volta |
+| 9/14/2022 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | Volta |
+| 9/14/2022 | [Portale di Microsoft Teams Rooms](/MicrosoftTeams/rooms/managed-meeting-rooms-portal) | Volta |
+| 9/14/2022 | [Gestire Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-manage). | Volta |
+| 9/14/2022 | [Microsoft Teams Rooms la manutenzione e le operazioni](/MicrosoftTeams/rooms/rooms-operations) | Volta |
+| 9/15/2022 | [Autenticazione basata su applicazioni nel modulo di Teams PowerShell](/MicrosoftTeams/teams-powershell-application-authentication) | Aggiunto |
+| 9/15/2022 | [In che modo le diverse tecnologie hanno effetto sull'accesso a Microsoft Teams, inclusa la limitazione dell'accesso e i comportamenti di accesso.](/MicrosoftTeams/sign-in-teams) | Volta |
+| 9/16/2022 | [Autenticazione basata su applicazioni nel modulo di Teams PowerShell](/MicrosoftTeams/teams-powershell-application-authentication) | Volta |
+
+
 ## <a name="week-of-september-05-2022"></a>Settimana del 5 settembre 2022
 
 
@@ -128,35 +151,3 @@
 | 8/20/2022 | [Configurare le impostazioni degli eventi live in Microsoft Teams](/MicrosoftTeams/teams-live-events/configure-teams-live-events) | Volta |
 | 8/20/2022 | [Configurare gli eventi live in Microsoft Teams](/MicrosoftTeams/teams-live-events/set-up-for-teams-live-events) | Volta |
 | 8/20/2022 | [Configurare la conferma di chiamata in uscita della riunione per gli utenti in Microsoft Teams](/MicrosoftTeams/set-up-meeting-dial-out-confirmation) | Volta |
-
-
-## <a name="week-of-august-08-2022"></a>Settimana dell'8 agosto 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 8/8/2022 | [Esperienza di aggiornamento delle app in Microsoft Teams](/MicrosoftTeams/apps-update-experience) | Volta |
-| 8/8/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
-| 8/8/2022 | [Condurre un'indagine di eDiscovery sul contenuto](/MicrosoftTeams/ediscovery-investigation) | Volta |
-| 8/9/2022 | [Panoramica dei criteri delle app per gestire le app in Teams](/MicrosoftTeams/app-policies) | Volta |
-| 8/9/2022 | Comitato di orientamento per la distribuzione voce cloud | Rimosso |
-| 8/9/2022 | Elenco di controllo onboarding - Configurare i carichi di lavoro vocali nel cloud - Microsoft Teams | Rimosso |
-| 8/9/2022 | Elenco di controllo per l'onboarding - Configurare il routing diretto - Microsoft Teams | Rimosso |
-| 8/9/2022 | Elenco di controllo per l'onboarding - Configurare le funzionalità di base - Microsoft Teams | Rimosso |
-| 8/9/2022 | Elenco di controllo per l'onboarding - Abilitare il servizio Microsoft 365 o Office 365 | Rimosso |
-| 8/9/2022 | riferimento Microsoft Teams Rooms | Rimosso |
-| 8/9/2022 | [Gestire app personalizzate e caricate in sideload](/MicrosoftTeams/custom-app-overview) | Aggiunto |
-| 8/9/2022 | [Informazioni sulle app in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | Volta |
-| 8/9/2022 | [Panoramica della convalida delle app e dei test delle app da parte di Microsoft](/MicrosoftTeams/overview-of-app-validation) | Volta |
-| 8/9/2022 | [Informazioni sulle app di terze parti in Microsoft Teams](/MicrosoftTeams/overview-third-party-apps) | Volta |
-| 8/9/2022 | [Acquistare app di terza parte per Teams](/MicrosoftTeams/purchase-third-party-apps) | Volta |
-| 8/9/2022 | [Gestire i criteri di autorizzazione app in Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies) | Volta |
-| 8/9/2022 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | Volta |
-| 8/9/2022 | [Gestire le impostazioni e i criteri delle app personalizzate](/MicrosoftTeams/teams-custom-app-policies-and-settings) | Volta |
-| 8/10/2022 | Routing diretto | Rimosso |
-| 8/11/2022 | [Informazioni sulle app in Microsoft Teams](/MicrosoftTeams/deploy-apps-microsoft-teams-landing-page) | Volta |
-| 8/11/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
-| 8/11/2022 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | Volta |
-| 8/12/2022 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant-smb) | Aggiunto |
-| 8/12/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue-smb) | Aggiunto |
-| 8/12/2022 | [App Walkie-talkie in Microsoft Teams](/MicrosoftTeams/walkie-talkie) | Volta |
