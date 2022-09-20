@@ -1,5 +1,5 @@
 ---
-title: Usare modelli di team generali nell'interfaccia di amministrazione
+title: Usare i modelli di team generali nell'interfaccia di amministrazione
 author: lanachin
 ms.author: v-lanachin
 manager: samanro
@@ -11,7 +11,7 @@ ms.collection:
 - M365-collaboration
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come gestire e usare i modelli di team generali nell'Teams di amministrazione per creare rapidamente e facilmente i team.
+description: Informazioni su come gestire e usare i modelli di team generali nell'interfaccia di amministrazione di Teams per creare team in modo semplice e rapido.
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,83 +19,85 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a23149b26db4cacff46c31396824033622bb1224
-ms.sourcegitcommit: cfc48dc03550c093c4405fb5984648188f523699
+ms.openlocfilehash: 05e540ea968f04724d5d644f6ad7640b1f46df89
+ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "60046172"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67837346"
 ---
-# <a name="use-general-team-templates-in-the-admin-center"></a>Usare modelli di team generali nell'interfaccia di amministrazione
+# <a name="use-general-team-templates-in-the-admin-center"></a>Usare i modelli di team generali nell'interfaccia di amministrazione
+
+## <a name="overview"></a>Panoramica
 
 I modelli di Microsoft Teams consentono di creare team in modo rapido e semplice fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
-Usare i modelli di team per distribuire team coerenti all'interno dell'organizzazione. I modelli possono anche aiutare gli utenti a orientarsi su come usare in modo efficace Teams. È anche possibile estendere i modelli per creare team personalizzati in base alle specifiche esigenze dell'organizzazione.
+Usare i modelli di team per distribuire team coerenti nell'organizzazione. I modelli possono anche aiutare gli utenti a orientarsi con l'uso efficace di Teams. È anche possibile estendere i modelli per creare team personalizzati in base alle specifiche esigenze dell'organizzazione.
 
-Teams modelli predefiniti creati per specifiche esigenze aziendali e progetti. In questo articolo viene illustrata la categoria generale di modelli che è possibile usare nell'organizzazione per vari scenari.
+Teams include modelli predefiniti creati per esigenze e progetti aziendali specifici. In questo articolo viene visualizzata la categoria generale di modelli che è possibile usare nell'organizzazione per diversi scenari.
 
 Per altre informazioni sui modelli di team in generale, vedere Introduzione ai modelli [di team nell'Teams di amministrazione.](get-started-with-teams-templates-in-the-admin-console.md)
 
-## <a name="adopt-office-365"></a>Adottare Office 365
+> [!NOTE]
+> Un asterisco (*) indica che il modello è *connesso a Microsoft 365*. Quando gli utenti creano un team usando il modello, il modello di SharePoint connesso viene applicato al sito e al team. I componenti di SharePoint, ad esempio pagine, elenchi e integrazioni Power Platform, vengono aggiunti e aggiunti automaticamente come schede al canale Generale nel team. Gli utenti possono modificare queste pagine ed elenchi direttamente da Teams.
+>
+> Per altre informazioni sui modelli di SharePoint, vedere [Applicare e personalizzare modelli di sito di SharePoint](https://support.microsoft.com/office/apply-and-customize-sharepoint-site-templates-39382463-0e45-4d1b-be27-0e96aeec8398#ID0EDBJ=Team_site_templates).
 
-Aiuta a costruire, far crescere e sostenere l'implementazione della community Di Champions evangelizzando e aiutando i tuoi colleghi con la nuova tecnologia.
+## <a name="manage-a-project"></a>Gestire un progetto*
 
-> [!div class="mx-tdBreakAll"]
-> | Tipo di modello |TemplateId| Proprietà del modello |
-> | ------------------|--|-----------------------------------------------------------|
-> | Adottare Office 365 |`com.microsoft.teams.template.AdoptOffice365`|  Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Angolo Champions</li> <li>Moduli del team</li><li>Calendario</li></ul> App: <ul><li>Wiki</li>  <li>Calendario del canale</li> <li>Attività cardine</li><li>Bollettini</li></ul>|
-> ||||
-
-## <a name="manage-a-project"></a>Gestire un progetto
-
-Questo modello consente di gestire attività, condividere documenti, condurre riunioni di progetto e documentare rischi e decisioni con questo modello per la gestione generale dei progetti.
+Questo modello consente di gestire attività, condividere documenti, condurre riunioni di progetto e documentare i rischi e le decisioni con questo modello per la gestione generale dei progetti.
 
 > [!div class="mx-tdBreakAll"]
 > | Tipo di modello| TemplateId| Proprietà del modello |
 > | ------------------|--|-----------------------------------------------------------|
-> | Gestire un progetto |`com.microsoft.teams.template.ManageAProject`| Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Risorse</li> <li>Pianificazione</li></ul> App:<ul><li>Wiki</li><li>OneNote</li><li>Attività</li><li>Elenchi</li><li>Power Automate</li></ul> |
-> ||||
-## <a name="manage-an-event"></a>Gestire un evento
+> | Gestire un progetto |`com.microsoft.teams.template.ManageAProject`| Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Risorse</li> <li>Pianificazione</li></ul> App:<ul><li>Approvazioni</li><li>Bollettini</li><li>Elenchi<ul><li>Tracciatore di progetti</li><li>Gestione problemi</li></ul></li><li>Pietre miliari</li><li>OneNote</li><li>Power Automate</li><li>Pagine SharePoint<ul><li>Il nostro sito</li></ul></li><li>Attività per Planner e To Do</li><li>Wiki</li></ul> |
 
-Gestire attività, documenti e collaborare su tutto ciò che serve per offrire un evento accattivante. Invitare gli utenti guest a collaborare in modo sicuro all'interno e all'esterno dell'azienda.
+## <a name="manage-an-event"></a>Gestire un evento*
 
-È possibile che non si abbia accesso a determinate app in base ai criteri di autorizzazione dell'app.
+Gestire attività, documenti e collaborare a tutti gli elementi necessari per organizzare un evento accattivante. Invitare gli utenti guest a collaborare in modo sicuro all'interno e all'esterno dell'azienda.
+
+Potresti non avere accesso a determinate app in base ai criteri di autorizzazione delle app.
 
 > [!div class="mx-tdBreakAll"]
 > | Tipo di modello | TemplateId| Proprietà del modello |
 > | ------------------ |--|-----------------------------------------------------------|
-> | Gestire un evento|`com.microsoft.teams.template.ManageAnEvent` | Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Budget</li> <li>Contenuto</li><li>Logistica</li> <li>Pianificazione</li> <li> Marketing e pubbliche relazioni</li></ul> App:<ul><li>Wiki</li><li>Sito Web</li> <li>YouTube</li> <li>Attività</li> <li>OneNote</li> <li>Idee per i dipendenti</li> <li>Segnalazione dei problemi</li><li>Power Automate</li><li>Bollettini</li><li>Attività cardine</li></ul> |
-> ||||
+> | Gestire un evento|`com.microsoft.teams.template.ManageAnEvent` | Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Budget</li> <li>Contenuto</li><li>Logistica</li> <li>Pianificazione</li> <li> Marketing e PR</li></ul> App:<ul><li>Approvazioni</li><li>Bollettini</li> <li>Idee per i dipendenti</li> <li>Elenchi<ul><li>Utilità di pianificazione del contenuto</li></ul><li>Pietre miliari</li></li> <li>OneNote</li> <li>Power Automate</li> <li>Pagine SharePoint<ul><li>Il nostro sito</li><li>Informazioni sull'evento</li></ul><li>Attività per Planner e To Do</li><li>Wiki</li> |
 
-## <a name="onboard-employees"></a>Dipendenti a bordo
+## <a name="onboard-employees"></a>Dipendenti onboard*
 
-Migliorare la cultura e semplificare l'onboarding dei dipendenti con questo team centrale per risorse, domande e un po' di divertimento.
+Migliora la tua cultura e semplifica l'onboarding dei dipendenti con questo team centrale per risorse, domande e un po' di divertimento.
 
 > [!div class="mx-tdBreakAll"]
 > | Tipo di modello |TemplateId| Proprietà del modello |
 > | ------------------|--|-----------------------------------------------------------|
-> |Dipendenti a bordo|`com.microsoft.teams.template.OnboardEmployees` | Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Chat dei dipendenti</li> <li>Formazione</li></ul>App:<ul><li>Wiki</li><li>Community</li><li>Attività</li><li>Idee per i dipendenti</li><li>Power Automate</li><li>Bollettini</li><li>Attività cardine</li></ul>|
-> ||||
+> | Dipendenti onboard|`com.microsoft.teams.template.OnboardEmployees` | Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Chat per i dipendenti</li> <li>Formazione</li></ul>App:<ul><li>Bollettini</li><li>Idee per i dipendenti</li><li>Elenchi<ul><li>Elenco di controllo onboarding</li></ul></li><li>Pietre miliari</li><li>Power Automate</li> <li>Pagine SharePoint<ul><li>Per iniziare</li><li>Formazione</li></ul><li>Attività per Planner e To Do</li><li>Viva Engage</li><li>Wiki</li></ul>|
 
-## <a name="organize-a-help-desk"></a>Organizzare un help desk
+## <a name="adopt-office-365"></a>Adottare Office 365
 
-Collaborare alla documentazione, ai criteri e ai processi che supportano l'helpdesk. Integrare il sistema di ticket esistente o usare il modello per gestire le richieste.
+Aiuta a costruire, crescere e sostenere l'implementazione della community dei Campioni evangelizzando e aiutando i tuoi colleghi con la nuova tecnologia.
+
+> [!div class="mx-tdBreakAll"]
+> | Tipo di modello |TemplateId| Proprietà del modello |
+> | ------------------|--|-----------------------------------------------------------|
+> | Adottare Office 365 |`com.microsoft.teams.template.AdoptOffice365`|  Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Angolo dei campioni</li> <li>Moduli team</li><li>Calendario</li></ul> App: <ul><li>Wiki</li>  <li>Calendario del canale</li> <li>Pietre miliari</li><li>Bollettini</li></ul>|
+
+## <a name="organize-help-desk"></a>Organizzare l'Help Desk*
+
+Collaborare alla documentazione, ai criteri e ai processi che supportano l'help desk. Integra il tuo sistema di ticketing esistente o utilizza il nostro modello per gestire le richieste.
 
 > [!div class="mx-tdBreakAll"]
 > | Tipo di modello |TemplateId| Proprietà del modello |
 > | ------------------|--|------------------------------------------------------------|
-> |Organizzare l'help desk| `com.microsoft.teams.template.OrganizeHelpDesk`|Canali:<ul><li>Generale</li><li>Annunci</li><li>Domande frequenti</li></ul>App:<ul><li>Wiki</li><li>OneNote</li><li>Attività </li><li>Complimento</li><li>Segnalazione dei problemi</li><li>Power Automate</li><li>Bollettini</li></ul> |
-> ||||
+> | Organizzare l'Help Desk| `com.microsoft.teams.template.OrganizeHelpDesk`|Canali:<ul><li>Generale</li><li>Annunci</li><li>Domande frequenti</li></ul>App:<ul><li>Segnalazione problemi</li><li>Elenchi<ul><li>Dispositivi</li><li>Biglietti</li></ul></li><li>OneNote</li><li>Power Automate</li><li>Pagine SharePoint<ul><li>Il nostro sito</li><li>Domande frequenti</li></ul></li><li>Attività per Planner e To Do</li><li>Wiki</li></ul> |
 
-## <a name="crisis-communication"></a>Comunicazione di crisi
+## <a name="crisis-communications"></a>Crisis Communications*
 
-Centralizzare la collaborazione per il team di crisi tra le business unit e contribuire a creare piani di continuità aziendale, condividere suggerimenti di lavoro in remoto, tenere traccia delle comunicazioni dei clienti e tenere tutti in contatto con annunci e notizie.
+Centralizzare le risorse di comunicazione e di crisi critica per il team di gestione delle crisi o di risposta agli eventi imprevisti. Usare le riunioni online per migliorare il flusso di informazioni e la consapevolezza della situazione.
 
 > [!div class="mx-tdBreakAll"]
 > | Tipo di modello |TemplateId| Proprietà del modello |
 > | ------------------ |--|----------------------------------------------------------|
-> | Comunicazione di crisi |`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent`| Canali: <ul><li>Generale<li>Annunci</li><li>Notizie del mondo</li><li>Messaggi interni</li><li>Comms esterni</li><li>Richiesta di approvazioni</li><li>Escalation dei clienti</li><li>Aggiornamento per dirigenti</li><li>Pianificazione</li><li>Logistica</li></ul>App: <ul><li>Sito Web</li><li>Attività</li><li>Segnalazione dei problemi</li><li>Approvazioni</li><li>Bollettini</li><li>OneNote</li><li>Power Automate</li><li>SharePoint</li></ul>|
-> ||||
+> | Crisis Communications |`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent`| Canali: <ul><li>Generale<li>Annunci</li><li>Aggiornamento esecutivo</li><li>Pianificazione</li><li>Logistica</li></ul>App: <ul><li>Approvazioni</li><li>Segnalazione problemi</li><li>Elenchi<ul><li>Utilità di pianificazione del contenuto</li><li>Piano di progetto</li></ul></li><li>OneNote</li><li>Power Automate</li><li>Pagine SharePoint<ul><li>Il nostro sito</li><li>Ultimo aggiornamento</li></ul><li>Attività per Planner e To Do</li></ul>|
 
 ## <a name="related-articles"></a>Articoli correlati
 

@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020; intro-overview; intro-hub-or-landing
-ms.openlocfilehash: 0a6bfa577df36eba83b4764aa4eb819d1085432a
-ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
+ms.openlocfilehash: 67c50eefdd1d0e20e10b9542912f0e2c4f412815
+ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67486911"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67837646"
 ---
 # <a name="understand-microsoft-teams-apps"></a>Informazioni sulle app di Microsoft Teams
 
@@ -95,7 +95,7 @@ Webhook e connettori forniscono contenuti e aggiornamenti dai servizi usati di f
 
 Le estensioni di messaggistica sono collegamenti per inserire il contenuto dell'app o agire su un messaggio senza che gli utenti finali escano dalla conversazione. Le estensioni di messaggistica possono avere comandi di ricerca che consentono agli utenti finali di trovare rapidamente contenuti esterni e inserirli in un messaggio o in un comando di azione.
 
-Per visualizzare i casi di utilizzo comuni mappati alle funzionalità di Teams, vedere [Mappare i casi d'uso alle funzionalità dell'app Teams](/microsoftteams/platform/concepts/design/map-use-cases).
+Per visualizzare i casi d'uso comuni mappati alle funzionalità di Teams, vedere [Mappare i casi d'uso alle funzionalità dell'app Teams](/microsoftteams/platform/concepts/design/map-use-cases).
 
 <!--- TBD: Admins do many considerations and decisions around app adoption and app governance. These are to be covered in a separate article. Commenting the below content for now as part of this article revamp.
 

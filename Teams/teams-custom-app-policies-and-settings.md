@@ -5,6 +5,7 @@ ms.author: guptaashish
 manager: prkosh
 ms.topic: article
 ms.tgt.pltfrm: cloud
+ms.subservice: teams-apps
 ms.service: msteams
 audience: Admin
 ms.collection:
@@ -22,16 +23,16 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - seo-marvel-mar2020
-ms.openlocfilehash: 7ff0a37d815b3118aea0eb63abc8a414c4a99bd5
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: d52fe50ba3fa02b3b39269fd06ce66ea0dfb5b32
+ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67397247"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67837166"
 ---
 # <a name="manage-custom-app-policies-and-settings-in-microsoft-teams"></a>Gestire le impostazioni e i criteri delle app personalizzate in Microsoft Teams
 
-Come amministratore, è possibile usare impostazioni e criteri delle app personalizzate per controllare chi nell'organizzazione può caricare app personalizzate in Microsoft Teams. Gli amministratori decidono quali utenti possono caricare app personalizzate, mentre gli amministratori e i proprietari di team possono determinare se l'aggiunta di app personalizzate a team sono consentite per team specifici.  Dopo aver modificato i criteri dell'app personalizzata, possono essere necessarie alcune ore prima che le modifiche diventino effettive. Per gestire questi criteri, è necessario essere un amministratore globale o un amministratore del servizio Teams.
+Come amministratore, è possibile usare impostazioni e criteri delle app personalizzate per controllare chi nell'organizzazione può caricare app personalizzate in Microsoft Teams. Gli amministratori decidono quali utenti possono caricare app personalizzate, mentre gli amministratori e i proprietari di team possono determinare se l'aggiunta di app personalizzate a team sono consentite per team specifici.  Dopo aver modificato i criteri dell'app personalizzata, possono essere necessarie alcune ore prima che le modifiche diventino effettive. Per gestire questi criteri, è necessario essere un Amministrazione globale o un amministratore del servizio Teams.
 
 Gli sviluppatori all'interno dell'organizzazione possono aggiungere un'app personalizzata a Teams caricando il pacchetto di un’app, in un file .zip, direttamente in un team o nel contesto personale. Questa operazione è diversa da come vengono aggiunte le app tramite l'App Store di Teams. L'aggiunta di un'app personalizzata caricando un pacchetto dell'app, noto anche come sideload, consente a utenti specifici all'interno dell'organizzazione di testare un'app prima che sia pronta per essere distribuita su larga scala.
 

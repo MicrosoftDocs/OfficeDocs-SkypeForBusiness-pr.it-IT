@@ -6,6 +6,7 @@ manager: prkosh
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
+ms.subservice: teams-apps
 audience: Admin
 ms.collection:
 - M365-collaboration
@@ -18,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: d7c23b424db102b21e88944e2ab55d8a2fe98c08
-ms.sourcegitcommit: 63dcc92b2d5d50e2c0c074a1209625e16086ca45
+ms.openlocfilehash: 4ba559d605f1465fda7caf9b253c18864c8b4c20
+ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67299298"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67837376"
 ---
 # <a name="understand-and-manage-custom-and-sideloaded-apps"></a>Comprendere e gestire app personalizzate e caricate in sideload
 
@@ -53,7 +54,7 @@ Come amministratore, è possibile disabilitare il sideloading delle app per tutt
 
 È possibile creare un criterio personalizzato o modificare il criterio globale per consentire o bloccare le app personalizzate in base alle esigenze aziendali. Per creare un criterio personalizzato che consente agli sviluppatori dell'organizzazione di caricare app personalizzate, seguire questa procedura:
 
-1. Accedere all'interfaccia di amministrazione di Teams e accedere ai **[criteri di configurazione](https://admin.teams.microsoft.com/policies/app-setup)** **delle app** >  di Teams.
+1. Accedere all'interfaccia di amministrazione di Teams e accedere alle **App di Teams** > **[Criteri di configurazione](https://admin.teams.microsoft.com/policies/app-setup)**.
 
 1. Selezionare **Aggiungi**.
 
@@ -66,6 +67,6 @@ Come amministratore, è possibile disabilitare il sideloading delle app per tutt
 
 ## <a name="related-articles"></a>Articoli correlati
 
-* [Gestire le impostazioni e i criteri delle app personalizzati](teams-custom-app-policies-and-settings.md)
+* [Gestire le impostazioni e i criteri delle app personalizzate](teams-custom-app-policies-and-settings.md)
 * [Informazioni sui criteri per gestire le app](app-policies.md)
 * [Informazioni sulle app di terze parti](overview-third-party-apps.md)
