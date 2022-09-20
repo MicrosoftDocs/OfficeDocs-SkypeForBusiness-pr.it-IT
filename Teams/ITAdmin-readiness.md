@@ -18,12 +18,12 @@ ms.custom:
 description: Video di formazione, presentazioni powerpoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 133369477a9e633e3e7ccb6309d8cae037f86f90
-ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
+ms.openlocfilehash: 384f6f34a689e0337489d08e4956df425b497d5d
+ms.sourcegitcommit: 6754f2d11da0afff067f0872acf778a83fd1595e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67486901"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67808377"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori per Microsoft Teams
 
@@ -39,8 +39,8 @@ Usare le risorse di formazione per educare se stessi su Teams, insegnare agli al
 
 |&nbsp; |&nbsp; |&nbsp;  |
 |---------|---------|---------|
-|[**Gli elementi essenziali di Teams per l'IT**](https://aka.ms/MicrosoftTeamsforIT) - Serie di video Microsoft Mechanics "Teams for IT" mostrano come implementare, configurare e gestire Teams.     |[**Supportare i lavoratori remoti con Microsoft Teams**](support-remote-work-with-teams.md#support-remote-workers-using-microsoft-teams) : ottenere le indicazioni necessarie, inclusi i collegamenti alla formazione, per supportare gli utenti che lavorano da casa.         |[**Gestire la collaborazione in team per l'IT**](/learn/paths/m365-manage-team-collaboration) - Informazioni su come usare Teams per facilitare il lavoro in team e la comunicazione all'interno dell'organizzazione tra applicazioni e dispositivi.         |
-|[**Certificazione Service Adoption Specialist**](/learn/paths/m365-service-adoption) - Il corso di certificazione Microsoft Service Adoption Specialist include Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.     |[**Introduzione al lavoro in team in Microsoft 365**](/learn/modules/intro-to-teamwork-in-m365/index) - Il corso di certificazione Microsoft Service Adoption Specialist include Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.        |[**Microsoft 365 Certified: Teamwork Administrator Associate**](/learn/certifications/m365-teamwork-administrator) - Gli amministratori del lavoro in team di Microsoft 365 configurano, distribuiscono e gestiscono i carichi di lavoro di Microsoft 365 o Office 365, ad esempio SharePoint (online, locale e ibrido), OneDrive e Teams.        |
+|[**Gli elementi essenziali di Teams per l'IT**](https://aka.ms/MicrosoftTeamsforIT) - Serie di video Microsoft Mechanics "Teams for IT" mostrano come implementare, configurare e gestire Teams.     |[**Supportare i lavoratori remoti con Microsoft Teams**](support-remote-work-with-teams.md#support-remote-workers-using-microsoft-teams) : ottenere le indicazioni necessarie, inclusi i collegamenti alla formazione, per supportare gli utenti che lavorano da casa.         |[**Gestire la collaborazione in team per l'IT**](/training/paths/m365-manage-team-collaboration) - Informazioni su come usare Teams per facilitare il lavoro in team e la comunicazione all'interno dell'organizzazione tra applicazioni e dispositivi.         |
+|[**Certificazione Service Adoption Specialist**](/training/paths/m365-service-adoption) - Il corso di certificazione Microsoft Service Adoption Specialist include Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.     |[**Introduzione al lavoro in team in Microsoft 365**](/training/modules/intro-to-teamwork-in-m365/index) - Il corso di certificazione Microsoft Service Adoption Specialist include Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.        |[**Microsoft 365 Certified: Teamwork Administrator Associate**](/certifications/m365-teamwork-administrator) - Gli amministratori del lavoro in team di Microsoft 365 configurano, distribuiscono e gestiscono i carichi di lavoro di Microsoft 365 o Office 365, ad esempio SharePoint (online, locale e ibrido), OneDrive e Teams.        |
 
 <h2>Formazione tecnica</h2>
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fae55eb230c3c0a450a95eb00e50861888bbe3f1
-ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
-ms.translationtype: HT
+ms.openlocfilehash: 083f2f9ae041f88e0b92c51af297adbf04b5c770
+ms.sourcegitcommit: 6754f2d11da0afff067f0872acf778a83fd1595e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66045575"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67808577"
 ---
 # <a name="teams-enterprise-deployment-overview"></a>Panoramica della distribuzione aziendale di Teams
 
@@ -75,7 +75,7 @@ Per un esempio di come Network Planner può pianificare la rete, vedere [Uso di 
 L'assistente per Teams è una soluzione all'interno di Teams che riunisce team, canali, condivisione di file e Planner per creare un progetto di distribuzione per l'organizzazione. L'assistente di Teams crea un piano di progetto specifico del carico di lavoro selezionato (ad esempio chat, team e canali), che include le attività consigliate da eseguire durante la distribuzione. Ogni attività contiene istruzioni, suggerimenti e collegamenti ad articoli pertinenti, che guidano l'utente nelle fasi del processo. È possibile assegnare facilmente attività a una o più persone e specificare le date di inizio e di fine per ogni attività.
 
 > [!TIP]
-> Per informazioni su come usare l'Assistente per Teams per pianificare la distribuzione, completare il modulo di Microsoft Learn [Implementare Teams con l'Assistente per Teams](/learn/modules/m365-teams-rollout-using-advisor/).
+> Per informazioni su come usare l'Assistente per Teams per pianificare la distribuzione, completare il modulo di Microsoft Learn [Implementare Teams con l'Assistente per Teams](/training/modules/m365-teams-rollout-using-advisor/).
 
 > [!div class="nextstepaction"]
 > [Passare a Assistente per Teams](https://admin.teams.microsoft.com/teams-deployment)

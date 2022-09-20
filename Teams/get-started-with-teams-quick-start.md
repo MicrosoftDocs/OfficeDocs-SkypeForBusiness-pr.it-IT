@@ -21,12 +21,12 @@ appliesto:
 ms.custom:
 - seo-marvel-mar2020
 - intro-get-started
-ms.openlocfilehash: 54fcf3942d13fa0b759e796e5486808a5f5a40bb
-ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
-ms.translationtype: HT
+ms.openlocfilehash: ff5fce999adffc38e28d6daf787d6175deaa683a
+ms.sourcegitcommit: 6754f2d11da0afff067f0872acf778a83fd1595e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66045845"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67808807"
 ---
 # <a name="get-started-with-microsoft-teams"></a>Introduzione a Microsoft Teams
 
@@ -66,7 +66,7 @@ Ecco cosa fare per prepararsi all'implementazione di Teams, sia nel caso in cui 
 Il modo migliore per acquisire familiarità con Teams è iniziare a usarlo immediatamente. La cosa migliore di Teams è che ciò che viene configurato ora non ostacolerà gli aggiornamenti o le migrazioni che potrebbero essere necessarie in seguito.
 
 > [!TIP]
-> Consultare i percorsi formazioni e i moduli disponibili in [Microsoft Learn per Teams](/learn/teams/). È possibile ottenere maggiori informazioni sull’[interfaccia di amministrazione di Microsoft Teams](/learn/modules/m365-teams-navigate-admin-portal/), scoprire come [configurare la propria rete per Teams](/learn/modules/m365-teams-connectivity/), ottenere idee su come eseguire l’[onboarding degli utenti in Teams](/learn/modules/m365-teams-onboard-users/) e altro ancora.
+> Consultare i percorsi formazioni e i moduli disponibili in [Microsoft Learn per Teams](/training/teams/). È possibile ottenere maggiori informazioni sull’[interfaccia di amministrazione di Microsoft Teams](/training/modules/m365-teams-navigate-admin-portal/), scoprire come [configurare la propria rete per Teams](/training/modules/m365-teams-connectivity/), ottenere idee su come eseguire l’[onboarding degli utenti in Teams](/training/modules/m365-teams-onboard-users/) e altro ancora.
 
 Usare i passaggi seguenti per configurare un paio di team e integrare degli early adopter in modo da poter acquisire familiarità con Teams.
 

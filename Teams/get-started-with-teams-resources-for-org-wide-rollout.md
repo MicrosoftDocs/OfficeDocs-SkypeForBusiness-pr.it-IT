@@ -21,19 +21,19 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 22f778158965134cec673a97373a83d7fe95544d
-ms.sourcegitcommit: 91cfb1a9c527d605300580c3acad63834ee54682
-ms.translationtype: HT
+ms.openlocfilehash: 751263d9f5afddc6f73afd89458a5e004ce428f4
+ms.sourcegitcommit: 6754f2d11da0afff067f0872acf778a83fd1595e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66045835"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67808797"
 ---
 # <a name="start-your-organization-wide-rollout-of-microsoft-teams"></a>Avviare l'implementazione di Microsoft Teams a livello di organizzazione
 
 Una volta completata la configurazione dei primi team ed eseguito l'onboarding di alcuni early adopter, è il momento di iniziare l'implementazione di Teams nel resto dell'organizzazione.
 
 > [!TIP]
-> Prima di iniziare l'implementazione di Teams, è consigliabile completare il modulo di Microsoft Learn [Preparazione alla distribuzione di Teams con Microsoft 365](/learn/modules/m365-teams-collab-prepare-deployment/). Questo modulo di 30 minuti aiuta a comprendere rapidamente Teams e illustra le decisioni chiave da prendere durante l'implementazione del prodotto.
+> Prima di iniziare l'implementazione di Teams, è consigliabile completare il modulo di Microsoft Learn [Preparazione alla distribuzione di Teams con Microsoft 365](/training/modules/m365-teams-collab-prepare-deployment/). Questo modulo di 30 minuti aiuta a comprendere rapidamente Teams e illustra le decisioni chiave da prendere durante l'implementazione del prodotto.
 >
 > Per altri moduli e percorsi di formazione disponibili per Teams, vedere [Microsoft Learn per Teams](/learn/teams/).
 

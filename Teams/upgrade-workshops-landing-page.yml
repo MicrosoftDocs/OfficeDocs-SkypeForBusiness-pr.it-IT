@@ -24,20 +24,20 @@ metadata:
   search.appverid: MET150
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: fe5104d2047f734a0ae6df839bb980052ca2607e
-  ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+  ms.openlocfilehash: 6ae30ce1693944d10048ca1172657329202d7c0c
+  ms.sourcegitcommit: 6754f2d11da0afff067f0872acf778a83fd1595e
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 07/14/2022
-  ms.locfileid: "66794524"
+  ms.lasthandoff: 09/19/2022
+  ms.locfileid: "67808657"
 productDirectory:
   items:
   - title: Pianificare l'aggiornamento (iniziare da qui)
-    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-teams.svg
+    imageSrc: https://learn.microsoft.com/office/media/icons/get-started-teams.svg
     summary: Se si esegue l'aggiornamento a Teams prima del ritiro di Skype for Business Online (31 luglio 2021) o lo spostamento di scenari dall'ambiente locale Skype for Business a Teams, una transizione riuscita riguarda la preparazione tecnica e degli utenti. Scopri la nostra comprovata struttura, le migliori pratiche e le risorse progettate per facilitare la transizione a Teams da Skype for Business Online, Skype for Business Server o un ambiente ibrido. Gruppo di destinatari - Tutti (sponsor aziendali, amministratori IT, responsabile conformità/modifica utente, project lead)
     url: https://aka.ms/SfBtoTeamsPlan
   - title: Implementare l'aggiornamento di Teams
-    imageSrc: https://docs.microsoft.com/office/media/icons/hybrid-teams.svg
+    imageSrc: https://learn.microsoft.com/office/media/icons/hybrid-teams.svg
     summary: Unisciti a noi per identificare e preparare l'approccio tecnico migliore per spostare tutti i carichi di lavoro in Teams, in base ai tuoi obiettivi e all'attuale ambiente di Skype for Business. La maggior parte dei clienti che hanno completato transizioni riuscite ha abilitato Teams insieme all'attuale Skype for Business Online, Skype for Business Server o un'implementazione ibrida. Questa sessione condividerà considerazioni importanti e risorse utili per definire la strategia di migrazione migliore per l'organizzazione. Gruppo di destinatari - Amministratori IT
     url: https://aka.ms/SfBtoTeamsImplement
 additionalContent:

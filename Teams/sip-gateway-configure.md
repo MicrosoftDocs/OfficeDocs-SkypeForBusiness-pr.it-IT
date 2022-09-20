@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d33573d86f2bcb485f6a7e7cfc550ea1f3184223
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: f21ce36c1c44b14b80c9ae1684a65c6bd82b7d63
+ms.sourcegitcommit: 6754f2d11da0afff067f0872acf778a83fd1595e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270491"
+ms.lasthandoff: 09/19/2022
+ms.locfileid: "67808877"
 ---
 # <a name="configure-sip-gateway"></a>Configurare gateway SIP
 
@@ -120,7 +120,7 @@ Per ogni dispositivo SIP, impostare uno degli URL del server di provisioning del
 - Americas: `http://noam.ipp.sdg.teams.microsoft.com`
 - APAC: `http://apac.ipp.sdg.teams.microsoft.com`
 
-Aggiungere dispositivi SIP all'organizzazione di Teams configurando l'URL del server di provisioning del Gateway SIP indicato sopra nel server DHCP. Per altre informazioni sul server DHCP, vedi [Distribuire e gestire DHCP](/learn/modules/deploy-manage-dynamic-host-configuration-protocol). Inoltre, è possibile usare l'opzione DHCP 42 per specificare il server NTP (Network Time Protocol) e l'opzione DHCP 2 per specificare l'offset da UTC (Coordinated Universal Time) in pochi secondi. I dispositivi dell'organizzazione verranno instradati al server di provisioning del Gateway SIP. Il provisioning dei telefoni SIP verrà eseguito correttamente con il logo di Teams e un pulsante soft per l'accesso.
+Aggiungere dispositivi SIP all'organizzazione di Teams configurando l'URL del server di provisioning del Gateway SIP indicato sopra nel server DHCP. Per altre informazioni sul server DHCP, vedi [Distribuire e gestire DHCP](/training/modules/deploy-manage-dynamic-host-configuration-protocol). Inoltre, è possibile usare l'opzione DHCP 42 per specificare il server NTP (Network Time Protocol) e l'opzione DHCP 2 per specificare l'offset da UTC (Coordinated Universal Time) in pochi secondi. I dispositivi dell'organizzazione verranno instradati al server di provisioning del Gateway SIP. Il provisioning dei telefoni SIP verrà eseguito correttamente con il logo di Teams e un pulsante soft per l'accesso.
 
 Verifica che i dispositivi SIP siano nella versione firmware minima supportata per l'onboarding. Durante l'onboarding, gateway SIP eseguirà il push dell'interfaccia utente di autenticazione e configurazione predefinita nel dispositivo. Per informazioni sulla versione del firmware necessaria per i dispositivi SIP, vedere [Pianificare il Gateway SIP](sip-gateway-plan.md).
 
