@@ -667,6 +667,40 @@ items:
                 href: teams-live-events/configure-teams-live-events.md
               - name: Criteri di registrazione degli eventi live
                 href: teams-live-events/live-events-recording-policies.md
+          - name: Creare un'esperienza di riunione ibrida di Teams
+            items:
+              - name: Panoramica
+                href: hybrid-meetings-overview.md
+              - name: Principi di riunione ibridi
+                href: hybrid-meetings-principles.md
+              - name: 'Passaggio 1: Acquisire familiarità con le funzionalità delle riunioni di Teams'
+                href: hybrid-meetings-features.md
+              - name: Passaggio 2 - Evangelizzare le procedure consigliate per le riunioni
+                href: hybrid-meetings-educate-participants.md
+              - name: 'Passaggio 3: Progettare e creare uno spazio riunioni'
+                href: hybrid-meetings-room-design.md
+              - name: Passaggio 4- Selezionare i dispositivi della sala
+                href: hybrid-meetings-device-select.md
+              - name: 'Passaggio 5: Configurare i dispositivi'
+                items:
+                  - name: Panoramica
+                    href: hybrid-meetings-device-config-intro.md
+                  - name: 'Passaggio 1 : Acquistare una licenza di Teams Rooms'
+                    href: hybrid-meetings-device-config-license.md
+                  - name: 'Passaggio 2: Creare un account di risorsa'
+                    href: hybrid-meetings-device-config-account.md
+                  - name: Passaggio 3 - Assegnare una licenza per una sala riunioni
+                    href: hybrid-meetings-device-config-assign.md
+                  - name: 'Passaggio 4 : Configurare le proprietà delle cassette postali'
+                    href: hybrid-meetings-device-config-mailbox.md
+                  - name: Passaggio 5- Disattivare la scadenza della password
+                    href: hybrid-meetings-device-config-password.md
+                  - name: Passaggio 6 - Configurare i criteri per le riunioni
+                    href: hybrid-meetings-device-config-policies.md
+                  - name: Passaggio 7 - Configurare le opzioni del calendario
+                    href: hybrid-meetings-device-config-calendar.md
+              - name: 'Passaggio 6: Gestire e monitorare sale e riunioni'
+                href: hybrid-meetings-manage.md
       - name: Audioconferenza
         items:
           - name: Audioconferenza in M365
