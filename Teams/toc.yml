@@ -1569,7 +1569,7 @@ items:
         items:
           - name: Comprendere le app di terze parti
             href: overview-third-party-apps.md
-          - name: Comprendere la convalida della app di Microsoft
+          - name: 'Controlli, test e convalida delle app eseguiti da Microsoft'
             href: overview-of-app-validation.md
           - name: 'Sicurezza, conformità e privacy delle app di terze parti'
             href: overview-of-app-certification.md
@@ -1593,7 +1593,7 @@ items:
             href: submit-approve-custom-apps.md
           - name: Pubblicare un'app personalizzata inviata come pacchetto
             href: upload-custom-apps.md
-          - name: Gestire le app di Power Platform nel centro di amministrazione di Teams
+          - name: Gestire le app personalizzate create con Power Platform
             href: manage-power-platform-apps.md
       - name: Controlli amministrativi per gestire le app
         items:
