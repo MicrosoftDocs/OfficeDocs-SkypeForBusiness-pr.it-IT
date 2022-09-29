@@ -1429,15 +1429,13 @@ items:
                 href: rooms/xml-config-file.md
               - name: Uso dello strumento di ripristino
                 href: rooms/recovery-tool.md
-      - name: Servizio gestito da Microsoft Teams Rooms
+      - name: Microsoft Teams Rooms Pro Management
         items:
           - name: Panoramica
             href: rooms/microsoft-teams-rooms-premium.md
-          - name: Ottenere e assegnare una licenza
-            href: rooms/obtaining-assigning-license.md
-          - name: Eseguire la registrazione al servizio gestito MTRP
+          - name: Accesso al portale di Pro Management
             href: rooms/enrolling-mtrp-managed-service.md
-          - name: Eseguire la registrazione di un dispositivo nel servizio gestito
+          - name: Registrare un dispositivo nella gestione pro
             href: rooms/enroll-a-device.md
           - name: Controllo dell'accesso basato sui ruoli
             href: rooms/microsoft-teams-rooms-premium-rbac.md
@@ -1445,7 +1443,7 @@ items:
             href: rooms/managed-meeting-rooms-portal.md
           - name: Aggiornamenti gestiti
             href: rooms/update-management.md
-          - name: Configurare ServiceNow per Teams Rooms
+          - name: Configurare ServiceNow
             href: rooms/microsoft-teams-rooms-configure-servicenow.md
           - name: Gestione multi-tenant per i partner
             href: rooms/multi-tenant-management-partner.md
@@ -1457,12 +1455,10 @@ items:
             href: rooms/health-and-usage-reports.md
           - name: Standard e Rooms Planner
             href: rooms/standards-and-room-planner.md
-          - name: Incidenti segnalati dai clienti
+          - name: Registrare un problema
             href: rooms/customer-reported-incidents.md
           - name: Informazioni sulla privacy e sui dati
             href: rooms/data-and-privacy-info.md
-          - name: Uso dell'applicazione Teams Rooms per dispositivi mobili
-            href: rooms/extended-mobile-app.md
       - name: Dispositivi
         items:
           - name: Archivio dispositivi di Teams
