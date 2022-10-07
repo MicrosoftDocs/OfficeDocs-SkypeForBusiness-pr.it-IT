@@ -14,16 +14,22 @@ appliesto:
 - Microsoft Teams
 ms.collection:
 - M365-voice
-ms.openlocfilehash: 8db0f0c4d29f786166098587aafc3ec1db256e38
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 6d2496ef355df7a935dbf45321a8b8fd63b8e8de
+ms.sourcegitcommit: fc1787ad74a8c454f750a294def188b532cbadd5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271461"
+ms.lasthandoff: 09/20/2022
+ms.locfileid: "67854432"
 ---
 # <a name="whats-new-for-direct-routing"></a>Novità per il routing diretto
 
 Questo articolo descrive le novità di Direct Routing. Ricontrollare spesso per verificare la disponibilità di aggiornamenti.
+
+## <a name="trunk-demoting-logic-based-on-sip-options"></a>Logica di abbassare di livello trunk in base alle opzioni SIP
+
+Viene introdotta una nuova funzionalità basata su Opzioni SIP per l'integrità del trunk. Se abilitata nella configurazione del gateway (vedere il cmdlet Set-CsOnlinePSTNGateway e il parametro SendSipOptions), la logica di routing per le chiamate in uscita abbassa di livello i trunk che non inviano periodicamente le opzioni SIP (il periodo previsto è un'opzione SIP inviata da SBC al minuto) al back-end Microsoft. Questi trunk abbassati di livello vengono inseriti alla fine dell'elenco dei trunk disponibili per la chiamata in uscita e vengono provati come gli ultimi; riducendo potenzialmente il tempo di impostazione delle chiamate.
+Tutti i trunk abilitati per tale funzionalità che non inviano almeno un'opzione SIP entro cinque minuti a uno dei proxy SIP microsoft internazionali (NOAM, EMEA, APAC, OCEA) vengono considerati abbassati di livello. Se un trunk invia Opzioni SIP solo a un sottoinsieme di proxy SIP locali Microsoft, queste route vengono provate per prime e le altre vengono abbassate di livello.
+
 
 ## <a name="sip-support"></a>Supporto SIP
 

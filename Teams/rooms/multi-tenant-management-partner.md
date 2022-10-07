@@ -1,10 +1,10 @@
 ---
 title: Gestione clienti multi-tenant per partner
-author: donnah007
-ms.author: v-donnahill
+author: altsou
+ms.author: altsou
 ms.date: 07/25/2022
 manager: serdars
-ms.reviewer: dstrome
+ms.reviewer: altsou
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -18,37 +18,37 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Gestione clienti Mult-tenant per partner.
 f1keywords: ''
-ms.openlocfilehash: 37ba5cfc12229685bbe4ac8cf188301e9fa7b1f7
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: e4e89d483d15ad7f521afd9c0686b3d72ab9e09d
+ms.sourcegitcommit: 64c01699022b47fdfec8dc6e2ca279e57eae3baa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269107"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243907"
 ---
 # <a name="multi-tenant-customer-management-for-partners"></a>Gestione clienti multi-tenant per partner
 
-La gestione multi-tenant (MTM) nel servizio Teams Rooms Managed (TRM) consente alle organizzazioni partner di gestire più clienti in un'unica posizione, con le proprie credenziali di dominio. Gli utenti partner vedranno solo le chat room dei clienti a cui sono assegnate. È possibile applicare ruoli personalizzati per ogni cliente nel tenant MTM, offrendo alle organizzazioni partner un controllo granulare delle autorizzazioni per le risorse del cliente. 
+La gestione multi-tenant (MTM) nel servizio Teams Rooms Pro Management consente alle organizzazioni partner di gestire più clienti in un'unica posizione, con le proprie credenziali di dominio. Gli utenti partner vedranno solo le chat room dei clienti a cui sono assegnate. È possibile applicare ruoli personalizzati per ogni cliente nel portale MTM, offrendo alle organizzazioni partner un controllo granulare delle autorizzazioni per le risorse del cliente. 
 
 Il portale MTM è accessibile tramite questo [collegamento](https://partner.rooms.microsoft.com/).
 
 > [!Note] 
-> Le organizzazioni partner non possono gestire le proprie chat room tramite il portale MTM. Queste chat room possono essere gestite nel [portale TRM](https://portal.rooms.microsoft.com/). 
+> Le organizzazioni partner non possono gestire le proprie chat room tramite il portale MTM. Queste chat room possono essere gestite nel [portale di gestione di Pro](https://portal.rooms.microsoft.com/). 
 
 ## <a name="pre-requisites-for-managing-your-customers-through-the-mtm-experience"></a>Prerequisiti per la gestione dei clienti tramite l'esperienza MTM
 
-Per accedere al portale MTM, la tua organizzazione deve essere integrata come Elite Partner per il servizio TRM. Per diventare un contatto partner Elite askelite@microsoft.com.
+Per accedere al portale MTM, la tua organizzazione deve essere integrata come Elite Partner per MTR Pro Management. Per diventare un contatto partner Elite askelite@microsoft.com.
 
 ## <a name="on-boarding-customers"></a>Clienti on-boarding
 
-Per gestire i clienti tramite il portale TRM-MTM, è necessario stabilire una relazione tra il tenant dell'organizzazione partner e il cliente tramite un invito inviato dal cliente. 
+Per gestire i clienti tramite il portale Pro Management-MTM, è necessario stabilire una relazione tra il tenant dell'organizzazione partner e il cliente tramite un invito inviato dal cliente. 
 
 ## <a name="tenant-managers"></a>Responsabili tenant
 
-Questo ruolo predefinito è configurabile solo nel portale TRM-MTM. Questo ruolo consente di assegnare un gruppo di utenti che accettano inviti, ma non sono coinvolti nella gestione delle sale per i clienti. È consigliabile configurare il ruolo. In caso contrario, solo gli utenti con il ruolo di amministratore del servizio gestito nel tenant potranno accettare gli inviti.
+Questo ruolo predefinito è configurabile solo nel portale Pro Management-MTM. Questo ruolo consente di assegnare un gruppo di utenti che accettano inviti, ma non sono coinvolti nella gestione delle sale per i clienti. È consigliabile configurare il ruolo. In caso contrario, solo gli utenti con il ruolo di amministratore del servizio gestito nel tenant potranno accettare gli inviti.
 
 **Per configurare i responsabili del tenant**
  
-1.  Accedere al portale TRM-MTM come amministratore globale o amministratore del servizio gestito.
+1.  Accedere al portale Pro Management-MTM come amministratore globale o amministratore del servizio gestito.
 2.  Passare a Tenant manager.
 3.  Selezionare **Aggiungi responsabili tenant**.
 4.  Nel riquadro dei dettagli cercare gli utenti o i gruppi di sicurezza.
@@ -57,7 +57,7 @@ Questo ruolo predefinito è configurabile solo nel portale TRM-MTM. Questo ruolo
 
 ### <a name="invitation-from-the-customer"></a>Invito del cliente
 
-Il partner deve fornire il nome di dominio ai clienti. Solo i ruoli amministratore globale, amministratore del servizio gestito e responsabile tenant possono visualizzare e accettare l'invito quando accedono al portale TRM-MTM. 
+Il partner deve fornire il nome di dominio ai clienti. Solo i ruoli amministratore globale, amministratore del servizio gestito e responsabile del tenant possono visualizzare e accettare l'invito quando accedono al portale Pro Management-MTM. 
 
 > [!Note]
 > Anche se questi ruoli possono visualizzare inviti e metadati del tenant di alto livello, i dati del cliente non saranno visualizzati finché non si viene assegnati un ruolo al cliente.
@@ -66,7 +66,7 @@ I dettagli sull'invito del cliente sono descritti in [Gestione multi-tenant per 
 
 **Per accettare un invito in sospeso**
 
-1. Accedere al portale TRM-MTM come amministratore globale, amministratore del servizio gestito o gestore tenant.
+1. Accedere al portale Pro Management-MTM come amministratore globale, amministratore del servizio gestito o gestore tenant.
 1. Vai a **Tenant**.
 1. Selezionare l'invito con lo stato "In sospeso".
 1. Rivedere i dettagli dell'invito.
@@ -94,7 +94,7 @@ Per rimuovere un cliente dall'elenco **Tenant** , è necessario rimuoverlo.
 
 **Per rimuovere un cliente** 
 
-1. Accedi al portale TRM-MTM come amministratore primario per il cliente che desideri rimuovere.
+1. Accedi al portale Pro Management-MTM come amministratore primario per il cliente che desideri rimuovere.
 1. Vai a **Tenant**.
 1. Seleziona il cliente che desideri rimuovere.
 1. Nel riquadro dei dettagli del cliente selezionare **Rimuovi cliente**.
@@ -104,7 +104,7 @@ Per rimuovere un cliente dall'elenco **Tenant** , è necessario rimuoverlo.
 
 I ruoli dei partner consentono di delegare le responsabilità a personale aggiuntivo. Il concetto di questi ruoli è lo stesso descritto nel [controllo dell'accesso basato sui](microsoft-teams-rooms-premium-rbac.md) ruoli, ma nel contesto di ogni cliente. Inoltre, è importante notare che i ruoli del partner sono distinti dai ruoli del cliente. I ruoli partner possono essere eliminati dal cliente. 
 
-Il ruolo **Amministratore principale** è l'unico ruolo predefinito per ogni cliente integrato e ha quasi tutte le autorizzazioni, nel contesto del cliente, per il servizio TRM (vedere tabella 1). Le autorizzazioni del ruolo Partner** si estendono solo fino alle chat room designate dal cliente. Ad esempio, se il cliente è un'organizzazione globale e assegna al Partner la gestione di Tutte le chat room negli Stati Uniti, l'amministratore principale sarà in grado solo di gestire e delegare le autorizzazioni per tali chat room. Il Partner non ha visibilità sulle altre chat room che il Cliente può avere in altri paesi. 
+Il ruolo **Amministratore principale** è l'unico ruolo predefinito per ogni cliente integrato e ha quasi tutte le autorizzazioni, nel contesto del cliente, per il servizio di gestione pro (vedere tabella 1). Le autorizzazioni del ruolo Partner** si estendono solo fino alle chat room designate dal cliente. Ad esempio, se il cliente è un'organizzazione globale e assegna al Partner la gestione di Tutte le chat room negli Stati Uniti, l'amministratore principale sarà in grado solo di gestire e delegare le autorizzazioni per tali chat room. Il Partner non ha visibilità sulle altre chat room che il Cliente può avere in altri paesi. 
 
 **Per gestire gli utenti con il ruolo **partner** per un cliente**
 
@@ -155,24 +155,24 @@ I partner possono creare ruoli personalizzati in base alle proprie esigenze oper
 ||Modificare|&#10004;|||&#10004;|
 
 > [!Note]
-> Un utente assegnato come amministratore principale per il cliente A ha autorizzazioni complete nel servizio TRM solo per quel cliente. Le autorizzazioni dell'utente nel cliente A non hanno alcuna influenza sugli altri clienti.
+> Un utente assegnato come amministratore principale per il cliente A ha autorizzazioni complete nel servizio Gestione pro solo per quel cliente. Le autorizzazioni dell'utente nel cliente A non hanno alcuna influenza sugli altri clienti.
 
 ## <a name="security"></a>Sicurezza
 
 I clienti finali mantengono il controllo sull'accesso ai propri dati e possono rimuovere completamente un partner o ruoli specifici in qualsiasi momento.
 
-Con la funzionalità di accesso delegato, un partner non ottiene altri privilegi al di fuori del portale del servizio TRM. Ad esempio, usando questa funzionalità per invitare un partner a gestire sale nel servizio TRM, non vengono concesse autorizzazioni ad AAD o al Centro Amministrazione Teams o a qualsiasi altro prodotto Microsoft. Inoltre, i partner non hanno accesso alla visualizzazione o alla modifica di chat room non definite nell'ambito dell'invito.
+Con la funzionalità di accesso delegato, un partner non ottiene altri privilegi all'esterno del portale di gestione pro. Ad esempio, utilizzando questa funzionalità per invitare un partner a gestire le sale nel portale di gestione pro, non vengono concesse autorizzazioni ad AAD o al Centro Amministrazione Teams o a qualsiasi altro prodotto Microsoft. Inoltre, i partner non hanno accesso alla visualizzazione o alla modifica di chat room non definite nell'ambito dell'invito.
 
-Una volta stabilita la relazione partner-cliente, come descritto in "Clienti onboarding" di questo documento, il partner può visualizzare i dati della sala nel servizio TRM. Sono inclusi i dati presenti nel servizio TRM ma derivati da altri prodotti Microsoft. Ad esempio, i rapporti sulla qualità delle chiamate nel portale TRM derivano dai dati sulla qualità delle chiamate di Teams.
+Una volta stabilita la relazione partner-cliente, come descritto in "Clienti onboarding" di questo documento, il partner può visualizzare i dati della sala nel portale Pro Management. Sono inclusi i dati presenti nel portale di gestione pro ma derivati da altri prodotti Microsoft. Ad esempio, i report sulla qualità delle chiamate nel portale di gestione pro derivano dai dati sulla qualità delle chiamate di Teams.
 
 I dati si trovano nel tenant del cliente e non vengono copiati nel tenant del partner. 
 
 Il portale MTM utilizza l'autenticazione AAD per convalidare le credenziali di accesso del partner. È importante notare che al momento i criteri di autenticazione del cliente non verranno applicati al partner. Ad esempio, se il cliente ha un criterio di autenticazione a più fattori, non si traduce nel partner.
 
-Il cliente può estrarre i log di controllo per il servizio TRM, che include l'attività dei partner. Vedere [Registrazione di controllo nel servizio gestito di Teams Rooms](multi-tenant-auditing.md).
+Il cliente può estrarre i log di controllo per il portale di gestione di Pro, che include l'attività dei partner. Vedere [Registrazione di controllo nel servizio gestito di Teams Rooms](multi-tenant-auditing.md).
 
 > [!Note]
-> Il controllo di AAD e di O365 non acquisisce i log dal portale TRM.
+> Il controllo di AAD e di O365 non acquisisce i log dal portale di gestione di Pro.
 
 ## <a name="navigating-the-mtm-portal"></a>Esplorazione del portale MTM
 

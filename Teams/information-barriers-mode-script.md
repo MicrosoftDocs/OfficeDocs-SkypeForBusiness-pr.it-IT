@@ -1,5 +1,6 @@
 ---
-title: Modificare le modalità di protezione delle informazioni con uno script di PowerShell
+title: Modificare le modalità di barriere alle informazioni con uno script di PowerShell
+description: Usare questo script di PowerShell dopo aver distribuito le barriere alle informazioni per aggiornare la modalità da aperta a implicita per tutti i gruppi nel tenant.
 author: robmazz
 ms.author: robmazz
 manager: laurawi
@@ -7,31 +8,32 @@ ms.topic: article
 ms.reviewer: smahadevan
 ms.service: msteams
 audience: admin
-description: Usare questo script di PowerShell dopo aver distribuito le barriere di informazioni per aggiornare la modalità da aperta a implicita per tutti i gruppi nel tenant.
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
+- tier2
+- purview-compliance
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3030f40ed61eb2e0e86967132d9575de8334a6c6
-ms.sourcegitcommit: a969502c0a5237caf041d7726f4f1edefdd75b44
+ms.openlocfilehash: 63403c5e5ee495a7a110aa9239868fd6a9bb5803
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61767657"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68047126"
 ---
-# <a name="change-information-barriers-modes-with-a-powershell-script"></a>Modificare le modalità di protezione delle informazioni con uno script di PowerShell
+# <a name="change-information-barriers-modes-with-a-powershell-script"></a>Modificare le modalità di barriere alle informazioni con uno script di PowerShell
 
-Usare questo script di PowerShell per aggiornare la modalità information barriers (IB) per tutti i Teams connessi al tenant. Dopo aver distribuito le barriere alle informazioni, sarà necessario aggiornare la modalità per questi gruppi. Ai gruppi di cui è stato eseguito il provisioning prima di abilitare IB viene assegnata la *modalità Apri.* In *modalità* di apertura non sono presenti criteri IB applicabili. Dopo aver abilitato IB, *Implicito* diventa la modalità predefinita per tutti i nuovi gruppi creati. Tuttavia, i gruppi esistenti mantengono comunque *la configurazione in* modalità aperta. Eseguire questo script per impostare questi gruppi esistenti in *modalità implicita.*
+Usare questo script di PowerShell per aggiornare la modalità IB (Information Barriers) per tutti i gruppi connessi a Teams nel tenant. Sarà necessario aggiornare la modalità per questi gruppi dopo aver distribuito le barriere di informazioni. Ai gruppi sottoposti a provisioning prima di abilitare IB viene assegnata la modalità *Open* . In modalità *Aperta* non sono previsti criteri IB applicabili. Dopo aver abilitato IB, *Implicit* diventa la modalità predefinita per tutti i nuovi gruppi creati. Tuttavia, i gruppi esistenti mantengono comunque la configurazione in modalità *Aperta* . Eseguire questo script per modificare questi gruppi esistenti in modalità *implicita* .
 
-In questo script si userà il cmdlet [Get-UnifiedGroup,](/powershell/module/exchange/Set-UnifiedGroup) che si trova nel modulo Exchange Online PowerShell per aggiornare la modalità. Per altre informazioni sulla gestione dei Teams con PowerShell, vedere panoramica Teams [PowerShell.](./teams-powershell-overview.md)
+In questo script verrà usato il cmdlet [Get-UnifiedGroup](/powershell/module/exchange/Set-UnifiedGroup), che si trova nel modulo Exchange Online PowerShell per aggiornare la modalità. Per altre informazioni sulla gestione di Teams con PowerShell, vedere [Panoramica di Teams PowerShell](./teams-powershell-overview.md).
 
 ## <a name="sample-script"></a>Script di esempio
 
-Per eseguire questo script, è necessario usare un account aziendale o dell'istituto di istruzione a cui è stato assegnato il ruolo di amministratore globale per il tenant.
+Per eseguire questo script, è necessario usare un account aziendale o dell'istituto di istruzione a cui è stato assegnato il ruolo di amministratore globale del tenant.
 
 ```powershell
 <#

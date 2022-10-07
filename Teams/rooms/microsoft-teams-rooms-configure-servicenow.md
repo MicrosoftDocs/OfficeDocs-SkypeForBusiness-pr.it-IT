@@ -1,39 +1,39 @@
 ---
 title: Configurare ServiceNow per Teams Rooms
-author: donnah007
-ms.author: v-donnahill
+author: altsou
+ms.author: altsou
 manager: serdars
-ms.reviewer: ronmart
+ms.reviewer: altsou
 ms.topic: article
 ms.service: msteams
 audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-description: Informazioni sulla configurazione di ServiceNow nel portale di Teams Rooms Premium
+description: Informazioni sulla configurazione di ServiceNow nel portale di gestione di Teams Rooms Pro
 f1keywords: ''
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_MTRP
-ms.openlocfilehash: 920d31a350914115623a83f018815d8bebe94f6a
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: e437a27b6c1ba04b76cd71aa70c9913acf78c45d
+ms.sourcegitcommit: 64c01699022b47fdfec8dc6e2ca279e57eae3baa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67272381"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243727"
 ---
 # <a name="configure-servicenow-for-teams-rooms"></a>Configurare ServiceNow per Teams Rooms
 
-Questo articolo descrive i prerequisiti e i passaggi per configurare l'ambiente ServiceNow nel portale di Teams Rooms Premium.
+Questo articolo descrive i prerequisiti e i passaggi per configurare l'ambiente ServiceNow nel portale di Teams Rooms Pro Management.
 
-## <a name="watch-microsoft-teams-rooms--managed-services-service-now-integration"></a>Guarda: Microsoft Teams Rooms — Integrazione del servizio servizi gestiti ora
+## <a name="watch-microsoft-teams-rooms-pro-management--service-now-integration"></a>Guarda: Microsoft Teams Rooms Pro Management - Integrazione di Service Now
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ZK4B]
 
 
 ### <a name="teams-rooms-prerequisites"></a>Teams Rooms prerequisiti
 
-- È necessario avere un ruolo di amministratore del servizio assegnato. Per altre informazioni, vedere [Controllo dell'accesso basato sui ruoli con il Microsoft Teams Rooms Managed Services](microsoft-teams-rooms-premium-rbac.md).
+- È necessario avere un ruolo di amministratore del servizio assegnato. Per altre informazioni, vedere [Controllo dell'accesso basato sui ruoli con Microsoft Teams Rooms Pro Management](microsoft-teams-rooms-premium-rbac.md).
 
 ### <a name="servicenow-prerequisites"></a>Prerequisiti di ServiceNow
 
@@ -44,10 +44,10 @@ Questo articolo descrive i prerequisiti e i passaggi per configurare l'ambiente 
 
 ## <a name="configure-your-environment"></a>Configurare l'ambiente
 
-La configurazione dell'ambiente è altamente personalizzabile e dipenderà dalle esigenze dell'organizzazione. I passaggi seguenti illustrano come copiare la configurazione esistente in ServiceNow nel portale di Teams Rooms Premium.
+La configurazione dell'ambiente è altamente personalizzabile e dipenderà dalle esigenze dell'organizzazione. I passaggi seguenti illustrano come copiare la configurazione esistente in ServiceNow nel portale di Teams Rooms Pro Management.
 
-1. Aprire l'istanza di ServiceNow da copiare. Quando si completa il modulo di configurazione nel portale di Teams Rooms Premium, sarà necessario farvi riferimento.
-2. In una nuova scheda del browser vai al [portale di Teams Rooms Premium](https://portal.rooms.microsoft.com/) e vai a **Impostazioni**. Quindi, seleziona **ServiceNow** nel menu di spostamento a sinistra per aprire il modulo di configurazione.
+1. Aprire l'istanza di ServiceNow da copiare. Quando si completa il modulo di configurazione nel portale di Teams Rooms Pro Management, è necessario fare riferimento a questo argomento.
+2. In una nuova scheda del browser passare al [portale di gestione di Teams Rooms Pro](https://portal.rooms.microsoft.com/) e passare a **Impostazioni**. Quindi, seleziona **ServiceNow** nel menu di spostamento a sinistra per aprire il modulo di configurazione.
 3. Selezionare un metodo di autenticazione per accedere e immettere l'URI API e l'host istanza ServiceNow.
 4. Tutti gli elementi obbligatori nella colonna ServiceNow Field della sezione Mapping campi devono essere precompilati. La tabella seguente contiene ogni campo ServiceNow e il relativo campo Microsoft Teams Rooms corrispondente. Completare l'azione per ogni riga della sezione Mapping campi. Per le definizioni di ogni campo ServiceNow, vedere [ServiceNow field definitions](#servicenow-field-definitions).
 
@@ -76,16 +76,16 @@ Una volta superato il test, seleziona **Invia** per salvare le modifiche. Quando
 
 ## <a name="servicenow-field-definitions"></a>Definizioni dei campi ServiceNow
 
-- **short_description**: il campo descrizione breve in ServiceNow è un breve valore alfanumerico di 160 caratteri che fornisce un riepilogo dell'incidente. La descrizione breve equivale a una descrizione dell'incidente nel portale di Teams Rooms Premium.
+- **short_description**: il campo descrizione breve in ServiceNow è un breve valore alfanumerico di 160 caratteri che fornisce un riepilogo dell'incidente. La descrizione breve equivale a una descrizione degli incidenti nel portale di Teams Rooms Pro Management.
 
-- **descrizione**: il campo della descrizione in ServiceNow è il primo valore nella cronologia delle conversazioni di un evento imprevisto ServiceNow. La descrizione equivale a Primo messaggio nel portale di Teams Rooms Premium.
+- **descrizione**: il campo della descrizione in ServiceNow è il primo valore nella cronologia delle conversazioni di un evento imprevisto ServiceNow. La descrizione equivale a Primo messaggio nel portale di Teams Rooms Pro Management.
 
-- **assignment_group**: il campo del gruppo di assegnazioni in ServiceNow viene usato per organizzare gli eventi imprevisti. I gruppi di assegnazioni equivalgono ai gruppi di sale nel portale di Teams Rooms Premium. Per impostazione predefinita, esiste un gruppo di chat room e ne è possibile aggiungerne altri. È possibile decidere quanti gruppi sono presenti e come raggruppare gli eventi imprevisti. Ad esempio, è possibile scegliere di organizzare gli eventi imprevisti in base alla posizione.
+- **assignment_group**: il campo del gruppo di assegnazioni in ServiceNow viene usato per organizzare gli eventi imprevisti. I gruppi di assegnazioni equivalgono ai gruppi di sale nel portale di gestione di Teams Rooms Pro. Per impostazione predefinita, esiste un gruppo di chat room e ne è possibile aggiungerne altri. È possibile decidere quanti gruppi sono presenti e come raggruppare gli eventi imprevisti. Ad esempio, è possibile scegliere di organizzare gli eventi imprevisti in base alla posizione.
 
-- **gravità**: il campo di gravità in ServiceNow viene usato per organizzare gli incidenti in base alla priorità. I valori che designano la priorità sono personalizzabili. La gravità è equivalente al campo Anello nel portale di Teams Rooms Premium. Per personalizzare gli anelli nel portale di Teams Rooms Premium, vai a **Aggiornamenti** nel menu di spostamento a sinistra. Passa quindi alla scheda **Anelli** e seleziona **Aggiungi anello**.
+- **gravità**: il campo di gravità in ServiceNow viene usato per organizzare gli incidenti in base alla priorità. I valori che designano la priorità sono personalizzabili. La gravità è equivalente al campo Anello nel portale di Teams Rooms Pro Management. Per personalizzare gli anelli nel portale di gestione di Teams Rooms Pro, passare a **Aggiornamenti** nel menu di spostamento a sinistra. Passa quindi alla scheda **Anelli** e seleziona **Aggiungi anello**.
 
-- **commenti**: Commenti è un campo facoltativo in ServiceNow usato per includere campi obbligatori personalizzati dell'istanza ServiceNow nella configurazione del portale Teams Rooms Premium. L'equivalente dei commenti è un valore personalizzato nel portale di Teams Rooms Premium.
+- **commenti**: Commenti è un campo facoltativo in ServiceNow usato per includere campi obbligatori personalizzati dell'istanza ServiceNow nella configurazione del portale di gestione di Teams Rooms Pro. L'equivalente dei commenti è un valore personalizzato nel portale di Teams Rooms Pro Management.
 
-- **stato (risolto)**: il campo stato (risolto) in ServiceNow viene usato per indicare come è stato risolto un evento imprevisto ed è necessario per chiudere un evento imprevisto. Il valore dello stato (risolto) è personalizzabile. L'equivalente di stato (risolto) è un valore personalizzato nel portale di Teams Rooms Premium.
+- **stato (risolto)**: il campo stato (risolto) in ServiceNow viene usato per indicare come è stato risolto un evento imprevisto ed è necessario per chiudere un evento imprevisto. Il valore dello stato (risolto) è personalizzabile. L'equivalente di stato (risolto) è un valore personalizzato nel portale di Teams Rooms Pro Management.
 
-- **close_code**: una volta risolto completamente, è necessario assegnare un codice di chiusura a un evento imprevisto. Questo valore è personalizzabile in ServiceNow. L'equivalente del codice di chiusura è un valore personalizzato nel portale di Teams Rooms Premium.
+- **close_code**: una volta risolto completamente, è necessario assegnare un codice di chiusura a un evento imprevisto. Questo valore è personalizzabile in ServiceNow. L'equivalente del codice di chiusura è un valore personalizzato nel portale di Teams Rooms Pro Management.

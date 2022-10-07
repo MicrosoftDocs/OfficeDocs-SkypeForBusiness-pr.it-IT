@@ -1,6 +1,6 @@
 ---
 title: Gestire le impostazioni di Cloud Voicemail
-author: crowe
+author: CarolynRowe
 ms.author: crowe
 manager: serdars
 ms.reviewer: jenstr
@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Gestire le impostazioni della segreteria telefonica per gli utenti.
-ms.openlocfilehash: 7aa2fdf84f38cb9977b3a4156b28a96b98bbd9d7
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 96ac5e13360463150a5ff21bc8042b701a4f9717
+ms.sourcegitcommit: 401cee68d4f6f9470d614dda12b9cb023f382ff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269601"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67999491"
 ---
 # <a name="manage-cloud-voicemail-settings-for-users"></a>Gestire le impostazioni di Cloud Voicemail per gli utenti
 
@@ -43,12 +43,12 @@ Le impostazioni predefinite per Cloud Voicemail sono:
 - Il messaggio di saluto Fuori sede, quando il calendario di Outlook viene visualizzato fuori sede, è disabilitato.
 - La condivisione dei dati della segreteria telefonica e della trascrizione con il servizio per la formazione e il miglioramento delle finalità di accuratezza è disabilitata.
 - La regola di risposta alle chiamate è impostata su Segreteria telefonica normale.
-- La sovrascrittura predefinita del messaggio di saluto non è impostata.
-- La sovrascrittura predefinita del messaggio di saluto Fuori sede non è impostata.
-- L'obiettivo di trasferimento non è impostato.
+- Il messaggio di saluto predefinito sovrascrittura non è impostato.
+- Il messaggio di saluto fuori sede predefinito non viene sovrascritto.
+- La destinazione di trasferimento non è impostata.
 
 
-Per gestire Cloud Voicemail funzionalità per gli utenti, è possibile usare l'interfaccia di amministrazione di Teams o PowerShell. Si noti che gli utenti finali possono anche configurare queste impostazioni nel client di Teams accedendo a **Impostazioni -chiamate > -> Configura segreteria telefonica.**
+Per gestire Cloud Voicemail funzionalità per gli utenti, è possibile usare l'interfaccia di amministrazione di Teams o PowerShell. Gli utenti finali possono anche configurare queste impostazioni nel client di Teams accedendo a **Impostazioni -chiamate > -> Configura segreteria telefonica.**
 
 ## <a name="use-teams-admin-center"></a>Usare l'interfaccia di amministrazione di Teams
 
@@ -75,13 +75,13 @@ Nell'interfaccia di amministrazione di Teams:
 
 ## <a name="voicemail-settings"></a>Impostazioni della segreteria telefonica
 
-- **Casella vocale abilitata**: questa impostazione controlla se Cloud Voicemail è abilitato per l'utente. Se le impostazioni sono false, Cloud Voicemail servizio non sarà disponibile per l'utente e non registrerà un messaggio vocale per l'utente.
+- **Casella vocale abilitata**: questa impostazione controlla se Cloud Voicemail è abilitato per l'utente. Se l'impostazione è false, Cloud Voicemail servizio non sarà disponibile per l'utente e non registrerà un messaggio vocale per l'utente.
 
 - **Lingua prompt**: questa impostazione specifica la lingua usata per i prompt nella Cloud Voicemail. Per altre informazioni, vedere [Cambiare la lingua predefinita per i saluti e i messaggi di posta elettronica](change-the-default-language-for-greetings-and-emails.md).
 
 - **Impostazioni del messaggio** di saluto: Cloud Voicemail è in grado di riprodurre un messaggio di saluto specifico per quando l'utente è in ufficio e per quando l'utente è fuori sede. Entrambi i saluti possono essere registrati dall'utente o un saluto di sintesi vocale può essere utilizzato.
 
-  - **Sovrascrivi messaggio di saluto predefinito** - specifica il messaggio di saluto di sintesi vocale che verrà riprodotto nel caso in cui l'utente non abbia registrato un messaggio di saluto.
+  - **Sovrascrivi messaggio di saluto predefinito** : specifica il messaggio di saluto di sintesi vocale che verrà riprodotto nel caso in cui l'utente non abbia registrato un messaggio di saluto.
 
   - **Oof Greeting Enabled** - specifica se il messaggio di saluto fuori sede viene riprodotto nello scenario di deposito della segreteria telefonica, indipendentemente dalle impostazioni di Outlook.
 
@@ -89,7 +89,7 @@ Nell'interfaccia di amministrazione di Teams:
 
   - **Oof Greeting Follow Calendar Abilitato** - specifica se riprodurre il messaggio di saluto fuori sede nello scenario di deposito della segreteria telefonica quando l'utente imposta fuori sede nel calendario.
 
-  - **Sovrascrittura predefinita del messaggio** di saluto : specifica il messaggio di saluto di sintesi vocale che verrà riprodotto nel caso in cui l'utente sia fuori sede e non abbia registrato un messaggio di saluto fuori sede.
+  - **Sovrascrittura predefinita del messaggio** di saluto: specifica il messaggio di saluto di sintesi vocale che verrà riprodotto nel caso in cui l'utente sia fuori sede e non abbia registrato un messaggio di saluto fuori sede.
 
 - **Regola di risposta alle** chiamate: questa impostazione specifica la regola di risposta alle chiamate. La regola può essere:
   - Il servizio rifiuta la chiamata senza messaggio.

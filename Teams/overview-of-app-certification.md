@@ -8,6 +8,7 @@ manager: prkosh
 audience: admin
 ms.subservice: teams-apps
 ms.service: msteams
+ms.date: 09/22/2022
 ms.collection:
 - M365-collaboration
 f1.keywords:
@@ -17,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 713f30d148517f080c1799f71461d52e69d855ac
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: 992b557e72aaa855008f1bfec8073d800b65badf
+ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837656"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68377544"
 ---
 # <a name="microsoft-365-app-compliance-program-for-security-compliance-and-privacy-of-third-party-apps"></a>Il programma di conformità dell’app Microsoft 365 per la sicurezza, la conformità e la privacy delle app di terze parti
 
@@ -56,7 +57,7 @@ Gli amministratori possono controllare rapidamente le app con attestazione dell�
 
   :::image type="content" source="media/attested-app-tac1.png" alt-text="Nell’interfaccia di amministrazione di Teams, l'icona dell’autore attestato viene visualizzata in tutte le app con attestazione.":::
 
-* Nell’interfaccia di amministrazione di Teams, quando [si concedono le autorizzazioni all'app](app-permissions-admin-center.md), un segno di spunta blu davanti al nome dell'app indica che si tratta di un'app attestata dall'editore o di un'app certificata Microsoft 365.
+* Nell'interfaccia di amministrazione di Teams, prima di [concedere le autorizzazioni per l'app](app-permissions-admin-center.md), un segno di spunta blu davanti al nome dell'app indica che si tratta di un'app con attestazione dell'editore. Tutte le app di Microsoft 365 passano anche attraverso l'attestazione dell'editore, quindi viene visualizzato un segno di spunta blu anche per le app di Microsoft 365.
 
    :::image type="content" source="media/attested-app-tac2.png" alt-text="Nell’interfaccia di amministrazione di Teams, nella finestra di dialogo per concedere le autorizzazioni, gli amministratori possono controllare il segno di spunta blu per essere certi che l'app abbia un autore attestato.":::
 
@@ -89,7 +90,7 @@ Gli amministratori possono verificare rapidamente la presenza delle app certific
 
   :::image type="content" source="media/m365cert-app-details-banner.png" alt-text="Visualizzare le informazioni sulla certificazione Microsoft 365 nel banner dell'app quando si gestisce un'app specifica nell’interfaccia di amministrazione di Teams":::
 
-* Nell’interfaccia di amministrazione di Teams, quando [si concedono le autorizzazioni all'app](app-permissions-admin-center.md), un segno di spunta blu davanti al nome dell'app indica che si tratta di un'app attestata dall'editore o di un'app certificata Microsoft 365.
+* Nell'interfaccia di amministrazione di Teams, prima di [concedere le autorizzazioni per l'app](app-permissions-admin-center.md), un segno di spunta blu davanti al nome dell'app indica che si tratta di un'app con attestazione dell'editore. Tutte le app di Microsoft 365 passano anche attraverso l'attestazione dell'editore, quindi viene visualizzato un segno di spunta blu anche per le app di Microsoft 365.
 
    :::image type="content" source="media/attested-app-tac2.png" alt-text="Nell'interfaccia di amministrazione di Teams, nella finestra di dialogo per concedere le autorizzazioni, gli amministratori possono controllare il segno di spunta blu per essere certi che l'app sia certificata Microsoft 365.":::
 

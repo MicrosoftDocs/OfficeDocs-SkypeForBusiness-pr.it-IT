@@ -17,15 +17,16 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 66ff8f642e3e006221507953a2fff1740237aea0
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: 3dc11a1a7bb841891906755a74d07585a55ec912
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67397107"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68047056"
 ---
 # <a name="manage-the-updates-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Aggiornamenti per l'organizzazione in Microsoft Teams
 
@@ -55,7 +56,7 @@ Presso le strutture di produzione del negozio, i dipendenti eseguono controlli d
 
 Nel frattempo, un team di lavoratori remoti sta aggiornando il sito Web dello store. Sono distribuiti in fusi orari, quindi le riunioni di stand-up giornaliere non sono comodi. Ognuno dei membri del team invia al responsabile del team report giornalieri Aggiornamenti sullo stato di avanzamento.
 
-[Scarica il Aggiornamenti lookbook](https://go.microsoft.com/fwlink/?linkid=2197649&clcid=0x409) per vedere altri esempi di cosa puoi fare con Aggiornamenti.
+[Scarica il Aggiornamenti lookbook](https://go.microsoft.com/fwlink/?linkid=2197649) per vedere altri esempi di cosa puoi fare con Aggiornamenti.
 
 ## <a name="required-permissions-and-licenses"></a>Autorizzazioni e licenze richieste
 

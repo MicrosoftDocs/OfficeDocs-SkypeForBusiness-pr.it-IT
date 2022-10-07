@@ -9,6 +9,8 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 ms.collection:
+- tier2
+- purview-compliance
 - M365-collaboration
 search.appverid: MET150
 f1.keywords:
@@ -16,16 +18,16 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: information-barriers
-ms.openlocfilehash: 6ee178252c00ec4c73dfaa036f17377cef401d30
-ms.sourcegitcommit: 1d990582e2deb5f55ba9adada3e17377f792a141
+ms.openlocfilehash: 5b214a4c60df7b50f508fec7985c6f38b65985e6
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64922837"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68047216"
 ---
 # <a name="information-barriers-and-shared-channels-preview"></a>Barriere informative e canali condivisi (anteprima)
 
-[I canali condivisi](shared-channels.md) in Microsoft Teams creare spazi di collaborazione in cui invitare persone che non fanno parte del team. [Microsoft Purview Information Barriers](/microsoft-365/compliance/information-barriers) sono criteri che possono essere implementati per limitare e impedire a utenti e gruppi di comunicare tra loro all'interno e all'esterno dell'organizzazione.
+[I canali condivisi](shared-channels.md) in Microsoft Teams creano spazi di collaborazione in cui è possibile invitare persone che non fanno parte del team. [Microsoft Purview Information Barriers](/microsoft-365/compliance/information-barriers) sono criteri che possono essere implementati per limitare e impedire a utenti e gruppi di comunicare tra loro all'interno e all'esterno dell'organizzazione.
 
 I canali condivisi sono abilitati per impostazione predefinita in Teams. È possibile scegliere se le persone possono creare canali condivisi, se possono condividerli con persone esterne all'organizzazione e se possono partecipare a canali condivisi esternicreando criteri di canale. Quando nell'organizzazione vengono configurati criteri di barriere alle informazioni, vengono eseguiti controlli durante la configurazione dei canali condivisi per verificare che nessuno dei membri del canale esistenti e dei nuovi utenti aggiunti al canale condiviso violi le condizioni dei criteri sulle barriere alle informazioni.
 

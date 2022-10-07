@@ -3,6 +3,23 @@
 
 
 
+## <a name="week-of-september-19-2022"></a>Settimana del 19 settembre 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 9/19/2022 | [Sistema telefonico Microsoft 365 Teams con documentazione relativa al piano per chiamate # < 60 caratteri](/MicrosoftTeams/business-voice/index) | Volta |
+| 9/19/2022 | [Microsoft Teams Chalk Talks](/MicrosoftTeams/chalk-talks-landing-page) | Volta |
+| 9/19/2022 | [Documentazione per amministratori di Microsoft Teams # < 60 caratteri](/MicrosoftTeams/index) | Volta |
+| 9/19/2022 | [Formazione per utenti finali per Microsoft Teams # < 60 caratteri](/MicrosoftTeams/instructor-led-training-teams-landing-page) | Volta |
+| 9/19/2022 | [formazione Amministrazione per Microsoft Teams](/MicrosoftTeams/teams-admin-training-landing-page) | Volta |
+| 9/19/2022 | [Pianificare l'aggiornamento da Skype for Business a Microsoft Teams](/MicrosoftTeams/upgrade-skype-teams) | Volta |
+| 9/20/2022 | [Usare la personalizzazione delle app per personalizzare le app in base alle esigenze dell'organizzazione](/MicrosoftTeams/customize-apps) | Volta |
+| 9/20/2022 | [Usare i modelli di team generali nell'interfaccia di amministrazione](/MicrosoftTeams/general-teams-templates-in-the-admin-console) | Volta |
+| 9/20/2022 | [Usare i modelli di team di vendita al dettaglio](/MicrosoftTeams/get-started-with-retail-teams-templates) | Volta |
+| 9/20/2022 | [Introduzione ai modelli di team nell'interfaccia Teams di amministrazione](/MicrosoftTeams/get-started-with-teams-templates-in-the-admin-console) | Volta |
+
+
 ## <a name="week-of-september-12-2022"></a>Settimana del 12 settembre 2022
 
 
@@ -112,42 +129,3 @@
 | 8/26/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue-smb) | Volta |
 | 8/26/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
 | 8/26/2022 | [Pianificare gli operatori automatici di Teams e le code di chiamata](/MicrosoftTeams/plan-auto-attendant-call-queue) | Volta |
-
-
-## <a name="week-of-august-15-2022"></a>Settimana del 15 agosto 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 8/15/2022 | [Session Border Controller certificati per l'instradamento diretto](/MicrosoftTeams/direct-routing-border-controllers) | Volta |
-| 8/16/2022 | [Piani per chiamate per Microsoft Teams](/MicrosoftTeams/calling-plans-for-office-365) | Volta |
-| 8/17/2022 | [Personalizzare l'app store in Teams](/MicrosoftTeams/customize-your-app-store) | Volta |
-| 8/17/2022 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | Volta |
-| 8/17/2022 | [Consenso specifico delle risorse in Microsoft Teams](/MicrosoftTeams/resource-specific-consent) | Volta |
-| 8/17/2022 | [Gestire i criteri di autorizzazione app in Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies) | Volta |
-| 8/17/2022 | [Gestire le impostazioni e i criteri delle app personalizzate](/MicrosoftTeams/teams-custom-app-policies-and-settings) | Volta |
-| 8/17/2022 | [Caricare le app personalizzate nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/upload-custom-apps) | Volta |
-| 8/18/2022 | [Visualizzare le autorizzazioni per le app e concedere il consenso di amministratore nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/app-permissions-admin-center) | Volta |
-| 8/18/2022 | Novità - Operator Connect | Rimosso |
-| 8/18/2022 | [Caricare le app personalizzate nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/upload-custom-apps) | Volta |
-| 8/19/2022 | [Gestire i team nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-teams-in-modern-portal) | Volta |
-| 8/19/2022 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | Volta |
-| 8/19/2022 | [Esperienze connesse facoltative di Teams](/MicrosoftTeams/teams-privacy-oce-overview) | Volta |
-| 8/20/2022 | [Pianificare il bypass multimediale con Instradamento diretto](/MicrosoftTeams/direct-routing-plan-media-bypass) | Volta |
-| 8/20/2022 | [Preparare la rete dell'organizzazione per Teams](/MicrosoftTeams/prepare-network) | Volta |
-| 8/20/2022 | [Telefoni e dispositivi per Microsoft Teams](/MicrosoftTeams/devices/usb-devices) | Volta |
-| 8/20/2022 | [Usare i modelli di Teams nell'interfaccia di amministrazione](/MicrosoftTeams/get-started-with-teams-templates-in-the-admin-console) | Volta |
-| 8/20/2022 | [Acquistare app di terza parte per Teams](/MicrosoftTeams/purchase-third-party-apps) | Volta |
-| 8/20/2022 | [Panoramica dei team e i canali in Microsoft Teams](/MicrosoftTeams/teams-channels-overview) | Volta |
-| 8/20/2022 | [Eseguire l'aggiornamento Skype for Business locale a Microsoft Teams](/MicrosoftTeams/upgrade-to-teams-execute-skypeforbusinesshybridonprem) | Volta |
-| 8/20/2022 | [Gestire i criteri della segreteria telefonica](/MicrosoftTeams/manage-voicemail-policies) | Aggiunto |
-| 8/20/2022 | [Assegnare, modificare o rimuovere il numero di telefono di un utente](/MicrosoftTeams/assign-change-or-remove-a-phone-number-for-a-user) | Volta |
-| 8/20/2022 | [Provisioning remoto e accesso per dispositivi Teams Android](/MicrosoftTeams/devices/remote-provision-remote-login) | Volta |
-| 8/20/2022 | [Gestire l'app Turni per l'organizzazione](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams) | Volta |
-| 8/20/2022 | [Configurare Operator Connect](/MicrosoftTeams/operator-connect-configure) | Volta |
-| 8/20/2022 | [Trasferimento dei dati tra gestori e Microsoft per Operator Connect](/MicrosoftTeams/operator-connect-data-transfer) | Volta |
-| 8/20/2022 | [Operator Connect](/MicrosoftTeams/operator-connect-plan) | Volta |
-| 8/20/2022 | [Cercare numeri di telefono per gli utenti](/MicrosoftTeams/search-for-phone-numbers-for-users) | Volta |
-| 8/20/2022 | [Configurare le impostazioni degli eventi live in Microsoft Teams](/MicrosoftTeams/teams-live-events/configure-teams-live-events) | Volta |
-| 8/20/2022 | [Configurare gli eventi live in Microsoft Teams](/MicrosoftTeams/teams-live-events/set-up-for-teams-live-events) | Volta |
-| 8/20/2022 | [Configurare la conferma di chiamata in uscita della riunione per gli utenti in Microsoft Teams](/MicrosoftTeams/set-up-meeting-dial-out-confirmation) | Volta |

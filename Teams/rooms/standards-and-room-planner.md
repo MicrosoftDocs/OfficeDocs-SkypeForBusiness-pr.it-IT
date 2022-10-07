@@ -1,9 +1,9 @@
 ---
 title: Microsoft Teams Rooms Standard e pianificazione delle sale
-author: donnah007
-ms.author: v-donnahill
+author: altsou
+ms.author: altsou
 manager: serdars
-ms.reviewer: dstrome
+ms.reviewer: srpall
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Creare e curare gli standard in base ai suggerimenti intelligenti dell'ambiente.
 f1keywords: ''
-ms.openlocfilehash: 05376b7c40131be54291961a7562faa6566e8e89
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: bcad1c98cbbf71467789617c53ea98d8f192da49
+ms.sourcegitcommit: 64c01699022b47fdfec8dc6e2ca279e57eae3baa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271961"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243837"
 ---
 # <a name="standards-and-room-planner"></a>Standard e pianificazione delle sale
 
@@ -30,7 +30,7 @@ Usando i suggerimenti intelligenti del proprio ambiente, è possibile creare e c
 
 ## <a name="view-meeting-room-types"></a>Visualizzare i tipi di sale riunioni
 
-In questa pagina è possibile visualizzare i tipi di sala o di spazio riunioni all'interno dell'organizzazione. Una rapida descrizione del numero di standard disponibili per le sale riunioni, del numero di nuovi dispositivi individuati e del numero di dispositivi che richiedono un'azione da eseguire.
+In questa pagina è possibile visualizzare i tipi di sala o di spazio riunioni all'interno dell'organizzazione. Una rapida suddivisione del numero di standard disponibili per le sale riunioni, del numero di nuovi dispositivi individuati e del numero di dispositivi che richiedono un'azione da eseguire.
 
 Questa pagina contiene anche una barra dei comandi da cui è possibile avviare  **Crea un** flusso di lavoro standard o passare a Dispositivi individuati, Log delle modifiche e Archivia.
 

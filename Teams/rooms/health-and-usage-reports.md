@@ -1,10 +1,10 @@
 ---
 title: Report sull'integrità e sull'utilizzo
-author: donnah007
-ms.author: v-donnahill
+author: altsou
+ms.author: altsou
 manager: serdars
 ms.date: 04/07/2022
-ms.reviewer: ''
+ms.reviewer: altsou
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -18,16 +18,16 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Dati del nodo reporting per l'integrità e l'utilizzo dei report
 f1keywords: ''
-ms.openlocfilehash: 87a04860a69799bf00492691dc24498076bd4924
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 9b1f3e1960cbe0089f498045922125b121679646
+ms.sourcegitcommit: 64c01699022b47fdfec8dc6e2ca279e57eae3baa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271431"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243797"
 ---
 # <a name="health-and-usage-reports"></a>Report sull'integrità e sull'utilizzo
 
-Il nodo di creazione di report contiene i dati relativi all'integrità e all'utilizzo delle chat room gestite Microsoft e delle informazioni dettagliate sui servizi. La **panoramica** mostra le tendenze sanitarie a livello di tenant delle chat room. La scheda **Integrità** visualizza un elenco di sale con i dati sanitari corrispondenti. **L'utilizzo** delle sale in base alle informazioni del calendario e ai dati sulla qualità delle chiamate sono visibili nella scheda Utilizzo.
+Il nodo di creazione di report contiene i dati relativi all'integrità e all'utilizzo del Microsoft Teams Rooms nel portale di gestione pro. La **panoramica** mostra le tendenze sanitarie a livello di tenant delle chat room. La scheda **Integrità** visualizza un elenco di sale con i dati sanitari corrispondenti. **L'utilizzo** delle sale in base alle informazioni del calendario e ai dati sulla qualità delle chiamate sono visibili nella scheda Utilizzo.
 
 ## <a name="navigating-reports"></a>Spostamento tra i report
 
@@ -42,7 +42,7 @@ Per modificare il gruppo, fare clic sul menu a discesa di selezione del gruppo n
 <!--!![A screenshot of the banner menu auto-generated](../media/health-and-usage-005.png)-->
 ### <a name="tickets-by-category"></a>Biglietti per categoria
 
-La ciambella mostra il totale dei biglietti generati per il periodo di tempo e il gruppo selezionati (l'impostazione predefinita è sette giorni, tutti i gruppi). I ticket sono rappresentati nelle categorie principali: Audio, Schermo, Periferiche, Connettività, Controllo delle versioni e Segnalazione cliente.
+La ciambella mostra il totale dei biglietti generati per il periodo di tempo e il gruppo selezionati (l'impostazione predefinita è sette giorni, tutti i gruppi). I ticket sono rappresentati nelle categorie principali: Audio, Schermo, Periferiche, Connettività, Controllo delle versioni e Problemi registrati.
 
 <!--!![A screenshot of pie chart tickets by category](../media/health-and-usage-006.png)-->
 
@@ -56,20 +56,20 @@ Nel riquadro a comparsa è possibile filtrare l'elenco dei biglietti in base all
 
 Per tornare indietro, fare clic sulla ciambella o fare clic sul percorso di navigazione in alto a sinistra.
 
-Per passare a un ticket specifico in questa visualizzazione elenco, fai clic sul link sotto la **colonna Ticket di supporto**.
+Per passare a un ticket specifico in questa visualizzazione elenco, fare clic sul collegamento nella **colonna Ticket di supporto**.
 
-### <a name="ticket-history"></a>Cronologia dei biglietti
+<!--### Ticket history
 
-Il grafico della cronologia dei ticket mostra un confronto degli eventi assegnati a te o a Microsoft nel periodo di tempo specificato.
+The ticket history graph shows a comparison of incidents assigned to you or Microsoft over the specified time period.
 
 > [!NOTE]
-> Se un biglietto cambia proprietario in un giorno, chi è il proprietario dell'attività per la maggior parte di quel giorno avrà il biglietto conteggiato nei loro confronti. Ad esempio, se si assegna il ticket a Microsoft all'inizio della giornata, il ticket viene conteggiato per **Assegnato a Microsoft** per il giorno.
+> If a ticket changes owner in a day, whoever owns the assignment for the majority of that day will have the ticket counted towards them. For example, if you assign the ticket to Microsoft early in the day, the ticket counts towards **Assigned to Microsoft** for the day.
 
 <!--![A screen shot of Tickets history by different periods](../media/health-and-usage-009.png)-->
 
 ### <a name="health-history"></a>Cronologia della salute
 
-Questo grafico mostra l'integrità media (definizione nella sezione Integrità) per tutte le chat room nel tenant e la salute media di tutti i clienti MMR giorno per giorno. È possibile visualizzare la salute media per un massimo di 90 giorni.
+Questo grafico mostra l'integrità media (definizione nella sezione Integrità) per tutte le chat room nel tenant e l'integrità media di tutti i clienti di MTR Pro giorno per giorno. È possibile visualizzare la salute media per un massimo di 90 giorni.
 
 <!--!![A screenshot of rooms health and average health](../media/health-and-usage-010.png)-->
 

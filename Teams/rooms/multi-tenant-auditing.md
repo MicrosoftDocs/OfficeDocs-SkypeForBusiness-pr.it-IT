@@ -1,9 +1,9 @@
 ---
-title: Controllo multi-tenant
-author: donnah007
-ms.author: v-donnahill
+title: Registrazione di controllo nel portale MTR Pro
+author: altsou
+ms.author: altsou
 manager: serdars
-ms.reviewer: dstrome
+ms.reviewer: altsou
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -15,21 +15,21 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Registrazione di controllo per TRM.
+description: Registrazione di controllo per il portale MTR Pro.
 f1keywords: ''
-ms.openlocfilehash: de7f01a3c93dc31ff10c9e00cb3d0f3ef5806cb3
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 0436618e257128deb38d890cb92813ae13921e7d
+ms.sourcegitcommit: 64c01699022b47fdfec8dc6e2ca279e57eae3baa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269106"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243917"
 ---
-# <a name="audit-logging-in-the-teams-rooms-managed-service"></a>Registrazione di controllo nel servizio gestito Teams Rooms
+# <a name="audit-logging-in-the-mtr-pro-portal"></a>Registrazione di controllo nel portale MTR Pro
 
-Il controllo in Teams Rooms servizio gestito (TRM) consente di cercare record di controllo per le attività eseguite nel portale da utenti e amministratori. Questa funzionalità è abilitata per impostazione predefinita. Solo l'amministratore del servizio gestito ha l'autorizzazione per esportare e quindi visualizzare i log.
+I log di controllo del portale MTR Pro consentono di cercare record di controllo per le attività eseguite da utenti e amministratori. Questa funzionalità è abilitata per impostazione predefinita. Solo l'amministratore del servizio gestito ha l'autorizzazione per esportare e quindi visualizzare i log.
 
 > [!NOTE]
-> Le azioni eseguite nel servizio TRM non vengono registrate in Microsoft 365 o nel controllo Office 365 
+> Le azioni eseguite nel portale MTR Pro non vengono registrate nel controllo di Microsoft 365 o Office 365 
 
 ## <a name="exporting-logs"></a>Esportazione dei log
 

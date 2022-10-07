@@ -8,6 +8,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-apps
 audience: Admin
+ms.date: 09/25/2022
 ms.collection:
 - M365-collaboration
 appliesto:
@@ -19,22 +20,18 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 4ba559d605f1465fda7caf9b253c18864c8b4c20
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: 42c970f3b354ac1f5b490359f0df9bcc01e97019
+ms.sourcegitcommit: d6e180791134426445a35fd485dcca18bde2006b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837376"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68494769"
 ---
 # <a name="understand-and-manage-custom-and-sideloaded-apps"></a>Comprendere e gestire app personalizzate e caricate in sideload
 
-Microsoft Teams consente agli sviluppatori all'interno dell'organizzazione di creare, testare e distribuire app personalizzate per gli utenti interni dell'organizzazione. Tali app sono denominate app personalizzate o app Line of Business. L'organizzazione può richiedere la creazione di app personalizzate per requisiti specifici dell'organizzazione.
+Microsoft Teams consente agli sviluppatori all'interno dell'organizzazione di creare, testare e distribuire app personalizzate per gli utenti interni dell'organizzazione. Tali app sono denominate app personalizzate o app Line of Business. L'organizzazione può richiedere la creazione di app personalizzate per requisiti specifici dell'organizzazione. Gli amministratori controllano l'implementazione e le autorizzazioni per le app personalizzate usando varie impostazioni e criteri.
 
-L'amministratore ha il controllo di consentire o bloccare tali app per l'intera organizzazione o per utenti specifici. Gli sviluppatori nell'organizzazione possono compilare soluzioni personalizzate con basso impiego di codice usando l'integrazione di Teams con [Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions).
-
-Gli sviluppatori possono inviare le app personalizzate tramite Teams per l'approvazione da parte dell'amministratore. È possibile usare i criteri di configurazione delle app per controllare l'implementazione, la distribuzione e le autorizzazioni delle app personalizzate.
-
-:::image type="content" source="media/custom-app-policy-trimmed.png" alt-text="Screenshot che mostra come consentire le app personalizzate nell'organizzazione nel riquadro delle impostazioni a livello di organizzazione." lightbox="media/custom-app-policy.png":::
+:::image type="content" source="media/custom-app-orgwide-setting-trimmed.png" alt-text="Screenshot che mostra come consentire le app personalizzate nell'organizzazione nel riquadro delle impostazioni a livello di organizzazione." lightbox="media/custom-app-orgwide-setting.png":::
 
 Dopo aver consentito l'uso di un'app personalizzata, gli utenti finali possono trovarla selezionando **Built per la tua organizzazione** nella barra di spostamento sinistra di Teams Store.
 
@@ -48,25 +45,23 @@ Gli sviluppatori possono caricare un'applicazione per renderla disponibile ai me
 
 Gli sviluppatori possono condividere un'app in sideload con un team specifico senza inviarla al catalogo app di Teams. Rende l'app personalizzata caricata in sideload disponibile per un gruppo limitato di utenti finali, ma non disponibile nell'app store dell'organizzazione per tutti gli utenti finali.
 
-Come amministratore, è possibile disabilitare il sideloading delle app per tutti gli sviluppatori. Se si disconosce il sideloading, gli sviluppatori possono comunque testare le loro applicazioni creando un [tenant di test separato](/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant). Una volta completato lo sviluppo di app personalizzate, gli sviluppatori richiedono agli amministratori di distribuire l'app personalizzata agli utenti finali. Per informazioni dettagliate, vedere [come pubblicare un'app personalizzata](/microsoftteams/upload-custom-apps). Gli amministratori possono consentire o impedire l'uso di un'app personalizzata per utenti specifici.
+Come amministratore, è possibile disabilitare il sideloading delle app per tutti gli sviluppatori. Se si disconosce il sideloading, gli sviluppatori possono comunque testare le loro applicazioni creando un [tenant di test separato](/microsoftteams/platform/concepts/build-and-test/prepare-your-o365-tenant). Una volta completato lo sviluppo di app personalizzate, gli sviluppatori richiedono agli amministratori di distribuire l'app personalizzata agli utenti finali. Per informazioni dettagliate, vedere [come pubblicare un'app personalizzata](/microsoftteams/upload-custom-apps). Gli amministratori consentono (o bloccano) l'uso di un'app personalizzata per tutti gli utenti o per utenti specifici.
 
 ## <a name="allow-developers-to-upload-custom-apps"></a>Consentire agli sviluppatori di caricare app personalizzate
 
-È possibile creare un criterio personalizzato o modificare il criterio globale per consentire o bloccare le app personalizzate in base alle esigenze aziendali. Per creare un criterio personalizzato che consente agli sviluppatori dell'organizzazione di caricare app personalizzate, seguire questa procedura:
+Nei criteri di configurazione delle app è possibile creare un criterio personalizzato o modificare il criterio globale per consentire il caricamento di app personalizzate. Per creare un criterio personalizzato e applicarlo a utenti specifici, seguire questa procedura:
 
 1. Accedere all'interfaccia di amministrazione di Teams e accedere alle **App di Teams** > **[Criteri di configurazione](https://admin.teams.microsoft.com/policies/app-setup)**.
-
 1. Selezionare **Aggiungi**.
-
 1. Specificare un nome e una descrizione per il criterio.
-
 1. Attivare o disattivare **Carica app personalizzate**.
+1. [Applicare il criterio agli utenti](assign-policies-users-and-groups.md#assign-a-policy-to-individual-users) che sviluppano app personalizzate e sono autorizzati a caricarle.
 
 > [!NOTE]
-> Per modificare questa impostazione, consenti app di terze parti nelle impostazioni delle app a [livello di organizzazione](manage-apps.md#manage-org-wide-app-settings) del tuo tenant.
+> Per modificare questa impostazione, consenti app personalizzate nelle [impostazioni delle app a livello di organizzazione](manage-apps.md#manage-org-wide-app-settings).
 
 ## <a name="related-articles"></a>Articoli correlati
 
-* [Gestire le impostazioni e i criteri delle app personalizzate](teams-custom-app-policies-and-settings.md)
+* [Gestire criteri e impostazioni per le app personalizzate](teams-custom-app-policies-and-settings.md)
 * [Informazioni sui criteri per gestire le app](app-policies.md)
 * [Informazioni sulle app di terze parti](overview-third-party-apps.md)

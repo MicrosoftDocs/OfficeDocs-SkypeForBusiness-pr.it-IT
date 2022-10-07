@@ -7,9 +7,11 @@ ms.topic: article
 ms.service: msteams
 ms.subservice: teams-apps
 audience: admin
+ms.date: 09/20/2022
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 ms.reviewer: mhayrapetyan
 search.appverid: MET150
 f1keywords:
@@ -18,12 +20,12 @@ description: Informazioni su come gestire e configurare la richiesta dell'utente
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 0967aec80bb88dff12141040fead94af9aae0616
-ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
+ms.openlocfilehash: 382d3923d008f0bf70b2d9b9a4f3364709b4f2e1
+ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67706225"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68377604"
 ---
 # <a name="manage-user-requests"></a>Gestire le richieste degli utenti
 
@@ -33,7 +35,7 @@ Questa funzionalità fornisce un segnale sulla richiesta di un'app all'interno d
 
 L'utente mantiene il controllo completo delle app consentite o bloccate per gli utenti. Se scegli di consentire un'app, i controlli e l'interfaccia utente per gestire le app rimangono invariati.
 
-* L'opzione predefinita invia le richieste degli utenti all'interfaccia di amministrazione di Teams, dove è possibile [visualizzare le richieste degli utenti e consentire le app richieste](#view-user-requests-in-teams-admin-center).
+* L'opzione predefinita invia le richieste degli utenti all'interfaccia di amministrazione di Teams, dove è possibile [visualizzare le richieste degli utenti e consentire le app richieste](#view-and-act-on-user-requests-in-teams-admin-center).
 
    :::image type="content" source="media/user-request-blocked-apps.png" alt-text="Screenshot che mostra l'opzione per richiedere a un amministratore di approvare un'app bloccata.":::
 
@@ -41,7 +43,7 @@ L'utente mantiene il controllo completo delle app consentite o bloccate per gli 
 
    :::image type="content" source="media/user-request-blocked-apps-redirected.png" alt-text="Screenshot che mostra l'esperienza utente finale per le app nello Store quando un amministratore reindirizza l'URL della richiesta di app consenti a un URL specifico dell'organizzazione.":::
 
-## <a name="view-user-requests-in-teams-admin-center"></a>Visualizzare le richieste degli utenti nell'interfaccia di amministrazione di Teams
+## <a name="view-and-act-on-user-requests-in-teams-admin-center"></a>Visualizzare e agire in base alle richieste degli utenti nell'interfaccia di amministrazione di Teams
 
 Le richieste degli utenti finali ricevute con il metodo predefinito vengono visualizzate nell'interfaccia di amministrazione di Teams. È possibile visualizzare e gestire facilmente le richieste. È consigliabile valutare regolarmente la presenza di richieste degli utenti finali. Per visualizzare e consentire le app, seguire questa procedura:
 
@@ -90,7 +92,7 @@ Se si sceglie di eseguire questa operazione, i metodi per valutare le app di ter
 
 ## <a name="dismiss-user-requests"></a>Ignorare le richieste degli utenti
 
-Per ignorare le richieste a un'app consenti, seguire questa procedura:
+Per ignorare le richieste, seguire questa procedura:
 
 1. Selezionare il nome dell'app per cui si desidera ignorare le richieste dell'utente.
 1. Selezionare **Gestisci richieste**.

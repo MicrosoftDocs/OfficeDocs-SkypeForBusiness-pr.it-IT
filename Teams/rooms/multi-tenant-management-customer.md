@@ -1,9 +1,9 @@
 ---
 title: Gestione partner per i clienti
-author: donnah007
-ms.author: v-donnahill
+author: altsou
+ms.author: altsou
 manager: serdars
-ms.reviewer: dstrome
+ms.reviewer: altsou
 ms.date: 06/09/2022
 ms.topic: article
 ms.tgt.pltfrm: cloud
@@ -18,19 +18,19 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: gestione dei partner per i clienti.
 f1keywords: ''
-ms.openlocfilehash: 9ac7e01de1f9a9e620afa665298d8f3746319db2
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 2c25bbfdd9b628641228eae6f52907e99a7beb9e
+ms.sourcegitcommit: 64c01699022b47fdfec8dc6e2ca279e57eae3baa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271371"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243937"
 ---
 # <a name="partner-management-for-customers"></a>Gestione partner per i clienti
 
-La gestione dei partner nel servizio Teams Rooms Managed (TRM) consente ai clienti di delegare facilmente l'accesso e le responsabilità a una o più organizzazioni partner. I partner possono gestire solo le chat room a cui sono assegnate.
+La gestione dei partner nel servizio Teams Rooms Pro Management consente ai clienti di delegare facilmente l'accesso e le responsabilità a una o più organizzazioni partner. I partner possono gestire solo le chat room a cui sono assegnate.
 
 ## <a name="on-boarding-partners"></a>Partner d'imbarco
-   Invitare i partner tramite il portale TRM per stabilire la relazione tra l'organizzazione e il tenant dell'organizzazione partner.
+   Invitare partner tramite il portale pro management per stabilire la relazione tra l'organizzazione e il tenant dell'organizzazione partner.
 
 ### <a name="invitation-to-partner"></a>Invito al partner
 
@@ -38,7 +38,7 @@ La gestione dei partner nel servizio Teams Rooms Managed (TRM) consente ai clien
 
 **Per avviare l'invito** 
 
-1. Accedere al portale Teams Rooms Managed come amministratore del servizio gestito.
+1. Accedere al portale di gestione di Teams Rooms Pro come amministratore del servizio gestito.
 1. Vai a **Impostazioni >** **Partner**, quindi seleziona **Aggiungi partner.**
 1. Immettere il nome di dominio nella prima riga.
 1. Configurare il numero di giorni fino alla scadenza dell'invito immettendo un numero intero compreso tra 1 e 30.
@@ -65,7 +65,7 @@ Per gestire gli utenti con il ruolo di amministratore principale, vedere [Gestio
 
 **Per rimuovere un partner**
 
-1. Accedi al portale TRM-MTM come amministratore di MMR.
+1. Accedere al portale Pro Management-Multi-tenant Management (MTM) come amministratore del servizio gestito.
 1. Passare a **Impostazioni > Partner.**
 1. Seleziona il partner che vuoi rimuovere.
 1. Nel riquadro dei dettagli del cliente selezionare **Rimuovi partner.**
@@ -84,7 +84,7 @@ Se è già stato inviato un invito a un partner e si desidera delegare più chat
 
 **Per aggiungere nuove chat room a un partner esistente**
 
-1. Accedi al portale TRM-MTM come amministratore di MMR.
+1. Accedere al portale Pro Management-MTM come amministratore del servizio gestito.
 1. Passare a **Impostazioni > ruoli.**
 1. Selezionare  **Ruoli partner.** 
 1. Selezionare il ruolo **di amministratore principale** per il nome partner corrispondente.
@@ -97,7 +97,7 @@ Se è già stato inviato un invito a un partner e si desidera delegare più chat
 
 ### <a name="table-1"></a>Tabella 1
 
-|Funzionalità|Autorizzazione|**Amministrazione MMR**|**Cliente potenziale del sito**|**Tech del sito**|**Amministratore partner**|
+|Funzionalità|Autorizzazione|**Amministrazione servizio gestito**|**Cliente potenziale del sito**|**Tech del sito**|**Amministratore partner**|
 | :- | :- | :- | :- | :- | :- |
 |Camere|Visualizzare| &#10004;|&#10004;|&#10004;|&#10004;|
 ||Modificare|&#10004;|&#10004;|&#10004;|&#10004;|
@@ -114,7 +114,7 @@ Se è già stato inviato un invito a un partner e si desidera delegare più chat
 ||Crea evento imprevisto del cliente|&#10004;|&#10004;|&#10004;|&#10004;|
 |Gestione biglietti|Visualizzare|&#10004;|&#10004;|&#10004;|&#10004;|
 ||Aggiornamento|&#10004;|&#10004;|&#10004;|&#10004;|
-|Impostazioni MMR|Visualizzare|&#10004;||||
+|Impostazioni di gestione di Pro|Visualizzare|&#10004;||||
 ||Modificare|&#10004;||||
 |Gestione dei ruoli|Visualizzare |&#10004;|||&#10004;|
 ||Modificare|&#10004;|||&#10004;|
@@ -123,7 +123,7 @@ Se è già stato inviato un invito a un partner e si desidera delegare più chat
 
 In qualità di cliente finale, l'utente mantiene il controllo sull'accesso ai propri dati e può rimuovere completamente un partner in qualsiasi momento. 
 
-Con la funzionalità di accesso delegato, un partner non ottiene altri privilegi al di fuori del portale del servizio TRM. Tuttavia, tutti i dati presenti nel servizio TRM derivati da altri prodotti Microsoft sono considerati dati nel servizio TRM. Ad esempio, mentre i rapporti sulla qualità delle chiamate derivano dai dati sulla qualità delle chiamate di Teams, tutti i dati nel portale TRM rientrano nell'ambito delle autorizzazioni. 
+Con la funzionalità di accesso delegato, un partner non ottiene altri privilegi all'esterno del portale di gestione pro. Tuttavia, tutti i dati presenti nel servizio di gestione pro derivati da altri prodotti Microsoft sono considerati dati nel servizio. Ad esempio, mentre i rapporti sulla qualità delle chiamate derivano dai dati sulla qualità delle chiamate di Teams, tutti i dati nel portale di gestione pro si trovano nell'ambito delle autorizzazioni. 
 
 Nessuna autorizzazione viene concessa ad AAD o a Teams Amministrazione Center o a qualsiasi altro prodotto Microsoft. Inoltre, i partner non hanno accesso alla visualizzazione o alla modifica di chat room non definite nell'ambito dell'invito. 
 
@@ -134,4 +134,4 @@ Il portale MTM usa l'autenticazione di Azure AD per convalidare le credenziali d
 Per recuperare i log sull'attività dei partner, vedere [Controllo](multi-tenant-auditing.md). 
 
 > [!NOTE]
-> Il controllo di AAD e di O365 non acquisisce i log dal portale TRM. 
+> Il controllo di AAD e di O365 non acquisisce i log dal portale di gestione di Pro. 

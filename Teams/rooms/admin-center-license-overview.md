@@ -22,18 +22,21 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni su e confrontare Teams Rooms le licenze e la disponibilità delle funzionalità nell'interfaccia di amministrazione di Teams.
-ms.openlocfilehash: d88e7a0c0a6c17fb22f1cc94fcd4de65a3ff79a2
-ms.sourcegitcommit: 732a7f3e120cfa221d42b4e8af2cf9ff623488a1
+ms.openlocfilehash: 0e4a3d4fc15f5e978731254e3344ee6e413ff682
+ms.sourcegitcommit: 401cee68d4f6f9470d614dda12b9cb023f382ff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67633636"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67999631"
 ---
 # <a name="microsoft-teams-rooms-license-overview-in-teams-admin-center"></a>Panoramica della licenza Microsoft Teams Rooms nell'interfaccia di amministrazione di Teams
 
 L'interfaccia di amministrazione di Teams consente di visualizzare e gestire Teams Rooms dispositivi e le relative periferiche da una posizione centralizzata. Questo articolo illustra [le funzionalità di gestione](#comparison-of-teams-rooms-feature-availability-by-license) disponibili, a seconda che a un dispositivo Teams Rooms sia assegnata una licenza Microsoft Teams Rooms Basic o Microsoft Teams Rooms Pro.
 
 Per altre informazioni sulle licenze di Microsoft Teams Rooms, vedere [licenze di Microsoft Teams Rooms](rooms-licensing.md).
+
+> [!NOTE]
+> Se disponi di licenze legacy Teams Rooms Standard o Teams Rooms Premium, dovrai passare a Teams Rooms Pro alla scadenza delle licenze legacy. Se hai un Enterprise Agreement, dovrai passare alle licenze di Teams Rooms Pro al prossimo periodo di rinnovo. Per altre informazioni, vedere [Passaggio da Teams Rooms Standard a Teams Rooms Premium](rooms-licensing.md#switching-from-teams-rooms-standard-and-teams-rooms-premium).
 
 ## <a name="see-which-licenses-are-assigned-to-teams-rooms-devices"></a>Vedere quali licenze sono assegnate ai dispositivi Teams Rooms
 
@@ -73,7 +76,6 @@ La tabella seguente mostra le funzionalità di gestione disponibili nell'interfa
 | **Dettagli sull'integrità del dispositivo**                     |                             | &#x2714;                  |
 | **Tag dispositivo**                               |                             | &#x2714;                  |
 | **API Graph**                                |                             | &#x2714;                  |
-| **Aggiornamenti manuali dei dispositivi**                     |                             | &#x2714;                  |
 | **Riavvio remoto**                            |                             | &#x2714;                  |
 | **Gestione delle periferiche dei dispositivi Windows**     |                             | &#x2714;                  |
 | **Impostazioni dei dispositivi Windows**                   |                             | &#x2714;                  |

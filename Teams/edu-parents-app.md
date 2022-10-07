@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 37de74db112dcbd5466659b385f1bb94d7c134aa
-ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
+ms.openlocfilehash: 5edde0613c9092a7ed48d57a4a22761e56eee142
+ms.sourcegitcommit: d3eb876e58c9e4a0a11a21b9292d3a6177508d81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67418625"
+ms.lasthandoff: 10/03/2022
+ms.locfileid: "68329060"
 ---
 # <a name="set-up-parent-connection-in-microsoft-teams-for-education"></a>Configurare la connessione padre in Microsoft Teams per l'istruzione
 
@@ -89,6 +89,7 @@ Se un tutore viene rimosso dai record *di uno studente* , le chat esistenti che 
   - Trascinare i due [file padre](/schooldatasync/parent-contact-sync-file-format) popolati con il resto dei file v1 vuoti (solo le intestazioni).
     - User.csv
     - Guardianrelationship.csv
+      - Il valore *Ruolo* deve essere completato per ogni genitore e tutore per indicare se è un *genitore* o un *tutore*.
   - Per visualizzare un set di esempio dei file CSV v1, vedere i [file GitHub degli attributi minimi obbligatori](https://github.com/OfficeDev/O365-EDU-Tools/tree/master/CSV%20Samples/SDS%20Format/Min%20Required%20Attributes).
   - Se si vuole automatizzare il estrazione dei file CSV dopo la sincronizzazione iniziale, leggere il [documento di automazione Sincronizzazione file CSV](/schooldatasync/csv-file-sync-automation).
   - Per assistenza con la configurazione della sincronizzazione dei dati di SDS, contatta [il team di successo dei clienti](https://www.microsoft.com/fasttrack?rtc=1) o [apri un ticket di supporto](https://edusupport.microsoft.com/support?product_id=data_sync).

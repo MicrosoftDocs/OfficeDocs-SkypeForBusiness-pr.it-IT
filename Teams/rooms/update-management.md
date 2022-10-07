@@ -1,7 +1,7 @@
 ---
-title: gestione degli aggiornamenti di Microsoft Teams Rooms
-author: donnah007
-ms.author: v-donnahill
+title: Gestione degli aggiornamenti di gestione di Microsoft Teams Rooms Pro Management
+author: altsou
+ms.author: altsou
 manager: serdars
 ms.reviewer: ''
 ms.topic: article
@@ -17,22 +17,22 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: monitoraggio proattivo delle sale riunioni.
 f1keywords: ''
-ms.openlocfilehash: 97c812cca2b64979f224e9f7da63087899b9c7a9
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: bddfc17df4f6fc7bd28e2dcc00fc55b5653b8687
+ms.sourcegitcommit: 64c01699022b47fdfec8dc6e2ca279e57eae3baa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269121"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "68243757"
 ---
 # <a name="update-management"></a>Gestione degli aggiornamenti 
 Una moderna sala riunioni è dotata di un dispositivo Microsoft Teams Rooms e di altre periferiche, ad esempio una fotocamera, un microfono o un altoparlante, e potenzialmente più dispositivi per creare un'esperienza di riunione inclusiva ed efficace. L'attrezzatura di diversi tipi di OEM fornisce l'esperienza organizzativa desiderata; tuttavia, devono essere mantenuti con software e firmware su base continuativa.  
 
-I servizi gestiti per Microsoft Teams Rooms offrono la garanzia che ogni chat room dell'organizzazione verrà mantenuta ai livelli consigliati per offrire una chat room sempre pronta e funzionante correttamente. L'obiettivo di Microsoft è ridurre la complessità e il lavoro del personale operativo grazie all'intelligenza e all'automazione. La risoluzione dei problemi o la diagnostica viene eseguita il più rapidamente possibile. 
+Microsoft Teams Rooms Pro Management garantisce che ogni chat room dell'organizzazione verrà mantenuta ai livelli consigliati per offrire una chat room sempre pronta e funzionante correttamente. L'obiettivo di Microsoft è ridurre la complessità e il lavoro del personale operativo grazie all'intelligenza e all'automazione. La risoluzione dei problemi o la diagnostica viene eseguita il più rapidamente possibile. 
 
-## <a name="transitioning-a-device-to-managed-services"></a>Transizione di un dispositivo a servizi gestiti 
-L'onboarding dei dispositivi sala ai servizi gestiti in genere ha una cronologia e un'esercitazione di gestione delle modifiche diverse dalle nostre indicazioni.  
+## <a name="transitioning-a-device-to-pro-management"></a>Transizione di un dispositivo a Gestione pro 
+L'onboarding dei dispositivi sala alla gestione pro ha in genere una cronologia e una pratica di gestione delle modifiche diverse dalle nostre indicazioni.  
 
-- Per usufruire dei servizi gestiti, è necessario eseguire la transizione della gestione delle modifiche per tutti gli aggiornamenti del portfolio di servizi gestiti.
+- Per trarre vantaggio da Pro Management, è necessario eseguire la transizione della gestione delle modifiche per tutti gli aggiornamenti del portfolio Di gestione pro.
 - Più origini dei contratti di servizio per l'impatto sulla gestione delle modifiche perché è presente un'individuazione e una correzione che verranno riavviate di nuovo se si verifica un evento imprevisto nella sala.
 - Microsoft ha implementato controlli e controlli per implementare criteri che possono variare da un'organizzazione all'altra e la possibilità di intervenire in situazioni eccezionali.
 - Alla fine, i dispositivi della sala verranno aggiornati secondo standard comuni, ad eccezione delle eccezioni a causa di problemi con un'installazione hardware specifica.  
@@ -47,7 +47,7 @@ La maggior parte dei guasti imprevisti derivano da cambiamenti nell'immagine di 
 
 ## <a name="readiness-checks"></a>Controlli di conformità
 
-Sono disponibili alcuni prerequisiti per la ricezione degli aggiornamenti dei servizi gestiti: 
+Sono disponibili alcuni prerequisiti per la ricezione degli aggiornamenti tramite il servizio di gestione pro: 
 
 |Software |Linee guida |
 |:- |:- |
@@ -61,46 +61,39 @@ Sono disponibili alcuni prerequisiti per la ricezione degli aggiornamenti dei se
 ## <a name="managed-updates--how-it-works"></a>Aggiornamenti gestiti: funzionamento 
 Esistono due modi principali di gestire gli aggiornamenti:  
 
-- **Gestito automaticamente**: i Aggiornamenti vengono installati nel dispositivo della chat room in base alla valutazione dei servizi gestiti. Non è richiesto alcun intervento per gli aggiornamenti gestiti nel nostro portafoglio.
+- **Gestito automaticamente**: i Aggiornamenti vengono installati nel dispositivo della chat room in base alla valutazione di Pro Management. Non è richiesto alcun intervento per gli aggiornamenti gestiti nel nostro portafoglio.
 - **Circuito convalidato**: configurare un sistema ad anello per visualizzare in anteprima gli aggiornamenti su dispositivi specifici in modo da poterli monitorare senza il lavoro della gamba associato. La configurazione dell'anello fornisce un ulteriore livello di due diligenza prima di implementi ampie.  
 
 ### <a name="automatically-managed"></a>Gestito automaticamente
 
-Se si sceglie di essere gestiti automaticamente, non è necessario alcun intervento per gli aggiornamenti. È tuttavia consigliabile esaminare l'attuale portfolio di aggiornamenti supportati dai servizi gestiti. Il portafoglio viene costantemente aggiornato ed è nostra priorità coprire gli aggiornamenti più frequenti e di grande impatto per garantire la stabilità della tua stanza. Controllare l'elenco corrente (nella sezione "Gestione degli aggiornamenti" di questo documento) per pianificare eventuali altre operazioni di gestione delle modifiche necessarie per l'organizzazione.  
+Se si sceglie di essere gestiti automaticamente, non è necessario alcun intervento per gli aggiornamenti. Tuttavia, è consigliabile esaminare l'attuale portfolio di aggiornamenti supportati dal servizio Di gestione pro. Il portafoglio viene costantemente aggiornato ed è nostra priorità coprire gli aggiornamenti più frequenti e di grande impatto per garantire la stabilità della tua stanza. Controllare l'elenco corrente (nella sezione "Gestione degli aggiornamenti" di questo documento) per pianificare eventuali altre operazioni di gestione delle modifiche necessarie per l'organizzazione.  
 
-**Raccomandazione:** Non installare gli aggiornamenti coperti da Servizi gestiti in alcun dispositivo gestito autonomamente. Se si verificano problemi, segnala un evento imprevisto nel portale.
+**Raccomandazione:** Non installare gli aggiornamenti coperti dal servizio di gestione pro in qualsiasi dispositivo gestito autonomamente. 
 
 ### <a name="ring-validation"></a>Convalida anello
 
-Quando si sceglie la convalida dell'anello, esaminare le sezioni seguenti sul funzionamento dei circuiti in Servizi gestiti e sulle opzioni disponibili per personalizzarlo per l'organizzazione. Anche con la convalida dell'anello, i servizi gestiti cercano di assicurarsi che le chat room non siano scaduta in base agli aggiornamenti consigliati. A seconda della situazione, una chat room potrebbe ricevere aggiornamenti di "aggiornamento" per assicurarsi che sia conforme ai consigli sui servizi gestiti.  
+Quando si sceglie la convalida dell'anello, vedere le sezioni seguenti sul funzionamento dei circuiti nel portale di Gestione pro e sulle opzioni disponibili per personalizzarlo per l'organizzazione. Anche con la convalida dell'anello, si tenta di garantire che le stanze non siano scaduto in base agli aggiornamenti consigliati. A seconda della situazione, una chat room potrebbe ricevere aggiornamenti di "aggiornamento" per assicurarsi che sia conforme ai suggerimenti di Microsoft.  
 
- Verificare la disponibilità di annunci nella home page del portale e nella documentazione dei servizi gestiti man mano che nuovi tipi di software e firmware diventano disponibili nel portfolio. Poiché gli esperti di Servizi gestiti esaminano quotidianamente le versioni di aggiornamento nell'intero portafoglio di dispositivi, risolvono problemi specifici e puntano gli aggiornamenti in base alle esigenze.  
+ Controlla la disponibilità di annunci nella home page del portale e nella documentazione di Pro Management man mano che nuovi tipi di software e firmware diventano disponibili nel portfolio. 
 
 ### <a name="scheduling"></a>Pianificazione 
-Gli aggiornamenti gestiti sono pianificati per le sale in base alle apparecchiature presenti nella sala e se non soddisfano gli standard dei servizi gestiti per il software e il firmware applicabili. 
+Aggiornamenti sono pianificate per le sale in base alle attrezzature presenti nella sala e se non soddisfano gli standard consigliati per software e firmware applicabili. 
 
-- Per aiutare i clienti a soddisfare i requisiti di gestione delle modifiche, l'implementazione degli aggiornamenti inizia **il mercoledì** nell'anello di gestione temporanea. Se è necessario un aggiornamento critico, ignorare questa pianificazione e rilasciare l'aggiornamento non appena è disponibile. 
-
+- Per aiutare i clienti a soddisfare i requisiti di gestione delle modifiche, l'implementazione degli aggiornamenti inizia **il mercoledì** nell'anello di gestione temporanea. Se è necessario un aggiornamento critico, questa pianificazione verrà ignorata e l'aggiornamento rilasciato non appena sarà disponibile. 
 - Aggiornamenti vengono sequenziati in base alla necessità in una particolare stanza. 
 - Se hai anelli di configurazione per convalidare gli aggiornamenti, l'aggiornamento progredisce nell'ordine di squillo. 
-- Un nuovo aggiornamento può sostituisce un aggiornamento accodato se determiniamo che la stabilità della stanza è stata migliorata in base alla tua situazione.  
+- Un nuovo aggiornamento può sostituisce un aggiornamento che viene accodato se viene determinato che la stabilità della stanza migliorerà, in base alla tua situazione.  
 - Aggiornamenti vengono in genere applicati durante la nostra finestra di manutenzione notturna, che è l'ora locale della stanza **12:00 - 5:00** per evitare qualsiasi tipo di interruzione. 
 
 ## <a name="microsoft-teams-rooms-app-update-lifecycle-policy"></a>Criteri relativi al ciclo di vita degli aggiornamenti delle app di Microsoft Teams Rooms 
-I criteri relativi al supporto del team di progettazione MTR prevedono che tutto il supporto termini dopo la scadenza del ciclo di vita di dodici (12) mesi per una versione o se da allora sono stati rilasciati più di due aggiornamenti. I clienti devono quindi eseguire l'aggiornamento a una versione supportata. Fai riferimento [Microsoft Teams Rooms supporto della versione dell'app - Microsoft Teams | Microsoft Docs](rooms-lifecycle-support.md) per una descrizione dettagliata del servizio.
-
-Per mantenere uno standard uniforme in tutte le sale gestite e consentire di identificare in modo efficiente i problemi di tendenza, Supporteremo e distribuiremo le due versioni principali o secondarie più recenti (N, N-1) del software dell'app MTR in base alle condizioni relative ai servizi di supporto e sottoscrizione. I gruppi non conformi verranno aggiornati automaticamente, bypassando gli anelli di aggiornamento se necessario. 
-
-I criteri N-1 si applicano anche al software di terze parti.  
+I criteri relativi al supporto del team di progettazione MTR prevedono che tutto il supporto termini dopo la scadenza del ciclo di vita di dodici (12) mesi per una versione o se da allora sono stati rilasciati più di due aggiornamenti. I clienti devono quindi eseguire l'aggiornamento a una versione supportata. Fai riferimento [Microsoft Teams Rooms supporto della versione dell'app - Microsoft Teams | Microsoft Docs](rooms-lifecycle-support.md) per una descrizione dettagliata del servizio. 
 
 ## <a name="update-management-experience-walk-through"></a>Walk-through dell'esperienza di gestione degli aggiornamenti  
-Per visualizzare gli aggiornamenti, accedere al portale dei servizi gestiti e passare alla pagina Aggiornamenti.
-
-![Screenshot degli aggiornamenti dei servizi gestiti](../media/update-management-001.jpg)
+Per visualizzare gli aggiornamenti, accedere al portale di gestione di Pro e passare alla pagina Aggiornamenti.
 
 Il riquadro Aggiornamenti mostra una panoramica generale della gestione degli aggiornamenti per le chat room con le schede seguenti:
 
-- **Aggiornamenti**: aggiornamenti del software o del firmware orchestrati da Servizi gestiti tramite l'organizzazione.  
+- **Aggiornamenti**: aggiornamenti del software o del firmware applicabili all'organizzazione.  
 - **Sale**: la scheda Sale offre una vista delle stanze e degli anelli a cui appartiene ogni chat room.
 - **Anelli**: la scheda Anelli mostra gli anelli delle sale per l'organizzazione.
 
@@ -210,16 +203,16 @@ Le stanze mobili da un anello all'altro sono possibili in due modi:
 1. Nell'elenco a discesa selezionare il nuovo anello.  
 1. Fare clic su **Assegna**.
 
-## <a name="managed-updates-visibility-and-control"></a>Aggiornamenti gestiti: Visibilità e controllo
+## <a name="automated-updates-visibility-and-control"></a>Aggiornamenti automatizzati: Visibilità e controllo
 
-I servizi gestiti organizzano gli aggiornamenti in tutta l'organizzazione. Tuttavia, si dispone della visibilità e del controllo per intervenire, se necessario. Ecco i modi: 
+Gli aggiornamenti automatici in Gestione pro organizzano gli aggiornamenti nell'intera organizzazione. Tuttavia, si dispone della visibilità e del controllo per intervenire, se necessario. Ecco i modi: 
 
-- In caso di errore di aggiornamento, viene generato automaticamente un ticket con il team Microsoft Managed Service Operations. Il team operativo prenderà misure per correggere l'errore e coinvolgere l'utente, se necessario.  
-- Se visualizzi un aggiornamento che causa problemi, puoi sospendere l'aggiornamento con il pulsante **Pausa** . Premendo il pulsante Sospendi verrà creato un ticket da analizzare per il centro operativo. Assicurati di fornire i dettagli durante la sospensione di un aggiornamento per velocizzare la risposta agli eventi imprevisti.  
+- In caso di errore di aggiornamento, viene generato automaticamente un ticket per il monitoraggio. 
+- Se visualizzi un aggiornamento che causa problemi, puoi sospendere l'aggiornamento con il pulsante **Pausa** . Premendo il pulsante Sospendi verrà richiesto di creare un ticket Registra un problema per consentire al team di analizzare il problema.
 - Se viene visualizzato un aggiornamento non riuscito in una chat room e hai corretto un motivo plausibile, ad esempio la disconnessione della rete, puoi riprovare l'aggiornamento con il pulsante **Riprova tutti gli errori** .  
 - Potrebbero verificarsi situazioni urgenti in cui potresti decidere di rendere disponibile un aggiornamento in precedenza. In questo caso, è possibile usare il pulsante **Forza aggiornamenti** . Quando si usa l'opzione Forza aggiornamento, è possibile scegliere di forzare l'aggiornamento immediatamente o quando la sala successiva è disponibile.  
 
 > [!NOTE]
-> **Non è consigliabile "Forzare Aggiornamenti"** come strategia generale di gestione degli aggiornamenti. Se si esegue il push di un aggiornamento che è ancora presente nel nostro passaggio di convalida, potrebbero verificarsi problemi già noti. In questi casi, la risoluzione degli incidenti per tali sale sarà sulla base del miglior sforzo.  
+> **Non è consigliabile "Forzare Aggiornamenti"** come strategia di gestione generale degli aggiornamenti, in quanto potrebbero verificarsi problemi noti con tali aggiornamenti.
 
 - Inoltre, per garantire buone procedure di gestione delle modifiche, registriamo ogni aggiornamento forzato internamente nel servizio. In futuro, ci aspettiamo di renderlo visibile anche a voi.
