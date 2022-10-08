@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cc250b0506614ef658ade9a491c5561a65b98800
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 976c73aebe698152c4824e3eaedfcc19a13ae525
+ms.sourcegitcommit: 1be178dc3b34575e1914e629f004f897c02e0097
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269671"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68138489"
 ---
 # <a name="survivable-branch-appliance-sba-for-direct-routing"></a>Survivable Branch Appliance (SBA) per routing diretto
 
@@ -208,6 +208,8 @@ Per indicazioni dettagliate su come configurare session border controller con Su
 Segnalare eventuali problemi all'organizzazione di supporto del fornitore di SBC. Quando segnala il problema, indica che hai configurato Survivable Branch Appliance.
 
 ## <a name="known-issues"></a>Problemi noti
+
+- Poiché SBA si basa su token di autenticazione validi per 24 ore e rinnovati quotidianamente, attualmente SBA può supportare interruzioni per un massimo di 24 ore dall'ultima autenticazione. Ciò significa che se si verifica un'interruzione 20 ore dopo l'ultimo rinnovo del token di autenticazione, SBA sarà operativo solo per le restanti 4 ore.
 
 - Quando si aggiungono nuovi Survivable Branch Appliance, potrebbe essere necessario del tempo prima che sia possibile usarli nei criteri survivable Branch Appliance.
 
