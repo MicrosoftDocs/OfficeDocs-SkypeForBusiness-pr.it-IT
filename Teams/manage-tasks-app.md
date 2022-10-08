@@ -19,12 +19,13 @@ appliesto:
 ms.collection:
 - M365-collaboration
 - m365-frontline
-ms.openlocfilehash: 23c75051268de176cc14a9b8df426e8d67f5a2d3
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+- highpri
+ms.openlocfilehash: 74b67a71f8b93f5f0ed898ef186beede056ec31a
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67396497"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68047116"
 ---
 # <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Tasks per l'organizzazione in Microsoft Teams
 

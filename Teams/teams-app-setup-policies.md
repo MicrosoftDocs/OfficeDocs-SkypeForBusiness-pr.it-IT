@@ -8,6 +8,7 @@ ms.tgt.pltfrm: cloud
 ms.subservice: teams-apps
 ms.service: msteams
 audience: Admin
+ms.date: 09/26/2022
 ms.collection:
 - M365-collaboration
 appliesto:
@@ -19,12 +20,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: d192bffdc83510da021914627c65b03f190c6c63
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: dc84bc7be43182194af3a072edb875a6a257a9d5
+ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837176"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68377334"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -51,7 +52,7 @@ Le app vengono appuntate nella barra delle app sul lato sinistro del client desk
 
 |Client desktop di Teams  |Client per dispositivi mobili di Teams |
 |---------|---------|
-|![Barra delle applicazioni nel client desktop di Teams.](media/app-setup-policies-desktop-app-bar.png).  |   ![Barra delle applicazioni nel client mobile di Teams.](media/mobile-app-ui.png)      |
+|![Screenshot che mostra la barra dell'app nel client desktop di Teams.](media/app-setup-policies-desktop-app-bar.png).  |   ![Screenshot che mostra la barra dell'app nel client mobile di Teams.](media/mobile-app-ui.png)      |
 
 Le estensioni di messaggistica sono disponibili nella parte inferiore dell'area di composizione dei messaggi.
 
@@ -112,7 +113,7 @@ I criteri di configurazione delle app vengono gestiti nell'interfaccia di ammini
 
 È possibile modificare le impostazioni nei criteri globali per includere le app desiderate. Per personalizzare Teams per diversi gruppi di utenti nell'organizzazione, creare e assegnare uno o più criteri personalizzati.
 
-![Pagina dei criteri di configurazione dell'app per gestire i criteri o aggiungere nuovi criteri.](media/app-setup-policies-update.png)
+:::image type="content" source="media/app-setup-policies-update.png" alt-text="Screenshot che mostra la pagina dei criteri di configurazione delle app con le opzioni per gestire i criteri o aggiungere nuovi criteri.":::
 
 ### <a name="edit-an-app-setup-policy"></a>Modificare i criteri di configurazione di un'app
 
@@ -161,7 +162,7 @@ Per visualizzare tutte le app aggiunte per un utente, gli utenti potrebbero dove
 |Client desktop di Teams |Client per dispositivi mobili di Teams |
 |---------|---------|
 |Nella barra dell'app sul lato di Teams seleziona **... Altre app**.| Nella barra delle app vicino alla parte inferiore di Teams, scorrere verso l'alto.|
-|![Più app nel client desktop di Teams.](media/app-setup-policies-desktop-more-apps.png)   |![più app nel client per dispositivi mobili di Teams](media/app-setup-policies-mobile-more-apps.png)  
+|![Screenshot che mostra altre app aggiunte nel client desktop di Teams.](media/app-setup-policies-desktop-more-apps.png)   |![Screenshot che mostra altre app aggiunte nel client mobile di Teams](media/app-setup-policies-mobile-more-apps.png)  
 
 #### <a name="what-do-i-need-to-know-about-the-teams-mobile-experience"></a>Cosa devo sapere sull'esperienza per dispositivi mobili di Teams
 

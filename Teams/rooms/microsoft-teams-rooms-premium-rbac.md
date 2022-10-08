@@ -1,7 +1,7 @@
 ---
-title: Controllo dell'accesso basato sui ruoli con il servizio Room Premium di Microsoft Teams
-author: dstrome
-ms.author: dstrome
+title: Controllo dell'accesso basato sui ruoli nel portale di gestione di Microsoft Teams Pro
+author: altsou
+ms.author: altsou
 manager: serdars
 ms.reviewer: altsou
 ms.topic: article
@@ -15,29 +15,29 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni sul controllo dell'accesso basato sui ruoli con il servizio gestito Microsoft Teams Rooms.
+description: Informazioni sul controllo dell'accesso basato sui ruoli nel portale di gestione di Microsoft Teams Rooms Pro.
 f1keywords: ''
-ms.openlocfilehash: 0edce289a23116ed76bf984bfc72724295fc5a5a
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 8893f5dbe08203708fca21f808e3fda5c0f2b433
+ms.sourcegitcommit: 021cfac01a38282a8cde6e913d74be2d54c39162
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268361"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68218525"
 ---
-# <a name="role-based-access-control-with-the-microsoft-teams-rooms-managed-service"></a>Controllo dell'accesso basato sui ruoli con il servizio gestito Microsoft Teams Rooms
+# <a name="role-based-access-control-in-the-microsoft-teams-pro-management-portal"></a>Controllo dell'accesso basato sui ruoli nel portale di gestione di Microsoft Teams Pro
 
-Il controllo degli accessi in base ai ruoli nel servizio gestito Microsoft Teams Rooms consente di gestire l'accesso degli utenti ai dati delle risorse della sala nell'organizzazione. Assegnando ruoli agli utenti del portale di servizi, è possibile limitare gli elementi che possono visualizzare e modificare. Ogni ruolo ha un set di autorizzazioni che determinano quali utenti con quel ruolo possono accedere e modificare all'interno dell'organizzazione.
+Il controllo degli accessi in base ai ruoli nel portale di gestione di Microsoft Teams Rooms Pro consente di gestire l'accesso degli utenti ai dati delle risorse delle chat room nell'organizzazione. Assegnando ruoli agli utenti del portale, è possibile limitare gli elementi che possono visualizzare e modificare. Ogni ruolo ha un set di autorizzazioni che determinano quali utenti con quel ruolo possono accedere e modificare all'interno dell'organizzazione.
 
 Per creare, modificare o assegnare ruoli, l'account deve avere una delle autorizzazioni seguenti:
 
 - Amministratore globale tramite Azure Active Directory (Azure AD)
-- Amministratore del servizio gestito tramite il portale del servizio gestito Microsoft Teams Rooms
+- Amministratore del servizio gestito tramite il portale di gestione di Microsoft Teams Rooms Pro
 
 ## <a name="what-is-a-role"></a>Che cos'è un ruolo?
 
-Un ruolo definisce il set di autorizzazioni concesse agli utenti assegnati a tale ruolo. Per il momento, il servizio Microsoft Teams Rooms gestito ha tre ruoli predefiniti: **Amministratore del servizio gestito**, **Cliente potenziale del sito** e **Site Tech**. Trattano alcuni scenari comuni per gli utenti dell'organizzazione che potrebbero essere coinvolti nella gestione delle chat room.
+Un ruolo definisce il set di autorizzazioni concesse agli utenti assegnati a tale ruolo. Per il momento, il portale di gestione di Microsoft Teams Rooms Pro ha tre ruoli predefiniti: **Amministratore del servizio gestito**, **Cliente potenziale del sito** e **Site Tech**. Trattano alcuni scenari comuni per gli utenti dell'organizzazione che potrebbero essere coinvolti nella gestione delle chat room.
 
-Per visualizzare i ruoli, nel riquadro di spostamento sinistro del portale del servizio gestito Microsoft Teams Rooms passare a **Ruoli** e quindi selezionare uno dei ruoli per visualizzare le proprietà, le autorizzazioni e le assegnazioni del ruolo.  
+Per visualizzare i ruoli, nel riquadro di spostamento sinistro del portale di Microsoft Teams Rooms Pro Management passare a **Ruoli** e quindi selezionare uno dei ruoli per visualizzare le proprietà, le autorizzazioni e le assegnazioni del ruolo.  
 
 - **Proprietà**: nome, tipo di ruolo e descrizione
 - **Autorizzazioni**: elenca le caratteristiche e il livello di autorizzazioni a cui ha accesso il ruolo.
@@ -47,9 +47,9 @@ Per visualizzare i ruoli, nel riquadro di spostamento sinistro del portale del s
 
 È possibile assegnare ruoli predefiniti a gruppi o utenti senza ulteriori configurazioni. Tenere presente che non è possibile eliminare o modificare il nome, la descrizione, il tipo o le autorizzazioni di un ruolo incorporato.
 
-- **Amministratore del servizio gestito**: ha accesso completo al portale del servizio Microsoft Teams Room Premium.
-- **Cliente potenziale del sito**: organizza sale, ha accesso ai report e può gestire i ticket. Non è possibile reimpostare il codice di registrazione o apportare modifiche alla configurazione del servizio.  
-- **Site Tech**: gestisce i biglietti per stanze specifiche. Non ha le autorizzazioni per modificare il servizio o organizzare le sale nel servizio.
+- **Amministratore del servizio gestito**: ha accesso completo al portale di gestione di Microsoft Teams Room Pro.
+- **Cliente potenziale del sito**: organizza sale, ha accesso ai report e può gestire i ticket. Non è possibile reimpostare il codice di registrazione o apportare modifiche alle configurazioni dei servizi.  
+- **Site Tech**: gestisce i biglietti per stanze specifiche. Non dispone delle autorizzazioni per modificare le configurazioni dei servizi o organizzare le sale.
 
 La tabella seguente riepiloga le operazioni che ogni ruolo può eseguire.
 
@@ -70,7 +70,7 @@ La tabella seguente riepiloga le operazioni che ogni ruolo può eseguire.
 |Gestione dei ticket   |Crea evento imprevisto del cliente         |&#10004;           |&#10004;           |&#10004;  |
 |    |Visualizzare         |&#10004;           |&#10004;           |&#10004;  |
 |    |Aggiornamento         |&#10004;           |&#10004;           |&#10004;  |
-|Microsoft Teams Rooms impostazioni del servizio gestito    |Visualizzare         |&#10004;           |         ||
+|impostazioni del servizio di gestione di Microsoft Teams Rooms Pro    |Visualizzare         |&#10004;           |         ||
 |    |Modificare        |&#10004;           |         ||
 |Gestione dei ruoli    |Visualizzare         |&#10004;           |         ||
 |    |Modificare         |&#10004;           |         ||
@@ -79,7 +79,7 @@ La tabella seguente riepiloga le operazioni che ogni ruolo può eseguire.
 
 Se i ruoli predefiniti non soddisfano le esigenze dell'organizzazione, è possibile creare un ruolo e configurarne le autorizzazioni in base alle esigenze. Per creare un ruolo, è necessario essere un amministratore globale o un amministratore del servizio gestito. 
 
-1. Nel riquadro di spostamento sinistro del portale del servizio gestito Microsoft Teams Rooms passare a **Ruoli** **impostazioni** > .
+1. Nel riquadro di spostamento sinistro del portale di gestione di Microsoft Teams Rooms Pro passare a **Ruoli** **impostazioni** > .
 2. Selezionare **Crea ruolo**.
 3. Nella pagina **Impostazioni generali** , in **Proprietà ruolo**, immettere un nome per il ruolo. In **Descrizione** immettere i dettagli su questo ruolo. Scegliere **Avanti**.
 4. Nella pagina **Autorizzazioni** , in **Autorizzazioni ruolo**, scegliere le autorizzazioni per questo ruolo selezionando le caselle di controllo appropriate. Scegliere **Avanti** per creare la prima assegnazione per questo ruolo.
@@ -92,7 +92,7 @@ Se i ruoli predefiniti non soddisfano le esigenze dell'organizzazione, è possib
 
 Per assegnare i ruoli, è necessario essere un amministratore globale o un amministratore del servizio gestito o avere un ruolo con autorizzazioni di gestione dei ruoli.
 
-1. Nel riquadro di spostamento sinistro del portale del servizio gestito Microsoft Teams Rooms passare a **Ruoli** **impostazioni** > .
+1. Nel riquadro di spostamento sinistro del portale di gestione di Microsoft Teams Rooms Pro passare a **Ruoli** **impostazioni** > .
 
     :::image type="content" source="../media/microsoft-teams-rooms-premium-roles.png" alt-text="Screenshot della pagina di controllo di Access che mostra i ruoli.":::
 
@@ -108,4 +108,4 @@ Per assegnare i ruoli, è necessario essere un amministratore globale o un ammin
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [servizio gestito Microsoft Teams Rooms](microsoft-teams-rooms-premium.md)
+- [portale di gestione di Microsoft Teams Rooms Pro](microsoft-teams-rooms-premium.md)

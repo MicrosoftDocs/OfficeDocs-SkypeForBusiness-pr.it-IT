@@ -15,12 +15,12 @@ f1.keywords:
 ms.localizationpriority: medium
 description: Informazioni sul supporto del ciclo di vita per Microsoft Teams Rooms, inclusa la struttura del supporto dinamico e le relative fasi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 509f4da415d7a7bd583442f21bd46efc52c9984f
-ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
+ms.openlocfilehash: 9025500bc8aff6ddded71df29b9280d964763bdc
+ms.sourcegitcommit: 1be178dc3b34575e1914e629f004f897c02e0097
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67706653"
+ms.lasthandoff: 09/28/2022
+ms.locfileid: "68138479"
 ---
 # <a name="microsoft-teams-rooms-app-version-support"></a>Supporto della versione dell'app Microsoft Teams Rooms
  
@@ -53,15 +53,15 @@ La tabella seguente mostra le versioni consigliate e supportate di Windows 10 ve
 | 21H2    | 2021-11-16        | Supportati<br>Consigliata                               | 4.12.126.0                                        | 19044.1288           |
 | 21H1    | 2021-05-18        | Non supportato                                           | &#x2014;                                          | &#x2014;             |
 | 20H2    | 2020-10-20        | Supportati                                               | 4.10.10.0                                         | 19042.631            |
-| 2004    | 2020-05-27        | Saltato <br/> Non consigliato &#x2780;                 | &#x2014;                                          | &#x2014;             |
-| 1909    | 2019-11-12        | Supportati                                               | 4.5.33.0                                          | 18363.418            |
+| 2004    | 2020-05-27        | Non supportato, <br/>Problemi di compatibilità noti &#x2780;| &#x2014;                                          | &#x2014;             |
+| 1909    | 2019-11-12        | Non supportato                                           | &#x2014;                                          | &#x2014;             |
 | 1903    | 2019-05-21        | Non supportato                                           | &#x2014;                                          | &#x2014;             |
 | 1809    | 2019-03-28        | Non supportato, <br/>Problemi di compatibilità noti &#x2781; | &#x2014;                                          | &#x2014;             |
 | 1803    | 2018-07-10        | Non supportato                                           | &#x2014;                                          | &#x2014;             |
 | 1709    | 2018-01-18        | Non supportato                                           | &#x2014;                                          | &#x2014;             |
 | 1703    | 2017-07-11        | Non supportato                                           | &#x2014;                                          | &#x2014;             |
 
-non è consigliabile &#x2780; Windows 10 versione 2004 a causa di problemi di compatibilità riscontrati con l'applicazione Microsoft Teams Rooms. Questo problema specifico causa il mancato avvio dell'applicazione Microsoft Teams Rooms dopo il riavvio notturno. 
+non è consigliabile &#x2780; Windows 10 versione 2004 a causa di problemi di compatibilità riscontrati con l'applicazione Microsoft Teams Rooms. Questo problema specifico causa il mancato avvio dell'applicazione Microsoft Teams Rooms dopo il riavvio notturno.
 
 non è consigliabile &#x2781; Windows 10 versione 1809 a causa di problemi di compatibilità riscontrati con l'applicazione Microsoft Teams Rooms. Questo problema specifico causa il mancato avvio dell'applicazione Microsoft Teams Rooms dopo il riavvio notturno. Questo problema è stato risolto nella versione Windows 10 1903.  
 

@@ -19,16 +19,16 @@ ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 42044bf8f74c99b27db724e87ee35e700491aa8e
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: 64e63b4df818d792f722aed5b61315828a79bf76
+ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837196"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68377134"
 ---
-# <a name="microsoft-teams-apps-permissions-and-considerations"></a>Autorizzazioni e considerazioni per le app di Microsoft Teams
+# <a name="information-accessed-and-actions-performed-by-teams-apps-and-admin-considerations"></a>Informazioni accessibili e azioni eseguite dalle app Teams e considerazioni per gli amministratori
 
-Le app di Microsoft Teams consentono di aggregare una o più funzionalità in app che possono essere installate, aggiornate e disinstallate. Le funzionalità delle app includono:
+Le app di Microsoft Teams aggregano una o più funzionalità in app che possono essere installate, aggiornate e disinstallate. Le funzionalità delle app includono:
 
 * Bot
 * Estensioni per la messaggistica

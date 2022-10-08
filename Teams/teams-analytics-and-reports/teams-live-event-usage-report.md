@@ -17,12 +17,12 @@ description: Informazioni su come usare il report sull'utilizzo di eventi live d
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29a255c9248f07db00d4295e99d4062116ca4e76
-ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+ms.openlocfilehash: 1a7f571610c49da16735cf66f65f725901fce56d
+ms.sourcegitcommit: b2692b3f6c60d8df5ba0677c68ff9c90a75a0d72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66794094"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68033814"
 ---
 # <a name="microsoft-teams-live-event-usage-report"></a>Report sull'utilizzo di eventi live di Microsoft Teams
 
@@ -48,7 +48,7 @@ Il report Sull'utilizzo degli eventi live di Teams nell'interfaccia di amministr
 |**5**   |Selezionare **Modifica colonne** per aggiungere o rimuovere colonne nella tabella.|
 
 ## <a name="notes"></a>Note
-Vengono visualizzati fino a 100 eventi live che corrispondono ai criteri del report corrente. Per visualizzare altri eventi live, applicare filtri di data per ridurre le dimensioni dell'elenco.
+Vengono visualizzati al massimo 100 eventi live che corrispondono ai criteri del report corrente. Per visualizzare altri eventi live, applicare filtri di data per ridurre le dimensioni dell'elenco.
 
 I relatori anonimi non verranno inclusi nel report.
 

@@ -10,6 +10,7 @@ audience: admin
 ms.collection:
 - M365-voice
 - m365solution-voice
+- highpri
 ms.reviewer: jowrig
 search.appverid: MET150
 f1.keywords:
@@ -17,12 +18,12 @@ f1.keywords:
 description: 'Case study vocale di Teams per società multinazionali: panoramica della migrazione vocale'
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ae0d123841e57987346fae304e34bde28e4ffe84
-ms.sourcegitcommit: 6754f2d11da0afff067f0872acf778a83fd1595e
+ms.openlocfilehash: 0b77cffa9bfa56ad445e948a4688e18e35118fd7
+ms.sourcegitcommit: 401cee68d4f6f9470d614dda12b9cb023f382ff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "67808627"
+ms.lasthandoff: 09/23/2022
+ms.locfileid: "67999481"
 ---
 # <a name="contoso-case-study-teams-voice-migration-overview"></a>Case study di Contoso: Panoramica della migrazione vocale di Teams
 
