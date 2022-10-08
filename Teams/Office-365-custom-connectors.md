@@ -1,5 +1,5 @@
 ---
-title: Gestire Microsoft 365 e i connettori personalizzati
+title: Gestire i connettori e i connettori personalizzati di Microsoft 365
 author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
@@ -7,25 +7,26 @@ ms.topic: article
 ms.service: msteams
 ms.subservice: teams-apps
 audience: admin
+ms.date: 09/01/2022
 ms.collection:
 - M365-collaboration
 ms.reviewer: lucarras
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Informazioni su come i connettori consentono di mantenere il team aggiornato fornendo spesso contenuti e aggiornamenti direttamente in un canale di Teams per i servizi usati.
+description: Informazioni su come i connettori consentono di mantenere aggiornato il team distribuendo spesso contenuti e aggiornamenti direttamente in un canale di Teams per i servizi usati.
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5e61a6705f470ee93c7169effdd56f35ca0dd6f4
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: fb65e7c91aa7ac0de7c8dade3a442f457d72657f
+ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837356"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68377004"
 ---
-# <a name="manage-microsoft-365-and-custom-connectors"></a>Gestire Microsoft 365 e i connettori personalizzati
+# <a name="manage-microsoft-365-connectors-and-custom-connectors"></a>Gestire i connettori e i connettori personalizzati di Microsoft 365
 
 Per mantenere aggiornato il team, i connettori forniscono contenuti di uso frequente e aggiornamenti dei servizi direttamente in un canale di Teams. Con i connettori, gli utenti di Teams possono ricevere aggiornamenti dai servizi più diffusi, come Trello, Wunderlist, GitHub e Azure DevOps Services. Gli aggiornamenti vengono pubblicati direttamente nel flusso di chat del loro team.
 

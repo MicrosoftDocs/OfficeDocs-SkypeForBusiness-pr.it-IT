@@ -1,7 +1,7 @@
 ---
 title: Configurare le impostazioni degli eventi live in Microsoft Teams
-author: CarolynRowe
-ms.author: crowe
+author: MicrosoftHeidi
+ms.author: heidip
 manager: serdars
 ms.date: 03/11/2019
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8ac5bf29fbbe61b2e2224aeccb2082e31742816b
-ms.sourcegitcommit: 4d88637f510a78d5709d1213c3e285d83a022014
+ms.openlocfilehash: f526a3404d9077ecd97d877a914975218640028c
+ms.sourcegitcommit: fcedb958bf555d870215ae84fb83752304944716
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66794164"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68486566"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi live in Microsoft Teams
 
@@ -101,7 +101,7 @@ Per ulteriori informazioni, vedi [Set-CsTeamsMeetingBroadcastConfiguration](/pow
 > Se prevedi di creare eventi live usando un'app o un dispositivo esterno, dovrai anche [configurare il provider eCDN con Microsoft Stream](/stream/network-caching). 
 
 >[!Note]
-> Il passaggio dall'utilizzo di Microsoft Stream a [ OneDrive for Business e SharePoint per le registrazioni delle riunioni ](../tmr-meeting-recording-change.md) sarà graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
+> The change from using Microsoft Stream to [OneDrive for Business and SharePoint for meeting recordings](../tmr-meeting-recording-change.md) will be a phased approach. At launch you'll be able to opt-in to this experience, in November you'll have to opt-out if you want to continue using Stream, and some time in early 2021 we'll require all customers to use OneDrive for Business and SharePoint for new meeting recordings.
 
 >[!Note]
 > La soluzione eCDN scelta è soggetta alle condizioni del servizio e all'informativa sulla privacy del provider di terze parti selezionate, che regoleranno l'uso della soluzione del provider di eCDN. L'uso della soluzione del provider di eCDN non sarà soggetto alle condizioni dei contratti multilicenza o dei servizi online Microsoft. Se non accetti le condizioni del provider di terze parti, non abilitare la soluzione eCDN in Microsoft Teams.

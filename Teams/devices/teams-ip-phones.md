@@ -22,16 +22,21 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e da conferenza sono certificati per Microsoft Teams per produrre i migliori risultati.
-ms.openlocfilehash: b35fbf4572c9db1a1fba5bf0ae341c596b9166b2
-ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
+ms.openlocfilehash: a13551627b0bd4d41d44e64988452fae59dc7090
+ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67706025"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68376864"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Dispositivi Android certificati da Microsoft Teams
 
-Il programma di certificazione per dispositivi Microsoft Teams garantisce che i dispositivi certificati soddisfino uno standard elevato, con obiettivi di prestazioni e metriche di qualità più elevati nell'intera esperienza di Teams (audio, video, interfaccia utente). Microsoft e i partner OEM stanno lavorando attivamente per garantire che i dispositivi soddisfino tutti i requisiti di certificazione, tra cui sicurezza, qualità audio e video, esperienza di Teams e accessibilità.
+Il programma di certificazione per i dispositivi di Microsoft Teams garantisce che i dispositivi certificati soddisfino uno standard elevato, con obiettivi di prestazioni e metriche di qualità più elevati nell'intera esperienza di Teams (audio, video, interfaccia utente). Microsoft e i partner OEM stanno lavorando attivamente per garantire che i dispositivi soddisfino tutti i requisiti di certificazione, tra cui sicurezza, qualità audio e video, esperienza di Teams e accessibilità.
+
+> [!IMPORTANT]
+> Il programma di certificazione per dispositivi di Microsoft Teams garantisce che i dispositivi certificati soddisfino requisiti specifici solo per la progettazione e le prestazioni dell'hardware. Il programma di certificazione non valuta il supporto a livello di funzionalità o di ambiente cloud.
+>
+> Per informazioni sulle funzionalità supportate in Teams Rooms per Windows e Teams Rooms per Android, incluso il supporto dell'ambiente cloud, vedere confronto delle funzionalità di [Teams Rooms per Windows e Android](../rooms/teams-devices-feature-comparison.md).
 
 I programmi di certificazione sono progettati per garantire che tutti i dispositivi certificati esercino una versione android con le funzionalità richieste per Teams e l'interfaccia di amministrazione di Teams. Le date di fine della certificazione si basano sulla versione del sistema operativo Android in esecuzione nel dispositivo quando entra nel programma di certificazione. I nostri partner OEM stanno lavorando per prolungare la durata della certificazione aggiornando la versione del sistema operativo Android e ricertificando o rilasciando nuovi modelli all'avanguardia.
 
@@ -125,7 +130,8 @@ Di seguito sono riportate le versioni più recenti dell'app e del firmware del t
 
 | Versione del prodotto | Data di rilascio  | Versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:--------------|:----------------------------|:-----------------------|:--------------------|
-| Aggiornamento #3A 2022  | 13 luglio 2022   | `1449/1.0.94.2022062103` |`5.0.5304.0` | `322` |
+| 2022 Aggiornamento n. 4  | 22 settembre 2022| `1449/1.0.94.2022090705` |`5.0.5484.0` | `361` |
+| Aggiornamento #3A 2022| 13 luglio 2022   | `1449/1.0.94.2022062103` |`5.0.5304.0` | `322` |
 | 2022 Aggiornamento n. 3  | 6 luglio 2022   | `1449/1.0.94.2022061702` |`5.0.5304.0` | `322` |
 | Aggiornamento 2022 #2A  | 13 aprile 2022   | `1449/1.0.94.2022041102` |`5.0.5304.0` | `322` |
 | 2022 Aggiornamento n. 2   | 21 marzo 2022   | `1449/1.0.94.2022030501` |`5.0.5304.0` | `322` |
@@ -153,6 +159,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware  | Versione del prodotto inclusa  |
 |:----------------|:--------------|:----------------------------|
+|Audiocodice C435HD/C448HD/C450HD/C455HD/C470HD | `1.17.764` | Aggiornamento #3A 2022    |
 |Audiocodice C435HD/C455HD/C470HD | `1.17.741` | Aggiornamento #3A 2022    |
 |Poly Trio C60 | `7.3.2.0174` | Aggiornamento #3A 2022 |
 |Poly CCX 400/500/600/505 | `7.3.2.0182` | Aggiornamento #3A 2022 |
@@ -250,6 +257,7 @@ Di seguito sono riportati i Teams Rooms più recenti sulle versioni del firmware
 
 | Versione del prodotto| Data di rilascio | Versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
+| Aggiornamento 2022 #2B  | 15 settembre 2022 |`1449/1.0.96.2022090606`| `5.0.5304.0` | `1.0.0.202112100118.product version code : 322` |
 | Aggiornamento 2022 #2A  | 8 agosto 2022 |`1449/1.0.96.2022072103`| `5.0.5304.0` | `1.0.0.202112100118.product version code : 322` |
 | 2022 Aggiornamento n. 2  | 25 maggio 2022 |`1449/1.0.96.2022051102`| `5.0.5304.0` | `1.0.0.202112100118.product version code : 322` |
 | 2022 Aggiornamento n. 1  | 24 febbraio 2022 |`1449/1.0.96.2022011305`| `5.0.5304.0` | `1.0.0.202112100118.product version code : 322` |
@@ -267,6 +275,11 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware | Versione del prodotto inclusa |
 |:--------------|:-----------------|:-------------------------|
+| Logi Rallybar  | `1.7.300`     | Aggiornamento 2022 #2B  |
+| Logi Rallybar Mini  | `1.7.300`     | Aggiornamento 2022 #2B  |
+| Logi RoomMate  | `1.7.202`   | Aggiornamento 2022 #2B  |
+| Logi Console  | `1.7.200`    | Aggiornamento 2022 #2B  |
+| EPOS ESPANDI Vision 3T |`1.5.22242.02`   | Aggiornamento U2A 2022 |
 | Yealink MeetingBoard 65" | `155.15.0.10 `   | Aggiornamento 2022 #2A  |
 | Poly Studio X30 | `3.13.0.368067` | Aggiornamento 2022 #2A   |
 | Poly Studio X50 | `3.13.0.368067` | Aggiornamento 2022 #2A |
@@ -369,6 +382,7 @@ Di seguito sono riportate le versioni più recenti dell'app e del firmware dei p
 
 |Versione del prodotto| Data di rilascio | Versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
+|Aggiornamento #3A 2022  | 16 settembre 2022 | `1449/1.0.97.2022739908` | `5.0.5304.0`  | `322` |
 |2022 Aggiornamento n. 3  | 12 luglio 2022 | `1449/1.0.97.2022739901` | `5.0.5304.0`  | `322` |
 |2022 Aggiornamento n. 2  | 25 aprile 2022 | `1449/1.0.97.2022733702` | `5.0.5304.0`  | `322` |
 |Aggiornamento 2022 #1A | 25 febbraio 2022 | `1449/1.0.97.2022730007` | `5.0.5304.0`  | `322` |
@@ -381,6 +395,8 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware | Versione del prodotto inclusa|
 |:--------------|:-----------------|:-------------------------|
+|Pannello per tastierino pulito | `NFA1.20220914.1206` | Aggiornamento #3A 2022  |
+|Logitech Tap Scheduler | `1.7.200` |Aggiornamento #3A 2022  |
 |Yealink RoomPanel | ` 147.15.0.33 ` | 2022 Aggiornamento n. 3 |
 |Pannello per tastierino pulito | `NFA1.20220512.2210` | 2022 Aggiornamento n. 2  |
 |Crestron Touchpanel TSS-1070 / TSS-770 | `2.001.0058 ` | 2022 Aggiornamento n. 1|

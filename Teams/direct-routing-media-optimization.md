@@ -16,12 +16,12 @@ f1.keywords:
 description: Ottimizzazione multimediale locale per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4c33b8225f3bcde32428348e85166ff4d4463738
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
+ms.openlocfilehash: a86758d3376b2232126d095f9c9b1a1a28371481
+ms.sourcegitcommit: 9522d951700d19ab13c60a6452b3a8a4c824ee36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616092"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "68018112"
 ---
 # <a name="plan-for-local-media-optimization-for-direct-routing"></a>Pianificare Ottimizzazione multimediale locale per il routing diretto
 
@@ -232,7 +232,7 @@ Il diagramma seguente mostra il flusso di traffico ad alto livello per l'utente 
 
 Diagramma 5.  Flusso del traffico con modalità "Bypass sempre" e l'utente si trova nel sito "home"
 
-! [Diagramma che mostra il flusso del traffico Ottimizzazione multimediale locale.] (media/direct-routing-media-op-5.png "Flusso di traffico con modalità "Bypass sempre" e l'utente si trova nel sito "home")
+![Diagramma che mostra il flusso di traffico Ottimizzazione multimediale locale.](media/direct-routing-media-op-5.png "Flusso del traffico con la modalità &quot;Bypass sempre&quot; e l'utente è nel sito &quot;home&quot;")
 
 
 #### <a name="scenario-2-the-user-and-gateways-are-in-different-sites"></a>Scenario 2: l'utente e i gateway si trovano in siti diversi
@@ -255,7 +255,7 @@ Il diagramma seguente mostra il flusso di traffico ad alto livello quando l'uten
 
 Diagramma 6.  Flusso del traffico con modalità "Bypass sempre" e l'utente non è nel sito "home" ma nella rete interna
 
-! [Un diagramma mostra il flusso del traffico Ottimizzazione multimediale locale.] (media/direct-routing-media-op-6.png "Flusso di traffico con modalità "Bypass sempre" e l'utente non è nel sito "home", ma nella rete interna")
+![Un diagramma mostra il flusso di traffico Ottimizzazione multimediale locale.](media/direct-routing-media-op-6.png "Flusso del traffico con la modalità &quot;Bypass sempre&quot; e l'utente non è nel sito &quot;home&quot; ma nella rete interna")
 
 ### <a name="mode-2-only-for-local-users"></a>Modalità 2: Solo per gli utenti locali
 
@@ -295,7 +295,7 @@ Nel diagramma seguente, un utente assegnato alla filiale locale in Vietnam, ment
 
 Diagramma 7. Flusso del traffico con modalità "Solo per utenti locali" e l'utente è nel sito "home"
 
-! [Un altro diagramma che mostra il flusso del traffico Ottimizzazione multimediale locale.] (media/direct-routing-media-op-7.png "Flusso di traffico con modalità "Solo per utenti locali" e l'utente è nel sito "home")
+![Un altro diagramma che mostra il flusso del traffico Ottimizzazione multimediale locale.](media/direct-routing-media-op-7.png "Flusso del traffico con la modalità &quot;Solo per gli utenti locali&quot; e l'utente è nel sito &quot;home&quot;")
 
 
 #### <a name="scenario-2-the-user-and-gateways-are-in-different-sites"></a>Scenario 2. L'utente e i gateway si trovano in siti diversi
@@ -325,7 +325,7 @@ Nel diagramma seguente, l'utente interno, mentre si trova nella filiale indonesi
 
 Diagramma 8.  Flusso del traffico con modalità "Solo per utenti locali" e l'utente non è nel sito "home" ma nella rete interna
 
-! [Un altro diagramma mostra il flusso del traffico Ottimizzazione multimediale locale.] (media/direct-routing-media-op-8.png "Flusso di traffico con modalità "Solo per utenti locali", l'utente non è nel sito "home" ma nella rete interna")
+![Un altro diagramma mostra ottimizzazione multimediale locale del flusso del traffico.](media/direct-routing-media-op-8.png "Flusso del traffico con la modalità &quot;Solo per gli utenti locali&quot;, l'utente non si trova nel sito &quot;home&quot; ma nella rete interna")
 
 ## <a name="known-issues"></a>Problemi noti
 

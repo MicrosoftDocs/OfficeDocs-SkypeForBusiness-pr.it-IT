@@ -17,12 +17,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare i criteri di feedback per controllare se gli utenti di Teams nell'organizzazione possono inviare feedback su Teams a Microsoft.
-ms.openlocfilehash: 933c6971058c107ab881cb48bb0f2a9dbd74900d
-ms.sourcegitcommit: 44fd07d8e6e5fcbe5051de2300e180f295eaaad3
+ms.openlocfilehash: 9510a94a60a79a36292011fdcdad6afa97e6f56f
+ms.sourcegitcommit: d6e180791134426445a35fd485dcca18bde2006b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/15/2022
-ms.locfileid: "67339800"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68494659"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
@@ -71,6 +71,7 @@ Per disattivare e attivare le funzionalità, impostare i seguenti parametri:
  - **Screenshot**: usare il contrassegno **AllowScreenshotCollection** per aggiungere il consenso esplicito per la raccolta di screenshot per gli utenti.
  - **Email**: usare il flag **AllowEmailCollection** per aggiungere un campo di posta elettronica.
  - **Raccolta log**: usare il flag **AllowLogCollection** per aggiungere il consenso esplicito per la raccolta di log per gli utenti. La raccolta log è attualmente abilitata solo nei dispositivi mobili. Per altre informazioni sui dati condivisi tramite i log, [vedere altre informazioni](https://go.microsoft.com/fwlink/?linkid=2168178).
+ - **Suggerire una funzionalità**: impostare il parametro **EnableFeatureSuggestions** su True per consentire agli utenti a cui sono assegnati i criteri di suggerire una caratteristica. Se si imposta il parametro su disabilitata, la caratteristica viene disattivata e gli utenti a cui sono assegnati i criteri non hanno la possibilità di fornire feedback. L'impostazione predefinita è basata sull'impostazione dei criteri Esperienze connesse facoltativa di Microsoft 365. Per altre informazioni su questa impostazione, vedere [Panoramica delle esperienze connesse facoltative in Office](/deployoffice/privacy/optional-connected-experiences).
 
 ## <a name="create-a-custom-feedback-policy"></a>Creare criteri di feedback personalizzati
 

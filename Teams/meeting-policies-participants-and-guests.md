@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per partecipanti e guest.
-ms.openlocfilehash: 46db9b7f5a1fae40d3f46bad156e318a3e677d07
-ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
+ms.openlocfilehash: 5b489f312dd1fd1fcd9bdb6a301a65e76ab9ed91
+ms.sourcegitcommit: 9522d951700d19ab13c60a6452b3a8a4c824ee36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67706623"
+ms.lasthandoff: 09/26/2022
+ms.locfileid: "68018092"
 ---
 # <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -62,7 +62,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se le per
  Gli organizzatori di riunioni possono fare clic **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata.
 
 > [!NOTE]
-> Nelle opzioni della riunione l'impostazione è contrassegnata da "Chi può ignorare la sala di attesa". Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
+> In the meeting options the setting is labeled "Who can bypass the lobby". If you change the default setting for any user, it will apply to all new meetings organized by that user and any prior meetings where the user didn't modify Meeting options.
   
 |Valore dell'impostazione  |Comportamento di partecipazione |
 |---------|---------|
@@ -91,7 +91,7 @@ Questa impostazione è un criterio per utente e si applica durante una riunione.
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
-|**Disabilitato, ma l'organizzatore può eseguire l'override**     | I sottotitoli in tempo reale non sono attivati automaticamente per l'utente durante una riunione. L'utente vede l'opzione **Abilita i sottotitoli in tempo reale** nel menu di riversamento (**...**). Questa è l'impostazione predefinita. |
+|**Non abilitato ma l'utente può ignorare**     | I sottotitoli in tempo reale non sono attivati automaticamente per l'utente durante una riunione. L'utente vede l'opzione **Abilita i sottotitoli in tempo reale** nel menu di riversamento (**...**). Questa è l'impostazione predefinita. |
 |**Non abilitato**     | I sottotitoli in tempo reale sono disabilitati per l'utente durante le riunioni. L'utente non ha a disposizione l'opzione per attivarli.          |
 
 <a name="bkcontentsharing"> </a>

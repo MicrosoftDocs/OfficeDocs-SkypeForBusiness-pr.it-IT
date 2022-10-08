@@ -22,15 +22,16 @@ ms.collection:
 - microsoftcloud-retail
 - m365initiative-lists
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 39d44feb46fa20cb27755792e7f2236ed16b051f
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: 9ea4e8cb49166c116d69c12d795659b55c93c556
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67396277"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68047046"
 ---
 # <a name="manage-the-lists-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Elenchi per l'organizzazione in Microsoft Teams
 
@@ -84,7 +85,7 @@ In alcuni scenari è consigliabile limitare le azioni che gli utenti possono ese
 
 Con Elenchi, gli utenti ottengono un'esperienza desktop, Web e per dispositivi mobili. È importante sapere che gli utenti non possono creare nuovi elenchi o aggiungere elenchi esistenti usando Elenchi nel client per dispositivi mobili di Teams. Per visualizzare o modificare un elenco nel client per dispositivi mobili di Teams, è necessario prima creare o aggiungere un elenco usando Elenchi nel client desktop o Web di Teams.
 
-Gli utenti guest non possono creare o eliminare un elenco. Possono aggiungere voci di elenco a elenchi esistenti, avviare nuove conversazioni sulle voci di elenco e rispondere alle conversazioni esistenti sulle voci di elenco.
+Guests can't create or delete a list. They can add list items to existing lists, start new conversations about list items, and reply to existing conversations about list items.
 
 ### <a name="lists-and-the-sharepoint-app"></a>Elenchi e l'app SharePoint
 

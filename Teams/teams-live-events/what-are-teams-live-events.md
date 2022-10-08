@@ -1,7 +1,7 @@
 ---
 title: Cosa sono gli eventi live di Microsoft Teams?
-author: CarolynRowe
-ms.author: crowe
+author: MicrosoftHeidi
+ms.author: heidip
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -10,6 +10,7 @@ ms.collection:
 - m365initiative-meetings
 - m365solution-spcomms
 - m365solution-scenario
+- highpri
 ms.reviewer: sonua
 audience: admin
 search.appverid: MET150
@@ -22,12 +23,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: ec79ec6d230359a43c910336a53a462c5f80fc6d
-ms.sourcegitcommit: 4c4f2f220832cae3efb3f6f3c74795300d661295
-ms.translationtype: HT
+ms.openlocfilehash: fab22ca4bda45f1f534055a5f43d64358dea8cec
+ms.sourcegitcommit: fcedb958bf555d870215ae84fb83752304944716
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66825700"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68486596"
 ---
 # <a name="what-are-microsoft-teams-live-events"></a>Cosa sono gli eventi live di Microsoft Teams
 
@@ -41,7 +42,7 @@ Teams offre una collaborazione basata su chat, chiamate, riunioni ed eventi live
 
 Gli eventi live di Teams sono considerati la versione futura di Skype Meeting Broadcast. Questi, a lungo termine, sostituiranno le funzionalità fornite da Skype Meeting Broadcast. Microsoft continuerà a supportare Skype Meeting Broadcast per gli utenti che usano Skype for Business nelle loro organizzazioni, senza interruzioni del servizio per gli eventi nuovi o futuri. Tuttavia, è consigliabile provare gli eventi live di Teams per usare tutte le nuove ed entusiasmanti funzionalità, tra cui la condivisione dello schermo e il supporto per codificatori hardware/software esterni.
 
-È ora di iniziare. Esaminare prima di tutto il seguente diagramma, che mostra i componenti generali coinvolti negli eventi live di Microsoft 365 e il modo in cui sono connessi.
+So, let's get started. First, take a look at the following diagram that shows high level components involved in Microsoft 365 live events and how they're connected.
 
 ![Componenti principali degli eventi live.](../media/live-events-flow-diagram.png  "Componenti chiave di eventi live, programmazione, produzione, piattaforma Stream, provider eCDN di terze parti certificati")
 
@@ -85,7 +86,7 @@ L'input video è il base dell'evento live e può variare da una singola webcam a
     ![un evento live prodotto tramite un app o un dispositivo esterno.](../media/teams-live-events-external-encoder.png "Screenshot che mostra un evento live prodotto tramite un’app esterna o un metodo di produzione da dispositivo")
 
 >[!Note]
-> Il passaggio dall'utilizzo di Microsoft Stream a [ OneDrive for Business e SharePoint per le registrazioni delle riunioni ](../tmr-meeting-recording-change.md) sarà graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
+> The change from using Microsoft Stream to [OneDrive for Business and SharePoint for meeting recordings](../tmr-meeting-recording-change.md) will be a phased approach. At launch you'll be able to opt-in to this experience, in November you'll have to opt-out if you want to continue using Stream, and some time in early 2021 we'll require all customers to use OneDrive for Business and SharePoint for new meeting recordings.
 
 ### <a name="streaming-platform"></a>Piattaforma di streaming
 

@@ -7,18 +7,19 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 ms.subservice: teams-apps
+ms.date: 09/26/2022
 search.appverid: MET150
 description: Informazioni sulle impostazioni da configurare per controllare se i proprietari dei team dell'organizzazione possono concedere il consenso alle app.
 ms.localizationpriority: high
 ms.collection: M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cde84f4662b507b8497973436b9b713223fdbf74
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: dd47f8e46147e3b4d30052ff4a1b9fcde6c128e1
+ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837326"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68377154"
 ---
 # <a name="resource-specific-consent-in-microsoft-teams"></a>Consenso specifico delle risorse in Microsoft Teams
 
@@ -39,7 +40,7 @@ Le due impostazioni seguenti determinano se i proprietari del team possono conce
 > [!IMPORTANT]
 > La modifica di queste impostazioni non influisce sull'accesso ai dati per le app a cui è già stato fornito il consenso. Ad esempio, se si configurano queste impostazioni per impedire ai proprietari del team di fornire il consenso, tali modifiche non rimuovono l'accesso ai dati già concesso.
 
-#### <a name="the-users-can-consent-to-apps-accessing-company-data-on-their-behalf-setting"></a>Impostazione "Gli utenti possono fornire il consenso alle app che accedono ai dati aziendali per loro conto"
+#### <a name="the-users-can-consent-to-apps-accessing-company-data-on-their-behalf-setting"></a>L'impostazione Gli utenti possono acconsentire alle app che accedono ai dati aziendali per conto loro
 
 Questa impostazione controlla se gli utenti dell'organizzazione possono fornire il consenso alle app per loro conto. Per consentire ai proprietari del team di fornire il consenso, questa impostazione deve essere impostata su **Sì**. Per gestire questa impostazione, eseguire le operazioni seguenti:
 
@@ -59,16 +60,16 @@ Oltre alle impostazioni di Azure AD, [le impostazioni delle app a livello di org
 > [!IMPORTANT]
 > La modifica di queste impostazioni non influisce sull'accesso ai dati per le app a cui è già stato fornito il consenso. Ad esempio, se disabiliti le app di terze parti a livello di organizzazione o si bloccano le app specifiche per impedire ai proprietari del team di dare il consenso, queste modifiche non rimuovono l'accesso ai dati già concesso.  
 
-#### <a name="the-allow-third-party-apps-setting-in-org-wide-app-settings"></a>L'impostazione "Consenti app di terze parti" nelle impostazioni delle app a livello di organizzazione
+#### <a name="the-allow-third-party-apps-option-in-org-wide-app-settings"></a>Opzione Consenti app di terze parti nelle impostazioni delle app a livello di organizzazione
 
 Questa impostazione delle app a livello di organizzazione controlla se gli utenti dell'organizzazione possono usare app di terze parti. Questa impostazione deve essere abilitata per consentire ai proprietari del team di fornire il consenso. Per gestire questa impostazione, eseguire le operazioni seguenti:
 
 1. Accedere all'interfaccia di amministrazione di Teams e accedere alle app  > **di Teams****[Gestire le app](https://admin.teams.microsoft.com/policies/manage-apps)**.
 1. Seleziona **Impostazioni app a livello di organizzazione** e in **App di terze parti** disattiva o attiva **Consenti app di terze parti**.
 
-    ![Screenshot dell'impostazione "Consenti app di terze parti in Teams"](media/resource-specific-consent-org-wide-setting.png)
+   :::image type="content" source="media/resource-specific-consent-org-wide-setting.png" alt-text="Screenshot che mostra l'impostazione Consenti app di terze parti in Teams.":::
 
-Possono essere necessarie fino a 24 ore prima che le modifiche diventino effettive.
+L'applicazione delle modifiche può richiedere fino a 24 ore.
 
 #### <a name="allow-or-block-the-app-at-the-org-level"></a>Consentire o bloccare le app a livello di organizzazione
 
@@ -77,8 +78,6 @@ Quando si blocca o si consente un'app nella pagina [Gestisci app](manage-apps.md
 1. Accedere all'interfaccia di amministrazione di Teams e accedere alle app  > **di Teams****[Gestire le app](https://admin.teams.microsoft.com/policies/manage-apps)**.
 1. Nella pagina Gestisci app seleziona l'app e quindi **seleziona Blocca** per bloccarla o **Consenti** per consentirla.
 
-    ![Screenshot delle app bloccate nelle impostazioni a livello di organizzazione.](media/resource-specific-consent-allow-block-apps.png)
-
 #### <a name="app-permission-policy-assigned-to-the-team-owner"></a>Criteri di autorizzazione dell'app assegnati al proprietario del team
 
 I proprietari del team possono fornire il consenso solo alle app i cui criteri di autorizzazione delle app consentono loro di eseguire. Per visualizzare e gestire i criteri di autorizzazione dell'app assegnati a un proprietario del team, eseguire le operazioni seguenti:
@@ -86,8 +85,9 @@ I proprietari del team possono fornire il consenso solo alle app i cui criteri d
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare a **Utenti**.
 1. Fare doppio clic sul nome visualizzato del proprietario del team e quindi selezionare **Criteri**.
 1. I criteri assegnati al proprietario del team sono elencati in **Criteri di autorizzazione app**.
-    - Per assegnare un criterio diverso, selezionare **Modifica** e quindi selezionare il criterio da assegnare.
-    - Per modificare le impostazioni del criterio assegnato al proprietario del team, selezionare il nome del criterio e quindi apportare le modifiche desiderate.  
+
+    * Per assegnare un criterio diverso, selezionare **Modifica** e quindi selezionare il criterio da assegnare.
+    * Per modificare le impostazioni del criterio assegnato al proprietario del team, selezionare il nome del criterio e quindi apportare le modifiche desiderate.  
 
 ## <a name="upload-custom-apps"></a>Caricare app personalizzate
 
@@ -95,7 +95,7 @@ Quando si carica un'app personalizzata (operazione anche nota come sideload) che
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Autorizzazioni RSC disponibili](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
-- [Microsoft Graph](https://developer.microsoft.com/graph)
-- [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
-- [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
+* [Autorizzazioni RSC disponibili](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+* [Microsoft Graph](https://developer.microsoft.com/graph)
+* [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
+* [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)

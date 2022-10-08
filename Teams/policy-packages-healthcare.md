@@ -12,6 +12,7 @@ ms.collection:
 - M365-collaboration
 - microsoftcloud-healthcare
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 f1.keywords: ''
@@ -22,12 +23,12 @@ searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
 description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per l'organizzazione nel settore sanitario.
-ms.openlocfilehash: 29192cfeec6545cdbbb5528eeabc1298146e4577
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: 9bd4d78a02bf32be68cb13ac85daff886986876d
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67397257"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68046936"
 ---
 # <a name="teams-policy-packages-for-healthcare"></a>Pacchetti di criteri di Teams per il settore sanitario
 
@@ -85,7 +86,7 @@ Personalizzare le impostazioni dei criteri nel pacchetto di criteri come necessa
 
 ### <a name="assign"></a>Assegnare
 
-Assegnare il pacchetto di criteri agli utenti. Se a un utente è assegnato un criterio e successivamente gli si assegna un criterio diverso, avrà priorità l'assegnazione più recente.
+Assign the policy package to users. If a user has a policy assigned, and then later you assign a different policy, the most recent assignment will take priority.
 
 > [!NOTE]
 > Ogni utente richiederà il componente aggiuntivo Comunicazioni avanzate per ricevere un'assegnazione del pacchetto di criteri personalizzata. Per ulteriori informazioni, vedere [Componente aggiuntivo per comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).

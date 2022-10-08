@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni su come gestire Microsoft Teams con Teams PowerShell.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 66f873b163222d3d9745e68881da2b8071f60eec
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: a14658039f4edeb8e70ec195f036bf8321453c2c
+ms.sourcegitcommit: fcedb958bf555d870215ae84fb83752304944716
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67396527"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68486576"
 ---
 # <a name="manage-teams-with-microsoft-teams-powershell"></a>Gestire Teams con Microsoft Teams PowerShell
 
@@ -69,8 +69,8 @@ Dopo aver completato questi passaggi, è possibile eseguire i comandi di PowerSh
 ## <a name="manage-policies-via-powershell"></a>Gestire i criteri tramite PowerShell
 
 > [!NOTE]
-> - Skype for Business Online Connector è stato consolidato in PowerShell di Teams. Attualmente è disponibile in anteprima pubblica. Nel tempo, i cmdlet di Skype for Business Online applicabili a Teams saranno disponibili in modo nativo nel modulo Teams PowerShell. I passaggi di installazione sono disponibili nell'articolo [Installare PowerShell di Teams](teams-powershell-install.md) .
-> - I cmdlet saranno disponibili nella sessione di PowerShell dopo la connessione a Skype for Business Online. Per altre informazioni, vedere [Gestire Skype for Business online con Office 365 PowerShell](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell).
+> - Skype for Business Online Connector è consolidato in PowerShell di Teams. I cmdlet di Skype for Business Online applicabili a Teams sono disponibili in modo nativo nel modulo PowerShell di Teams. I passaggi di installazione sono disponibili nell'articolo [Installare PowerShell di Teams](teams-powershell-install.md) .
+> - I cmdlet saranno disponibili nella sessione di PowerShell dopo la connessione a Teams. Per altre informazioni, vedere [Gestire Skype for Business online con Office 365 PowerShell](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell).
 
 Trovare i cmdlet per la gestione dei criteri nel [modulo dei cmdlet di Skype for Business](/powershell/module/teams).
 

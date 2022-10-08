@@ -1,7 +1,7 @@
 ---
-title: Teams lingue per i messaggi e i saluti della segreteria telefonica
-author: dstrome
-ms.author: dstrome
+title: Lingue di Teams per i saluti e i messaggi della segreteria telefonica
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: colongma
 ms.topic: article
@@ -21,14 +21,14 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Scopri quali lingue puoi impostare in Skype for Business per i messaggi di sistema predefiniti e i messaggi di saluto della segreteria telefonica.
-ms.openlocfilehash: 2a9b33e26bde9017be29412bb96086c708a150c1
-ms.sourcegitcommit: 4435ac0efcb95e4e5e1f21289e46761e79482ab5
+ms.openlocfilehash: 71f7df5a074ad0d3b87bc4111a3f150eccb29dac
+ms.sourcegitcommit: fc87f4300f53abf7a049936944abb21d0cade0d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65624140"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68481148"
 ---
-# <a name="teams-languages-for-voicemail-greetings-and-messages"></a>Teams lingue per i messaggi e i saluti della segreteria telefonica
+# <a name="teams-languages-for-voicemail-greetings-and-messages"></a>Lingue di Teams per i saluti e i messaggi della segreteria telefonica
 
 Teams supporta le lingue seguenti per i saluti della segreteria telefonica.
   
@@ -56,7 +56,7 @@ Teams supporta le lingue seguenti per i saluti della segreteria telefonica.
 |Inglese       |Sudafrica       |en-ZA  |Sì, ma viene usato l'inglese (Stati Uniti).    |No                                    |No  |
 |Inglese       |Regno Unito      |en-GB  |Sì                                          |Sì                                   |Sì |
 |Inglese       |Stati Uniti      |en-US  |Sì                                          |Sì                                   |Sì |
-|Estone      |Estonia            |et-edizione Enterprise  |Sì                                          |Sì                                   |No  |
+|Estone      |Estonia            |et-EE  |Sì                                          |Sì                                   |No  |
 |Finlandese       |Finlandia            |fi-FI  |Sì                                          |Sì                                   |No  |
 |Francese        |Belgio            |fr-BE  |Sì, ma viene usato il francese (Francia).            |Sì                                   |No  |
 |Francese        |Canada             |fr-CA  |Sì                                          |Sì                                   |Sì, ma viene usato il francese (Francia).   |

@@ -1,5 +1,6 @@
 ---
 title: Condurre un'indagine di eDiscovery sul contenuto
+description: Informazioni su cosa fare quando è necessario eseguire eDiscovery, ad esempio quando è necessario inviare tutte le informazioni archiviate elettronicamente per un procedimento legale.
 author: robmazz
 ms.author: robmazz
 manager: laurawi
@@ -7,25 +8,27 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 ms.collection:
+- tier1
+- purview-compliance
 - M365-collaboration
+- ediscovery
 ms.reviewer: anwara
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Informazioni su cosa fare quando è necessario eseguire eDiscovery, ad esempio quando è necessario inviare tutte le informazioni archiviate elettronicamente per un procedimento legale.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e0579e0967a6f0309dbea6ee28430df3f34876be
-ms.sourcegitcommit: 6754f2d11da0afff067f0872acf778a83fd1595e
+ms.openlocfilehash: a44245d31e6fc9f4b58c17832e596c6d73b56635
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2022
-ms.locfileid: "67808247"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68046656"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Condurre un'indagine eDiscovery sul contenuto in Microsoft Teams
 
-Le grandi imprese sono spesso esposte a procedimenti giudiziari con sanzioni elevate che richiedono l'invio di tutte le informazioni archiviate elettronicamente (ESI). I contenuti di Microsoft Teams possono essere cercati e usati durante le indagini di eDiscovery.
+Le grandi imprese sono spesso esposte a procedimenti giudiziari penali elevati che richiedono l'invio di tutte le informazioni archiviate elettronicamente (ESI). I contenuti di Microsoft Teams possono essere cercati e usati durante le indagini di eDiscovery.
 
 ## <a name="overview"></a>Panoramica
 
@@ -35,8 +38,8 @@ La eDiscovery dei messaggi e dei file nei [canali privati](private-channels.md) 
 
 Non tutti i contenuti di Teams sono eDiscoverable. La tabella seguente mostra i tipi di contenuto che è possibile cercare con gli strumenti di Microsoft eDiscovery:
 
-|Tipo di contenuto|Note|
-|---|---|
+|**Tipo di contenuto**|**Note**|
+|:---------------|:--------|
 |Registrazioni audio||
 |Contenuto della scheda|Per altre informazioni, vedere [Cercare contenuto della scheda](#search-for-card-content) .|
 |Collegamenti chat||
@@ -53,6 +56,7 @@ Non tutti i contenuti di Teams sono eDiscoverable. La tabella seguente mostra i 
 |Reazioni (come Mi piace, cuori e altre reazioni)|Le reazioni sono supportate per tutti i clienti commerciali dopo il 1° giugno 2022. Le reazioni precedenti a questa data non sono disponibili per eDiscovery. È previsto il supporto per il cloud per enti pubblici. Non esiste alcun supporto legale per le reazioni.|
 |Oggetto||
 |Tabelle||
+|Clip video di Teams (TVC)|Cerca in TVC la parola chiave "Video-Clip" e "salva con nome" un file .mp4 per ogni allegato TVC facendo clic con il pulsante destro del mouse sull'anteprima (la ricerca per parola chiave sarà disponibile a ottobre 2022). I dati TVC sono individuabili nei [set di revisioni](/microsoft-365/compliance/add-data-to-review-set) di eDiscovery.
 
 <sup>1</sup> I metadati di una riunione (e chiamata) includono quanto segue:
 

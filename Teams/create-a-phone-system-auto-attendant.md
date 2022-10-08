@@ -20,12 +20,12 @@ ms.localizationpriority: medium
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e gestire gli operatori automatici in Microsoft Teams.
-ms.openlocfilehash: 913ac62ceb251f166852ec8c6d5ba84b7c0777ea
-ms.sourcegitcommit: 850038f2248c1ea412f7b5daca26c0598baffa3c
+ms.openlocfilehash: c2ae316815111193d81f191bdecd2fd7b1d59794
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67443403"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68046476"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -51,6 +51,7 @@ Gli operatori automatici possono reindirizzare le chiamate, in base all'input de
 
 ## <a name="whats-new-for-auto-attendants-in-the-past-6-months"></a>Novità per gli operatori automatici degli ultimi 6 mesi
  
+ - Settembre - **L'opzione Forza ascolto** è ora disponibile con **l'opzione del menu Riproduci** per Flusso delle chiamate, Flusso delle chiamate per fuori orario e Flusso delle chiamate durante le festività.
  - Agosto - **Riproduci le opzioni del menu** in Flusso delle chiamate, Flusso delle chiamate per fuori orario e Flusso delle chiamate durante le festività ora supportano \* i tasti (asterisco) e \# (cancelletto).
  - Luglio - Il flusso delle chiamate durante le festività ora supporta le **opzioni del menu Riproduci**.
  
@@ -108,7 +109,8 @@ Dopo aver impostato le informazioni generali dell'operatore automatico, selezion
 
 #### <a name="play-menu-options"></a>Opzioni del menu Riproduci
 
-*I tasti Nuovi - \* (asterisco) e \# (cancelletto) ora possono essere utilizzati nelle opzioni di menu.*
+*Nuovo: è possibile abilitare l'opzione Forza ascolto che richiede ai chiamanti di ascoltare tutte le opzioni di menu prima di effettuare la selezione.*
+ *I tasti Nuovi - \* (asterisco) e \# (cancelletto) ora possono essere utilizzati nelle opzioni di menu.*
 
 Per le opzioni di chiamata, assegnare i tasti 0-9, \* (asterisco) e \# (cancelletto) sulla tastiera del telefono a una delle destinazioni di routing delle chiamate. 
 
@@ -167,7 +169,9 @@ Dopo aver aggiunto il flusso delle chiamate fuori orario, seleziona **Avanti**.
 
 L'operatore automatico può avere un flusso delle chiamate per ogni [festività configurata](set-up-holidays-in-teams.md). È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
 
-*Nuovo : **le opzioni del menu Riproduci** sono ora disponibili nei flussi delle chiamate per le festività.*
+*Nuovo: è possibile abilitare l'opzione Forza ascolto che richiede ai chiamanti di ascoltare tutte le opzioni di menu prima di effettuare la selezione.*
+ *I tasti Nuovi - \* (asterisco) e \# (cancelletto) ora possono essere utilizzati nelle opzioni di menu.*
+ *Nuovo : **le opzioni del menu Riproduci** sono ora disponibili nei flussi delle chiamate per le festività.*
 
 1. Nella pagina Impostazioni chiamata festività seleziona **Aggiungi**.
 

@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: eaf165759e2310402fdec6147ba2153ec0ce792b
-ms.sourcegitcommit: 6b4dad9cea8fdad74c493ef62b085dbb9957235d
+ms.openlocfilehash: 7ddf3364420244e800827915c9232430ffc336c1
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67486761"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68046856"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -220,6 +220,9 @@ Per **aggiungere un gruppo** alla coda:
   
 Gli account di Teams degli agenti devono essere impostati sulla modalità TeamsOnly. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate. È consigliabile abilitare la modalità conferenza per le code di chiamata se gli agenti usano client compatibili.
 
+> [!TIP]
+> L'impostazione consigliata è impostare la **modalità conferenza** su **Attivato** .
+
 > [!NOTE]
 > La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
 >
@@ -230,12 +233,9 @@ Gli account di Teams degli agenti devono essere impostati sulla modalità TeamsO
 > Gli agenti possono sentire la musica configurata in attesa in coda per un massimo di 2 secondi quando si partecipa per la prima volta alla chiamata.
 
 
-> [!TIP]
-> L'impostazione consigliata è impostare la **modalità conferenza** su **Attivato** .
-
 Dopo aver selezionato le opzioni di risposta alle chiamate, seleziona il pulsante **Avanti** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
-# <a name="step-4-agent-routing"></a>[Passaggio 4: Routing dell'agente](#tab/agent-routing)
+# <a name="step-4-agent-selection"></a>[Passaggio 4: selezione dell'agente](#tab/agent-selection)
 
 ## <a name="step-4-select-your-agent-routing-options"></a>Passaggio 4: Selezionare le opzioni di routing dell'agente
 
@@ -251,7 +251,8 @@ Scegliere una delle opzioni seguenti:
 
 - **L'inattività più lunga** indirizza ogni chiamata all'agente che è rimasto inattivo più a lungo. Un agente viene considerato inattivo se lo stato presenza è Disponibile. Gli agenti il cui stato presenza non è Disponibile non saranno idonei a ricevere chiamate fino a quando non cambieranno la presenza su Disponibile.
 
-È consigliabile impostare **il metodo routing** su **Round robin** o **Long idle**.
+> [!TIP]
+> L'impostazione consigliata è Impostare **routing Method** su **Round robin** o **Longest idle** .
 
 > [!NOTE]
 > Se la [registrazione di conformità](teams-recording-policy.md) è abilitata per gli agenti, la combinazione di **modalità conferenza** e **instradamento dell'operatore** non è supportata. Se devi usare la **modalità Conferenza**, seleziona **Routing seriale**, **Round robin** o **Long idle** come **metodo routing**. Se devi usare **il routing Attendant**, imposta **La modalità conferenza su** **Disattivato**.
@@ -272,7 +273,8 @@ Gli agenti di chiamata il cui stato di disponibilità è impostato su **Disponib
 
 Se un agente rifiuta esplicitamente di ricevere chiamate, non verrà incluso nell'elenco di routing delle chiamate, indipendentemente dallo stato di disponibilità impostato.
 
-È consigliabile attivare il **routing basato sulla presenza**.
+> [!TIP]
+> L'impostazione consigliata è impostare il **routing basato sulla presenza** **su on** .
 
 > [!NOTE]
 > Quando l'opzione **Inattività più lunga** è selezionata come metodo di routing, il routing basato sulla presenza è obbligatorio e abilitato automaticamente anche se l'interruttore routing basato sulla presenza sarà **disattivato** e disattivato.
@@ -293,7 +295,8 @@ Se un agente rifiuta esplicitamente di ricevere chiamate, non verrà incluso nel
 
 **L'ora di avviso** dell'agente specifica per quanto tempo il telefono di un agente squillerà prima che la coda reindirizza la chiamata all'agente successivo.
 
-È consigliabile impostare **l'ora di avviso dell'agente** su **20 secondi**.
+> [!TIP]
+> L'impostazione consigliata prevede l'impostazione di impostare **l'ora di avviso dell'agente** su un minimo di **20 secondi** .
 
 Dopo aver selezionato le opzioni di routing delle chiamate dell'agente, seleziona il pulsante **Avanti** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
@@ -349,11 +352,11 @@ Sono consigliate le impostazioni seguenti:
 - **Modalità conferenza** su **Attivato**
 - **Metodo di routing** a **Round robin** o **Long idle**
 - **Routing basato sulla presenza** su **Attivato**
-- **Tempo di avviso agente:** a **20 secondi**
+- **Tempo di avviso dell'agente:** almeno **20 secondi**
 
 ### <a name="call-queue-feature-compatibility"></a>Compatibilità delle funzionalità delle code di chiamata
 
-|Funzionalità                          |Teams Desktop<sup>1</sup> |Teams Web | Teams Mobile<sup>2</sup> |Lync |Telefoni IP | Code di chiamata standard |Code di chiamata basate sui canali | Commento |
+|Funzionalità                          |Teams Desktop<sup>1</sup> |Teams Web | Teams Mobile<sup>2</sup> |Skype for Business |Telefoni IP | Code di chiamata standard |Code di chiamata basate sui canali | Commento |
 |:--------------------------------|:------------------------:|:--------:|:--------------:|:---:|:--------:|:--------------------:|:------------------------:|:--------|
 |**Metodi di routing dell'agente**        |                          |          |                |     |          |                      |                          |   |
 |`Attendant Routing`              |S                         |S         |S               |S    |S         |S                     |S                         |*Predefinito*     |
@@ -373,8 +376,8 @@ Sono consigliate le impostazioni seguenti:
 |`Channel based call queue`       |S                         |n/d       |n/d             |n/d  |n/d       |n/d                   |S                         |   |
 |**Metodi di connettività PSTN**    |                          |          |                |     |          |                      |                          |Vedere la nota 9   |
 |`Calling Plans`                  |S                         |S         |S               |S    |S         |S                     |S                         |   |
-|`Direct Routing`                 |S                         |S         |S               |N    |N         |S                     |S                         |   |
-|`Operator Connect`               |S                         |S         |S               |     |          |S                     |S                         |   |
+|`Direct Routing`                 |S                         |S         |S               |N    |S         |Y<sup>6</sup>         |S                         |   |
+|`Operator Connect`               |S                         |S         |S               |     |S         |Y<sup>6</sup>         |S                         |   |
 |**Varie**                |                          |          |                |     |          |                      |                          |   |
 |`Call toast shows Resource Account Name` |S                 |N         |S               |S    |          |S                     |S                         |              |
 
@@ -387,6 +390,8 @@ Sono consigliate le impostazioni seguenti:
 5. La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
 6. solo Telefono di Microsoft Teams.
 7. Tramite la pagina portale delle impostazioni utente all'indirizzo [https://aka.ms/vmsettings](https://aka.ms/vmsettings).
+- GCCH: [https://dialin.cpc.gov.teams.microsoft.us/usp](https://dialin.cpc.gov.teams.microsoft.us/usp)
+- DOD: [https://dialin.cpc.dod.teams.microsoft.us/usp](https://dialin.cpc.dod.teams.microsoft.us/usp)
 8. Sono supportati solo i canali pubblici.
 9. Gli operatori automatici e le code di chiamata non possono trasferire le chiamate tra i metodi di connettività PSTN.
 

@@ -22,26 +22,34 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni su e confrontare le licenze disponibili per i diversi tipi di funzionalità per chiamate e riunioni in Microsoft Teams Rooms.
-ms.openlocfilehash: df84e94ebda02020e88d8bfc19fa42c86561b07d
-ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
+ms.openlocfilehash: af5f30f1a4ae0d34421629ffec3c67a619798b50
+ms.sourcegitcommit: fc87f4300f53abf7a049936944abb21d0cade0d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67706673"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68480486"
 ---
 # <a name="microsoft-teams-rooms-licenses"></a>licenze Microsoft Teams Rooms
 
-Microsoft offre due licenze per i dispositivi delle sale riunioni che partecipano alle riunioni e alle chiamate di Teams:
+Microsoft offre due licenze per i sistemi di Teams Rooms che partecipano alle riunioni e alle chiamate di Teams:
 
 - **Microsoft Teams Rooms Pro** offre esperienze avanzate per le riunioni in sala, come audio e video intelligenti, gallerie di grandi dimensioni e gallerie in prima fila e supporto a doppio schermo. La licenza Teams Rooms Pro fornisce anche funzionalità di gestione avanzate come la gestione remota dei dispositivi, i criteri di accesso condizionale e l'analisi dettagliata dei dispositivi.
 
-    Teams Rooms Pro è ideale per le organizzazioni medie e aziendali, nonché per le organizzazioni più piccole con un numero elevato di spazio o esigenze più avanzate.
+    Teams Rooms Pro è ideale per le organizzazioni medie e aziendali, nonché per le organizzazioni più piccole con un numero elevato di spazio o esigenze più avanzate. Le licenze Teams Rooms Pro possono essere usate sia per i sistemi di Teams Rooms certificati che per i pannelli teams.
 
-- **Microsoft Teams Rooms Basic** offre esperienze di riunione di base alle organizzazioni che acquistano un dispositivo certificato Microsoft Teams Rooms senza costi aggiuntivi. La licenza di Teams Rooms Basic include pianificazione, partecipazione a riunioni, condivisione di contenuti e white boarding collaborativo, oltre a funzionalità di sicurezza e gestione di base.
+- **Microsoft Teams Rooms Basic** offre esperienze di riunione di base alle organizzazioni che acquistano un sistema di Microsoft Teams Rooms certificato senza costi aggiuntivi. La licenza di Teams Rooms Basic include pianificazione, partecipazione a riunioni, condivisione di contenuti e white boarding collaborativo, oltre a funzionalità di sicurezza e gestione di base.
 
-    È possibile assegnare fino a 25 licenze di base Microsoft Teams Rooms a Teams Rooms dispositivi dell'organizzazione. Se è necessario assegnare una licenza a più di 25 dispositivi, le licenze aggiuntive devono essere Teams Rooms Pro.
+    È possibile usare una licenza Teams Rooms Basic per assegnare una licenza a un singolo sistema di Teams Rooms certificato in una stanza. Se si vuole accedere a più di un sistema di Teams Rooms in una chat room usando lo stesso account di risorsa, è necessario usare una licenza di Teams Rooms Pro.
 
-È possibile usare una licenza Teams Rooms Basic per assegnare una licenza a un singolo dispositivo certificato Teams Rooms in una stanza. Se desideri accedere a più dispositivi in una sala usando lo stesso account di risorse (ad esempio, una console Teams Rooms, un Surface Hub e un Pannello di Teams), devi usare una licenza di Teams Rooms Pro.
+    È possibile assegnare fino a 25 licenze di base Microsoft Teams Rooms a sistemi Teams Rooms dell'organizzazione. Se è necessario assegnare una licenza a più di 25 sistemi Teams Rooms, tali licenze aggiuntive devono essere Teams Rooms licenze Pro. Teams Rooms licenze Di base possono essere usate solo per licenze di Teams Rooms sistemi e non per i pannelli teams.
+
+Un sistema Teams Room può essere uno dei seguenti:
+
+- Un Teams Rooms per il modulo di calcolo di Windows e la console touch collegata
+- Un Teams Rooms per dispositivi Android e console touch connessi tramite una connessione USB o basata su IP
+- Un Surface Hub
+
+Le attività di amministrazione remota eseguite in un sistema o un dispositivo Teams Rooms nell'interfaccia di amministrazione di Teams dipendono dalla licenza assegnata al sistema o al dispositivo. Per altre informazioni, vedere [Microsoft Teams Rooms panoramica delle licenze nell'interfaccia di amministrazione di Teams](admin-center-license-overview.md).
 
 [!INCLUDE [mtr-user-licensing](../includes/mtr-user-licensing.md)]
 
@@ -77,6 +85,8 @@ Se l'organizzazione ha dispositivi per riunioni che usano le licenze legacy Team
 > Le licenze legacy non passeranno automaticamente alle nuove licenze. Alla scadenza di una licenza legacy, dovrai acquistare una nuova licenza di Teams Rooms Pro (scelta consigliata) o Teams Rooms basic. Teams Rooms licenze Pro possono essere acquistate tramite il interfaccia di amministrazione di Microsoft 365 o il canale di vendita preferito. Teams Rooms licenze Di base possono essere acquistate solo tramite il interfaccia di amministrazione di Microsoft 365.
 
 Se l'organizzazione ha un Enterprise Agreement, è possibile continuare a usare le licenze legacy esistenti fino al periodo di rinnovo successivo. È anche possibile continuare a prenotare altre licenze legacy fino al successivo periodo di rinnovo. Per altre informazioni, contatta il tuo rappresentante Microsoft.
+
+Per informazioni sulle licenze legacy, vedere [Microsoft Teams Rooms licenze legacy](rooms-legacy-licensing.md).
 
 <sup>*</sup>I tecnici del servizio Microsoft non fungeranno più da intermediari per la risposta agli eventi imprevisti a partire dal 1° ottobre 2022.
 

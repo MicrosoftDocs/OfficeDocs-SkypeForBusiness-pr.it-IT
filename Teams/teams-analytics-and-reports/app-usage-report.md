@@ -6,7 +6,8 @@ manager: serdars
 audience: Admin
 ms.topic: article
 ms.service: msteams
-ms.reviewer: v-quhur
+ms.reviewer: vapati
+ms.date: 09/27/2022
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
@@ -17,16 +18,16 @@ description: Informazioni su come usare il report sull'utilizzo dell'app Teams n
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 745761b80bd2507a31cb76cdadc015eac8e9f7fd
-ms.sourcegitcommit: a4a65283e85d0c393c844dfd335df0d48e0e4105
+ms.openlocfilehash: 9db5378a439061639298b8bc3b48f4d3ef26c50b
+ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67313928"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68376964"
 ---
 # <a name="microsoft-teams-app-usage-report"></a>Report utilizzo app Microsoft Teams
 
-Il report Utilizzo app Teams nell'interfaccia di amministrazione di Microsoft Teams fornisce informazioni sulle app usate dagli utenti in Teams.  
+Il report Utilizzo app Teams nell'interfaccia di amministrazione di Microsoft Teams fornisce informazioni dettagliate sulle app usate dagli utenti in Teams. È possibile ottenere informazioni approfondite sull'attività delle app di Teams nell'organizzazione. Questo articolo spiega come accedere al report e visualizzare e interpretare le diverse metriche all'interno del report. 
 
 ## <a name="view-the-app-usage-report"></a>Visualizzare il report Utilizzo app
 
@@ -36,7 +37,7 @@ Il report Utilizzo app Teams nell'interfaccia di amministrazione di Microsoft Te
 
 1. Nella scheda **Visualizza report** , in **Report**, selezionare **Utilizzo app**.
 
-1. In **Intervallo di date** selezionare un intervallo e quindi **selezionare Esegui report**. È possibile visualizzare il report Utilizzo app di Teams per le tendenze degli ultimi 7, 30 o 90 giorni.
+1. In **Intervallo di date** selezionare un intervallo e quindi **selezionare Esegui report**. È possibile visualizzare il report Utilizzo app Teams per le tendenze degli ultimi 7, 30, 90 e 180 giorni.
 
    :::image type="content" source="media/app-usage-report2-trimmed.png" alt-text="Screenshot dell'interfaccia del report Utilizzo app." lightbox="media/app-usage-report2.png":::
 
@@ -44,7 +45,7 @@ Il report Utilizzo app Teams nell'interfaccia di amministrazione di Microsoft Te
 
 :::image type="content" alt-text="Screenshot del report utilizzo app Teams nell'interfaccia di amministrazione di Teams con callout." source="media/app-usage-report5.png" lightbox="media/app-usage-report5.png":::
 
-Ogni report ha una data in alto a sinistra che indica la data di creazione del report. I report in genere riflettono una latenza di 24 ore rispetto all'apertura di un'app.
+Ogni report ha una data in alto a sinistra che indica la data di creazione del report. I report in genere riflettono una latenza di 24-48 ore rispetto all'apertura di un'app.
 
 Amministrazione centro fornisce un grafico degli utenti attivi e delle date. Utenti attivi è il numero di utenti che hanno aperto un'app almeno una volta durante il periodo di tempo selezionato.
 

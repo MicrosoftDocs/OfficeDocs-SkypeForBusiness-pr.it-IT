@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 168bddd1b4a7ad2ffa1f4d1c5eceb0967a18ea43
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
-ms.translationtype: HT
+ms.openlocfilehash: b34f22d5ef038eff44b5488588902d1a99af8676
+ms.sourcegitcommit: fcedb958bf555d870215ae84fb83752304944716
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269701"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68486616"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -48,13 +48,13 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 |Numero massimo di membri in un gruppo di Microsoft 365 che possono essere trasformati in un team    |10.000<sup>6</sup>     |
 |Dimensione post di conversazione sul canale | Circa 28 KB per post<sup>5</sup> |
 
-<sup>1</sup> Qualsiasi oggetto di directory di Azure Active Directory conta rispetto a questo limite. Gli amministratori globali sono esentati da questo limite, così come le app che chiamano Microsoft Graph usando le [autorizzazioni dell'applicazione](/graph/permissions-reference).
+<sup>1</sup> Any directory object in Azure Active Directory counts towards this limit. Global admins are exempt from this limit, as are apps calling Microsoft Graph using [application permissions](/graph/permissions-reference).
 
 <sup>2</sup> Questo limite include i team archiviati. 
 
-<sup>3</sup> Per aumentare ulteriormente il numero di team, è necessario contattare il supporto tecnico Microsoft e richiedere un ulteriore aumento del numero di oggetti Azure Active Directory nel tenant. L'aumento viene eseguito solo per scenari di produzione reali.
+<sup>3</sup> To further increase the number of teams, you must contact Microsoft support and request further increase to the number of Azure Active Directory objects in your tenant. Increase is only made for real-life production scenarios.
 
-<sup>4</sup> I canali eliminati possono essere ripristinati entro 30 giorni. In questi 30 giorni, un canale eliminato continua a essere conteggiato ai fini del limite di 200 canali o 30 canali privati per team. Dopo 30 giorni, un canale eliminato e il relativo contenuto vengono eliminati definitivamente e il canale non viene più calcolato ai fini del limite per team.
+<sup>4</sup> Deleted channels can be restored within 30 days. During these 30 days, a deleted channel continues to be counted towards the 200 channel or 30 private channel per team limit. After 30 days, a deleted channel and its content are permanently deleted and the channel no longer counts towards the per team limit.
 
 <sup>5</sup> 28 KB è un limite approssimativo perché include il messaggio stesso (testo, collegamenti a immagini e così via), menzioni con @, numero di connettori e reazioni.
 
@@ -67,7 +67,7 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 
 ### <a name="chat"></a>Chat
 
-Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in Teams devono avere una cassetta postale di Exchange Online (basata sul cloud) perché un amministratore possa eseguire ricerche nelle conversazioni in chat. Il motivo è che le conversazioni che fanno parte dell'elenco chat vengono archiviate nelle cassette postali basate su cloud dei partecipanti. Se un partecipante della chat non ha una cassetta postale di Exchange Online, l'amministratore non potrà eseguire una ricerca né applicare un blocco alle conversazioni in chat. In una distribuzione ibrida di Exchange, ad esempio, gli utenti con una cassetta postale locale potrebbero essere in grado di partecipare a conversazioni che fanno parte dell'elenco chat in Teams. In questo caso, tuttavia, il contenuto delle conversazioni non è disponibile per la ricerca e non può essere bloccato perché gli utenti non hanno cassette postali basate sul cloud. Per ulteriori informazioni, vedere [Come interagiscono Exchange e Microsoft Teams](exchange-teams-interact.md).
+Users who participate in conversations that are part of the chat list in Teams must have an Exchange Online (cloud-based) mailbox for an admin to search chat conversations. That's because conversations that are part of the chat list are stored in the cloud-based mailboxes of the chat participants. If a chat participant doesn't have an Exchange Online mailbox, the admin won't be able to search or place a hold on chat conversations. For example, in an Exchange hybrid deployment, users with on-premises mailboxes might be able to participate in conversations that are part of the chat list in Teams. However, in this case, content from these conversations isn't searchable and can't be placed on hold because the users don't have cloud-based mailboxes. (For more, see [How Exchange and Microsoft Teams interact](exchange-teams-interact.md).)
 
 
 |Funzionalità  | Limite massimo  |
@@ -77,9 +77,9 @@ Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in T
 |Numero di file allegati<sup>3</sup>  |10     |
 |Dimensione chat | Circa 28 KB per post<sup>4</sup> |
 
-<sup>1</sup>Se si hanno più di 20 persone in una chat, le funzionalità di chat seguenti sono disattivate: risposte automatiche di Outlook, messaggi di stato di Teams, indicatore di scrittura in corso, chiamate audio e video, condivisione e conferme di lettura. Il pulsante "Imposta opzioni di recapito" (!) viene rimosso anche quando le chat di gruppo privato contengono più di 20 membri.
+<sup>1</sup> If you have more than 20 people in a chat, the following chat features are turned off: Outlook automatic replies and Teams status messages; typing indicator; video and audio calling; sharing; read receipts. The "Set Delivery Options" button (!) is also removed when private group chats contain more than 20 members.
 
-<sup>2</sup> È possibile aggiungere solo 200 membri alla volta a una chat di gruppo. [Per altre informazioni, vedere questo articolo](/microsoftteams/troubleshoot/teams-administration/unable-send-message-group-chat).
+<sup>2</sup> Only 200 members at a time can be added to a group chat. [See this article for more information](/microsoftteams/troubleshoot/teams-administration/unable-send-message-group-chat).
 
 <sup>3</sup> Se il numero di allegati supera questo limite, viene visualizzato un messaggio di errore.
 
@@ -87,7 +87,7 @@ Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in T
 
 ### <a name="emailing-a-channel"></a>Invio di messaggi di posta elettronica a un canale
 
- Se gli utenti vogliono inviare un messaggio di posta elettronica a un canale in Teams, usano l'indirizzo di posta elettronica del canale. Quando un messaggio di posta elettronica fa parte di un canale, chiunque può rispondere per avviare una conversazione. Ecco alcuni dei limiti applicabili all'invio di messaggi di posta elettronica a un canale.
+ If users want to send an email to a channel in Teams, they use the channel email address. When an email is part of a channel, anyone can reply to it to start a conversation. Here are some of the applicable limits for sending email to a channel.
 
 |Funzionalità  | Limite massimo  |
 |---------|---------|
@@ -105,7 +105,7 @@ Gli utenti che partecipano a conversazioni che fanno parte dell'elenco chat in T
 Per altre informazioni, vedere [Limiti di Exchange Online](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
 > [!NOTE]
-> I limiti relativi a dimensioni del messaggio, file allegati e immagini incorporate sono gli stessi per tutte le licenze di Microsoft 365 o Office 365. L'invio di messaggi di posta elettronica a un canale non è disponibile in Teams per le organizzazioni di Office GCC/GCCH/DOD.
+> Message size, file attachments, and inline images limits are the same across all Microsoft 365 and Office 365 licenses. Emailing a channel is not available in Teams for Office GCC/GCCH/DOD organizations.
 
 ## <a name="channel-names"></a>Nomi dei canali
 
@@ -139,7 +139,7 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 ### <a name="meeting-expiration"></a>Scadenza della riunione
 
 > [!NOTE]
-> L'URL di una riunione non smetterà mai di funzionare. La scadenza si riferisce solo ai numeri di accesso PSTN, alle coordinate CVI e/o ai criteri e alle impostazioni della riunione.
+> A meeting URL will never stop working. The expiry only relates to any PSTN dial-in numbers, CVI coordinates, and/or underlying meeting policies and settings.
 
 |Tipo di riunione  |La riunione scade dopo un certo intervallo di tempo  |Ogni volta che si avvia o si aggiorna una riunione, la scadenza viene estesa di un certo intervallo di tempo  |
 |---------|---------|---------|
@@ -160,9 +160,9 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 |Durata dell'evento | 4 ore |
 |Eventi live simultanei eseguiti in un'organizzazione di Microsoft 365 o Office 365<sup>1</sup> | 15 |
 
-<sup>1</sup> È possibile pianificare un numero illimitato di eventi, ma se ne possono eseguire solo 15 alla volta. Non appena il produttore partecipa a un evento live, questo è considerato in esecuzione. Il produttore che prova a partecipare al sedicesimo evento live riceve un messaggio di errore.
+<sup>1</sup> You can schedule as many Live Events as you want, but you can only run 15 at a time. As soon as the producer joins a live event, it's considered to be running. The producer who attempts to join the 16th live event gets an error.
 
-Per altre informazioni sugli eventi live e per un confronto tra gli eventi live di Teams e Skype Meeting Broadcast, passare a [Eventi live di Teams e Skype Meeting Broadcast](teams-live-events/plan-for-teams-live-events.md#teams-live-events-and-skype-meeting-broadcast). Vedere anche [Pianificare un evento live di Teams](https://support.microsoft.com/office/schedule-a-teams-live-event-7a9ce97c-e1cd-470f-acaf-e6dfc179a0e2).
+Per altre informazioni sugli eventi live, vedere [Eventi live di Teams](teams-live-events/plan-for-teams-live-events.md#teams-live-events). Vedere anche [Pianificare un evento live di Teams](https://support.microsoft.com/office/schedule-a-teams-live-event-7a9ce97c-e1cd-470f-acaf-e6dfc179a0e2).
 
 > [!IMPORTANT]
 > **Aumento del limite degli eventi live di Microsoft 365**
@@ -173,24 +173,24 @@ Per altre informazioni sugli eventi live e per un confronto tra gli eventi live 
 >- 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
 >- Durata degli eventi fino a 16 ore per trasmissione
 >
-> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Ulteriori informazioni](https://aka.ms/Stream/Blog/LiveEventOptions).
+> Additionally, Live Events with up to 100,000 attendees can be planned through the Microsoft 365 assistance program. The team will assess each request and work with you to determine options that may be available. [Learn more](https://aka.ms/Stream/Blog/LiveEventOptions).
 
 ## <a name="presence-in-outlook"></a>Presenza in Outlook
 
-La presenza di Teams in Outlook è supportata nell'app desktop Outlook 2013 e versioni successive. Per altre informazioni sulla presenza in Teams, vedere [Presenza utente in Teams](presence-admins.md).
+Teams presence in Outlook is supported on the Outlook 2013 desktop app and later. To learn more about presence in Teams, see [User presence in Teams](presence-admins.md).
 
 ## <a name="storage"></a>Archiviazione
 
-Ogni team di Microsoft Teams ha un sito del team in SharePoint Online e ogni canale in un team ottiene una cartella all'interno della raccolta documenti predefinita del sito del team. I file condivisi in una conversazione vengono aggiunti automaticamente alla raccolta documenti e le autorizzazioni e opzioni di sicurezza per i file impostate in SharePoint vengono applicate automaticamente all'interno di Teams.
+Each team in Microsoft Teams has a team site in SharePoint Online, and each channel in a team gets a folder within the default team site document library. Files shared within a conversation are automatically added to the document library, and permissions and file security options set in SharePoint are automatically reflected within Teams.
 
 > [!NOTE]
 > Ogni [canale privato](./private-channels.md) include un proprio sito di SharePoint, in precedenza denominato “raccolta siti”.
 
-Se SharePoint Online non è abilitato nel tenant, non sempre gli utenti di Microsoft Teams potranno condividere file nei team. Anche per gli utenti in chat private non è possibile condividere file, perché per questa funzionalità è necessario usare OneDrive for Business, che è associato alla licenza di SharePoint.
+If you don't have SharePoint Online enabled in your tenant, Microsoft Teams users cannot always share files in teams. Users in private chat also cannot share files because OneDrive for Business (which is tied to the SharePoint license) is required for that functionality.
 
-Archiviando i file nella raccolta documenti di SharePoint Online e in OneDrive for Business, verranno rispettate tutte le regole di conformità configurate a livello di tenant. Per altre informazioni, vedere [Modalità di interazione di SharePoint Online e OneDrive for Business con Microsoft Teams](sharepoint-onedrive-interact.md).
+By storing the files in the SharePoint Online document library and OneDrive for Business, all compliance rules configured at the tenant level will be followed. (For more, see [How SharePoint Online and OneDrive for Business interact with Microsoft Teams](sharepoint-onedrive-interact.md).)
 
-Poiché Teams viene eseguito su un back-end di SharePoint Online per la condivisione di file, le limitazioni di SharePoint si applicano alla sezione File all'interno di un team. Di seguito sono riportati i limiti di archiviazione applicabili per SharePoint Online.
+Because Teams runs on a SharePoint Online backend for file sharing, SharePoint limitations apply to the Files section within a Team. Here are the applicable storage limits for SharePoint Online.
 
 |Funzionalità                 |Microsoft 365 Business Basic  |Microsoft 365 Business Standard   |Office 365 Enterprise E1  |Office 365 Enterprise E3  |Office 365 Enterprise E5  |Office 365 Enterprise F1  |
 |------------------------|---------|---------|---------|---------|---------|---------|
@@ -204,7 +204,7 @@ Per altre informazioni, vedere [Limiti di SharePoint Online](https://support.off
 
 ## <a name="class-teams"></a>Team di classe
 
-Microsoft Teams per l’istruzione fornisce modelli ideati per scenari di istruzione univoci, ad esempio per l’insegnamento in classe. Altre informazioni sui tipi di team, tra cui i team di classe, sono disponibili in [Scegliere un tipo di team per collaborare in Microsoft Teams](https://support.microsoft.com/office/choose-a-team-type-to-collaborate-in-microsoft-teams-0a971053-d640-4555-9fd7-f785c2b99e67).
+Microsoft Teams for Education provides templates designed for unique education scenarios, such as classroom teaching. More information about team types, including class teams, is available in [Choose a team type to collaborate in Microsoft Teams](https://support.microsoft.com/office/choose-a-team-type-to-collaborate-in-microsoft-teams-0a971053-d640-4555-9fd7-f785c2b99e67).
 
 Un team di classe è un tipo di modello con altre app incluse e con limiti distinti per il numero di membri del team.
 
@@ -219,7 +219,7 @@ Nella tabella seguente sono elencati i limiti per i team di classe:
 |Numero di membri che possono utilizzare le attività in un team di classe    | 300        |
 |Numero di membri che usano un blocco appunti di OneNote per la classe in un team di classe     |300         |
 
-Un team di classe può supportare più di 300 membri. Se si prevede di usare l'app Attività o Blocco appunti per la classe all'interno del team, è necessario mantenere il numero di membri al di sotto dei limiti massimi elencati in precedenza.
+A class team can support more than 300 members. However, if you plan to use either the Assignments app or Class Notebook app within your team, you will need to keep the number of members below the maximum limits above.
 
 ## <a name="tags"></a>Tag
 

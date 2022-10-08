@@ -8,6 +8,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-apps
 audience: Admin
+ms.date: 09/27/2022
 ms.collection:
 - M365-collaboration
 appliesto:
@@ -17,21 +18,21 @@ f1.keywords:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso alle app personalizzate create con Microsoft Power Platform nell'interfaccia di amministrazione di Teams.
-ms.openlocfilehash: 34c8235481ef29afc21cbada13b0d80f1a3c7e38
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: 93801bb30d0445d13de25976ab23668fde251466
+ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837186"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68377204"
 ---
 # <a name="manage-microsoft-power-platform-apps-in-the-teams-admin-center"></a>Gestire le app di Microsoft Power Platform nell'interfaccia di amministrazione di Teams
 
-## <a name="microsoft-power-platform-apps-in-teams"></a>App di Microsoft Power Platform in Teams
+## <a name="manage-custom-apps-created-using-microsoft-power-platform-apps"></a>Gestire le app personalizzate create con le app di Microsoft Power Platform
 
-L’articolo offre anche una panoramica sulla gestione delle app di [Microsoft Power Platform](https://powerplatform.microsoft.com/) nell'interfaccia di amministrazione di Microsoft Teams.
+Questo articolo offre una panoramica su come gestire le app personalizzate create con le app [Microsoft Power Platform](https://powerplatform.microsoft.com/) nell'interfaccia di amministrazione di Microsoft Teams. Le app personalizzate vengono create dagli sviluppatori all'interno dell'organizzazione per gli utenti interni.
 
 > [!NOTE]
-> Questo articolo riguarda le app personalizzate create dagli sviluppatori dell'organizzazione con Power Apps o Power Virtual Agents. Questo articolo non riguarda le app di Power Apps o Power Virtual Agents installate dalla pagina App o aggiunte a Teams tramite un criterio di configurazione dell'app. È possibile gestire le app dello Store tramite i [criteri di autorizzazione](teams-app-permission-policies.md) e i [criteri di configurazione](teams-app-setup-policies.md) delle app.
+> Questo articolo non riguarda le app di Power Apps o Power Virtual Agents installate dalla pagina App o aggiunte a Teams tramite un criterio di configurazione dell'app. È possibile gestire le app dello Store tramite i [criteri di autorizzazione](teams-app-permission-policies.md) e i [criteri di configurazione](teams-app-setup-policies.md) delle app.
 
 [Power Apps](https://powerapps.microsoft.com) è un ambiente di sviluppo di applicazioni a basso o senza codice che i creatori di app nell'organizzazione possono usare per creare app personalizzate che si connettono ai dati aziendali. [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) è un ambiente di creazione di bot senza codice che consente agli sviluppatori di app di creare bot efficaci. Con l'integrazione delle app di Microsoft Power Platform in Teams, le organizzazioni possono semplificare i processi aziendali, rispondere alle mutevoli esigenze aziendali più rapidamente per aumentare la collaborazione e creare e condividere soluzioni personalizzate per una maggiore produttività.  
 
@@ -53,7 +54,7 @@ Gli utenti possono installare le app di Microsoft Power Platform nello stesso mo
 
 Gli amministratori possono controllare se le app di Microsoft Power Platform sono riportate in **Creato con Power Platform** nella pagina App in Teams. È possibile bloccare o consentire collettivamente tutte le app create in Power Apps o in Power Virtual Agents a livello di organizzazione nella pagina [Gestisci app](manage-apps.md) o per utenti specifici che usano [criteri di autorizzazione per le app](teams-app-permission-policies.md).
 
-Le app **Shared Power Apps** e **Shared Power Virtual Agent Apps** nell'app store dell'organizzazione rappresentano tutte le app create su tale piattaforma specifica. Se si blocca una o entrambe queste app per l'intera organizzazione o per utenti specifici, gli utenti possono visualizzare tali app, ad esempio le app bloccate, ma non possono installarle in Teams. Gli utenti possono [richiedere l'approvazione dell'amministratore per consentire le app](user-requests-approve-apps.md).
+Le app **Shared Power Apps** e **Shared Power Virtual Agent Apps** nell'app store dell'organizzazione rappresentano tutte le app create su tale piattaforma specifica. Se blocchi una o entrambe queste app per l'intera organizzazione o per utenti specifici, gli utenti non possono installarle in Teams. Gli utenti non possono richiedere l'approvazione dell'amministratore per consentire le app.
 
 Si tenga presente che è possibile controllare l'accesso a tutte le app create in Power Apps e Power Virtual Agents, ma non è possibile consentire o bloccare singole app. L'autore dell'app decide chi può accedere all'app creata tramite la funzionalità di condivisione da Power Apps e Power Virtual Agents. Se un autore ha condiviso un'app creata in Power Virtual Agents con un utente e **Shared Power Virtual Agents Apps** è stato bloccato per questo utente, tale utente non sarà in grado di vedere o installare app dalla piattaforma in Teams.
 

@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.general
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri generali delle riunioni in Teams.
-ms.openlocfilehash: 0278133ff33e811cc4f08e1ad2973f52615d1426
-ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
+ms.openlocfilehash: ba667e5fbbe4d0f5e4d1ece6dba5943691b572a6
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67706955"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68046726"
 ---
 # <a name="meeting-policy-settings---general"></a>Impostazioni dei criteri di riunione - Generale
 
@@ -154,7 +154,7 @@ Per disattivare la registrazione delle riunioni e impedire agli utenti di pianif
 
 Questo criterio controlla quali utenti possono registrarsi e partecipare ai webinar. Questo criterio include due opzioni, che sono disponibili solo se la **registrazione riunione** è attivata.
 
-- Impostare **Chi può registrarsi** su **Tutti** se si vuole consentire a tutti, inclusi gli utenti anonimi, di registrarsi e partecipare a webinar configurati dall'utente dell'organizzazione.
+- Impostare **Chi può registrarsi** su **Tutti** se si vuole consentire a tutti, inclusi gli utenti anonimi, di registrarsi e partecipare ai webinar configurati dall'utente nell'organizzazione.
 - Impostare **Chi può registrarsi** **su Tutti gli utenti dell'organizzazione** se si vuole consentire solo agli utenti dell'organizzazione di registrarsi e partecipare a webinar.
 
 Per impostazione predefinita, **Chi può registrarsi** è impostato su **Tutti**. Per modificare questo criterio nell'interfaccia di amministrazione di Teams, passare a **Criteri riunione** >  riunioni.
@@ -181,8 +181,9 @@ Per specificare il componente aggiuntivo per le riunioni da rendere disponibile 
   Se si imposta il parametro su **Teams** e poi di nuovo su **TeamsAndSfB**, entrambi i componenti aggiuntivi per le riunioni saranno abilitati. Tuttavia, i collegamenti di accesso alle riunioni di Teams esistenti non verranno migrati in Skype for Business. Solo le riunioni di Skype for Business pianificate dopo la modifica avranno un collegamento di accesso a una riunione di Skype for Business.
 
 ## <a name="meeting-reactions"></a>Reazioni delle riunioni
+La disponibilità delle reazioni alle riunioni può essere configurata tramite l'interfaccia di amministrazione di Teams o tramite PowerShell. Le reazioni alle riunioni possono essere abilitate o disabilitate nella sezione **Partecipanti & guest** di un criterio di riunione.
 
-L'impostazione AllowMeetingReactions può essere applicata solo tramite PowerShell. Non è possibile attivare o disattivare AllowMeetingReactions nell'interfaccia di amministrazione di Teams.
+Per configurare l'impostazione, usare il cmdlet Set-CsTeamsMeetingPolicy. Questa impostazione è abilitata per impostazione predefinita. Per disattivarlo, impostare **AllowMeetingReactions** **su False**.
 
 Le reazioni nelle riunioni sono disattivate per impostazione predefinita. Se si disattivano le reazioni di un utente non significa che un altro utente non può usare le reazioni nelle riunioni pianificate. L'organizzatore della riunione può comunque attivare le reazioni dalla pagina delle opzioni della riunione, indipendentemente dall'impostazione predefinita.
 

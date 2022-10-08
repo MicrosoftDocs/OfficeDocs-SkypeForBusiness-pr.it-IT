@@ -12,12 +12,13 @@ description: Informazioni su come gestire l'app Complimento nell'interfaccia di 
 ms.collection:
 - M365-collaboration
 - m365-frontline
-ms.openlocfilehash: 36f904f40fdb878480addc0d753b4ccb44a3f2d9
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+- highpri
+ms.openlocfilehash: f2cf8ee32e3c03811833ea5d5d4dc93ac6d51ead
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67396687"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68046716"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimento nell'interfaccia di amministrazione di Microsoft Teams
 

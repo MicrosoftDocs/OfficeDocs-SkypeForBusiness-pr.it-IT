@@ -17,17 +17,18 @@ ms.collection:
 - M365-collaboration
 - microsoftcloud-healthcare
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 ms.reviewer: yinchang
 description: Informazioni su come gestire e usare i modelli del team sanitario nell'interfaccia di amministrazione di Teams e con Microsoft Graph per creare rapidamente e facilmente team per l'organizzazione sanitaria.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4f3aa9d42ef86dde75acf8cbd559b6e50059a428
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: bdbb3e52f471e735b1b6c96a1502880c030ed89d
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67396917"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68046486"
 ---
 # <a name="use-healthcare-team-templates"></a>Usare i modelli di team per il settore sanitario
 
@@ -41,7 +42,7 @@ La gestione e l'utilizzo dei modelli di team dipendono dal fatto che si sia ammi
 
 |Se sei: | Allora puoi: |
 | ---- | --------- |
-| Un amministratore o un professionista IT |[Gestire i modelli di team nell’interfaccia di amministrazione di Teams](#manage-team-templates-in-the-teams-admin-center): visualizzare i modelli di team e applicare i criteri di modelli per controllare quali modelli possono essere usati in Teams dal personale per la creazione di team. |
+| Un amministratore o un professionista IT |[Manage team templates in the Teams admin center](#manage-team-templates-in-the-teams-admin-center). View team templates and apply templates policies to control which templates your staff can use in Teams for creating teams. |
 | Uno sviluppatore | [Usare Microsoft Graph](#use-team-templates-with-microsoft-graph) per creare team dai modelli di team. |
 
 ## <a name="manage-team-templates-in-the-teams-admin-center"></a>Gestire i modelli di team nell’interfaccia di amministrazione di Teams
@@ -73,7 +74,7 @@ Questo modello mira a semplificare le comunicazioni e la collaborazione tra più
 &sup1; App aggiunta al canale come scheda
 ## <a name="use-team-templates-with-microsoft-graph"></a>Usare i modelli di Teams con Microsoft Graph
 
-Gli sviluppatori possono usare Microsoft Graph per creare team dai modelli di team predefiniti. Per altre informazioni sull'uso dei modelli di team con Microsoft Graph, vedere [Introduzione ai modelli di team con Microsoft Graph](../../get-started-with-teams-templates.md), [Panoramica dell'API Microsoft Teams](/graph/teams-concept-overview) e [Tipo di risorsa teamsTemplate](/graph/api/resources/teamstemplate).
+Developers can use Microsoft Graph to create teams from pre-built team templates. To learn more about using team templates with Microsoft Graph, see [Get started with team templates using Microsoft Graph](../../get-started-with-teams-templates.md), [Microsoft Teams API overview](/graph/teams-concept-overview), and [teamsTemplate resource type](/graph/api/resources/teamstemplate).
 
 Ecco i modelli predefiniti del team sanitario.
 ### <a name="ward"></a>Reparto

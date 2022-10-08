@@ -10,6 +10,7 @@ audience: Admin
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
@@ -21,12 +22,12 @@ searchScope:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per il personale in prima linea nell'organizzazione.
-ms.openlocfilehash: 20f0f926a50a56140bab8d20c9c663e0020ac3c0
-ms.sourcegitcommit: c4ec82b7d8a820362b6b0276470b0dea95a628df
-ms.translationtype: HT
+ms.openlocfilehash: 62a3d047da0f9174bc26d5a1e9c3ebe5f9467a49
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66819575"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68047196"
 ---
 # <a name="teams-policy-packages-for-frontline-workers"></a>Pacchetti di criteri di Teams per il personale in prima linea
 
@@ -73,7 +74,7 @@ Personalizzare le impostazioni dei criteri nel pacchetto di criteri come necessa
 
 ### <a name="assign"></a>Assegnare
 
-Assegnare il pacchetto di criteri agli utenti. Se a un utente è assegnato un criterio e successivamente gli si assegna un criterio diverso, avrà priorità l'assegnazione più recente.
+Assign the policy package to users. If a user has a policy assigned, and then later you assign a different policy, the most recent assignment will take priority.
 
 > [!NOTE]
 > Ogni utente richiederà il componente aggiuntivo Comunicazioni avanzate per ricevere un'assegnazione del pacchetto di criteri personalizzata. Per ulteriori informazioni, vedere [Componente aggiuntivo per comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).

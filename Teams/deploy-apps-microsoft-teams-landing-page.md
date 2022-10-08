@@ -9,9 +9,11 @@ manager: prkosh
 audience: admin
 ms.service: msteams
 ms.subservice: teams-apps
+ms.date: 10/01/2022
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 f1.keywords:
 - NOCSH
 ms.localizationpriority: high
@@ -19,18 +21,20 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020; intro-overview; intro-hub-or-landing
-ms.openlocfilehash: 67c50eefdd1d0e20e10b9542912f0e2c4f412815
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: adabe9321307bb9696636ae7ab882775705dcd27
+ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837646"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68376994"
 ---
 # <a name="understand-microsoft-teams-apps"></a>Informazioni sulle app di Microsoft Teams
 
-Le app sono un ottimo modo per riunire gli strumenti e i servizi del luogo di lavoro e collaborare con altri utenti. Le app consentono agli utenti finali di essere più produttivi, collaborativi ed efficaci nelle attività quotidiane. Le organizzazioni usano le app per connettersi con i propri clienti, fornire servizi e condividere informazioni. Esempi sono l'utilizzo da parte degli utenti finali di un'app Calendario in Teams per collaborare rapidamente con gli altri, un'app con funzionalità bot che informa gli utenti sulla qualità di un servizio web in un canale Teams e un'app per condividere e assegnare compiti a vari utenti finali in un canale.
+Le app in Teams aiutano gli utenti a riunire gli strumenti e i servizi del luogo di lavoro e a collaborare con altri utenti. Esempi sono l'utilizzo da parte degli utenti finali di un'app Calendario in Teams per collaborare rapidamente con gli altri, un'app con funzionalità bot che informa gli utenti sulla qualità di un servizio web in un canale Teams e un'app per condividere e assegnare compiti a vari utenti finali in un canale. Le app di Microsoft Teams sono app SaaS basate sul Web che non devono essere distribuite localmente.
 
-Il nostro ampio [catalogo](https://appsource.microsoft.com/en-US/marketplace/apps?product=office%3Bteams&page=1) di app convalidate e sicure in Teams Store fornisce agli utenti finali l'accesso agli strumenti e ai servizi di cui la tua organizzazione ha bisogno ogni giorno. Le applicazioni Microsoft Teams sono applicazioni SaaS basate sul Web che non devono essere distribuite. Gli utenti finali possono usare tali app in Teams solo in base alle [autorizzazioni fornite dall'utente](app-policies.md). Gli amministratori usano criteri di livello aziendale per consentire o bloccare qualsiasi app per gli utenti dell'organizzazione. Puoi controllare la disponibilità delle app per ogni utente nei vari contesti, ad esempio riunione, chat e canali.
+Gli amministratori impostano un processo di governance delle app che bilancia i requisiti ad ampio raggio degli utenti finali con i criteri, gli standard e i profili di rischio dell'organizzazione.
+
+Il nostro ampio [catalogo](https://appsource.microsoft.com/marketplace/apps?product=office%3Bteams&page=1) di app Teams convalidate e sicure offre agli utenti finali l'accesso agli strumenti e ai servizi di cui l'organizzazione ha bisogno ogni giorno. L'interfaccia di amministrazione di Teams fornisce agli amministratori configurazioni e controlli di livello enterprise per gestire le app. Puoi controllare la disponibilità delle app per ogni utente nei vari contesti, ad esempio riunione, chat e canali.
 
 Questo articolo illustra i tipi di app e la posizione in cui gli utenti accedono a tali app. Per altre informazioni sull'uso delle app, leggere [Panoramica delle app per gli utenti finali](https://support.office.com/article/overview-of-apps-in-teams-747492ee-7cdd-4115-a993-8c7e7f98a3d0).
 
@@ -53,7 +57,7 @@ Microsoft offre numerose app per migliorare la produttività e la collaborazione
 
 Teams include un set di app predefinite, tra cui Elenchi, Tasks, Complimento, Approvazioni e altro ancora. Si consiglia di includere le app in evidenza, come Planner, nel lancio iniziale di Teams.
 
-:::image type="content" source="media/microsoft-apps-in-tac1.png" alt-text="Screenshot delle app Microsoft nell’interfaccia di amministrazione di Teams." lightbox="media/microsoft-apps-in-tac2.png":::
+:::image type="content" source="media/microsoft-apps-in-tac1.png" alt-text="Screenshot che mostra un elenco di app Microsoft nell'interfaccia di amministrazione di Teams." lightbox="media/microsoft-apps-in-tac2.png":::
 
 ## <a name="third-party-apps-validated-by-microsoft"></a>App di terze parti convalidate da Microsoft
 
@@ -168,6 +172,6 @@ You can use activity reports to see how users in your organization are using Tea
 
 --->
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-article"></a>Articolo correlato
 
 * [Altre informazioni sui modelli di app per Teams](/microsoftteams/platform/samples/app-templates).

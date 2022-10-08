@@ -8,6 +8,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-apps
 audience: Admin
+ms.date: 09/26/2022
 ms.collection:
 - M365-collaboration
 appliesto:
@@ -17,12 +18,12 @@ f1.keywords:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come caricare le app personalizzate nell'app store dell'organizzazione nell'interfaccia di amministrazione di Microsoft Teams.
-ms.openlocfilehash: 60bb4c2ce41830dd789bd70763c8f3eb6ab8cde7
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: 51ea4bdc31ff59a34bdf28a991617fff0f4e7381
+ms.sourcegitcommit: d6e180791134426445a35fd485dcca18bde2006b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837316"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68494609"
 ---
 # <a name="publish-a-custom-app-by-uploading-an-app-package"></a>Pubblicare un'app personalizzata caricando un pacchetto dell'app
 
@@ -31,7 +32,7 @@ ms.locfileid: "67837316"
 
 Questo articolo fornisce indicazioni dall’inizio alla fine su come portare l'app di Teams da sviluppo a distribuzione e infine a individuazione. Queste linee guida sono incentrate sugli aspetti di Teams dell'app e sono destinate agli amministratori e ai professionisti IT. Per altre informazioni sullo sviluppo di app di Teams, vedere la [documentazione per sviluppatori di Teams](/microsoftteams/platform/).
 
-![Panoramica dell'app dallo sviluppo alla distribuzione.](media/upload-custom-apps.png)
+:::image type="content" source="media/upload-custom-apps.png" alt-text="Panoramica dell'app dallo sviluppo alla distribuzione.":::
 
 ## <a name="create-your-app"></a>Creazione di un’app personale
 
@@ -84,7 +85,7 @@ Per rendere l'app disponibile agli utenti nell'app store dell'organizzazione, ca
 
 1. Seleziona **Carica**, **carica**, seleziona il pacchetto dell'app ricevuto dallo sviluppatore e seleziona **Apri**.
 
-   ![Screenshot del caricamento di app personalizzate nell'interfaccia di amministrazione.](media/manage-your-lob-apps-upload-new-app.png)
+   :::image type="content" source="media/manage-your-lob-apps-upload-new-app.png" alt-text="Screenshot del caricamento di app personalizzate nell'interfaccia di amministrazione.":::
 
 ## <a name="set-up-and-manage"></a>Configurazione e gestione
 
@@ -134,6 +135,6 @@ Per rimuovere un'app, procedere come segue:
 
 * [Pubblicare un'app personalizzata inviata tramite l'API di l’invio app di Teams](submit-approve-custom-apps.md)
 * [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
-* [Gestire le impostazioni e i criteri delle app personalizzate in Teams](teams-custom-app-policies-and-settings.md)
+* [Gestire criteri e impostazioni per le app personalizzate](teams-custom-app-policies-and-settings.md)
 * [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
 * [Gestire i criteri di configurazione delle app in Teams](teams-app-setup-policies.md)

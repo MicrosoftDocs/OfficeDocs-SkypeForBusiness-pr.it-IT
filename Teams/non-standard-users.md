@@ -1,16 +1,17 @@
 ---
-title: Comportamento delle app di Teams in base ai tipi di utenti
+title: Disponibilità e uso delle app Teams da parte di diversi tipi di utenti
 author: ashishguptaiitb
 ms.author: guptaashish
-ms.reviewer: joglocke
-manager: serdars
+ms.reviewer: kojika
+manager: prkosh
 ms.topic: article
 audience: admin
 ms.service: msteams
 ms.subservice: teams-apps
 search.appverid: MET150
-description: Scopri come le app in Microsoft Teams funzionano in modo diverso per guest, utenti federati e utenti anonimi.
+description: Informazioni sul funzionamento delle app in Microsoft Teams per guest, utenti federati e utenti anonimi.
 ms.localizationpriority: high
+ms.date: 09/28/2022
 f1.keywords:
 - NOCSH
 ms.collection:
@@ -18,35 +19,36 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4e39aac93c7311785c0f740eded8a0021e321c43
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: 6fa9b56a17cdba5bfe4b075199a3373470d1630a
+ms.sourcegitcommit: d6e180791134426445a35fd485dcca18bde2006b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837496"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68494629"
 ---
-# <a name="behavior-of-microsoft-teams-apps-based-on-types-of-in-meeting-users"></a>Comportamento delle app di Microsoft Teams in base ai tipi di utenti in riunione
+# <a name="use-teams-apps-as-an-external-attendees-or-guest"></a>Usare le app Teams come partecipanti esterni o guest
 
-Le app di Teams si comportano quando gli utenti guest, esterni (federati) e anonimi sono presenti in un contesto di Teams.
+Le app di Teams consentono la collaborazione con persone esterne all'organizzazione. Gli amministratori possono controllare chi può accedere alle chat, alle riunioni e al canale di Teams per collaborare con gli utenti dell'organizzazione. Per informazioni dettagliate, vedere [come consentire la collaborazione con i partecipanti esterni](manage-external-access.md) e [cosa possono fare i guest in Teams](guest-access.md). Questo articolo è incentrato sull'uso delle app da parte di persone esterne all'organizzazione.
+
+I tipi di utenti seguenti possono essere presenti in una chat o una riunione di Teams e, se lo si consente, possono usare le app in Teams.
 
 * Un **utente guest** è una persona che non è un dipendente, uno studente o un membro dell'organizzazione. e che non ha un account aziendale o dell'istituto di istruzione presso l'organizzazione.
 
 * Un **utente esterno (federato)** proviene da un altro dominio e non ha accesso alle risorse di Teams dell'organizzazione.
 
-  > [!Note]
-  > Per un confronto più dettagliato tra utenti guest ed esterni, vedere [Comunicare con gli utenti di altre organizzazioni](./communicate-with-users-from-other-organizations.md).
-
 * Un **utente anonimo** è un utente che partecipa a una riunione tramite un collegamento. L'utente non ha eseguito l'accesso con l'account Microsoft o con l'account dell'organizzazione.
+
+Per un confronto più dettagliato tra utenti guest ed esterni, vedere [Comunicare con gli utenti di altre organizzazioni](communicate-with-users-from-other-organizations.md).
 
 ## <a name="guests"></a>Utenti guest
 
-### <a name="install-update-and-delete-for-guests"></a>Installare, aggiornare ed eliminare i guest
+### <a name="install-update-and-delete-apps-for-guests"></a>Installare, aggiornare ed eliminare app per i guest
 
 I guest non possono installare, aggiornare o eliminare app in un contesto condiviso, ad esempio una chat, un canale o una riunione. I guest possono farlo nell'ambito personale usando le estensioni dei messaggi e i collegamenti diretti. I guest non possono accedere all'app store di Teams dall'app desktop Teams, ma possono accedere allo Store con un collegamento diretto.
 
 ### <a name="usage-behavior-and-policy-for-guests"></a>Comportamento e criteri di utilizzo per i guest
 
-Gli utenti guest possono usare un'app se l'app è stata installata da un utente nativo.
+Gli utenti guest possono usare un'app se l'app è stata installata dall'utente di un'organizzazione.
 
 #### <a name="bots-installed-to-a-channel"></a>Bot installati in un canale
 
@@ -56,13 +58,13 @@ Gli ospiti possono menzionare il bot e interagire con le schede adattive.
 
 * Per qualsiasi app, gli utenti guest aderiscono ai criteri di autorizzazione globali e a livello di organizzazione impostati per l'organizzazione host. Se un'app è bloccata per l'intera organizzazione host, neanche gli utenti guest possono usare l'app.
 * Tutti i bot inclusi nei criteri di configurazione delle app predefiniti globali verranno installati anche per gli utenti guest.
-* Dopo l'installazione di un bot, i bot possono comunicare in modo proattivo con i guest e gli ospiti possono comunicare con i bot.
+* Dopo aver installato un bot, bot e guest possono comunicare proattivamente tra loro.
 * Non è possibile rimuovere un guest dai criteri di configurazione delle app predefinite globali.
 * Per evitare che gli utenti guest accingano ad accedere ai bot, è possibile creare altri criteri di configurazione delle app, assegnarli agli utenti interni e installare bot con i criteri personalizzati.
 
 ## <a name="federated-users"></a>Utenti federati
 
-### <a name="install-update-and-delete-for-federated-users"></a>Installare, aggiornare ed eliminare gli utenti federati
+### <a name="install-update-and-delete-apps-for-federated-users"></a>Installare, aggiornare ed eliminare app per gli utenti federati
 
 Gli utenti federati non possono installare, aggiornare o eliminare app in alcun contesto, ad esempio una riunione personale, chat, canale o canale. Non hanno accesso all'app store di Teams dell'organizzazione che ospita.
 
@@ -76,7 +78,7 @@ Gli utenti federati non possono installare, aggiornare o eliminare app in alcun 
 
 ## <a name="anonymous-users"></a>Utenti anonimi
 
-### <a name="install-update-and-delete-for-anonymous-users"></a>Installare, aggiornare ed eliminare utenti anonimi
+### <a name="install-update-and-delete-apps-for-anonymous-users"></a>Installare, aggiornare ed eliminare app per utenti anonimi
 
 Gli utenti anonimi non possono installare, aggiornare o eliminare app nelle riunioni.
 
@@ -86,7 +88,19 @@ Gli utenti anonimi non possono usare direttamente le app nelle riunioni. Se un'a
 
 Gli utenti anonimi possono interagire solo con le app già disponibili in una riunione, ma che non possono acquisire e gestire tali app. Gli utenti nativi possono continuare a usare le app per le riunioni anche quando gli utenti anonimi partecipano a una riunione.
 
-## <a name="see-also"></a>Vedere anche
+### <a name="disallow-anonymous-users-to-use-apps-in-meetings"></a>Impedire agli utenti anonimi di usare le app nelle riunioni
+
+Per impostazione predefinita, gli utenti anonimi possono interagire con le app esistenti in una riunione. È possibile impedire agli utenti anonimi di interagire con le app.
+
+1. Accedere all'interfaccia di amministrazione di Teams e accedere alle **[impostazioni delle riunioni](https://admin.teams.microsoft.com/meetings/settings)** > .
+
+1. In **Partecipanti** impostare l'interruttore su **Disattivato** per **Gli utenti anonimi possono interagire con le app nelle riunioni**.
+
+1. Selezionare **Salva**.
+
+## <a name="related-articles"></a>Articoli correlati
 
 * [Consentire agli utenti anonimi di partecipare alle riunioni](meeting-settings-in-teams.md#allow-anonymous-users-to-join-meetings).
 * [Gestire i criteri di configurazione delle app in Microsoft Teams](teams-app-setup-policies.md).
+* [Come consentire la collaborazione con guest e partecipanti esterni](manage-external-access.md).
+* [Cosa possono fare i guest in Teams](guest-access.md)

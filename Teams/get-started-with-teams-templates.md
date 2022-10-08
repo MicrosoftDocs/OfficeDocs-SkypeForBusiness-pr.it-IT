@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- highpri
 description: Informazioni sui modelli di team disponibili solo con Microsoft Graph.
 f1.keywords:
 - CSH
@@ -20,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c4251aa0293665b6fd41c66e352ca9c595378259
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: ca21b61f1d1889c101208c8b9617efb4a9c19795
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67397237"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68046866"
 ---
 # <a name="get-started-with-team-templates-using-microsoft-graph"></a>Introduzione ai modelli di team con Microsoft Graph
 
@@ -66,9 +67,9 @@ I modelli di team predefiniti sono modelli creati per settori specifici. Ecco i 
 | Tipo di modello | TemplateId | Proprietà del modello |
 | ------------------ | -------------- | ----------------------------------------------------- |
 | Standard | `https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('standard')` | Nessuna app e proprietà aggiuntive |
-| Istruzione -<br>Team di classe | `https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('educationClass')` | App:<ul><li>Blocco appunti di OneNote per la classe (aggiunto alla scheda **Generale** ) </li><li>App Attività (aggiunta alla scheda **Generale** )</li></ul> Proprietà del team:<ul><li>Visibilità del team impostata su **HiddenMembership** (non può essere sostituita)</li></ul> |
-| Istruzione -<br>Team del personale | `https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('educationStaff')` | App:<ul><li>Blocco appunti di OneNote per personale degli utenti (aggiunto alla scheda **Generale** )</li></ul> |
-|Istruzione -<br>Team PLC |`https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('educationProfessionalLearningCommunity')` | App:<ul><li>Blocco appunti PLC di OneNote (aggiunto alla scheda **Generale** )</ul></li>|
+| Istruzione-<br>Team di classe | `https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('educationClass')` | App:<ul><li>Blocco appunti di OneNote per la classe (aggiunto alla scheda **Generale** ) </li><li>App Attività (aggiunta alla scheda **Generale** )</li></ul> Proprietà del team:<ul><li>Visibilità del team impostata su **HiddenMembership** (non può essere sostituita)</li></ul> |
+| Istruzione-<br>Team del personale | `https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('educationStaff')` | App:<ul><li>Blocco appunti di OneNote per personale degli utenti (aggiunto alla scheda **Generale** )</li></ul> |
+|Istruzione-<br>Team PLC |`https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('educationProfessionalLearningCommunity')` | App:<ul><li>Blocco appunti PLC di OneNote (aggiunto alla scheda **Generale** )</ul></li>|
 
 > [!NOTE]
 > Per un elenco dei modelli predefiniti che è possibile usare nel client di Teams e con Microsoft Graph, vedere [Introduzione ai modelli di team nell'interfaccia di amministrazione di Teams](get-started-with-teams-templates-in-the-admin-console.md).

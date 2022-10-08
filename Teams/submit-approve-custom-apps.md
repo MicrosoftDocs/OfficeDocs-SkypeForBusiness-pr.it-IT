@@ -8,6 +8,7 @@ ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.subservice: teams-apps
 audience: Admin
+ms.date: 09/19/2022
 ms.collection:
 - M365-collaboration
 appliesto:
@@ -17,12 +18,12 @@ f1.keywords:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Scopri come approvare le app personalizzate inviate utilizzando l'API di invio delle app di Teams in Microsoft Teams.
-ms.openlocfilehash: 644e4afd28dbec27385516ce3e0676eb9ea27ef1
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: 63493041d834c99f5ffa93ba2fb580130afa0e29
+ms.sourcegitcommit: d6e180791134426445a35fd485dcca18bde2006b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837526"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "68494619"
 ---
 # <a name="publish-a-custom-app-submitted-using-the-teams-app-submission-api"></a>Pubblicare un'app personalizzata inviata tramite l'API di invio delle app di Teams
 
@@ -164,7 +165,7 @@ Per altre informazioni sull'uso dell’API Graph per aggiornare le app, vedere [
 
 * [Pubblicare un'app personalizzata caricando un pacchetto dell'app](upload-custom-apps.md)
 * [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
-* [Gestire le impostazioni e i criteri delle app personalizzate in Teams](teams-custom-app-policies-and-settings.md)
+* [Gestire criteri e impostazioni per le app personalizzate](teams-custom-app-policies-and-settings.md)
 * [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
 * [Gestire i criteri di configurazione delle app in Teams](teams-app-setup-policies.md)
 * [Monitoraggio e avvisi di Teams](alerts/teams-admin-alerts.md)

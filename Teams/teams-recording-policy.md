@@ -19,14 +19,16 @@ ms.custom:
 ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
+- tier3
+- purview-compliance
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b23430398e213c7df9fcd72ccb9d32f88ee1ed1f
-ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
+ms.openlocfilehash: 659692af6a1236510d5b4572e66cbd299aa92c41
+ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67418485"
+ms.lasthandoff: 09/27/2022
+ms.locfileid: "68046496"
 ---
 # <a name="introduction-to-teams-policy-based-recording-for-callings--meetings"></a>Introduzione alla registrazione basata sui criteri di Teams per le chiamate & le riunioni
 
@@ -138,7 +140,7 @@ I requisiti di Azure e Windows VM si applicano solo al componente Bot di Teams, 
 
 ## <a name="compliance-recording-policy-assignment-and-provisioning"></a>Assegnazione e provisioning dei criteri di registrazione della conformità
 
-Gli amministratori IT possono determinare quali utenti devono essere registrati e quale registratore verrà usato per ogni utente, creando e assegnando criteri di registrazione di conformità. I registratori vengono automaticamente invitati a partecipare alle conversazioni in base alla configurazione di questi criteri quando si verifica un'interazione di comunicazione. I criteri di registrazione della conformità vengono gestiti con [Microsoft PowerShell](./teams-powershell-overview.md) e possono essere applicati a livello di tenant, per utente e gruppo di sicurezza per ogni organizzazione. Sono disponibili altre informazioni su Microsoft Docs per [criteri di riunione](./meeting-policies-overview.md), [criteri di chiamata](./teams-calling-policy.md) e [criteri di gruppo](./assign-policies-users-and-groups.md#assign-a-policy-to-a-group).
+Gli amministratori IT possono determinare quali utenti devono essere registrati e quale registratore verrà usato per ogni utente, creando e assegnando criteri di registrazione di conformità. I registratori vengono automaticamente invitati a partecipare alle conversazioni in base alla configurazione di questi criteri quando si verifica un'interazione di comunicazione. I criteri di registrazione della conformità vengono gestiti con [Microsoft PowerShell](./teams-powershell-overview.md) e possono essere applicati a livello di tenant, per utente e gruppo di sicurezza per ogni organizzazione. Altre informazioni sono disponibili in Microsoft Learn for [Meeting policies](./meeting-policies-overview.md), [calling policies](./teams-calling-policy.md) e  [group policies](./assign-policies-users-and-groups.md#assign-a-policy-to-a-group).
 
 1. Creare un'istanza dell'applicazione nel tenant.
 

@@ -1,7 +1,7 @@
 ---
 title: Configurare gli eventi live in Microsoft Teams
-author: CarolynRowe
-ms.author: crowe
+author: MicrosoftHeidi
+ms.author: heidip
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -20,12 +20,12 @@ description: Configurare gli eventi live in Teams, tra cui configurare la rete, 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f972fa2a78796a2768c62d191a95e68f41a91a5e
-ms.sourcegitcommit: 4c4f2f220832cae3efb3f6f3c74795300d661295
+ms.openlocfilehash: 6f47e142dc7d445e76c6047bfdd4e7300501f6fa
+ms.sourcegitcommit: fcedb958bf555d870215ae84fb83752304944716
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66825910"
+ms.lasthandoff: 10/06/2022
+ms.locfileid: "68486606"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi live in Microsoft Teams
 
@@ -78,7 +78,7 @@ Se è stato creato un criterio personalizzato per gli eventi live, assegnarlo ag
 
 ### <a name="enable-users-to-schedule-events-that-were-produced-with-an-external-app-or-device"></a>Consentire agli utenti di pianificare eventi prodotti con un'app o un dispositivo esterno
 
-Per consentire agli utenti di pianificare gli eventi prodotti con un'app o un dispositivo esterno, è necessario eseguire anche le operazioni seguenti:
+Per consentire agli utenti di pianificare eventi prodotti con un'app o un dispositivo esterno, è necessario eseguire anche le operazioni seguenti:
 
 1. Abilitare Microsoft Stream per gli utenti dell'organizzazione. Stream è disponibile come parte di abbonamenti a Microsoft 365 o Office 365 idonei o come servizio autonomo. Stream non è incluso nei piani Business Essentials o Business Premium. Per altre informazioni, vedere la [Panoramica sulle licenze di Stream](/stream/license-overview).
 

@@ -22,12 +22,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni sui dati e i report disponibili in Microsoft Call Quality Dashboard (CQD).
-ms.openlocfilehash: ba30be8d63dab1f5720be5637ea0a28c26d5d877
-ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.openlocfilehash: 7d89c17f299302f39e00e6aebcfd9309ead3eaae
+ms.sourcegitcommit: 021cfac01a38282a8cde6e913d74be2d54c39162
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66789811"
+ms.lasthandoff: 09/29/2022
+ms.locfileid: "68218515"
 ---
 # <a name="data-and-reports-in-call-quality-dashboard-cqd"></a>Dati e report in Call Quality Dashboard (CQD)
 
@@ -41,7 +41,7 @@ Microsoft Call Quality Dashboard (CQD) utilizza un feed di dati NRT (Near Real-T
 |---|---|
 |Interfaccia di amministrazione di Teams [(https://admin.teams.microsoft.com)](https://admin.teams.microsoft.com)|Call Quality Dashboard è incluso nella pagina **Utenti** dell'interfaccia di amministrazione di Teams, che mostra i dati più comuni in un formato di facile lettura. Non è possibile personalizzare i dati di Call Quality Dashboard disponibili in **Utenti**.|
 |Call Quality Dashboard [(https://cqd.teams.microsoft.com)](https://cqd.teams.microsoft.com)|Riepilogo completo e report dettagliati che soddisfano le più esigenze, con il filtro drill-through. È anche possibile personalizzare i report nel portale di Call Quality Dashboard. <br><br>Ottenere due [modelli di report di Call Quality Dashboard](#import-the-cqd-report-templates) per analizzare i dati nel portale di Call Quality Dashboard.|
-|Power BI|Usare le query dirette per visualizzare i dati di Call Quality Dashboard in Power BI usando [modelli di Power BI personalizzabili](CQD-Power-BI-query-templates.md). [Scaricare i modelli di query di Power BI per Call Quality Dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true).<br><br>È anche possibile [usare l'API REST per accedere ai dati di Call Quality Dashboard](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati di Call Quality Dashboard in modo da potervi lavorare offline. L'uso di questo metodo offre prestazioni migliori, particolarmente utili per set di dati di grandi dimensioni che si arrestano in Power BI quando si è online.|
+|Power BI|Usare le query dirette per visualizzare i dati di Call Quality Dashboard in Power BI usando [modelli di Power BI personalizzabili](CQD-Power-BI-query-templates.md). [Scaricare i modelli di query di Power BI per Call Quality Dashboard](https://www.microsoft.com/download/details.aspx?id=102291).<br><br>È anche possibile [usare l'API REST per accedere ai dati di Call Quality Dashboard](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati di Call Quality Dashboard in modo da potervi lavorare offline. L'uso di questo metodo offre prestazioni migliori, particolarmente utili per set di dati di grandi dimensioni che si arrestano in Power BI quando si è online.|
 |API di Microsoft Graph|Accedi ai dati sulla qualità delle chiamate manualmente usando il [API Graph](/graph/api/resources/callrecords-api-overview). Questo è il metodo più complesso, ma offre il maggior controllo e la massima flessibilità nell'analisi dei dati sulla qualità delle chiamate. Ad esempio, se è necessario aggiungerli ad altri dati per l'organizzazione, è possibile usare il API Graph per creare un modello di dati e incorporare i dati sulla qualità delle chiamate.|
 
 ## <a name="import-the-cqd-report-templates"></a>Importare i modelli di report call quality dashboard
@@ -74,6 +74,10 @@ Per motivi di conformità, i dati identificativi dell'utente finale (INFORMAZION
 - Feedback degli utenti verbali
 - ID oggetto (ID oggetto Active Directory dell'utente dell'endpoint)
 - Numero di telefono
+- Identità operatore automatico
+- Identità coda di chiamata
+- Nome dispositivo VTC (Video Teleconferencing)
+- Video Teleconferencing (VTC) Device Detail
 
 ### <a name="admin-roles-with-and-without-euii-access"></a>Amministrazione ruoli con e senza accesso EUII
 

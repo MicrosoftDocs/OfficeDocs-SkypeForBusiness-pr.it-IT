@@ -1,7 +1,7 @@
 ---
 title: Guida introduttiva a Microsoft Teams Essentials per le piccole imprese
-author: adeejoseph
-ms.author: adjoseph
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 46624ff1e1eeeede5066cf6972cc92469cf8979c
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
-ms.translationtype: HT
+ms.openlocfilehash: ba285480bc1316d33ea6a5708ec7ef7e6d7451f9
+ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675048"
+ms.lasthandoff: 10/04/2022
+ms.locfileid: "68377624"
 ---
 # <a name="microsoft-teams-essentials-quickstart-guide-for-small-businesses"></a>Guida introduttiva a Microsoft Teams Essentials per le piccole imprese
 
@@ -97,7 +97,7 @@ Nella tabella seguente sono elencate le funzionalità principali di Microsoft Te
 
 
 > [!IMPORTANT] 
-> Per ottenere l'amministrazione avanzata e l'intero set completo di funzionalità di Teams, è necessario eseguire l'aggiornamento alla versione completa di Teams acquistando un [piano di abbonamento Microsoft 365 o Office 365 appropriato](https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-options) per gli utenti. Si consiglia di farlo perché si avrà maggiore flessibilità per gestire il modo in cui l'organizzazione collabora.
+> To get enhanced administration and entire full set of Teams features, you'll need to upgrade to the full version of Teams by purchasing an appropriate [Microsoft 365 or Office 365 subscription plan](https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-options) for your users. We recommend this as you'll have more flexibility to manage the way your organization collaborates.
 
 ## <a name="administration-limits-and-specifications-for-microsoft-teams-essentials"></a>Limiti e specifiche di amministrazione per Microsoft Teams Essentials
 
@@ -109,9 +109,9 @@ La tua azienda non ha esperienza con Microsoft Teams? Grazie per aver scelto Mic
 
 Per iniziare a usare Teams Essentials, seguire questa procedura:
 
-1. **Acquistare l’abbonamento.** Andare a [Microsoft Teams Essentials per le piccole aziende](https://www.microsoft.com/microsoft-teams/compare-microsoft-teams-options) e selezionare **Acquista ora** in Microsoft Teams Essentials.
+1. **Acquistare l'abbonamento.** Passare a [Microsoft Teams Essentials per le piccole imprese](https://www.microsoft.com/microsoft-teams/compare-microsoft-teams-options) e selezionare **Acquista ora** in Microsoft Teams Essentials.
 2. **Iscriversi con l'indirizzo di posta elettronica esistente.** Usare un indirizzo di posta elettronica esistente e seguire le istruzioni per acquistare licenze utente.
-3. **Rivedere la descrizione del servizio Teams.** Visitare la [descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description) per altre informazioni su Microsoft Teams.
+3. **Rivedere la descrizione del servizio di Teams.** Visitare [Descrizione del servizio di Microsoft Teams](/office365/servicedescriptions/teams-service-description) per altre informazioni su Microsoft Teams.
 
 Dopo aver completato queste attività, è possibile pianificare, distribuire e usare l'app Teams.
 
@@ -166,10 +166,10 @@ No. Teams Essentials con identità AAD è disponibile solo tramite Partner selez
 
 ### <a name="can-i-use-an-existing-email-system-with-microsoft-teams-essentials"></a>È possibile usare un sistema di posta elettronica esistente con Microsoft Teams Essentials?  
 
-Sì. È possibile mantenere il sistema di posta elettronica esistente e sfruttare Teams Essentials per riunioni, chat e per collaborare.  
+Yes. You can keep your existing email system and leverage Teams Essentials to meet, chat and collaborate.  
 
 ### <a name="can-i-connect-my-existing-calendar-solution-with-teams-essentials"></a>È possibile connettere la soluzione di calendario esistente a Teams Essentials?
-Sì. È possibile sincronizzare i calendari esistenti da Outlook.com e Google con Teams Essentials.
+Yes. You can sync existing calendars from Outlook.com and Google with Teams Essentials.
 
 Per connettere una soluzione di calendario esistente con Teams Essentials (identità AAD), seguire le istruzioni più avanti in questo articolo.
 
