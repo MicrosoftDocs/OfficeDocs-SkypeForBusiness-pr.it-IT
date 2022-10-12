@@ -22,12 +22,12 @@ ms.localizationpriority: high
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dc99785bf5d0450e99022f230af7564693c6da7f
-ms.sourcegitcommit: 8dd36e1e30a47316c15c99e964d0464715bcd742
+ms.openlocfilehash: 2321b4c16938b045cfe281d4cf25d7882d449d9b
+ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/12/2022
-ms.locfileid: "68532246"
+ms.locfileid: "68551860"
 ---
 # <a name="meetings-webinars-and-live-events"></a>Riunioni, webinar ed eventi live
 
@@ -54,7 +54,7 @@ La tabella seguente riepiloga i tre tipi di riunioni, il numero di partecipanti 
 Note that NDI is fully supported in meetings, webinars, and live events, allowing you to produce the broadcast by using tools such as OBS and Wirecast. For more information, see [Use NDI® technology in Microsoft Teams](use-ndi-in-meetings.md).
 
 > [!NOTE]
-> Per ulteriori informazioni e per ottenere indicazioni in base al ruolo per la distribuzione di eventi online con Microsoft Teams, consulta virtual [Event Playbook](https://adoption.microsoft.com/virtual-event-guidance/). Puoi anche partecipare al [forum dell'evento virtuale](https://aka.ms/VirtualEventForum) sul Microsoft Tech Community.
+> Per ulteriori informazioni e per ottenere indicazioni in base al ruolo per la distribuzione di eventi online con Microsoft Teams, consulta virtual [Event Playbook](https://aka.ms/VirtualEventPlaybook). Puoi anche partecipare al [forum dell'evento virtuale](https://aka.ms/VirtualEventForum) sul Microsoft Tech Community.
 
 > [!NOTE]
 > Per informazioni dettagliate sulla configurazione rapida delle riunioni e degli eventi di Teams su diverse piattaforme, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).

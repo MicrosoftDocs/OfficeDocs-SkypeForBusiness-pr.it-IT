@@ -19,12 +19,12 @@ localization_priority: Normal
 f1.keywords:
 - CSH
 description: Piani di chiamata e routing in Microsoft Teams
-ms.openlocfilehash: 89332b5e5756bc33c92a67b641bab85b826bfe70
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: 3fc29dc27f1f3863ed313b75c8ef977cd27a6231
+ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606785"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68551900"
 ---
 # <a name="overview"></a>Panoramica
 
@@ -34,9 +34,9 @@ Gli articoli di questa sezione descrivono i piani di chiamata e il routing delle
 - [Creare e impostare dial plan](create-and-manage-dial-plans.md)
 - [Instradare le chiamate a numbi non assegnati](routing-calls-to-unassigned-numbers.md)
 
-Gli articoli di questa sezione si applicano a tutte le opzioni per la connessione alla rete PSTN (Public Switched Telephone Network): Piano per chiamate, Operator Connect, Connessione con operatore di telefonia mobile (versione di anteprima pubblica) e Routing diretto. Per altre informazioni su tutte le opzioni di connettività PSTN, vedere [Opzioni di connettività PSTN](pstn-connectivity.md).
+Gli articoli di questa sezione si applicano a tutte le opzioni per la connessione alla rete PSTN (Public Switched Telephone Network): Piano per chiamate, Operator Connect, Teams Phone Mobile e Routing diretto. Per altre informazioni su tutte le opzioni di connettività PSTN, vedere [Opzioni di connettività PSTN](pstn-connectivity.md).
 
-Se scegli Piano per chiamate, Connessione operatore o Connessione con operatore di telefonia mobile, la maggior parte del routing delle chiamate viene gestita da Microsoft o dal tuo provider. L'instradamento diretto, tuttavia, richiede passaggi aggiuntivi per configurare il routing delle chiamate. 
+Se scegli Piano per chiamate, Operator Connect o Teams Phone Mobile, la maggior parte del routing delle chiamate viene gestita da Microsoft o dal tuo provider. L'instradamento diretto, tuttavia, richiede passaggi aggiuntivi per configurare il routing delle chiamate. 
 
 Per l'instradamento diretto, è necessario configurare il routing delle chiamate specificando le route vocali e assegnando criteri di routing vocale agli utenti. È possibile configurare piani di chiamata per la traduzione dei numeri a livello di trunk per garantire l'interoperabilità con i controller di session border (SBC). Per altre informazioni, vedere [Configurare il routing vocale per il routing diretto](direct-routing-voice-routing.md), [Gestire i criteri di routing vocale](manage-voice-routing-policies.md) e [Tradurre numeri di telefono](direct-routing-translate-numbers.md).
 

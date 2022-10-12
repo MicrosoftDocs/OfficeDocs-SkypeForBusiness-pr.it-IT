@@ -20,20 +20,20 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono aziendale per gli utenti di Teams in modo che aziende e clienti esterni possano chiamare.
-ms.openlocfilehash: 1a959fd61200e7718cf1e14586d0060fb0e996ec
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: d26df14f2f75e205c1824b66c9b8f2f394972d43
+ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606645"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68551660"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user"></a>Assegnare, modificare o rimuovere il numero di telefono di un utente
 
-Quando configuri Piani per chiamate, Operator Connect o Connessione con operatore di telefonia mobile (versione di anteprima pubblica), assegni numeri di telefono agli utenti. In Microsoft Teams, il numero di telefono assegnato viene elencato quando un utente fa clic su **Chiamate**.
+Quando configuri Piani per chiamate, Operator Connect o Teams Phone Mobile, assegni numeri di telefono agli utenti. In Microsoft Teams, il numero di telefono assegnato viene elencato quando un utente fa clic su **Chiamate**.
 
-Questo articolo si applica ai Piani per chiamate, Operator Connect e Connessione con operatore di telefonia mobile (versione di anteprima pubblica). Per informazioni sull'assegnazione, la modifica o la rimozione di un numero di telefono da un utente in uno scenario di routing diretto, vedere [Abilitare gli utenti per routing diretto, voce e segreteria telefonica](./direct-routing-enable-users.md).
+Questo articolo si applica a Piani per chiamate, Operator Connect e Teams Phone Mobile. Per informazioni sull'assegnazione, la modifica o la rimozione di un numero di telefono da un utente in uno scenario di routing diretto, vedere [Abilitare gli utenti per routing diretto, voce e segreteria telefonica](./direct-routing-enable-users.md).
 
-Prima di assegnare un numero a un piano per chiamate, a Operator Connect o a un utente Connessione con operatore di telefonia mobile, è necessario ottenere numeri per gli utenti. Per altre informazioni, vedi [Ottenere numeri per gli utenti del Piano per chiamate](getting-phone-numbers-for-your-users.md), [Configurare i numeri per gli utenti Operator Connect](operator-connect-configure.md#set-up-phone-numbers) o [Configurare i numeri per Connessione con operatore di telefonia mobile utenti](operator-connect-mobile-configure.md).
+Prima di assegnare un numero a un piano per chiamate, a Operator Connect o a Teams Phone Mobile, è necessario ottenere numeri per gli utenti. Per altre informazioni, vedere [Ottenere numeri per gli utenti del piano per chiamate](getting-phone-numbers-for-your-users.md), [Configurare i numeri per gli utenti operator Connect](operator-connect-configure.md#set-up-phone-numbers) o [Configurare i numeri per gli utenti di Teams Phone Mobile](operator-connect-mobile-configure.md).
 
 > [!NOTE]
 > Un modo per verificare se a un utente è assegnata una licenza consiste nell'accedere all'interfaccia di amministrazione di Microsoft Teams > **Utenti**. Se viene assegnata una licenza, verrà indicata nella pagina.  È anche possibile usare il interfaccia di amministrazione di Microsoft 365.
@@ -64,7 +64,7 @@ Per i numeri Operator Connect:
 Set-CsPhoneNumberAssignment -Identity <user> -PhoneNumber <phone number> -PhoneNumberType OperatorConnect
 ```
 
-Per i numeri di Connessione con operatore di telefonia mobile:
+Per i numeri di Teams Phone Mobile:
 
 ```PowerShell
 Set-CsPhoneNumberAssignment -Identity <user> -PhoneNumber <phone number> -PhoneNumberType OCMobile
@@ -108,7 +108,7 @@ Per modificare un numero di telefono per un utente usando l'interfaccia di ammin
 8. Per assegnare o modificare la posizione per gli interventi di emergenza associata, in Posizione per gli **interventi di emergenza** cerca e seleziona la posizione.
 
       > [!NOTE]
-      > Se modifichi i numeri per Operator Connect o Connessione con operatore di telefonia mobile utenti, potresti o non essere in grado di assegnare o modificare la posizione per gli interventi di emergenza associata. Questa funzionalità dipenderà dall'operatore. Per altre informazioni, contatta il tuo operatore.
+      > Se modifichi i numeri per gli utenti di Operator Connect o Teams Phone Mobile, potresti o meno assegnare o modificare la posizione per gli interventi di emergenza associata. Questa funzionalità dipenderà dall'operatore. Per altre informazioni, contatta il tuo operatore.
 
 9. Fare clic su **Salva**.
 

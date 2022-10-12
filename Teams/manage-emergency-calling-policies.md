@@ -20,16 +20,16 @@ description: Informazioni su come usare e gestire i criteri per le chiamate di e
 ms.custom:
 - seo-marvel-apr2020
 - ms.teamsadmincenter.voice.emergencycallingpolicies.overview
-ms.openlocfilehash: 658e7191a821069d3fa9b13e02cc7cbcdfb29413
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: a6fa08808c9ef5fc258236735cc043e4bde366b1
+ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606555"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68551520"
 ---
 # <a name="manage-emergency-calling-policies-in-microsoft-teams"></a>Gestire i criteri per le chiamate di emergenza in Microsoft Teams
 
-Se l'organizzazione utilizza Piani per chiamate Microsoft, Operator Connect, Connessione con operatore di telefonia mobile (versione di anteprima pubblica) o Routing diretto come [opzione di connettività PSTN](pstn-connectivity.md), è possibile usare i criteri per le chiamate di emergenza in Microsoft Teams per definire cosa accade quando un utente di Teams nell'organizzazione effettua una chiamata di emergenza.
+Se l'organizzazione utilizza Piani per chiamate Microsoft, Operator Connect, Teams Phone Mobile o Direct Routing come [opzione di connettività PSTN](pstn-connectivity.md), è possibile usare i criteri per le chiamate di emergenza in Microsoft Teams per definire cosa accade quando un utente di Teams nell'organizzazione effettua una chiamata di emergenza.
 
 È possibile impostare chi deve inviare una notifica e come riceverla quando un utente a cui sono stati assegnati i criteri chiama i servizi di emergenza. Ad esempio, è possibile configurare le impostazioni dei criteri in modo da informare automaticamente il security desk dell'organizzazione e fare in modo che vengano ascoltate durante le chiamate di emergenza.  
 

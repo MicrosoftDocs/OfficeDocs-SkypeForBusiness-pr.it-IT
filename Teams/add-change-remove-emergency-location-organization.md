@@ -19,22 +19,22 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza per l'organizzazione.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c0a195a221bff5b008f5754592450f4f2b1e42e6
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: 23eb549592c8ead6983253d1a228020f3851e1a7
+ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606635"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68551490"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
-Indipendentemente [dall'opzione di connettività PSTN](pstn-connectivity.md), è possibile associare&mdash;a un numero di telefono i piani per chiamate Microsoft, Operator Connect, Connessione con operatore di telefonia mobile (versione di anteprima pubblica) o le posizioni per gli interventi di emergenza Direct Routing&mdash;.
+Indipendentemente [dall'opzione di connettività PSTN](pstn-connectivity.md) , è possibile associare&mdash;a un numero di telefono i piani per chiamate Microsoft, Operator Connect, Teams Phone Mobile o direct Routing&mdash;.
 
 Tuttavia, a seconda dell'opzione di connettività PSTN, la modalità di gestione delle posizioni di emergenza e dei requisiti di posizione può variare. Per ulteriori informazioni, vedi [Gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md).
 
 Questo articolo descrive come aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza per l'organizzazione. 
 
-Questo articolo si applica a Piani per chiamate Microsoft, Operator Connect, Connessione con operatore di telefonia mobile (versione di anteprima pubblica) e Routing diretto.
+Questo articolo si applica ai piani per chiamate Microsoft, Operator Connect, Teams Phone Mobile e Direct Routing.
 
 Gestisci le posizioni per gli interventi di emergenza per la tua organizzazione nell'interfaccia di amministrazione di Microsoft Teams o tramite PowerShell.
 

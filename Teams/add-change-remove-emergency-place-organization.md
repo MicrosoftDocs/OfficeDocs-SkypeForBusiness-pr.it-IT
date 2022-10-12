@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come aggiungere, modificare o rimuovere un luogo per una posizione per gli interventi di emergenza per l'organizzazione.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 37ccf72868819c515a2f7320b112f81f31f65a34
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: 5ddaaf2e6c173b6546d337ebfc9f23464a52233c
+ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606715"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68551500"
 ---
 # <a name="add-change-or-remove-a-place-for-an-emergency-location-in-your-organization"></a>Aggiungere, modificare o rimuovere un luogo per una posizione di emergenza per l'organizzazione
 
@@ -34,7 +34,7 @@ A seconda dell'opzione di connettività PSTN, tuttavia, la modalità di gestione
 
 Questo articolo descrive come aggiungere, modificare o rimuovere un *luogo* per una posizione per gli interventi di emergenza per l'organizzazione.
 
-Questo articolo si applica a Piani per chiamate Microsoft, Operator Connect, Connessione con operatore di telefonia mobile (versione di anteprima pubblica) e Routing diretto.
+Questo articolo si applica ai piani per chiamate Microsoft, Operator Connect, Teams Phone Mobile e Direct Routing.
 
 Gestisci le posizioni per gli interventi di emergenza per la tua organizzazione nell'interfaccia di amministrazione di Microsoft Teams o tramite PowerShell.
   

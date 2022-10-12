@@ -25,12 +25,12 @@ search.appverid: MET150
 description: Altre informazioni sulle funzionalità vocali cloud di Microsoft Teams e sulle decisioni di distribuzione che verranno prese per l'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f1ba61d1ccbaeda26834b31a321aebfccbe23243
-ms.sourcegitcommit: 401cee68d4f6f9470d614dda12b9cb023f382ff2
+ms.openlocfilehash: a159a6e2c5f532205c8e0cdadf744a2e6e6f3c0a
+ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "67999351"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68551670"
 ---
 # <a name="plan-your-teams-voice-solution"></a>Pianificare la soluzione vocale di Teams
 
@@ -50,7 +50,7 @@ Tuttavia, la situazione potrebbe essere più complessa. Ad esempio, potresti ave
 
 - Sistema telefonico con piano per chiamate
 - Sistema telefonico con il tuo operatore PSTN con Operator Connect
-- Sistema telefonico con il tuo operatore di telefonia mobile PSTN con Connessione con operatore di telefonia mobile (versione di anteprima pubblica)
+- Sistema telefonico con il proprio operatore di telefonia mobile PSTN con Teams Phone Mobile 
 - Sistema telefonico con il tuo operatore PSTN con Direct Routing
 - Una soluzione combinata che usa sistema telefonico con piano per chiamate, sistema telefonico con Operator Connect e/o sistema telefonico con routing diretto
 
@@ -154,7 +154,7 @@ Sistema telefonico fornisce funzionalità PBX complete per la tua organizzazione
 
 - [**Sistema telefonico con il tuo operatore PSTN tramite Operator Connect**](operator-connect-plan.md). Con Operator Connect, se l'operatore esistente partecipa al programma Microsoft Operator Connect, può gestire il servizio per portare le chiamate PSTN in Teams. 
 
-- [**Sistema telefonico con il tuo operatore di telefonia mobile PSTN usando Connessione con operatore di telefonia mobile**](operator-connect-mobile-plan.md) **Versione pubblica di revisione**. Con Connessione con operatore di telefonia mobile, se il tuo operatore esistente partecipa al programma Microsoft Connessione con operatore di telefonia mobile, può gestire il servizio per l'uso dei numeri di cellulare abilitati per la SIM con Teams. 
+- [**Sistema telefonico con il tuo operatore di telefonia mobile PSTN usando Teams Phone Mobile**](operator-connect-mobile-plan.md). Con Teams Phone Mobile, se il tuo operatore esistente partecipa al programma Telefono di Microsoft Teams Mobile, può gestire il servizio per l'uso dei numeri di cellulare abilitati per la SIM con Teams. 
 
 - [**Sistema telefonico con il proprio operatore PSTN tramite Direct Routing**](pstn-connectivity.md#phone-system-with-direct-routing) per connettere l'ambiente locale a Teams.
 

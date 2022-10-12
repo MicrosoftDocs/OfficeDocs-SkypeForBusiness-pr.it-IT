@@ -18,22 +18,22 @@ f1.keywords:
 - NOCSH
 description: Questo articolo spiega come assegnare o modificare la posizione di una posizione per gli interventi di emergenza per gli utenti dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 749093e532dec92f8bf9788cc43fd0f052c461a4
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: 60bd471e42eb6e8c2404eef47636da2c9894268c
+ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606595"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68551640"
 ---
 # <a name="assign-or-change-the-place-for-an-emergency-location-for-a-user"></a>Assegnare o modificare la posizione per una posizione per gli interventi di emergenza per un utente
 
-Indipendentemente [dall'opzione di connettività PSTN](pstn-connectivity.md), scegli&mdash;Piani per chiamate Microsoft, Operator Connect, Connessione con operatore di telefonia mobile (versione di anteprima pubblica) o Instradamento&mdash;diretto a ogni numero di telefono o utente deve essere assegnata una posizione per gli interventi di emergenza.
+Indipendentemente [dall'opzione di connettività PSTN](pstn-connectivity.md) scelta per&mdash;i piani per chiamate Microsoft, Operator Connect, Teams Phone Mobile o Direct Routing&mdash;, è necessario assegnare una posizione per gli interventi di emergenza a ogni numero di telefono o utente.
 
 A seconda dell'opzione di connettività PSTN, tuttavia, la modalità di gestione e assegnazione delle posizioni per gli interventi di emergenza per un utente può variare. Per ulteriori informazioni, vedi [Gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md).
 
 Questo articolo descrive come assegnare o modificare la *posizione* per una posizione per gli interventi di emergenza per un utente nell'interfaccia di amministrazione di Microsoft Teams o tramite PowerShell.
 
-Questo articolo si applica ai Piani per chiamate, Operator Connect e Connessione con operatore di telefonia mobile (versione di anteprima pubblica).
+Questo articolo si applica a Piani per chiamate, Operator Connect e Teams Phone Mobile.
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 

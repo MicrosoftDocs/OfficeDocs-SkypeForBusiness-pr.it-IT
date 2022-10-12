@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 33b55bfbff72cb2ddcd79b9620b2051ae0bd52fb
-ms.sourcegitcommit: 957502f999512a32794a9f99e292588d66ed8a33
+ms.openlocfilehash: dec612dd21ba72f984251db3e479040d41070ddc
+ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "67885559"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68551810"
 ---
 # <a name="step-4---select-devices-that-enable-your-space-for-hybrid-meetings"></a>Passaggio 4 - Selezionare i dispositivi che abilitano lo spazio per le riunioni ibride
 
 :::image type="content" source="media/hybrid-audience-audiovisual-small.png" alt-text="Pubblico it-visivo" border="false"::: :::image type="content" source="media/hybrid-audience-facilities-small.png" alt-text="Pubblico per" border="false"::: professionisti :::image type="content" source="media/hybrid-audience-itpro-small.png" alt-text="IT" border="false"::: Pubblico
 
-I dispositivi scelti per lo spazio Teams Rooms dipendono dal design e dal budget della sala. Questo articolo illustra i dispositivi necessari per creare lo spazio Teams Rooms, considerazioni che consentono di scegliere i dispositivi più adatti alle proprie esigenze ed esempi di dispositivi per visualizzare le opzioni disponibili.
+I dispositivi scelti per lo spazio Microsoft Teams Rooms tradizionale Microsoft Teams Rooms o Signature dipendono dal design e dal budget della chat room. Questo articolo illustra i dispositivi necessari per creare lo spazio Teams Rooms, considerazioni che consentono di scegliere i dispositivi più adatti alle proprie esigenze ed esempi di dispositivi per visualizzare le opzioni disponibili.
 
 Come minimo, è necessario ognuno dei seguenti elementi:
 
@@ -164,9 +164,9 @@ Ecco alcuni esempi di sistemi audio per Teams Rooms:
 - [Yamaha ADECIA soluzione cablata da tavolo](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/yamaha-adecia-wired-tabletop-solution/1049)
 - [Audio da stanza media Biamp con microfono da soffitto Parlé](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/biamp-medium-room-audio-with-parle-ceiling-mic/584)
 
-# <a name="hybrid-optimized"></a>[Ottimizzato per la distribuzione ibrida](#tab/hybrid)
+# <a name="signature-teams-rooms"></a>[Teams Rooms firma](#tab/signature)
 
-## <a name="touchscreen-console-and-compute-module"></a>Console touchscreen e modulo di calcolo
+## <a name="signature-teams-rooms-touchscreen-consoles-and-compute-modules"></a>Firma Teams Rooms console touchscreen e moduli di calcolo
 
 La console touchscreen è il dispositivo con cui gli utenti interagiscono quando partecipano e gestiscono una riunione. Il modulo di calcolo è il cervello di Teams Room ed esegue Windows 10 Enterprise IoT.
 
@@ -183,11 +183,11 @@ Di seguito sono riportati esempi di console touchscreen e bundle di moduli di ca
 - [Lenovo ThinkSmart Core + Controller](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/lenovo-thinksmart-core-controller/948)
 - [Logitech Tap](https://www.logitech.com/products/video-conferencing/room-solutions/tap.939-001950.html)
 
-## <a name="hybrid-optimized-displays"></a>Schermi ottimizzati per la distribuzione ibrida
+## <a name="signature-teams-rooms-displays"></a>Vengono visualizzati Teams Rooms firma
 
 Gli schermi possono dare vita ai tuoi contenuti e possono trattarsi di una TV a schermo piatto di grandi dimensioni o di un proiettore proiettato su uno schermo. È possibile avere un singolo schermo con i feed di contenuto e video combinati oppure è possibile configurare il doppio schermo con il contenuto su uno schermo e i feed video sull'altro. Uno degli schermi può anche essere abilitato per il tocco per l'input penna interattivo.
 
-:::image type="content" source="media/hybrid-optimized-display.png" alt-text="Teams Rooms visualizzazione che mostra la prima riga, la chat e le note.":::
+:::image type="content" source="media/signature-teams-rooms-display.png" alt-text="Firma Teams Rooms visualizzazione che mostra la prima riga, la chat e le note.":::
 
 
 ### <a name="display-type"></a>Tipo di visualizzazione
@@ -202,15 +202,15 @@ I tipi di visualizzazione di esempio includono:
 
 ### <a name="display-functions"></a>Funzioni di visualizzazione
 
-I Microsoft Teams Rooms ottimizzati per la distribuzione ibrida, come per tutte le altre soluzioni di Microsoft Teams Rooms, richiedono l'uso di schermi in grado di soddisfare le caratteristiche seguenti per un corretto funzionamento:
+La firma Teams Rooms, come per tutte le altre soluzioni Microsoft Teams Rooms, richiedono l'uso di schermi in grado di soddisfare le caratteristiche seguenti per un corretto funzionamento:
 
 - Sospensione e riattivazione rapida dalla sospensione in base alla sincronizzazione HDMI.
-  - Per i proiettori, i periodi automatici di riscaldamento e di ricarica devono essere supportati senza l'intervento dell'utente.
+  - Per i proiettori, i periodi automatici di riscaldamento e raffreddamento devono essere supportati senza l'intervento dell'utente.
 - Gli schermi devono supportare l'EDID appropriato e le risoluzioni richieste dalla progettazione Microsoft Teams Rooms.
 
 ### <a name="display-placement"></a>Posizionamento dello schermo
 
-Una sala ottimizzata per la distribuzione ibrida richiede che lo schermo sia posizionato davanti a tutti i partecipanti alla riunione in sala, direttamente di fronte alla tabella.
+La firma Teams Rooms richiede che la visualizzazione sia posizionata davanti a tutti i partecipanti alla riunione in sala, direttamente in posizione opposta alla tabella.
 
 La linea centrale orizzontale dello schermo deve essere centrata sulla stessa linea centrale della tabella.
 
@@ -218,11 +218,11 @@ La linea centrale verticale dello schermo non deve superare il valore di +/- 15 
 
 ### <a name="display-count"></a>Numero di visualizzazione
 
-Una sala ottimizzata per la distribuzione ibrida richiede che lo schermo sia un singolo display con proporzioni ampie o una combinazione combinata di schermi in grado di ottenere l'effetto di essere un singolo schermo se visto dai partecipanti alla riunione in sala.
+La firma Teams Rooms richiede che lo schermo sia un singolo display a proporzioni ampie o una combinazione di schermi che possono ottenere l'effetto di essere un singolo schermo se visto dai partecipanti alla riunione in sala.
 
 ### <a name="display-options"></a>Opzioni di visualizzazione
 
-Di seguito sono riportati esempi di schermi per Teams Rooms ottimizzati per la distribuzione ibrida:
+Di seguito sono riportati esempi di visualizzazioni per Teams Rooms Firma:
 
 - [Proiettore Epson EB-PU1007 con lente ELPLX01S Ultra Short Throw](https://epson.com/For-Work/Projectors/Large-Venue/EB-PU1007B-WUXGA-3LCD-Laser-Projector-with-4K-Enhancement/p/V11HA34820)
 - [Da-Lite UTB Contour Screen | | schermo HD Progressive 0.6 Cinemascope Diagonale 138"](https://www.legrandav.com/products/da-lite/screens/fixed_frame_screens/utb_contour)
@@ -233,7 +233,7 @@ Una stanza di questo tipo richiede l'uso di una fotocamera anteriore della stanz
 
 La videocamera deve essere posizionata nella parte anteriore della sala sotto la proiezione anteriore della sala, ma sopra la parte superiore della tabella per catturare tutti i partecipanti alla sala riunioni al livello visivo più vicino possibile.
 
-Di seguito sono riportati esempi di fotocamere primarie per Teams Rooms ottimizzate per la distribuzione ibrida:
+Di seguito sono riportati esempi di fotocamere principali per signature Teams Rooms:
 
 - [Jabra Panacast 50](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/jabra-panacast-50-series/922)
 - [Logitech Rally](https://www.logitech.com/product/rally-ultra-hd-conferencecam)
@@ -269,7 +269,7 @@ Gli array di altoparlanti anteriori e gli altoparlanti in overhead funzionano pe
 
 Gli altoparlanti devono essere posizionati per fornire la copertura per tutti i partecipanti alla sala riunioni nell'intervallo certificato del dispositivo o dei dispositivi utilizzati.
 
-Di seguito sono riportati esempi di microfoni e altoparlanti per Teams Rooms ottimizzati per la distribuzione ibrida:
+Ecco alcuni esempi di microfoni e altoparlanti per Signature Teams Rooms:
 
 - [Lenovo ThinkSmart Bar](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/lenovo-thinksmart-bar/949)
 - [Hub della sala conferenze di Biamp Devio con microfono per soffitto Parle](https://www.microsoft.com/microsoft-teams/across-devices/devices/product/biamp-devio-conference-room-hubs/920)
