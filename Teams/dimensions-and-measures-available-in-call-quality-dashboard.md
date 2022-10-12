@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottieni informazioni dettagliate sulle dimensioni e le misure utilizzate da Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 730dd2f127c50d89f97c49c921e6b954a6043f65
-ms.sourcegitcommit: 43db97b84ca70b1e6accfa7214d4106e4177a642
+ms.openlocfilehash: f90db84232e544a6317771bb553733e330df7ce7
+ms.sourcegitcommit: 8dd36e1e30a47316c15c99e964d0464715bcd742
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68218060"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68532276"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili in Call Quality Dashboard (CQD)
 
@@ -135,7 +135,11 @@ La tabella seguente elenca le dimensioni attualmente disponibili in Call Quality
 | Second OS Architecture  | Stringa  | Architettura hardware riportata dal secondo endpoint. <br/> **Valore di esempio:** x64  | &bull; L'endpoint non ha segnalato queste informazioni <br/>&bull; Il report da questo endpoint non è stato ricevuto <br/>&bull; Il formato dell'architettura non è stato riconosciuto  |
 | First Virtualization Flag  | Enumerazione <br/>**Valori possibili:** <br/> "0x00" = Nessuno  <br/> "0x01" = Hyper-V <br/> "0x02" = VMware <br/> "0x04" = Virtual PC <br/> "0x08" = Xen PC | Flag che indica il tipo di ambiente di virtualizzazione riportato dal primo endpoint. | <br/>&bull; I dati non sono stati riportati dall'endpoint |
 | Second Virtualization Flag  | Enumerazione <br/>**Valori possibili:** <br/> "0x00" = Nessuno  <br/> "0x01" = Hyper-V <br/> "0x02" = VMware <br/> "0x04" = Virtual PC <br/> "0x08" = Xen PC | Flag che indica il tipo di ambiente di virtualizzazione riportato dal secondo endpoint.  | <br/>&bull; I dati non sono stati riportati dall'endpoint |
-|First Endpoint Make |Stringa |Produttore del dispositivo, le informazioni vengono lette da un campo EndpointMake del file di dati endpoint. | <br/>&bull; Nessun file di dati per l'endpoint |
+| First VTC Device Name | Stringa | Nome descrittivo del dispositivo VTC utilizzato dal primo endpoint | <br/>&bull; I dati non sono stati riportati dall'endpoint <br/>&bull; Il campo è EUII e sono trascorsi 28 giorni |
+| Second VTC Device Name | Stringa | Nome descrittivo del dispositivo VTC utilizzato dal secondo endpoint | <br/>&bull; I dati non sono stati riportati dall'endpoint <br/>&bull; Il campo è EUII e sono trascorsi 28 giorni |
+| First VTC Device Detail | Stringa | Le informazioni sulla piattaforma e sulla versione del dispositivo VTC utilizzato dal primo endpoint <br/> **Valore di esempio:** Tandberg, 529 anni | <br/>&bull; I dati non sono stati riportati dall'endpoint |
+| Second VTC Device Detail | Stringa | Le informazioni sulla piattaforma e sulla versione del dispositivo VTC utilizzato dal secondo endpoint <br/> **Valore di esempio:** Tandberg, 529 anni | <br/>&bull; I dati non sono stati riportati dall'endpoint |
+| First Endpoint Make |Stringa |Produttore del dispositivo, le informazioni vengono lette da un campo EndpointMake del file di dati endpoint. | <br/>&bull; Nessun file di dati per l'endpoint |
 | First Endpoint Model |Stringa|Modello dispositivo, le informazioni vengono lette da un campo EndpointModel del file di dati endpoint.| <br/>&bull; Nessun file di dati per l'endpoint |
 | First Endpoint Type|Stringa|Tipo di dispositivo, le informazioni vengono lette da un campo EndpointType del file di dati endpoint.| <br/>&bull; Nessun file di dati per l'endpoint |
 | First Endpoint Label 1|Stringa|Un'etichetta personalizzabile, le informazioni vengono lette da un file di dati endpoint .| <br/>&bull; Nessun file di dati per l'endpoint |

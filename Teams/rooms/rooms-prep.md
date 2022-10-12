@@ -16,12 +16,12 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Informazioni su come preparare l'infrastruttura per la distribuzione di Microsoft Teams Rooms in modo da poter sfruttare tutte le caratteristiche.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3f0224ebf0c6c8e0f21fe669bb8a92ff345b928b
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 7006f560c5d0991b74c14fc5eb0b13e829b642d9
+ms.sourcegitcommit: 8dd36e1e30a47316c15c99e964d0464715bcd742
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268951"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68532226"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
@@ -115,7 +115,7 @@ Microsoft Teams Rooms è progettato per ereditare le impostazioni proxy dal sist
     
 11. Torna alla schermata di accesso, scegli l'utente **Skype** . Se tutti i passaggi precedenti hanno avuto esito positivo, il dispositivo Microsoft Teams Rooms eseguirà correttamente l'accesso.
     
-Per informazioni dettagliate su FQDN, porte e intervalli di indirizzi IP necessari per Microsoft Teams Rooms, vedere l'articolo [Sicurezza](./security.md#network-security) della rete.
+Per informazioni dettagliate su FQDN, porte e intervalli di indirizzi IP necessari per Microsoft Teams Rooms, vedere l'articolo [Sicurezza](./security-windows.md#network-security) della rete.
   
 ### <a name="admin-group-management"></a>gestione dei gruppi di Amministrazione
 
@@ -128,7 +128,7 @@ Se si sceglie di aggiungersi a un dominio (Azure Active Directory o Active Direc
 
 ### <a name="microsoft-teams-rooms-local-user-account"></a>account utente locale Microsoft Teams Rooms
 
-Teams Rooms include un account locale senza password denominato "Skype". Questo account viene usato per accedere a Windows per avviare l'app Teams Rooms. Non è supportato l'applicazione di una password a questo account. Per altre informazioni, vedere [Microsoft Teams Rooms Security](security.md).
+Teams Rooms include un account locale senza password denominato "Skype". Questo account viene usato per accedere a Windows per avviare l'app Teams Rooms. Non è supportato l'applicazione di una password a questo account. Per altre informazioni, vedere [Microsoft Teams Rooms Security](security-windows.md).
   
 ### <a name="admin---local-administrator-account"></a>"Amministrazione" - Account amministratore locale
 
@@ -139,7 +139,7 @@ Microsoft Teams Rooms password predefinita è impostata su "sfb". La password pu
   
 La password dell'amministratore locale non è inclusa come scelta durante l'installazione.
 
-Per altre informazioni sull'account di Amministrazione, vedere l'articolo [sulla sicurezza di Microsoft Teams Rooms](security.md).
+Per altre informazioni sull'account di Amministrazione, vedere l'articolo [sulla sicurezza di Microsoft Teams Rooms](security-windows.md).
   
 ### <a name="machine-account"></a>Account computer
 

@@ -22,12 +22,12 @@ ms.localizationpriority: high
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d4e28437d6251156e16c2568c9adf9a708e412bd
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
-ms.translationtype: HT
+ms.openlocfilehash: dc99785bf5d0450e99022f230af7564693c6da7f
+ms.sourcegitcommit: 8dd36e1e30a47316c15c99e964d0464715bcd742
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66615672"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68532246"
 ---
 # <a name="meetings-webinars-and-live-events"></a>Riunioni, webinar ed eventi live
 
@@ -35,10 +35,7 @@ Esistono più modi per incontrarsi in Microsoft Teams: riunioni, webinar ed even
 
 Questo articolo, destinato agli amministratori e ai professionisti IT, descrive le differenze tra riunioni, webinar ed eventi live. Fornisce quindi collegamenti alle informazioni necessarie per implementare rapidamente questa funzionalità per gli utenti.
 
-> [!NOTE]
-> Per informazioni dettagliate sulla configurazione rapida delle riunioni e degli eventi di Teams su diverse piattaforme, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
-
-[Riunioni](#meetings), [webinar ](#webinars)ed [eventi live](#live-events) sono tutti tipi di riunioni, ma i webinar e gli eventi live offrono all'organizzatore un maggiore controllo sulle conversazioni e sui partecipanti. I webinar offrono un'interazione bidirezionale, mentre gli eventi live offrono un'esperienza di domande e risposte gestita. 
+[Meetings](#meetings), [webinars](#webinars), and [live events](#live-events) are all types of meetings, but webinars and live events provide additional control for the organizer over the conversation and participants. Webinars provide two-way interaction while live events provide a managed Q&A experience. 
 
 I diversi tipi di riunioni sono anche caratterizzati da diversi limiti e capacità dei partecipanti. 
 
@@ -54,7 +51,13 @@ La tabella seguente riepiloga i tre tipi di riunioni, il numero di partecipanti 
 
 **Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 31 dicembre 2022. È possibile pianificare numeri ancora maggiori con eventi live in Yammer e/o Microsoft Stream. Per altre informazioni, vedere [Eventi live in Microsoft 365](/stream/live-event-m365). Si noti che gli eventi che superano 20.000 partecipanti richiedono il [programma di assistenza per eventi live](/stream/live-events-assistance).
 
-Si noti che NDI è pienamente supportato nelle riunioni, i webinar e gli eventi live, consentendo di produrre la trasmissione usando strumenti come OBS e Wirecast. Per altre informazioni, vedere [Usare la tecnologia NDI® in Microsoft Teams](use-ndi-in-meetings.md).
+Note that NDI is fully supported in meetings, webinars, and live events, allowing you to produce the broadcast by using tools such as OBS and Wirecast. For more information, see [Use NDI® technology in Microsoft Teams](use-ndi-in-meetings.md).
+
+> [!NOTE]
+> Per ulteriori informazioni e per ottenere indicazioni in base al ruolo per la distribuzione di eventi online con Microsoft Teams, consulta virtual [Event Playbook](https://adoption.microsoft.com/virtual-event-guidance/). Puoi anche partecipare al [forum dell'evento virtuale](https://aka.ms/VirtualEventForum) sul Microsoft Tech Community.
+
+> [!NOTE]
+> Per informazioni dettagliate sulla configurazione rapida delle riunioni e degli eventi di Teams su diverse piattaforme, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
 ## <a name="meetings"></a>Riunioni
 
@@ -131,7 +134,7 @@ Per produrre eventi virtuali su larga scala, consultare la [guida agli eventi vi
 
 ## <a name="apps-for-meetings"></a>App per le riunioni
 
-Microsoft consente di migliorare le esperienze di riunione con l’integrazione e l’uso di app per le riunioni. Ad esempio, l'integrazione della lavagna nelle riunioni di Teams è basata sull'app Web Whiteboard, che consente ai partecipanti alle riunioni di Teams di disegnare, creare schizzi e scrivere insieme su un'area di disegno digitale condivisa.
+Microsoft enables you to enhance meeting experiences by integrating and using meeting apps. For example, whiteboard integration in Teams meetings is powered by the Whiteboard web app, which lets Teams meeting participants draw, sketch, and write together on a shared digital canvas.
 
 È possibile aggiungere app per le riunioni alla distribuzione di Teams usando le app fornite con Teams, con app e modelli di terze parti certificati e creando app personalizzate.
 
@@ -215,4 +218,3 @@ Gli organizzatori e i relatori dovranno applicare i seguenti consigli:
 
 [Limiti e specifiche per Teams](limits-specifications-teams.md)
 
-[Community tecnica Microsoft: eventi live in Microsoft 365](https://resources.techcommunity.microsoft.com/live-events/)

@@ -17,18 +17,21 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: Gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft Teams Rooms, tra cui l'applicazione di un tema personalizzato e la creazione di un file di impostazioni master.
-ms.openlocfilehash: e09501d4b39ddbb83e914d53fe61bfb97d1a4fa8
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: f0e563935725bf68ebf087d8a58a199683bac70f
+ms.sourcegitcommit: 8dd36e1e30a47316c15c99e964d0464715bcd742
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606205"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68532256"
 ---
 # <a name="manage-a-microsoft-teams-rooms-console-settings-remotely-with-an-xml-configuration-file"></a>Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML
 
 Questo articolo descrive la gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft Teams Rooms, inclusa l'applicazione di un tema personalizzato. Viene descritto come creare un file di impostazioni master e collegamenti a discussioni su come inserirli in base alle esigenze in Teams Rooms.
   
-È possibile modificare le impostazioni predefinite di Teams Rooms aggiornando un file XML master e inviando copie ai dispositivi Teams Rooms remoti. 
+È possibile modificare le impostazioni predefinite di Teams Rooms aggiornando un file XML master e inviando copie ai dispositivi Teams Rooms remoti.
+
+> [!NOTE]
+> Alcune funzionalità sono disponibili solo in Teams Rooms dispositivi a cui è stata assegnata una licenza Microsoft Teams Rooms Pro. Per vedere quali funzionalità richiedono Microsoft Teams Rooms Pro, vedere [licenze di Microsoft Teams Rooms](rooms-licensing.md).
   
 ## <a name="create-an-xml-configuration-file"></a>Creare un file di configurazione XML
 

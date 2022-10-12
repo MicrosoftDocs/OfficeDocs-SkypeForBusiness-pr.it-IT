@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sulla gestione di Microsoft Teams Rooms Pro.
 f1keywords: ''
-ms.openlocfilehash: 275906a47b2f86368256e7e09f42b2cf5c653ee8
-ms.sourcegitcommit: b2692b3f6c60d8df5ba0677c68ff9c90a75a0d72
+ms.openlocfilehash: d6644308f5c9de9b92c3d25df2595a036c232c7b
+ms.sourcegitcommit: 8dd36e1e30a47316c15c99e964d0464715bcd742
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68033774"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "68532406"
 ---
 # <a name="microsoft-teams-rooms-pro-management"></a>gestione di Microsoft Teams Rooms Pro
 
@@ -37,11 +37,9 @@ Ecco tre aspetti chiave del servizio:
 
    Software e apprendimento automatico che automatizzano gli aggiornamenti, il rilevamento dei problemi, la risoluzione dei problemi per Microsoft Teams Rooms.  
 
-- Esperti dedicati  
+- Gestione degli aggiornamenti  
 
-   Un team di esperti che forniscono operazioni di servizio 24 ore su 24, 7 giorni su 7, supporto a più livelli e assistenza per la risoluzione degli incidenti.  
-
-
+   Applicazione riunioni automatizzata e orchestrazione di Windows Update in base agli anelli di distribuzione configurabili dal cliente.
 
 - Approfondimenti avanzati  
 
