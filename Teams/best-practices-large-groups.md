@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 313c570cfcded3b5a896a773577863f7a8817fa8
-ms.sourcegitcommit: ff783fad2fb5d412e864e3af2ceaa8fedcd9da07
+ms.openlocfilehash: 06fc3d0bdf0e4741918e380d13acd1b7391bd6ef
+ms.sourcegitcommit: 50ae550b738424b35df1636590831e6c124ca0c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66562405"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68576402"
 ---
 # <a name="manage-large-teams-in-microsoft-teams---best-practices"></a>Gestire team di grandi dimensioni in Microsoft Teams - Procedure consigliate
 
@@ -76,7 +76,7 @@ Per evitare l'aggiunta di applicazioni o bot che possono distrarre, i proprietar
 
 ![Immagine della schermata che mostra la sezione Autorizzazioni membro del riquadro Impostazioni.](media/disable-bots-connectors.png "Immagine della schermata che mostra la sezione Autorizzazioni membro del riquadro Impostazioni. Le opzioni per consentire ai membri di aggiungere app o connettori sono deselezionate.")
 
-Vedere [App, bot & connettori](deploy-apps-microsoft-teams-landing-page.md).
+Vedere [una panoramica delle app Teams](deploy-apps-microsoft-teams-landing-page.md).
 
 ## <a name="regulate-team-and-channel-mentions"></a>Regolare le menzioni di team e canali
 
