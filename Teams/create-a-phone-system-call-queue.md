@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: 7ddf3364420244e800827915c9232430ffc336c1
-ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
+ms.openlocfilehash: 0b1c5950ce419e3ae828afa13fa32b61117734bf
+ms.sourcegitcommit: 50ae550b738424b35df1636590831e6c124ca0c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68046856"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68576462"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -365,7 +365,7 @@ Sono consigliate le impostazioni seguenti:
 |`Serial`                         |S                         |S         |S               |S    |S         |Y<sup>4</sup>         |Y<sup>4</sup>             |   |
 |**Opzioni routing agente**        |                          |          |                |     |          |                      |                          |   |
 |`Presence Based Routing`<sup>3</sup>|S                      |S         |S               |N    |S         |S                     |S                         |*Predefinito* |
-|`Agents can Opt-out`               |S                       |S         |S               |Y<sup>7</sup>|Y<sup>7</sup>|S          |S                         |*Predefinito*     |
+|`Agents can Opt-out`<sup>10</sup> |S                       |S         |S               |Y<sup>7</sup>|Y<sup>7</sup>|S          |S                         |*Predefinito*     |
 |**Modalità di trasferimento**               |                          |          |                |     |          |                      |                          |   |
 |`Conference Mode`<sup>5</sup>    |S                         |S         |S               |N    |Y<sup>6</sup>|S                  |S                         |*Predefinito* |
 |`Transfer Mode`                  |S                         |S         |S               |S    |S         |S                     |S                         |   |
@@ -390,10 +390,11 @@ Sono consigliate le impostazioni seguenti:
 5. La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
 6. solo Telefono di Microsoft Teams.
 7. Tramite la pagina portale delle impostazioni utente all'indirizzo [https://aka.ms/vmsettings](https://aka.ms/vmsettings).
-- GCCH: [https://dialin.cpc.gov.teams.microsoft.us/usp](https://dialin.cpc.gov.teams.microsoft.us/usp)
-- DOD: [https://dialin.cpc.dod.teams.microsoft.us/usp](https://dialin.cpc.dod.teams.microsoft.us/usp)
 8. Sono supportati solo i canali pubblici.
 9. Gli operatori automatici e le code di chiamata non possono trasferire le chiamate tra i metodi di connettività PSTN.
+10. Per GCCH/DOD, disponibile solo tramite il portale delle impostazioni utente all'indirizzo:
+- GCCH: [https://dialin.cpc.gov.teams.microsoft.us/usp](https://dialin.cpc.gov.teams.microsoft.us/usp)
+- DOD: [https://dialin.cpc.dod.teams.microsoft.us/usp](https://dialin.cpc.dod.teams.microsoft.us/usp)
 
 ### <a name="supported-clients"></a>Client supportati
 

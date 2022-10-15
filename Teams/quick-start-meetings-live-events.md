@@ -22,12 +22,12 @@ ms.localizationpriority: high
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2321b4c16938b045cfe281d4cf25d7882d449d9b
-ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
+ms.openlocfilehash: 5961e05ac1ec927fbaca31dc24279eca27ce0f9d
+ms.sourcegitcommit: 50ae550b738424b35df1636590831e6c124ca0c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68551860"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68576412"
 ---
 # <a name="meetings-webinars-and-live-events"></a>Riunioni, webinar ed eventi live
 
@@ -142,7 +142,7 @@ La tabella seguente elenca gli articoli contenenti altre informazioni:
 
 | Articolo | Descrizione |
 |----------|--------|
-| [App, bot e connettori](deploy-apps-microsoft-teams-landing-page.md) | Introduzione alle app e come distribuire app per l'organizzazione. |
+| [Panoramica delle app Teams](deploy-apps-microsoft-teams-landing-page.md) | Introduzione alle app e come distribuire app per l'organizzazione. |
 | [Suggerimenti per le riunioni di Teams](/microsoftteams/platform/apps-in-teams-meetings/teams-apps-in-meetings) | Panoramica dell'estendibilità delle app per le riunioni, dei riferimenti alle API e di come abilitare e configurare le app per le riunioni. |
 | [Gestire la Lavagna in Teams](manage-whiteboard.md) | Descrive le funzionalità di Whiteboard e come abilitare e disabilitare per l'organizzazione. |
 

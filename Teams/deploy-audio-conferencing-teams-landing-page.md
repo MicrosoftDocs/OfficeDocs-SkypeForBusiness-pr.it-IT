@@ -20,12 +20,12 @@ ms.localizationpriority: high
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1da45446c2ab1879dd8064537dc50dafd99ea013
-ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
+ms.openlocfilehash: 7fafebf61cdf7e5b13cfbb6aaf08d73afef6f436
+ms.sourcegitcommit: 50ae550b738424b35df1636590831e6c124ca0c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67641747"
+ms.lasthandoff: 10/14/2022
+ms.locfileid: "68576442"
 ---
 # <a name="learn-how-to-deploy-audio-conferencing-in-microsoft-teams"></a>Scopri come distribuire i servizi di audioconferenza in Microsoft Teams
 
@@ -54,7 +54,7 @@ Quando i prerequisiti di Audioconferenza sono soddisfatti, completare le attivit
 
 ### <a name="teams-administrators"></a>Amministratori di Teams
 
-Teams include un set di ruoli di amministratore personalizzati che è possibile usare per gestire Teams per l'organizzazione. I ruoli forniscono varie funzionalità agli amministratori.
+Teams provides a set of custom administrator roles that can be used to manage Teams for your organization. The roles provide various capabilities to administrators.
 
 | Chiedersi | Azione |
 |--------------|--------|
@@ -65,7 +65,7 @@ Teams include un set di ruoli di amministratore personalizzati che è possibile 
 
 ### <a name="conferencing-bridges-and-phone-numbers"></a>Bridge di conferenza e numeri di telefono
 
-I bridge di conferenza consentono alle persone di partecipare alle riunioni tramite chiamata usando un telefono. È possibile usare le impostazioni predefinite per un bridge di conferenza o modificare i numeri di telefono (numeri verdi e a pagamento) e altre impostazioni, come il PIN o le lingue usate.
+Conferencing bridges let people dial into meetings using a phone. You can use the default settings for a conferencing bridge or change the phone numbers (toll and toll-free) and other settings, such as the PIN or the languages that are used.
 
 Per altre informazioni, vedere [Audioconferenza](audio-conferencing-in-office-365.md).
 
@@ -87,7 +87,7 @@ Il servizio di audioconferenza di Teams consente di configurare le lingue predef
 
 ### <a name="conferencing-bridge-settings"></a>Impostazioni del bridge di conferenza
 
-Dopo aver impostato il bridge di conferenza, incluse le lingue predefinite e alternative, verificare che le impostazioni predefinite, ad esempio le notifiche di ingresso e di uscita e la lunghezza del PIN, siano quelle desiderate. Se non lo sono, è possibile modificarle.
+After setting up your conferencing bridge, including default and alternate languages, you should verify that the default settings such as entry/exit notifications and PIN length are the ones you want to use. If they're not, you can change them.
 
 |Chiedersi|Azione |
 |------------|-------|
@@ -153,4 +153,4 @@ Teams offre due modi per monitorare e risolvere i problemi di qualità delle chi
 
 - [Favorire l'adozione](adopt-microsoft-teams-landing-page.md) dell'audioconferenza nell'organizzazione.
 - [Implementare Cloud Voice](cloud-voice-landing-page.md)
-- Includere nell'implementazione iniziale di Teams le app in primo piano, ad esempio Planner. Aggiungere ulteriori [app, bot e connettori](deploy-apps-microsoft-teams-landing-page.md) per incentivare l'adozione di Teams.
+- Includere nell'implementazione iniziale di Teams le app in primo piano, ad esempio Planner. Aggiungi altre [app di Teams](deploy-apps-microsoft-teams-landing-page.md) mentre guidi l'adozione di Teams.
