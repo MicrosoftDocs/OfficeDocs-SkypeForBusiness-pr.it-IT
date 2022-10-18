@@ -13,18 +13,19 @@ f1.keywords:
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare la procedura guidata di portabilità per trasferire il numero di telefono dal provider di servizi corrente a Microsoft Teams.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 98580a16f7d5165bef6bdd177de37a1e80bfb32f
-ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.openlocfilehash: 4dd814f81bb7c48c331ebaa1178f8f3069f7b156
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66790101"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68584167"
 ---
 # <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire numeri di telefono in Microsoft Teams
 

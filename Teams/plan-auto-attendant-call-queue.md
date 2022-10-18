@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 audience: Admin
 appliesto:
 - Skype for Business
@@ -24,12 +25,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su operatori automatici e code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: f97081e641574c0d2ea192820100861b39b48d9b
-ms.sourcegitcommit: 850038f2248c1ea412f7b5daca26c0598baffa3c
+ms.openlocfilehash: 05bbc5880e3a90751cfaada782573fd2d0b10c90
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67443353"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68584807"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici di Teams e le code di chiamata
 
