@@ -16,13 +16,14 @@ ms.custom: ''
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
+- highpri
 description: Informazioni su come gestire le impostazioni per i criteri di roaming di rete di Teams.
-ms.openlocfilehash: c26cdec0fc41e40a9c3eac7d0324050740cf05ef
-ms.sourcegitcommit: 68162a8c9dee9a27af596353baabeda9b8fa64f3
-ms.translationtype: HT
+ms.openlocfilehash: f8b1d78754c5f608aa76d9261b2164abc4de9194
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64853237"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68585071"
 ---
 # <a name="manage-video-and-media-settings-with-the-network-roaming-policy"></a>Gestire le impostazioni video e multimediali con i criteri di roaming di rete
 
@@ -60,7 +61,7 @@ Dopo aver configurato il criterio, assegnarlo a uno o più siti di rete usando i
  Set-CsTenantNetworkSite -Identity Burlington -NetworkRoamingPolicy $null
  ```
 
-Per abilitare i criteri di roaming di rete per gli utenti che non sono abilitati per VoIP aziendale, è necessario abilitare anche l'impostazione AllowNetworkConfigurationSettingsLookup in TeamsMeetingPolicy. Questa opzione è disattivata per impostazione predefinita.
+To enable the network roaming policy for users who are not enterprise voice enabled, you must also enable the AllowNetworkConfigurationSettingsLookup setting in TeamsMeetingPolicy. This setting is off by default.
 
 Per altre informazioni sulla creazione di siti di rete, vedere [Impostazioni di rete per le funzionalità vocali del cloud](cloud-voice-network-settings.md). 
 

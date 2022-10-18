@@ -21,13 +21,14 @@ ms.custom:
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
+- highpri
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: c25405dd305a8556309559d4941dd731331e6d75
-ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
+ms.openlocfilehash: 3faff1779830539470ae3d04cc73e58da65a637c
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67706503"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68583877"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -103,7 +104,7 @@ Per accedere a questa impostazione è necessario essere un amministratore del se
 
 ## <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
-È possibile personalizzare gli inviti alle riunioni di Teams per soddisfare le esigenze dell’organizzazione. È possibile aggiungere il logo dell'organizzazione e includere informazioni utili, come i collegamenti al sito Web dell’assistenza e il dichiarazione legale di non responsabilità, oltre a un piè di pagina di solo testo.
+You can customize Teams meeting invitations to meet your organization's needs. You can add your organization's logo and include helpful information, such as links to your support website and legal disclaimer, and a text-only footer.
 
 ### <a name="tips-for-creating-a-logo-for-meeting-invitations"></a>Suggerimenti per la creazione di un logo per gli inviti alle riunioni  
 
@@ -111,7 +112,7 @@ Per accedere a questa impostazione è necessario essere un amministratore del se
 2. Salvare l'immagine in formato JPG o PNG.
 3. Archiviare l'immagine in una posizione accessibile da tutti gli utenti che ricevono l’invito, ad esempio un sito Web pubblico.
 
-    Ora è possibile aggiungerla agli inviti alle riunioni. Vedere i passaggi successivi.
+    Now you can add it to your meeting invitations. See the next steps.
 
 ### <a name="customize-your-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
@@ -162,9 +163,9 @@ Se si usa la Qualità del servizio (QoS) per assegnare la priorità al traffico 
         
         > [!NOTE]
         > Il contrassegno degli indicatori DSCP viene eseguito solitamente tramite le porte di origine e il traffico UDP porterà a un inoltro del trasporto con la porta di destinazione 3478 per impostazione predefinita. Se la società necessita del contrassegno sulle porte di destinazione, contattare il supporto per abilitare la comunicazione verso l'inoltro del trasporto con le porte UDP 3479 (Audio), 3480 (Video) e 3481 (Condivisione).
-    - Per specificare gli intervalli di porte, accanto a **Seleziona un intervallo di porta per ogni tipo di traffico multimediale in tempo reale** selezionare **Specifica gli intervalli di porta** e quindi immettere la porta iniziale e quella finale per la condivisione audio, video e dello schermo. Selezionare questa opzione è necessario per implementare QoS. 
+    - To specify port ranges, next to **Select a port range for each type of real-time media traffic**, select  **Specify port ranges**, and then enter the starting and ending ports for audio, video, and screen sharing. Selecting this option is required to implement QoS. 
         > [!Note]
-        > Se gli **indicatori di Qualità del servizio (QoS) per il traffico multimediale in tempo reale** sono attivi, sarà necessario gestire le impostazioni delle porte, che non vengono gestite automaticamente.
+        > If **Quality of Service (QoS) markers for real-time media traffic** is on, then you have to manage your port settings. They aren't managed automatically.
         
         > [!IMPORTANT]
         > Se si seleziona **Utilizzare automaticamente qualsiasi porta disponibile**, vengono usate le porte disponibili tra 1024 e 65535. Usare questa opzione solo quando non si implementa la Qualità del servizio (QoS).
@@ -184,4 +185,4 @@ Tipo di traffico multimediale| Intervallo di porte di origine client \* |Protoco
 
 \* Gli intervalli porta assegnati non possono sovrapporsi e dovrebbero trovarsi uno accanto all'altro.
 
-Dopo che QoS sarà stato usato per un certo periodo tempo, si avranno informazioni di utilizzo sulla richiesta per ognuno di questi tre carichi di lavoro e si potrà scegliere quali modifiche apportare in base alle proprie specifiche esigenze. Il [Dashboard Qualità della chiamata](turning-on-and-using-call-quality-dashboard.md) sarà utile a questo scopo.
+After QoS has been in use for a while, you'll have usage information on the demand for each of these three workloads, and you can choose what changes to make based on your specific needs. [Call Quality Dashboard](turning-on-and-using-call-quality-dashboard.md) will be helpful with that.
