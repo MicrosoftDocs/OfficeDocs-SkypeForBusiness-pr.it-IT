@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 audience: Admin
 appliesto:
 - Skype for Business
@@ -27,12 +28,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Scopri come ottenere e gestire i numeri di telefono degli utenti (abbonati) e dei servizi (a pagamento e a numero verde) per Microsoft Teams per la tua organizzazione.
-ms.openlocfilehash: 053d886a97591a6685582f0db0ca194eaa312896
-ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
+ms.openlocfilehash: 52069029e7dca69f5df9520ad1491464bf6b9aa9
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68551890"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68584236"
 ---
 # <a name="manage-telephone-numbers-for-your-organization"></a>Gestire i numeri di telefono per l'organizzazione
 
@@ -121,7 +122,7 @@ Se non gestisci i numeri di telefono direct routing nel Active Directory locale,
 
 ### <a name="change-where-direct-routing-phone-numbers-are-managed"></a>Modificare la posizione in cui vengono gestiti i numeri di telefono per il routing diretto
 
-Per modificare la posizione in cui viene gestito un numero di telefono direct routing, è necessario rimuovere il numero di telefono dall'attributo msRTCSIP-Line sull'utente o account di reso nella Active Directory locale.   
+Per modificare la posizione in cui viene gestito un numero di telefono per l'instradamento diretto, è necessario rimuovere il numero di telefono dall'attributo msRTCSIP-Line nell'account utente o della risorsa nel Active Directory locale.   
 
 Per altre informazioni, vedere [Cancellare gli attributi di Skype for Business per tutti gli utenti locali in Active Directory](/skypeforbusiness/hybrid/cloud-consolidation-managing-attributes#method-2---clear-skype-for-business-attributes-for-all-on-premises-users-in-active-directory.md). Si noti che il numero di telefono deve essere riassegnati all'account utente o alla risorsa in Microsoft 365.
 

@@ -13,6 +13,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 appliesto:
 - Skype for Business
 - Microsoft Teams
@@ -30,12 +31,12 @@ ms.custom:
 - O365P_SFBVoiceCreditAether
 - Licensing
 description: 'Scopri come pagare i Crediti comunicazioni (Consumi PSTN) per i servizi di Skype for Business e i piani per mantenere gli utenti con accesso continuo al sistema telefonico. '
-ms.openlocfilehash: 0e8c737f8ed1ac4537c4453d77cc284719fb8086
-ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
+ms.openlocfilehash: 42527a608cf6a020f1c8fc4f07f912ec95dd1a3a
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67156644"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68583847"
 ---
 # <a name="add-funds-and-manage-communications-credits"></a>Aggiungere fondi e gestire Credito per la comunicazione
 
@@ -58,7 +59,7 @@ I Crediti comunicazioni sono un pratico metodo di pagamento per sistema telefoni
   
 Come amministratore, puoi aggiungere fondi manualmente oppure configurare l'autoricarica, cosa che **ti consigliamo**.
   
-L'autoricarica consente di aggiungere automaticamente fondi al saldo quando scende al di sotto dell'importo configurato. È consigliabile utilizzare l'autoricarica per non dover ogni volta ricordarsi di aggiungere fondi manualmente. Quando il tuo saldo raggiunge l'importo configurato, i fondi vengono aggiunti automaticamente. Se non scegli di utilizzare l'autoricarica, corri il rischio che il tuo saldo scenda al di sotto dello zero. Se il saldo scende al di sotto dello zero, tu e i tuoi utenti non sarete in grado di effettuare chiamate ai numeri verdi o chiamate internazionali.
+Auto-recharge automatically tops off your balance when it falls below the trigger amount you set. We recommend using auto-recharge so you don't have to remember to add funds manually. When your balance hits the trigger amount, funds are added automatically. If you don't choose auto-recharge, you run the risk of your balance falling below zero. At that point, you and your users won't be able to make toll-free calls or international calls.
   
 Puoi aggiornare le opzioni di pagamento in qualsiasi momento. Nella pagina **Abbonamenti** seleziona **Crediti comunicazioni** e apporta gli aggiornamenti.
   

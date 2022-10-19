@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 audience: Admin
 appliesto:
 - Skype for Business
@@ -22,18 +23,18 @@ f1.keywords:
 ms.custom:
 - Licensing
 description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
-ms.openlocfilehash: ad3e3bcbe46850ae6540539159662f0afb6d6ddf
-ms.sourcegitcommit: 07761c26b53d92fc36b82cab7b3e38a6de4ff945
+ms.openlocfilehash: 75a1f3702140543f08d963a2572841bdca79c9b1
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67156734"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68584207"
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
-[] I Crediti comunicazioni son un modo comodo per pagare i minuti di Audioconferenze e Piani per chiamate. Tu e i tuoi utenti sarete sempre in grado di:
+Communications Credits are a convenient way to pay for Audio Conferencing and Calling Plan minutes. It helps ensure you and your users are never caught without being able to:
   
-- Aggiungere numeri verdi da usare per riunioni, operatori automatici o code di chiamata per l'Audioconferenza. Le chiamate a numero verde sono fatturate a minuti e richiedono un saldo positivo di Crediti comunicazioni.
+- Add toll-free numbers to use with Audio Conferencing meetings, auto attendants, or call queues. Toll-free calls are billed per minute and require a positive Communications Credits balance.
 
 - Effettuare chiamate in uscita da una riunione in audioconferenza per aggiungere altri utenti da qualsiasi parte del mondo.
 
@@ -51,7 +52,7 @@ ms.locfileid: "67156734"
 > Le chiamate in uscita verso alcune destinazioni possono essere incluse nel tuo abbonamento Audioconferenza. Per i dettagli, controlla le informazioni sull'abbonamento.
   
 > [!NOTE]
-> Se l'organizzazione risiede in un'area geografica diversa dall'indirizzo di fatturazione del tuo contratto aziendale (EA, enterprise agreement), potrebbe non essere possibile acquistare Crediti comunicazioni. Se non riesci ad acquistare Crediti comunicazioni, apri un ticket di assistenza sul portale e collaboreremo per correggere la situazione finché non sarà implementata una soluzione permanente.
+> If your organization is located in a different region than the billing address of your Enterprise Agreement (EA), you might not be able to purchase Communications Credits. If you are unable to acquire Communications Credits, open a support incident from the portal and we will work with you to mitigate this issue until a permanent solution is in place.
   
 ## <a name="what-are-the-communications-credits-rates"></a>Quali sono le tariffe dei Crediti comunicazioni?
 
@@ -66,7 +67,7 @@ Per utilizzare i numeri verdi, sono necessari Crediti comunicazioni, in quanto q
   
 È consigliabile valutare attentamente l'utilizzo dei servizi PSTN dell'organizzazione per comprendere la configurazione migliore per i Crediti comunicazioni. Per ulteriori informazioni sui servizi PSTN, consulta Sistema [telefonico e Piani per chiamate](calling-plan-landing-page.md) e [Domande frequenti sui servizi di audioconferenza](Audio-Conferencing-common-questions.md).
   
-È possibile considerare la fatturazione a consumo con il **pagamento una tantum** del saldo prepagato **OPPURE** l'impostazione di una somma di **autoricarica** ( **opzione consigliata** ) con un saldo minimo che attiverà un acquisto per tale importo da ricaricare. Inizialmente, è consigliabile configurare importi di autoricarica che consentano di monitorare l'uso effettivo e individuare le giuste soglie di autoricarica che soddisfino le proprie esigenze e i piani di utilizzo. I Crediti comunicazioni dovrebbero essere misurati nel tempo per determinare il saldo minimo e gli importi di ricarica in base alle esigenze di ogni organizzazione.
+You can set up consumption billing using a **one-time funding** of the pre-paid balance **OR** by setting up an **auto-recharge** ( **recommended** ) amount with a minimum balance that will trigger a purchase for that recharge amount. Initially, it's suggested that you set up auto recharge amounts that allow you to monitor actual usage and find the right auto recharge thresholds that meet your needs and usage patterns. Communications Credits should be monitored over time and then adjust the minimum balance and recharge amounts as needed to be tailored for each organization's needs.
   
 > [!NOTE]
 > Per visualizzare i piani e i prezzi [, accedi al interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e vai a **Abbonamenti** >  **fatturazione** > **Aggiungi abbonamenti**.
