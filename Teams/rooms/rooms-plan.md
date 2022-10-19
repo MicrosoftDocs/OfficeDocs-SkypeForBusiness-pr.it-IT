@@ -15,13 +15,14 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 - Teams_ITAdmin_Rooms
+- highpri
 description: Questo articolo illustra le considerazioni rilevanti relative alla pianificazione per la distribuzione di Microsoft Teams Rooms, la nuova generazione di Skype Room Systems.
-ms.openlocfilehash: fe973e7e6f3f6d84a4ddf1721ccc8c73fb5da928
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 0e6e3d53928a1a28572a8ea0a038ea772c934e7b
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269751"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68584447"
 ---
 # <a name="plan-microsoft-teams-rooms"></a>Pianificare Microsoft Teams Rooms
 
@@ -34,7 +35,8 @@ Di seguito sono disponibili informazioni di pianificazione che  coprono l'approc
 Microsoft Teams Rooms offre un'esperienza di riunione completa che porta video HD, audio e condivisione di contenuti a riunioni di tutte le dimensioni, dalle piccole aree di conferenze alle grandi sale riunioni.
 
 ![Un utente tocca una console Teams Rooms, con uno schermo in background.](../media/room-systems-image1.jpg "Un utente tocca una console Teams Rooms, con uno schermo in background")
- [Microsoft Teams Rooms guida](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) è un'ottima risorsa per saperne di più su Microsoft Teams Rooms e su come può aggiungere valore nell'ambito della distribuzione.
+
+[Microsoft Teams Rooms supporto](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) è un'ottima risorsa per saperne di più su Microsoft Teams Rooms e su come può aggiungere valore nell'ambito della distribuzione.
 
 ## <a name="microsoft-teams-rooms-components"></a>Microsoft Teams Rooms componenti
 
@@ -49,7 +51,17 @@ Microsoft Teams Rooms include i componenti chiave seguenti per offrire un'esperi
 
 È possibile ottenere questi componenti come bundle preinstallati da un certo numero di fornitori oppure acquistare singolarmente i componenti supportati seguendo i [requisiti descritti in questo articolo](requirements.md).
 
-È possibile distribuire Microsoft Teams Rooms con Microsoft Teams o Skype for Business distribuzioni locali.  Vedere [l'Aggiornamento delle licenze per le sale riunioni di Teams](rooms-licensing.md) per informazioni sulle licenze necessarie.
+## <a name="teams-rooms-licensing"></a>licenze di Teams Rooms
+
+Ogni dispositivo della sala riunioni, ad esempio una console Teams Rooms, Surface Hub e Pannello di Teams, deve essere Teams Rooms licenza. Teams fornisce due licenze per Teams Rooms: Microsoft Teams Rooms Pro e Microsoft Teams Rooms Basic.
+
+Microsoft Teams Rooms Pro è ideale per le organizzazioni che hanno 25 o più dispositivi per sale riunioni o che vogliono esperienze di gestione delle riunioni e dei dispositivi più complete. Le riunioni ibride di Teams diventano più coinvolgenti con funzionalità come Front Row, Fotocamera contenuto, Eliminazione del rumore basata sull'intelligenza artificiale e altre funzionalità disponibili con Microsoft Teams Rooms Pro. Teams Rooms gli amministratori possono gestire centralmente tutti i dispositivi Teams Rooms certificati dall'interfaccia di amministrazione di Teams, dalla configurazione dei criteri di accesso condizionale all'analisi di dati di telemetria avanzati sull'integrità dei dispositivi e sulla qualità delle riunioni.
+
+Microsoft Teams Rooms Basic è disponibile solo per le organizzazioni con pochi dispositivi per sale riunioni e che necessitano solo di funzionalità di base per riunioni e gestione. Microsoft Teams Rooms Basic consente di partecipare alle riunioni, condividere contenuti e video in tempo reale, partecipare a riunioni Zoom e Webex con Direct Guest Join ed eseguire l'inventario e il monitoraggio dei dispositivi di base nell'interfaccia di amministrazione di Teams.
+
+Prima di usare un dispositivo per sale riunioni, è necessario assegnarvi una licenza. Per altre informazioni, vedere [Microsoft Teams Rooms licenze](rooms-licensing.md).
+
+[!INCLUDE [mtr-user-licensing](../includes/mtr-user-licensing.md)]
 
 | &nbsp;   |  &nbsp;   |
 |-----------|------------|
@@ -142,7 +154,7 @@ A seconda della scala e dell'approccio di distribuzione, si potrebbe decidere di
 
 L'organizzazione deve eseguire attività di monitoraggio, amministrazione e gestione su base continuativa ed è fondamentale accettare chi eseguirà queste attività nelle prime fasi della distribuzione.
 
-Molte organizzazioni hanno un team o un partner AV che gestisce le sale riunioni e i dispositivi. In alternativa, puoi chiedere a Microsoft di aiutarti a gestire Teams Rooms sfruttando Microsoft Teams Rooms Premium. Decidere chi gestirà i dispositivi Microsoft Teams Rooms in futuro per monitorare le prestazioni, nonché distribuire aggiornamenti software e aggiornamenti rapidi.
+Molte organizzazioni hanno un team o un partner AV che gestisce le sale riunioni e i dispositivi. In alternativa, puoi chiedere a Microsoft di aiutarti a gestire Teams Rooms sfruttando Microsoft Teams Rooms Pro. Decidere chi gestirà i dispositivi Microsoft Teams Rooms in futuro per monitorare le prestazioni, nonché distribuire aggiornamenti software e aggiornamenti rapidi.
 
 Valuta a quale coda helpdesk instradare le chiamate correlate a Microsoft Teams Rooms e fornisci le domande frequenti al team helpdesk in modo che possa comprendere meglio come usare Microsoft Teams Rooms e le principali procedure di risoluzione dei problemi che possono eseguire. Un buon punto di partenza per queste domande frequenti è la [Guida dell'utente](https://support.microsoft.com/office/microsoft-teams-rooms-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) e [i problemi noti](known-issues.md).
 

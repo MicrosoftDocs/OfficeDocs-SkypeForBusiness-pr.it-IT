@@ -10,6 +10,7 @@ audience: admin
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 ms.reviewer: crowe
 search.appverid: MET150
 description: Altre informazioni su Teams Phone Mobile, ad esempio requisiti e pianificazione della distribuzione.
@@ -18,16 +19,16 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 07a7a7652f5b634d9cc4c5bf7adfa14dfdcb3d3d
-ms.sourcegitcommit: 50ae550b738424b35df1636590831e6c124ca0c1
+ms.openlocfilehash: ffff1b3ae23b48a5f3fe0e697e43f13aaac8932d
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68576592"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68585060"
 ---
 # <a name="plan-for-teams-phone-mobile"></a>Pianificare Teams Phone Mobile
 
-Per un elenco degli operatori che partecipano al programma Telefono di Microsoft Teams Mobile e dei paesi o delle aree geografiche in cui è disponibile il loro servizio, vedi [Microsoft 365 Teams Phone Mobile](https://cloudpartners.transform.microsoft.com/practices/microsoft-365-for-operators/teams-phone-mobile).
+Per un elenco degli operatori che partecipano al programma di Operatore di telefonia mobile di Microsoft Teams e dei paesi o delle aree geografiche in cui il loro servizio è disponibile, vedi [Microsoft 365 Teams Phone Mobile](https://cloudpartners.transform.microsoft.com/practices/microsoft-365-for-operators/teams-phone-mobile).
 
 Teams Phone Mobile è un'altra opzione per fornire la connettività PSTN (Public Switched Telephone Network) con Microsoft Teams e Sistema telefonico. Con Teams Phone Mobile, il numero di telefono abilitato per la SIM di un utente è anche il numero di telefono di Teams. Gli utenti possono usare un singolo numero di telefono in Microsoft Teams sia attraverso le linee del servizio mobile che della scrivania e passare facilmente da una rete all'altra e da un dispositivo all'altro.
 
@@ -39,7 +40,7 @@ Questo articolo descrive i requisiti e i vantaggi di Teams Phone Mobile. Teams P
 
 -   Si vuole usare un numero di cellulare primario di proprietà dell'azienda abilitato per la SIM per Teams Phone come soluzione a numero singolo.
 
--   L'operatore preferito è un partecipante al programma Telefono di Microsoft Teams Mobile.
+-   L'operatore preferito è un partecipante al programma Operatore di telefonia mobile di Microsoft Teams.
 
 -   Si vuole trovare un nuovo operatore per abilitare le chiamate in Teams.
 

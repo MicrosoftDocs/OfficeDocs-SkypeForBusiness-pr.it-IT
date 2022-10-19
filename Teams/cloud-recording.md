@@ -10,6 +10,7 @@ ms.collection:
 - M365-voice
 - M365-collaboration
 - m365initiative-meetings
+- highpri
 ms.reviewer: nakulm
 search.appverid: MET150
 ms.localizationpriority: high
@@ -19,12 +20,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1360847f187d98118d0b5468638cf1d6eb215fb8
-ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
+ms.openlocfilehash: b82e73e2e5bb470df4511027d13b2df5f1f715f8
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67706863"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68584887"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -283,7 +284,7 @@ Le registrazioni delle riunioni hanno una scadenza predefinita di 120 giorni. È
 
 I sottotitoli codificati per le registrazioni delle riunioni di Teams saranno disponibili durante la riproduzione solo se l'utente ha attivato la trascrizione al momento della registrazione. Gli amministratori devono [attivare la trascrizione della registrazione tramite criteri](#turn-on-or-turn-off-recording-transcription) per assicurarsi che gli utenti abbiano la possibilità di registrare le riunioni con la trascrizione.
 
-I sottotitoli consentono di creare contenuto inclusivo per i visualizzatori di tutte le capacità. In qualità di proprietario, è possibile nascondere i sottotitoli nella registrazione della riunione, anche se la trascrizione della riunione sarà ancora disponibile in Teams, a meno che non venga eliminata.
+Captions help create inclusive content for viewers of all abilities. As an owner, you can hide captions on the meeting recording, although the meeting transcript will still be available on Teams unless you delete it there.
 
 Oggi i sottotitoli codificati per il file video di registrazione sono collegati alla trascrizione della riunione di Teams. Questo collegamento rimarrà per tutta la durata del file nella maggior parte dei casi, ma può essere interrotto se il file video viene copiato all'interno dello stesso sito di OneDrive o SharePoint, con conseguente mancata disponibilità dei sottotitoli nel file video copiato.
 

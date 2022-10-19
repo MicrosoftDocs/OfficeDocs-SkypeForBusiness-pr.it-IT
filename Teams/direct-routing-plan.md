@@ -12,18 +12,19 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Scopri come Microsoft Direct Routing consente di connettere un controller SBC (Session Border Controller) supportato dal cliente al sistema telefonico.
-ms.openlocfilehash: f3fe1e9f6f2244c7d33528488f07e66797509d2a
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: d49e16ce4a61caf167574ab00189dbdfde1f1d61
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67267781"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68584037"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 

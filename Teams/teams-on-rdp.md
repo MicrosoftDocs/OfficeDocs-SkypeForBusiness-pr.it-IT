@@ -15,14 +15,15 @@ f1.keywords:
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
+- highpri
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7e18aa0ad95033550d0ef2f7c6049e700d917798
-ms.sourcegitcommit: 79ada2140b110239deff96e4854ebd5dd9b77881
+ms.openlocfilehash: bf113e8d14b70382d6b1704b8574385038099210
+ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66606095"
+ms.lasthandoff: 10/16/2022
+ms.locfileid: "68584317"
 ---
 # <a name="teams-in-remote-desktop-services"></a>Teams in Servizi Desktop remoto
 
@@ -53,7 +54,7 @@ Se l'organizzazione vuole usare solo le funzionalità di chat e collaborazione i
 
 Per assegnare i criteri di chiamata DisallowCalling e AllOff a un utente:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare a **Utenti**.
 2. Seleziona l'utente selezionando a sinistra del nome utente e quindi seleziona **Modifica impostazioni**.
 3. Procedere come segue:
 
