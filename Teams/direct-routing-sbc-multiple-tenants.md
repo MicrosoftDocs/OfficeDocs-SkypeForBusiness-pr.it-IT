@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un controller dei confini di sessione (SBC) per servire più tenant per i partner Microsoft e/o i gestori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9d7ee3960f88b1c6ed4ee140b4f291162e37da30
-ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
+ms.openlocfilehash: 3789270bc9826c11dee338b5221bc019191f50f2
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67024019"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68614409"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -136,10 +136,13 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
 Dopo aver registrato un nome di dominio, è necessario attivarlo aggiungendo almeno un account utente o risorsa con licenza teams. Gli account accettabili verranno concessi in licenza con uno degli SKU seguenti:
 
-- Account utente con Office 365 E1/E3/E5/A3/A5 o Microsoft 365 E3/E5/A3/A5
-- Account utente con Office 365 F1/F3 o Microsoft 365 F1/F3
-- Account utente con telefono area comune
-- Account risorsa con licenza **Account risorsa Telefono di Microsoft Teams**
+- Account utente con Office 365 E1/E3/E5 o Microsoft 365 E3/E5.
+- Account utente con Office 365 A1/A3/A5 o Microsoft 365 A1/A3/A5.
+- Account utente con Office 365 F3 o Microsoft 365 F1/F3.
+- Account utente con Office 365 G1/G3/G5 o Microsoft 365 G3/G5.
+- Account utente con Microsoft 365 Business Basic/Standard/Premium.
+- Account utente con Common Area Phone.
+- Account della risorsa con **Telefono di Microsoft Teams licenza Account risorsa**.
 
 Inoltre, l'UPN dell'account (nome dell'entità utente) o Skype for Business'indirizzo SIP locale deve usare lo stesso FQDN del dominio appena creato.
 
@@ -202,6 +205,7 @@ Dopo aver registrato un nome di sottodominio, è necessario attivarlo aggiungend
 
 -   Account utente con Office 365 E1/E3/E5/A3/A5 o Microsoft 365 E3/E5/A3/A5
 -   Account utente con Office 365 F1/F3 o Microsoft 365 F1/F3
+-   Account utente con piani Microsoft 365 Business Basic/Standard/Premium e G3/G5
 -   Account utente con telefono area comune
 -   Account della risorsa con licenza **Account risorse Telefono di Microsoft Teams**
 

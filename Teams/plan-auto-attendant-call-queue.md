@@ -1,7 +1,7 @@
 ---
 title: Pianificare gli operatori automatici di Teams e le code di chiamata
-author: CarolynRowe
-ms.author: crowe
+author: DaniEASmith
+ms.author: danismith
 manager: serdars
 ms.reviewer: colongma
 ms.topic: article
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su operatori automatici e code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 05bbc5880e3a90751cfaada782573fd2d0b10c90
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: 8c02bd3d8881bcbfa0d998098b39106ed8476435
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68584807"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68613958"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici di Teams e le code di chiamata
 

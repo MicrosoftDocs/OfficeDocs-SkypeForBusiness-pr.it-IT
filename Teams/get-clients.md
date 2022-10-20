@@ -17,12 +17,12 @@ f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f53dd50f78afa2d85c4858e2d98170b3dc044f55
-ms.sourcegitcommit: 44d9f15f7f7c00b3651a11ff1e8b37dda1716a52
+ms.openlocfilehash: 33175aecc41dbc631fe8ab16db225762969b5ad6
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2022
-ms.locfileid: "67732315"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68614038"
 ---
 # <a name="get-clients-for-microsoft-teams"></a>Ottenere i client per Microsoft Teams
 
@@ -46,7 +46,7 @@ Il client desktop di Teams è disponibile come applicazione autonoma e come part
 - Linux (in formati `.deb` e `.rpm`)
 - Chrome OS (per altre informazioni, vedere [Come usare Microsoft Office su un Chromebook](https://support.office.com/article/how-to-install-and-run-microsoft-office-on-a-chromebook-32f14a23-2c1a-4579-b973-d4b1d78561ad))
 
-I client desktop possono essere scaricati e installati dagli utenti finali direttamente da [https://teams.microsoft.com/downloads](https://go.microsoft.com/fwlink/?linkid=855754), se dispongono delle autorizzazioni locali appropriate. I diritti di amministratore non sono necessari per installare il client di Teams in PC Windows, ma lo sono per installarlo sui Mac.
+Desktop clients can be downloaded and installed by end users directly from [https://teams.microsoft.com/downloads](https://go.microsoft.com/fwlink/?linkid=855754) if they have the appropriate local permissions. Admin permissions aren't required to install the Teams client on Windows PCs but are required on Macs.
 
 Gli amministratori IT Pros possono usare il proprio metodo preferito per distribuire i file di installazione nei computer dell'organizzazione. Alcuni esempi sono Microsoft Endpoint Configuration Manager in Windows o Jamf Pro in macOS. Per altre informazioni sulla distribuzione di Teams, vedere quanto segue.
 
@@ -80,7 +80,9 @@ Quando gli utenti avviano per la prima volta una chiamata usando il client di Te
 ![Screenshot di una finestra di dialogo Avviso di sicurezza di Windows.](media/Get_clients_for_Microsoft_Teams_image3.png)
 
 > [!NOTE]
-> La configurazione di Windows Firewall verrà modificata anche se il messaggio viene ignorato selezionando "Annulla". Verranno create due regole in entrata per teams.exe, con l'azione Consenti per i protocolli TCP e UDP.
+> La configurazione di Windows Firewall verrà modificata. Verranno create due regole in ingresso per teams.exe per i protocolli TCP e UDP con 
+> - Consenti azione nel caso in cui l'utente sia un amministratore locale e fa clic su "Consenti accesso" solo.
+> - Blocca azione se l'utente non è un amministratore locale e, in ogni caso, quando il prompt viene ignorato selezionando "Annulla".
 
 Se vuoi evitare che Teams chieda agli utenti di creare regole del firewall quando gli utenti effettuano la prima chiamata da Teams, usa lo script di PowerShell in [script di esempio - Script PowerShell del firewall di Microsoft Teams](client-firewall-script.md).
 
@@ -208,4 +210,4 @@ Il client browser ([https://teams.microsoft.com](https://go.microsoft.com/fwlink
 
 [!INCLUDE [browser-support](includes/browser-support.md)]
 
-Il client del browser esegue il rilevamento della versione del browser al momento della connessione a [https://teams.microsoft.com](https://go.microsoft.com/fwlink/?linkid=855753). Se viene rilevata una versione del browser non supportata, l'accesso all'interfaccia browser verrà bloccato e l'utente verrà invitato a scaricare il client desktop o l'app per dispositivi mobili.
+The browser client performs browser version detection upon connecting to [https://teams.microsoft.com](https://go.microsoft.com/fwlink/?linkid=855753). If an unsupported browser version is detected, it will block access to the browser interface and recommend that the user download the desktop client or mobile app.

@@ -17,13 +17,13 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: high
 search.appverid: MET150
-description: Informazioni su come caricare le app personalizzate nell'app store dell'organizzazione nell'interfaccia di amministrazione di Microsoft Teams.
-ms.openlocfilehash: 51ea4bdc31ff59a34bdf28a991617fff0f4e7381
-ms.sourcegitcommit: d6e180791134426445a35fd485dcca18bde2006b
+description: Informazioni su come caricare app personalizzate nell'app store teams dell'organizzazione.
+ms.openlocfilehash: 0b48061ab005e64d6fb6385fabb48f3b49ff87f0
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68494609"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68614589"
 ---
 # <a name="publish-a-custom-app-by-uploading-an-app-package"></a>Pubblicare un'app personalizzata caricando un pacchetto dell'app
 
@@ -40,11 +40,11 @@ La piattaforma per sviluppatori di Microsoft Teams consente agli sviluppatori di
 
 ## <a name="validate"></a>Convalida
 
-### <a name="get-the-app-package"></a>Ottenere il pacchetto dell'app
+### <a name="receive-the-app-package"></a>Ricevere il pacchetto dell'app
 
-Quando l'app è pronta per l'uso in produzione, lo sviluppatore deve produrre un pacchetto dell’app. È possibile che venga usata l’applicazione [App Studio](/microsoftteams/platform/concepts/build-and-test/app-studio-overview). Il file verrà inviato in formato .zip.
+Quando l'app è pronta per l'uso in produzione, lo sviluppatore produce un pacchetto di app tramite [portale di sviluppo](/microsoftteams/platform/concepts/build-and-test/manage-your-apps-in-developer-portal). Lo sviluppatore condivide il pacchetto dell'app in formato .zip.
 
-Tutte le app nello store di Teams superano una [convalida app](overview-of-app-validation.md) obbligatoria per garantire la conformità con standard di qualità e sicurezza dell’app store globale di Teams. Inoltre, Microsoft incoraggia vivamente gli sviluppatori di app a partecipare a un [programma di conformità delle app](overview-of-app-certification.md) facoltativo che indica controlli avanzati di conformità, sicurezza e privacy. Per altre informazioni, vedere [Linee guida per la convalida delle app di Teams](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines).
+Tutte le app in Teams Store superano una [convalida obbligatoria dell'app](overview-of-app-validation.md) per garantire la conformità agli standard di qualità e sicurezza dell'app Store di Teams. Inoltre, Microsoft incoraggia vivamente gli sviluppatori di app a partecipare a un [programma di conformità delle app](overview-of-app-certification.md) facoltativo che indica controlli avanzati di conformità, sicurezza e privacy. Per altre informazioni, vedere [Linee guida per la convalida delle app di Teams](/microsoftteams/platform/concepts/deploy-and-publish/appsource/prepare/teams-store-validation-guidelines).
 
 ### <a name="allow-trusted-users-to-upload-custom-apps"></a>Consentire ad utenti attendibili di caricare app personalizzate
 
@@ -119,7 +119,7 @@ Per aggiornare un'app, gli sviluppatori seguono i passaggi descritti nelle sezio
 
 ### <a name="end-user-update-experience"></a>Esperienza di aggiornamento per l'utente finale
 
-Nella maggior parte dei casi, dopo aver completato un aggiornamento dell'app, la nuova versione viene visualizzata automaticamente per gli utenti finali. Per altre informazioni, vedere [Esperienza di aggiornamento per l'utente finale](apps-update-experience.md).
+Nella maggior parte dei casi, dopo la pubblicazione di una nuova versione di un'app, l'app viene aggiornata automaticamente per gli utenti finali. Per altre informazioni, vedi [Esperienza di aggiornamento delle app per utente finale](apps-update-experience.md).
 
 ## <a name="remove-a-custom-app-from-your-organizations-store"></a>Rimuovere un'app personalizzata dallo store dell'organizzazione
 

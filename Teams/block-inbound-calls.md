@@ -15,45 +15,58 @@ appliesto:
 ms.localizationpriority: medium
 ms.custom: ''
 description: Informazioni su come usare PowerShell per gestire il blocco delle chiamate in ingresso.
-ms.openlocfilehash: 217a4fe6770d916e9013acf7f90ebf6a5556b837
-ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.openlocfilehash: 01d1fb08d0b0cca4bc0a35ca77109e976d63a1f0
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66789601"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68614429"
 ---
 # <a name="block-inbound-calls"></a>Bloccare le chiamate in ingresso
 
-I piani per chiamate Microsoft, il routing diretto e la connessione operatore supportano il blocco delle chiamate in ingresso dalla rete PSTN (Public Switched Telephone Network). Questa caratteristica consente all'amministratore di definire un elenco di modelli numerici a livello globale tenant in modo che l'ID chiamante di ogni chiamata PSTN in arrivo al tenant possa essere confrontato con l'elenco per individuare una corrispondenza. Se viene effettuata una corrispondenza, una chiamata in arrivo viene rifiutata.
+I piani per chiamate Microsoft, il routing diretto e la connessione operatore supportano il blocco delle chiamate in ingresso dalla rete PSTN (Public Switched Telephone Network). Questa caratteristica consente all'amministratore di definire un elenco di modelli numerici ed eccezioni a livello globale tenant, in modo che l'ID chiamante di ogni chiamata PSTN in arrivo al tenant possa essere confrontato con l'elenco per individuare una corrispondenza. Se viene effettuata una corrispondenza, una chiamata in arrivo viene rifiutata.
 
 Questa funzionalità di blocco delle chiamate in ingresso funziona solo per le chiamate in ingresso provenienti dalla rete PSTN e funziona solo a livello globale tenant. I singoli utenti di Teams non possono manipolare questo elenco. Il client Teams consente ai singoli utenti di bloccare le chiamate PSTN. Per informazioni su come gli utenti finali possono implementare il blocco delle chiamate, vedere [Gestire le impostazioni delle chiamate in Teams](https://support.microsoft.com/office/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f).
 
 > [!NOTE]
 > I chiamanti bloccati possono riscontrare comportamenti leggermente diversi quando sono stati bloccati. Il comportamento si basa sul modo in cui il gestore del chiamante bloccato gestisce la notifica che la chiamata non può essere completata correttamente. Alcuni esempi possono includere un messaggio del corriere che indica che la chiamata non può essere completata come chiamata effettuata o semplicemente che è stata annullata.
 
-## <a name="call-blocking-admin-controls-and-information"></a>Controlli e informazioni per il blocco delle chiamate
+Si noti che attualmente non è possibile gestire il blocco delle chiamate tramite l'interfaccia di amministrazione di Teams.
 
-Amministrazione controlli per il blocco dei numeri vengono forniti solo con PowerShell. I modelli di blocchi numerici vengono definiti come criteri di espressione regolare. L'ordine delle espressioni non è importante: il primo criterio di corrispondenza nell'elenco determina il blocco della chiamata. Un nuovo numero o criterio aggiunto o rimosso nell'elenco dei chiamanti bloccati può richiedere fino a 24 ore perché il modello diventi attivo.
+## <a name="manage-call-blocking-by-using-powershell"></a>Gestire il blocco delle chiamate con PowerShell
 
-## <a name="call-blocking-powershell-commands"></a>Comandi di PowerShell che bloccano le chiamate
+Per gestire il blocco delle chiamate, è necessario definire uno o più modelli numerici da cui bloccare le chiamate, definire eccezioni ai modelli numerici e abilitare la funzionalità di blocco delle chiamate.
 
-Puoi gestire i modelli numerici utilizzando i cmdlet **New-**, **Get-**, **Set-**, e **Remove-CsInboundBlockedNumberPattern** . È possibile gestire un determinato modello usando questi cmdlet, inclusa la possibilità di attivare o disattivare l'attivazione di un determinato criterio.
+I modelli di blocchi numerici vengono definiti come criteri di espressione regolare. L'ordine delle espressioni non è importante: la corrispondenza del primo criterio nell'elenco determina il blocco della chiamata. Un nuovo numero o criterio aggiunto o rimosso nell'elenco dei chiamanti bloccati può richiedere fino a 24 ore perché il modello diventi attivo.
 
-- [Get-CsInboundBlockedNumberPattern](/powershell/module/skype/get-csinboundblockednumberpattern) restituisce un elenco di tutti i modelli di numeri bloccati aggiunti all'elenco tenant, inclusi Nome, Descrizione, Abilitato (Vero/Falso) e Pattern per ciascuno.
+### <a name="activate-the-call-blocking-feature"></a>Attivare la funzionalità di blocco delle chiamate
+
+Per visualizzare e attivare la funzionalità di blocco delle chiamate, usare i cmdlet **Del** modulo PowerShell di Teams **Get- e Set-CsTenantBlockingCallingNumbers** .
+
+- [Get-CsTenantBlockedCallingNumbers](/powershell/module/skype/get-cstenantblockedcallingnumbers) restituisce i modelli di numeri di blocco in ingresso e i parametri dei modelli di numeri esenti in ingresso per l'elenco di numeri bloccati globali. Questo cmdlet restituisce anche un valore che indica se il blocco è stato abilitato (True o False). 
+
+- [Set-CsTenantBlockedCallingNumbers](/powershell/module/skype/set-cstenantblockedcallingnumbers) consente di specificare se le chiamate bloccate del tenant globale vengono attivate o disattivate a livello di tenant.
+
+### <a name="manage-block-number-patterns"></a>Gestire i modelli dei numeri di blocco
+
+Puoi gestire i modelli numerici utilizzando i cmdlet **New-**, **Get-**, **Set-**, **Test-**, e **Remove-CsInboundBlockedNumberPattern** Teams PowerShell Module. 
+
+- [Get-CsInboundBlockedNumberPattern](/powershell/module/skype/get-csinboundblockednumberpattern) restituisce un elenco di tutti i modelli di numeri bloccati aggiunti all'elenco tenant, inclusi Nome, Descrizione, Abilitato (True/False) e Pattern.
+
 - [New-CsInboundBlockedNumberPattern](/powershell/module/skype/new-csinboundblockednumberpattern) aggiunge un modello di numero bloccato all'elenco tenant.
+
 - [Remove-CsInboundBlockedNumberPattern](/powershell/module/skype/remove-csinboundblockednumberpattern) rimuove un modello di numero bloccato dall'elenco tenant.
+
 - [Set-CsInboundBlockedNumberPattern](/powershell/module/skype/set-csinboundblockednumberpattern) modifica uno o più parametri di un modello di numero bloccato nell'elenco dei tenant.
 
-La visualizzazione e l'attivazione dell'intera funzionalità di blocco delle chiamate viene gestita tramite i cmdlet **Get-** e **Set-CsTenantBlockingCallingNumbers** .
+- [Test-CsInboundBlockedNumberPattern](/powershell/module/skype/set-csinboundblockednumberpattern) verifica se le chiamate da un determinato numero di telefono saranno bloccate.
 
-- [Get-CsTenantBlockedCallingNumbers](/powershell/module/skype/get-cstenantblockedcallingnumbers) restituisce i modelli di numeri di blocco in ingresso e i parametri dei modelli di numeri esenti in ingresso per l'elenco di numeri bloccati globali. Questo cmdlet restituisce anche un valore che indica se il blocco è stato abilitato (True o False). Esiste un singolo criterio tenant globale che non può essere modificato manualmente se non per attivare o disattivare la funzionalità.
-- [Set-CsTenantBlockedCallingNumbers](/powershell/module/skype/set-cstenantblockedcallingnumbers) consente di modificare le chiamate bloccate del tenant globale da attivare e disattivare a livello di tenant.
 
 ### <a name="examples"></a>Esempi
 
 #### <a name="block-a-number"></a>Bloccare un numero
 
-Nell'esempio seguente l'amministratore del tenant vuole bloccare tutte le chiamate provenienti dal numero compreso tra 1 (312) 555-0000 e 1 (312) 555-9999. Il criterio numerico viene creato in modo che sia i numeri nell'intervallo con il prefisso + che i numeri nell'intervallo senza prefisso + vengano confrontati. Non è necessario includere i simboli e () nei numeri di telefono perché il sistema rimuove questi simboli prima della corrispondenza.  Per attivare il criterio numerico, il parametro **Enabled** è impostato su True. Per disabilitare questo criterio numerico specifico, impostare il parametro su False.
+Nell'esempio seguente l'amministratore del tenant vuole bloccare tutte le chiamate provenienti dal numero compreso tra 1 (312) 555-0000 e 1 (312) 555-9999. Il criterio numerico viene creato in modo che sia i numeri nell'intervallo con il prefisso + che i numeri nell'intervallo senza prefisso + vengano confrontati. Non è necessario includere i simboli e () nei numeri di telefono perché il sistema rimuove questi simboli prima della corrispondenza.  Per attivare il criterio numerico, impostare il parametro **Enabled** su True. Per disabilitare questo criterio numerico specifico, impostare il parametro su False.
 
 ```PowerShell
 New-CsInboundBlockedNumberPattern -Name "BlockRange1" -Enabled $True -Description "Block Contoso" -Pattern "^\+?1312555\d{4}$"
@@ -67,7 +80,7 @@ New-CsInboundBlockedNumberPattern -Name "BlockNumber1" -Enabled $True -Descripti
 
 La creazione di un nuovo criterio aggiunge il criterio come abilitato per impostazione predefinita. La descrizione è un campo facoltativo per fornire altre informazioni.
 
-È consigliabile specificare un nome significativo per comprendere facilmente il motivo per cui il modello è stato aggiunto. Nel caso in cui si blocchino semplicemente i numeri di posta indesiderata, è consigliabile assegnare alla regola lo stesso criterio numerico con cui viene trovata una corrispondenza e aggiungere altre informazioni nella descrizione in base alle esigenze.
+È consigliabile specificare un nome significativo per comprendere facilmente il motivo per cui il modello è stato aggiunto. Per bloccare i numeri di posta indesiderata, è consigliabile assegnare alla regola lo stesso criterio di corrispondenza e quindi aggiungere altre informazioni nella descrizione in base alle esigenze.
 
 I modelli vengono confrontati con espressioni regolari (Regex). Per ulteriori informazioni, vedere [Uso di Regex](#using-regex).
 
@@ -87,7 +100,7 @@ Consentire il tempo per la replica prima di testare e convalidare.
 
 #### <a name="view-all-number-patterns"></a>Visualizzare tutti i modelli numerici
 
-L'esecuzione di questo cmdlet restituisce un elenco di tutti i numeri bloccati immessi per un tenant:
+Il cmdlet seguente restituisce un elenco di tutti i numeri bloccati immessi per un tenant:
 
 ```powershell
 Get-CsInboundBlockedNumberPattern
@@ -95,13 +108,40 @@ Get-CsInboundBlockedNumberPattern
 
 Usare le funzionalità di filtro predefinite di PowerShell per analizzare i valori restituiti in base alle esigenze.
 
-## <a name="add-number-exceptions"></a>Aggiungere eccezioni ai numeri
+#### <a name="test-whether-a-number-is-blocked"></a>Verificare se un numero è bloccato
+
+Per verificare se un numero è bloccato nel tenant, utilizza il cmdlet **Test-CsInboundBlockedNumberPattern** .
+
+Il parametro **PhoneNumber** è obbligatorio e deve essere una stringa numerica senza altri caratteri, ad esempio +, - o (). Il parametro **IsNumberBlocked** risultante restituisce il valore True se il numero è bloccato nel tenant; il parametro restituisce False se non è bloccato.
+
+Negli esempi seguenti puoi vedere che il numero di telefono 1 (312) 555-8884 è bloccato perché si trova nell'intervallo bloccato sopra. Il numero di telefono 1 (312) 555-8883 è consentito in base all'esenzione creata di seguito.
+
+```PowerShell
+Test-CsInboundBlockedNumberPattern -PhoneNumber 13125558884
+
+RunspaceId      : 09537e45-6f0c-4001-8b85-a79002707b0c
+httpStatusCode  : NoContent
+IsNumberBlocked : True
+errorMessage    :
+
+Test-CsInboundBlockedNumberPattern -PhoneNumber 13125558883
+
+RunspaceId      : 09537e45-6f0c-4001-8b85-a79002707b0c
+httpStatusCode  : NoContent
+IsNumberBlocked : False
+errorMessage    :
+```
+
+### <a name="manage-number-exceptions"></a>Gestire le eccezioni dei numeri
 
 Puoi aggiungere eccezioni ai modelli di numeri bloccati utilizzando i cmdlet **New-**, **Get-**, **Set-**, e **Remove-CsInboundExemptNumberPattern** .
 
 - [New-CsInboundExemptNumberPattern](/powershell/module/skype/New-CsInboundExemptNumberPattern) aggiunge un modello di eccezione numero all'elenco tenant.
+
 - [Get-CsInboundExemptNumberPattern](/powershell/module/skype/Get-CsInboundExemptNumberPattern) restituisce un elenco di tutti i modelli di eccezione numero aggiunti all'elenco tenant.
+
 - [Set-CsInboundExemptNumberPattern](/powershell/module/skype/Set-CsInboundExemptNumberPattern) modifica uno o più parametri in un modello di eccezione numero nell'elenco tenant.
+
 - [Remove-CsInboundExemptNumberPattern](/powershell/module/skype/Remove-CsInboundExemptNumberPattern) rimuove un modello di eccezione numero dall'elenco tenant.
 
 ### <a name="examples"></a>Esempi
@@ -152,36 +192,6 @@ Remove-CsInboundExemptNumberPattern -Identity <String>
 
 ```powershell
 Remove-CsInboundExemptNumberPattern -Identity "AllowContoso1"
-```
-
-## <a name="test-whether-a-number-is-blocked"></a>Verificare se un numero è bloccato
-
-Utilizza il cmdlet **Test-CsInboundBlockedNumberPattern** per verificare se un numero è bloccato nel tenant.
-
-Il parametro **PhoneNumber** è obbligatorio e deve essere una stringa numerica senza altri caratteri, ad esempio +, - o (). Il parametro **IsNumberBlocked** risultante restituisce il valore True se il numero è bloccato nel tenant; il parametro restituisce False se non è bloccato.
-
-```powershell
-Test-CsInboundBlockedNumberPattern –Tenant <GUID> -PhoneNumber <String>
-```
-
-### <a name="examples"></a>Esempi
-
-In questi esempi puoi vedere che il numero di telefono 1 (312) 555-8884 è bloccato come dovrebbe essere a causa di essere nell'intervallo bloccato sopra, mentre il numero di telefono 1 (312) 555-8883 è autorizzato a chiamare come dovrebbe essere basato sull'esenzione creata sopra.
-
-```PowerShell
-Test-CsInboundBlockedNumberPattern -PhoneNumber 13125558884
-
-RunspaceId      : 09537e45-6f0c-4001-8b85-a79002707b0c
-httpStatusCode  : NoContent
-IsNumberBlocked : True
-errorMessage    :
-
-Test-CsInboundBlockedNumberPattern -PhoneNumber 13125558883
-
-RunspaceId      : 09537e45-6f0c-4001-8b85-a79002707b0c
-httpStatusCode  : NoContent
-IsNumberBlocked : False
-errorMessage    :
 ```
 
 ## <a name="using-regex"></a>Uso di Regex

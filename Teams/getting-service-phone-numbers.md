@@ -1,5 +1,5 @@
 ---
-title: Ottenere i numeri di telefono del servizio per i piani per chiamate
+title: Ottenere i numeri di telefono di servizio per i piani per chiamate
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection:
 - M365-voice
 - m365initiative-voice
+- highpri
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -21,67 +22,67 @@ f1.keywords:
 ms.custom:
 - Phone System
 - seo-marvel-mar2020
-description: Scopri come ottenere nuovi numeri di telefono e trasferire o trasferire i numeri esistenti per audioconferenze, operatori automatici e code di chiamata (numeri di servizio) per Teams.
-ms.openlocfilehash: 34ff296ce94afa4888e8fd4b0ad23c00d0402468
-ms.sourcegitcommit: bf350ea47032bd926e75a5433eadce3905e731ca
+description: Scopri come ottenere nuovi numeri di telefono e trasferire numeri esistenti per audioconferenze, operatori automatici e code di chiamata (numeri di servizio) per Teams.
+ms.openlocfilehash: c38d94085597bde2d29ae9233db024a1f2814fdb
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2021
-ms.locfileid: "60733307"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68614609"
 ---
-# <a name="service-phone-numbers-for-calling-plans"></a>Numeri di telefono del servizio per i piani per chiamate
+# <a name="service-phone-numbers-for-calling-plans"></a>Numeri di servizio per i piani per chiamate
 
-Oltre a ottenere numeri di telefono per gli [utenti,](./getting-phone-numbers-for-your-users.md)è possibile ottenere numeri a numero verde o a numero verde per servizi come audioconferenza (per bridge di conferenza), Operatori automatici e Code di chiamata (detti anche numeri di servizio). I numeri di servizio hanno una capacità di chiamate contemporanee superiore ai numeri di telefono per utenti o abbonati. Ad esempio, un numero di servizio può gestire centinaia di chiamate contemporaneamente, mentre il numero di telefono di un utente può gestire solo alcune chiamate contemporaneamente.
+Oltre a [ottenere numeri di telefono per gli utenti](./getting-phone-numbers-for-your-users.md), puoi ottenere numeri a pagamento o numeri verdi per servizi come i servizi di audioconferenza (per il bridge delle conferenze), gli operatori automatici e le code di chiamata (chiamati anche numeri di servizio). I numeri di servizio hanno una capacità di chiamate contemporanee superiore ai numeri di telefono per utenti o abbonati. Ad esempio, un numero di servizio può gestire centinaia di chiamate contemporaneamente, mentre il numero di telefono di un utente può gestire solo alcune chiamate contemporaneamente.
   
 > [!NOTE]
-> Prima di poter ottenere i numeri verde, è necessario configurare i Crediti comunicazioni. Per altre informazioni, vedere [Configurare i crediti comunicazioni per l'organizzazione.](./set-up-communications-credits-for-your-organization.md)
+> Devi prima configurare i Crediti comunicazioni prima di ottenere i numeri verdi. Per altre informazioni, vedi [Configurare i Crediti comunicazioni per l'organizzazione](./set-up-communications-credits-for-your-organization.md).
   
 Esistono tre modi per ottenere i numeri di servizio:
   
-- **Usare l'Microsoft Teams di amministrazione.** Per alcuni paesi e aree geografiche, è possibile ottenere i numeri di servizio usando l'interfaccia Microsoft Teams di amministrazione. Vedere [Ottenere nuovi numeri di servizio.](#get-new-service-numbers)
+- **Usare l'interfaccia di amministrazione di Microsoft Teams.** Per alcuni paesi e aree geografiche, è possibile ottenere i numeri di servizio tramite l'interfaccia di amministrazione di Microsoft Teams. Vedi [Ottenere nuovi numeri di servizio](#get-new-service-numbers).
 
-- **Importa i tuoi numeri esistenti.** È possibile trasferire o trasferire i numeri esistenti dal provider di servizi o dal gestore telefonico corrente. Per ulteriori informazioni su come eseguire questa operazione, vedere [Trasferire numeri di telefono in Teams](./phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).  
+- **Importa i tuoi numeri esistenti.** Puoi trasferire o trasferire numeri esistenti dal provider di servizi o dal gestore telefonico corrente. Per ulteriori informazioni su come eseguire questa operazione, vedere [Trasferire numeri di telefono in Teams](./phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).  
   
-- **Utilizzare un modulo di richiesta per nuovi numeri.** A volte , a seconda del paese o dell'area geografica, non sarà possibile ottenere i nuovi numeri di telefono usando l'interfaccia di amministrazione di Microsoft Teams oppure sarà necessario un numero di telefono o un codice area specifici. In tal caso, è necessario scaricare un modulo e inviarlo di nuovo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).
+- **Utilizzare un modulo di richiesta per nuovi numeri.** A volte (a seconda del paese o dell'area geografica) non potrai ottenere i nuovi numeri di telefono tramite l'interfaccia di amministrazione di Microsoft Teams oppure ti serviranno numeri di telefono o prefisso specifici. In tal caso, dovrai scaricare un modulo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).
   
 > [!NOTE]
-> I numeri di servizio sono necessari per ottenere una maggiore capacità di chiamata simultanea per un numero specifico. Quando ci trasferisci il numero, puoi contattare il [service desk TNS](manage-phone-numbers-for-your-organization/contact-tns-service-desk.md) per assicurarti che il numero di servizio che stai trasferendo abbia una capacità di chiamata simultanea elevata.
+> I numeri di servizio sono necessari per ottenere una capacità di chiamata simultanea superiore per un numero specifico. Quando trasferisci il numero a Microsoft, puoi [contattare il service desk TNS](manage-phone-numbers-for-your-organization/contact-tns-service-desk.md) per assicurarti che il numero di servizio da trasferire abbia un'elevata capacità di chiamata simultanea.
   
 ## <a name="get-new-service-numbers"></a>Ottenere i numeri di servizio
 
-Per ottenere nuovi numeri di servizio, nell'Teams di amministrazione:
+Per ottenere nuovi numeri di servizio, nell'interfaccia di amministrazione di Teams:
 
-1. Nel riquadro di spostamento sinistro passare a **Numeri**  >  **Telefono** vocali e quindi fare clic su **Aggiungi.**
+1. Nel riquadro di spostamento sinistro passa a **Numeri di telefono** **vocale** >  e quindi fai clic su **Aggiungi**.
 
 2. Immettere un nome per l'ordine e aggiungere una descrizione.
 
-3. Nella pagina Ubicazione e quantità eseguire le operazioni seguenti:
+3. Nella pagina Posizione e quantità eseguire le operazioni seguenti:
     - In **Paese o area geografica** selezionare un paese o un'area geografica.
     - In **Tipo di numero** selezionare il tipo di numero di servizio desiderato.
-    - In **Posizione** selezionare una posizione. Se è necessario creare una nuova posizione, fare clic **su Aggiungi una posizione.**
-    - In **Codice area** selezionare un codice area. 
+    - In **Posizione** seleziona una posizione. Se è necessario creare una nuova posizione, fare clic su **Aggiungi una posizione**.
+    - In **Prefisso** selezionare un prefisso. 
     - In **Quantità** immettere il numero di numeri desiderato per l'organizzazione e quindi fare clic su **Avanti** per selezionare i numeri.
 
-4. Selezionare i numeri desiderati. Hai 10 minuti per selezionare i numeri di telefono e eseguire l'ordine. Se si prendono più di 10 minuti, i numeri di telefono verranno restituiti al pool di numeri.
+4. Selezionare i numeri desiderati. Hai 10 minuti di tempo per selezionare i numeri di telefono ed effettuare l'ordine. Se si impiegano più di 10 minuti, i numeri di telefono verranno restituiti nel pool di numeri.
 
-5. Quando si è pronti per eseguire l'ordine, fare clic **su Ordina**.
+5. Quando sei pronto per effettuare l'ordine, fai clic su **Effettua ordine**.
 
 ## <a name="port-or-transfer-existing-service-numbers"></a>Portabilità o trasferimento dei numeri di servizio
 
-Per trasferire i numeri di telefono dal provider di servizi o dall'operatore corrente a Teams, è possibile usare la procedura guidata di porting nell'Microsoft Teams di amministrazione. Seguire la procedura descritta in [Trasferire i numeri di telefono Teams](./phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
+Per trasferire i numeri di telefono dal gestore o provider di servizi corrente a Teams, è possibile usare la procedura guidata di portabilità nell'interfaccia di amministrazione di Microsoft Teams. Seguire la procedura descritta in [Trasferire i numeri di telefono in Teams](./phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
 
-Se il paese o l'area geografica non è elencato nella procedura guidata di porting, è possibile inviare manualmente un ordine di trasferimento o passare [a](phone-number-calling-plans/manually-submit-port-order.md) Gestisci numeri di telefono per l'organizzazione, [](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)selezionare il paese o l'area geografica e quindi scaricare una lettera di autorizzazione (LOA). Sarà necessario inviare ordini di trasferimento separati per ogni tipo di numero di servizio(ad esempio, numero verde e numero verde) che si trasferirà con un contratto loA. In LOA è necessario selezionare il tipo corretto di numero di servizio. Assicurati di specificare che stai trasferendo un numero di servizio (e non un numero di utente o abbonato) o che la capacità di chiamata simultanea potrebbe non essere sufficiente per gestire i volumi delle chiamate.  
+Se il tuo paese o area geografica non è elencato nella procedura guidata di portabilità, puoi [inviare manualmente un ordine di trasferimento](phone-number-calling-plans/manually-submit-port-order.md) o passare a [Gestisci numeri di telefono per la tua organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md), selezionare il paese o l'area geografica e quindi scaricare una lettera di autorizzazione (LOA). Dovrai inviare ordini di trasferimento separati per ogni tipo di numero di servizio (ad esempio, a pagamento o numero verde) che dovrai trasferire tramite una LOA. Nella loa è necessario selezionare il tipo di numero di servizio corretto. Assicurati di specificare che stai trasferendo un numero di servizio (e non un numero utente o sottoscrittore) oppure che la capacità di chiamata simultanea potrebbe non essere sufficiente per gestire i volumi delle chiamate.  
 
 > [!NOTE]
-> Se è necessario ottenere più numeri di telefono, contattare il [service desk TNS.](manage-phone-numbers-for-your-organization/contact-tns-service-desk.md)
+> Se è necessario ottenere più numeri di telefono, [contattare il service desk TNS](manage-phone-numbers-for-your-organization/contact-tns-service-desk.md).
 
-## <a name="view-the-phone-numbers-for-your-organization"></a>Visualizzare i numeri di telefono dell'organizzazione
+## <a name="view-the-phone-numbers-for-your-organization"></a>Visualizzare i numeri di telefono per l'organizzazione
 
-Nel riquadro Teams sinistra dell'interfaccia di amministrazione fare clic su Numeri Telefono voce per visualizzare i numeri dell'organizzazione, inclusi la posizione, il tipo di numero e le informazioni  >   sullo stato.
+Nell'interfaccia di amministrazione di Teams, nel riquadro di spostamento sinistro, passare a **Numeri** **di telefono vocale** >  per visualizzare i numeri per l'organizzazione, tra cui posizione, tipo di numero e informazioni sullo stato.
 
-## <a name="assign-service-phone-numbers"></a>Assegnare numeri di telefono del servizio
+## <a name="assign-service-phone-numbers"></a>Assegnare numeri di telefono di servizio
 
-Dopo aver visualizzato i numeri di servizio, assegnare ogni numero a un bridge di audioconferenza. Vedere Modificare i numeri a pedaggio o a numero verde [sul bridge di audioconferenza.](./change-the-phone-numbers-on-your-audio-conferencing-bridge.md)
+Dopo aver ottenuto i numeri di servizio, assegna ogni numero a un bridge di audioconferenza. Vedi [Modificare i numeri verdi o a pagamento nel bridge di audioconferenza](./change-the-phone-numbers-on-your-audio-conferencing-bridge.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

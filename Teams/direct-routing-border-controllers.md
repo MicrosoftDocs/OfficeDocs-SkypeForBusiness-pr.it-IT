@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: Scopri quali Session Border Controller (SBC) sono stati certificati per l'instradamento diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ac539938c21f500b4718a37aa970f1e5d6309202
-ms.sourcegitcommit: 1be178dc3b34575e1914e629f004f897c02e0097
+ms.openlocfilehash: 4c64e5302b68e515d72cddc11a77cb85dea10fe3
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68138509"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68614018"
 ---
 # <a name="session-border-controllers-certified-for-direct-routing"></a>Session Border Controller certificati per l'instradamento diretto
 
@@ -98,10 +98,10 @@ Si noti che non verranno accettate nuove candidature per la certificazione fino 
 |[ULTATEL](https://www.ultatel.com/services/direct-routing-teams-sbc)|Teams SBC|&#10004;|&#10004;|1.6|||
 |[Atos](https://unify.com/en/solutions/voice-platforms/session-border-controller)|Atos Unify OpenScape Session Border Controller|&#10004;|&#10004;|V10R2.2.0|||
 |[Sansay Inc.](https://www.sansay.com/solutions/microsoft-teams/)|vmVSXi|&#10004;|&#10004;|10.5.1.354-vm-S-x64|&#10004;||
-|[Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/cloud-native-session-border-controller-sbc/)|Dialogic BorderNet SBC|&#10004;|&#10004;|3.9.0-786|||
+|[Enghouse Networks](https://www.enghousenetworks.com/portfolio/network-infrastructure/cloud-native-session-border-controller-sbc/)|Dialogic BorderNet SBC|&#10004;|&#10004;|3,9,x|||
 |[Patton Electronics Co.](https://www.patton.com/microsoft/)|Patton SmartNode eSBC|&#10004;||3.19.x|||
 |[M5 Technologies (in precedenza noto come Media5 Corporation)](https://www.m5t.com/solutions/sentinel-sbc-ms-teams-certified/)|Mediatrix Sentinel Series|&#10004;||DGW 48.0.2340 (consigliato DGW 48.1.2503)|||
-|[Ekinops](https://www.ekinops.com/solutions/voice-data-access/microsoft-direct-routing-sbc)|Ekinops Session Border Controller (ONeSBC)|&#10004;|&#10004;|Supportata 6.6.1m5ha1 (scelta consigliata 6.8.x)|||
+|[Ekinops](https://www.ekinops.com/solutions/voice-data-access/microsoft-direct-routing-sbc)|Ekinops Session Border Controller (ONeSBC)|&#10004;|&#10004;|Supportata 6.8.x (scelta consigliata 6.9.x)|||
 ||Ekinops Virtual Session Border Controller (ONEvSBC)|&#10004;|&#10004;|Supportata 6.6.1m5ha1 (scelta consigliata 6.8.x)|||
 |[46 Labs LLC](https://46labs.atlassian.net/wiki/spaces/peeredge/pages/61603842/Microsoft+Teams+Implementation+Guide+v1.0)|Peeredge Orchestrator|&#10004;|&#10004;|1.0.6|||
 |[Frafos](https://www.frafos.com/ms-teams-abc-sbc)|ABC SBC|&#10004;||4.6|||

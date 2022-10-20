@@ -12,6 +12,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
+- highpri
 appliesto:
 - Microsoft Teams
 f1.keywords:
@@ -23,13 +24,13 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.general
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams. Usare tali impostazioni dei criteri per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
-ms.openlocfilehash: 1b5b173253ee457a6d966f9310987168d62a5299
-ms.sourcegitcommit: 0592f9d2696fe8c840a4ed3e7f99e55ca0c9c3e6
+description: Learn to manage meeting policy settings in Teams. Use policy settings to control the features available to meeting participants for meetings scheduled by users.
+ms.openlocfilehash: 374c51a1356ebdc7940185f64a98a334ce7bb66d
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67418495"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68613998"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestione dei criteri riunione in Teams
 
@@ -222,7 +223,7 @@ La modalità per l'audio IP è un criterio per utente. Questa impostazione contr
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
-|**Audio in uscita e in arrivo abilitato**    |Per impostazione predefinita, sia l’audio in entrata che in uscita sono consentiti nella riunione. |
+|**Audio in uscita e in arrivo abilitato**    |L'audio in uscita e in arrivo è consentito nella riunione. Questa è l'impostazione predefinita. |
 |**Disattiva**     |L'audio in uscita e in arrivo è disattivato nella riunione.     |
 
 Se l'opzione è impostata su **Disabilitata** per un utente, tale utente può comunque pianificare e organizzare riunioni ma senza poter usare l'audio. Per partecipare a una riunione, deve connettersi telefonicamente tramite la rete PSTN (Public Switched Telephone Network) o partecipare tramite chiamata telefonica. Per i partecipanti alla riunione che non hanno criteri assegnati (ad esempio, i partecipanti anonimi), questa opzione è impostata su **Audio in uscita e in arrivo abilitato** per impostazione predefinita. Nei client per dispositivi mobili di Teams, se questa impostazione è disabilitata, l'utente deve connettersi telefonicamente alla riunione tramite PSTN.
@@ -331,7 +332,7 @@ Per le riunioni che necessitano di un'esperienza video di qualità ottimale, ad 
 ### <a name="screen-sharing-mode"></a>Modalità condivisione schermo
 
 > [!NOTE]
-> Questa caratteristica è ancora in fase di sviluppo. La condivisione dello schermo è un criterio per partecipante, tuttavia, può essere interessato dalle impostazioni di condivisione dello schermo dell'organizzatore, come descritto in questa sezione.
+> This feature is still in development. Screen sharing is a per-participant policy, however, it can be affected by the organizer's screen sharing settings, as described in this section.
 
 Questa impostazione determina se la condivisione del desktop o della finestra è consentita nella riunione dell'utente. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti esterni, ereditano i criteri dell'organizzatore della riunione.
 
@@ -452,7 +453,7 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 Si tratta di un criterio per organizzatore che consente riunioni di audioconferenza senza un rappresentante dell'organizzazione. Questa impostazione controlla se gli utenti anonimi possono partecipare alla riunione senza la presenza di un utente autenticato dell'organizzazione. Per impostazione predefinita, questa impostazione è disattivata, il che significa che gli utenti anonimi aspetteranno nella sala di attesa finché un utente autenticato dall'organizzazione non accede alla riunione.
 
 > [!NOTE]
-> Se questa impostazione è disattivata e un utente anonimo accede alla riunione e viene inserito nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un client di Teams per consentire l'accesso all'utente dalla sala di attesa. Non sono disponibili controlli della sala di attesa per gli utenti connessi.
+> If this setting is turned off and an anonymous user joins the meeting first and is placed in the lobby, an organization user must join the meeting with a Teams client to admit the user from the lobby. There are no lobby controls available for dialed in users.
 
 ### <a name="automatically-admit-people"></a>Ammetti automaticamente le persone
 
@@ -463,15 +464,15 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
  Gli organizzatori di riunioni possono selezionare **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata.
 
 > [!NOTE]
-> Nelle opzioni della riunione l'impostazione è contrassegnata da "Chi può ignorare la sala di attesa". Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
+> In the meeting options the setting is labeled "Who can bypass the lobby". If you change the default setting for any user, it will apply to all new meetings organized by that user and any prior meetings where the user didn't modify Meeting options.
   
 |Valore dell'impostazione  |Comportamento di partecipazione |
 |---------|---------|
 |**Tutti**   |Tutti i partecipanti accedono direttamente alla riunione senza passare dalla sala di attesa. Sono inclusi gli utenti autenticati, gli utenti con accesso esterno, gli utenti guest e gli utenti anonimi.     |
-|**Utenti dell'organizzazione, organizzazioni attendibili e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti di organizzazioni attendibili, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti anonimi attendono nella sala di attesa.   |
-|**Utenti dell’organizzazione e guest**    |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti di organizzazioni attendibili e gli utenti anonimi attendono nella sala di attesa. Questa è l'impostazione predefinita.           |
+|**Utenti dell'organizzazione, organizzazioni attendibili e guest**     |Authenticated users within the organization, including guest users and the users from trusted organizations, join the meeting directly without waiting in the lobby. Anonymous users wait in the lobby.   |
+|**Utenti dell’organizzazione e guest**    |Authenticated users from within the organization, including guest users, join the meeting directly without waiting in the lobby. Users from trusted organizations and anonymous users wait in the lobby. This is the default setting.           |
 |**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi quelli autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa.           |
-|**Utenti dell’organizzazione**  |Gli utenti autenticati all'interno dell'organizzazione, esclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti guest e gli utenti di organizzazioni attendibili e gli utenti anonimi attendono nella sala di attesa.|
+|**Utenti dell’organizzazione**  |Authenticated users from within the organization, excluding guest users, join the meeting directly without waiting in the lobby. Guests and users from trusted organizations and anonymous users wait in the lobby.|
 
 ### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 
@@ -499,7 +500,7 @@ Questo è un criterio per utente e si applica durante una riunione. Questa impos
 
 ### <a name="allow-chat-in-meetings"></a>Consenti l'uso della chat nelle riunioni 
 
-Questa è un'impostazione per partecipante. Questa impostazione determina se la chat della riunione è consentita nella riunione dell'utente.
+Si tratta di un'impostazione per partecipante. Questa impostazione determina se la chat della riunione è consentita nella riunione dell'utente.
 
 <a name="bkparticipantsandguests"> </a>
 

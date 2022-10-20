@@ -17,14 +17,15 @@ ms.custom:
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
+- highpri
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 499beaae2514942e70f4d633a25ca3e544bdf994
-ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
-ms.translationtype: HT
+ms.openlocfilehash: 52b057119bddd52c37984a9355311843b7b57ce7
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66564154"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68614028"
 ---
 # <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 
@@ -34,7 +35,7 @@ Il componente aggiuntivo Riunione di Teams consente agli utenti di pianificare u
 
 ## <a name="teams-meeting-add-in-in-outlook-for-windows"></a>Componente aggiuntivo Riunione di Teams in Outlook per Windows
 
-Il componente aggiuntivo Riunione di Teams viene installato automaticamente per gli utenti con Microsoft Teams e Office 2013, Office 2016, Office 2019 o Office 2021 installati nel PC Windows. Gli utenti vedranno il componente aggiuntivo Riunione di Teams sulla barra multifunzione del Calendario di Outlook.
+The Teams Meeting add-in is automatically installed for users who have Microsoft Teams and either Office 2013, Office 2016, Office 2019 or Office 2021 installed on their Windows PC. Users will see the Teams Meeting add-in on the Outlook Calendar ribbon.
 
 ![Screenshot del componente aggiuntivo Riunione di Teams sulla barra multifunzione di Outlook.](media/Teams-add-in-for-Outlook.png)
 
@@ -105,7 +106,7 @@ I clienti possono [scegliere il percorso di aggiornamento da Skype for Business 
 
 Quando gli utenti in modalità Isole pianificano una riunione in Outlook, in genere prevedono di decidere se pianificare una riunione di Skype for Business o di Teams. In Outlook sul web, Outlook Windows e Outlook Mac, gli utenti possono vedere i componenti aggiuntivi di Skype for Business e Teams in modalità Isole per impostazione predefinita. È possibile configurare un'impostazione criterio per le riunioni di Teams per controllare se gli utenti in modalità Isole possono usare solo il componente aggiuntivo Riunione di Teams o sia Riunione di Teams che Riunione di Skype for Business.
 
-A causa di alcune limitazioni nel rilascio iniziale, Outlook Mobile supporta solo la creazione di riunioni di Skype for Business **o** di Teams. Per informazioni dettagliate, vedere la tabella seguente.
+Due to certain limitations in the initial release, Outlook mobile can only support creating Skype for Business **or** Teams meetings. See the following table for details.
 
 | Modalità di coesistenza nell’interfaccia di amministrazione di Teams | Provider di riunioni predefinito in Outlook Mobile |
 | --------------------------------------|---------------------------------------------|
