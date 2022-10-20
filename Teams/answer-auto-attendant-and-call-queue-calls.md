@@ -1,8 +1,8 @@
 ---
 title: Rispondere alle chiamate dell'operatore automatico e della coda di chiamata
 ms.reviewer: colongma
-author: CarolynRowe
-ms.author: crowe
+author: DaniEASmith
+ms.author: danismith
 manager: serdars
 audience: ITPro
 ms.date: 09/20/2018
@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fb621661ab8b5b8ace8a965e77513cd72966cf23
-ms.sourcegitcommit: 89904ab4116294ad9e4fd407feba8d7e3eefef10
+ms.openlocfilehash: 1653f1a994da168126c06d10950c7db8e22e37c6
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66880370"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68614199"
 ---
 # <a name="answer-auto-attendant-and-call-queue-calls-directly-from-teams"></a>Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams
 

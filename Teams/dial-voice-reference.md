@@ -1,7 +1,7 @@
 ---
 title: Comando radiale e riferimento per il riconoscimento vocale dell'operatore automatico e della coda di chiamata
-author: CarolynRowe
-ms.author: crowe
+author: DaniEASmith
+ms.author: danismith
 manager: serdars
 ms.reviewer: colongma
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle opzioni operatore automatico e coda di chiamata e riconoscimento vocale in Teams.
-ms.openlocfilehash: 93a20be62f09ed7b636c593ecac48927d70e237f
-ms.sourcegitcommit: 55ba3ed53421da6619724a360d15e80262241079
+ms.openlocfilehash: 3b6b1fd6932491a6f9ad17e109902484461f912f
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67070727"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68613808"
 ---
 # <a name="auto-attendant-and-call-queue-dialing-and-voice-recognition-reference"></a>Comando radiale e riferimento per il riconoscimento vocale dell'operatore automatico e della coda di chiamata
 
@@ -59,7 +59,7 @@ Chiamata per nome esegue prima la ricerca nella directory dell'intera organizzaz
 
 ## <a name="dial-by-name---keypad-dtmf-entry"></a>Chiamata per nome - Immissione con tastiera (DTMF)
 
-Le persone che chiamano possono usare Chiamata per nome per raggiungere gli utenti specificando il nome completo o parziale della persona che stanno cercando di raggiungere. Esistono vari formati che possono essere usati quando si immette il nome.
+Persone chiamante può utilizzare Chiamata per nome per raggiungere gli utenti specificando il nome completo o parziale della persona che stanno cercando di raggiungere. Esistono vari formati che possono essere usati quando si immette il nome.
 
 Durante la ricerca nell'elenco dell'organizzazione, le persone possono usare il tasto '0' (zero) per indicare uno spazio tra il nome e cognome o viceversa. Quando immettono il nome, gli verrà chiesto di terminare l'immissione sul tastierino numerico con il tasto #. Ad esempio: "Dopo aver immesso il nome della persona che state cercando di raggiungere, premete #". Se vengono trovati più nomi, al chiamante verrà dato un elenco di nomi tra cui scegliere.
 
@@ -88,7 +88,7 @@ Ci sono diversi caratteri speciali che vengono utilizzati per la ricerca di pers
 
 ### <a name="dial-by-name---name-recognition-with-speech"></a>Chiamata per nome - Riconoscimento vocale del nome
 
-Le persone possono cercare altre persone nella propria organizzazione con la propria voce (riconoscimento vocale). Possono anche raggiungere chiunque in Active Directory pronunciando il nome completo o parziale della persona che stanno cercando. L'uso degli input vocali riconosce i nomi in vari formati, tra cui Nome, Cognome, Nome + Cognome o Cognome + Nome.
+Persone possibile cercare altri utenti dell'organizzazione con la voce (riconoscimento vocale). Possono anche raggiungere chiunque in Active Directory pronunciando il nome completo o parziale della persona che stanno cercando. L'uso degli input vocali riconosce i nomi in vari formati, tra cui Nome, Cognome, Nome + Cognome o Cognome + Nome.
   
 Puoi abilitare il riconoscimento vocale per un operatore automatico, ma l'immissione da tastiera del telefono (DTMF) non è disabilitata. L'immissione della tastiera del telefono può essere usata in qualsiasi momento, anche se il riconoscimento vocale è abilitato nell'operatore automatico.
   

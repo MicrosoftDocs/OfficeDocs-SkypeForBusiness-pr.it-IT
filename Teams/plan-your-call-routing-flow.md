@@ -1,7 +1,7 @@
 ---
 title: Pianificare il flusso di instradamento delle chiamate per Microsoft Teams
-author: CarolynRowe
-ms.author: crowe
+author: DaniEASmith
+ms.author: danismith
 manager: serdars
 ms.reviewer: colongma
 ms.topic: article
@@ -19,12 +19,12 @@ ms.localizationpriority: medium
 ms.custom:
 - Phone System
 description: Informazioni su come pianificare il flusso del routing delle chiamate per gli operatori automatici e le code di chiamata in Microsoft Teams.
-ms.openlocfilehash: c883d6e104d73bf4082f69128af141f489d7cf89
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 876198578bfc0387f00890d393a90ed73bc215c5
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270531"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68614459"
 ---
 # <a name="plan-your-call-routing-flow"></a>Pianificare il flusso di instradamento delle chiamate
 

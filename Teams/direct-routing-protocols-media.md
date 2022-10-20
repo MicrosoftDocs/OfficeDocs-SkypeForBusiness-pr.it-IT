@@ -16,12 +16,12 @@ f1.keywords:
 description: hHw Direct Routing supporta il bypass multimediale con un session border controller abilitato per ICE Lite.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 59ea283069c6fc37590d6329aeac46e40484f8ca
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: e6f9715ee410116a66c572522a910cd16ef27154
+ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67267761"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68614419"
 ---
 # <a name="overview"></a>Panoramica
 
@@ -55,7 +55,7 @@ Questa sezione illustra brevemente i requisiti per ICE Lite.
 
 ### <a name="candidate-gathering"></a>Raccolta dei candidati
 
-L'SBC deve offrire un solo candidato raggiungibile pubblicamente. Attualmente sono supportati solo i candidati IPV4.
+L'SBC deve offrire un solo candidato. Attualmente sono supportati solo i candidati IPV4.
 
 
 #### <a name="connectivity-checks"></a>Controlli di connettività
