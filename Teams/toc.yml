@@ -719,8 +719,6 @@ items:
             items:
               - name: Configurare l’audioconferenza
                 href: set-up-audio-conferencing-in-teams.md
-              - name: Guida introduttiva per configurare un'audioconferenza per le piccole e medie imprese
-                href: audio-conferencing-smb.md
           - name: Gestire
             items:
               - name: Gestire il servizio di audioconferenza
@@ -901,11 +899,11 @@ items:
                 href: operator-connect-plan.md
               - name: Configurare la connessione con operatore
                 href: operator-connect-configure.md
-          - name: Connessione con operatore di telefonia mobile
+          - name: Teams Phone Mobile
             items:
-              - name: Pianificare Connessione con operatore di telefonia mobile
+              - name: Pianificare Teams Phone Mobile
                 href: operator-connect-mobile-plan.md
-              - name: Configurare Connessione con operatore di telefonia mobile
+              - name: Configurare Teams Phone Mobile
                 href: operator-connect-mobile-configure.md
           - name: Instradamento diretto
             items:
@@ -1017,7 +1015,7 @@ items:
                 href: phone-number-calling-plans/supported-rate-centers-coverage-matrix.md
           - name: Gestire i numeri di telefono di Connessione con operatore
             href: operator-connect-configure.md#set-up-phone-numbers
-          - name: Gestire i numeri di telefono per Connessione con operatore di telefonia mobile
+          - name: Gestire i numeri di telefono per Teams Phone Mobile
             href: operator-connect-mobile-configure.md#set-up-phone-numbers
           - name: Gestire i numeri di telefono per l'instradamento diretto
             href: direct-routing-enable-users.md#configure-the-phone-number-and-enable-enterprise-voice
@@ -1381,8 +1379,10 @@ items:
                 href: rooms/rooms-prep.md
               - name: Requisiti
                 href: rooms/requirements.md
-              - name: Sicurezza
-                href: rooms/security.md
+              - name: Sicurezza di Windows
+                href: rooms/security-windows.md
+              - name: Sicurezza androide
+                href: rooms/security-android.md
               - name: Gestione dei piani con Monitoraggio di Azure
                 href: rooms/azure-monitor-plan.md
           - name: Distribuzione
@@ -1431,7 +1431,7 @@ items:
                 href: rooms/xml-config-file.md
               - name: Uso dello strumento di ripristino
                 href: rooms/recovery-tool.md
-      - name: Microsoft Teams Rooms Pro Management
+      - name: Gestione Microsoft Teams Rooms Pro
         items:
           - name: Panoramica
             href: rooms/microsoft-teams-rooms-premium.md
@@ -1585,7 +1585,7 @@ items:
         items:
           - name: Gestire le app personalizzate e trasferite localmente
             href: custom-app-overview.md
-          - name: Gestire i criteri e le impostazioni delle app personalizzate
+          - name: Gestire criteri e impostazioni per le app personalizzate
             href: teams-custom-app-policies-and-settings.md
           - name: Pubblicare app personalizzate inviate tramite API
             href: submit-approve-custom-apps.md
@@ -1615,7 +1615,7 @@ items:
             href: app-permissions.md
           - name: Personalizzare l'App Store dell'organizzazione
             href: customize-your-app-store.md
-          - name: Usare le app come utenti esterni o guest
+          - name: Usare le app come utente esterno o guest
             href: non-standard-users.md
           - name: Gestire le richieste degli utenti
             href: user-requests-approve-apps.md
@@ -2057,6 +2057,8 @@ items:
             href: country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-vietnam.md
       - name: Accessibilità e conformità
         items:
+          - name: Linee guida per l'accessibilità per Teams
+            href: accessibility-guide-admin.md
           - name: Dichiarazione di conformità all'accessibilità in Francia per Microsoft Teams
             href: accessibility-declaration-of-conformance-in-france-for-teams.md
           - name: Soluzioni di accessibilità per Skype for Business Online e Microsoft Teams
@@ -2065,6 +2067,10 @@ items:
             href: code-of-practice-for-the-united-kingdom-u-k.md
           - name: Piani di chiamata in Microsoft 365 - Gestione dei reclami del codice per il Regno Unito
             href: complaint-handling-code-for-the-united-kingdom-u-k.md
+          - name: IP Relay in Canada - registrazione
+            href: ip-relay-canada-email-signup.md
+          - name: IP Relay in Canada - guida utente
+            href: ip-relay-canada-user-guide.md
           - name: Condizioni per le chiamate di emergenza
             href: emergency-calling-terms-and-conditions.md
       - name: Errori dei canali condivisi
