@@ -13,12 +13,12 @@ ms.collection:
 - M365-collaboration
 - m365-frontline
 - highpri
-ms.openlocfilehash: f2cf8ee32e3c03811833ea5d5d4dc93ac6d51ead
-ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
+ms.openlocfilehash: 5771aaa9122ddc79d4555c74d509d2c4a77f57fb
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68046716"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68655872"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimento nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -44,7 +44,7 @@ Se si imposta Stato su Bloccato, l'app Complimento viene bloccata entro pochi mi
 
 ## <a name="enable-or-disable-praise-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Complimento per utenti specifici dell'organizzazione
 
-Per consentire o bloccare l'uso di Complimenti da parte di utenti specifici dell'organizzazione, verificare che l'opzione Complimento sia attivata per l'organizzazione nella pagina [Gestisci app](manage-apps.md) . Creare quindi un criterio di autorizzazione per le app personalizzato e assegnarlo a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
+Per consentire o bloccare l'uso di Complimenti da parte di utenti specifici dell'organizzazione, verificare che l'opzione Complimento sia attivata per l'organizzazione nella pagina [Gestisci app](manage-apps.md) . Creare quindi un criterio personalizzato per le autorizzazioni per le app e assegnarlo a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
 
 ## <a name="badges"></a>Distintivi
 

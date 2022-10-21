@@ -18,12 +18,12 @@ f1.keywords:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso alle app personalizzate create con Microsoft Power Platform nell'interfaccia di amministrazione di Teams.
-ms.openlocfilehash: 93801bb30d0445d13de25976ab23668fde251466
-ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.openlocfilehash: 3a81d1db3de7cf4fa82b80526ffdb206bfbe8da6
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68377204"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68656032"
 ---
 # <a name="manage-microsoft-power-platform-apps-in-the-teams-admin-center"></a>Gestire le app di Microsoft Power Platform nell'interfaccia di amministrazione di Teams
 
@@ -79,9 +79,9 @@ Per impostazione predefinita, **Shared Power Apps** e **Shared Power Virtual Age
 
 Per consentire o impedire a utenti specifici dell'organizzazione di accedere alle app create in Power Apps o Power Virtual Agents, creare e assegnare uno o più [criteri di autorizzazione app](teams-app-permission-policies.md) personalizzati.
 
-Ad esempio, per impedire a utenti specifici di accedere alle app create in Power Apps, creare un criterio di autorizzazione delle app personalizzato per bloccare **Shared Power Apps**, quindi assegnarlo a tali utenti.
+Ad esempio, per impedire a utenti specifici di accedere alle app create in Power Apps, creare un criterio personalizzato per le autorizzazioni delle app per bloccare le **app con alimentazione condivisa** e quindi assegnare il criterio a tali utenti.
 
-:::image type="content" source="media/manage-power-platform-apps-app-permission-policy.png" alt-text="Screenshot di un esempio di criteri di autorizzazione delle app personalizzati con Shared Power Apps bloccato.":::
+:::image type="content" source="media/manage-power-platform-apps-app-permission-policy.png" alt-text="Screenshot dei criteri personalizzati di esempio per le autorizzazioni delle app con Le app di alimentazione condivise sono bloccate.":::
 
 ### <a name="use-audit-logs-to-investigate-microsoft-power-platform-installation-activity"></a>Utilizzare i registri di audit per indagare sull'attività di installazione di Microsoft Power Platform
 

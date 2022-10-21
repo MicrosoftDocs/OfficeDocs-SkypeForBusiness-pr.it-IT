@@ -20,12 +20,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0475fd161d3b53a8fc60d3a1419d20e3de2bfada
-ms.sourcegitcommit: bb428cd5805151736f0a6786d737f67f2b3fc918
+ms.openlocfilehash: c575e3eb41654a579ec09c67975490db3dce194d
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68557479"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68655832"
 ---
 # <a name="walkie-talkie-app-in-microsoft-teams"></a>App Walkie-talkie in Microsoft Teams
 
@@ -56,7 +56,7 @@ Walkie-talkie è abilitato per impostazione predefinita per tutti gli utenti di 
 
 ### <a name="enable-or-disable-walkie-talkie-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Walkie-talkie per utenti specifici dell'organizzazione
 
-Per consentire o bloccare l'uso di Walkie-talkie da parte di utenti specifici dell'organizzazione, assicurarsi che Walkie-talkie sia attivato per l'organizzazione nella pagina [Gestisci app](manage-apps.md) . Creare quindi criteri di autorizzazione per le app personalizzati, aggiungerli a un criterio di configurazione dell'app e assegnarli a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md) e [Gestire i criteri di configurazione delle app in Microsoft Teams](teams-app-setup-policies.md).
+Per consentire o bloccare l'uso di Walkie-talkie da parte di utenti specifici dell'organizzazione, assicurarsi che Walkie-talkie sia attivato per l'organizzazione nella pagina [Gestisci app](manage-apps.md) . Creare quindi un criterio personalizzato per le autorizzazioni delle app, aggiungerlo a un criterio di configurazione dell'app e assegnarlo a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md) e [Gestire i criteri di configurazione delle app in Microsoft Teams](teams-app-setup-policies.md).
 
 ### <a name="pin-walkie-talkie-to-teams"></a>Aggiungere Walkie-talkie a Teams
 
@@ -72,7 +72,7 @@ Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri d
 
 I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere app più importanti per gli utenti degli utenti.
 
-Per aggiungere l'app Walkie-talkie per gli utenti, è possibile modificare il criterio globale (impostazione predefinita a livello di organizzazione) o creare e assegnare criteri di configurazione delle app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
+Per aggiungere l'app Walkie-talkie per gli utenti, è possibile modificare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati nei criteri di configurazione delle app. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
 :::image type="content" source="media/deploy-walkie-talkie-2.png" alt-text="Screenshot che mostra l'aggiunta di Walkie-talkie all'elenco di app aggiunte nel riquadro Aggiungi app aggiunte." lightbox="media/deploy-walkie-talkie-2.png":::
 

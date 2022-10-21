@@ -20,12 +20,12 @@ ms.collection:
 - highpri
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4812626477d2f77ddd3c6913577aa7792293a993
-ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
+ms.openlocfilehash: 866025dad342f5abfb5b0722391dc754b3f00dd5
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68046636"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68655842"
 ---
 # <a name="manage-the-approvals-app-in-microsoft-teams"></a>Gestire l'app Approvazioni in Microsoft Teams
 
@@ -138,7 +138,7 @@ Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri d
 
 I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere app più importanti per gli utenti degli utenti.
 
-Per aggiungere l'app Approvazioni per gli utenti, è possibile modificare il criterio globale (impostazione predefinita a livello di organizzazione) o creare e assegnare criteri di configurazione dell'app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
+Per aggiungere l'app Approvazioni per gli utenti, è possibile modificare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati nei criteri di configurazione delle app. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
 ## <a name="retention-policy"></a>Criteri di conservazione
 

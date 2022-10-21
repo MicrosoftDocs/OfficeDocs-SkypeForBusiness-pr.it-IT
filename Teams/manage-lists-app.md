@@ -26,12 +26,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 9ea4e8cb49166c116d69c12d795659b55c93c556
-ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
+ms.openlocfilehash: ce10e758352396dd1ac8e6334e54c4e298df9a0f
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68047046"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68655852"
 ---
 # <a name="manage-the-lists-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Elenchi per l'organizzazione in Microsoft Teams
 
@@ -105,7 +105,7 @@ Elenchi è abilitata per impostazione predefinita per tutti gli utenti di Teams 
 
 ### <a name="enable-or-disable-lists-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Elenchi per utenti specifici nell'organizzazione
 
-Per consentire o bloccare l'uso di Elenchi a utenti specifici dell'organizzazione, assicurarsi che Elenchi sia attivata per l'organizzazione nella pagina [Gestisci app](manage-apps.md) e quindi creare criteri di autorizzazione per le app personalizzati da assegnare a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md).
+Per consentire o bloccare l'uso di elenchi da parte di utenti specifici dell'organizzazione, verificare che l'opzione Elenchi sia attivata per l'organizzazione nella pagina [Gestisci app](manage-apps.md) , quindi creare un criterio personalizzato per le autorizzazioni per le app e assegnarlo a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
 
 ## <a name="search-the-audit-log-for-list-events"></a>Cercare nel log di audit gli eventi degli elenchi
 

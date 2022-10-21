@@ -21,12 +21,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 3dc11a1a7bb841891906755a74d07585a55ec912
-ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
+ms.openlocfilehash: b51ba430a68e4b8979973ec5051036df39280e22
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68047056"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68656142"
 ---
 # <a name="manage-the-updates-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Aggiornamenti per l'organizzazione in Microsoft Teams
 
@@ -125,7 +125,7 @@ L'app Aggiornamenti è disponibile per impostazione predefinita. È possibile di
 
 I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere app più importanti per gli utenti degli utenti. Le app vengono aggiunte alla barra dell'app, ovvero la barra sul lato del client desktop di Teams e nella parte inferiore dei client mobili di Teams, dove gli utenti possono accedervi rapidamente e facilmente.
 
-Per aggiungere l'app Aggiornamenti per gli utenti, è possibile modificare il criterio globale (impostazione predefinita a livello di organizzazione) o creare e assegnare criteri di configurazione delle app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
+Per aggiungere l'app Aggiornamenti per gli utenti, è possibile modificare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati nei criteri di configurazione delle app. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
 ## <a name="retention-policy"></a>Criteri di conservazione
 

@@ -18,12 +18,12 @@ f1.keywords:
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 75548acc44d1f360e13dd5946e6e39726c744bb6
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 9c8d28a3f985a38e174030ddbe0e6d43e2153738
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270681"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68656072"
 ---
 # <a name="microsoft-teams-appsline-of-business-lob-app-support-on-teams-panels"></a>Supporto delle app Microsoft Teams/Line of Business (LOB) nei pannelli di Teams
 
@@ -58,7 +58,7 @@ Dopo aver configurato le app, è possibile usare i [criteri di autorizzazione de
 
 ## <a name="pin-apps-on-teams-panels-with-app-setup-policies"></a>Aggiungere app ai pannelli di Teams con criteri di configurazione delle app
 
-Poiché Teams offre la possibilità di visualizzare un'ampia gamma di app, gli amministratori possono decidere quali app sono più essenziali per l'organizzazione e aggiungerle solo per la schermata **iniziale** dei pannelli di Teams per un accesso rapido. Se sono presenti più di cinque app aggiunte o quelle rimosse, verranno visualizzate sotto la schermata **Altro** . Microsoft consiglia di creare criteri di configurazione delle app personalizzati specifici per i pannelli di Teams.
+Poiché Teams offre la possibilità di visualizzare un'ampia gamma di app, gli amministratori possono decidere quali app sono più essenziali per l'organizzazione e aggiungerle solo per la schermata **iniziale** dei pannelli di Teams per un accesso rapido. Se sono presenti più di cinque app aggiunte o quelle rimosse, verranno visualizzate sotto la schermata **Altro** . Microsoft consiglia di creare criteri personalizzati nei criteri di configurazione delle app specifici per i pannelli di Teams.
 
 ![Screenshot dell'interfaccia utente della pagina dei criteri di configurazione dell'app.](media/appsetup1.png)
 
@@ -114,7 +114,7 @@ Se le app sono state installate in precedenza tramite altri criteri dell'app o m
 
 ### <a name="why-cant-i-find-an-app-in-the-add-pinned-apps-pane"></a>Perché non riesco a trovare un'app nel riquadro "Aggiungi app aggiunte"?
 
-Non tutte le app possono essere aggiunte a Teams tramite un criterio di configurazione delle app. Alcune app potrebbero non supportare questa funzionalità. Per trovare le app che possono essere aggiunte, cerca l'app nel riquadro **Aggiungi app aggiunte** . Per altre informazioni, fai riferimento alle [domande frequenti in Uso dei criteri di configurazione delle app](/microsoftteams/teams-app-setup-policies#why-cant-i-find-an-app-in-the-add-pinned-apps-pane).
+Non tutte le app possono essere appuntate su Teams tramite un criterio di impostazione delle app. Alcune applicazioni potrebbero non supportare questa funzionalità. Per trovare le app che possono essere aggiunte, cercare l'app nel riquadro **Aggiungi app aggiunte**. Per altre informazioni, fai riferimento alle [domande frequenti in Uso dei criteri di configurazione delle app](/microsoftteams/teams-app-setup-policies#why-cant-i-find-an-app-in-the-add-pinned-apps-pane).
 
 ### <a name="why-am-i-seeing-an-user-pinning-pop-up-in-the-setup-policies-panel-after-i-turn-off-user-pinning"></a>Perché viene visualizzato un popup "Blocco utente" nel riquadro criteri di configurazione dopo la disattivazione di "Aggiunta utente"
 

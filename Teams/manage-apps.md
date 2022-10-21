@@ -21,12 +21,12 @@ description: Informazioni su come gestire le app di Teams. Informazioni su come 
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 3d49d3e44e848b1d51388b148416fb897c335758
-ms.sourcegitcommit: d6e180791134426445a35fd485dcca18bde2006b
+ms.openlocfilehash: dc7dbf1a4866fa85551d6ec46f7ea54c164ba655
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68494669"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68656052"
 ---
 # <a name="overview-of-app-management-and-governance-in-teams-admin-center"></a>Panoramica della gestione e della governance delle app nell'interfaccia di amministrazione di Teams
 
@@ -40,8 +40,6 @@ Per usare l'interfaccia di amministrazione di Teams, è necessario avere un ruol
 
 > [!NOTE]
 > La pagina Gestisci app non è disponibile nelle distribuzioni Microsoft 365 Government Community Cloud High (GCCH) o DoD (Department of Defense) di Teams.
-
-Durante la creazione di un'app, gli sviluppatori creano e aggiungono un ID app al file manifesto. È possibile visualizzare questo ID dell'app esterna nella pagina Gestisci app dopo aver abilitato la colonna `External app ID` dalle impostazioni della colonna. È anche possibile visualizzarlo nella pagina dei dettagli dell'app di un'app personalizzata. L'ID è applicabile solo per le app personalizzate.
 
 ## <a name="app-management-use-cases-and-the-available-interfaces"></a>Casi d'uso per la gestione delle app e le interfacce disponibili
 

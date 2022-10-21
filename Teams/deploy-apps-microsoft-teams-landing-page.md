@@ -21,12 +21,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020; intro-overview; intro-hub-or-landing
-ms.openlocfilehash: adabe9321307bb9696636ae7ab882775705dcd27
-ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.openlocfilehash: 48c372afe2c7881a2af5c24e36915d510f9ff291
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68376994"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68655902"
 ---
 # <a name="understand-microsoft-teams-apps"></a>Informazioni sulle app di Microsoft Teams
 
@@ -89,9 +89,9 @@ Per altre informazioni, vedere [Modelli di app di Microsoft Teams](https://adopt
 
 ## <a name="understand-app-capabilities"></a>Informazioni sulle funzionalità delle app
 
-Per fornire esperienze avanzate che consentano agli utenti finali di lavorare all'interno di Teams, gli sviluppatori di app utilizzano le seguenti funzionalità. Le estensioni di messaggistica consentono agli utenti di interagire con il client Teams del servizio Web. Gli utenti cercano o avviano azioni in un sistema esterno. È possibile inviare il risultato dell'interazione al client di Teams come scheda con formattazione avanzata. Le app per l'estensibilità delle riunioni integrano le app di uno sviluppatore all'interno delle riunioni e offrono un'esperienza reattiva durante le riunioni.
+Per fornire esperienze avanzate che consentano agli utenti finali di lavorare all'interno di Teams, gli sviluppatori di app utilizzano le seguenti funzionalità. Le estensioni di messaggistica consentono agli utenti di interagire con il client Teams del servizio Web. Gli utenti cercano o avviano azioni in un sistema esterno. È possibile inviare il risultato dell'interazione al client di Teams come scheda ricca di formattazione. Le app per l'estensibilità delle riunioni integrano le app di uno sviluppatore all'interno delle riunioni e offrono un'esperienza reattiva durante le riunioni.
 
-I bot sono anche chiamati chatbot o bot conversazionali. Si tratta di un'app che esegue attività semplici e ripetitive. L'interazione con un bot può essere una domanda e una risposta rapide oppure una conversazione complessa che fornisce accesso a servizi o assistenza. Gli utenti possono chattare con in modo individuale o in un canale. Ad esempio, è possibile usare l'app Polly per creare sondaggi rapidi, ottenere feedback e controllare l'impulso.
+I bot sono anche chiamati chatbot o bot conversazionali. Si tratta di un'app che esegue attività semplici e ripetitive. L'interazione con un bot può essere una domanda e una risposta rapide oppure una conversazione complessa che fornisce accesso a servizi o assistenza. Gli utenti possono chattare con un bot uno-a-uno o in un canale. Ad esempio, è possibile usare l'app Polly per creare sondaggi rapidi, ottenere feedback e controllare l'impulso.
 
 Le schede sono pagine Web con compatibili con Teams aggiunte nella parte superiore di un canale o di una chat. Le schede consentono di interagire con contenuti e servizi con un'esperienza simile al Web. È possibile aggiungere schede come parte di un canale all'interno di un team, una chat di gruppo o un'app personale per un singolo utente.
 

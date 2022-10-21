@@ -20,12 +20,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: dc84bc7be43182194af3a072edb875a6a257a9d5
-ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.openlocfilehash: c741bb8a1b6ab7e27ec064dc0f22226f69bc6e10
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68377334"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68655892"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -126,7 +126,7 @@ I criteri di configurazione delle app vengono gestiti nell'interfaccia di ammini
 
 1. Selezionare **Salva**.
 
-### <a name="assign-a-custom-app-setup-policy-to-users-and-groups"></a>Assegnare un criterio di configurazione dell'app personalizzata a utenti e gruppi
+### <a name="assign-a-custom-policy-in-app-setup-policy-to-users-and-groups"></a>Assegnare criteri personalizzati nei criteri di configurazione delle app a utenti e gruppi
 
 Per sapere come assegnare criteri agli utenti finali e ai gruppi, vedere [come assegnare criteri a utenti e gruppi](assign-policies-users-and-groups.md).
 
@@ -151,7 +151,7 @@ Tenere presente che l'App Store di Teams elenca tutte le app di Teams. Il riquad
 
 #### <a name="im-a-teams-for-education-admin-what-do-i-need-to-know-about-app-setup-policies-in-teams-for-education"></a>Sono un amministratore di Teams for Education. Cosa devo sapere sui criteri di configurazione delle app in Teams for Education?
 
-L'app Chiamata non è disponibile in Teams for Education. Quando si crea un nuovo criterio di impostazione dell'app personalizzata, l'app Chiamata viene visualizzata nell'elenco delle app. Tuttavia, l'app non è inserita nei client di Teams e gli utenti di Teams for Education non vedranno l'app Calls in Teams.
+L'app Chiamata non è disponibile in Teams for Education. Quando crei un nuovo criterio personalizzato nei criteri di configurazione delle app, l'app Chiamate viene visualizzata nell'elenco delle app. Tuttavia, l'app non è inserita nei client di Teams e gli utenti di Teams for Education non vedranno l'app Calls in Teams.
 
 ### <a name="user-experience"></a>Esperienza utente
 

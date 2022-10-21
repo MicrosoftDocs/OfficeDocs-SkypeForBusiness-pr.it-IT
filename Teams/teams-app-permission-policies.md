@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 24c4b85bb1c4b97597bad6a38e6a67c35dc1abb0
-ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.openlocfilehash: 5797486fb0993aa8630a8dedde131ad7751e7e5f
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68377044"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68656022"
 ---
 # <a name="manage-access-to-teams-apps-using-app-permission-policies"></a>Gestire l'accesso alle app Teams usando i criteri di autorizzazione per le app
 
@@ -81,7 +81,7 @@ Usare uno o più criteri di autorizzazione app personalizzati, se si vogliono co
 1. Apporta le modifiche per consentire o bloccare app specifiche in ognuna delle tre categorie.
 1. Selezionare **Salva**.
 
-## <a name="assign-a-custom-app-permission-policy-to-users"></a>Assegnare un criterio di autorizzazione app agli utenti
+## <a name="assign-a-custom-policy-for-app-permissions-to-users"></a>Assegnare criteri personalizzati per le autorizzazioni delle app agli utenti
 
 I criteri di autorizzazione per le app vengono applicati solo quando si applicano criteri a un utente o a un gruppo di utenti. Vedere i diversi modi per [assegnare i criteri agli utenti](policy-assignment-overview.md#ways-to-assign-policies).
 

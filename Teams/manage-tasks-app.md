@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 - m365-frontline
 - highpri
-ms.openlocfilehash: 74b67a71f8b93f5f0ed898ef186beede056ec31a
-ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
+ms.openlocfilehash: c64e2b9e2d77724d4972449390c59b7655ab1ff0
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68047116"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68656038"
 ---
 # <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Tasks per l'organizzazione in Microsoft Teams
 
@@ -72,7 +72,7 @@ Tasks è abilitato per impostazione predefinita per tutti gli utenti di Teams ne
 
 ### <a name="enable-or-disable-tasks-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Tasks per utenti specifici nell'organizzazione
 
-Per consentire o bloccare l'uso di Tasks a utenti specifici dell'organizzazione, verificare che sia stato attivato per l'organizzazione nella pagina [Gestisci app](manage-apps.md) e quindi creare criteri di autorizzazione per le app personalizzati da assegnare a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
+Per consentire o bloccare l'uso di Attività da parte di utenti specifici dell'organizzazione, verificare che Attività sia attivato per l'organizzazione nella pagina [Gestisci app](manage-apps.md) , quindi creare un criterio personalizzato per le autorizzazioni per le app e assegnarlo a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
 
 ### <a name="pin-tasks-to-teams"></a>Aggiungere attività a Teams
 
@@ -88,7 +88,7 @@ Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri d
 
 I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere app più importanti per gli utenti degli utenti.
 
-Per aggiungere l'app Tasks agli utenti, è possibile modificare i criteri globali (impostazione predefinita a livello di organizzazione) oppure creare e assegnare criteri di configurazione dell'app personalizzati. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
+Per aggiungere l'app Attività per gli utenti, è possibile modificare il criterio globale (impostazione predefinita a livello di organizzazione) o creare e assegnare criteri personalizzati nei criteri di configurazione delle app. Per altre informazioni, vedere [Gestire i criteri di configurazione delle app in teams](teams-app-setup-policies.md).
 
 ### <a name="a-users-my-tasks-is-visible-if-the-user-is-licensed-for-exchange-online"></a>Le Mie attività di un utente sono visibili se l’utente ha una licenza Exchange Online
 

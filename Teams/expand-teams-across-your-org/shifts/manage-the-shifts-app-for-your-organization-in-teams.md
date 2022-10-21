@@ -25,12 +25,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dd9bd57f815079fd80a58b739b927b900305725b
-ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
+ms.openlocfilehash: 358a0078eed6f693922b3aaedb3eea38a8bb7f82
+ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68046626"
+ms.lasthandoff: 10/20/2022
+ms.locfileid: "68655862"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Turni per l'organizzazione in Microsoft Teams
 
@@ -70,7 +70,7 @@ Turni è abilitato per impostazione predefinita per tutti gli utenti di Teams ne
 
 ### <a name="enable-or-disable-shifts-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Turni per utenti specifici nell'organizzazione
 
-Per consentire o bloccare l'uso di Turni da parte di utenti specifici dell'organizzazione, verificare che Turni sia attivato per l'organizzazione nella pagina [Gestisci app](../../manage-apps.md) . Creare quindi un criterio di autorizzazione per le app personalizzato e assegnarlo a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](../../teams-app-permission-policies.md).
+Per consentire o bloccare l'uso di Turni da parte di utenti specifici dell'organizzazione, verificare che Turni sia attivato per l'organizzazione nella pagina [Gestisci app](../../manage-apps.md) . Creare quindi un criterio personalizzato per le autorizzazioni per le app e assegnarlo a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](../../teams-app-permission-policies.md).
 
 ### <a name="pin-shifts-to-teams"></a>Aggiungere turni a Teams
 
@@ -86,7 +86,7 @@ Per altre informazioni, incluso il funzionamento dell'esperienza con i criteri d
 
 I criteri di configurazione delle app consentono di personalizzare Teams per aggiungere le app più importanti per gli utenti.
 
-È possibile creare criteri di [configurazione delle app personalizzati](../../teams-app-setup-policies.md) aggiungendo l'app Turni e quindi [assegnandoli](../../assign-policies-users-and-groups.md) agli utenti. In alternativa, è possibile usare i criteri di configurazione dell'app che fanno parte dei pacchetti dei criteri Frontline Worker e Frontline Manager.
+È possibile creare criteri [personalizzati nei criteri di configurazione delle app](../../teams-app-setup-policies.md) aggiungendo l'app Turni e quindi [assegnandoli](../../assign-policies-users-and-groups.md) agli utenti. In alternativa, è possibile usare i criteri di configurazione dell'app che fanno parte dei pacchetti dei criteri Frontline Worker e Frontline Manager.
 
 Un [pacchetto di criteri](../../manage-policy-packages.md) in Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli simili nell'organizzazione. Il set di criteri nei pacchetti di criteri Frontline Worker e Frontline Manager include un criterio di configurazione dell'app che blocca l'app Turni e altre app che supportano le attività di comunicazione e collaborazione per quel ruolo.
 
