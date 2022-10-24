@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Scopri come Microsoft Direct Routing consente di connettere un controller SBC (Session Border Controller) supportato dal cliente al sistema telefonico.
-ms.openlocfilehash: d49e16ce4a61caf167574ab00189dbdfde1f1d61
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: de829008a45e8f4c1095138ddc1b1dcc32cdb3eb
+ms.sourcegitcommit: c627bd1df17aefdc353bc4da6db169dfe169031e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68584037"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68680519"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -313,7 +313,6 @@ Il traffico multimediale passa attraverso componenti denominati processori multi
 - Giappone (data center JP Est e West)
 - Australia (data center AU est e sudest)
 - America Latina (Brasile Sud)
-- Africa (Sudafrica nord)
 
 ## <a name="media-traffic-codecs"></a>Traffico multimediale: codec
 
