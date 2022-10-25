@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Scopri quali periferiche e dispositivi USB (ad esempio cuffie, altoparlanti, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: f00c0a81374f9c084d8fb7e6839d9f6742ec5192
-ms.sourcegitcommit: 44b5088647afa9a93b0ced575d10ee15b57aac0e
+ms.openlocfilehash: ec1fd0583da04c3e93912843526d32803428c40e
+ms.sourcegitcommit: e8c7a5ddc3399492485680e9a6f2593658cecca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "67891706"
+ms.lasthandoff: 10/24/2022
+ms.locfileid: "68686064"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -81,13 +81,15 @@ Se sei un produttore e vuoi partecipare al programma di certificazione, vedi [Co
 
 ## <a name="certified-devices"></a>Dispositivi certificati
 
-*Tabella aggiornata a settembre 2022*
+*Tabella aggiornata a ottobre 2022*
 
 > [!NOTE]
 > Il formato della data è MMDDYYYY.
 
 | Produttore        | Modello                                                     | Qualificato      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Cisco                |Fotocamera da tavolo 4K                                             |10/15/2022      |Certificato per Microsoft Teams                           |
+|EPOS                 |ESPANDI Vision 1/S6                                         |10/13/2022      |Certificato per Microsoft Teams                           |
 |Lenovo               |Go USB-C ANC In-Ear Headphones                             |9/20/2022       |Certificato per Microsoft Teams                           |
 |Logi                 |Fotocamere Brio 500/505                                       |9/14/2022       |Certificato per Microsoft Teams                           |
 |Jabra                |Engage 50 II                                               |7/29/2022       |Certificato per Microsoft Teams                           |
