@@ -18,18 +18,18 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso alle app di Teams in Microsoft 365.
-ms.openlocfilehash: ae11a72324bb4382012c751150a254773c9145b7
-ms.sourcegitcommit: c627bd1df17aefdc353bc4da6db169dfe169031e
+ms.openlocfilehash: 01aee1ebd59b52f05db36303d60358b86b95cf84
+ms.sourcegitcommit: c2d8c7f779f4f938f8355632ecfbfc9147b53bb2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68680557"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68738802"
 ---
 # <a name="manage-access-to-teams-apps-across-microsoft-365"></a>Gestire gli accessi alle app di Teams in Microsoft 365
 
 Gli sviluppatori di app possono migliorare le app di Microsoft Teams per lavorare in Outlook e in Office.com, oltre all'app che lavora in Teams. Gli utenti finali possono usare le app avanzate in Teams, in Microsoft Outlook e Microsoft Office.com dopo il miglioramento. Attualmente, solo gli utenti finali in [Targeted Release](/microsoft-365/admin/manage/release-options-in-office-365?view=o365-worldwide&preserve-view=true) possono visualizzare e usare queste app specifiche in Teams, Outlook e Office.com. Una notifica relativa a questa modifica è disponibile nel [Centro messaggi](https://admin.microsoft.com/AdminPortal/Home#/MessageCenter/:/messages/MC334280).
 
-## <a name="manage-the-enhanced-apps-access-microsoft-365"></a>Gestire l'accesso alle app avanzate a Microsoft 365
+## <a name="manage-users-access-to-the-enhanced-apps"></a>Gestire l'accesso degli utenti alle app avanzate
 
 L'esperienza di amministrazione di Teams esistente si applica per controllare l'accesso a queste app. Gli amministratori di Teams usano l'interfaccia di amministrazione di Teams per gestire l'accesso alle app. Gli amministratori di Teams possono consentire a utenti finali specifici di usare le app avanzate o di gestire l'accesso alle app avanzate in Teams, in Outlook e in Office.com.
 

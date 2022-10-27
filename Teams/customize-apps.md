@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come modificare i metadati e l'aspetto di un'app per rinominarla per una migliore adozione nell'organizzazione.
-ms.openlocfilehash: 7e2fe4545858980e3fc9d9784aea7b44256d52db
-ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.openlocfilehash: f12e6ead6c0d031100bcf30783de980986a14563
+ms.sourcegitcommit: c2d8c7f779f4f938f8355632ecfbfc9147b53bb2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68377474"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68738732"
 ---
 # <a name="use-app-customization-to-update-branding-of-apps-in-your-organizations-teams-store"></a>Usare la personalizzazione delle app per aggiornare il branding delle app nello store teams dell'organizzazione
 
@@ -108,7 +108,7 @@ Dopo alcune ore, gli utenti di Teams possono vedere l'app personalizzata in Team
 
 Considerare i dettagli seguenti sulla funzionalità di personalizzazione delle app:
 
-* È possibile personalizzare solo [le app di terze parti](deploy-apps-microsoft-teams-landing-page.md#third-party-apps-validated-by-microsoft) e non [le app personalizzate](deploy-apps-microsoft-teams-landing-page.md#custom-apps).
+* È possibile personalizzare solo [le app di terze parti](deploy-apps-microsoft-teams-landing-page.md#third-party-apps-created-by-independent-app-developers) e non [le app personalizzate](deploy-apps-microsoft-teams-landing-page.md#custom-apps-created-within-an-organization-for-internal-use).
 
 * Non è possibile personalizzare alcuna app negli ambienti Government Community Cloud High (GCCH) e Department of Defense (DoD).
 
@@ -118,7 +118,7 @@ Considerare i dettagli seguenti sulla funzionalità di personalizzazione delle a
 
 * Si avrà una sola versione dell'app, perché la personalizzazione dei dettagli dell'app non crea una copia dell'app.
 
-* Quando personalizzi le app e qualsiasi descrizione correlata a un'app, assicurati di seguire le linee guida fornite dagli sviluppatori di app nella documentazione o nelle condizioni per l'utilizzo. Attenersi alle leggi sul copyright quando si usano immagini di terze parti.
+* Quando si personalizzano le app e qualsiasi descrizione correlata a un'app, assicurarsi di seguire le linee guida fornite dagli sviluppatori di app nella documentazione o nelle condizioni per l'utilizzo. Attenersi alle leggi sul copyright quando si usano immagini di terze parti.
 
 * Amministrazione dati di personalizzazione forniti vengono archiviati nell'area di archiviazione dei dati più vicina.
 

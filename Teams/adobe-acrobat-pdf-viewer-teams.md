@@ -18,12 +18,12 @@ description: Informazioni su come impostare Adobe Acrobat come visualizzatore PD
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 8adb2f4f0eafeabadd6f8716a338b24422d0ba35
-ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
+ms.openlocfilehash: 6a2e6c7ef80258ba07b3450ee983818f0b6ea6e1
+ms.sourcegitcommit: c2d8c7f779f4f938f8355632ecfbfc9147b53bb2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68656062"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68738772"
 ---
 # <a name="adobe-acrobat-as-a-default-pdf-viewer-in-microsoft-teams"></a>Adobe Acrobat come visualizzatore PDF predefinito in Microsoft Teams
 
@@ -73,6 +73,8 @@ Dopo aver selezionato Salva, Teams utilizza Adobe Acrobat app come gestore prede
 
 Se si vuole consentire in modo selettivo l'app Adobe Acrobat per alcuni utenti o per un gruppo, è possibile assegnare criteri [personalizzati per le autorizzazioni dell'app](teams-app-permission-policies.md).
 
+## <a name="considerations-and-limitations"></a>Considerazioni e limitazioni
+
 Conoscere le informazioni seguenti su tale funzionalità:
 
 * Dopo aver configurato i criteri, in genere [sono necessarie alcune ore](teams-app-setup-policies.md#considerations-and-limitations) prima che l'app sia disponibile per gli utenti.
@@ -80,5 +82,5 @@ Conoscere le informazioni seguenti su tale funzionalità:
 * Adobe Acrobat come visualizzatore PDF predefinito in Teams funziona solo su client desktop e Web. Non è supportato nel client per dispositivi mobili.
 * Gli utenti devono disporre di un piano Adobe Acrobat per poter usare gli strumenti premium come Esporta PDF, Organizza pagine, Combina file, Comprimi PDF e Proteggi PDF.
 * Per disinstallare l'app, gli utenti finali possono rimuoverla dal client Teams. L'amministratore può rimuovere l'app di Adobe Acrobat tramite i criteri di configurazione.
-* Se si blocca l'applicazione Adobe Acrobat, rimuoverla dal criterio di configurazione. Assicura che l'esperienza dell’utente finale torni a all’uso del visualizzatore nativo di file PDF.
+* Se blocchi l'app Adobe Acrobat, rimuovi l'app dai criteri di configurazione. Assicura che l'esperienza dell’utente finale torni a all’uso del visualizzatore nativo di file PDF.
 * Se si verificano problemi durante l'accesso all'app Adobe Acrobat nel client desktop di Teams, usare [Teams nel browser](https://teams.microsoft.com/) per accedere.

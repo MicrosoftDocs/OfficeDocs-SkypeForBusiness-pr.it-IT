@@ -21,12 +21,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020; intro-overview; intro-hub-or-landing
-ms.openlocfilehash: 48c372afe2c7881a2af5c24e36915d510f9ff291
-ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
+ms.openlocfilehash: 1868b4e5e84803e24eacc812d638a961d6639606
+ms.sourcegitcommit: c2d8c7f779f4f938f8355632ecfbfc9147b53bb2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68655902"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68738572"
 ---
 # <a name="understand-microsoft-teams-apps"></a>Informazioni sulle app di Microsoft Teams
 
@@ -41,9 +41,9 @@ Questo articolo illustra i tipi di app e la posizione in cui gli utenti accedono
 I diversi tipi di app che gli utenti finali possono usare in Teams sono:
 
 * [App di base che fanno parte di Teams](#core-apps).
-* Altre [app create da Microsoft](#microsoft-provided-apps).
-* [App di terze parti](#third-party-apps-validated-by-microsoft) dei partner (convalidate da Microsoft).
-* [App personalizzate](#custom-apps) create dalla propria organizzazione.
+* Altre [app create da Microsoft](#apps-created-by-microsoft).
+* [App di terze parti](#third-party-apps-created-by-independent-app-developers) create da partner (convalidate da Microsoft).
+* [App personalizzate](#custom-apps-created-within-an-organization-for-internal-use) create dalla propria organizzazione.
 
 ## <a name="core-apps"></a>App di base
 
@@ -51,7 +51,7 @@ Alcune funzionalità di Teams, come il feed attività, i canali, le chat, il cal
 
 :::image type="content" source="media/core-apps-pinned1.png" alt-text="Le app di base sono costituite dalle app aggiunte in Teams per impostazione predefinita." lightbox="media/core-apps-pinned2.png":::
 
-## <a name="microsoft-provided-apps"></a>App fornite da Microsoft
+## <a name="apps-created-by-microsoft"></a>App create da Microsoft
 
 Microsoft offre numerose app per migliorare la produttività e la collaborazione. Queste app possono essere individuate dall'utente e dagli utenti finali cercando Microsoft come autore nell'interfaccia di amministrazione di Teams o come Provider nello store di Teams.
 
@@ -59,13 +59,13 @@ Teams include un set di app predefinite, tra cui Elenchi, Tasks, Complimento, Ap
 
 :::image type="content" source="media/microsoft-apps-in-tac1.png" alt-text="Screenshot che mostra un elenco di app Microsoft nell'interfaccia di amministrazione di Teams." lightbox="media/microsoft-apps-in-tac2.png":::
 
-## <a name="third-party-apps-validated-by-microsoft"></a>App di terze parti convalidate da Microsoft
+## <a name="third-party-apps-created-by-independent-app-developers"></a>App di terze parti create da sviluppatori di app indipendenti
 
-Oltre alle app fornite da Microsoft, è possibile usare app di terze parti convalidate da Microsoft. Microsoft convalida le funzionalità e la sicurezza di queste app prima di renderle disponibili in Teams Store. Per informazioni sui vantaggi della convalida delle app, vedere [Convalida di app di terze parti](overview-of-app-validation.md).
+Oltre alle app fornite da Microsoft, è possibile usare app di terze parti. Microsoft convalida in modo rigoroso la funzionalità e la sicurezza di tutte queste app. I test manuali e automatizzati elaborati vengono eseguiti prima di rendere queste app disponibili in Teams Store e molti test continuano a una cadenza regolare anche dopo la pubblicazione delle app in tempo reale. Per informazioni sui vantaggi della convalida delle app, vedere [Convalida di app di terze parti](overview-of-app-validation.md). Alcune app sottoscrivono il programma di [conformità Microsoft](overview-of-app-certification.md) per essere sottoposte a più livelli di ulteriori controlli oltre la convalida.
 
 :::image type="content" source="media/3p-apps-in-teams.png" alt-text="Screenshot di un esempio di app di terze parti presenti nello store di Teams.":::
 
-## <a name="custom-apps"></a>App personalizzate
+## <a name="custom-apps-created-within-an-organization-for-internal-use"></a>App personalizzate create all'interno di un'organizzazione per uso interno
 
 Le app create dagli sviluppatori dell'organizzazione sono denominate app personalizzate. (o Line-of-business app). L'organizzazione può richiedere la creazione di app personalizzate per requisiti specifici dell'organizzazione. Hai il controllo per consentire o bloccare tali app per l'intera organizzazione o per utenti specifici. Gli sviluppatori nell'organizzazione possono compilare soluzioni personalizzate con basso impiego di codice usando l'integrazione di Teams con [Microsoft Power Platform](/microsoftteams/platform/samples/teams-low-code-solutions).
 

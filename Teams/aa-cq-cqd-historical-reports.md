@@ -21,75 +21,135 @@ ms.custom:
 - Reporting
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
-description: Informazioni su come usare il report di Power BI di Call Quality Dashboard per visualizzare i dati cronologici di Operatore automatico e Coda di chiamata.
-ms.openlocfilehash: 23ce3663492ae84175825af4acc3772850935d3b
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+description: Informazioni su come usare Operatore automatico di Teams & report cronologico sulla coda di chiamata Report di Power BI per visualizzare i dati cronologici di Operatore automatico e Coda di chiamata.
+ms.openlocfilehash: 2afae8986f1184f1394e806b84aa1ab242c07df2
+ms.sourcegitcommit: c2d8c7f779f4f938f8355632ecfbfc9147b53bb2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68614209"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68738692"
 ---
 # <a name="auto-attendant--call-queue-historical-report"></a>Report cronologico della coda di chiamata & operatore automatico
 
-Il modello Power BI di Power BI Operatore automatico & coda di chiamata fornisce i tre report seguenti:
+Questo modello di Power BI fornisce tre report che consentono alle organizzazioni di segnalare il numero di chiamate elaborate da operatori automatici e code di chiamata.  Fornisce anche informazioni dettagliate sulle prestazioni dell'agente.
 
-- [Operatore automatico](media/cqd-teams-aa-cq-historical-report-sample-aa.png) : mostra i dati analitici per le chiamate in arrivo agli operatori automatici.
-- [Coda di chiamata](media/cqd-teams-aa-cq-historical-report-sample-cq.png) , che mostra i dati analitici per le chiamate in arrivo nelle code di chiamata.
-- [Sequenza temporale agente](media/cqd-teams-aa-cq-historical-report-sample-at.png) : mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.
+## <a name="v301-published-on-october-26-2022"></a>V3.0.1 data di pubblicazione: 26 ottobre 2022
 
-Questi report usano i dati dell'archivio dati [Call Quality Dashboard](CQD-Power-BI-query-templates.md) . I report consentono alle organizzazioni di segnalare il numero di chiamate elaborate da operatori automatici e code di chiamata.  I report forniscono anche informazioni dettagliate sulle prestazioni dell'agente nelle code di chiamata.
+Il modello Power BI Operatore automatico & coda di chiamata fornisce i tre report seguenti:
 
-### <a name="v163-published-on-august-24-2022"></a>V1.63 pubblicato il 24 agosto 2022
+- Il report Operatore automatico mostra i dati analitici per le chiamate in arrivo negli operatori automatici.
+- Il report Coda di chiamata mostra i dati analitici per le chiamate che arrivano nelle code di chiamata.
+- Il report Sequenza temporale agente mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.
 
-## <a name="prerequisites"></a>Prerequisiti
+Questi report usano i dati del servizio Voice Applications Analytics Collector (VAAC).
+
+>[!NOTE]
+> La raccolta dei dati cronologici è in corso in tutte le aree geografiche.  Trenta giorni di dati cronologici saranno disponibili in momenti diversi, con tutte le aree geografiche con 30 giorni completi di dati non oltre il 25 novembre 2022.
+
+## <a name="v3xx-prerequisites"></a>Prerequisiti V3.x.x
 
 ### <a name="power-bi-desktop"></a>Power BI Desktop
-Devi aver installato Power BI Desktop. Puoi installarlo da [Microsoft Windows Store](https://aka.ms/pbidesktopstore).
+Devi aver installato Power BI Desktop. Puoi installare e usare la versione gratuita da [Microsoft Windows Store](https://aka.ms/pbidesktopstore).
 
-È possibile usare la versione gratuita di Power BI Desktop. La versione minima compatibile è 2.85.681.0 (settembre 2020).
+La versione minima compatibile è 2.85.681.0 (settembre 2020).
+
+### <a name="permissions-to-access-the-cqd-pipeline"></a>Autorizzazioni per accedere alla pipeline di Call Quality Dashboard
+
+Anche se questa versione dei report non usa la pipeline di dati call quality dashboard (CQD), l'account usato per visualizzare i dati cronologici richiede comunque l'accesso al dashboard qualità chiamata. Per altre informazioni, vedere [Ruolo di accesso a Call Quality Dashboard](./turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd).
+- Questo requisito verrà rimosso in una versione futura.
+
+## <a name="v3xx-installation"></a>Installazione V3.x.x 
+
+I passaggi seguenti presuppongono che siano già stati installati Power BI Desktop nel computer e che l'account disponga delle autorizzazioni necessarie per accedere alla pipeline di dati di Call Quality Dashboard.
+
+Eseguire le operazioni seguenti:
+
+1. Scarica e salva il file [V3.0.1.zipTeams Auto Attendant & i rapporti cronologici della coda di chiamata ](https://www.microsoft.com/download/details.aspx?id=104623) nel computer.
+
+1. Aprire il file ZIP.
+
+1. Aprire il file modello `Teams Auto Attendant & Call Queue Historical Reports V3.0.0.pbit` . Power BI Desktop dovrebbe avviarsi.
+
+1. Verrà chiesto di selezionare **l'origine dati**.  Selezionare la `api.interfaces.records.teams.microsoft.com` voce.
+
+  :::image type="content" source="media/aa-cq-historical-report-01-v300.png" alt-text="Screenshot che seleziona il api.interfaces.records.teams.microsoft.com Data Soure":::
+
+1. Verrà richiesto di accedere con un account. Selezionare **Account aziendale** e quindi **selezionare Accedi**.
+
+  :::image type="content" source="media/aa-cq-historical-report-03-v300.png" alt-text="Screenshot che mostra l'accesso per V3.0.0.":::
+
+1. Seleziona **Connetti** per aggiornare i dati.
+
+> [!NOTE]
+> Se si usa v1.63 o versioni precedenti, potrebbe verificarsi un errore quando v3.0.0 tenta di recuperare i dati da VAAC.  Per risolvere questo errore, è necessario cancellare eventuali credenziali precedenti da Power BI.
+> 
+> 1. Aprire il modello v3.0.0 per cancellare l'errore. 
+> 1. Selezionare Opzioni **file** > **& Impostazioni Impostazioni** > **origine dati**.
+> 1. Selezionare l'elenco a discesa **Cancella autorizzazioni** e quindi **selezionare Cancella tutte le autorizzazioni**.
+> 1. Chiudere il modello dopo averlo cancellato e riavviare Power BI. Ti verrà chiesto di autorizzare di nuovo. 
+
+## <a name="v163-published-on-august-24-2022"></a>V1.63 pubblicato il 24 agosto 2022
+
+> [!IMPORTANT]
+> Il supporto per il modello V1.63 terminerà il 21 novembre 2022.
+
+Il **modello Power BI Per l'operatore automatico di Teams & rapporto storico coda di chiamata** fornisce i tre report seguenti:
+
+- Il report Operatore automatico mostra i dati analitici per le chiamate in arrivo negli operatori automatici.
+- Il report Coda di chiamata mostra i dati analitici per le chiamate che arrivano nelle code di chiamata.
+- Il report Sequenza temporale agente mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.
+
+Questi report usano i dati dell'archivio dati Call [Quality Dashboard (CQD).](CQD-Power-BI-query-templates.md) 
+
+## <a name="v163-prerequisites"></a>Prerequisiti V1.63
+
+### <a name="power-bi-desktop"></a>Power BI Desktop
+Devi aver installato Power BI Desktop. Puoi installare e usare la versione gratuita da [Microsoft Windows Store](https://aka.ms/pbidesktopstore).
+
+La versione minima compatibile è 2.85.681.0 (settembre 2020).
 
 ### <a name="permissions-to-access-the-cqd-pipeline"></a>Autorizzazioni per accedere alla pipeline di Call Quality Dashboard
 
 L'account usato per visualizzare il report cronologico deve avere le autorizzazioni per accedere alla pipeline di dati di Call Quality Dashboard. Per altre informazioni, vedere [Ruolo di accesso a Call Quality Dashboard](./turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd).
 
-## <a name="installation"></a>Installazione 
+## <a name="v163-installation"></a>Installazione V1.63 
 
-I passaggi seguenti presuppongono che nel computer sia già installato Power BI Desktop e che l'account disponga delle autorizzazioni necessarie per accedere alla pipeline di dati di Call Quality Dashboard.
+I passaggi seguenti presuppongono che siano già stati installati Power BI Desktop nel computer e che l'account disponga delle autorizzazioni necessarie per accedere alla pipeline di dati di Call Quality Dashboard.
 
 Eseguire le operazioni seguenti:
 
-- Scaricare i [modelli di query di Power BI di Call Quality Dashboard](https://www.microsoft.com/download/details.aspx?id=102291) e salvare il file ZIP in una directory del computer.
+1. Scaricare e salvare il file zip dei [modelli di query di Power BI di Call Quality Dashboard](https://www.microsoft.com/download/details.aspx?id=102291) nel computer.
 
-- Fare doppio clic sul file ZIP per aprirlo.
+1. Aprire il file ZIP.
 
-- Fai doppio clic sul file modello "CQD Teams Auto Attendant & Call Queue Historical Report V1.60.pbit". Il Power BI Desktop dovrebbe avviarsi.
+1. Aprire il file modello `CQD Teams Auto Attendant & Call Queue Historical Report V1.60.pbit` . Power BI Desktop dovrebbe avviarsi.
 
-- Verrà richiesto di selezionare l'area della pipeline di dati di Call Quality Dashboard. Selezionare l'area geografica in cui si trova il tenant.
+1. Verrà richiesto di selezionare l'area della pipeline di dati di Call Quality Dashboard. Selezionare l'area geografica in cui si trova il tenant.
 
-  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-01.png" alt-text="Screenshot che seleziona l'area della pipeline di dati di Call Quality Dashboard.":::
+  :::image type="content" source="media/aa-cq-historical-report-01-v163.png" alt-text="Screenshot che seleziona l'area della pipeline di dati di Call Quality Dashboard.":::
 
-- L'area geografica in cui si trova il tenant può essere ottenuta utilizzando il cmdlet [Get-CsTenant](/powershell/module/skype/get-cstenant) .
+1. L'area geografica in cui si trova il tenant può essere ottenuta utilizzando il cmdlet [Get-CsTenant](/powershell/module/skype/get-cstenant) .
 
-    ```PowerShell
+    ```powershell
     (Get-CsTenant).ServiceInstance
 
 
     microsoftcommunicationsonline/noam-4a-s7
     ```
 
-    - L'area verrà visualizzata dopo il **/** come nell'esempio precedente in cui l'area è: noam
+    1. L'area geografica verrà visualizzata dopo il **/** come nell'esempio precedente in cui l'area geografica è `noam`.
 
- - Il report verrà avviato con dati di esempio.
+ 1. Il report verrà avviato con dati di esempio.
  
- - Per visualizzare i propri dati, selezionare **Aggiorna** nella scheda Home in Query in Power BI Desktop.
+ 1. Per visualizzare i propri dati, selezionare **Aggiorna** nella scheda **Home** in **Query** in Power BI Desktop.
 
-   :::image type="content" source="media/cqd-teams-aa-cq-historical-report-02.png" alt-text="Screenshot che seleziona l'opzione di aggiornamento.":::
+   :::image type="content" source="media/aa-cq-historical-report-02-v163.png" alt-text="Screenshot che seleziona l'opzione di aggiornamento.":::
 
-- Verrà richiesto di eseguire l'accesso. Seleziona **Account aziendale** e quindi **seleziona Accedi**.
+1. Verrà richiesto di eseguire l'accesso. Selezionare **Account aziendale** e quindi **selezionare Accedi**.
 
-  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Screenshot che mostra l'accesso.":::
+  :::image type="content" source="media/aa-cq-historical-report-03-v163.png" alt-text="Screenshot che mostra l'accesso per V1.63.":::
 
-- Selezionare **Connetti** e osservare l'aggiornamento dei dati.
+1. Seleziona **Connetti** per aggiornare i dati.
 
 ## <a name="data-latency-and-aa--cq-analytics"></a>Latenza dei dati e analisi di AA & CQ
 
@@ -105,20 +165,21 @@ Il report contiene tutte le metriche dei dati attualmente disponibili.
 
 ### <a name="change-color-schema"></a>Modificare lo schema dei colori 
 
-I passaggi seguenti presuppongono che siano già stati completati i passaggi di installazione.
+I passaggi seguenti presuppongono che i passaggi di installazione siano già stati completati.
 
 Eseguire le operazioni seguenti:
+
 - Selezionare **la scheda Visualizza** sulla barra multifunzione.
 
-  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-04.png" alt-text="Screenshot che seleziona la scheda Visualizza per modificare la combinazione di colori.":::
+  :::image type="content" source="media/aa-cq-historical-report-04.png" alt-text="Screenshot che seleziona la scheda Visualizza per modificare la combinazione di colori.":::
 
 - Selezionare lo schema colori nell'elenco a discesa.
 
-  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-05.png" alt-text="Screenshot che mostra varie combinazioni di colori.":::
+  :::image type="content" source="media/aa-cq-historical-report-05.png" alt-text="Screenshot che mostra varie combinazioni di colori.":::
   
 ## <a name="auto-attendant-and-call-queue-historical-reports-definitions"></a>Definizioni dei report cronologici dell'operatore automatico e della coda di chiamata
 
-### <a name="cloud-auto-attendant-analytics"></a>Analisi operatore automatico cloud
+### <a name="cloud-auto-attendant-analytics-report"></a>Report analisi operatore automatico cloud
 
 #### <a name="report-description"></a>Descrizione del report
 
@@ -161,7 +222,7 @@ Eseguire le operazioni seguenti:
 |AACallerActionCount                     |Numero intero             |Riepiloga: Somma<br>Numero di azioni selezionate dal chiamante in Operatore automatico durante la chiamata  |
 |AACallerActionCount (misura)          |Numero intero             |Come sopra, tranne 0 se non vengono effettuate chiamate anziché vuote                              |
 |AACallFlow                              |Testo                     |Incapsula i diversi stati della chiamata operatore automatico: valori possibili:<br><br>§ abs_search<br>§ annuncio<br>§ automatic_menu<br>§ call_termination<br>§ call_transfer<br>§ first_level_menu<br>§ main_menu<br>§ speech_input_confirmation<br>§ user_selection |
-|AACallResult                            |Testo                     |Risultato finale della chiamata: valori possibili:<br><br>§ failed_to_establish_media (non è stato possibile stabilire la parte mediatica della chiamata)<br>§ failover_to_operator (chiamata trasferita all'operatore in genere a causa di un errore di sistema)<br>§ oaa_chain_too_long (troppe gambe nell'AA)<br>§ oaa_session_too_long (la sessione AA è durata troppo a lungo)<br>§ service_declined (AA non ha accettato la chiamata)<br>§ service_terminated (la configurazione AA disconnette la chiamata o la chiamata riagganciata)<br>§ terminated_automatic_selection (la configurazione AA disconnette le chiamate)<br>§ terminated_no_operator (chiamata terminata per errore nessun operatore definito) <br>§ terminated_transfer_failed (chiamata terminata come trasferimento non riuscita - in genere a numero esterno)<br>§ transfer_in_progress (trasferimento AA->AA)<br>§ transferred_to_operator (la chiamata è stata trasferita all'operatore - in genere a causa di un errore dell'utente)<br>§ transferred_to_receptionist (come transferred_to_operator)<br>§ transferred_to_self (la chiamata è stata restituita all'inizio dell'AA- in genere da un'opzione di annuncio di menu)<br>§ transferred_to_shared_voicemail (la chiamata è stata trasferita alla segreteria telefonica condivisa)<br>§ transferred_to_user (la chiamata è stata trasferita a un utente - include code di chiamata)<br>§ sconosciuto (si è verificata una condizione sconosciuta)<br>§ user_terminated (chiamante riagganciato) |
+|AACallResult                            |Testo                     |Risultato finale della chiamata: valori possibili:<br><br>§ failed_to_establish_media (non è stato possibile stabilire la parte multimediale della chiamata)<br>§ failover_to_operator (chiamata trasferita all'operatore in genere a causa di un errore di sistema)<br>§ oaa_chain_too_long (troppe gambe nell'AA)<br>§ oaa_session_too_long (la sessione AA è durata troppo a lungo)<br>§ service_declined (AA non ha accettato la chiamata)<br>§ service_terminated (la configurazione AA disconnette la chiamata o la chiamata riagganciata)<br>§ terminated_automatic_selection (la configurazione AA disconnette le chiamate)<br>§ terminated_no_operator (chiamata terminata per errore nessun operatore definito) <br>§ terminated_transfer_failed (chiamata terminata come trasferimento non riuscita - in genere a numero esterno)<br>§ transfer_in_progress (trasferimento AA->AA)<br>§ transferred_to_operator (la chiamata è stata trasferita all'operatore - in genere a causa di un errore dell'utente)<br>§ transferred_to_receptionist (come transferred_to_operator)<br>§ transferred_to_self (la chiamata è stata restituita all'inizio dell'AA- in genere da un'opzione di annuncio di menu)<br>§ transferred_to_shared_voicemail (la chiamata è stata trasferita alla segreteria telefonica condivisa)<br>§ transferred_to_user (la chiamata è stata trasferita a un utente - include code di chiamata)<br>§ sconosciuto (si è verificata una condizione sconosciuta)<br>§ user_terminated (chiamante riagganciato) |
 |Legenda chiamata AA                          |Testo                     |Imposta gli elementi della legenda in base a AACallResult                               |
 |AAChainDuration                         |Numero decimale           |Riepiloga: Somma<br>Durata della chiamata in Operatore automatico                     |
 |AAChainDuration (misura)               |Numero decimale           |Come sopra, tranne 0 se non vengono effettuate chiamate anziché vuote              |
@@ -180,7 +241,7 @@ Eseguire le operazioni seguenti:
 |Somma di TotalCallCount (Misura)         |Numero intero             |Come sopra, tranne 0 se non vengono effettuate chiamate anziché vuote              |
 
 
-### <a name="cloud-call-queue-analytics"></a>Analisi delle code di chiamata cloud
+### <a name="cloud-call-queue-analytics-report"></a>Report Analisi code di chiamata cloud
 
 #### <a name="report-description"></a>Descrizione del report
 
@@ -208,7 +269,7 @@ Eseguire le operazioni seguenti:
 |Account delle risorse della coda di chiamata         |fCallQueueAnalytics -> call quality dashboard        |Nessuno                  |
 |Origine chiamata in arrivo<sup>1</sup>    |fCallQueueAnalytics -> somma del numero di chiamate (misura)<br>fCallQueueAnalytics -> tipo di chiamata    |Chiamate esterne: il tipo di chiamata è esterno<br>Chiamate interne: il tipo di chiamata è interno |
 |Avg Wait Time (seconds)-Before Answered |fCallQueueFinalStateAction -> Media di durata media CQ (Misura) |Risultato chiamata in coda di chiamata è agent_joined_conference o transferred_to_agent|
-|Avg Wait Time (seconds)-Before Abandoned |fCallQueueFinalStateAction -> Media della durata media della chiamata (misura) |Call Queue Call Result is not agent_joined_conference, transferred_to_agent, overflown, timed_out |
+|Avg Wait Time (seconds)-Before Abandoned |fCallQueueFinalStateAction -> Media della durata media della chiamata (misura) |Risultato chiamata in coda di chiamata non è agent_joined_conference, transferred_to_agent, overflow, timed_out |
 |Numero Opt-In agente e volume delle chiamate   |fCallQueueAnalytics -> Numero chiamate<br>fCallQueueAnalytics -> Agente coda di chiamata Opt In Count<br>fCallQueueAnalytics -> call quality dashboard<br>fCallQueueAnalytics -> Date |Nessuno |
 |Chiamate abbandonate                     |fCallQueueAnalytics -> Date<br>fCallQueueAnalytics -> TotalCallCount | La legenda dei risultati della chiamata in coda di chiamata è abbandonata |
 |Durata media sessione (secondi)    |fCallQueueFinalStateAction -> durata media della coda di chiamata (sec)<br>Legenda dei risultati delle chiamate in coda di chiamata |Durata media coda di chiamata (sec) > 0 |
@@ -252,10 +313,10 @@ Eseguire le operazioni seguenti:
 |Call Quality Dashboard                                 |Testo                     |Nome dell'account della risorsa collegato alla coda di chiamata<br><br>Se il nome completo Account risorsa è **cq_test@microsoft.com**, il valore sarà: **cq_test** |
 |Data                                    |Data/ora                |Data e ora di inizio chiamata in coda di chiamata (ora)                                 |
 |DateTimeCQName                          |Testo                     |Chiave univoca per filtrare in fCallQueueFinalStateAction                     |
-|IsAbandoned                             |Vero/falso               |True se la chiamata non riceve risposta da un agente                                   |
+|IsAbandoned                             |Vero/falso               |True se alla chiamata non risponde un agente                                   |
 
 
-### <a name="cloud-call-queue-agent-timeline"></a>Sequenza temporale agente coda di chiamata cloud
+### <a name="cloud-call-queue-agent-timeline-report"></a>Report sequenza temporale agente coda di chiamata cloud
 
 #### <a name="report-description"></a>Descrizione del report
 
@@ -307,16 +368,17 @@ Eseguire le operazioni seguenti:
 
 - Solo 28 giorni di cronologia sono disponibili nel dashboard in quanto i dati della coda di chiamata/dell'operatore automatico sono considerati dati personali ed è soggetto a criteri di conservazione della privacy dei dati.
 
-- In alcuni scenari, l'agente ha risposto al numero di chiamate nel rapporto Sequenza temporale agente coda di chiamata cloud può essere diverso rispetto al numero di chiamate mostrate nella cronologia chiamate client di Teams. La cronologia delle chiamate del client di Teams è corretta. Il supporto è in fase di analisi, ma al momento non è disponibile alcun tempo stimato per la riparazione.
+- In alcuni scenari, l'agente ha risposto al numero di chiamate nel rapporto **Sequenza temporale agente coda di chiamata cloud** può essere diverso rispetto al numero di chiamate mostrate nella cronologia chiamate client di Teams. La cronologia delle chiamate del client di Teams è corretta. Il supporto è in fase di analisi, ma al momento non è disponibile un tempo stimato per la riparazione.
 
 - <sup>1</sup> **L'origine della chiamata in arrivo** nell'operatore automatico e nei grafici della coda di chiamata mostra l'origine finale della coda di chiamata anziché l'origine iniziale della coda di chiamata. Ad esempio, se un operatore automatico riceve una chiamata esterna e trasferisce la chiamata a un altro operatore automatico o coda di chiamata, **l'origine della chiamata in arrivo** verrà segnalata come Interna.
 
 ## <a name="version-history"></a>Cronologia versioni
+
 |Versione  |Data di pubblicazione     |Filename                                                           |Descrizione                                         |
 |:--------|:------------------|:------------------------------------------------------------------|:---------------------------------------------------|
+|3.0.1    |26 ottobre 2022   |Teams Auto Attendant & Call Queue Historical Reports V3.0.0        |Rimozione dell'immissione dell'origine dati di test                   |
+|3.0.0    |25 ottobre 2022   |Teams Auto Attendant & Call Queue Historical Reports V3.0.0        |Nuova origine dati back-end                             |
 |1.63     |24 agosto 2022    |CQD Teams Auto Attendant & Call Queue Historical Report V1.63.pbit |Fare riferimento a:<br>CQD Teams Auto Attendant & Call Queue Historical Reports - Change Log.docx in the downloaded zip file for a list of changes                                                                             |
 |1.60     |22 luglio 2022      |CQD Teams Auto Attendant & Call Queue Historical Report V1.60.pbit |Fare riferimento a:<br>CQD Teams Auto Attendant & Call Queue Historical Reports - Change Log.docx in the downloaded zip file for a list of changes                                                                             |
 |1.00     |5 novembre 2020   |CQ e AA combinati Analytics 20201105.pbit                         |Rilascio iniziale                                     |
-
-
 

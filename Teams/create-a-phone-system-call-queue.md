@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: 6fe298a3054165a95f496f8c1178a7fa8457542d
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.openlocfilehash: d4d263587e0ac78b2dff2949adcaa2af8133a3dc
+ms.sourcegitcommit: c2d8c7f779f4f938f8355632ecfbfc9147b53bb2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68614229"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "68738562"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -44,7 +44,7 @@ Le code di chiamata forniscono:
 
 Prima di seguire le procedure descritte in questo articolo, assicurarsi di aver letto [Plan for Teams auto attendants and call queues](plan-auto-attendant-call-queue.md) e di seguire i [passaggi introduttivi](plan-auto-attendant-call-queue.md#getting-started).
 
-## <a name="whats-new-for-call-queues-in-the-past-6-months"></a>Novità per le code di chiamata degli ultimi 6 mesi
+## <a name="whats-new-for-call-queues-in-the-past-six-months"></a>Novità per le code di chiamata degli ultimi sei mesi
 
 - Agosto
   - **L'aggiunta di un messaggio di saluto** (sintesi vocale) è ora supportata per il messaggio di saluto principale della coda di chiamata.
@@ -232,7 +232,8 @@ Gli account di Teams degli agenti devono essere impostati sulla modalità TeamsO
 > La modalità conferenza è necessaria se gli utenti di Teams devono consultare/trasferire chiamate con code di chiamata.
 >
 > Gli agenti possono sentire la musica configurata in attesa in coda per un massimo di 2 secondi quando si partecipa per la prima volta alla chiamata.
-
+> 
+> Se la [registrazione di conformità](teams-recording-policy.md) è abilitata per gli agenti, la combinazione di modalità conferenza e instradamento dell'operatore non è supportata. Se devi usare la modalità Conferenza, seleziona **Routing seriale**, **Round robin** o **Long idle** come **metodo routing**. Se devi usare il routing Attendant, imposta La modalità conferenza su **Disattivato**.
 
 Dopo aver selezionato le opzioni di risposta alle chiamate, seleziona il pulsante **Avanti** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
@@ -321,6 +322,8 @@ Per i trasferimenti esterni, vedere [Prerequisiti](./plan-auto-attendant-call-qu
 
 > [!NOTE]
 > Se il numero massimo di chiamate è impostato su 0, il messaggio di saluto non verrà riprodotto.
+>  
+> La segreteria telefonica (personale) invierà chiamate all'utente e non direttamente alla segreteria telefonica come indicato. Questo argomento è in fase di analisi da parte del supporto tecnico.
 
 Dopo aver selezionato le opzioni di gestione dell'overflow delle chiamate, seleziona il pulsante **Avanti** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
@@ -339,6 +342,9 @@ Dopo aver selezionato le opzioni di gestione dell'overflow delle chiamate, selez
 *Nuovo: i controlli per **ignorare** i messaggi di sistema della segreteria telefonica vengono ora esposti durante il routing alla segreteria telefonica condivisa, che si applica anche all'aggiunta di **messaggi di saluto** .*
 
 Per i trasferimenti esterni, vedere [Prerequisiti](./plan-auto-attendant-call-queue.md#prerequisites) e [trasferimenti di numeri di telefono esterni - dettagli tecnici](create-a-phone-system-auto-attendant.md?tabs=additional-resources) per la formattazione dei numeri.
+
+> [!NOTE]
+> La segreteria telefonica (personale) invierà chiamate all'utente e non direttamente alla segreteria telefonica come indicato. Questo argomento è in fase di analisi da parte del supporto tecnico.
 
 Dopo aver selezionato le opzioni di gestione dei timeout di chiamata, selezionare il pulsante **Invia** nella parte inferiore della pagina **Aggiungi una coda di chiamata** .
 
