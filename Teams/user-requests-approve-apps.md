@@ -3,7 +3,7 @@ title: Richieste degli utenti per gli amministratori
 author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
-ms.topic: article
+ms.topic: how-to
 ms.service: msteams
 ms.subservice: teams-apps
 audience: admin
@@ -20,12 +20,12 @@ description: Informazioni su come gestire e configurare la richiesta dell'utente
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 382d3923d008f0bf70b2d9b9a4f3364709b4f2e1
-ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.openlocfilehash: 00c8659d82b4c633790f1b663d11d27e015146f1
+ms.sourcegitcommit: e6182aa3b15346dc955333a2bc571565ef463a57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68377604"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68784391"
 ---
 # <a name="manage-user-requests"></a>Gestire le richieste degli utenti
 

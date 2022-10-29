@@ -18,12 +18,12 @@ ms.custom:
 description: Video di formazione, presentazioni powerpoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 50c3a4a3eaed8eea383d8e0856cfcd6a07b9772e
-ms.sourcegitcommit: c2d8c7f779f4f938f8355632ecfbfc9147b53bb2
+ms.openlocfilehash: 0f8d251499ef55ef1b7621e63367f746d19c70e5
+ms.sourcegitcommit: e6182aa3b15346dc955333a2bc571565ef463a57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68738592"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68784351"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori per Microsoft Teams
 
@@ -67,14 +67,14 @@ Usare le risorse di formazione per educare se stessi su Teams, insegnare agli al
 
 | Modulo | Presentazione di PowerPoint (PDF)  |
 | ------------ | -------------------- |
-| Modulo 1: Introduzione alla Microsoft Teams Rooms  | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-1-introduction-to-microsoft-teams-rooms.pdf?raw=true) |
-| Modulo 2: Rete di Microsoft Teams  | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-2-network-readiness.pdf?raw=true) |
-| Modulo 3: Scelta del dispositivo giusto per lo spazio giusto  | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-3-choosing-the-right-device.pdf?live=true) |
-| Modulo 4: Distribuzione di Microsoft Teams Rooms  | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-4-deployment.pdf?raw=true) |
-| Modulo 5: Configurazione e avvio di Microsoft Teams Rooms  | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-5-starting-and-configuring-teams-rooms.pdf?raw=true) |
-| Modulo 6: Gestione di Microsoft Teams Rooms, parte 1  | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-6-managing-teams-rooms-part-1.pdf?raw=true) |
-| Modulo 7: Gestione di Microsoft Teams Rooms, parte 2  | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-7-managing-teams-rooms-part-2.pdf?raw=true) |
-| Modulo 8: Microsoft Teams Rooms-- Suggerimenti, trucchi e risoluzione dei problemi | [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8a-tips-tricks-troubleshooting.pdf?raw=true)|
+| Modulo 1: Introduzione alla Microsoft Teams Rooms  | [Ponte](https://aka.ms/TeamsRoomsModule1) |
+| Modulo 2: Conformità alla rete  | [Ponte](https://aka.ms/TeamsRoomsModule2) |
+| Modulo 3: progettazione e componenti della sala  | [Ponte](https://aka.ms/TeamsRoomsModule3) |
+| Modulo 4: account della risorsa  | [Ponte](https://aka.ms/TeamsRoomsModule4) |
+| Modulo 5: Avvio e configurazione di Microsoft Teams Rooms  | [Ponte](https://aka.ms/TeamsRoomsModule5) |
+| Modulo 6: Gestione di Microsoft Teams Rooms, parte 1  | [Ponte](https://aka.ms/TeamsRoomsModule6) |
+| Modulo 7: Gestione di Microsoft Teams Rooms, parte 2  | [Ponte](https://aka.ms/TeamsRoomsModule7) |
+| Modulo 8: funzionalità, adozione e risoluzione dei problemi | [Ponte](https://aka.ms/TeamsRoomsModule8)|
 | Istruzioni di partecipazione con un tocco |  [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8b-one-touch-join-instructions.pdf?raw=true)  |
 | Introduzione a Microsoft Teams Rooms Managed Services | [Ponte](https://download.microsoft.com/download/c/e/a/cead2658-d64d-43b7-a728-b4512b325fb8/module-7b-Teams-Managed-Rooms-intro.pdf)  |
 
@@ -84,11 +84,12 @@ Usare le risorse di formazione per educare se stessi su Teams, insegnare agli al
 
 | Modulo | Presentazione di PowerPoint (PDF)  |
 | ------------| -------------------- |
-| Modulo 1: Introduzione ai dispositivi Android di Microsoft Teams  |[Ponte](https://download.microsoft.com/download/8/0/2/8020c233-8989-4def-b3ea-fb06365c663a/%281%29%20Introduction%20to%20Microsoft%20Teams%20Android%20Devices.pdf) |
-| Modulo 2: Pianificazione di dispositivi Microsoft Teams Android|[Ponte](https://download.microsoft.com/download/f/8/f/f8f94605-9545-449b-b5d3-f24efc55f966/Planning%20Microsoft%20Teams%20Android%20Devices.pdf) |
-|Modulo 3: Funzionalità dei dispositivi Android di Microsoft Teams |[Ponte](https://download.microsoft.com/download/c/9/9/c9922544-7e27-40af-bf19-dbdc8516f0c1/Module%203-%20Features%20of%20Microsoft%20Teams%20Android%20Devices.pdf)|
-|Modulo 4: Gestione dei dispositivi Android di Microsoft Teams|[Ponte](https://download.microsoft.com/download/c/e/b/ceb686ff-9be2-495c-9e2e-80047765e5b4/(4)%20Managing%20Microsoft%20Teams%20Android%20Devices.pdf)|
-|Modulo 5: Dispositivi Microsoft Teams Android - Risoluzione dei problemi |[Ponte](https://download.microsoft.com/download/d/3/7/d3728209-5caa-4bfb-b46a-3b840e80142a/Microsoft%20Teams%20Android%20Devices%20-%20Troubleshooting.pdf)|
+| Modulo 1: Introduzione ai dispositivi Android di Microsoft Teams  |[Ponte](https://aka.ms/TeamsAndroidModule1) |
+| Modulo 2: Pianificazione di dispositivi Microsoft Teams Android|[Ponte](https://aka.ms/TeamsAndroidModule2) |
+| Modulo 3: Gestione dei dispositivi Android di Microsoft Teams |[Ponte](https://aka.ms/TeamsAndroidModule3)|
+| Modulo 4: telefoni di Microsoft Teams e schermi di Microsoft Teams |[Ponte](https://aka.ms/TeamsAndroidModule4)|
+| Modulo 5: riquadri Microsoft Teams Rooms e Microsoft Teams |[Ponte](https://aka.ms/TeamsAndroidModule5)|
+| Modulo 6: adozione e risoluzione dei problemi |[Ponte](https://aka.ms/TeamsAndroidModule6)|
 
 <h2>Guide interattive</h2>
 

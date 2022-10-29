@@ -17,12 +17,12 @@ ms.localizationpriority: high
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 73c6098358d21b6fe2e3a0b15f3285a5a05ec082
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
-ms.translationtype: HT
+ms.openlocfilehash: 0aa6a64b799f3d00262ab8a086d477bda482ac40
+ms.sourcegitcommit: e6182aa3b15346dc955333a2bc571565ef463a57
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271671"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68784151"
 ---
 # <a name="teams-update-process"></a>Processo di aggiornamento di Teams
 
@@ -30,7 +30,7 @@ Gli aggiornamenti delle app Web di Teams vengono in genere rilasciati il quarto 
 
 Gli aggiornamenti dei client desktop di Teams vengono rilasciati ogni mese dopo rigorosi test interni e convalide tramite il nostro Technology Adoption Program (TAP). Gli aggiornamenti del client desktop in genere iniziano il quarto lunedì del mese e vengono distribuiti gradualmente ai clienti nel resto della settimana. Se è necessario un aggiornamento critico, Teams ignorerà la pianificazione e rilascerà l'aggiornamento non appena disponibile.
 
-Il client desktop si aggiorna automaticamente. Teams verifica la disponibilità di aggiornamenti in background, li scarica e quindi attende il periodo di inattività sul computer prima di installare automaticamente l'aggiornamento.
+The desktop client updates itself automatically. Teams checks for updates every few hours behind the scenes, downloads it, and then waits for the computer to be idle before silently installing the update.
 
 Gli utenti possono anche scaricare manualmente gli aggiornamenti selezionando **Verifica la disponibilità di aggiornamenti** nel menu a discesa **...** accanto all'icona **Profilo** in alto a destra nell'app. Se è disponibile un aggiornamento, verrà scaricato e installato automaticamente quando il computer è inattivo.
 
@@ -48,7 +48,7 @@ Teams non offre agli amministratori la possibilità di distribuire gli aggiornam
 
 ## <a name="servicing-agreement"></a>Contratto di manutenzione
 
-Come servizio online moderno, il client di Teams si aggiorna automaticamente ogni due settimane. Poiché Teams è regolato dai criteri del ciclo di vita moderno, è previsto che gli utenti abbiano la versione più aggiornata del client desktop. Gli aggiornamenti automatici assicurano che gli utenti dispongano delle funzionalità più recenti, dei miglioramenti delle prestazioni, della sicurezza e dell'affidabilità del servizio.
+Nell'ambito di un servizio online moderno, il client teams viene aggiornato circa una volta al mese. Il client installa automaticamente gli aggiornamenti quando diventano disponibili per tale client. Poiché la disponibilità degli aggiornamenti viene sfalsata in tutto il mondo, alcuni client dell'organizzazione potrebbero ricevere nuovi aggiornamenti prima di altri. Poiché Teams è regolato dai criteri del ciclo di vita moderno, è previsto che gli utenti abbiano la versione più aggiornata del client desktop. Gli aggiornamenti automatici assicurano che gli utenti dispongano delle funzionalità più recenti, dei miglioramenti delle prestazioni, della sicurezza e dell'affidabilità del servizio.
 
 Per identificare se i client desktop non sono aggiornati, l'app mostrerà un avviso se la versione corrente dell'utente ha tra uno e tre mesi ed è disponibile una nuova versione. Questi messaggi in-app incoraggiano gli utenti ad aggiornare Teams alla versione più recente o, se necessario, a contattare l'amministratore IT per fare ciò. I clienti desktop di Teams che hanno più di tre mesi visualizzeranno una pagina di blocco che fornisce opzioni per l'aggiornamento immediato, per contattare l'amministratore IT o continuare a usare Teams sul Web.
 

@@ -4,7 +4,7 @@ author: lanachin
 ms.author: v-lanachin
 ms.reviewer: aaku
 manager: samanro
-ms.topic: article
+ms.topic: conceptual
 audience: admin
 ms.service: msteams
 search.appverid: MET150
@@ -23,12 +23,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 35aaa2ed083c4e8d52c6154f31fbfc537cee9cdc
-ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
+ms.openlocfilehash: a8b6620b86154ba3903024d3b48c53e717b204a5
+ms.sourcegitcommit: e6182aa3b15346dc955333a2bc571565ef463a57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68046736"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68784451"
 ---
 # <a name="shifts-data-faq"></a>Domande frequenti su Turni
 
@@ -106,7 +106,26 @@ Oggi non eliminiamo affatto i dati di Turni. Usando [le API Shifts Graph](/graph
 
 ## <a name="can-shifts-data-be-moved-in-a-tenant-to-tenant-migration"></a>I dati di Turni possono essere spostati in una migrazione da tenant a tenant?
 
-I dati di Turni possono essere migrati da un tenant a un altro tenant su richiesta specifica. Tenere presente che la migrazione da tenant a tenant non è supportata, ma può essere generata come richiesta del cliente.
+Per eseguire la migrazione dei dati di Turni esistenti in un altro tenant, è necessario esportare le pianificazioni di Turni per un intervallo di date, modificare i nomi utente (se necessario) e quindi importare le pianificazioni nel tenant di destinazione. È possibile esportare fino a 100 giorni di dati di Turni alla volta. L'intervallo di date può essere nel passato o nel futuro. Se è necessario esportare i dati per un intervallo di tempo più lungo di 100 giorni, ripetere il processo.
+
+Prima di eseguire la migrazione dei dati di Turni, assicurarsi che siano soddisfatti i requisiti seguenti:
+
+- Il dominio tenant di destinazione, i team e i membri del team devono già esistere. La migrazione non crea team né modifica l'appartenenza o la proprietà del team.
+- L'app Turni deve essere configurata nei team nel tenant di destinazione e avere una pianificazione vuota. Tenere presente che la migrazione non sostituisce o elimina i dati esistenti. Questo significa che se un team ha una pianificazione esistente, gli utenti potrebbero vedere turni duplicati o in conflitto, che devono essere risolti manualmente.
+- Non viene eseguita la migrazione delle richieste aperte (ad esempio le richieste di scambio e di permesso) in attesa di approvazione. È consigliabile chiudere tutte le richieste aperte prima di iniziare la migrazione dei dati.
+
+Ecco una panoramica dei passaggi per eseguire la migrazione dei dati di Turni a un altro tenant.
+
+1. Nel tenant di origine, per ogni team, esportare la pianificazione di Turni:
+    1. In Turni, nella pagina **Pianificazione**, passare ad **Altre opzioni (...)** >  **Programma di esportazione**.
+    1. Selezionare un intervallo di date.
+    1. Attivare **Esporta in un formato che può essere importato** e quindi selezionare **Esporta**. I dati della pianificazione di Turni verranno esportati in un file di Excel.
+1. Nell'ambito della migrazione, se un membro del team cambia il dominio di posta elettronica, aggiornare manualmente il file di Excel per modificare il nome dell'entità utente (UPN) di tali utenti nel dominio tenant di destinazione.
+1. Nel tenant di destinazione importare la pianificazione in ogni team.
+    1. In Turni, nella pagina **Pianificazione**, passare ad **Altre opzioni (...)** >  **Programma di importazione**.
+    1. Selezionare **Carica file**, passare al file di Excel del team e quindi selezionare **Apri**.
+
+Per altre informazioni, vedere [Modello di Excel per Turni](https://support.microsoft.com/office/the-excel-template-for-shifts-6fc6a206-e7cc-4907-87b8-a296bae84ce3).
 
 ## <a name="related-articles"></a>Articoli correlati
 

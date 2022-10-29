@@ -4,7 +4,7 @@ author: daisyfell
 ms.author: daisyfeller
 ms.reviewer: samanro
 manager: pamgreen
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: msteams
 search.appverid: MET150
@@ -21,12 +21,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: b51ba430a68e4b8979973ec5051036df39280e22
-ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
+ms.openlocfilehash: 214ae4f925f3a33e82fb4eac8186f02e0a65cbc2
+ms.sourcegitcommit: e6182aa3b15346dc955333a2bc571565ef463a57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68656142"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68784421"
 ---
 # <a name="manage-the-updates-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Aggiornamenti per l'organizzazione in Microsoft Teams
 
@@ -147,5 +147,5 @@ Ogni utente può creare al massimo 400 modelli di Aggiornamenti e ogni modello p
 
 Dall'app Teams Aggiornamenti, gli utenti hanno accesso per creare nuovi aggiornamenti e visualizzare gli aggiornamenti inviati e ricevuti. Gli utenti non avranno accesso ai Aggiornamenti creati da altri, a meno che non siano visualizzatori della richiesta.
 
-> [!Note]
+>[!Note]
 > A un utente viene assegnato il ruolo di visualizzatore di una richiesta se fa parte della chat o del canale in cui è stato creato il report di aggiornamento o se l'autore del modello li aggiunge manualmente come visualizzatore. Non potranno intervenire sulla richiesta se al momento della creazione del report non è stato assegnato quel ruolo.

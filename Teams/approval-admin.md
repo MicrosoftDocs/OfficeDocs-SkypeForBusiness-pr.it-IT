@@ -4,7 +4,7 @@ author: LanaChin
 ms.author: v-lanachin
 ms.reviewer: farhazk
 manager: samanro
-ms.topic: article
+ms.topic: how-to
 audience: admin
 ms.service: msteams
 searchScope:
@@ -20,12 +20,12 @@ ms.collection:
 - highpri
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 866025dad342f5abfb5b0722391dc754b3f00dd5
-ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
+ms.openlocfilehash: 3cf50824119111d34668f4717eaf38f92de8bc64
+ms.sourcegitcommit: e6182aa3b15346dc955333a2bc571565ef463a57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68655842"
+ms.lasthandoff: 10/28/2022
+ms.locfileid: "68784331"
 ---
 # <a name="manage-the-approvals-app-in-microsoft-teams"></a>Gestire l'app Approvazioni in Microsoft Teams
 
@@ -214,7 +214,7 @@ Altre informazioni su [Microsoft Dataverse e registrazione delle attività delle
 
 Tramite l'app Approvazioni di Teams, gli utenti hanno accesso alla creazione di nuove approvazioni e alla visualizzazione di quelle inviate e ricevute. Gli utenti non possono accedere alle approvazioni create da altri utenti a meno che non abbiano risposto o visualizzato la richiesta.
 
-> [!Note]
+>[!Note]
 > A un utente viene assegnato il ruolo di visualizzatore di una richiesta se fa parte della chat o del canale in cui è stata creata l'approvazione. Non è possibile intervenire sulla richiesta se al momento della creazione dell'approvazione non è stato assegnato il ruolo specifico.
 
 ## <a name="approvals-e-signature-integration"></a>Integrazione delle firme e-mail di approvazione
