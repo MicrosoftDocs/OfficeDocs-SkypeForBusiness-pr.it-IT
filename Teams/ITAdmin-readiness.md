@@ -18,12 +18,12 @@ ms.custom:
 description: Video di formazione, presentazioni powerpoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0f8d251499ef55ef1b7621e63367f746d19c70e5
-ms.sourcegitcommit: e6182aa3b15346dc955333a2bc571565ef463a57
+ms.openlocfilehash: b456bd4e9887c5d8d2f8ff61667c75ef14a6588a
+ms.sourcegitcommit: 57616ad45eaa8be7f78dd0126d324c8777c5a367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68784351"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68792815"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori per Microsoft Teams
 
@@ -63,9 +63,9 @@ Usare le risorse di formazione per educare se stessi su Teams, insegnare agli al
 
 <h2>Teams Rooms Foundations for IT & AV Pros</h2>
 
-<p>La tabella seguente contiene collegamenti a video di formazione completi, con presentazioni PowerPoint (in formato PDF) di Microsoft Teams Rooms.  
+<p>La tabella seguente contiene collegamenti a presentazioni di formazione complete in PowerPoint su Microsoft Teams Rooms.  
 
-| Modulo | Presentazione di PowerPoint (PDF)  |
+| Modulo | Presentazione di PowerPoint  |
 | ------------ | -------------------- |
 | Modulo 1: Introduzione alla Microsoft Teams Rooms  | [Ponte](https://aka.ms/TeamsRoomsModule1) |
 | Modulo 2: Conformità alla rete  | [Ponte](https://aka.ms/TeamsRoomsModule2) |

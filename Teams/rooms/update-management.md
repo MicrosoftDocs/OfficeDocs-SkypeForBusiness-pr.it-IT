@@ -1,5 +1,5 @@
 ---
-title: Gestione degli aggiornamenti di gestione di Microsoft Teams Rooms Pro Management
+title: Gestione degli aggiornamenti di gestione Microsoft Teams Rooms Pro
 author: altsou
 ms.author: altsou
 manager: serdars
@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: monitoraggio proattivo delle sale riunioni.
 f1keywords: ''
-ms.openlocfilehash: bddfc17df4f6fc7bd28e2dcc00fc55b5653b8687
-ms.sourcegitcommit: 64c01699022b47fdfec8dc6e2ca279e57eae3baa
+ms.openlocfilehash: 285f0bd9862dc5d4c490587e574aa53e4869df80
+ms.sourcegitcommit: 57616ad45eaa8be7f78dd0126d324c8777c5a367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68243757"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68792875"
 ---
 # <a name="update-management"></a>Gestione degli aggiornamenti 
 Una moderna sala riunioni è dotata di un dispositivo Microsoft Teams Rooms e di altre periferiche, ad esempio una fotocamera, un microfono o un altoparlante, e potenzialmente più dispositivi per creare un'esperienza di riunione inclusiva ed efficace. L'attrezzatura di diversi tipi di OEM fornisce l'esperienza organizzativa desiderata; tuttavia, devono essere mantenuti con software e firmware su base continuativa.  
@@ -54,7 +54,7 @@ Sono disponibili alcuni prerequisiti per la ricezione degli aggiornamenti tramit
 |Logitech Sync Services  |Deve essere installato e in esecuzione nei dispositivi della sala riunioni Logitech. I servizi di sincronizzazione obbligatori verranno installati automaticamente da Windows Aggiornamenti a meno che non vengano bloccati. È anche possibile installare il pacchetto di sincronizzazione completo. |
 |Aggiornamenti del sistema operativo Windows |Deve essere mantenuto abilitato e non reindirizzato a WSUS, né bloccato da una prospettiva di rete. Né criteri Criteri di gruppo né criteri MDM devono essere usati per gestire gli aggiornamenti del sistema operativo. |
 |Aggiornamenti di Microsoft Store   |Dovrebbe essere disattivata. Se disponibili, i servizi gestiti disattiveranno gli aggiornamenti dello Store. |
-|Software antivirus |Se si esegue il software AV su questi dispositivi, è necessario assicurarsi che av presenti esclusioni per Le DLL di Teams e Skype. Per altre informazioni, vedere qui. |
+|Software antivirus |Se si esegue il software AV su questi dispositivi, è necessario assicurarsi che av presenti esclusioni per Le DLL di Teams e Skype. Per altre informazioni, vedere [Come includere o escludere Teams dalle applicazioni antivirus o DLP](/microsoftteams/troubleshoot/teams-administration/include-exclude-teams-from-antivirus-dlp) . |
 |Software aggiuntivo |Software aggiuntivo, ad esempio la visualizzazione del desktop remoto di terze parti e così via, deve essere esaminato con i servizi gestiti per escludere gli effetti collaterali. |
 |Gestione aggiuntiva delle modifiche|Può interferire con gli aggiornamenti coperti e" non dovrebbe essere introdotto. |
 

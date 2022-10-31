@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 81c8dfed94153ec7afec95da9e71e1bfe58be28c
-ms.sourcegitcommit: d7a86b3a72005764c18acb60eedf5163523ffae3
+ms.openlocfilehash: e9178bb793f25d9c052041432c20af4be8fb4033
+ms.sourcegitcommit: 57616ad45eaa8be7f78dd0126d324c8777c5a367
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/29/2022
-ms.locfileid: "67457146"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68792785"
 ---
 # <a name="archive-or-delete-a-team-in-microsoft-teams"></a>Archiviare o eliminare un team in Microsoft Teams
 
@@ -48,7 +48,7 @@ Seguire questi passaggi per archiviare un team. Per apportare queste modifiche, 
     ![Screenshot del messaggio di archiviazione di Teams.](media/teams-archive-message.png)
 
 4. Per evitare che gli utenti modifichino i contenuti nel sito di SharePoint e nella scheda Wiki associati al team, selezionare **Rendere il sito di SharePoint di sola lettura per i membri del team**. (I proprietari di Teams potranno ancora modificare questi contenuti.)
-5. Selezionare **Archivia** per archiviare il team. Lo stato del team cambierà in **Archiviato**, verrà spostato all'interno dei **team nascosti** nella parte inferiore dell'elenco dei team e accanto verrà aggiunta una piccola icona che rappresenta lo stato archiviato.
+5. Selezionare **Archivia** per archiviare il team. Lo stato del team cambierà in **Archiviato**, sarà temporaneamente disponibile all'interno dei **team nascosti** nella parte inferiore dell'elenco dei team e accanto ad esso verrà aggiunta una piccola icona che rappresenta lo stato archiviato. Una volta rimossa dai **team nascosti** , sarà disponibile nella visualizzazione **Gestisci team** in **Archiviata**. Per visualizzare e cercare nel contenuto del team archiviato, selezionarne il nome nell'elenco **Archiviato** .
 
 ## <a name="make-an-archived-team-active"></a>Attivare un team archiviato
 
