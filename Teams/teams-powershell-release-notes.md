@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni sulle ultime modifiche apportate in PowerShell di Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 50d5520233ab60d5837c2d7fdc1e9372d92d32da
-ms.sourcegitcommit: a4307c1d1ee2dcf3a0c0b31e6c2473abf52b7097
+ms.openlocfilehash: 52bb4fda3e9aba1785338f0c4d15d50f595caf42
+ms.sourcegitcommit: ab8f8e101e41774668b5e607fa72442105ca796e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2022
-ms.locfileid: "68669698"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68801797"
 ---
 # <a name="microsoft-teams-powershell-release-notes"></a>Note sulla versione di Microsoft Teams PowerShell
 
@@ -31,6 +31,7 @@ Questa pagina contiene il log delle modifiche di PowerShell di Teams più recent
 
 | Data | Versione | Aggiornamenti |
 |------- | -------------------- | ------------------------------ |
+| Ottobre 2022 | [4.9.0](https://www.powershellgallery.com/packages/MicrosoftTeams/4.9.0) |<li>Rilascia i cmdlet [Get\|Set]-CsTeamsEducationConfiguration in GA.</li><li>Contiene una nuova implementazione di [New\|Get\|Set\|Remove]-CsTeamsFeedbackPolicy, [New\|Get\|Set\|Remove]-CsTeamsMessagingPolicy, [New\|Get Set\|\|Remove]-CsTeamsMeetingPolicy e [New\|Get\|Set\|Remove]-CsOnlineVoicemailPolicy. La funzionalità rimane la stessa dell'implementazione precedente.</li><li>Aggiunge parametri ExplicitRecordingConsent, ForceStreamingAttendeeMode a TeamsMeetingPolicy.</li><li>Aggiunge i parametri Description, CanonicalAudioFile, PostambleAudioFile, DumpPostambleMandatory a OnlineVoicemailPolicy.</li><li>Aggiunge il parametro AllowChatWithGroup a TeamsMessagingPolicy.</li><li>Aggiunge il parametro EnableFeatureSuggestions a TeamsFeedbackPolicy.</li><li>Rilascia Update-CsTeamsShiftsConnectionInstance cmdlet.</li>
 | Ottobre 2022 | [4.8.1-anteprima](https://www.powershellgallery.com/packages/MicrosoftTeams/4.8.1-preview) |<li>Contiene una nuova implementazione di [New\|Get\|Set\|Remove]-CsTeamsMessagingPolicy, [New\|Get\|Set\|Remove]-CsTeamsMeetingPolicy e [New\|Get\|Set\|Remove]-CsOnlineVoicemailPolicy. NOTA: questi cmdlet attualmente funzionano solo con powershell.exe. Non funzionano per pwsh.exe. Questo problema verrà risolto nella prossima versione della Ga.</li><li>Aggiunge parametri ExplicitRecordingConsent, ForceStreamingAttendeeMode a TeamsMeetingPolicy.</li><li>Aggiunge i parametri Description, CanonicalAudioFile, PostambleAudioFile, DumpPostambleMandatory a OnlineVoicemailPolicy.</li><li>Aggiunge i parametri AllowChatWithGroup e EnableFeatureSuggestions a TeamsMessagingPolicy.</li><li>Rilascia Update-CsTeamsShiftsConnectionInstance cmdlet.</li>
 | Ottobre 2022 | [4.8.0](https://www.powershellgallery.com/packages/MicrosoftTeams/4.8.0) |<li>[Ottieni\| New]-CsTeamsShiftsConnectionTeamMap cmdlets - TimeZone attributo aggiunto.</li><li>Rimuove i parametri di input SendEmailFromAddress e SendEmailFromDisplayName da Set-CsOnlineDialinConferencingUser.</li><li>Rimuove i parametri AllowAllAcsResources e BlockedAcsResources da Set-TeamsAcsFederationConfiguration.</li><li>Aggiunge il parametro ForceListenMenuEnabled alle impostazioni del flusso di chiamata in New-CsAutoAttendantCallFlow, New-CsAutoAttendant e Set-CsAutoAutoAttendant. Questa impostazione consente al tenant di ignorare gli input DTMF/riconoscimento vocale durante la riproduzione delle opzioni di saluto/menu.</li>
 | Settembre 2022 | [4.7.1-anteprima](https://www.powershellgallery.com/packages/MicrosoftTeams/4.7.1-preview) |<li>Rilascia il supporto dell'autenticazione basata sull'applicazione in Connect-MicrosoftTeams in anteprima. I cmdlet supportati sono in fase di distribuzione graduale, maggiori dettagli [nell'autenticazione basata su applicazioni nel modulo Di Teams PowerShell](teams-powershell-application-authentication.md).</li><li>Rilascia i cmdlet [Get\|Set]-CsTeamsEducationConfiguration nell'anteprima privata.</li><li>[Ottieni\| New]-CsTeamsShiftsConnectionTeamMap cmdlets - TimeZone attributo aggiunto.</li><li>Rimuove i parametri di input SendEmailFromAddress e SendEmailFromDisplayName da Set-CsOnlineDialinConferencingUser.</li><li>Rimuove i parametri AllowAllAcsResources e BlockedAcsResources da Set-TeamsAcsFederationConfiguration.</li>

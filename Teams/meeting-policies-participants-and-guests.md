@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per partecipanti e guest.
-ms.openlocfilehash: 5b489f312dd1fd1fcd9bdb6a301a65e76ab9ed91
-ms.sourcegitcommit: 9522d951700d19ab13c60a6452b3a8a4c824ee36
+ms.openlocfilehash: 91d48a88aff2784a5e4d420b6ede7d03e3692678
+ms.sourcegitcommit: ab8f8e101e41774668b5e607fa72442105ca796e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2022
-ms.locfileid: "68018092"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68801787"
 ---
 # <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -34,17 +34,23 @@ Queste impostazioni controllano quali partecipanti alla riunione devono attender
 
 - [Consentire a persone anonime di partecipare a una riunione](#let-anonymous-people-join-a-meeting)
 - [Consenti alle persone anonime di avviare una riunione](#let-anonymous-people-start-a-meeting)
+- [Chi può partecipare alle riunioni](#who-can-present-in-meetings)
 - [Ammetti automaticamente le persone](#automatically-admit-people)
-- [Consenti agli utenti che chiamano di ignorare la sala di attesa](#allow-dial-in-users-to-bypass-the-lobby)
+- [Gli utenti che accedono con chiamata in ingresso possono evitare la sala di attesa](#dial-in-users-can-bypass-the-lobby)
+- [Riunione immediata in riunioni private](#meet-now-in-private-meetings)
 - [Sottotitoli in tempo reale](#live-captions)
 - [Chattare nelle riunioni](#chat-in-meetings)
+- [Teams Q&A](#teams-qa)
+- [Reazioni delle riunioni](#meeting-reactions)
+
+Queste impostazioni si trovano nell'interfaccia di amministrazione di Teams in **Criteri** > **riunione** nella sezione **Partecipanti & guest** .
 
 > [!NOTE]
 > Le opzioni per partecipare a una riunione variano in base alle impostazioni di ogni gruppo di Teams e al metodo di connessione. Se il gruppo ha le funzionalità di audioconferenza e le usa per la connessione, vedere [Audioconferenza](/microsoftteams/audio-conferencing-in-office-365). Se il gruppo di Teams non ha le funzionalità di audioconferenza, vedere [Partecipare a una riunione in Teams](https://support.office.com/article/join-a-meeting-in-teams-1613bb53-f3fa-431e-85a9-d6a91e3468c9).
 
 ## <a name="let-anonymous-people-join-a-meeting"></a>Consentire a persone anonime di partecipare a una riunione
 
-Questa impostazione per organizzatore consente a chiunque di partecipare alle riunioni come utente anonimo selezionando il collegamento nell'invito alla riunione. Per altre informazioni, vedere [Partecipare a una riunione senza un account di Teams](https://support.office.com/article/join-a-meeting-without-a-teams-account-c6efc38f-4e03-4e79-b28f-e65a4c039508). La possibilità per gli utenti anonimi di partecipare alle riunioni è controllata anche a livello di organizzazione, l'impostazione più restrittiva sarà efficace. Per altre informazioni, vedere [Uso dell'interfaccia di amministrazione di Microsoft Teams per configurare i criteri a livello di organizzazione](meeting-settings-in-teams.md#allow-anonymous-users-to-join-meetings).
+Questa impostazione per organizzatore consente a chiunque di partecipare alle riunioni come utente anonimo selezionando il collegamento nell'invito alla riunione. Per altre informazioni, vedere [Partecipare a una riunione senza un account di Teams](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508). La possibilità per gli utenti anonimi di partecipare alle riunioni è controllata anche a livello di organizzazione, l'impostazione più restrittiva sarà efficace. Per altre informazioni, vedere [Uso dell'interfaccia di amministrazione di Microsoft Teams per configurare i criteri a livello di organizzazione](meeting-settings-in-teams.md#allow-anonymous-users-to-join-meetings).
 
 ## <a name="let-anonymous-people-start-a-meeting"></a>Consenti alle persone anonime di avviare una riunione
 
@@ -52,6 +58,20 @@ Questa impostazione è un criterio per organizzatore che consente le riunioni di
 
 > [!NOTE]
 > Se questa impostazione è disattivata e un utente con accesso esterno accede alla riunione e viene inserito nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un cliente di Teams per consentire l'accesso all'utente dalla sala di attesa. Non sono disponibili controlli di sala di attesa per gli utenti che hanno effettuato l'accesso.
+
+## <a name="who-can-present-in-meetings"></a>Chi può partecipare alle riunioni
+
+Questo è un criterio per utente. Questa impostazione consente di modificare il valore predefinito dell'impostazione **Chi può essere un relatore?** in **Opzioni riunione** nel client di Teams. Questa impostazione di criteri influisce su tutte le riunioni, incluse quelle immediate.
+
+L'impostazione **Chi può essere un relatore?** consente agli organizzatori di scegliere chi può essere un relatore in una riunione. Per altre informazioni, vedere [Modificare le impostazioni dei partecipanti per una riunione Teams](https://support.microsoft.com/office/53261366-dbd5-45f9-aae9-a70e6354f88e) e [Ruoli in una riunione di Teams](https://support.microsoft.com/office/c16fa7d0-1666-4dde-8686-0a0bfe16e019).
+
+Per specificare il valore predefinito dell'impostazione **Chi può presentare?** in Teams, impostare una delle impostazioni seguenti nel criterio:
+
+- **Organizzatori, ma gli utenti possono ignorare**: solo l'organizzatore della riunione può essere un relatore e tutti i partecipanti alla riunione vengono designati come partecipanti. Questo parametro corrisponde all'impostazione **Solo io** in Teams.
+- **Tutti gli utenti dell'organizzazione, ma l'utente può eseguire l'override**: gli utenti autenticati nell'organizzazione, inclusi gli utenti guest, possono essere relatori. Questa impostazione corrisponde alla **Persone dell'organizzazione** in Teams.
+- **Tutti, ma l'utente può ignorare**: tutti i partecipanti alla riunione possono essere relatori. Questo è il valore predefinito. Questa impostazione corrisponde all'impostazione **Tutti** in Teams.
+
+Dopo aver impostato il valore predefinito, gli organizzatori delle riunioni possono ancora modificare questa impostazione in Teams e scegliere chi può essere un relatore nelle riunioni pianificate.
 
 ## <a name="automatically-admit-people"></a>Ammetti automaticamente le persone
 
@@ -76,12 +96,16 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se le per
  > [!NOTE]
 > Le organizzazioni attendibili sono domini con cui si consentono comunicazioni federate in Teams. Se si abilita **Consenti tutti i domini esterni** per l'accesso esterno nell'interfaccia di amministrazione di Teams, qualsiasi utente autenticato all'interno di qualsiasi organizzazione teams verrà considerato attendibile. Se si sceglie di specificare domini esterni consentiti e bloccarne tutti gli altri, i domini consentiti diventano organizzazioni attendibili. Qualsiasi dominio bloccato è considerato non un'organizzazione attendibile.
 
-## <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
+## <a name="dial-in-users-can-bypass-the-lobby"></a>Gli utenti che accedono con chiamata in ingresso possono evitare la sala di attesa
 
 Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Per impostazione predefinita, questa impostazione è disattivata. Se questa impostazione è disattivata, gli utenti con accesso esterno attenderanno nella sala di attesa finché un utente dell'organizzazione non accede alla riunione con un client di Teams e consente loro di accedere. Quando questa impostazione è attivata, gli utenti connessi con accesso automatico parteciperanno alla riunione quando un utente dell'organizzazione partecipa alla riunione con un client di Teams.
 
 > [!NOTE]
 > Se un utente con accesso esterno partecipa a una riunione prima che un utente dell'organizzazione acceda alla riunione, verrà inserito nella sala di attesa finché un utente dell'organizzazione non accede alla riunione usando un client di Teams e gli consente di accedere. Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
+
+## <a name="meet-now-in-private-meetings"></a>Riunione immediata in riunioni private
+
+Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione privata non pianificata. Per impostazione predefinita, questa impostazione è attivata.
 
 ## <a name="live-captions"></a>Sottotitoli in tempo reale
 
@@ -115,18 +139,22 @@ I criteri applicati all'organizzatore della riunione possono influire sugli altr
 
 <a name="bkparticipantsandguests"> </a>
 
-## <a name="qa-in-meetings"></a>Q&A nelle riunioni
+## <a name="teams-qa"></a>Teams Q&A
 
-Questo è un criterio per organizzatore. Questa impostazione consente agli amministratori del tenant di Microsoft 365 di abilitare o disabilitare l'esperienza Domande & Risposte (Q&A).
+Questo è un criterio per organizzatore. Questa impostazione attiva o disattiva l'esperienza Domande & Risposte (Q&A).
 
-L'impostazione viene applicata quando una riunione viene creata o aggiornata dagli organizzatori. Per impostazione predefinita, questa impostazione è disattivata. Altre informazioni su Q&A [sono disponibili qui](/manage-qna-for-meetings).
+L'impostazione viene applicata quando una riunione viene creata o aggiornata dagli organizzatori. Per impostazione predefinita, questa impostazione è disattivata. Altre informazioni su [Q&A nelle riunioni di Teams](/manage-qna-for-teams).
 
-Il parametro QnAEngagementMode controlla questo criterio in PowerShell. Q&A possono essere modificati anche all'interno del portale di amministrazione.
+Il parametro QnAEngagementMode controlla questo criterio in PowerShell. Q&A possono essere modificati anche nell'interfaccia di amministrazione di Teams.
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
-|**Abilitato**     | Gli organizzatori possono aggiungere domande&A durante la creazione di riunioni. |
-|**Disattiva**     | Gli organizzatori non avranno la possibilità di aggiungere Q&A durante la creazione di riunioni.  |
+|**Attivato**     | Gli organizzatori possono aggiungere domande&A durante la creazione di riunioni. |
+|**Disattivato**     | Gli organizzatori non avranno la possibilità di aggiungere Q&A durante la creazione di riunioni.  |
+
+## <a name="meeting-reactions"></a>Reazioni delle riunioni
+
+Le reazioni alle riunioni sono attivate per impostazione predefinita. Se si disattivano le reazioni di un utente non significa che un altro utente non può usare le reazioni nelle riunioni pianificate. L'organizzatore della riunione può comunque attivare le reazioni dalla pagina delle opzioni della riunione, indipendentemente dall'impostazione predefinita.
 
 ## <a name="enable-meeting-policy-settings"></a>Abilitare le impostazioni dei criteri riunione
 

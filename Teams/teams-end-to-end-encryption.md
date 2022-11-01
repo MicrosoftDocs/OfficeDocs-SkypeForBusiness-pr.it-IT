@@ -20,12 +20,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3e0d47107771add6e091afeeddc35d47110d7938
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.openlocfilehash: b5d3aa5e3bf56f5fe5a3c0ecef428b2d7a3c7dce
+ms.sourcegitcommit: ab8f8e101e41774668b5e607fa72442105ca796e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68614639"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68801892"
 ---
 # <a name="use-end-to-end-encryption-for-one-to-one-microsoft-teams-calls"></a>Usare la crittografia end-to-end per le chiamate uno-a-uno di Microsoft Teams
 
@@ -65,6 +65,8 @@ Le funzionalità avanzate seguenti non sono disponibili durante una chiamata E2E
 - Aggiunta di un partecipante
 
 - Registrazione
+
+- App
 
 Inoltre, se l'organizzazione usa la registrazione della conformità, la crittografia end-to-end non è disponibile. Per altre informazioni su come Teams supporta la registrazione della conformità, vedere [Introduzione alla registrazione basata su criteri di Teams per chiamate e riunioni](teams-recording-policy.md).
 

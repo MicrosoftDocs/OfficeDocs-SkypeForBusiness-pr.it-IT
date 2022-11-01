@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Questo articolo fornisce indicazioni su come usare i dispositivi dei pannelli di Teams.
-ms.openlocfilehash: f9d67ce6c41e351239457edc4a605964c7bcae27
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: fff3df797e043b83662aacc9a67ef1af45b733a4
+ms.sourcegitcommit: ab8f8e101e41774668b5e607fa72442105ca796e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268441"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68801777"
 ---
 # <a name="how-to-use-microsoft-teams-panels"></a>Come usare i pannelli di Microsoft Teams
 
@@ -171,27 +171,20 @@ I dispositivi pannelli forniscono due tipi di impostazioni di amministrazione. P
 
 ### <a name="access-panels-app-settings"></a>Impostazioni dell'app Pannelli di accesso
 
-È possibile accedere alle impostazioni specifiche **dell'app Pannelli** usando l'opzione **Impostazioni app Pannelli** nelle impostazioni di amministrazione. La procedura per accedere alle **impostazioni dell'app Pannelli** potrebbe variare in base all'OEM del dispositivo.
+È possibile accedere alle impostazioni specifiche **dell'app Pannelli** usando l'opzione **impostazioni di amministrazione di Teams** nelle impostazioni di amministrazione. La procedura per accedere alle **impostazioni di amministrazione di Teams** potrebbe variare in base all'OEM del dispositivo.
 
-Per accedere all'opzione **Impostazioni app Pannelli** :
+Per accedere all'opzione **delle impostazioni di amministrazione di Teams** :
 
 1. Toccare l'icona **Impostazioni** nella schermata home.
 2. Nella schermata **Impostazioni** toccare **Impostazioni dispositivo**.
-3. Toccare il **Amministrazione Impostazioni**.
 
     > [!NOTE]
     > A seconda dell'OEM del dispositivo, potrebbe essere necessario immettere la password di amministratore del dispositivo subito o dopo il passaggio successivo.
 
-4. Scorrere verso il basso per trovare l'opzione **Impostazioni app Pannelli** . Toccalo.
-5. Toccare il pulsante **Impostazioni app Pannelli** nella schermata destra.
-    Viene visualizzata la schermata con le impostazioni **dell'app Pannelli** disponibili.
+3. Scorrere verso il basso per trovare l'opzione **Impostazioni amministratore di Teams** . Toccalo.
 
-    :::image type="content" source="../media/panels-app-settings-screen.png" alt-text="Questa schermata mostra lo schermo con le impostazioni dell'app Pannelli disponibili.":::
-
-    Usare questa schermata per aggiornare le impostazioni **dell'app Pannelli** seguenti per il dispositivo:
-
-    - [Sfondo](#update-the-wallpaper)
-    - [Indicatore LED](#change-the-busy-state-led-color)
+> [!NOTE]
+> Alcuni OEM possono sostituire l'opzione **delle impostazioni di amministratore di Teams** con un'opzione personalizzata. Se l'opzione **Impostazioni amministratore di Teams** non è visualizzata, consultare la documentazione del dispositivo per istruzioni su come accedere alle impostazioni di amministrazione del pannello.
 
 #### <a name="pair-a-teams-panel-with-a-microsoft-teams-room-on-android"></a>Associare un Pannello di Teams a una sala riunioni di Microsoft Teams su Android
 
@@ -199,11 +192,11 @@ Per associare un Pannello di Teams e Teams Room su Android, entrambi i dispositi
 
 Nel Pannello di Teams accedere con le credenziali di amministratore.
 
-1. Vai a **Impostazioni > Impostazioni dispositivo > Amministrazione Impostazioni > Impostazioni dell'app Pannelli > Riunioni > Associazione dispositivi.**
+1. Passare a **Impostazioni > Impostazioni dispositivo > impostazioni di amministrazione di Teams > l'associazione del dispositivo.**
 
 2. Un codice a sei cifre verrà visualizzato sul Teams Rooms nella parte anteriore android dello schermo della sala. Immettere il codice nel riquadro Teams.  
 
-#### <a name="meeting-check-in-and-room-release"></a>Check-in riunione e rilascio sala
+#### <a name="enable-or-disable-meeting-check-in-and-automatic-room-release"></a>Abilitare o disabilitare l'archiviazione e il rilascio automatico della sala riunioni
 
 Le impostazioni di check-in e di rilascio della sala consentono agli utenti di accedere a una riunione nei pannelli di Teams nella sala che hanno prenotato all'inizio della riunione. Se un utente non esegue l'archiviazione entro un determinato periodo di tempo dopo l'ora di inizio della riunione, la sala viene rilasciata e diventa disponibile per la prenotazione da parte di altri utenti.
 
@@ -211,29 +204,49 @@ Quando i pannelli teams sono associati a una sala riunioni di Microsoft Teams su
 
 Per abilitare il check-in e il rilascio della sala, vedere [Check-in e rilascio della sala nei pannelli di Microsoft Teams](check-in-and-room-release.md).
 
-#### <a name="room-capacity-warning"></a>Avviso sulla capacità della sala
+#### <a name="enable-or-disable-check-out-manual-room-release"></a>Abilitare o disabilitare l'estrazione (rilascio manuale della sala)
 
-I pannelli di Teams abbinati a una sala riunioni di Teams su Android possono visualizzare un messaggio di avviso quando una sala riunioni è al livello o alla capacità superiore. Per usare questa funzionalità, La sala riunioni di Teams deve avere una fotocamera che supporti il conteggio delle persone. Teams Rooms su avvisi di capacità della sala di supporto Android senza un Pannello di Teams.
+Quando l'estrazione è abilitata, gli utenti finali possono usare un Pannello di Teams per rilasciare manualmente una chat room. Il rilascio di una stanza termina la prenotazione corrente e rende la stanza disponibile per gli altri.
 
-Gli avvisi sulla capacità della sala sono disattivati per impostazione predefinita. Per attivare l'impostazione dal Pannello di Teams, [associare prima di tutto un Pannello di Teams a una sala riunioni di Microsoft Teams su Android](#pair-a-teams-panel-with-a-microsoft-teams-room-on-android). Il pannello e la sala riunioni di Teams devono essere connessi allo stesso account della risorsa.
+Questa funzionalità è disabilitata per impostazione predefinita, ma può essere abilitata per ogni dispositivo. Per abilitare la funzionalità, passare a **Impostazioni > Impostazioni dispositivo > impostazioni di amministrazione di Teams > Riunioni** e quindi attivare **Estrai**.
 
- Quindi, vai a **Impostazioni > Impostazioni dispositivo > Amministrazione impostazioni > impostazioni dell'app Pannello**. Quindi, in **Riunioni**, attiva la **notifica sull'occupazione massima della sala**.
+> [!NOTE]
+> Non è possibile usare un Pannello di Teams per rilasciare una sala se il dispositivo Teams Rooms a cui è associato è in una chiamata attiva.
 
-#### <a name="view-room-equipment"></a>Visualizzare l'attrezzatura della sala
+#### <a name="enable-or-disable-room-reservations"></a>Abilitare o disabilitare le prenotazioni di sale
+
+Quando le prenotazioni di sale sono abilitate, gli utenti finali possono usare un Pannello di Teams per prenotare una chat room attualmente disponibile. Le prenotazioni iniziano nel momento in cui viene toccato il pulsante **Riserva** e la loro durata può essere aumentata in incrementi di 15 minuti fino all'ora di inizio della prenotazione successiva o a un massimo di 24 ore.
+
+Questa funzionalità è abilitata per impostazione predefinita, ma può essere disabilitata per ogni dispositivo. Per disabilitare la funzionalità, passare a **Impostazioni > Impostazioni dispositivo > impostazioni di amministrazione di Teams > Riunioni** e quindi attivare **Disabilita prenotazioni chat room**.
+
+#### <a name="enable-or-disable-extension-of-existing-room-reservations"></a>Abilitare o disabilitare l'estensione delle prenotazioni di sale esistenti
+
+Quando sono abilitate le estensioni della prenotazione della camera, gli utenti finali possono utilizzare un Pannello di Teams per estendere la prenotazione esistente di una camera se la camera è disponibile dopo l'orario di fine originale della prenotazione. Le prenotazioni possono essere estese in incrementi di 15 minuti fino all'ora di inizio della riunione successiva o a un massimo di 24 ore in futuro, a seconda del periodo più breve.
+
+Questa funzionalità è disabilitata per impostazione predefinita, ma può essere abilitata per ogni dispositivo. Per abilitare la funzionalità, passare a **Impostazioni > Impostazioni dispositivo > impostazioni di amministrazione di Teams > Riunioni** e quindi attivare **Estendi prenotazione sala**.
+
+#### <a name="enable-or-disable-room-capacity-warnings"></a>Abilitare o disabilitare gli avvisi di capacità della sala
+
+I pannelli di Teams associati a Teams Room su Android possono visualizzare un messaggio di avviso quando una sala è al livello o alla capacità superiore. Per usare questa funzionalità, La sala riunioni di Teams deve avere una fotocamera che supporti il conteggio delle persone. Teams Rooms su avvisi di capacità della sala di supporto Android senza un Pannello di Teams.
+
+Gli avvisi sulla capacità della sala sono disabilitati per impostazione predefinita, ma possono essere abilitati per ogni dispositivo. Per abilitare la funzionalità, eseguire le operazioni seguenti:
+
+1. Segui i passaggi descritti in [Associare un Pannello di Teams a una sala riunioni di Microsoft Teams su Android](#pair-a-teams-panel-with-a-microsoft-teams-room-on-android). Il pannello e il dispositivo Teams Room devono essere connessi allo stesso account di risorsa.
+2. Passare a **Impostazioni > Impostazioni dispositivo > impostazioni di amministrazione di Teams > Riunioni** e attivare la **notifica sull'occupazione massima della sala**.
+
+#### <a name="enable-or-disable-viewing-of-room-equipment"></a>Abilitare o disabilitare la visualizzazione dell'attrezzatura della sala
 
 Quando questa funzionalità è attivata, gli utenti finali possono visualizzare le apparecchiature disponibili in uno spazio di un Pannello di Teams.
 
-Questa funzionalità è disattivata per impostazione predefinita e può essere abilitata per ogni dispositivo. Per attivarlo, usare [Imposta posizione](/powershell/module/exchange/set-place?view=exchange-ps) in PowerShell per configurare i nomi visualizzati per `AudioDeviceName`, `DisplayDeviceName`, `VideoDeviceName`, `Tags`e `IsWheelChairAccessible`.
+Questa funzionalità è disattivata per impostazione predefinita e può essere abilitata per ogni dispositivo. Per attivarlo, usare [Imposta posizione](/powershell/module/exchange/set-place) in PowerShell per configurare i nomi visualizzati per `AudioDeviceName`, `DisplayDeviceName`, `VideoDeviceName`, `Tags`e `IsWheelChairAccessible`.
 
 In alternativa, è possibile abilitare questa caratteristica nell'interfaccia di amministrazione di Exchange. Per altre informazioni, vedere [Modificare una risorsa](/exchange/recipients-in-exchange-online/manage-resource-mailboxes#edit-a-resource) .
-
-
 
 #### <a name="update-the-wallpaper"></a>Aggiorna lo sfondo
 
 Modificare l'immagine di sfondo Della schermata home.
 
-1. [**Impostazioni dell'app Pannelli** di accesso](#access-panels-app-settings).
+1. [Accedere alle **impostazioni di amministrazione di Teams**](#access-panels-app-settings).
 2. Tocca **Sfondi**.
 3. In **Scegli l'immagine** selezionare un'immagine da impostare come immagine di sfondo della schermata home. Visualizzare in anteprima l'immagine selezionata in **Sfondo**.
 :::image type="content" source="../media/panels-wallpapers-setting.png" alt-text="Questo screenshot mostra la schermata delle impostazioni dello sfondo.":::
@@ -243,7 +256,7 @@ Modificare l'immagine di sfondo Della schermata home.
 
 Gli amministratori possono scegliere il rosso o il viola come colore LED per indicare che lo spazio della riunione è occupato o riservato. Il colore LED per indicare uno spazio disponibile è sempre verde e non può essere modificato.
 
-1. [**Impostazioni dell'app Pannelli** di accesso](#access-panels-app-settings).
+1. [Accedere alle **impostazioni di amministrazione di Teams**](#access-panels-app-settings).
 2. Tocca **Impostazioni LED**.
 3. In **Scegli il colore LED** seleziona il colore desiderato.
 :::image type="content" source="../media/panels-led-settings.png" alt-text="Questa schermata mostra le impostazioni dello stato occupato del colore LED.":::

@@ -16,12 +16,12 @@ ms.collection:
 ms.topic: reference
 search.appverid: MET150
 description: Questo articolo fornisce indicazioni su come abilitare i dispositivi dei pannelli teams per il check-in e il rilascio delle sale.
-ms.openlocfilehash: 31cdab94ddb6a5c6fdc017b537f446e58aa1c2c5
-ms.sourcegitcommit: 6e677c7d0dfe9e380d70adaca748eea88ca95705
+ms.openlocfilehash: d5998049faf1e3c8c25b3e49470291bb20f97eea
+ms.sourcegitcommit: ab8f8e101e41774668b5e607fa72442105ca796e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67298326"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68801857"
 ---
 # <a name="check-in-and-room-release-on-microsoft-teams-panels"></a>Check-in e rilascio della sala sui pannelli di Microsoft Teams
 
@@ -41,7 +41,7 @@ Il check-in e il rilascio della sala sono disattivati per impostazione predefini
 
 2. Passare a **Impostazioni > Impostazioni dispositivo > Amministrazione impostazioni > impostazioni di amministrazione di Teams > Riunioni**.
 
-3. Attiva Release room se nessuno effettua l'accesso.
+3. Attiva **Release room se nessuno effettua l'accesso**.
 
 4. Per regolare la quantità di tempo per cui gli utenti devono effettuare il check-in prima del rilascio della sala, passare a **Rilascia dopo** : e selezionare un'opzione nell'elenco a discesa.  
 

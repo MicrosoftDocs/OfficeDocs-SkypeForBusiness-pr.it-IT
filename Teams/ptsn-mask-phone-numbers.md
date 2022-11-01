@@ -17,12 +17,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come mascherare i numeri di telefono nelle riunioni di Microsoft Teams
-ms.openlocfilehash: e1ef25f12bdf92bc58739284af2a624257169403
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: cad28ad446c39a45b865fd24767347fdf11bb9c8
+ms.sourcegitcommit: ab8f8e101e41774668b5e607fa72442105ca796e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270821"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68801767"
 ---
 # <a name="mask-phone-numbers-in-microsoft-teams-meetings"></a>Mascherare i numeri di telefono nelle riunioni di Microsoft Teams
 
@@ -38,9 +38,17 @@ Per specifici casi di utilizzo di settore, gli amministratori hanno la possibili
 
 Questa impostazione viene applicata a tutte le superfici della riunione in cui vengono esposti i numeri di telefono.
 
+## <a name="use-teams-admin-center-to-set-phone-number-masking"></a>Usare l'interfaccia di amministrazione di Teams per impostare il mascheramento dei numeri di telefono
+
+Per modificare l'impostazione di mascheramento PSTN (Public Switched Telephone Network) nell'interfaccia di amministrazione di Teams, accedere all'interfaccia di amministrazione di Teams come amministratore, selezionare **Riunioni** > **Conference Bridge** nel riquadro di spostamento sinistro e quindi selezionare **Impostazioni bridge**. **Visualizza ID chiamante mascherato** è un elenco a discesa nella parte inferiore del riquadro impostazioni bridge e consente di scegliere quanto segue:
+
+- Ai partecipanti esterni all'organizzazione
+- A tutti i partecipanti alla riunione
+- Disattiva
+
 ## <a name="use-microsoft-powershell-to-set-phone-number-masking"></a>Usare Microsoft PowerShell per impostare il mascheramento dei numeri di telefono
 
-Per modificare l'impostazione di mascheramento PSTN (Public Switched Telephone Network), imposta il **`MaskPstnNumbersType`** parametro del cmdlet [Set-CsOnlineDialInConferencingTenantSettings](/powershell/module/skype/set-csonlinedialinconferencingtenantsettings?view=skype-ps) su una delle opzioni disponibili.
+Per modificare l'impostazione di mascheramento PSTN in PowerShell, imposta il **`MaskPstnNumbersType`** parametro del cmdlet [Set-CsOnlineDialInConferencingTenantSettings](/powershell/module/skype/set-csonlinedialinconferencingtenantsettings?view=skype-ps) su una delle opzioni disponibili.
 
 Per mascherare i numeri di telefono solo dei partecipanti esterni, eseguire il comando seguente:
 
