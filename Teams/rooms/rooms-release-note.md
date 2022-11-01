@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cb76ac9da50a55dbf8a5df10ddab4f65cfdebcc7
-ms.sourcegitcommit: 2ecf98862aae607d0675418a6177be91f56af1f0
+ms.openlocfilehash: d861b5ec9b5b70ca18032462b042f10cd4f5b75a
+ms.sourcegitcommit: ffcc4c7d5688fee28f5fdc8bb8e6b78afb1ee626
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67607619"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68795438"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -104,7 +104,7 @@ Introdotto in questo aggiornamento:
 - Aggiungere e nascondere il video <sup>della sala 1</sup> 
 - Configurazione dell'amministratore per disattivare la raccolta divisa in doppio schermo Teams Rooms <sup>2</sup>
 - La Teams Rooms a doppio schermo può ora visualizzare fino a 18 flussi video partecipanti <sup>1</sup>
-- Supporto per Microsoft Teams Rooms Pro e microsoft Teams Room Basic room licenses <sup>1</sup>
+- Supporto per Microsoft Teams Rooms Pro e licenze room Room Basic di Microsoft Teams <sup>1</sup>
 
 <sup>1</sup> Questa funzionalità è in fase di distribuzione al client Web di Teams e richiederà circa due settimane dalla data di rilascio dell'aggiornamento. Per altre informazioni, vedere [Aggiornamenti di Teams](../teams-client-update.md).
 
@@ -122,7 +122,7 @@ Introdotto in questo aggiornamento:
 - impostazione Amministrazione per il layout solo del contenuto predefinita  
 - L'autenticazione moderna è attivata per impostazione predefinita
 
- <sup>1</sup> Prima di poter attivare la crittografia end-to-end per le chiamate da un dispositivo Teams Room, è necessario configurare i criteri per l'account utente del dispositivo. È possibile aggiornare i criteri dell'utente dall'interfaccia di amministrazione di Teams o usando PowerShell di Teams. Per altre informazioni, vedere [Configurare i criteri per l'account utente di Teams Room.](../teams-end-to-end-encryption.md)
+ <sup>1</sup> Prima di poter attivare la crittografia end-to-end per le chiamate da un dispositivo Teams Rooms, è necessario configurare i criteri per l'account utente del dispositivo. È possibile aggiornare i criteri dell'utente dall'interfaccia di amministrazione di Teams o usando PowerShell di Teams. Per altre informazioni, vedere [Configurare i criteri per l'account utente di Teams Room.](../teams-end-to-end-encryption.md)
 
  <sup>2</sup> Teams Rooms aggiunto il supporto per l'eliminazione del rumore nella versione 4.12 con override amministratore.
 
@@ -273,7 +273,7 @@ Introdotto in questo aggiornamento:
 - Supporto di Government Community Cloud High (GCCH) per Teams Rooms. I clienti GCCH con dispositivi Teams Rooms esistenti possono scaricare la versione 4.8.19.0 da [Aggiornare manualmente un dispositivo Microsoft Teams Rooms](manual-update.md)
 - Partecipare a riunioni con zoom con una qualità video migliore (supporto 720p) e ricevere la raccolta video dei partecipanti
 - Skype for Business banner di errore di accesso rimosso per la modalità predefinita di Teams. Questa modifica supporta le organizzazioni che rimuovono Skype for Business'infrastruttura
-- Le riunioni di Teams partecipano all'analisi dei collegamenti ora gestisce i collegamenti sicuri di Microsoft Defender Advanced Threat Protection per consentire di partecipare facilmente a Team esterni
+- Le riunioni di Teams partecipano all'analisi dei collegamenti ora gestisce Microsoft Defender Collegamenti sicuri di Advanced Threat Protection per consentire di partecipare facilmente a team esterni
 - Correzione del problema di ridimensionamento del contenuto condiviso nelle riunioni Skype for Business quando il PC del condivisore ha un DPI personalizzato impostato in Windows
 - Correzioni di qualità e affidabilità
 

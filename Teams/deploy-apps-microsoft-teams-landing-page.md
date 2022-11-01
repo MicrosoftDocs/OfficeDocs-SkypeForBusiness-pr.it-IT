@@ -21,12 +21,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020; intro-overview; intro-hub-or-landing
-ms.openlocfilehash: 1ff0095ef804f7e58dcbc81c45639228b0264da4
-ms.sourcegitcommit: e6182aa3b15346dc955333a2bc571565ef463a57
+ms.openlocfilehash: 83654452460da41bf72b0feca30d3373de1533ef
+ms.sourcegitcommit: ffcc4c7d5688fee28f5fdc8bb8e6b78afb1ee626
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68784201"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68795428"
 ---
 # <a name="understand-microsoft-teams-apps"></a>Informazioni sulle app di Microsoft Teams
 
@@ -89,15 +89,37 @@ Per altre informazioni, vedere [Modelli di app di Microsoft Teams](https://adopt
 
 ## <a name="understand-app-capabilities"></a>Informazioni sulle funzionalità delle app
 
-Per fornire esperienze avanzate che consentano agli utenti finali di lavorare all'interno di Teams, gli sviluppatori di app utilizzano le seguenti funzionalità. Le estensioni di messaggistica consentono agli utenti di interagire con il client Teams del servizio Web. Gli utenti cercano o avviano azioni in un sistema esterno. È possibile inviare il risultato dell'interazione al client di Teams come scheda ricca di formattazione. Le app per l'estensibilità delle riunioni integrano le app di uno sviluppatore all'interno delle riunioni e offrono un'esperienza reattiva durante le riunioni.
+Le funzionalità dell'app Teams sono le funzionalità principali che possono essere integrate in un'app per consentire l'integrazione e l'interazione.
 
-I bot sono anche chiamati chatbot o bot conversazionali. Si tratta di un'app che esegue attività semplici e ripetitive. L'interazione con un bot può essere una domanda e una risposta rapide oppure una conversazione complessa che fornisce accesso a servizi o assistenza. Gli utenti possono chattare con un bot uno-a-uno o in un canale. Ad esempio, è possibile usare l'app Polly per creare sondaggi rapidi, ottenere feedback e controllare l'impulso.
+:::row:::
+    :::column span="":::
+    :::column-end:::
+    :::column span="3":::
+        :::image type="content" source="media/teams-app-capabilities-group.png" alt-text="Immagine che mostra le funzionalità dell'app di un'app di Microsoft Teams." border="false":::
+    :::column-end:::
+    :::column:::
+    :::column-end:::
+:::row-end:::
 
-Le schede sono pagine Web con compatibili con Teams aggiunte nella parte superiore di un canale o di una chat. Le schede consentono di interagire con contenuti e servizi con un'esperienza simile al Web. È possibile aggiungere schede come parte di un canale all'interno di un team, una chat di gruppo o un'app personale per un singolo utente.
+Per offrire un'esperienza completa che consenta agli utenti finali di lavorare all'interno di Teams, gli sviluppatori di app creano app utilizzando le funzionalità seguenti:
 
-Webhook e connettori forniscono contenuti e aggiornamenti dai servizi usati di frequente dagli utenti finali (come Jira Cloud e Bitbucket) direttamente in una conversazione del canale. Le app che usano questa funzionalità possono comunicare con app esterne e inviare o ricevere notifiche e messaggi da un servizio esterno.
+* **Bot**: i bot sono anche chiamati chatbot o bot conversazionali. Si tratta di un'app che esegue attività semplici e ripetitive. L'interazione con un bot può essere una domanda e una risposta rapide oppure una conversazione complessa che fornisce accesso a servizi o assistenza. Gli utenti possono avere una conversazione con un bot in una chat personale, un canale o una chat di gruppo. Per altre informazioni, vedere [Bot in Microsoft Teams](/microsoftteams/platform/bots/what-are-bots).
 
-Le estensioni di messaggistica sono collegamenti per inserire il contenuto dell'app o agire su un messaggio senza che gli utenti finali escano dalla conversazione. Le estensioni di messaggistica possono avere comandi di ricerca che consentono agli utenti finali di trovare rapidamente contenuti esterni e inserirli in un messaggio o in un comando di azione.
+  Teams supporta i bot all'interno di chat e canali privati. Gli amministratori possono controllare se in un’organizzazione di Microsoft 365 o Office 365 è consentito l'uso di bot. Per informazioni sull'attivazione o la disattivazione dei bot personalizzati, vedere [Panoramica della gestione e della governance delle app nell'interfaccia di amministrazione di Teams](manage-apps.md).
+
+* **Schede**: Le schede sono pagine Web con supporto per Teams aggiunte nella parte superiore di un canale o di una chat. Le schede consentono di interagire con contenuti e servizi con un'esperienza simile al Web. Si tratta di semplici tag html <iframe\> che puntano ai domini dichiarati nel manifesto dell'app e possono essere aggiunti come parte di un canale all'interno di un team, una chat di gruppo o un'app personale per un singolo utente. Per altre informazioni, vedere [le schede di Microsoft Teams](/microsoftteams/platform/tabs/what-are-tabs).
+
+  In ogni chat privata, le schede Conversazioni, File, Organizzazione e Attività vengono create per impostazione predefinita. Oltre a queste schede predefinite, gli sviluppatori possono progettare e aggiungere schede personalizzate. Per altre informazioni, vedere [Usare schede predefinite e personalizzate in Teams](/microsoftteams/platform/tabs/what-are-tabs).
+
+* **Webhook e connettori**: Webhook e connettori consentono di connettere i servizi Web a canali e team in Microsoft Teams. Webhooks sono callback HTTP definito dall'utente che notifica agli utenti qualsiasi azione che è stata eseguita nel canale Teams. È un modo per un'app di ottenere dati in tempo reale. I connettori consentono agli utenti di abbonarsi per ricevere notifiche e messaggi dai servizi Web. Per altre informazioni, vedere [Webhook e connettori](/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors).
+
+  Per consentire agli utenti di usare connettori personalizzati in Teams, vedere [Usare connettori personalizzati in Teams](office-365-custom-connectors.md).
+
+* **Estensioni di messaggistica**: le estensioni di messaggistica sono collegamenti per inserire il contenuto dell'app o per agire su un messaggio senza che gli utenti finali debba uscire dalla conversazione. Gli utenti possono eseguire ricerche o avviare azioni in un sistema esterno dall'area di composizione del messaggio, dalla casella di comando o direttamente da un messaggio. Per altre informazioni, vedere [Estensioni dei messaggi](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions?tabs=dotnet).
+
+* **Estensioni delle riunioni**: gli utenti possono migliorare l'esperienza delle riunioni integrando schede, bot ed estensioni di messaggi all'interno delle riunioni e aumentando la produttività delle riunioni. È possibile identificare i vari ruoli e tipi di utente dei partecipanti, ricevere eventi di riunione e generare finestre di dialogo in riunione. Per altre informazioni, vedere [Riunioni di App per Teams](/microsoftteams/platform/apps-in-teams-meetings/teams-apps-in-meetings).
+
+* **Schede e moduli attività**: le schede forniscono agli utenti vari messaggi visivi, audio e selezionabili e aiutano nel flusso delle conversazioni. I moduli attività consentono di creare esperienze popup modali in Microsoft Teams. Sono utili per iniziare e completare le attività o per visualizzare informazioni complete, ad esempio video o dashboard di Power Business Intelligence (BI). Per altre informazioni, vedere [Schede e moduli attività](/microsoftteams/platform/task-modules-and-cards/cards-and-task-modules).
 
 Per visualizzare i casi d'uso comuni mappati alle funzionalità di Teams, vedere [Mappare i casi d'uso alle funzionalità dell'app Teams](/microsoftteams/platform/concepts/design/map-use-cases).
 
@@ -172,6 +194,10 @@ You can use activity reports to see how users in your organization are using Tea
 
 --->
 
-## <a name="related-article"></a>Articolo correlato
+## <a name="related-articles"></a>Articoli correlati
 
 * [Altre informazioni sui modelli di app per Teams](/microsoftteams/platform/samples/app-templates).
+
+* [Panoramica della gestione e della governance delle app nell'interfaccia di amministrazione di Teams](manage-apps.md)
+
+* [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)

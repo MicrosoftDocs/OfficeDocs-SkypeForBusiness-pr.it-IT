@@ -18,12 +18,12 @@ ms.custom:
 description: Video di formazione, presentazioni powerpoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b456bd4e9887c5d8d2f8ff61667c75ef14a6588a
-ms.sourcegitcommit: 57616ad45eaa8be7f78dd0126d324c8777c5a367
+ms.openlocfilehash: 0dab76cd8cdca4270555a7f15b8f92f353f7afc5
+ms.sourcegitcommit: ffcc4c7d5688fee28f5fdc8bb8e6b78afb1ee626
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 10/31/2022
-ms.locfileid: "68792815"
+ms.locfileid: "68795448"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori per Microsoft Teams
 
@@ -80,9 +80,9 @@ Usare le risorse di formazione per educare se stessi su Teams, insegnare agli al
 
 <h2>Dispositivi Android di Teams</h2>
 
-<p>La tabella seguente contiene collegamenti a una formazione completa, con presentazioni PowerPoint (in formato PDF), su dispositivi Android di Microsoft Teams che includono teams display, telefoni teams, Teams Rooms per Android e pannelli teams.  
+<p>La tabella seguente contiene collegamenti a presentazioni di formazione complete in PowerPoint su dispositivi Android di Microsoft Teams che includono schermi teams, telefoni Teams, Teams Rooms per Android e pannelli teams.  
 
-| Modulo | Presentazione di PowerPoint (PDF)  |
+| Modulo | Presentazione di PowerPoint  |
 | ------------| -------------------- |
 | Modulo 1: Introduzione ai dispositivi Android di Microsoft Teams  |[Ponte](https://aka.ms/TeamsAndroidModule1) |
 | Modulo 2: Pianificazione di dispositivi Microsoft Teams Android|[Ponte](https://aka.ms/TeamsAndroidModule2) |

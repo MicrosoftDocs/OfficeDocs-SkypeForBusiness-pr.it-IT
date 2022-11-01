@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottieni informazioni dettagliate sulle dimensioni e le misure utilizzate da Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: f90db84232e544a6317771bb553733e330df7ce7
-ms.sourcegitcommit: 8dd36e1e30a47316c15c99e964d0464715bcd742
+ms.openlocfilehash: f2db002a063f32052dec6facc70ecdca7dcc9454
+ms.sourcegitcommit: ffcc4c7d5688fee28f5fdc8bb8e6b78afb1ee626
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68532276"
+ms.lasthandoff: 10/31/2022
+ms.locfileid: "68795458"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili in Call Quality Dashboard (CQD)
 
@@ -301,6 +301,8 @@ La tabella seguente elenca le dimensioni attualmente disponibili in Call Quality
 | Second Reflexive Local IP Network | Stringa | Subnet IP (/24) del secondo endpoint vista dal server Media Relay. Si tratta in genere della subnet dell'indirizzo IP Internet pubblico associato al secondo endpoint per lo stream. <br/>**Valore di esempio:** 52.114.5.0 | &bull; Il tipo di diagnostica del trasporto non è stato segnalato <br/>&bull; Il percorso dei supporti non è stato stabilito |
 | First VPN Estimated | Boolean | Indica un'alta probabilità di connessione su una rete privata virtuale (VPN). <br/>**Valori possibili:** 0 o 1 | |
 | Second VPN Estimated | Boolean | Indica un'alta probabilità di connessione su una rete privata virtuale (VPN). <br/>**Valori possibili:** 0 o 1 | |
+| Primo trigger roaming | Enumerazione (String) | Indica la causa più recente per cui il primo endpoint ha eseguito una riconnessione leggera durante la chiamata in cui non era coinvolto il traffico di segnalazione. Un esempio è quando un endpoint passa da un punto di accesso wireless alla stessa rete. <br/>**Valori possibili:** <br/> &bull;**Remoto**- Invio di pacchetti al peer, ma peer non li riceve <br/> &bull;**ConsentKA** - Keep-Alive guasti; Timeout di 7 secondi se nessuna risposta a pacchetti keep-alive <br/> &bull;**Interfaccia** - Cambio interfaccia locale o lembo <br/> &bull;**RelayDraining** - Manutenzione del servizio (prevista) | &bull; Non si è verificato alcun roaming <br/> &bull; I dati non sono stati inviati dall'endpoint |
+| Second Roaming Trigger | Enumerazione (String) | Indica il numero di volte in cui il secondo endpoint ha eseguito una riconnessione leggera durante la chiamata in cui non era coinvolto il traffico di segnalazione. Un esempio è quando un endpoint passa da un punto di accesso wireless alla stessa rete. <br/>**Valori possibili:** <br/> &bull;**Remoto**- Invio di pacchetti al peer, ma peer non li riceve <br/> &bull;**ConsentKA** - Keep-Alive guasti; Timeout di 7 secondi se nessuna risposta a pacchetti keep-alive <br/> &bull;**Interfaccia** - Cambio interfaccia locale o lembo <br/> &bull;**RelayDraining** - Manutenzione del servizio (prevista) | &bull; Non si è verificato alcun roaming <br/> &bull; I dati non sono stati inviati dall'endpoint |
 | First Roaming Count | Intervallo (intero) | Indica il numero di volte in cui il primo endpoint ha eseguito una riconnessione leggera durante la chiamata in cui non era coinvolto il traffico di segnalazione. Un esempio è quando un endpoint passa da un punto di accesso wireless alla stessa rete. <br/>**Valore di esempio:** 064: [1 - 2) | |
 | Second Roaming Count | Intervallo (intero) | Indica il numero di volte in cui il secondo endpoint ha eseguito una riconnessione leggera durante la chiamata in cui non era coinvolto il traffico di segnalazione. Un esempio è quando un endpoint passa da un punto di accesso wireless alla stessa rete. <br/>**Valore di esempio:** 064: [1 - 2) | |
 |**Dispositivo**| |||
