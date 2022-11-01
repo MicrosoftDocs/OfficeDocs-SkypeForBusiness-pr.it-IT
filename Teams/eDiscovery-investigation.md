@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f9bca2e40263bdbce65a64bf0da2d5864941fc46
-ms.sourcegitcommit: 57616ad45eaa8be7f78dd0126d324c8777c5a367
+ms.openlocfilehash: 8a9e7afdf55fbcb85dcbbf907ef974a62e4e8492
+ms.sourcegitcommit: 86b9503eb0085e23176cb346767f880ea3a73e77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68792795"
+ms.lasthandoff: 11/01/2022
+ms.locfileid: "68808295"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Condurre un'indagine eDiscovery sul contenuto in Microsoft Teams
 
@@ -53,7 +53,7 @@ Non tutti i contenuti di Teams sono eDiscoverable. La tabella seguente mostra i 
 |Metadati della riunione<sup>1</sup>||
 |Nome del canale||
 |Citazioni|Il contenuto tra virgolette è ricercabile. Tuttavia, i risultati della ricerca non indicano che il contenuto è stato citato.|
-|Reazioni (come Mi piace, cuori e altre reazioni)|Le reazioni sono supportate per tutti i clienti commerciali dopo il 1° giugno 2022. Le reazioni precedenti a questa data non sono disponibili per eDiscovery. È previsto il supporto per il cloud per enti pubblici. Non esiste alcun supporto legale per le reazioni.|
+|Reazioni (come Mi piace, cuori e altre reazioni)|Le reazioni sono supportate per tutti i clienti commerciali dopo il 1° giugno 2022. Le reazioni precedenti a questa data non sono disponibili per eDiscovery. Le reazioni espanse sono ora supportate. Per comprendere la storia delle reazioni, il contenuto deve essere bloccato a fini giudiziari.|
 |Oggetto||
 |Tabelle||
 |Clip video di Teams (TVC)|Cerca in TVC la parola chiave "Video-Clip" e "salva con nome" un file .mp4 per ogni allegato TVC facendo clic con il pulsante destro del mouse sull'anteprima (la ricerca per parola chiave sarà disponibile a ottobre 2022). I dati TVC sono individuabili nei [set di revisioni](/microsoft-365/compliance/add-data-to-review-set) di eDiscovery.
@@ -204,17 +204,17 @@ Per cercare contenuto per gli utenti guest:
    Start-ComplianceSearch <search name>
    ```
 
-6. Passare a [https://compliance.microsoft.com](https://compliance.microsoft.com) e quindi fare clic su **Mostra tutta la** > **ricerca contenuto**.
+6. Vai a [https://compliance.microsoft.com](https://compliance.microsoft.com) e quindi seleziona **Mostra tutta la** > **ricerca contenuto**.
 
 7. Nell'elenco delle ricerche selezionare la ricerca creata nel passaggio 4 per visualizzare la pagina a comparsa.
 
 8. Nella pagina a comparsa è possibile eseguire le operazioni seguenti:
 
-   - Fare clic su **Visualizza risultati** per visualizzare i risultati della ricerca e visualizzare in anteprima il contenuto.
+   - Selezionare **Visualizza risultati** per visualizzare i risultati della ricerca e visualizzare in anteprima il contenuto.
 
-   - Accanto al campo **Query** fare clic su **Modifica** per modificare e quindi eseguire di nuovo la ricerca. Ad esempio, è possibile aggiungere una query di ricerca per limitare i risultati.
+   - Accanto al campo **Query** selezionare **Modifica** per modificare e quindi eseguire di nuovo la ricerca. Ad esempio, è possibile aggiungere una query di ricerca per limitare i risultati.
 
-   - Fare clic su **Esporta risultati** per esportare e scaricare i risultati della ricerca.
+   - Selezionare **Esporta risultati** per esportare e scaricare i risultati della ricerca.
 
 ## <a name="search-for-card-content"></a>Cercare il contenuto della scheda
 
@@ -245,7 +245,7 @@ Gli amministratori possono usare eDiscovery per cercare contenuti nei messaggi d
 
 - **Non federato**: in una riunione di Teams con utenti dell'organizzazione e utenti guest, solo gli amministratori dell'organizzazione che ospitano la riunione di Teams possono cercare contenuti nei messaggi di chat della riunione.
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
 - [Soluzioni eDiscovery di Microsoft 365](/microsoft-365/compliance/ediscovery)
 - [Introduzione a eDiscovery (Standard)](/microsoft-365/compliance/get-started-core-ediscovery)
