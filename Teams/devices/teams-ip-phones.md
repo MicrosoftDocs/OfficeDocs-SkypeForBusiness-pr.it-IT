@@ -22,12 +22,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e da conferenza sono certificati per Microsoft Teams per produrre i migliori risultati.
-ms.openlocfilehash: 2625840f27edec527a55f48fbd70e8bbfed2dd24
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.openlocfilehash: f2b6e74dd276eabda4cb94459a18e87ea4e38c41
+ms.sourcegitcommit: 247ae32098c3601252249ce1de719f5215c8ab75
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68614439"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68810692"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Dispositivi Android certificati da Microsoft Teams
 
@@ -85,7 +85,9 @@ I seguenti dispositivi sono certificati ai sensi del programma di certificazione
 | Yealink MeetingBar A30 | `133.15.0.108  `   | 3 settembre 2024 | Camera di medie dimensioni (4,5 m x 6 m) | 10|
 | Logitech Tap IP VR0029     | `1.6.762`  |   3 settembre 2024  | Compatibile con Logitech Rally Bar e Rally Bar Mini | 10 |
 | Neat Bar Pro   | `NFD1.20220914.1210 ` | 3 settembre 2024  |  Camera di medie dimensioni (4,5 m x 6 m) | 10|
+| Barra ordinata | `NFF1.20220914.1210` |3 settembre 2024|    Camera di medie dimensioni (4,5 m x 6 m) | 10 |
 | Barra ordinata | `NFB1.20220211.1400` |3 settembre 2024|    Sala riunioni piccola (4,5 m x 4,5 m) | 10 |
+| Console touch neat pad | `NFA1.20220914.1206`  | 3 settembre 2024 | Compatibile solo con Neat Bar | 9 |
 | Console touch neat pad | `NFA1.20220211.1400`  | 5 agosto 2023 |  Compatibile solo con Neat Bar | 9 |
 | Neat Board | `NFC1.20220211.1400 ` | 3 settembre 2024 |    Sala riunioni piccola (4,5 m x 4,5 m) | 10 |
 | Logitech Roommate | `1.4.71` | 3 settembre 2024  | Sala riunioni di grandi dimensioni (4,5 m x 8,5 m)  |   10  |

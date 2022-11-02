@@ -17,23 +17,23 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: I partner o i clienti possono aprire manualmente un evento imprevisto tramite "Registra un problema" per garantire una segnalazione accurata dell'integrità delle sale nel portale pro management.
-ms.openlocfilehash: f638a1fc4095b9cffd0f205e1118cf6c4374d5c6
-ms.sourcegitcommit: 43db97b84ca70b1e6accfa7214d4106e4177a642
+ms.openlocfilehash: 8bfd3d5c0cc2e12c98564abd5d8ad26bde754f34
+ms.sourcegitcommit: 247ae32098c3601252249ce1de719f5215c8ab75
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/29/2022
-ms.locfileid: "68218120"
+ms.lasthandoff: 11/02/2022
+ms.locfileid: "68810722"
 ---
 # <a name="record-an-issue-ticket"></a>Registrare un ticket di problema
 
-Per qualsiasi tipo di evento imprevisto non contrassegnato da MTR Pro o semplicemente per tenere traccia dei problemi in uno spazio o un MTR, i clienti o i partner per conto dei clienti possono usare la funzionalità Registra un problema.
-
-Nel campo Descrizione descrivere il più possibile il problema per cui è necessaria l'assistenza di Microsoft. È possibile aggiungere una o più sale.
-
-Verificare  **l'impatto elevato** se l'evento imprevisto causa un peggioramento significativo dell'integrità del servizio o di una sala critica. Per consentire a Microsoft di assegnare correttamente la priorità alla richiesta, descrivere in dettaglio il motivo per cui si tratta di un impatto elevato.
+Per qualsiasi tipo di problema non contrassegnato da MTR Pro, i clienti o i partner per conto dei clienti possono usare la caratteristica Registra un problema. Lo scopo è facilitare il monitoraggio dei problemi relativi al supporto **interno o del partner** . 
 
 > [!NOTE]
-> Non usare questo campo per domande generali, chat room e/o problemi che non hanno una mitigazione disponibile.
+> Microsoft non monitora i ticket di registrazione di un problema. Se il problema richiede ulteriore assistenza, vedere questo articolo su come [ottenere supporto per Microsoft Teams Rooms Pro Management](https://aka.ms/mtrp/openingTickets).
+
+Nel campo Descrizione descrivere il problema nel modo più appropriato. È possibile aggiungere una o più sale.
+
+Verificare **l'impatto elevato** per aumentare l'importanza del supporto se l'evento imprevisto causa un peggioramento significativo dell'integrità di una stanza critica.
 
 Quando una chat room (o le chat room) è selezionata come parte di Registra un problema, ogni chat room verrà contrassegnata come **non integra** fino alla chiusura del problema registrato.
 
@@ -49,7 +49,7 @@ I problemi registrati possono essere chiusi dal cliente o dai partner che gestis
 
    Dopo aver confermato il motivo della chiusura, il ticket viene chiuso e spostato in **Risolto**.
 
-Nella sezione Panoramica dettagli del ticket viene indicato che il ticket è stato chiuso dal servizio Managed Rooms (Microsoft) o dal nome del cliente/partner.  
+La sezione Panoramica dettagli del ticket mostra che il ticket è stato chiuso con il nome del cliente/partner.  
 
 ## <a name="faq"></a>Domande frequenti
 
