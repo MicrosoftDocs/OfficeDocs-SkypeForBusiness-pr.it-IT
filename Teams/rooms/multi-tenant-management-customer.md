@@ -18,19 +18,22 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: gestione dei partner per i clienti.
 f1keywords: ''
-ms.openlocfilehash: 2c25bbfdd9b628641228eae6f52907e99a7beb9e
-ms.sourcegitcommit: 64c01699022b47fdfec8dc6e2ca279e57eae3baa
+ms.openlocfilehash: 0fef32202d256926448227f522b6160100cd05e1
+ms.sourcegitcommit: fcbbc197e43bcd63bf95cb329df9cb52e06ee356
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68243937"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "68842164"
 ---
 # <a name="partner-management-for-customers"></a>Gestione partner per i clienti
 
-La gestione dei partner nel servizio Teams Rooms Pro Management consente ai clienti di delegare facilmente l'accesso e le responsabilità a una o più organizzazioni partner. I partner possono gestire solo le chat room a cui sono assegnate.
+La gestione dei partner nel servizio di gestione Teams Rooms Pro consente ai clienti di delegare facilmente l'accesso e le responsabilità a una o più organizzazioni partner. I partner possono gestire solo le chat room a cui sono assegnate.
 
 ## <a name="on-boarding-partners"></a>Partner d'imbarco
    Invitare partner tramite il portale pro management per stabilire la relazione tra l'organizzazione e il tenant dell'organizzazione partner.
+   
+> [!NOTE]
+> Il partner deve soddisfare i prerequisiti nella [gestione multi-tenant per i partner](multi-tenant-management-partner.md).
 
 ### <a name="invitation-to-partner"></a>Invito al partner
 

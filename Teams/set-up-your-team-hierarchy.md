@@ -14,12 +14,12 @@ appliesto:
 - Microsoft Teams
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: aa18168c9e8755a9b6b895ba48c38f8f79005177
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: dc4e7e88e855432f17c7daed9584e20e0e4739f1
+ms.sourcegitcommit: fcbbc197e43bcd63bf95cb329df9cb52e06ee356
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67271081"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "68842114"
 ---
 # <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
@@ -149,11 +149,8 @@ Los Angeles Store,West Regional Zone,204a1287-2efb-4a8a-88e0-56fbaf5a2389,Large,
 
 ## <a name="apply-your-hierarchy"></a>Applicare la gerarchia
 
-> [!NOTE] 
-> Per eseguire questo passaggio, è necessario installare e usare il modulo di anteprima pubblica di Teams PowerShell dal PowerShell Gallery. Per la procedura di installazione del modulo, vedere Installare PowerShell di Teams.
-
 > [!NOTE]
-> I clienti di Government Community Cloud (GCC) devono usare [l'anteprima dei cmdlet versione 2.4.0](https://www.powershellgallery.com/packages/MicrosoftTeams/2.4.0-preview) o successiva per garantire che i dati vengano indirizzati all'ambiente GCC, invece che all'ambiente cloud pubblico.
+> Per eseguire questo passaggio, è necessario usare i cmdlet di Microsoft Teams PowerShell. È consigliabile usare la versione 4.6.0 o successiva dei cmdlet di Microsoft Teams. Questo requisito si applica anche ai clienti di Government Community Cloud (GCC).
 
 Dopo aver definito la gerarchia nel file CSV dello schema, è possibile caricarla in Teams. A questo scopo, eseguire il comando seguente. Per eseguire questo passaggio, è necessario essere un amministratore globale o un amministratore dei servizi di Teams.
 
@@ -201,7 +198,7 @@ Quando si conferma l'eliminazione, il messaggio di stato continuerà a visualizz
 ### <a name="install-the-teams-powershell-module"></a>Installare il modulo Di Teams PowerShell
 
 > [!IMPORTANT]
-> Per eseguire questo passaggio, è necessario installare e usare il modulo di anteprima pubblica di Teams PowerShell dal [PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftTeams/). Per la procedura di installazione del modulo, vedere [Installare PowerShell di Teams](teams-powershell-install.md).
+> Per eseguire questo passaggio, è necessario installare e usare il modulo Di Teams PowerShell dal [PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftTeams/). Per la procedura di installazione del modulo, vedere [Installare il modulo PowerShell di Microsoft Teams](teams-powershell-install.md).
 
 ### <a name="sample-script"></a>Script di esempio
 
