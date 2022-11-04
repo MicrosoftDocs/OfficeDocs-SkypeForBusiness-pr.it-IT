@@ -20,12 +20,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare le impostazioni utente per l'inoltro di chiamata e la delega.
-ms.openlocfilehash: c9d085027ed1b365e8aa47b5908c946c4234e5ca
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: 7d1ab3252461d57a99956c90a011a43620c76bea
+ms.sourcegitcommit: 18e66d54a9e349d4516253addc85cc12892c69a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67397357"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "68851847"
 ---
 # <a name="configure-call-settings-for-your-users"></a>Configurare le impostazioni di chiamata per gli utenti
 
@@ -152,6 +152,10 @@ Per rimuovere user2 come delegato per user1, usare il cmdlet Remove-CsUserCallin
 ```PowerShell
 Remove-CsUserCallingDelegate -Identity user1@contoso.com -Delegate user2@contoso.com
 ```
+
+## <a name="additional-notes"></a>Note aggiuntive
+
+- Il comportamento predefinito per un utente che non ha mai avuto le regole di risposta alle chiamate modificate, da parte dell'utente o di un amministratore tenant, prevede che le chiamate senza risposta verranno inoltrate alla segreteria telefonica dopo 30 secondi. Le impostazioni visualizzate per l'utente in Team Amministrazione Center o In PowerShell di Teams mostreranno una destinazione senza risposta come nessuna e un ritardo di 20 secondi.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Gestire i criteri della segreteria telefonica per gli utenti.
-ms.openlocfilehash: f6c14584ee5da1b15085cd4caddfc757fbb50476
-ms.sourcegitcommit: 401cee68d4f6f9470d614dda12b9cb023f382ff2
+ms.openlocfilehash: 02df2f235512ce0aca658031fae000edc99b5ea9
+ms.sourcegitcommit: 18e66d54a9e349d4516253addc85cc12892c69a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "67999311"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "68851817"
 ---
 # <a name="manage-cloud-voicemail-policies-for-your-users"></a>Gestire i criteri di Cloud Voicemail per gli utenti
 
@@ -47,6 +47,7 @@ I criteri predefiniti per gli utenti sono:
 - La durata massima della registrazione è impostata su cinque minuti.
 - La modifica delle regole di risposta alle chiamate è abilitata.
 - Le lingue di prompt del sistema primario e secondario sono impostate su Null e viene utilizzata l'impostazione della lingua della segreteria telefonica dell'utente.
+- Non sono configurati pre- o postamble.
 
 È possibile usare il criterio globale (predefinito a livello di organizzazione) creato automaticamente o creare e assegnare criteri personalizzati.
 
@@ -112,6 +113,12 @@ Seguire questa procedura per modificare un criterio della segreteria telefonica 
 - **Regole di risposta** alle chiamate - Questa impostazione controlla se l'utente è autorizzato a configurare le regole di risposta alle chiamate vocali in Microsoft Teams.
 
 - **Comandi del sistema a doppia lingua** : per impostazione predefinita, i messaggi del sistema della segreteria telefonica vengono presentati ai chiamanti nella lingua selezionata dall'utente durante la configurazione della segreteria telefonica. Se è necessario che i messaggi del sistema segreteria telefonica siano presentati in due lingue, è possibile impostare una lingua principale e una lingua secondaria e non essere identici.
+
+- **WgAudioFile** : attualmente disponibile solo tramite PowerShell. Il file audio da riprodurre al chiamante prima che venga riprodotto il messaggio di saluto della segreteria telefonica dell'utente.
+
+- **PostambleAudioFile** : attualmente disponibile solo tramite PowerShell. Il file audio da riprodurre al chiamante dopo che il messaggio di saluto della segreteria telefonica dell'utente è stato riprodotto e prima che il chiamante sia autorizzato a lasciare un messaggio della segreteria telefonica.
+
+- **PreamboliPostambleMandatory** : attualmente disponibile solo tramite PowerShell. Sta giocando il Pre- o Postamble obbligatorio prima che il chiamante può lasciare un messaggio.
 
 ### <a name="share-data-for-service-improvements"></a>Condividere i dati per i miglioramenti del servizio
 
