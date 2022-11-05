@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b2a83a0ec3b93f44da5f22e0423ff6199f2ce0c5
-ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
+ms.openlocfilehash: f91297a0b2fa5178195b10b61817cc11a30acfbc
+ms.sourcegitcommit: 303579b3ecd4e0af43710d4b078610f63e9d0eca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67705855"
+ms.lasthandoff: 11/04/2022
+ms.locfileid: "68853364"
 ---
 # <a name="understand-microsoft-teams-and-skype-for-business-coexistence-and-interoperability"></a>Comprendere Microsoft Teams e coesistenza e interoperabilità di Skype for Business
 
@@ -168,7 +168,7 @@ Skype for Business gli utenti possono effettuare chiamate vocali e videochiamate
 <!--![Screen shot of Interop calling experience from Teams.](media/Interop_calling_experience_from_Teams.png "Interop calling experience from Teams")-->
 
 > [!Important]
-> Le esperienze di interoperabilità con una distribuzione locale di Skype for Business richiedono che l'ambiente locale sia in modalità ibrida con Teams. Per informazioni dettagliate, [configurare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365](/SkypeForBusiness/hybrid/configure-hybrid-connectivity).
+> Le esperienze di interoperabilità con gli utenti locali di un'organizzazione con una combinazione di utenti locali e di Teams richiedono che l'ambiente locale sia in modalità ibrida con Teams. Per informazioni dettagliate, [configurare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365](/SkypeForBusiness/hybrid/configure-hybrid-connectivity).
 
 Queste esperienze di interoperabilità sono disponibili per e tra gli utenti a cui è assegnata una delle seguenti modalità di coesistenza: **Skype for Business con collaborazione in Teams**, **Skype for Business con la collaborazione e le riunioni di Teams**, **solo Skype for Business** o **Solo teams**. Non esiste interoperabilità per gli utenti in modalità **Isole** .
 
