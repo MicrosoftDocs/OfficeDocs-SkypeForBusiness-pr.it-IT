@@ -14,29 +14,29 @@ ms.reviewer: dansteve
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Informazioni sull'anteprima pubblica in Microsoft Teams. Provare le nuove funzionalità e fornire commenti e suggerimenti.
+description: Learn about the public preview in Microsoft Teams. Try out new features and provide feedback.
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 25e3819b4ac14e770e55829d00654659970246f0
-ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
-ms.translationtype: HT
+ms.openlocfilehash: ffdd34d8a36726d96bc44ae766e91ca6ae77280b
+ms.sourcegitcommit: b535a70df5bc842f597889582df3eb86371f8139
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66564124"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "68869587"
 ---
 # <a name="microsoft-teams-public-preview"></a>Anteprima pubblica in Microsoft Teams
 
 > [!NOTE] 
 > Le funzionalità incluse nell'anteprima potrebbero non essere complete e potrebbero subire modifiche prima di essere disponibili nella versione pubblica. Sono disponibili solo a scopo di valutazione ed esplorazione. Le funzionalità di anteprima non sono supportate in Office 365 Government Community Cloud (GCC).
 
-L'anteprima pubblica per Microsoft Teams offre accesso anticipato alle funzionalità non rilasciate in Teams. Le anteprime consentono di esplorare e testare le funzionalità imminenti. Microsoft è lieta di ricevere feedback sulle funzionalità presentate nelle anteprime pubbliche. L'anteprima pubblica è abilitata per gli utenti di Teams, pertanto non è necessario preoccuparsi per l'impatto sull'intera organizzazione.
+Public Preview for Microsoft Teams provides early access to unreleased features in Teams. Previews allow you to explore and test upcoming features. We also welcome feedback on any feature in public previews. Public preview is enabled per Team user, so you don't need to worry about affecting your entire organization.
 
-Per un elenco delle funzionalità disponibili nell'anteprima pubblica di Teams, vedere le [note tecniche sull'anteprima pubblica di Microsoft Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-public-preview/bd-p/MicrosoftTeamsPublicPreview), [note sulla versione per le funzionalità amministrative di Teams](/OfficeUpdates/teams-admin) e le [Novità di Teams](https://support.microsoft.com/office/what-s-new-in-microsoft-teams-d7092a6d-c896-424c-b362-a472d5f105de).
+Per un elenco delle funzionalità disponibili nell'anteprima pubblica di Teams, visitare [le note tecniche di Microsoft Teams Public Preview](https://techcommunity.microsoft.com/t5/microsoft-teams-public-preview/bd-p/MicrosoftTeamsPublicPreview), [le note sulla versione per le funzionalità di Amministrazione di Teams](/OfficeUpdates/teams-admin) e [le note sulla versione per Il canale corrente di Office (anteprima).](/officeupdates/current-channel-preview)For a list of what's available in the Teams public preview, visit Microsoft Teams Public Preview tech notes, release notes for Teams Amministrazione Features, and Release Notes for Office Current Channel (Preview).
 
 ## <a name="set-the-update-policy"></a>Impostare i criteri di aggiornamento
 
-L'anteprima pubblica è abilitata per singolo utente e l'opzione per attivarla è controllata da un criterio amministrativo. I criteri di aggiornamento vengono usati per gestire gli utenti delle anteprime di Teams e Office che visualizzano le funzionalità non definitive o di anteprima nell'app di Teams. È possibile usare il criterio globale (impostazione predefinita a livello dell'organizzazione) e personalizzarlo oppure creare uno o più criteri personalizzati per gli utenti. Questo criterio deve essere assegnato a utenti specifici in quanto non sovrascrive il criterio globale.
+Public preview is enabled on a per-user basis, and the option to turn on public preview is controlled in an admin policy. Update policies are used to manage Teams and Office preview users who will see pre-release or preview features in the Teams app. You can use the Global (Org-wide default) policy and customize it, or create one or more custom policies for your users. The policy needs to be assigned to specific users because it doesn't over-write the global policy.
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com/).
 

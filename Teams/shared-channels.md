@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Scopri come utilizzare e gestire i canali condivisi in Microsoft Teams.
-ms.openlocfilehash: 378088e4b1f12aee3d71f11fb54aacec8a0ca138
-ms.sourcegitcommit: 89e3681a88f06a9c6860d9eaea598e57b928b68a
+ms.openlocfilehash: ff975d406426bd85789541c0a7cfb0aba57cdf60
+ms.sourcegitcommit: b535a70df5bc842f597889582df3eb86371f8139
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/16/2022
-ms.locfileid: "67795075"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "68869674"
 ---
 # <a name="shared-channels-in-microsoft-teams"></a>Canali condivisi in Microsoft Teams
 
@@ -39,7 +39,7 @@ Quando viene creato un canale condiviso, viene collegato al team padre e non pu�
 
 ## <a name="getting-started-with-shared-channels"></a>Introduzione ai canali condivisi
 
-I canali condivisi sono abilitati per impostazione predefinita in Teams. È possibile scegliere se le persone possono creare canali condivisi, se possono condividerli con persone esterne all'organizzazione e se possono partecipare a canali condivisi esterni[creando criteri di canale](/MicrosoftTeams/teams-policies).
+Shared channels is enabled by default in Teams. You can choose if people can create shared channels, if they can share them with people outside your organization, and if they can participate in external shared channels by [creating a channel policy](/MicrosoftTeams/teams-policies).
 
 Se si prevede di condividere i canali con persone esterne all'organizzazione, leggere [Pianificare la collaborazione esterna](/microsoft-365/solutions/plan-external-collaboration) per importanti considerazioni sulla pianificazione.
 
@@ -70,6 +70,8 @@ Quando un team viene archiviato, la condivisione individuale rimane intatta, ma 
 Il proprietario di un canale condiviso non può essere rimosso tramite il client di Teams se è l'ultimo proprietario di uno o più canali condivisi.
 
 Se l'ultimo proprietario del canale condiviso lascia l'organizzazione o se viene rimosso dal gruppo di Microsoft 365 associato al team, un membro del canale condiviso dell'organizzazione viene automaticamente promosso come proprietario del canale condiviso. Se non ci sono membri dell'organizzazione da promuovere, il canale condiviso rimarrà senza proprietario. Un amministratore di Teams dovrà assegnare manualmente il proprietario di un canale. È consigliabile aggiungere più proprietari per evitare questa situazione.
+
+I guest, inclusi quelli convertiti in membri (nella proprietà del tipo di utente) non possono essere aggiunti a un canale condiviso.
 
 > [!NOTE]
 > I partecipanti esterni devono essere aggiunti usando il proprio UPN, invece del loro indirizzo di posta elettronica, se i due non corrispondono in Azure Active Directory.

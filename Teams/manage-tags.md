@@ -15,16 +15,18 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire l'uso dei tag nell'organizzazione in Microsoft Teams.
-ms.openlocfilehash: 9c2da438d3f88a172759ec13672aec663ae6add9
-ms.sourcegitcommit: 41a75f1ba5ceb09f8db7d468aa41b63a89ab9c30
+ms.openlocfilehash: 56a2daf53c362accec8059b11fba400547a7b6ff
+ms.sourcegitcommit: b535a70df5bc842f597889582df3eb86371f8139
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2022
-ms.locfileid: "67647430"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "68869561"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
 I tag in Microsoft Teams consentono agli utenti di connettersi rapidamente e facilmente con un sottoinsieme di persone in un team. È possibile creare e assegnare tag personalizzati per categorizzare le persone in base ad attributi come ruolo, progetto, competenza o posizione. In alternativa, i tag possono essere assegnati automaticamente alle persone in base alla loro pianificazione e alle informazioni sui turni [nell'app Turni](https://support.microsoft.com/office/get-started-in-shifts-5f3e30d8-1821-4904-be26-c3cd25a497d6). Dopo l'aggiunta di un tag a uno o più membri del team, può essere usato in @mentions da tutti i membri del team in un post di canale per notificare una conversazione solo alle persone a cui è stato assegnato.
+
+Se sei proprietario di un team e vuoi gestire i tag nel tuo team, vedi [Uso dei tag in Teams](https://support.office.com/article/using-tags-in-teams-667bd56f-32b8-4118-9a0b-56807c96d91e).
 
 Come accennato in precedenza, ci sono due tipi di tag in Teams.
 
@@ -80,8 +82,6 @@ Per impostazione predefinita, i proprietari del team possono creare, modificare 
     - **L'app Turni può applicare tag**: attiva questa impostazione per abilitare l'app Turni per assegnare automaticamente i tag alle persone che sono in turno in tempo reale. Questi tag corrisponderanno alla pianificazione e al nome del gruppo di un utente in Turni. Le notifiche vengono inviate solo alle persone spostate nel momento in cui il tag viene usato in una chat o in un post del canale.
 
 ## <a name="related-topics"></a>Argomenti correlati
-
-[Uso dei tag in Teams](https://support.office.com/article/using-tags-in-teams-667bd56f-32b8-4118-9a0b-56807c96d91e)
 
 [Gestire l'app Turni](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md)
 

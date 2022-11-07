@@ -22,12 +22,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e da conferenza sono certificati per Microsoft Teams per produrre i migliori risultati.
-ms.openlocfilehash: f2b6e74dd276eabda4cb94459a18e87ea4e38c41
-ms.sourcegitcommit: 247ae32098c3601252249ce1de719f5215c8ab75
+ms.openlocfilehash: bcd55c0584c683f76a1dd033628bd99c48a18292
+ms.sourcegitcommit: b535a70df5bc842f597889582df3eb86371f8139
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2022
-ms.locfileid: "68810692"
+ms.lasthandoff: 11/07/2022
+ms.locfileid: "68869601"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Dispositivi Android certificati da Microsoft Teams
 
@@ -86,10 +86,8 @@ I seguenti dispositivi sono certificati ai sensi del programma di certificazione
 | Logitech Tap IP VR0029     | `1.6.762`  |   3 settembre 2024  | Compatibile con Logitech Rally Bar e Rally Bar Mini | 10 |
 | Neat Bar Pro   | `NFD1.20220914.1210 ` | 3 settembre 2024  |  Camera di medie dimensioni (4,5 m x 6 m) | 10|
 | Barra ordinata | `NFF1.20220914.1210` |3 settembre 2024|    Camera di medie dimensioni (4,5 m x 6 m) | 10 |
-| Barra ordinata | `NFB1.20220211.1400` |3 settembre 2024|    Sala riunioni piccola (4,5 m x 4,5 m) | 10 |
 | Console touch neat pad | `NFA1.20220914.1206`  | 3 settembre 2024 | Compatibile solo con Neat Bar | 9 |
-| Console touch neat pad | `NFA1.20220211.1400`  | 5 agosto 2023 |  Compatibile solo con Neat Bar | 9 |
-| Neat Board | `NFC1.20220211.1400 ` | 3 settembre 2024 |    Sala riunioni piccola (4,5 m x 4,5 m) | 10 |
+| Neat Board | `NFC1.20220914.1210 ` | 3 settembre 2024 |    Sala riunioni piccola (4,5 m x 4,5 m) | 10 |
 | Logitech Roommate | `1.4.71` | 3 settembre 2024  | Sala riunioni di grandi dimensioni (4,5 m x 8,5 m)  |   10  |
 | EPOS EXPAND 80T | `1.2.2.21182.10` | 5 agosto 2023 | In dotazione con EPOS Vision 3T | 9 |
 | Logitech Tap Device     | `1.2.982`  |   3 settembre 2024  | Compatibile con Logitech Rally Bar e Rally Bar Mini | 10 |
