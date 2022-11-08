@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per partecipanti e guest.
-ms.openlocfilehash: 91d48a88aff2784a5e4d420b6ede7d03e3692678
-ms.sourcegitcommit: ab8f8e101e41774668b5e607fa72442105ca796e
+ms.openlocfilehash: a5d18ea0e3f8c6cd008a12258fd94c3a0b725ac3
+ms.sourcegitcommit: 1fe19c4a6e9f6116515df531786cc3e482e27093
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "68801787"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "68876282"
 ---
 # <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -117,6 +117,17 @@ Questa impostazione è un criterio per utente e si applica durante una riunione.
 |---------|---------|
 |**Non abilitato ma l'utente può ignorare**     | I sottotitoli in tempo reale non sono attivati automaticamente per l'utente durante una riunione. L'utente vede l'opzione **Abilita i sottotitoli in tempo reale** nel menu di riversamento (**...**). Questa è l'impostazione predefinita. |
 |**Non abilitato**     | I sottotitoli in tempo reale sono disabilitati per l'utente durante le riunioni. L'utente non ha a disposizione l'opzione per attivarli.          |
+
+Per altre informazioni su come gli utenti finali possono attivare **i sottotitoli in tempo** reale, vedere [Usare i sottotitoli in tempo reale in una riunione di Teams](https://support.microsoft.com/office/4be2d304-f675-4b57-8347-cbd000a21260).
+
+### <a name="live-translated-captions"></a>Sottotitoli tradotti in tempo reale
+
+> [!NOTE]
+> Questa funzionalità è temporaneamente disponibile nell'anteprima pubblica. Dopo l'anteprima, l'organizzatore della riunione deve avere una licenza Teams Premium per consentire ai partecipanti di usare i sottotitoli tradotti in tempo reale.
+
+Per impostazione predefinita, **i sottotitoli in tempo** reale vengono visualizzati nella lingua pronunciata durante una riunione. **I sottotitoli tradotti in tempo** reale consentono agli utenti di vedere i sottotitoli tradotti nella lingua con cui sono più a loro agio.
+
+Per abilitare **i sottotitoli tradotti in tempo** reale, **i sottotitoli in tempo** reale devono essere impostati su **Non abilitati, ma l'utente può eseguire l'override** nell'interfaccia di amministrazione di Teams. Per disattivare **i sottotitoli tradotti in tempo reale**, impostare questa opzione su **Non abilitato**.
 
 <a name="bkcontentsharing"> </a>
 
