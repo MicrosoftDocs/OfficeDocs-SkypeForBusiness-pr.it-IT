@@ -1,5 +1,5 @@
 ---
-title: Creare un team a livello di organizzazione in Microsoft Teams
+title: Usare i team a livello di organizzazione in Microsoft Teams per aiutare tutti a collaborare
 ms.author: mikeplum
 author: MikePlumleyMSFT
 ms.reviewer: phlouie
@@ -8,7 +8,7 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
-description: Informazioni su come creare e gestire un team a livello di organizzazione in Teams per consentire la collaborazione automatica a tutti gli utenti di un'organizzazione di piccole e medie dimensioni.
+description: Informazioni su come creare e gestire un team a livello di organizzazione in Teams per consentire a tutti gli utenti di un'organizzazione di piccole e medie dimensioni di collaborare.
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
@@ -18,26 +18,34 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: faa58d05f0076a8e1784268d8815b4e5377a238b
-ms.sourcegitcommit: 4e4e38075a897b382a6176bbd27c64296923a2e9
+ms.openlocfilehash: 3ae5ffc68d14b9998721010e8f6b8ed595ac26e9
+ms.sourcegitcommit: 6d2e4f5e09b22a8192405f4eba90960a152032d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/28/2022
-ms.locfileid: "68135716"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "68885079"
 ---
-# <a name="create-an-organization-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
+# <a name="use-organization-wide-teams-in-microsoft-teams-to-help-everyone-collaborate"></a>Usare i team a livello di organizzazione in Microsoft Teams per aiutare tutti a collaborare
 
-I team a livello di organizzazione offrono a tutti gli utenti di un'organizzazione di piccole e medie dimensioni un modo automatico per far parte di un singolo team collaborativo.
+Gli amministratori globali possono creare team a livello di organizzazione che consentono a tutti gli utenti di un'organizzazione di piccole e medie dimensioni di far parte di un singolo team collaborativo. I team a livello di organizzazione includono automaticamente tutti gli utenti dell'organizzazione e mantengono l'appartenenza aggiornata quando gli utenti si aggiungono e lasciano l'organizzazione.
 
-Con i team a livello di organizzazione, gli amministratori globali possono creare facilmente un team pubblico con le caratteristiche seguenti:
-- Recupera tutti gli utenti dell'organizzazione
-- Mantiene l'appartenenza aggiornata con Active Directory man mano che gli utenti si aggiungono e lasciano l'organizzazione.
+Se l'organizzazione è una novità di Teams e non ha più di 5.000 utenti, viene creato automaticamente un team a livello di organizzazione. I team a livello di organizzazione sono limitati alle organizzazioni con non più di 10.000 utenti. È possibile avere fino a cinque team a livello di organizzazione. 
 
-Solo gli amministratori globali possono creare team a livello di organizzazione. Attualmente, un team a livello di organizzazione è limitato alle organizzazioni con non più di 10.000 utenti. Esiste anche un limite di cinque team a livello di organizzazione per tenant. Quando si crea un team, se questi requisiti vengono soddisfatti, gli amministratori globali vedranno l'opzione **A livello di organizzazione** quando **selezionaNo Crea un team da zero**.
+## <a name="create-an-organization-wide-team"></a>Creare un team a livello di organizzazione
 
-![Screenshot dell'opzione a livello di organizzazione per creare un team a livello di organizzazione.](media/create-org-wide-team.png "Screenshot dell'opzione a livello di organizzazione per creare un team a livello di organizzazione")
+Esistono due modi per creare un team a livello di organizzazione:
 
-Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali e gli amministratori dei servizi di Teams vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a Teams, all'utente viene assegnata una licenza esplorativa di Microsoft Teams. Per altre informazioni sulla licenza esplorativa, vedere [Gestire la licenza esplorativa di Microsoft Teams](teams-exploratory.md).
+- Convertire un team esistente in un team a livello di organizzazione. Passare al nome del team e fare clic su **Altre opzioni** > **Modifica team**.
+
+- [Creare un nuovo team da zero](https://support.microsoft.com/office/174adf5f-846b-4780-b765-de1a0a737e2b) e scegliere l'opzione **A livello di organizzazione** .
+
+    ![Screenshot dell'opzione a livello di organizzazione per creare un team a livello di organizzazione.](media/create-org-wide-team.png "Screenshot dell'opzione a livello di organizzazione per creare un team a livello di organizzazione")
+
+## <a name="types-of-users-in-an-organization-wide-team"></a>Tipi di utenti in un team a livello di organizzazione
+
+Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali e gli amministratori di Teams vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. I membri del team non possono lasciare un team a livello di organizzazione, ma i proprietari del team possono aggiungere o rimuovere manualmente gli utenti, se necessario. Quando Teams aggiunge o rimuove automaticamente qualcuno, viene inviata una notifica al canale Generale.
+
+Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a Teams, gli viene assegnata una licenza esplorativa di Microsoft Teams. Per altre informazioni sulla licenza esplorativa, vedere [Gestire la licenza esplorativa di Microsoft Teams](teams-exploratory.md).
 
 I tipi di account seguenti non verranno aggiunti al team a livello di organizzazione:
 
@@ -47,16 +55,10 @@ I tipi di account seguenti non verranno aggiunti al team a livello di organizzaz
 - Account di sale o attrezzature
 - Account basati su una cassetta postale condivisa
 
-Quando la directory dell'organizzazione viene aggiornata per includere nuovi utenti attivi o per disabilitare gli account degli utenti che non lavorano più nell'azienda, le modifiche vengono sincronizzate automaticamente e gli utenti vengono aggiunti o rimossi dal team. I membri del team non possono lasciare un team a livello di organizzazione. Il proprietario del team può aggiungere o rimuovere manualmente utenti, se necessario.
-
 > [!NOTE]
->
-> - Se l'opzione **A livello** di organizzazione non viene visualizzata quando si crea un team e si è amministratori globali, è possibile che sia stato raggiunto il limite di cinque team a livello di organizzazione o che l'organizzazione abbia dimensioni superiori al limite corrente di 10.000 membri. Contiamo di aumentare il limite in futuro. I team a livello di organizzazione non sono ancora disponibili per Teams per l'istruzione.
-> - Le sale che non fanno parte di un elenco di sale, apparecchiature e account di risorse potrebbero essere aggiunte o sincronizzate con il team a livello di organizzazione. I proprietari del team possono rimuovere facilmente questi account dal team.
-> - Tutte le azioni del sistema per aggiungere o rimuovere membri sono pubblicate nel canale Generale. Inoltre, nel client di Teams sarà indicato che il canale ha nuove attività.
-> - Creeremo automaticamente un team a livello di organizzazione per la tua organizzazione se la tua organizzazione è una novità di Teams e non ha più di 5.000 utenti. Il nome del team rifletterà il nome del tenant e avrà un canale Generale. Gli amministratori globali possono modificare questo team come qualsiasi altro team.
+> Le sale che non fanno parte di un elenco di sale, apparecchiature e account di risorse potrebbero essere aggiunte o sincronizzate con il team a livello di organizzazione. I proprietari del team possono rimuovere facilmente questi account dal team.
 
-## <a name="best-practices"></a>Procedure consigliate
+## <a name="options-to-get-the-most-out-of-an-organization-wide-team"></a>Opzioni per sfruttare al massimo un team a livello di organizzazione
 
 Per ottenere il massimo dal team a livello di organizzazione, è consigliabile che i proprietari dei team esercino le attività seguenti:
 
@@ -93,27 +95,6 @@ Per altre informazioni, vedere [Configurare e gestire la moderazione dei canali 
 
 Anche se i membri non possono lasciare un team a livello di organizzazione, è possibile gestire l'elenco dei membri del team rimuovendo gli account che non appartengono. **Assicurarsi di usare Teams per rimuovere gli utenti dal team a livello di organizzazione**. Se si usa un altro modo per rimuovere un utente, ad esempio il interfaccia di amministrazione di Microsoft 365 o da un gruppo in Outlook, è possibile che l'utente venga aggiunto di nuovo al team a livello di organizzazione.
 
-## <a name="faq"></a>Domande frequenti
-
-### <a name="is-there-a-way-to-create-an-organization-wide-team-other-than-using-the-teams-client"></a>Esiste un modo per creare un team a livello di organizzazione diverso dall'usare il client di Teams?
-
-Solo gli amministratori globali possono creare un team a livello di organizzazione usando il client Teams. Se l'organizzazione impone la creazione di team con PowerShell, la soluzione alternativa consigliata consiste nell'aggiungere gli amministratori globali al gruppo di sicurezza degli utenti che possono creare un team.
-
-Per altre informazioni, vedere [Gestire chi può creare gruppi](/microsoft-365/admin/create-groups/manage-creation-of-groups).
-
-Se questa soluzione alternativa non è disponibile, è possibile usare PowerShell per creare un team pubblico e aggiungere un amministratore globale come proprietario del team. Quindi, l'amministratore globale deve fare clic su **Altre opzioni** accanto al nome del team, fare clic su **Modifica team** e modificare la privacy in **A livello di organizzazione: tutti gli utenti dell'organizzazione verranno aggiunti automaticamente**.
-
-> [!NOTE]
-> Solo i proprietari del team possono accedere all'opzione **Modifica team** e solo gli amministratori globali possono visualizzare l'opzione **a livello di organizzazione** .
-
-### <a name="is-there-a-way-to-convert-an-existing-team-to-an-organization-wide-team"></a>Esiste un modo per convertire un team esistente in un team a livello di organizzazione?
-
-Gli amministratori globali possono convertire un team esistente in un team a livello di organizzazione modificandolo nel client di Teams. Passare al nome del team, fare clic su **Altre opzioni** > **Modifica team**.
-
-### <a name="can-i-create-an-organization-wide-team-using-a-team-template"></a>È possibile creare un team a livello di organizzazione usando un modello di team?
-
-I modelli di team non possono essere usati per creare un team a livello di organizzazione. Il lavoro per questa funzionalità è in corso.
-
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 Guardare un video su [Come creare un team a livello di organizzazione in Microsoft Teams](https://www.youtube.com/watch?v=x3qGlwwCz_w).
