@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft Teams per semplificare, semplificare e garantire la coerenza durante la gestione dei criteri per gruppi di utenti.
-ms.openlocfilehash: 10c7eaad9342d1c005c6290ebc957c3580db3962
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 75c4a220def2978a843fa69747ae86217a4d152b
+ms.sourcegitcommit: 1fe19c4a6e9f6116515df531786cc3e482e27093
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270851"
+ms.lasthandoff: 11/08/2022
+ms.locfileid: "68877517"
 ---
 # <a name="manage-policy-packages-for-microsoft-teams"></a>Gestire pacchetti di criteri per Microsoft Teams
 
@@ -82,6 +82,9 @@ Ad esempio, quando si assegna il pacchetto di criteri Istruzione (docenti) agli 
 :::image type="content" source="media/teams-policy-packages-education.png" alt-text="Screenshot del pacchetto di criteri Istruzione (docenti)." lightbox="media/teams-policy-packages-education.png":::
 
 ## <a name="custom-policy-packages"></a>Pacchetti di criteri personalizzati
+
+> [!NOTE]
+> La funzionalità pacchetti di criteri personalizzati è disponibile in anteprima. Per usare questa funzionalità dopo l'anteprima, ogni utente avrà bisogno della licenza Teams Premium.
 
 I pacchetti di criteri personalizzati consentono di raggruppare un set di criteri personalizzato per gli utenti con ruoli simili nell'organizzazione. Creare pacchetti di criteri personalizzati aggiungendo i tipi di criteri e i criteri necessari.
 
