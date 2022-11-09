@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: 9582786bacadd01ff513d9b8fb464b8906f6dbb7
-ms.sourcegitcommit: c2d8c7f779f4f938f8355632ecfbfc9147b53bb2
+ms.openlocfilehash: 983f59d678d05780c7ce3c3f36fbfa7fd9747067
+ms.sourcegitcommit: e5f5a1a164576b317e89340e233c9b67f082d19c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68738752"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "68890165"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -393,7 +393,7 @@ Sono consigliate le impostazioni seguenti:
 1. Client Windows di Microsoft Teams, client Mac di Microsoft Teams, Microsoft Teams sull'infrastruttura desktop virtualizzata.
 2. App Microsoft Teams per iPhone, app Microsoft Teams per Android.
 3. Se si seleziona Inattività più lunga per il metodo di routing dell'agente, verrà automaticamente abilitato il routing basato sulla presenza.
-4. Può impostare l'ordine solo quando si aggiungono singoli utenti come parte di code di chiamata standard. Quando viene usata una lista di distribuzione o un canale di Teams, l'ordine sarà alfabetico.
+4. Non è possibile impostare l'ordine in cui verranno chiamati gli agenti.
 5. La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
 6. solo Telefono di Microsoft Teams.
 7. Tramite la pagina portale delle impostazioni utente all'indirizzo [https://aka.ms/vmsettings](https://aka.ms/vmsettings).

@@ -22,18 +22,18 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 description: Informazioni su come usare Operatore automatico di Teams & report cronologico sulla coda di chiamata Report di Power BI per visualizzare i dati cronologici di Operatore automatico e Coda di chiamata.
-ms.openlocfilehash: 2afae8986f1184f1394e806b84aa1ab242c07df2
-ms.sourcegitcommit: c2d8c7f779f4f938f8355632ecfbfc9147b53bb2
+ms.openlocfilehash: b57180a339ea7aa1548acf16be1f95d3514c294b
+ms.sourcegitcommit: e5f5a1a164576b317e89340e233c9b67f082d19c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68738692"
+ms.lasthandoff: 11/09/2022
+ms.locfileid: "68890085"
 ---
 # <a name="auto-attendant--call-queue-historical-report"></a>Report cronologico della coda di chiamata & operatore automatico
 
 Questo modello di Power BI fornisce tre report che consentono alle organizzazioni di segnalare il numero di chiamate elaborate da operatori automatici e code di chiamata.  Fornisce anche informazioni dettagliate sulle prestazioni dell'agente.
 
-## <a name="v301-published-on-october-26-2022"></a>V3.0.1 data di pubblicazione: 26 ottobre 2022
+## <a name="v303-published-on-november-8-2022"></a>V3.0.3 data di pubblicazione: 8 novembre 2022
 
 Il modello Power BI Operatore automatico & coda di chiamata fornisce i tre report seguenti:
 
@@ -64,11 +64,11 @@ I passaggi seguenti presuppongono che siano già stati installati Power BI Deskt
 
 Eseguire le operazioni seguenti:
 
-1. Scarica e salva il file [V3.0.1.zipTeams Auto Attendant & i rapporti cronologici della coda di chiamata ](https://www.microsoft.com/download/details.aspx?id=104623) nel computer.
+1. Scarica e salva il file [V3.0.3.zipTeams Auto Attendant & i rapporti cronologici della coda di chiamata ](https://www.microsoft.com/download/details.aspx?id=104623) nel computer.
 
 1. Aprire il file ZIP.
 
-1. Aprire il file modello `Teams Auto Attendant & Call Queue Historical Reports V3.0.0.pbit` . Power BI Desktop dovrebbe avviarsi.
+1. Aprire il file modello `Teams Auto Attendant & Call Queue Historical Reports V3.0.3.pbit` . Power BI Desktop dovrebbe avviarsi.
 
 1. Verrà chiesto di selezionare **l'origine dati**.  Selezionare la `api.interfaces.records.teams.microsoft.com` voce.
 
@@ -81,9 +81,9 @@ Eseguire le operazioni seguenti:
 1. Seleziona **Connetti** per aggiornare i dati.
 
 > [!NOTE]
-> Se si usa v1.63 o versioni precedenti, potrebbe verificarsi un errore quando v3.0.0 tenta di recuperare i dati da VAAC.  Per risolvere questo errore, è necessario cancellare eventuali credenziali precedenti da Power BI.
+> Se si usa v1.63 o versioni precedenti, potrebbe verificarsi un errore quando v3.x.x tenta di recuperare i dati da VAAC.  Per risolvere questo errore, è necessario cancellare eventuali credenziali precedenti da Power BI.
 > 
-> 1. Aprire il modello v3.0.0 per cancellare l'errore. 
+> 1. Aprire il modello v3.x.x per cancellare l'errore. 
 > 1. Selezionare Opzioni **file** > **& Impostazioni Impostazioni** > **origine dati**.
 > 1. Selezionare l'elenco a discesa **Cancella autorizzazioni** e quindi **selezionare Cancella tutte le autorizzazioni**.
 > 1. Chiudere il modello dopo averlo cancellato e riavviare Power BI. Ti verrà chiesto di autorizzare di nuovo. 
@@ -376,7 +376,8 @@ Eseguire le operazioni seguenti:
 
 |Versione  |Data di pubblicazione     |Filename                                                           |Descrizione                                         |
 |:--------|:------------------|:------------------------------------------------------------------|:---------------------------------------------------|
-|3.0.1    |26 ottobre 2022   |Teams Auto Attendant & Call Queue Historical Reports V3.0.0        |Rimozione dell'immissione dell'origine dati di test                   |
+|3.0.3    |8 novembre 2022   |Teams Auto Attendant & Call Queue Historical Reports V3.0.3        |Fare riferimento a:<br>CQD Teams Auto Attendant & Call Queue Historical Reports - Change Log.docx in the downloaded zip file for a list of changes                                                                             |
+|3.0.1    |26 ottobre 2022   |Teams Auto Attendant & Call Queue Historical Reports V3.0.1        |Rimozione dell'immissione dell'origine dati di test                   |
 |3.0.0    |25 ottobre 2022   |Teams Auto Attendant & Call Queue Historical Reports V3.0.0        |Nuova origine dati back-end                             |
 |1.63     |24 agosto 2022    |CQD Teams Auto Attendant & Call Queue Historical Report V1.63.pbit |Fare riferimento a:<br>CQD Teams Auto Attendant & Call Queue Historical Reports - Change Log.docx in the downloaded zip file for a list of changes                                                                             |
 |1.60     |22 luglio 2022      |CQD Teams Auto Attendant & Call Queue Historical Report V1.60.pbit |Fare riferimento a:<br>CQD Teams Auto Attendant & Call Queue Historical Reports - Change Log.docx in the downloaded zip file for a list of changes                                                                             |
