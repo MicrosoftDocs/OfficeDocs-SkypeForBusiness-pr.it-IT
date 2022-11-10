@@ -14,14 +14,14 @@ ms.localizationpriority: medium
 ms.collection: M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f05c835f475aa9e48f04bb9c70fb9f3ac9933e58
-ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.openlocfilehash: 6a2c9244acfb3fdb08404f045c72860e0cd708c5
+ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68377144"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "68912805"
 ---
-# <a name="view-app-permissions-and-grant-admin-consent-in-the-microsoft-teams-admin-center"></a>Visualizzare le autorizzazioni per le app e concedere il consenso di amministratore nell'interfaccia di amministrazione di Microsoft Teams
+# <a name="view-app-permissions-and-grant-admin-consent-in-teams-admin-center"></a>Visualizzare le autorizzazioni per le app e concedere il consenso di amministratore nell'interfaccia di amministrazione di Teams
 
 Gli amministratori visualizzano e gestiscono tutte le app di Teams dalla pagina Gestisci app nell'interfaccia di amministrazione di Teams. È possibile gestire le app personalizzate create all'interno dell'organizzazione e disponibili solo per gli utenti finali e gestire le terze parti disponibili nell'App Store di Teams. Ad esempio, è possibile visualizzare lo stato a livello di organizzazione e le proprietà delle app, approvare o caricare nuove app personalizzate nell'app store dell'organizzazione, consentire le app a livello di organizzazione o per singoli utenti finali.
 

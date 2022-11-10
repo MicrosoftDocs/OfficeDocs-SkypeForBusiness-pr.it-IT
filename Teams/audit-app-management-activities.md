@@ -16,14 +16,14 @@ description: Informazioni su come controllare le attività dell'app Teams di ute
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 7abaed00f8bb02daa63d30cd5092e007f8d5a8f5
-ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.openlocfilehash: 0fd3feb73705a95e0729cb1819d9f355ce3ef711
+ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68377534"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "68912785"
 ---
-# <a name="audit-for-app-management-activities-and-events"></a>Audit per le attività e gli eventi di gestione delle app
+# <a name="audit-logs-of-app-management-activities-and-events"></a>Log di controllo delle attività e degli eventi di gestione delle app
 
 Microsoft Purview Audit (Standard) in Microsoft 365 consente di cercare i record di controllo delle attività eseguite nei vari servizi di Microsoft 365 da utenti finali e amministratori.
 

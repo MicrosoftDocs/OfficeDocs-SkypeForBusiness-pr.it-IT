@@ -18,17 +18,16 @@ f1.keywords:
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come caricare app personalizzate nell'app store teams dell'organizzazione.
-ms.openlocfilehash: 8886c2c0904e7ca9c9e0de1e5641b8587ffe50bf
-ms.sourcegitcommit: c2d8c7f779f4f938f8355632ecfbfc9147b53bb2
+ms.openlocfilehash: c1a664390676f2df68c06c75dee57db3d3c7582c
+ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68738582"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "68912445"
 ---
 # <a name="publish-a-custom-app-by-uploading-an-app-package"></a>Pubblicare un'app personalizzata caricando un pacchetto dell'app
 
-> [!NOTE]
-> Quando si pubblica un'app di Teams personalizzata, questa è disponibile per gli utenti nell'app store dell'organizzazione. Esistono due modi per pubblicare un'app personalizzata e il modo da usare dipende da come viene ottenuta l'app. **Questo articolo illustra come pubblicare un'app personalizzata caricando un pacchetto dell'app (in formato .zip) inviato da uno sviluppatore**. L'altro metodo, l'approvazione di un'app personalizzata, viene usato quando uno sviluppatore invia un'app direttamente alla pagina [Gestisci app](manage-apps.md) tramite l'API di invio app di Teams. Per altre informazioni su questo metodo, vedere [Pubblicare un'app personalizzata inviata tramite l'API di invio app di Teams](submit-approve-custom-apps.md).
+Quando si pubblica un'app di Teams personalizzata, questa è disponibile per gli utenti nell'app store dell'organizzazione. Esistono due modi per pubblicare un'app personalizzata e il modo da usare dipende da come viene ottenuta l'app. Questo articolo illustra come pubblicare un'app personalizzata caricando un pacchetto dell'app (in formato .zip) inviato da uno sviluppatore. L'altro metodo, l'approvazione di un'app personalizzata, viene usato quando uno sviluppatore invia un'app direttamente alla pagina [Gestisci app](manage-apps.md) tramite l'API di invio app di Teams. Per altre informazioni su questo metodo, vedere [Pubblicare un'app personalizzata inviata tramite l'API di invio app di Teams](submit-approve-custom-apps.md).
 
 Questo articolo fornisce indicazioni dall’inizio alla fine su come portare l'app di Teams da sviluppo a distribuzione e infine a individuazione. Queste linee guida sono incentrate sugli aspetti di Teams dell'app e sono destinate agli amministratori e ai professionisti IT. Per altre informazioni sullo sviluppo di app di Teams, vedere la [documentazione per sviluppatori di Teams](/microsoftteams/platform/).
 

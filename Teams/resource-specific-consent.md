@@ -14,18 +14,18 @@ ms.localizationpriority: high
 ms.collection: M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dd47f8e46147e3b4d30052ff4a1b9fcde6c128e1
-ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.openlocfilehash: cb7e4a4487a5411386978fb91a70c485bfa0ddc6
+ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68377154"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "68912595"
 ---
 # <a name="resource-specific-consent-in-microsoft-teams"></a>Consenso specifico delle risorse in Microsoft Teams
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-Il consenso specifico delle risorse in Microsoft Teams consente ai proprietari del team di fornire il consenso alle app per accedere ai dati del team. Esempi di questo tipo di accesso includono la possibilità di leggere i messaggi dei canali, creare ed eliminare canali e creare e rimuovere le schede dei canali.
+Il consenso specifico delle risorse (RSC) è un'integrazione di Microsoft Teams e Microsoft API Graph che consente alle app di usare gli endpoint API per gestire risorse specifiche di un team all'interno dell'organizzazione. Le autorizzazioni RSC consentono ai proprietari del team di concedere il consenso per un'applicazione per l'accesso e la modifica dei dati di un team. Il consenso specifico delle risorse in Microsoft Teams consente ai proprietari del team di fornire il consenso alle app per accedere ai dati del team. Esempi di questo tipo di accesso includono la possibilità di leggere i messaggi dei canali, creare ed eliminare canali e creare e rimuovere le schede dei canali.
 
 Gli amministratori possono controllare se i proprietari dei team dell'organizzazione possono concedere il consenso tramite le impostazioni configurate usando il modulo PowerShell di Azure Active Directory (Azure AD) o il portale di Azure e l'interfaccia di amministrazione di Microsoft Teams.  
 
@@ -95,7 +95,7 @@ Quando si carica un'app personalizzata (operazione anche nota come sideload) che
 
 ## <a name="related-articles"></a>Articoli correlati
 
-* [Autorizzazioni RSC disponibili](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+* [Autorizzazioni RSC per utilizzare i dati di Teams in Microsoft Graph](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 * [Microsoft Graph](https://developer.microsoft.com/graph)
 * [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
 * [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)

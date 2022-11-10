@@ -18,14 +18,14 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 992b557e72aaa855008f1bfec8073d800b65badf
-ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.openlocfilehash: b0f01942dcee0ed5f2696c7e6ab5b31d67a98856
+ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68377544"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "68912875"
 ---
-# <a name="microsoft-365-app-compliance-program-for-security-compliance-and-privacy-of-third-party-apps"></a>Il programma di conformità dell’app Microsoft 365 per la sicurezza, la conformità e la privacy delle app di terze parti
+# <a name="find-teams-apps-that-undergo-microsoft-365-app-compliance-program-for-security-compliance-and-privacy"></a>Trovare le app di Teams soggette al programma di conformità delle app di Microsoft 365 per la sicurezza, la conformità e la privacy
 
 Il programma di conformità Microsoft controlla e verifica un'app in base ai controlli derivati dai framework leader del settore. Il certificato dimostra che vengono implementate procedure di sicurezza e conformità complesse per proteggere i dati dei clienti quando l'app viene attivata in un'organizzazione. Il programma prevede le fasi seguenti:
 

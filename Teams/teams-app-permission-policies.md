@@ -23,14 +23,14 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 5797486fb0993aa8630a8dedde131ad7751e7e5f
-ms.sourcegitcommit: 1161cddd077056a9c1e2da99a84e35be0380b1b1
+ms.openlocfilehash: aac7024730c3f18e1c0f38a2e041dea840a6b869
+ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68656022"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "68912405"
 ---
-# <a name="manage-access-to-teams-apps-using-app-permission-policies"></a>Gestire l'accesso alle app Teams usando i criteri di autorizzazione per le app
+# <a name="use-app-permission-policies-to-control-user-access-to-apps"></a>Usare i criteri di autorizzazione delle app per controllare l'accesso degli utenti alle app
 
 Gli amministratori possono usare i criteri di autorizzazione per le app per controllare le app disponibili per ogni utente dell'organizzazione. Le autorizzazioni impostate per consentire o bloccare tutte le app o app specifiche sono applicabili a tutti i [tipi di app in Teams](deploy-apps-microsoft-teams-landing-page.md). Per gestire questi criteri, è necessario essere un Amministrazione globale o un amministratore del servizio Teams.
 
@@ -57,10 +57,10 @@ Usare uno o più criteri di autorizzazione app personalizzati, se si vogliono co
 1. Specificare un nome e una descrizione per il criterio.
 1. In **App Microsoft**, **App di terze parti** e **App personalizzate** seleziona una delle opzioni seguenti:
 
-    * `Allow all apps`
-    * `Allow specific apps and block all others`
-    * `Block specific apps and allow all others`
-    * `Block all apps`
+    * Consenti tutte le app
+    * Consenti app specifiche e blocca tutte le altre
+    * Blocca app specifiche e consenti tutte le altre
+    * Blocca tutte le app
 
 1. Se si è selezionato **Consentire app specifiche e bloccare tutte le altre**, aggiungere le app che si vuole consentire:
 

@@ -18,14 +18,14 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eeb0c49dcf560b858b8723f813cc86b6b51c1daa
-ms.sourcegitcommit: 6e85f3f70f8488ab827ac352c0f324b6dfd4b856
+ms.openlocfilehash: 97da6b39ab6e6d9208c883ae60f0be08432e5222
+ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68377554"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "68912635"
 ---
-# <a name="testing-and-validation-done-by-microsoft-for-all-teams-apps"></a>Test e convalida eseguiti da Microsoft per tutte le app di Teams
+# <a name="know-about-the-testing-and-validation-done-by-microsoft-for-all-apps"></a>Informazioni sui test e la convalida eseguiti da Microsoft per tutte le app
 
 Microsoft richiede a tutte le app di superare una convalida obbligatoria prima di essere elencata nello Store per gli usi finali. Si applica a tutte le app (ad eccezione delle app personalizzate) pubblicate nell'App Store di Teams. Inoltre, Microsoft incoraggia vivamente gli sviluppatori di app a partecipare a una certificazione facoltativa delle app che indica controlli avanzati di conformità, sicurezza e privacy.
 

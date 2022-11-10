@@ -21,12 +21,12 @@ description: Informazioni su come gestire le app di Teams. Informazioni su come 
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 902b32be43e25c8262ba85bbbb56bd79d424e75c
-ms.sourcegitcommit: e6182aa3b15346dc955333a2bc571565ef463a57
+ms.openlocfilehash: 053164da8a521566247e982b09f5f929fe6da406
+ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2022
-ms.locfileid: "68784191"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "68912615"
 ---
 # <a name="overview-of-app-management-and-governance-in-teams-admin-center"></a>Panoramica della gestione e della governance delle app nell'interfaccia di amministrazione di Teams
 
@@ -88,6 +88,8 @@ Nella pagina Gestisci app è possibile consentire o bloccare singole app a livel
 1. Selezionare l'opzione **Consenti** o **Blocca**.
 
 Per consentire un'app per utenti specifici, vedere [Criteri di autorizzazione per le app](teams-app-permission-policies.md).
+
+Quando uno sviluppatore pubblica un'app in Teams Store, per configurare l'app potrebbe essere necessario un amministratore. Prima che un amministratore consenta tale app, viene visualizzata come `Blocked by publisher` nell'interfaccia di amministrazione. Dopo aver seguito le indicazioni dell'autore per configurare l'app, è possibile renderla disponibile agli utenti consentendola.
 
 ## <a name="manage-org-wide-app-settings"></a>Gestire le impostazioni dell'app a livello di organizzazione
 
@@ -156,16 +158,6 @@ Per consentire le app di terze parti, modificare e usare il criterio globale (im
    :::image type="content" source="media/app-permission-policies-gcch-dod-org-wide.png" alt-text="Screenshot delle impostazioni app a livello di organizzazione in GCCH e DoD.":::
 
 1. Selezionare **Salvare** per le impostazioni dell'app a livello di organizzazione per avere effetto.
-
-## <a name="allow-the-apps-that-are-blocked-by-the-developers"></a>Consentire le app bloccate dagli sviluppatori
-
-Quando uno sviluppatore pubblica un'app nel Teams Store, può essere necessario che gli amministratori configurino l'app. Gli amministratori rendono l'app disponibile agli utenti finali quando l'app è configurata.
-
-Ad esempio, Contoso Electronics è uno sviluppatore di app che ha creato un'app help desk per Microsoft Teams. Contoso Electronics vuole che i clienti configurino alcune proprietà dell'app in modo che, quando interagiscono con l'app, funzioni come previsto. Prima che un amministratore consenta l'applicazione, questa verrà visualizzata come **Bloccata dall'editore** nell'interfaccia di amministrazione di Teams e verrà nascosta agli utenti finali per impostazione predefinita. Dopo aver seguito le indicazioni dell'autore per configurare l'app, è possibile renderla disponibile agli utenti impostando lo stato su **Consentito**.
-
-:::image type="content" source="media/blocked-by-publisher.png" alt-text="Screenshot dello stato Bloccato dall'autore nell'interfaccia di amministrazione di Teams.":::
-
-Per informazioni su come gli sviluppatori bloccano un'app per impostazione predefinita, vedere [Abilitare il blocco delle app finché un amministratore non lo consente](/microsoftteams/platform/concepts/design/enable-app-customization#hide-teams-app-until-admin-approves).
 
 ## <a name="related-article"></a>Articolo correlato
 

@@ -15,14 +15,14 @@ appliesto:
 - Microsoft Teams
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: 1c99cd9c0be3251a237b547cd8a2096d2d0e02af
-ms.sourcegitcommit: d6e180791134426445a35fd485dcca18bde2006b
+ms.openlocfilehash: 8e059199d4963004e287b456c98bb80717f849b3
+ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2022
-ms.locfileid: "68494649"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "68912435"
 ---
-# <a name="app-policies-used-to-manage-access-to-and-installation-of-apps"></a>Criteri delle app usati per gestire l'accesso e l'installazione delle app
+# <a name="know-about-policies-to-manage-access-and-installation-of-teams-apps"></a>Informazioni sui criteri per gestire l'accesso e l'installazione delle app Teams
 
 Microsoft Teams usa i criteri delle app per disciplinare il comportamento di accesso e installazione delle app. I criteri per le app aiutano gli amministratori di Teams a controllare il comportamento dell'app seguente:
 
@@ -39,7 +39,7 @@ Con i criteri di autorizzazione per le app, l'amministratore di Teams controlla 
 I criteri di autorizzazione per le app si applicano a tutti i [tipi di app disponibili in Teams](deploy-apps-microsoft-teams-landing-page.md). Alcuni scenari di esempio in cui si usano i criteri di autorizzazione per le app sono:
 
 * Distribuire gradualmente un'app ad alcuni utenti inizialmente e a tutti gli utenti alla fine.
-* Consenti un'app di reclutamento e gestione dei talenti personalizzata solo per i membri del reparto RISORSE UMANE e bloccala per tutti gli altri utenti dell'organizzazione.
+* Consenti un'app personalizzata per il reclutamento e la gestione dei talenti solo per i membri del reparto risorse umane e bloccala per tutti gli altri utenti dell'organizzazione.
 
 :::image type="content" source="media/app-permission-policy-trimmed.png" alt-text="Screenshot di criteri di autorizzazione delle app." lightbox="media/app-permission-policy.png":::
 
@@ -54,7 +54,7 @@ L'aggiunta o l'installazione di app consente di aumentare la consapevolezza e l'
 Alcuni scenari di esempio in cui si usano i criteri di configurazione delle app sono:
 
 * Aggiungi un'app personalizzata per il reclutamento e la gestione dei talenti per i membri del tuo team hr.
-* Modificare l'ordine delle app di base pre-aggiunte per gli utenti dell'organizzazione.
+* Modificare l'ordine delle [app di base](deploy-apps-microsoft-teams-landing-page.md#core-apps) con il blocco per gli utenti dell'organizzazione.
 
 :::image type="content" source="media/app-setup-policy-trimmed.png" alt-text="Screenshot dei criteri di configurazione delle app nell’interfaccia di amministrazione di Microsoft Teams." lightbox="media/app-setup-policy.png":::
 

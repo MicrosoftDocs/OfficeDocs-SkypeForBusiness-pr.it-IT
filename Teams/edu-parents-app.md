@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5edde0613c9092a7ed48d57a4a22761e56eee142
-ms.sourcegitcommit: d3eb876e58c9e4a0a11a21b9292d3a6177508d81
+ms.openlocfilehash: b4cb61038c08739afcd6a48825f8ddaa0cb7c573
+ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2022
-ms.locfileid: "68329060"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "68912815"
 ---
 # <a name="set-up-parent-connection-in-microsoft-teams-for-education"></a>Configurare la connessione padre in Microsoft Teams per l'istruzione
 
@@ -182,7 +182,7 @@ Dopo aver impostato correttamente i criteri di accesso esterno a livello utente 
 
 ## <a name="turn-on-the-parents-app-in-the-teams-admin-center"></a>Attivare l'app Genitori nell'interfaccia di amministrazione di Teams
 
-L'app Genitori è disattivata per impostazione predefinita, quindi i proprietari dei team di classe non la vedranno nei loro team di classe finché non è consentita tramite l'interfaccia di amministrazione di Teams. L'app Genitori è attivata nell'interfaccia di amministrazione di Teams usando [Consenti app bloccate dagli sviluppatori](manage-apps.md#allow-the-apps-that-are-blocked-by-the-developers).
+L'app Genitori è disattivata per impostazione predefinita, quindi i proprietari dei team di classe non la vedranno nei loro team di classe finché non è consentita tramite l'interfaccia di amministrazione di Teams. L'app Genitori è attivata nell'interfaccia di amministrazione di Teams usando [Consenti app bloccate dagli sviluppatori](manage-apps.md#allow-and-block-apps).
 
 In qualsiasi momento, l'app può essere disattivata a livello di tenant usando [Consenti e blocca le app](manage-apps.md#allow-and-block-apps) nell'interfaccia di amministrazione di Teams. Se è disattivata a livello di tenant, verrà bloccata per tutti gli utenti, anche se sono attivate le autorizzazioni a livello di utente.
 

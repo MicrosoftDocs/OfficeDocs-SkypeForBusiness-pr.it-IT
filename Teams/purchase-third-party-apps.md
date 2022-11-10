@@ -1,5 +1,5 @@
 ---
-title: Acquistare licenze per le app Teams di terze parti
+title: Acquistare app di terze parti e gestire gli abbonamenti
 author: ashishguptaiitb
 ms.author: guptaashish
 manager: prkosh
@@ -10,21 +10,21 @@ audience: admin
 ms.date: 10/04/2022
 ms.collection:
 - M365-collaboration
-ms.reviewer: chhavib, vaibhava, nsuter
+ms.reviewer: chhavib, nsuter
 search.appverid: MET150
 f1keywords: ''
-description: Informazioni su come acquistare le licenze di app di terze parti da Teams Store usando una carta di credito, una carta di debito o tramite fatturazione.
+description: Informazioni su come acquistare licenze per app a pagamento in Teams Store usando una carta di credito, una carta di debito o tramite fatturazione.
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 73f16f3b8bdb11971f4cd7602c4262250e9fe068
-ms.sourcegitcommit: c2d8c7f779f4f938f8355632ecfbfc9147b53bb2
+ms.openlocfilehash: 82364d5659009e067a6884551266c6fabf93dc04
+ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "68738552"
+ms.lasthandoff: 11/10/2022
+ms.locfileid: "68912425"
 ---
-# <a name="purchase-licenses-for-third-party-teams-apps"></a>Acquistare licenze per le app Teams di terze parti
+# <a name="purchase-third-party-teams-apps-and-manage-subscriptions"></a>Acquistare app Teams di terze parti e gestire gli abbonamenti
 
 Alcune app di Teams possono richiedere l'acquisto di un abbonamento a un servizio per sfruttare tutte le funzionalità e l'ambito dell'app. Queste sottoscrizioni di servizio sono denominate offerte SaaS (Software as a Service). È disponibile una licenza per l'acquisto tramite [AppSource](https://appsource.microsoft.com/) e tramite [l'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com).
 
@@ -40,7 +40,7 @@ Per acquistare app nell'interfaccia di amministrazione di Teams, seguire questa 
 
 1. Accedere all'interfaccia di amministrazione di Teams e accedere alle app  > **di Teams****[Gestire le app](https://admin.teams.microsoft.com/policies/manage-apps)**. Per accedere alla pagina, è necessario essere un amministratore globale o un amministratore del servizio Teams.
 
-1. Cercare l'app desiderata in base al nome. Per verificare se le app offrono un abbonamento SaaS a pagamento, vedere la colonna **Licenze** . Ogni app ha uno dei valori seguenti:
+1. Cercare l'app desiderata in base al nome. Per verificare se l'app offre un abbonamento SaaS a pagamento, vedere la colonna **Licenze** . Ogni app ha uno dei valori seguenti:
     * **Acquistare**: l'app offre un abbonamento SaaS ed è disponibile per l'acquisto.
     * **Acquistato**: l'app offre un abbonamento SaaS e le relative licenze sono state acquistate.
     * **- -**: l'app non offre un abbonamento SaaS.
