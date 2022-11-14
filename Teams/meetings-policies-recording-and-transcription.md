@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.recordingandtranscription
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per la registrazione e la trascrizione.
-ms.openlocfilehash: 57e90984cde312f1804d5d2144c82a4d252822b6
-ms.sourcegitcommit: 7a1fb6e15c21368afa34cd212865437781f721e2
+ms.openlocfilehash: fd0dc824f380fb9a001442267445340944e055c4
+ms.sourcegitcommit: 2d1bb69e0d6bc35be0b57c7c5d87f58ab013dafb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "67466204"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "68928312"
 ---
 # <a name="meeting-policy-settings-for-recording--transcription"></a>Impostazioni dei criteri riunione per la registrazione & trascrizione
 
@@ -34,8 +34,6 @@ Questo articolo descrive le impostazioni dei criteri di riunione specifiche per 
 Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. La persona che ha avviato la registrazione deve attivare questa impostazione per permettere alle funzionalità di operare in fase di registrazione.
 
 Con l’attivazione di questa impostazione, viene creata una copia della trascrizione archiviata con la registrazione della riunione, che permette di eseguire **ricerche**, **CC** e **trascrizioni** nella registrazione della riunione.
-
-La trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che impostano la lingua o parlano inglese nelle riunioni di Teams.
 
 ## <a name="cloud-recording"></a>Registrazione cloud
 

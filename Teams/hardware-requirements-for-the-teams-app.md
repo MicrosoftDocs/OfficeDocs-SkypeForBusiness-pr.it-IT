@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 707360ec39e82c86732433e42752cedbdb649119
-ms.sourcegitcommit: 17f4baf85e1ac6a2af5f5c6ea2d5aae763efd917
+ms.openlocfilehash: 1bd04b590a789756d0b41153b886be8ba6d777e7
+ms.sourcegitcommit: 2d1bb69e0d6bc35be0b57c7c5d87f58ab013dafb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67405128"
+ms.lasthandoff: 11/14/2022
+ms.locfileid: "68928506"
 ---
 # <a name="hardware-requirements-for-microsoft-teams"></a>Requisiti hardware per Microsoft Teams
 
@@ -62,6 +62,9 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |
 
 ## <a name="hardware-requirements-for-teams-on-linux"></a>Requisiti hardware per Teams su Linux
+
+> [!NOTE]
+> Teams Desktop su Linux verrà ritirato a dicembre 2022.
 
 | Componente | Requisiti |
 |---------|---------|
