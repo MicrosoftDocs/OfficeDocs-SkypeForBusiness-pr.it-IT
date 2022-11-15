@@ -17,12 +17,12 @@ description: Informazioni su come usare il report sull'utilizzo di eventi live d
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a7f571610c49da16735cf66f65f725901fce56d
-ms.sourcegitcommit: b2692b3f6c60d8df5ba0677c68ff9c90a75a0d72
+ms.openlocfilehash: 970247bf863942a4f938f96e30533ff550d37e94
+ms.sourcegitcommit: 73b13cd8a79ba1724b9fb79c8356a7cacafb7dd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68033814"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "68964982"
 ---
 # <a name="microsoft-teams-live-event-usage-report"></a>Report sull'utilizzo di eventi live di Microsoft Teams
 
@@ -60,7 +60,7 @@ La pagina dei dettagli dell'evento live offre un riepilogo dei dettagli di un ev
 
 :::image type="content" alt-text="Screenshot che mostra i dettagli di un evento live." source="../media/teams-live-event-usage-report-event-detail.png" lightbox="../media/teams-live-event-usage-report-event-detail.png":::
 
-Se l'organizzazione è abilitata per [Hive](https://www.hivestreaming.com/partners/integration-partners/microsoft/) eCDN o [Kolletive](https://kollective.com) eCDN, è possibile ottenere ulteriori analisi dei partecipanti facendo clic sul collegamento del report partner.
+Se l'organizzazione usa Microsoft eCDN, l'analisi avanzata può essere visualizzata ed esportata dal [dashboard eCDN](https://admin.ecdn.microsoft.com).  Se l'organizzazione è abilitata per [Hive](https://www.hivestreaming.com/partners/integration-partners/microsoft/) eCDN o [Kolletive](https://kollective.com) eCDN, è possibile ottenere ulteriori analisi dei partecipanti facendo clic sul collegamento del report partner.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

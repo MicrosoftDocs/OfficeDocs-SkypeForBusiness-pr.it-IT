@@ -21,12 +21,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 086a8bda521827ac048b8ea9928bd3a0c5e3b81f
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: a1bbc6452847182533271f4aa7c7652ff8b00ba3
+ms.sourcegitcommit: 73b13cd8a79ba1724b9fb79c8356a7cacafb7dd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68584387"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "68966315"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -140,6 +140,7 @@ La tabella seguente evidenzia le funzionalità e le funzionalità di base offert
 |Didascalie e sottotitoli in tempo reale |&#x2714; |&#x2714; |&#x274C; |
 |Didascalie nelle registrazioni degli eventi live |&#x2714; |&#x2714; |&#x2714; |
 |Controlli DVR dei partecipanti (pausa, riavvolgimento) |&#x2714; |&#x2714; |&#x2714; |
+|Microsoft eCDN |&#x274C; |&#x2714; |&#x2714; |
 |Supporto eCDN per partner |&#x2714; (Kollective, Hive, Riverbed) |&#x2714; (Kollective, Hive, Ramp, Riverbed) |&#x2714; (Hive, Kollective, Ramp, Riverbed) |
 |Report presenze per i produttori dopo la trasmissione |&#x2714; |&#x2714; |&#x274C; |
 |Analisi delle valutazioni dei partecipanti - Votazioni e sondaggi in tempo reale |&#x2714; (Microsoft Pulse) |&#x274C; |&#x274C; |
