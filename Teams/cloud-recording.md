@@ -20,12 +20,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b82e73e2e5bb470df4511027d13b2df5f1f715f8
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: 281a8997e3020b229ce8b34919177c1f6f2318c9
+ms.sourcegitcommit: 73b13cd8a79ba1724b9fb79c8356a7cacafb7dd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68584887"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "68965748"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -109,6 +109,8 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $true
 | Voglio disattivare la registrazione per la maggior parte degli utenti, ma abilitare in modo selettivo la registrazione per utenti specifici. | <ol><li>Verificare che il criterio CsTeamsMeetingPolicy globale abbia AllowCloudRecording = False.<li>Alla maggior parte degli utenti è stato assegnato il criterio CsTeamsMeetingPolicy globale OPPURE uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = False.<li>A tutti gli altri utenti è stato assegnato uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = True. <ol> |
 
 <a name="bd-channel"></a>
+> [!NOTE]
+> Se un utente di Teams da un tenant esterno abilitato per la registrazione di conformità basata sui criteri di Teams partecipa a una riunione o a una chiamata nel tenant, la riunione/chiamata verrà registrata dall'altro tenant per scopi di conformità, indipendentemente dalla registrazione basata sul cloud attivata o disattivata nel tenant. Ai relatori che fanno parte della riunione nel tenant viene consigliato di rimuovere l'utente dalla riunione se le registrazioni non devono essere acquisite dagli utenti da un altro tenant. Per altre informazioni sulla registrazione della conformità basata sui criteri su Teams, vedere [Introduzione alla registrazione basata sui criteri di Teams per le chiamate & riunioni](teams-recording-policy.md).
 
 ### <a name="block-or-allow-download-of-channel-meeting-recordings"></a>Bloccare o consentire il download delle registrazioni delle riunioni del canale
 
