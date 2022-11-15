@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a74ac2974202097e3040d646f3f077f2369ad17c
-ms.sourcegitcommit: a6f4c459b9c8154814a8a5b098bde1e374348c99
+ms.openlocfilehash: 7da8db4b8ba281082d7f1565800a9f4d543dcb97
+ms.sourcegitcommit: 0760416ee0bead3ada93f4d37f8aebc74222bd3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66616062"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "69019432"
 ---
 # <a name="operate-your-service"></a>Gestire il servizio
 
@@ -116,7 +116,7 @@ Le sezioni seguenti descrivono gli strumenti che è possibile usare per monitora
 
 | Strumento di monitoraggio | Vantaggi | Quando usare |
 |---|---|---|
-| interfaccia di amministrazione di Microsoft 365 | Disponibile da qualsiasi dispositivo con un browser supportato. | Da usare quando non sono necessarie notifiche in tempo reale. |
+| Interfaccia di amministrazione di Microsoft 365 | Disponibile da qualsiasi dispositivo con un browser supportato. | Da usare quando non sono necessarie notifiche in tempo reale. |
 | app Amministrazione Microsoft 365 | Fornisce notifiche push al dispositivo mobile. | Da usare quando è necessario ricevere una notifica di richieste di assistenza mentre si è in viaggio. |
 | Microsoft System Center | Integrazione con Microsoft System Center. | Da usare quando sono necessarie funzionalità di monitoraggio avanzate e supporto delle notifiche. |
 | Microsoft 365 Service Communications API | Accesso programmatico a Microsoft 365 o Office 365 integrità dei servizi. | Usare questa opzione quando è necessaria l'integrazione con uno strumento di monitoraggio di terze parti o se si vuole creare una soluzione personalizzata. |
@@ -310,7 +310,7 @@ La valutazione della valutazione dell'utente può essere effettuata con diversi 
 
 È anche possibile utilizzare un approccio a livello di settore per valutare la valutazione della valutazione dell'utente denominata netpro score (NPS), descritta nella sezione seguente.
 
-### <a name="nps"></a>NPS
+### <a name="nps"></a>Nps
 
 Il punteggio netto dei promotori (NPS) è una metrica di fidelizzazione dei clienti a livello di settore e un buon approccio da usare per valutare il sentiment degli utenti. NPS può essere calcolato ponendo due domande: "È probabile che consiglierai Teams a un collega?", seguito dalla domanda della figura a mano libera "Perché?"
 
@@ -490,7 +490,7 @@ Per supportare gli utenti, un'organizzazione potrebbe richiedere un numero quals
 
 ### <a name="team-creation-optional"></a>Creazione di team (facoltativo)
 
-Per impostazione predefinita, tutti gli utenti con una cassetta postale in Exchange Online hanno le autorizzazioni per creare gruppi di Microsoft 365 e, di conseguenza, un team in Microsoft Teams. Se si vuole avere un controllo più rigoroso e [limitare la creazione di nuovi team](assign-roles-permissions.md#permissions-to-create-teams) (e quindi la creazione di nuovi gruppi di Microsoft 365), è possibile delegare i diritti di creazione e gestione dei gruppi a un set di amministratori. Se l'organizzazione vuole continuare con questa opzione, vedere la procedura descritta in questo articolo per consentire agli utenti di inviare richieste elaborate da un team assegnato.
+Per impostazione predefinita, tutti gli utenti con una cassetta postale in Exchange Online hanno le autorizzazioni per creare gruppi di Microsoft 365 e, di conseguenza, un team in Microsoft Teams. Se si vuole avere un controllo più rigoroso e [limitare la creazione di nuovi team](assign-roles-permissions.md) (e quindi la creazione di nuovi gruppi di Microsoft 365), è possibile delegare i diritti di creazione e gestione dei gruppi a un set di amministratori. Se l'organizzazione vuole continuare con questa opzione, vedere la procedura descritta in questo articolo per consentire agli utenti di inviare richieste elaborate da un team assegnato.
 
 <!--ENDOFSECTION-->
 
