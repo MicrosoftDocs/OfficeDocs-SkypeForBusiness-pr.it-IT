@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 541ea844422dcd6620035508e62d6473f0c78b29
-ms.sourcegitcommit: 73b13cd8a79ba1724b9fb79c8356a7cacafb7dd3
+ms.openlocfilehash: 2a753e572cc9427a4b128379b52562437f739bea
+ms.sourcegitcommit: 0760416ee0bead3ada93f4d37f8aebc74222bd3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 11/15/2022
-ms.locfileid: "68965032"
+ms.locfileid: "69019402"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -135,7 +135,7 @@ Di seguito sono riportate alcune considerazioni aggiuntive su come implementare 
 - Per lo stato presenza, Microsoft Teams deve verificare se la cassetta postale è ospitata in Exchange Online o in locale. Il servizio stabilisce quindi il percorso di accesso alla cassetta postale. Per abilitare il servizio Teams per controllare il percorso della cassetta postale attraverso la chiamata API REST al servizio Exchange Online, è necessario implementare un ambiente ibrido di Exchange eseguendo la configurazione ibrida guidata di Exchange, come descritto in [Creare una distribuzione ibrida con la procedura guidata di configurazione ibrida](/exchange/hybrid-deployment/deploy-hybrid).
 
 >[!Important]
->**Clienti GCC-H:** *la pianificazione delle riunioni delegate di Teams* non è supportata per ambienti GCC-High. 
+>**Clienti GCC-H:** la *pianificazione delle riunioni* delegate di Teams non è supportata per gli ambienti GCC-High quando la cassetta postale dell'utente è ospitata in Exchange Server locale.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
