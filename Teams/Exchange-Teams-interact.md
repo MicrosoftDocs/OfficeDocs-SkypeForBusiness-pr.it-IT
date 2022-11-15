@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e52524c3113d7b2d776c355784772a8a059b221f
-ms.sourcegitcommit: fc87f4300f53abf7a049936944abb21d0cade0d9
+ms.openlocfilehash: 541ea844422dcd6620035508e62d6473f0c78b29
+ms.sourcegitcommit: 73b13cd8a79ba1724b9fb79c8356a7cacafb7dd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68480686"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "68965032"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -90,7 +90,7 @@ Microsoft Teams è compatibile con diversi servizi Microsoft 365 e Office 365 pe
 ## <a name="requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises"></a>Requisiti per creare e visualizzare riunioni per le cassette postali ospitate in locale
 
   > [!NOTE]
-  > La creazione e la visualizzazione di riunioni per le cassette postali ospitate in locale sono attualmente supportate solo in ambienti commerciali, GCC e GCC High.
+  > La funzionalità **Crea e visualizza riunioni per le cassette postali ospitate in locale** è supportata solo negli ambienti commerciali, GCC e GCC High.
 
 Se le cassette postali sono ospitate in locale, per creare e visualizzare riunioni devono essere soddisfatti i requisiti seguenti:
 
@@ -133,6 +133,9 @@ Di seguito sono riportate alcune considerazioni aggiuntive su come implementare 
 - In una distribuzione ibrida di Exchange, il contenuto dei messaggi di chat è disponibile per la ricerca, indipendentemente dal fatto che i partecipanti alla chat abbiano una cassetta postale basata sul cloud o una cassetta postale locale. Per ulteriori informazioni, consultare [Ricerca in cassette postali basate sul cloud per gli utenti locali](/office365/securitycompliance/search-cloud-based-mailboxes-for-on-premises-users). Per informazioni sulla ricerca di contenuto in Teams, leggere [Ricerca contenuto nel Portale di conformità di Microsoft Purview](/Office365/SecurityCompliance/content-search#searching-microsoft-teams-and-office-365-groups).
 
 - Per lo stato presenza, Microsoft Teams deve verificare se la cassetta postale è ospitata in Exchange Online o in locale. Il servizio stabilisce quindi il percorso di accesso alla cassetta postale. Per abilitare il servizio Teams per controllare il percorso della cassetta postale attraverso la chiamata API REST al servizio Exchange Online, è necessario implementare un ambiente ibrido di Exchange eseguendo la configurazione ibrida guidata di Exchange, come descritto in [Creare una distribuzione ibrida con la procedura guidata di configurazione ibrida](/exchange/hybrid-deployment/deploy-hybrid).
+
+>[!Important]
+>**Clienti GCC-H:** *la pianificazione delle riunioni delegate di Teams* non è supportata per ambienti GCC-High. 
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
