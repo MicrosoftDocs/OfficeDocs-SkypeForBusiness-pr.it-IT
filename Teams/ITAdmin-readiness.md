@@ -18,12 +18,12 @@ ms.custom:
 description: Video di formazione, presentazioni powerpoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dbba9535bed24c52578f8c01f37557774bbfa5e3
-ms.sourcegitcommit: e5f5a1a164576b317e89340e233c9b67f082d19c
+ms.openlocfilehash: 8e4b708a0fd250dd5ae8adeaa4f47f014ad359cd
+ms.sourcegitcommit: 2f9a83a1bae8cbee5a0d65464bd47f6735b2d206
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "68890065"
+ms.lasthandoff: 11/16/2022
+ms.locfileid: "69025158"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Introduzione alla formazione per gli amministratori per Microsoft Teams
 
@@ -61,6 +61,8 @@ Usare le risorse di formazione per educare se stessi su Teams, insegnare agli al
 | Introduzione al sistema telefonico | [Video](https://aka.ms/teams-phone-system) | [Ponte](https://aka.ms/teams-phone-system-deck) |
 | Routing diretto | [Video 1: Pianificazione del routing diretto in Teams](https://aka.ms/teams-dr-plan)<br>[Video 2: Configurazione e gestione del routing diretto in Teams](https://aka.ms/teams-dr-config)<br>[Video 3: Migrazione al routing diretto in Teams](https://aka.ms/teams-dr-migrate)  | [Ponte](https://aka.ms/teams-direct-routing-deck) |
 | Aggiornamento da Skype for Business a Teams | [Video 1: Introduzione all'aggiornamento](https://aka.ms/teams-upgrade-intro)</br>[Video 2: Pianificare l'aggiornamento](https://aka.ms/teams-upgrade-plan)</br>[Video 3: Coesistenza e interoperabilità](https://aka.ms/teams-upgrade-coexistence-interop)</br>[Video 4: Esperienza amministratore](https://aka.ms/teams-upgrade-admin) | [Ponte](https://aka.ms/teams-upgrade-deck)|
+| Playbook distribuzione dispositivi Teams | | [Ponte](https://aka.ms/teams-devices-deployment-playbook) |
+| Playbook distribuzione di Teams Phone | | [Ponte](https://aka.ms/teams-phone-deployment-playbook) |
 
 <h2>Teams Rooms Foundations for IT & AV Pros</h2>
 
@@ -77,7 +79,6 @@ Usare le risorse di formazione per educare se stessi su Teams, insegnare agli al
 | Modulo 7: Gestione di Microsoft Teams Rooms, parte 2  | [Ponte](https://aka.ms/TeamsRoomsModule7) |
 | Modulo 8: funzionalità, adozione e risoluzione dei problemi | [Ponte](https://aka.ms/TeamsRoomsModule8)|
 | Istruzioni di partecipazione con un tocco |  [Ponte](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/rooms/module-8b-one-touch-join-instructions.pdf?raw=true)  |
-| Introduzione a Microsoft Teams Rooms Managed Services | [Ponte](https://download.microsoft.com/download/c/e/a/cead2658-d64d-43b7-a728-b4512b325fb8/module-7b-Teams-Managed-Rooms-intro.pdf)  |
 
 <h2>Dispositivi Android di Teams</h2>
 
