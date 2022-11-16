@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni sulle ultime modifiche apportate in PowerShell di Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 52bb4fda3e9aba1785338f0c4d15d50f595caf42
-ms.sourcegitcommit: ab8f8e101e41774668b5e607fa72442105ca796e
+ms.openlocfilehash: e74d81212d84e2e829fa70563d30e1f3988061f6
+ms.sourcegitcommit: 0760416ee0bead3ada93f4d37f8aebc74222bd3c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "68801797"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "69019422"
 ---
 # <a name="microsoft-teams-powershell-release-notes"></a>Note sulla versione di Microsoft Teams PowerShell
 
@@ -31,6 +31,7 @@ Questa pagina contiene il log delle modifiche di PowerShell di Teams più recent
 
 | Data | Versione | Aggiornamenti |
 |------- | -------------------- | ------------------------------ |
+| Novembre 2022 | [4.9.1](https://www.powershellgallery.com/packages/MicrosoftTeams/4.9.1) |<li>Rilascia il supporto dell'autenticazione basata sull'applicazione in Connect-MicrosoftTeams in GA. Maggiori dettagli [sull'autenticazione basata su applicazioni nel modulo di Teams PowerShell](teams-powershell-application-authentication.md).</li><li>Contiene una nuova implementazione di [New\|Get\|Set\|Remove]-CsTeamsChannelsPolicy e [New\|Get\|Set\|Remove]-CsTeamsUpdateManagementPolicy. La funzionalità rimane la stessa dell'implementazione precedente.</li><li>Aggiunge il parametro UseNewTeamsClient a TeamsUpdateManagementPolicy.</li><li>Aggiunge il parametro EnablePrivateTeamDiscovery a TeamsChannelsPolicy.</li><li>Risolve i problemi relativi al token di autenticazione che non viene aggiornato per alcuni cmdlet dei criteri.</li><li>Risoluzione dei problemi relativi al formato di visualizzazione interrotto per alcuni cmdlet.</li><li>Aggiunge gli attributi SipProxyAddress, TeamsMediaLoggingPolicy, CountryAbbreviation, UserValidationErrors e WhenCreated in Get-CsOnlineUser output quando viene eseguito senza parametro -Identity. Tra questi attributi, CountryAbbreviation, UserValidationErros e WhenCreated non verranno ancora visualizzati valori. Questi verranno gradualmente implementati, maggiori dettagli in [Get-CsOnlineUser](/powershell/module/skype/get-csonlineuser).</li>
 | Ottobre 2022 | [4.9.0](https://www.powershellgallery.com/packages/MicrosoftTeams/4.9.0) |<li>Rilascia i cmdlet [Get\|Set]-CsTeamsEducationConfiguration in GA.</li><li>Contiene una nuova implementazione di [New\|Get\|Set\|Remove]-CsTeamsFeedbackPolicy, [New\|Get\|Set\|Remove]-CsTeamsMessagingPolicy, [New\|Get Set\|\|Remove]-CsTeamsMeetingPolicy e [New\|Get\|Set\|Remove]-CsOnlineVoicemailPolicy. La funzionalità rimane la stessa dell'implementazione precedente.</li><li>Aggiunge parametri ExplicitRecordingConsent, ForceStreamingAttendeeMode a TeamsMeetingPolicy.</li><li>Aggiunge i parametri Description, CanonicalAudioFile, PostambleAudioFile, DumpPostambleMandatory a OnlineVoicemailPolicy.</li><li>Aggiunge il parametro AllowChatWithGroup a TeamsMessagingPolicy.</li><li>Aggiunge il parametro EnableFeatureSuggestions a TeamsFeedbackPolicy.</li><li>Rilascia Update-CsTeamsShiftsConnectionInstance cmdlet.</li>
 | Ottobre 2022 | [4.8.1-anteprima](https://www.powershellgallery.com/packages/MicrosoftTeams/4.8.1-preview) |<li>Contiene una nuova implementazione di [New\|Get\|Set\|Remove]-CsTeamsMessagingPolicy, [New\|Get\|Set\|Remove]-CsTeamsMeetingPolicy e [New\|Get\|Set\|Remove]-CsOnlineVoicemailPolicy. NOTA: questi cmdlet attualmente funzionano solo con powershell.exe. Non funzionano per pwsh.exe. Questo problema verrà risolto nella prossima versione della Ga.</li><li>Aggiunge parametri ExplicitRecordingConsent, ForceStreamingAttendeeMode a TeamsMeetingPolicy.</li><li>Aggiunge i parametri Description, CanonicalAudioFile, PostambleAudioFile, DumpPostambleMandatory a OnlineVoicemailPolicy.</li><li>Aggiunge i parametri AllowChatWithGroup e EnableFeatureSuggestions a TeamsMessagingPolicy.</li><li>Rilascia Update-CsTeamsShiftsConnectionInstance cmdlet.</li>
 | Ottobre 2022 | [4.8.0](https://www.powershellgallery.com/packages/MicrosoftTeams/4.8.0) |<li>[Ottieni\| New]-CsTeamsShiftsConnectionTeamMap cmdlets - TimeZone attributo aggiunto.</li><li>Rimuove i parametri di input SendEmailFromAddress e SendEmailFromDisplayName da Set-CsOnlineDialinConferencingUser.</li><li>Rimuove i parametri AllowAllAcsResources e BlockedAcsResources da Set-TeamsAcsFederationConfiguration.</li><li>Aggiunge il parametro ForceListenMenuEnabled alle impostazioni del flusso di chiamata in New-CsAutoAttendantCallFlow, New-CsAutoAttendant e Set-CsAutoAutoAttendant. Questa impostazione consente al tenant di ignorare gli input DTMF/riconoscimento vocale durante la riproduzione delle opzioni di saluto/menu.</li>
