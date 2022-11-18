@@ -21,12 +21,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020; intro-overview; intro-hub-or-landing
-ms.openlocfilehash: 9b8d4ca3140b6bd8907938b5c2ac86aeabb39e37
-ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
+ms.openlocfilehash: b234f229d29c5ab4dae49be93e819bb18eb51a0b
+ms.sourcegitcommit: 95ed372915f259fddfc87090c6c67b549ed1605f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "68912625"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "68918240"
 ---
 # <a name="understand-microsoft-teams-apps-and-their-capabilities"></a>Comprendere le app di Microsoft Teams e le relative funzionalità
 
@@ -87,6 +87,21 @@ Gli sviluppatori dell'organizzazione personalizzano i modelli di app con semplic
 
 Per altre informazioni, vedere [Modelli di app di Microsoft Teams](https://adoption.microsoft.com/microsoft-teams/app-templates/).
 
+## <a name="discover-and-use-apps-in-teams"></a>Individuare e usare app in Teams
+
+Gli utenti possono visualizzare tutte le app disponibili in Teams dallo store delle app di Teams in un desktop o un client Web di Teams. Gli utenti possono cercare per nome, per categoria ed esplorare in base alle app create per la tua organizzazione e create con Power Platform per individuare e installare app in Teams.
+
+Le app possono essere aggiunte a Teams per un facile accesso. Gli utenti possono [aggiungere app autonomamente](https://support.microsoft.com/office/pin-an-app-for-easy-access-3045fd44-6604-4ba7-8ecc-1c0d525e89ec) se i criteri di configurazione lo consentono e se l'app è consentita dall'amministratore di Teams. Gli amministratori possono aggiungere app e controllare il comportamento delle app aggiunte. Per altre informazioni, vedere [Criteri di configurazione delle app](/teams-app-setup-policies).
+
+:::image type="content" source="media/user-app-experience-find-apps.png" alt-text="Screenshot che mostra tutti i luoghi in cui gli utenti possono esplorare le app in Microsoft Teams." lightbox="media/user-app-experience-find-apps-full.png":::
+
+Gli utenti possono trovare e aggiungere app a Teams dall'App Store di Teams. Possono anche aggiungere app direttamente dal contesto in cui lavorano, ad esempio la scheda chat o del canale, la riunione di Teams o l'area di messaggistica. Per altre informazioni, vedere [Aggiungere un'app a Microsoft Teams](https://support.microsoft.com/office/add-an-app-to-microsoft-teams-b2217706-f7ed-4e64-8e96-c413afd02f77).
+
+Un utente può aggiungere e usare un'app solo quando un amministratore lo consente e l'app viene resa disponibile all'utente tramite [criteri di autorizzazione](teams-app-permission-policies.md). L'amministratore IT di un'organizzazione ha il controllo completo su chi può installare le app in quale contesto. Gli utenti non possono aggiungere app bloccate, nessuna app con un'icona di blocco in Teams Store viene bloccata per l'utente. Tuttavia, [gli utenti possono richiedere l'approvazione dell'amministratore IT della propria organizzazione](https://support.microsoft.com/office/request-apps-that-require-approval-by-your-org-924e3a9e-33f0-44c2-9e81-e875214c05ae). Dopo l'approvazione dell'app, gli utenti possono aggiungere l'app da Teams Store.
+
+> [!NOTE]
+> Solo gli utenti possono richiedere l'approvazione per aggiungere un'app in Teams.
+
 ## <a name="understand-app-capabilities"></a>Informazioni sulle funzionalità delle app
 
 Le funzionalità dell'app Teams sono le funzionalità principali che possono essere integrate in un'app per consentire l'integrazione e l'interazione.
@@ -108,7 +123,6 @@ Per offrire un'esperienza completa che consenta agli utenti finali di lavorare a
   Teams supporta i bot all'interno di chat e canali privati. Gli amministratori possono controllare se in un’organizzazione di Microsoft 365 o Office 365 è consentito l'uso di bot. Per informazioni sull'attivazione o la disattivazione dei bot personalizzati, vedere [Panoramica della gestione e della governance delle app nell'interfaccia di amministrazione di Teams](manage-apps.md).
 
 * **Schede**: Le schede sono pagine Web con supporto per Teams aggiunte nella parte superiore di un canale o di una chat. Le schede consentono di interagire con contenuti e servizi con un'esperienza simile al Web. Si tratta di semplici tag html <iframe\> che puntano ai domini dichiarati nel manifesto dell'app e possono essere aggiunti come parte di un canale all'interno di un team, una chat di gruppo o un'app personale per un singolo utente. Per altre informazioni, vedere [le schede di Microsoft Teams](/microsoftteams/platform/tabs/what-are-tabs).
-
   In ogni chat privata, le schede Conversazioni, File, Organizzazione e Attività vengono create per impostazione predefinita. Oltre a queste schede predefinite, gli sviluppatori possono progettare e aggiungere schede personalizzate. Per altre informazioni, vedere [Usare schede predefinite e personalizzate in Teams](/microsoftteams/platform/tabs/what-are-tabs).
 
 * **Webhook e connettori**: Webhook e connettori consentono di connettere i servizi Web a canali e team in Microsoft Teams. Webhooks sono callback HTTP definito dall'utente che notifica agli utenti qualsiasi azione che è stata eseguita nel canale Teams. È un modo per un'app di ottenere dati in tempo reale. I connettori consentono agli utenti di abbonarsi per ricevere notifiche e messaggi dai servizi Web. Per altre informazioni, vedere [Webhook e connettori](/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors).
@@ -125,5 +139,7 @@ Per visualizzare i casi d'uso comuni mappati alle funzionalità di Teams, vedere
 
 ## <a name="related-articles"></a>Articoli correlati
 
-* [Altre informazioni sui modelli di app per Teams](/microsoftteams/platform/samples/app-templates)
+* [Altre informazioni sui modelli di app per Teams](/microsoftteams/platform/samples/app-templates).
+* [Aggiornamenti dell'app Teams e ruolo di amministratore](apps-update-experience.md)
 * [Panoramica della gestione e della governance delle app nell'interfaccia di amministrazione di Teams](manage-apps.md)
+
