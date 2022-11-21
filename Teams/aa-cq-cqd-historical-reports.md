@@ -22,29 +22,31 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 description: Informazioni su come usare Operatore automatico di Teams & report cronologico sulla coda di chiamata Report di Power BI per visualizzare i dati cronologici di Operatore automatico e Coda di chiamata.
-ms.openlocfilehash: b57180a339ea7aa1548acf16be1f95d3514c294b
-ms.sourcegitcommit: e5f5a1a164576b317e89340e233c9b67f082d19c
+ms.openlocfilehash: 3db0705ea1321b3ef6d2efef5a01e3283f091cc9
+ms.sourcegitcommit: ff161779577ce9cc892f1b6b8861ad49ff4c3ca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "68890085"
+ms.lasthandoff: 11/21/2022
+ms.locfileid: "69131195"
 ---
 # <a name="auto-attendant--call-queue-historical-report"></a>Report cronologico della coda di chiamata & operatore automatico
 
 Questo modello di Power BI fornisce tre report che consentono alle organizzazioni di segnalare il numero di chiamate elaborate da operatori automatici e code di chiamata.  Fornisce anche informazioni dettagliate sulle prestazioni dell'agente.
 
-## <a name="v303-published-on-november-8-2022"></a>V3.0.3 data di pubblicazione: 8 novembre 2022
+## <a name="v304-published-on-november-18-2022"></a>V3.0.4 data di pubblicazione: 18 novembre 2022
 
 Il modello Power BI Operatore automatico & coda di chiamata fornisce i tre report seguenti:
 
-- Il report Operatore automatico mostra i dati analitici per le chiamate in arrivo negli operatori automatici.
-- Il report Coda di chiamata mostra i dati analitici per le chiamate che arrivano nelle code di chiamata.
-- Il report Sequenza temporale agente mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.
+- Il report [Operatore automatico](media/aa-cq-historical-report-sample-aa-v304.png) mostra i dati analitici per le chiamate in arrivo negli operatori automatici.
+- Il report [Coda](media/aa-cq-historical-report-sample-cq-v304.png) di chiamata mostra i dati analitici per le chiamate che arrivano nelle code di chiamata.
+- Il report [Sequenza temporale agente](media/aa-cq-historical-report-sample-at-v304.png) mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.
 
 Questi report usano i dati del servizio Voice Applications Analytics Collector (VAAC).
 
 >[!NOTE]
 > La raccolta dei dati cronologici è in corso in tutte le aree geografiche.  Trenta giorni di dati cronologici saranno disponibili in momenti diversi, con tutte le aree geografiche con 30 giorni completi di dati non oltre il 25 novembre 2022.
+>
+> I clienti GCCH/DOD devono continuare a usare V1.63.
 
 ## <a name="v3xx-prerequisites"></a>Prerequisiti V3.x.x
 
@@ -64,15 +66,15 @@ I passaggi seguenti presuppongono che siano già stati installati Power BI Deskt
 
 Eseguire le operazioni seguenti:
 
-1. Scarica e salva il file [V3.0.3.zipTeams Auto Attendant & i rapporti cronologici della coda di chiamata ](https://www.microsoft.com/download/details.aspx?id=104623) nel computer.
+1. Scarica e salva il file [V3.0.4.zipTeams Auto Attendant & i rapporti cronologici della coda di chiamata ](https://www.microsoft.com/download/details.aspx?id=104623) nel computer.
 
 1. Aprire il file ZIP.
 
-1. Aprire il file modello `Teams Auto Attendant & Call Queue Historical Reports V3.0.3.pbit` . Power BI Desktop dovrebbe avviarsi.
+1. Aprire il file modello `Teams Auto Attendant & Call Queue Historical Reports V3.0.4.pbit` . Power BI Desktop dovrebbe avviarsi.
 
 1. Verrà chiesto di selezionare **l'origine dati**.  Selezionare la `api.interfaces.records.teams.microsoft.com` voce.
 
-  :::image type="content" source="media/aa-cq-historical-report-01-v300.png" alt-text="Screenshot che seleziona il api.interfaces.records.teams.microsoft.com Data Soure":::
+  :::image type="content" source="media/aa-cq-historical-report-01-v304.png" alt-text="Screenshot che seleziona il api.interfaces.records.teams.microsoft.com Data Soure":::
 
 1. Verrà richiesto di accedere con un account. Selezionare **Account aziendale** e quindi **selezionare Accedi**.
 
@@ -91,13 +93,15 @@ Eseguire le operazioni seguenti:
 ## <a name="v163-published-on-august-24-2022"></a>V1.63 pubblicato il 24 agosto 2022
 
 > [!IMPORTANT]
-> Il supporto per il modello V1.63 terminerà il 21 novembre 2022.
+> Il supporto del cloud pubblico per il modello V1.63 terminerà il 25 novembre 2022.
+> 
+> I clienti GCCH/DOD devono continuare a usare V1.63.
 
 Il **modello Power BI Per l'operatore automatico di Teams & rapporto storico coda di chiamata** fornisce i tre report seguenti:
 
-- Il report Operatore automatico mostra i dati analitici per le chiamate in arrivo negli operatori automatici.
-- Il report Coda di chiamata mostra i dati analitici per le chiamate che arrivano nelle code di chiamata.
-- Il report Sequenza temporale agente mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.
+- Il report [Operatore automatico](media/aa-cq-historical-report-sample-aa-v163.png) mostra i dati analitici per le chiamate in arrivo negli operatori automatici.
+- Il report [Coda](media/aa-cq-historical-report-sample-cq-v163.png) di chiamata mostra i dati analitici per le chiamate che arrivano nelle code di chiamata.
+- Il report [Sequenza temporale agente](media/aa-cq-historical-report-sample-at-v163.png) mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.
 
 Questi report usano i dati dell'archivio dati Call [Quality Dashboard (CQD).](CQD-Power-BI-query-templates.md) 
 
@@ -372,14 +376,25 @@ Eseguire le operazioni seguenti:
 
 - <sup>1</sup> **L'origine della chiamata in arrivo** nell'operatore automatico e nei grafici della coda di chiamata mostra l'origine finale della coda di chiamata anziché l'origine iniziale della coda di chiamata. Ad esempio, se un operatore automatico riceve una chiamata esterna e trasferisce la chiamata a un altro operatore automatico o coda di chiamata, **l'origine della chiamata in arrivo** verrà segnalata come Interna.
 
-## <a name="version-history"></a>Cronologia versioni
+## <a name="version-3xx-history"></a>Cronologia della versione 3.x.x
+
+Consulta: Teams Auto Attendant & call queue historical reports - Change Log.docx in the downloaded zip file for a detailed list of changes 
 
 |Versione  |Data di pubblicazione     |Filename                                                           |Descrizione                                         |
 |:--------|:------------------|:------------------------------------------------------------------|:---------------------------------------------------|
-|3.0.3    |8 novembre 2022   |Teams Auto Attendant & Call Queue Historical Reports V3.0.3        |Fare riferimento a:<br>CQD Teams Auto Attendant & Call Queue Historical Reports - Change Log.docx in the downloaded zip file for a list of changes                                                                             |
+|3.0.4    |18 novembre 2022  |Teams Auto Attendant & Call Queue Historical Reports V3.0.4        |Errore corretto, classificazione delle chiamate migliorata, aggiunta della legenda |
+|3.0.3    |8 novembre 2022   |Teams Auto Attendant & Call Queue Historical Reports V3.0.3        |Errore corretto, collegamento alla documentazione aggiunto, query ottimizzate |
 |3.0.1    |26 ottobre 2022   |Teams Auto Attendant & Call Queue Historical Reports V3.0.1        |Rimozione dell'immissione dell'origine dati di test                   |
 |3.0.0    |25 ottobre 2022   |Teams Auto Attendant & Call Queue Historical Reports V3.0.0        |Nuova origine dati back-end                             |
-|1.63     |24 agosto 2022    |CQD Teams Auto Attendant & Call Queue Historical Report V1.63.pbit |Fare riferimento a:<br>CQD Teams Auto Attendant & Call Queue Historical Reports - Change Log.docx in the downloaded zip file for a list of changes                                                                             |
-|1.60     |22 luglio 2022      |CQD Teams Auto Attendant & Call Queue Historical Report V1.60.pbit |Fare riferimento a:<br>CQD Teams Auto Attendant & Call Queue Historical Reports - Change Log.docx in the downloaded zip file for a list of changes                                                                             |
+
+
+## <a name="version-1xx-history"></a>Cronologia della versione 1.xx
+
+Consulta: CQD Teams Auto Attendant & Call Queue Historical Reports - Change Log.docx in the downloaded zip file for a detailed list of changes                         
+
+|Versione  |Data di pubblicazione     |Filename                                                           |Descrizione                                         |
+|:--------|:------------------|:------------------------------------------------------------------|:---------------------------------------------------
+|1.63     |24 agosto 2022    |CQD Teams Auto Attendant & Call Queue Historical Report V1.63.pbit |                                                    |
+|1.60     |22 luglio 2022      |CQD Teams Auto Attendant & Call Queue Historical Report V1.60.pbit |                                                    |
 |1.00     |5 novembre 2020   |CQ e AA combinati Analytics 20201105.pbit                         |Rilascio iniziale                                     |
 

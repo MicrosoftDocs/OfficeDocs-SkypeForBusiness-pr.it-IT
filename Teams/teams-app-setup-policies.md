@@ -13,19 +13,19 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.localizationpriority: medium
+ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come creare, modificare e gestire i criteri di configurazione delle app per aggiungere app, installare le app e consentire agli utenti di caricare app personalizzate.
 f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: b9dfe2ad2598e47175a0af433c0febac17255c09
-ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
+ms.openlocfilehash: 4c94f0610535fa014b0f759b104dd1aef901e055
+ms.sourcegitcommit: ff161779577ce9cc892f1b6b8861ad49ff4c3ca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "68912465"
+ms.lasthandoff: 11/21/2022
+ms.locfileid: "69131005"
 ---
 # <a name="use-app-setup-policies-to-pin-and-auto-install-apps-in-teams"></a>Usare i criteri di configurazione delle app per aggiungere e installare automaticamente le app in Teams
 

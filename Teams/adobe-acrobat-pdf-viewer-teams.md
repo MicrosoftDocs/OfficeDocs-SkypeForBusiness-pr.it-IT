@@ -18,12 +18,12 @@ description: Informazioni su come impostare Adobe Acrobat come visualizzatore PD
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 546328ade88864f1412a2da6f94caf2d1f44aef8
-ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
+ms.openlocfilehash: 4b278ceba60cf22df93446b671ebefaa48d086a0
+ms.sourcegitcommit: ff161779577ce9cc892f1b6b8861ad49ff4c3ca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "68912825"
+ms.lasthandoff: 11/21/2022
+ms.locfileid: "69131345"
 ---
 # <a name="set-adobe-acrobat-as-the-default-pdf-viewer-in-microsoft-teams"></a>Impostare Adobe Acrobat come visualizzatore pdf predefinito in Microsoft Teams
 
@@ -39,7 +39,7 @@ Per configurare l'app di Adobe Acrobat come gestore predefinito per i file PDF n
 
 ## <a name="allow-adobe-acrobat-app-in-your-tenant"></a>Consentire l'app di Adobe Acrobat nel tenant
 
-Prima di configurare l'app, assicurarsi di aver consentito l'uso delle app nel tenant, di aver esplicitamente consento l'app di Adobe Acrobat e che i criteri di autorizzazione dell'app lo consentano. Per configurare Adobe Acrobat come app predefinita per i file PDF, seguire questa procedura:
+Per configurare l'app come visualizzatore PDF predefinito, assicurarsi di [consentire l'uso di app di terze parti](manage-apps.md#manage-org-wide-app-settings) nel tenant. Seguire quindi le istruzioni seguenti per configurare Adobe Acrobat come app predefinita per i file PDF.
 
 1. Accedere all'interfaccia di amministrazione di Teams e accedere **all'app** > **[Teams Gestire le app](https://admin.teams.microsoft.com/policies/manage-apps)**.
 
@@ -71,16 +71,17 @@ Per assegnare e rendere disponibile l'app di Adobe Acrobat per tutti gli utenti,
 
 Dopo aver selezionato Salva, Teams utilizza Adobe Acrobat app come gestore predefinito per i file PDF.
 
-Se si vuole consentire in modo selettivo l'app Adobe Acrobat per alcuni utenti o per un gruppo, è possibile assegnare criteri [personalizzati per le autorizzazioni dell'app](teams-app-permission-policies.md).
+Se si vuole consentire in modo selettivo l'app Adobe Acrobat per alcuni utenti o per un gruppo, usare i [criteri di autorizzazione dell'app](teams-app-permission-policies.md).
 
 ## <a name="considerations-and-limitations"></a>Considerazioni e limitazioni
 
 Conoscere le informazioni seguenti su tale funzionalità:
 
 * Dopo aver configurato i criteri, in genere [sono necessarie alcune ore](teams-app-setup-policies.md#considerations-and-limitations) prima che l'app sia disponibile per gli utenti.
-* La visualizzazione dei file PDF aggiunti nei canali come scheda e la visualizzazione dei file PDF nell'app Assegnazioni continua a essere basata sull'esperienza nativa di Teams.
+* L'esperienza PDF nativa dell'app Teams è disponibile per visualizzare i file PDF aggiunti nei canali come scheda e disponibili nell'app Attività.
 * Adobe Acrobat come visualizzatore PDF predefinito in Teams funziona solo su client desktop e Web. Non è supportato nel client per dispositivi mobili.
 * Gli utenti devono disporre di un piano Adobe Acrobat per poter usare gli strumenti premium come Esporta PDF, Organizza pagine, Combina file, Comprimi PDF e Proteggi PDF.
-* Per disinstallare l'app, gli utenti finali possono rimuoverla dal client Teams. L'amministratore può rimuovere l'app di Adobe Acrobat tramite i criteri di configurazione.
+* Per disinstallare l'app, gli utenti finali possono rimuovere l'app dal client teams. Amministrazione possibile rimuovere l'app Adobe Acrobat usando i criteri di configurazione.
 * Se blocchi l'app Adobe Acrobat, rimuovi l'app dai criteri di configurazione. Assicura che l'esperienza dell’utente finale torni a all’uso del visualizzatore nativo di file PDF.
-* Se si verificano problemi durante l'accesso all'app Adobe Acrobat nel client desktop di Teams, usare [Teams nel browser](https://teams.microsoft.com/) per accedere.
+* Se si verificano problemi di accesso all'app Adobe Acrobat nel client desktop di Teams, usare [Teams nel browser](https://teams.microsoft.com/) per accedere.
+* Per aggiungere commenti o aggiungere annotazioni ai file PDF, è necessario accedere a un [account Adobe](https://acrobat.adobe.com/us/en/) gratuito.

@@ -13,7 +13,7 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.localizationpriority: medium
+ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni su come gestire criteri e impostazioni per controllare chi nell'organizzazione può trasferire le app in sideload e caricare app personalizzate.
 f1.keywords:
@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - seo-marvel-mar2020
-ms.openlocfilehash: 7cf290c3f031becab73523fceb031cae4e0a55a8
-ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
+ms.openlocfilehash: 19f18d89ec2f423c1531639adb630992bdbdc547
+ms.sourcegitcommit: ff161779577ce9cc892f1b6b8861ad49ff4c3ca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "68912415"
+ms.lasthandoff: 11/21/2022
+ms.locfileid: "69130995"
 ---
 # <a name="manage-custom-and-sideloaded-apps-in-teams-admin-center"></a>Gestire app personalizzate e sideload nell'interfaccia di amministrazione di Teams
 
@@ -41,9 +41,9 @@ Dopo aver consentito l'uso di un'app personalizzata, gli utenti finali possono t
 
 :::image type="content" source="media/built-for-your-org1.png" alt-text="Schermata delle app personalizzate nello store di Teams nell'app desktop di Teams." lightbox="media/built-for-your-org2.png":::
 
-L'amministratore di Teams usa i criteri e le impostazioni delle app personalizzate per controllare chi nell'organizzazione può caricare app personalizzate in Microsoft Teams. Gli amministratori decidono quali utenti possono caricare app personalizzate, mentre gli amministratori e i proprietari di team possono determinare se l'aggiunta di app personalizzate a team sono consentite per team specifici. Dopo aver modificato i criteri dell'app personalizzata, possono essere necessarie alcune ore prima che le modifiche diventino effettive. Per gestire questi criteri, è necessario essere un Amministrazione globale o un amministratore del servizio Teams.
+L'amministratore di Teams usa i criteri e le impostazioni delle app personalizzate per controllare chi nell'organizzazione può caricare app personalizzate in Microsoft Teams. Gli amministratori decidono quali utenti possono caricare app personalizzate, mentre gli amministratori e i proprietari di team possono determinare se l'aggiunta di app personalizzate a team sono consentite per team specifici. Dopo aver modificato i criteri dell'app personalizzati, l'applicazione delle modifiche richiede alcune ore. Per gestire questi criteri, è necessario essere un Amministrazione globale o un amministratore del servizio Teams.
 
-Gli sviluppatori all'interno dell'organizzazione possono aggiungere un'app personalizzata a Teams caricando il pacchetto di un’app, in un file .zip, direttamente in un team o nel contesto personale. Questa operazione è diversa da come vengono aggiunte le app tramite l'App Store di Teams. L'aggiunta di un'app personalizzata caricando un pacchetto dell'app, noto anche come sideload, consente a utenti specifici all'interno dell'organizzazione di testare un'app prima che sia pronta per essere distribuita su larga scala.
+Gli sviluppatori all'interno dell'organizzazione possono aggiungere un'app personalizzata a Teams caricando il pacchetto di un’app, in un file .zip, direttamente in un team o nel contesto personale. Questo metodo è diverso dal modo in cui le app vengono aggiunte tramite l'app store di Teams. L'aggiunta di un'app personalizzata caricando un pacchetto dell'app, noto anche come sideload, consente a utenti specifici all'interno dell'organizzazione di testare un'app prima che sia pronta per essere distribuita su larga scala.
 
 <!--- During the creation of an app, the developers create and add an app ID to the manifest file. You can view this external app ID on the Manage apps page after you enable the column `External app ID` from the column settings. You can also view it on the app details page of a custom app. The ID is applicable for custom apps only. --->
 
@@ -119,7 +119,7 @@ Se le impostazioni sono attivate:
 
 ### <a name="org-wide-custom-app-setting"></a>Impostazioni app personalizzate a livello di organizzazione
 
-Le impostazioni app a livello di organizzazione **Consenti interazione con app personalizzate** nella pagina [Gestisci app](manage-apps.md) si applicano a tutti gli utenti dell'organizzazione e regolano se possono caricare o interagire con app personalizzate. Queste impostazioni fungono da interruttore master di attivazione/disattivazione per le impostazioni dei criteri delle app personalizzate di utenti e team. La funzione come interruttore master di attivazione/disattivazione è voluta durante gli eventi di sicurezza. Di conseguenza, le impostazioni dei criteri delle app personalizzate di utenti e team non verranno applicate a meno che le impostazioni app personalizzate a livello di organizzazione non siano abilitate anche se sono abilitate le impostazioni dei criteri delle app personalizzate di utenti e team.
+Le impostazioni app a livello di organizzazione **Consenti interazione con app personalizzate** nella pagina [Gestisci app](manage-apps.md) si applicano a tutti gli utenti dell'organizzazione e regolano se possono caricare o interagire con app personalizzate. Queste impostazioni fungono da interruttore master di attivazione/disattivazione per le impostazioni dei criteri delle app personalizzate di utenti e team. La funzione come interruttore master di attivazione/disattivazione è voluta durante gli eventi di sicurezza. Le impostazioni dei criteri personalizzati per le app di utenti e team vengono applicate solo dopo l'abilitazione dell'impostazione dell'app personalizzata a livello di organizzazione.
 
 #### <a name="configure-the-org-wide-custom-app-setting"></a>Configurare le impostazioni app personalizzate a livello di organizzazione
 

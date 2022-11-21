@@ -12,6 +12,7 @@ search.appverid: MET150
 ms.collection:
 - M365-collaboration
 - m365-frontline
+- tier2
 - highpri
 description: Informazioni sui modelli di team e su come gestirli nell'interfaccia di amministrazione di Microsoft Teams.
 f1.keywords:
@@ -20,12 +21,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2fc4f5c88e123981ee5224a76c28996306e51ded
-ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
+ms.openlocfilehash: 6ca199dbe81b2636a895ca25386abf53f6277758
+ms.sourcegitcommit: ff161779577ce9cc892f1b6b8861ad49ff4c3ca3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68046896"
+ms.lasthandoff: 11/21/2022
+ms.locfileid: "69131335"
 ---
 # <a name="get-started-with-team-templates-in-the-teams-admin-center"></a>Introduzione ai modelli di team nell'interfaccia Teams di amministrazione
 
