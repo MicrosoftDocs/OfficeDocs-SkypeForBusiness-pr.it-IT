@@ -18,16 +18,16 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Gestione clienti Mult-tenant per partner.
 f1keywords: ''
-ms.openlocfilehash: e4e89d483d15ad7f521afd9c0686b3d72ab9e09d
-ms.sourcegitcommit: 64c01699022b47fdfec8dc6e2ca279e57eae3baa
+ms.openlocfilehash: 681efe6832a3829b54b23345f04e32151f130939
+ms.sourcegitcommit: baf29d244b428712052553f9e4484e72e727247e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68243907"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "69046825"
 ---
 # <a name="multi-tenant-customer-management-for-partners"></a>Gestione clienti multi-tenant per partner
 
-La gestione multi-tenant (MTM) nel servizio Teams Rooms Pro Management consente alle organizzazioni partner di gestire più clienti in un'unica posizione, con le proprie credenziali di dominio. Gli utenti partner vedranno solo le chat room dei clienti a cui sono assegnate. È possibile applicare ruoli personalizzati per ogni cliente nel portale MTM, offrendo alle organizzazioni partner un controllo granulare delle autorizzazioni per le risorse del cliente. 
+La gestione multi-tenant (MTM) nel servizio di gestione Teams Rooms Pro consente alle organizzazioni partner di gestire più clienti in un'unica posizione, con le proprie credenziali di dominio. Gli utenti partner vedranno solo le chat room dei clienti a cui sono assegnate. È possibile applicare ruoli personalizzati per ogni cliente nel portale MTM, offrendo alle organizzazioni partner un controllo granulare delle autorizzazioni per le risorse del cliente. 
 
 Il portale MTM è accessibile tramite questo [collegamento](https://partner.rooms.microsoft.com/).
 
@@ -102,7 +102,7 @@ Per rimuovere un cliente dall'elenco **Tenant** , è necessario rimuoverlo.
 
 ## <a name="managing-partner-roles"></a>Gestione dei ruoli dei partner
 
-I ruoli dei partner consentono di delegare le responsabilità a personale aggiuntivo. Il concetto di questi ruoli è lo stesso descritto nel [controllo dell'accesso basato sui](microsoft-teams-rooms-premium-rbac.md) ruoli, ma nel contesto di ogni cliente. Inoltre, è importante notare che i ruoli del partner sono distinti dai ruoli del cliente. I ruoli partner possono essere eliminati dal cliente. 
+I ruoli dei partner consentono di delegare le responsabilità a personale aggiuntivo. Il concetto di questi ruoli è lo stesso descritto nel [controllo dell'accesso basato sui](rooms-pro-rbac.md) ruoli, ma nel contesto di ogni cliente. Inoltre, è importante notare che i ruoli del partner sono distinti dai ruoli del cliente. I ruoli partner possono essere eliminati dal cliente. 
 
 Il ruolo **Amministratore principale** è l'unico ruolo predefinito per ogni cliente integrato e ha quasi tutte le autorizzazioni, nel contesto del cliente, per il servizio di gestione pro (vedere tabella 1). Le autorizzazioni del ruolo Partner** si estendono solo fino alle chat room designate dal cliente. Ad esempio, se il cliente è un'organizzazione globale e assegna al Partner la gestione di Tutte le chat room negli Stati Uniti, l'amministratore principale sarà in grado solo di gestire e delegare le autorizzazioni per tali chat room. Il Partner non ha visibilità sulle altre chat room che il Cliente può avere in altri paesi. 
 
@@ -127,7 +127,7 @@ I partner possono creare ruoli personalizzati in base alle proprie esigenze oper
 
 1. Passare a **Impostazioni > ruoli**. 
 1. Selezionare il cliente dal menu a discesa per cui si vuole modificare il ruolo partner.
-1. Creare un [ruolo personalizzato](microsoft-teams-rooms-premium-rbac.md#built-in-roles).
+1. Creare un [ruolo personalizzato](rooms-pro-rbac.md#built-in-roles).
 
 
 

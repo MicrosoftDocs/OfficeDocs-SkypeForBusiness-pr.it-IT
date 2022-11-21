@@ -1,10 +1,10 @@
 Teams supporta completamente i browser Internet seguenti, con le eccezioni segnalate per le chiamate e le riunioni. Questa tabella si applica ai sistemi operativi in esecuzione nei computer desktop. 
 
 
-|Browser  |Chiamate: audio, video e condivisione  |Riunioni: audio, video e condivisione <sup>1</sup> <sup>2</sup> <sup>3</sup>  |
+|Browser  |Chiamate: audio, video e condivisione  |Riunioni: audio, video e condivisione <sup>1</sup> <sup>2</sup>  |
 |---------|---------|---------|
 |Internet Explorer 11     |Non supportato         |Le riunioni sono supportate solo se includono le coordinate PSTN. Per partecipare a una riunione in Internet Explorer 11 senza coordinate PSTN, gli utenti devono scaricare il client desktop di Teams.<br><br>Video: non supportato<br><br>Condivisione: solo condivisione in entrata (non in uscita)  <br><br> Le app e servizi di Microsoft 365 non supporteranno Internet Explorer 11 a partire dal 17 agosto 2021 (Microsoft Teams non supporterà Internet Explorer 11, a partire dal 30 novembre 2020). [Altre informazioni](https://www.microsoft.com/edge/business). Si noti che Internet Explorer 11 rimarrà un browser supportato. Internet Explorer 11 è un componente del sistema operativo Windows e [segue i criteri del ciclo di vita](/lifecycle/faq/internet-explorer-microsoft-edge) per il prodotto in cui è installato.    |
-|Microsoft Edge, RS2 o versioni successive     |Completamente supportato, tranne la condivisione in uscita <sup>4</sup>         |Completamente supportato, tranne la condivisione in uscita         |
+|Microsoft Edge, RS2 o versioni successive     |Completamente supportato, ad eccezione della non condivisione<sup>in uscita 3</sup>         |Completamente supportato, tranne la condivisione in uscita         |
 |Microsoft Edge (basato su Chromium), l'ultima versione più due versioni precedenti     | Supporto completo    |Supporto completo         |
 |Google Chrome, l'ultima versione più due versioni precedenti       |Supporto completo |Supporto completo <br> <br>La condivisione è supportata senza plug-in o estensioni in Chrome versione 72 o successiva.       |
 |Safari 14+     |Chiamate 1:1 non supportate. Chiamata di gruppo completamente supportate.<br><br>Video: completamente supportato<br><br>Condivisione: completamente supportato         |Riunioni: completamente supportate<br><br>Video: completamente supportato<br><br>Condivisione: completamente supportato     |
@@ -14,11 +14,9 @@ Teams supporta completamente i browser Internet seguenti, con le eccezioni segna
 
 <sup>1</sup> Per [concedere e assumere il controllo del contenuto condiviso durante la condivisione](../meeting-policies-content-sharing.md#allow-a-participant-to-give-or-request-control), entrambe le parti devono usare il client desktop di Teams. Il controllo non è supportato se una delle parti esegue Teams in un browser. Ciò è dovuto a una limitazione tecnica che si prevede di risolvere.
 
-<sup>2</sup> Esegui sfocatura dello sfondo non è disponibile quando si esegue Teams in un browser. Questa funzionalità è disponibile solo per il client desktop di Teams.
+<sup>2</sup> Le riunioni di Teams sui browser sono limitate a un unico flusso; feed video in arrivo dell'altoparlante corrente o condivisione dello schermo.
 
-<sup>3</sup> Le riunioni di Teams nei browser sono limitate a un singolo flusso, ad esempio un feed video in arrivo dell'altoparlante corrente o la condivisione dello schermo.
-
-<sup>4</sup> Microsoft Edge RS2 o la versione successiva non supporta l'invio di traffico audio e video in tempo reale tramite proxy HTTP.
+<sup>3</sup> Edge RS2 o versione successiva non supporta l'invio di traffico audio e video in tempo reale tramite proxy HTTP.
 
 > [!NOTE]
 > L’esecuzione di Teams in un browser è supportata nei PC e nei Mac che soddisfano i requisiti minimi di [hardware per Microsoft Teams](../hardware-requirements-for-the-teams-app.md). Ad esempio, eseguendo Firefox nel sistema operativo Linux è possibile usare Teams.

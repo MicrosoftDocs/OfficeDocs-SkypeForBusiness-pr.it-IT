@@ -21,12 +21,12 @@ description: Informazioni su come gestire le attività nell'interfaccia di ammin
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 91afcd8036cddfae2550aaddad776958ca413a78
-ms.sourcegitcommit: 8b33cc2c2e8f43e6ab4b17715d6a42692351ccad
+ms.openlocfilehash: 1475406697778080d5e49aae58729e6eb1d1576c
+ms.sourcegitcommit: 9504b7a67e593f5575060b09b69817325e2a1f77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2022
-ms.locfileid: "67624296"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "69111143"
 ---
 # <a name="assignments-in-teams-for-education"></a>Assegnare attività in Teams per l'istruzione
 
@@ -39,7 +39,11 @@ Le funzionalità Attività e Voti di Teams per l'istruzione consentono ai docent
 
 ## <a name="assignments-integrations-in-the-microsoft-teams-admin-center"></a>Integrazioni delle attività nell'interfaccia di amministrazione di Microsoft Teams
 
-Usando le impostazioni di amministrazione nell'interfaccia di amministrazione di Microsoft Teams, è possibile attivare o disattivare le funzionalità per i docenti all'interno dell'organizzazione e dei loro studenti. Di seguito sono riportate le impostazioni relative alle attività:
+Usando le impostazioni di amministrazione nell'interfaccia di amministrazione di Microsoft Teams, è possibile attivare o disattivare le funzionalità per i docenti all'interno dell'organizzazione e dei loro studenti.
+
+Per visualizzare e gestire le impostazioni delle attività, passare alle <a href="https://admin.teams.microsoft.com/education/assignments-settings" target="_blank">**impostazioni di Attività** **did** > </a> all'interno dell'interfaccia di amministrazione di Teams.
+
+Di seguito sono riportate le impostazioni relative alle attività:
 
 <a name="#bkemaildigest"> </a>
 

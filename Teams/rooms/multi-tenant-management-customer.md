@@ -18,12 +18,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: gestione dei partner per i clienti.
 f1keywords: ''
-ms.openlocfilehash: 0fef32202d256926448227f522b6160100cd05e1
-ms.sourcegitcommit: fcbbc197e43bcd63bf95cb329df9cb52e06ee356
+ms.openlocfilehash: 56aaf61092dd1bbd61c2734be6da1732f4882e49
+ms.sourcegitcommit: baf29d244b428712052553f9e4484e72e727247e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2022
-ms.locfileid: "68842164"
+ms.lasthandoff: 11/17/2022
+ms.locfileid: "69046865"
 ---
 # <a name="partner-management-for-customers"></a>Gestione partner per i clienti
 
@@ -77,7 +77,7 @@ Per gestire gli utenti con il ruolo di amministratore principale, vedere [Gestio
 
 ## <a name="managing-partner-roles"></a>Gestione dei ruoli dei partner
 
-I ruoli partner consentono al partner di delegare più granularmente le responsabilità a personale aggiuntivo. Il concetto di questi ruoli è lo stesso descritto in [Controllo degli accessi basato sui](microsoft-teams-rooms-premium-rbac.md) ruoli. È importante notare che i ruoli partner sono distinti dai ruoli personalizzati. 
+I ruoli partner consentono al partner di delegare più granularmente le responsabilità a personale aggiuntivo. Il concetto di questi ruoli è lo stesso descritto in [Controllo degli accessi basato sui](rooms-pro-rbac.md) ruoli. È importante notare che i ruoli partner sono distinti dai ruoli personalizzati. 
 
 Il ruolo **di amministratore principale** è l'unico ruolo predefinito per ogni partner aggiunto. Questo ruolo ha quasi tutte le autorizzazioni per le chat room assegnate al partner per il servizio TRM (vedere [tabella 1](#table-1)). Ad esempio, se si hanno sale in tutto il mondo e si assegna un partner per gestire Tutte le chat room negli Stati Uniti, l'amministratore principale sarà in grado solo di gestire e delegare le autorizzazioni per tali chat room. In questo caso, gli amministratori principali di questo Partner non hanno visibilità su alcuna chat room al di fuori degli Stati Uniti. 
 

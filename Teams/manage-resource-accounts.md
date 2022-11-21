@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
 - seo-marvel-apr2020
 description: In questo articolo imparerai a creare, modificare e gestire gli account delle risorse in Microsoft Teams.
-ms.openlocfilehash: cc4705f91260c0ef58b876ef4a606d96ce397929
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.openlocfilehash: b9c7f5575d5e6df4370c07bf1cd581cbd1a396dd
+ms.sourcegitcommit: 9504b7a67e593f5575060b09b69817325e2a1f77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68614389"
+ms.lasthandoff: 11/18/2022
+ms.locfileid: "69111133"
 ---
 # <a name="manage-resource-accounts-in-microsoft-teams"></a>Gestire gli account di risorsa in Microsoft Teams
 
@@ -45,8 +45,7 @@ Per altre informazioni, vedere i riferimenti seguenti:
 È possibile modificare l'account della risorsa **Nome visualizzato** e tipo di **account risorsa** usando l'opzione **Modifica** . Al termine, fare clic su **Salva** .
 
 ## <a name="change-an-existing-resource-account-to-use-a-teams-phone-resource-account-license"></a>Modificare un account di risorse esistente per usare una licenza dell'account di risorse del telefono di Teams
-
-Se si decide di cambiare le licenze dell'account delle risorse esistente da una licenza **di Teams Phone Standard** a una licenza **account risorsa Telefono di Microsoft Teams**, sarà necessario acquisire la licenza **gratuita Account di risorse di Teams Phone** e quindi seguire i passaggi nella interfaccia di amministrazione di Microsoft 365 [spostare gli utenti in un abbonamento diverso](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription).
+Per cambiare le licenze dell'account delle risorse esistente da una licenza **di Teams Phone Standard** a una licenza **Telefono di Microsoft Teams account di** risorsa, è necessario acquisire la licenza **Account risorse di Teams Phone** e quindi seguire la procedura descritta in interfaccia di amministrazione di Microsoft 365 [spostare gli utenti in un abbonamento diverso](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription).
 
 > [!WARNING]
 > Rimuovere sempre una licenza di Teams Phone Standard completa e assegnare la licenza **Telefono di Microsoft Teams Account risorse** nella stessa attività di licenza. Se si rimuove la licenza precedente, si salvano le modifiche dell'account, si aggiunge la nuova licenza e quindi si salvano di nuovo le impostazioni dell'account, l'account della risorsa potrebbe non funzionare più come previsto. In questo caso, è consigliabile creare un nuovo account per le risorse per la licenza **Account risorse di Telefono di Microsoft Teams** e rimuovere l'account delle risorse danneggiato.

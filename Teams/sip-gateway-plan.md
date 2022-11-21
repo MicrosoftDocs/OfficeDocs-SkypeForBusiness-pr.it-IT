@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cebff25642b98b7012a7c4bb2dac0c708c5e57c6
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.openlocfilehash: a4f5db5f79d2a273701e7c2cd8883c89aba2d1a2
+ms.sourcegitcommit: ad7eb80a266a96bb894f3801b51587c07786c257
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68614078"
+ms.lasthandoff: 11/19/2022
+ms.locfileid: "69126962"
 ---
 # <a name="plan-for-sip-gateway"></a>Pianificare il Gateway SIP
 
@@ -71,18 +71,18 @@ Se si dispone di un dispositivo 3PIP o SIP, è necessario disporre di:
 |Fornitore    |Modello      |Versione firmware minima|Versione firmware approvata|Note|Link|
 |----------|-----------|------------|-----------|------------|------------|
 |**Cisco** |           |            |           |I dispositivi che eseguono firmware aziendale devono essere convertiti in firmware multipiattaforma. Leggi la guida a destra per scoprire come.|[Guida alla conversione del firmware Cisco](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-7800-series/guide-c07-742786.html)|
-|          |8832       |11,3,5 MPP   |11-3-7 MPP  |   |   |
-|          |6821       |11.1.1MPP   |11-3-7 MPP  |   |   |
-|          |7811       |11.1.1MPP   |11-3-7 MPP  |   |   |
-|          |7821       |11.1.1MPP   |11-3-7 MPP  |   |   |
-|          |7841       |11.1.1MPP   |11-3-7 MPP  |   |   |
-|          |7861       |11.1.1MPP   |11-3-7 MPP  |   |   |
-|          |8811       |11.1.1MPP   |11-3-7 MPP  |   |   |
-|          |8841       |11.1.1MPP   |11-3-7 MPP  |   |   |
-|          |8845       |11.1.1MPP   |11-3-7 MPP  |   |   |
-|          |8851       |11.1.1MPP   |11-3-7 MPP  |   |   |
-|          |8861       |11.1.1MPP   |11-3-7 MPP  |   |   |
-|          |8865       |11.1.1MPP   |11-3-7 MPP  |   |   |
+|          |8832<sup>1</sup>       |11,3,5 MPP   |11-3-7 MPP  |   |   |
+|          |6821<sup>1</sup>       |11.1.1MPP   |11-3-7 MPP  |   |   |
+|          |7811<sup>1</sup>       |11.1.1MPP   |11-3-7 MPP  |   |   |
+|          |7821<sup>1</sup>       |11.1.1MPP   |11-3-7 MPP  |   |   |
+|          |7841<sup>1</sup>       |11.1.1MPP   |11-3-7 MPP  |   |   |
+|          |7861<sup>1</sup>       |11.1.1MPP   |11-3-7 MPP  |   |   |
+|          |8811<sup>1</sup>       |11.1.1MPP   |11-3-7 MPP  |   |   |
+|          |8841<sup>1</sup>       |11.1.1MPP   |11-3-7 MPP  |   |   |
+|          |8845<sup>1</sup>       |11.1.1MPP   |11-3-7 MPP  |   |   |
+|          |8851<sup>1</sup>       |11.1.1MPP   |11-3-7 MPP  |   |   |
+|          |8861<sup>1</sup>       |11.1.1MPP   |11-3-7 MPP  |   |   |
+|          |8865<sup>1</sup>       |11.1.1MPP   |11-3-7 MPP  |   |   |
 |**Poli**  |           |            |           |Il dispositivo verrà riavviato automaticamente e installerà il firmware selezionato.|   |
 |          |Trio 8500  |5.9.5.3182  |7.2.2.1094 |   |   |
 |          |Trio 8800  |5.9.5.3182  |7.2.2.1094 |   |   |
@@ -136,6 +136,18 @@ Se si dispone di un dispositivo 3PIP o SIP, è necessario disporre di:
 |          |T53W<sup>1</sup>      |83          |96.86.5.1  |   |   |
 |          |T54W<sup>1</sup>      |83          |96.86.5.1  |   |   |
 |          |T57W<sup>1</sup>      |83          |96.86.5.1  |   |   |
+|          |W56H                  |            |61.85.0.56 |   |   |
+|          |W73H                  |            |116.85.0.38|   |   |
+|          |W59R                  |            |115.85.0.56|   |   |
+|          |W70B NOAM             |            |146.85.5.4 |   |   |
+|          |W70B EMEA             |            |146.85.5.2 |   |   |
+|          |W70B APAC             |            |146.85.5.3 |   |   |
+|          |W80 NOAM              |            |130.85.5.5 |   |   |
+|          |W80 EMEA              |            |130.85.5.6 |   |   |
+|          |W80 APAC              |            |130.85.5.4 |   |   |
+|          |W90 NOAM              |            |130.85.5.5 |   |   |
+|          |W90 EMEA              |            |130.85.5.6 |   |   |
+|          |W90 APAC              |            |130.85.5.4 |   |   |
 |**AudioCodes**|       |            |           |Alcuni dispositivi SIP AudioCodes richiedono un'impostazione URL di provisioning. Scarica e installa i file di aggiornamento per i dispositivi AudioCodes interessati a destra. |[File scaricabili per i dispositivi interessati su AudioCodes](https://audiocodes.sharefile.com/share/view/sc9cdf17f9ec45d09/fo7914a2-4f3a-4000-8957-47bd6f35a3a5)|
 |          |405<sup>1</sup>        |2.2.8      |2.2.16.589 |   |   |
 |          |405HD<sup>1</sup>      |3.2.1      |2.2.16.589 |   |   |
@@ -187,6 +199,9 @@ Se si dispone di un dispositivo 3PIP o SIP, è necessario disporre di:
 
 > [!NOTE]
 > I telefoni Ascom ricevono gli aggiornamenti del firmware via etere dai server IP-DECT Ascom.
+
+> [!NOTE]
+> Per le stazioni base DECT Yealink, utilizza la versione firmware specifica dell'area geografica appropriata elencata sopra per ottenere la migliore esperienza di chiamata.
 
 > [!NOTE]
 > Per le query di supporto, i clienti che usano sistemi IP-DECT con Gateway SIP di Teams devono contattare il produttore del dect o i partner del canale di implementazione.
