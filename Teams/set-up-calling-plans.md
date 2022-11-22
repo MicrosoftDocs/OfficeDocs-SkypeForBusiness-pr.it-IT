@@ -1,5 +1,5 @@
 ---
-title: Configurare le chiamate PSTN per Skype for Business
+title: Configurare Piani per chiamate di Microsoft Teams
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -27,16 +27,16 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Scopri come configurare i Piani per chiamate, inclusi i piani disponibili nella tua area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi per gli interventi di emergenza & posizioni.
-ms.openlocfilehash: c33a7e3400df369b062468001b06d35dc98ad0ac
-ms.sourcegitcommit: 401cee68d4f6f9470d614dda12b9cb023f382ff2
+ms.openlocfilehash: ac46c40fb5a63a40ed2ecbdc5f43fa71137f780c
+ms.sourcegitcommit: 0a13f96663c7466b08d654bedcb6206f302189a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "67999531"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "69139150"
 ---
-# <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
+# <a name="set-up-microsoft-teams-calling-plans"></a>Configurare Piani per chiamate di Microsoft Teams
 
-Le chiamate ad altri utenti di Teams sono gratuite, ma se si vuole consentire agli utenti di chiamare telefoni al di fuori dell'azienda, ottenere un piano per chiamate nazionali, un piano per chiamate internazionali o un piano per chiamate con pagamento in base alle proprie esigenze in Microsoft 365. È facile configurare piani per chiamate per la tua azienda.  Per ulteriori informazioni sui Piani per chiamate, vedi [Qual è il Piano per chiamate più adatto a te?](calling-plan-landing-page.md).
+Le chiamate ad altri utenti di Teams sono gratuite, ma se si vuole consentire agli utenti di chiamare telefoni al di fuori dell'azienda, ottenere un piano per chiamate nazionali, un piano per chiamate internazionali o un piano per chiamate con pagamento in base alle proprie esigenze in Microsoft 365. È facile configurare Piani per chiamate di Microsoft Teams per l'azienda.  Per ulteriori informazioni sui Piani per chiamate, vedi [Qual è il Piano per chiamate più adatto a te?](calling-plan-landing-page.md).
 
 ## <a name="step-1-find-out-if-calling-plans-are-available-in-your-countryregion"></a>Passaggio 1: Scopri se i piani per chiamate sono disponibili nel tuo paese/area geografica
 
@@ -51,7 +51,8 @@ Se i Piani per chiamate non sono disponibili per il tuo paese o area geografica,
     > [!TIP]
     > **Le licenze Sistema telefonico** e i Piani per chiamate di Microsoft 365 vanno insieme, quindi per vedere l'opzione per acquistare i Piani per chiamate, devi prima avere le licenze **Sistema telefonico** .
   
-2. First assign the licenses, and then assign a Calling Plan to the people in your organization. Vedere [Assegnare licenze per i componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/assign-teams-add-on-licenses.md).
+2. Assegnare prima di tutto le licenze e quindi assegnare una licenza per il Piano per chiamate agli utenti dell'organizzazione. Vedere [Assegnare licenze per i componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/assign-teams-add-on-licenses.md).
+    1. Se acquisti un piano per chiamate con pagamento in base al consumo, potresti dover acquistare Crediti comunicazioni. Per determinare se è necessario acquistare Crediti comunicazioni, vedi [Come finanziare un piano di pagamento in base al consumo](calling-plans-for-office-365.md#how-to-fund-a-pay-as-you-go-calling-plan).
 
 ## <a name="step-3-get-phone-numbers"></a>Passaggio 3: Ottenere numeri di telefono
 
