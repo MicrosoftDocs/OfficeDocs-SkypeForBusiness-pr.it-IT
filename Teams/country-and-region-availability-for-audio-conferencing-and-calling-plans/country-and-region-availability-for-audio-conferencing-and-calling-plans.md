@@ -25,12 +25,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Scopri se i servizi di audioconferenza, sistema telefonico, piani per chiamate, crediti comunicazioni e numeri verdi e a pagamento sono disponibili in un paese o in un'area geografica.
-ms.openlocfilehash: 2f9bc15a51765d595a1c8eb24c800971079b1207
-ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
+ms.openlocfilehash: a20d8344182d8fefeaeb8cbc6c9789178b87829f
+ms.sourcegitcommit: 0a13f96663c7466b08d654bedcb6206f302189a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67641937"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "69139170"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani di chiamata per Paese e area geografica
 
@@ -203,16 +203,11 @@ La disponibilità di numeri verdi a pagamento per alcune di queste località pu�
 
 Utilizza l'elenco a discesa in alto per cercare un paese o un’area geografica e sapere quali servizi sono disponibili.
 
-### <a name="calling-plans"></a>Piani di chiamata
+### <a name="microsoft-teams-calling-plans"></a>Piani per chiamate di Microsoft Teams
 
-|Funzionalità     |Dettagli  |
-|----------|-----------|
-|I Piani per chiamate sono disponibili per l'acquisto?  |Sì          |   
-|Minuti disponibili per i Piani per chiamate.    |Sono disponibili cinque opzioni per i piani per ogni mese di calendario: <ul><li>Piano per chiamate pay-as-you-go </li><li> Piano per chiamate nazionali da 120 minuti </li><li> Piano per chiamate nazionali da 240 minuti </li><li> Piano per chiamate nazionali da 1200 minuti </li><li> Piano per chiamate internazionali: 1200 minuti di chiamate nazionali o 600 minuti di chiamate internazionali (a seconda di quale dei due minuti viene raggiunto per primo nel mese di calendario)</li></ul>|
+Insieme al sistema telefonico, i Piani per chiamate consentono agli utenti di effettuare e ricevere chiamate telefoniche. Ottieni innanzitutto un numero di telefono (abbonato) (non un numero di servizio) da assegnare all'utente e quindi assegna un piano per le chiamate. Sono disponibili tre tipi di piani per chiamate: **nazionali**, **internazionali** e **a pagamento**. Per altre informazioni, vedere [Piani per chiamate per Microsoft Teams](../calling-plans-for-office-365.md) .
 
-Unitamente al Sistema telefonico, un Piano per chiamate consente agli utenti di effettuare e ricevere telefonate. Ottieni innanzitutto un numero di telefono (abbonato) (non un numero di servizio) da assegnare all'utente e quindi assegna un piano per le chiamate. Sono disponibili due tipi di Piani per chiamate: **Nazionali** e **Internazionali**. Per altre informazioni, vedere [Sistema telefonico e piani per chiamate](../calling-plan-landing-page.md).
-
-Per informazioni sulle licenze, è possibile anche consultare [Licenza sistema telefonico e piani per chiamate](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+È anche possibile visualizzare [le opzioni di licenza per i componenti aggiuntivi di Microsoft Teams](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md) per le informazioni sulle licenze.
 
 > [!NOTE]
 > Il paese/area geografica si basa sulla località geografica assegnata alla licenza dell'utente nell'**interfaccia di amministrazione Microsoft 365** > **Utenti attivi** e **non** sull'indirizzo di fatturazione indicato nel **Profilo organizzazione** dell'**interfaccia di amministrazione di Microsoft 365**.
