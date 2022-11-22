@@ -21,12 +21,12 @@ ms.localizationpriority: medium
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e gestire gli operatori automatici in Microsoft Teams.
-ms.openlocfilehash: de39728b255956a7fd2dbf476497a4173e34a216
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: 97f298e03a6495dda4ec7568f3e3b022548bba08
+ms.sourcegitcommit: 0a13f96663c7466b08d654bedcb6206f302189a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68584459"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "69139260"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -48,7 +48,7 @@ Gli operatori automatici possono reindirizzare le chiamate, in base all'input de
 > [!NOTE]
 > Quando si reindirizzano le chiamate a una **Persona nell'organizzazione**, tale persona deve essere abilitata per la voce. Per informazioni dettagliate sull'abilitazione della voce, vedere [Assegnare licenze per i componenti aggiuntivi di Teams agli utenti](teams-add-on-licensing/assign-teams-add-on-licenses.md).
 >
-> Durante la definizione di un **operatore** è facoltativo, è consigliabile.  Gli operatori automatici reindirizzano le chiamate all'operatore se il chiamante non effettua una selezione sui menu, seleziona ripetutamente le opzioni non valide o le chiamate per nome o numero ripetutamente non riescono.  Se non è definito un operatore, l'operatore automatico rilascerà la chiamata.
+> Durante la definizione di un **operatore** è facoltativo, è consigliabile. Gli operatori automatici reindirizzano le chiamate all'operatore in caso di errore nella configurazione dell'operatore automatico a causa dell'eliminazione di un account di un utente o di un account di segreteria telefonica condivisa. Se non è definito un operatore, l'operatore automatico rilascerà la chiamata.
 
 ## <a name="whats-new-for-auto-attendants-in-the-past-6-months"></a>Novità per gli operatori automatici degli ultimi 6 mesi
  

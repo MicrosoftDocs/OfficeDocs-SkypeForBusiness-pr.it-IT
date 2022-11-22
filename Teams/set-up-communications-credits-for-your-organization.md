@@ -24,23 +24,33 @@ ms.custom:
 - Licensing
 - seo-marvel-apr2020
 description: Learn how to set up communication credits (PSTN Consumption) billing licenses for your users and organization.
-ms.openlocfilehash: 4ad3b6702d31f59c237bf7867aadd0e8d1c05abf
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.openlocfilehash: 0a6489b0c3e7591139421b418be52d6bfcd8f4fa
+ms.sourcegitcommit: 0a13f96663c7466b08d654bedcb6206f302189a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68613838"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "69139130"
 ---
 # <a name="set-up-communications-credits-for-your-organization"></a>Configurare i Crediti comunicazioni per la propria organizzazione
 
-Se si desidera utilizzare i numeri verdi con Microsoft Teams, è necessario impostare i Crediti comunicazioni. Microsoft consiglia di configurare i Crediti comunicazioni per il Piano per chiamate (nazionali, internazionali o con pagamento in base all'uso) e gli utenti di audioconferenza che devono effettuare chiamate in uscita verso **qualsiasi destinazione**. Alcune destinazioni potrebbero non essere incluse nei tuoi abbonamenti a Piano per chiamate o Audioconferenza.
+Se si desidera utilizzare i numeri verdi con Microsoft Teams, è necessario impostare i Crediti comunicazioni. Microsoft consiglia di configurare i Crediti comunicazioni per il piano per le chiamate di Microsoft Teams (nazionali, internazionali o con pagamento automatico) e gli utenti di audioconferenza che devono effettuare chiamate in uscita verso **qualsiasi destinazione**. Alcune destinazioni potrebbero non essere incluse nei tuoi piani per chiamate o audioconferenze.
 
-Al momento dell'iscrizione a Piani per chiamate e/o Audioconferenza, si ottiene un determinato numero di minuti a seconda del paese o dell'area geografica. Per ulteriori informazioni, consulta [l'elenco di disponibilità del paese o dell'area geografica per i piani per audioconferenze e chiamate](./country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md#select-your-country-or-region-to-see-whats-available-for-your-organization).
+Al momento dell'iscrizione ai piani per chiamate e/o alle audioconferenze, ottieni alcuni minuti a seconda del paese o dell'area geografica. Per ulteriori informazioni, consulta [l'elenco di disponibilità del paese o dell'area geografica per i piani per audioconferenze e chiamate](./country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md#select-your-country-or-region-to-see-whats-available-for-your-organization).
 
 Se non vengono configurati i Crediti comunicazioni e si esauriscono i minuti per l'organizzazione, tali utenti non potranno effettuare chiamate o chiamate in uscita dalle riunioni di Audioconferenza. Puoi ottenere ulteriori informazioni, inclusi gli importi di finanziamento consigliati, leggendo [Cosa sono i Crediti comunicazioni?](what-are-communications-credits.md)
   
-> [!NOTE]
-> Per altre informazioni su piani e prezzi, [vedi le tariffe qui](https://go.microsoft.com/fwlink/p/?LinkId=799523).
+Per altre informazioni su piani e prezzi, [vedi le tariffe qui](https://go.microsoft.com/fwlink/p/?LinkId=799523).
+
+> [!IMPORTANT]
+> **Per i clienti con nuova esperienza di commerce che chiamano abbonamenti:**
+>
+> La nuova esperienza di commercio (NCE) consente ai clienti di pagare i servizi dopo l'utilizzo dei servizi, nota anche come fatturazione post-utilizzo.
+>
+> Poiché i Crediti comunicazioni sono un budget prepagato per supportare i minuti in uscita, non è disponibile per l'acquisto per i clienti con abbonamenti per chiamate NCE.
+>
+> Al contrario, i clienti NCE pagheranno per i minuti di eccedenza in uscita dopo averli usati. Non è necessario un pool di Crediti comunicazioni.
+>
+> Per altre informazioni sulla nuova esperienza di commercio per le sottoscrizioni per le chiamate, vedere [Abilitare l'abbonamento a pagamento](/microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services) in base al consumo e [Eccedenza di new commerce per telco pay-as-you-go](/partner-center/new-commerce-telco-payg).
 
 Per configurare i Crediti comunicazioni per la tua organizzazione, segui questi passaggi:
 
@@ -83,7 +93,7 @@ Per altre informazioni, vedere Licenze per i [componenti aggiuntivi di Microsoft
 
    - **Autoricarica** L'autoricarica consente di aggiungere automaticamente fondi al saldo quando scende al di sotto dell'importo configurato.
 
-     Microsoft consiglia di utilizzare l'impostazione **Autoricarica** per evitare qualsiasi interruzione del servizio nel caso in cui i Crediti comunicazioni raggiungano lo zero. Riceverai un messaggio e-mail quando le transazioni di ricarica avranno esito positivo, quando le transazioni di ricarica non riescono (ad esempio una carta di credito scaduta) e quando il saldo dei Crediti comunicazioni raggiunge lo zero.
+     Microsoft consiglia di utilizzare l'impostazione **Autoricarica** per evitare qualsiasi interruzione del servizio se il saldo dei Crediti comunicazioni raggiunge lo zero. Riceverai un messaggio e-mail quando le transazioni di ricarica avranno esito positivo, quando le transazioni di ricarica non riescono (ad esempio una carta di credito scaduta) e quando il saldo dei Crediti comunicazioni raggiunge lo zero.
 
    - **Somma di autoricarica** Nella casella **Ricarica con** indicare l'importo della ricarica da aggiungere automaticamente al proprio account quando il saldo va al di sotto dell'importo configurato.
 

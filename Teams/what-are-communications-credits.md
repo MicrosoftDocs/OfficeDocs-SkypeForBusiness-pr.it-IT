@@ -22,13 +22,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Licensing
+- admindeeplinkMAC
 description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
-ms.openlocfilehash: 75a1f3702140543f08d963a2572841bdca79c9b1
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: 6d64c89aa62d7209a1135234e975f492e7c182a9
+ms.sourcegitcommit: 0a13f96663c7466b08d654bedcb6206f302189a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68584207"
+ms.lasthandoff: 11/22/2022
+ms.locfileid: "69139160"
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
@@ -48,15 +49,33 @@ Communications Credits are a convenient way to pay for Audio Conferencing and Ca
 
 - Effettuare chiamate in uscita e pagare al minuto per tutte le chiamate in uscita, se si ha un piano per chiamate con pagamento in base all'uso.
 
-> [!NOTE]
-> Le chiamate in uscita verso alcune destinazioni possono essere incluse nel tuo abbonamento Audioconferenza. Per i dettagli, controlla le informazioni sull'abbonamento.
+## <a name="can-i-use-communication-credits"></a>Posso utilizzare i Crediti comunicazioni?
+
+Non tutti i clienti possono o devono utilizzare i Crediti comunicazioni. Ecco alcuni motivi per cui non puoi o non dovresti usare i Crediti comunicazioni.
+
+### <a name="call-destinations-may-be-included-in-your-subscription"></a>Le destinazioni di chiamata possono essere incluse nell'abbonamento
+
+Le chiamate in uscita verso alcune destinazioni possono essere incluse nell'abbonamento a Audioconferenza o Piano per chiamate. Controlla le informazioni sull'abbonamento per i dettagli prima di acquistare crediti comunicazioni non necessari.
   
-> [!NOTE]
-> If your organization is located in a different region than the billing address of your Enterprise Agreement (EA), you might not be able to purchase Communications Credits. If you are unable to acquire Communications Credits, open a support incident from the portal and we will work with you to mitigate this issue until a permanent solution is in place.
-  
+### <a name="conflicting-organization-addresses"></a>Indirizzi dell'organizzazione in conflitto
+
+Se l'organizzazione risiede in un'area geografica diversa dall'indirizzo di fatturazione del tuo contratto aziendale (EA, enterprise agreement), potrebbe non essere possibile acquistare Crediti comunicazioni.
+
+Se non riesci ad acquistare Crediti comunicazioni, apri una richiesta di supporto dal portale e collaboreremo per ridurre il problema fino a quando non sarà disponibile una soluzione permanente.
+
+### <a name="customers-with-new-commerce-experience-calling-subscriptions"></a>Clienti con nuova esperienza di commerce che chiamano abbonamenti
+
+La nuova esperienza di commercio (NCE) consente ai clienti di pagare i servizi dopo l'utilizzo dei servizi, nota anche come fatturazione post-utilizzo.
+
+Poiché i Crediti comunicazioni sono un budget prepagato per supportare i minuti in uscita, non è disponibile per l'acquisto per i clienti con abbonamenti per chiamate NCE.
+
+Al contrario, i clienti NCE pagheranno per i minuti di eccedenza in uscita dopo averli usati. Non è necessario un pool di Crediti comunicazioni.
+
+Per altre informazioni sulla nuova esperienza di commercio per le sottoscrizioni per le chiamate, vedere [Abilitare l'abbonamento a pagamento](/microsoft-365/commerce/subscriptions/manage-pay-as-you-go-services) in base al consumo e [Eccedenza di new commerce per telco pay-as-you-go](/partner-center/new-commerce-telco-payg).
+
 ## <a name="what-are-the-communications-credits-rates"></a>Quali sono le tariffe dei Crediti comunicazioni?
 
-Se ti stai chiedendo qual è il costo delle chiamate per i Piani per chiamate, vedi [Cloud-Based Phone System for Voice Calling](https://go.microsoft.com/fwlink/p/?LinkId=799523) (scorri verso il basso fino a "Vedi le tariffe per dove vuoi chiamare").
+Se ti stai chiedendo qual è il costo delle chiamate per Piani per chiamate di Microsoft Teams, vedi [Cloud-Based Phone System for Voice Calling](https://go.microsoft.com/fwlink/p/?LinkId=799523) (scorri verso il basso fino a "Vedi le tariffe per dove vuoi chiamare").
   
 ## <a name="what-is-it"></a>Descrizione
 
@@ -72,7 +91,7 @@ You can set up consumption billing using a **one-time funding** of the pre-paid 
 > [!NOTE]
 > Per visualizzare i piani e i prezzi [, accedi al interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e vai a **Abbonamenti** >  **fatturazione** > **Aggiungi abbonamenti**.
   
-Nel **interfaccia di amministrazione di Microsoft 365** >  **Fatturazione** > **di servizi** >  di acquisto **Componenti** aggiuntivi è possibile selezionare Crediti comunicazioni per aggiungere i crediti e aggiungere il credito manualmente in qualsiasi momento. È possibile anche abilitare l'opzione **Autoricarica**, che consente di ricaricare automaticamente l'account quando il saldo scende al di sotto della soglia impostata. Se scegli di finanziare il saldo dei Crediti comunicazioni con un importo una tantum e il saldo scende a zero, gli altri scenari di chiamata precedenti non funzioneranno più, inclusi i numeri verdi. Per questo, è consigliabile utilizzare la funzione " **Autoricarica** " per evitare qualsiasi interruzione del servizio, nel caso in cui i Crediti comunicazioni arrivino a 0 (zero). Puoi visualizzare il saldo attuale dei Crediti comunicazioni passando a **Fatturazione** >  Crediti **comunicazioni** **per i tuoi prodotti** > .
+Nel [interfaccia di amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339) vai a **Componenti** aggiuntivi **servizi** >  di acquisto **fatturazione** > , puoi selezionare Crediti comunicazioni per aggiungere i crediti e aggiungere il credito manualmente in qualsiasi momento. È possibile anche abilitare l'opzione **Autoricarica**, che consente di ricaricare automaticamente l'account quando il saldo scende al di sotto della soglia impostata. Se scegli di finanziare il saldo dei Crediti comunicazioni con un importo una tantum e il saldo scende a zero, gli altri scenari di chiamata precedenti non funzioneranno più, inclusi i numeri verdi. Per questo, è consigliabile utilizzare la funzione " **Autoricarica** " per evitare qualsiasi interruzione del servizio, nel caso in cui i Crediti comunicazioni arrivino a 0 (zero). Puoi visualizzare il saldo attuale dei Crediti comunicazioni passando a **Fatturazione** >  Crediti **comunicazioni** **per i tuoi prodotti** > .
 
 > [!NOTE]
 >Verranno inviati messaggi di posta elettronica a **tutti gli utenti** con l'amministratore del servizio Lync, l'amministratore della società, l'amministratore della fatturazione, l'amministratore dell'account utente, l'amministratore dell'account utente, l'amministratore del supporto helpdesk, l'amministratore del supporto tecnico, l'amministratore di fatturazione, l'amministratore del servizio Lync, gli amministratori dei dispositivi, l'amministratore delle applicazioni, l'amministratore della licenza, l'amministratore del dispositivo cloud, l'amministratore dell'autenticazione, l'amministratore dell'autenticazione privilegiata, l'amministratore delle comunicazioni di Teams, i team  Addetto del supporto tecnico per le comunicazioni, addetto al supporto tecnico per le comunicazioni di Teams, ruolo di amministratore di Teams, quando le transazioni di ricarica hanno esito positivo, le transazioni di ricarica non riescono (ad esempio una carta di credito scaduta) e il saldo dei Crediti comunicazioni raggiunge 0 (zero).
@@ -109,7 +128,7 @@ Le notifiche importanti relative al saldo dei Crediti comunicazioni della tua or
 
 Abbiamo consigliato di iniziare utilizzando un piccolo importo di finanziamento, che per le organizzazioni più piccole potrebbe essere anche il minimo di $ 50. Dopo aver raccolto uno o due mesi di utilizzo di PSTN usando il report dettagli sull'utilizzo di PSTN, sarà possibile modificare gli importi in modo da soddisfare il normale utilizzo nell'organizzazione.
   
-Se tutto è pronto per la configurazione, consulta [Configurare i Crediti comunicazioni per la propria organizzazione](set-up-communications-credits-for-your-organization.md).
+Se sei pronto per configurare i Crediti comunicazioni, vedi [Configurare i Crediti comunicazioni per la tua organizzazione](set-up-communications-credits-for-your-organization.md).
   
 ## <a name="want-to-know-about-plans-and-pricing"></a>Informazioni su piani e prezzi.
 
