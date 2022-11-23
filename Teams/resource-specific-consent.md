@@ -14,18 +14,16 @@ ms.localizationpriority: high
 ms.collection: M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cb7e4a4487a5411386978fb91a70c485bfa0ddc6
-ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
+ms.openlocfilehash: 374cda125d688c4e38797f1afbee4ae3a55bb064
+ms.sourcegitcommit: d95a3408e31d3dec37c534c110b09a8847bec724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "68912595"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "69156822"
 ---
 # <a name="resource-specific-consent-in-microsoft-teams"></a>Consenso specifico delle risorse in Microsoft Teams
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
-Il consenso specifico delle risorse (RSC) è un'integrazione di Microsoft Teams e Microsoft API Graph che consente alle app di usare gli endpoint API per gestire risorse specifiche di un team all'interno dell'organizzazione. Le autorizzazioni RSC consentono ai proprietari del team di concedere il consenso per un'applicazione per l'accesso e la modifica dei dati di un team. Il consenso specifico delle risorse in Microsoft Teams consente ai proprietari del team di fornire il consenso alle app per accedere ai dati del team. Esempi di questo tipo di accesso includono la possibilità di leggere i messaggi dei canali, creare ed eliminare canali e creare e rimuovere le schede dei canali.
+Il consenso specifico delle risorse (RSC) è un Microsoft Teams e l'integrazione di Microsoft API Graph che consente alle app di usare gli endpoint API per gestire risorse specifiche di un team all'interno dell'organizzazione. Le autorizzazioni RSC consentono ai proprietari del team di concedere il consenso per un'applicazione per l'accesso e la modifica dei dati di un team. Il consenso specifico delle risorse in Microsoft Teams consente ai proprietari del team di fornire il consenso alle app per accedere ai dati del team. Esempi di questo tipo di accesso includono la possibilità di leggere i messaggi dei canali, creare ed eliminare canali e creare e rimuovere le schede dei canali.
 
 Gli amministratori possono controllare se i proprietari dei team dell'organizzazione possono concedere il consenso tramite le impostazioni configurate usando il modulo PowerShell di Azure Active Directory (Azure AD) o il portale di Azure e l'interfaccia di amministrazione di Microsoft Teams.  
 
@@ -49,7 +47,7 @@ Questa impostazione controlla se gli utenti dell'organizzazione possono fornire 
 
 È anche possibile gestire questa impostazione con PowerShell. Per altre informazioni, vedere [Configurare i contenuti dell'utente per le applicazioni](/azure/active-directory/manage-apps/configure-user-consent#configure-user-consent-to-applications).
 
-#### <a name="the-enablegroupspecificconsent-setting"></a>Impostazione "EnableGroupSpecificConsent"
+#### <a name="control-to-let-group-owners-consent-to-apps-that-access-company-data"></a>Controllare per consentire ai proprietari del gruppo di acconsentire alle app che accedono ai dati aziendali
 
 Questa impostazione controlla se gli utenti dell'organizzazione possono fornire il consenso alle app che accedono ai dati aziendali per i gruppi di cui sono proprietari. Questa impostazione deve essere abilitata per consentire ai proprietari del team di fornire il consenso. Per istruzioni su come gestire questa impostazione tramite PowerShell, vedere [Configurare il consenso del proprietario del gruppo alle app che accedono ai dati del gruppo](/azure/active-directory/manage-apps/configure-user-consent#configure-group-owner-consent-to-apps-accessing-group-data).
 
