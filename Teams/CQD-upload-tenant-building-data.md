@@ -21,12 +21,12 @@ ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Informazioni su come caricare i dati del tenant e dell'edificio in Call Quality Dashboard (CQD).
-ms.openlocfilehash: d9559490aa990f3df800e0e9438810c63d153d3c
-ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.openlocfilehash: d999098a2d920c8709ae1878ac94648451c00f0b
+ms.sourcegitcommit: 548978550d58f8657d7035b57b736e9cf9b15984
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66789641"
+ms.lasthandoff: 11/23/2022
+ms.locfileid: "69163226"
 ---
 # <a name="upload-tenant-and-building-data-in-call-quality-dashboard-cqd"></a>Caricare i dati del tenant e dell'edificio in Call Quality Dashboard (CQD)
 
@@ -83,23 +83,25 @@ Il primo tipo di file di dati tenant in Call Quality Dashboard è il file **di d
   | NetworkName        | Stringa    | USA/Seattle/SEATTLE-SEA-1 | Obbligatorio<sup>1</sup>  |
   | NetworkRange       | Numero    | 26                        | Obbligatorio              |
   | Nome edificio       | Stringa    | SEATTLE-SEA-1             | Obbligatorio<sup>1</sup>  |
-  | ProprietàTipo      | Stringa    | Contoso                   | Facoltativo              |
-  | BuildingType       | Stringa    | Terminazione IT            | Facoltativo              |
-  | BuildingOfficeType | Stringa    | Ingegneria               | Facoltativo              |
+  | ProprietàTipo      | Stringa    | Contoso                   | Facoltativo<sup>4</sup>  |
+  | BuildingType       | Stringa    | Terminazione IT            | Facoltativo<sup>4</sup>  |
+  | BuildingOfficeType | Stringa    | Ingegneria               | Facoltativo<sup>4</sup>  |
   | Città               | Stringa    | Seattle                   | Consigliata           |
   | Zipcode            | Stringa    | 98001                     | Consigliata           |
-  | Paese            | Stringa    | NOI                        | Consigliata           |
+  | Paese            | Stringa    | Noi                        | Consigliata           |
   | Stato              | Stringa    | WA                        | Consigliata           |
   | Regione             | Stringa    | MSUS                      | Consigliata           |
   | InsideCorp<sup>2</sup>         | Bool      | 1             | Obbligatorio              |
   | ExpressRoute<sup>3</sup>       | Bool      | 0             | Obbligatorio              |
-  | VPN                | Bool      | 0                         | Facoltativo              |
+  | Vpn                | Bool      | 0                         | Facoltativo              |
 
   <sup>1</sup> Anche se non richiesto da Call Quality Dashboard, i modelli sono configurati per visualizzare il nome dell'edificio e della rete.
 
   <sup>2</sup> Questa impostazione può essere utilizzata per indicare se la subnet è interna o meno alla rete aziendale. È possibile personalizzare l'utilizzo per altri scopi.
 
   <sup>3</sup> Questa impostazione può essere usata per indicare se la rete usa Azure ExpressRoute o meno. È possibile personalizzare l'utilizzo per altri scopi.  
+  
+  <sup>4</sup> Anche se queste colonne facoltative sono denominate per suggerire i valori con cui è possibile popolare i valori, è possibile personalizzare l'utilizzo per altri scopi. ad esempio: Priorità di rete - `Tier 1, Tier 2, Tier 3` 
 
   **Riga di esempio:**
 
@@ -140,7 +142,7 @@ Ecco alcuni aspetti da considerare prima di implementare la supernetting:
 > [!IMPORTANT]
 > L'intervallo di rete può essere utilizzato per rappresentare una supernet. Tutti i nuovi caricamenti di file di dati dell'edificio verranno controllati per verificare la sovrapposizione degli intervalli. Se in precedenza è stato caricato un file di tipo building, è consigliabile scaricare il file corrente e caricarlo di nuovo per identificare eventuali sovrapposizioni e risolvere il problema. Qualsiasi sovrapposizione nei file caricati in precedenza potrebbe causare la mappatura errata delle subnet agli edifici nei report.
 
-### <a name="vpn"></a>VPN
+### <a name="vpn"></a>Vpn
 
 I dati sulla qualità dell'esperienza (QoE) inviati dai client a Microsoft 365 o Office 365, da cui provengono i dati di Call Quality Dashboard, includono un contrassegno VPN. Call Quality Dashboard vedrà questo come le dimensioni Prima VPN e Seconda VPN. Tuttavia, questo flag si basa sulla segnalazione a Windows dei fornitori di VPN che la scheda di rete VPN registrata è una scheda di accesso remoto. Non tutti i fornitori di VPN registrano correttamente gli adattatori di Accesso remoto. Per questo motivo, potresti non essere in grado di usare i filtri di query VPN predefiniti. Usa la colonna VPN illustrata in precedenza per contrassegnare e identificare con precisione le subnet VPN. È anche buona norma etichettare le reti VPN per identificarle facilmente nei report. Ecco due esempi di come etichettare le subnet VPN:
 

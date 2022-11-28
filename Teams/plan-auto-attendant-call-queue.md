@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su operatori automatici e code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 8c02bd3d8881bcbfa0d998098b39106ed8476435
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.openlocfilehash: acaa4d3e4db56b1b64869f92d27f2dfd73c4afee
+ms.sourcegitcommit: 0dfe48fde767d8d9ed7bfc93684af05534acad12
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68613958"
+ms.lasthandoff: 11/24/2022
+ms.locfileid: "69166732"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici di Teams e le code di chiamata
 
@@ -70,41 +70,44 @@ Per ogni coda di chiamata, è possibile specificare se gli agenti in coda posson
 
 Per configurare gli operatori automatici e le code di chiamata, sono necessarie le risorse seguenti:
 
-- Un [account di risorsa](manage-resource-accounts.md) per ogni operatore automatico e coda di chiamata
-- Una licenza gratuita Telefono di Microsoft Teams Resource Account per ogni account di risorsa che sarà direttamente raggiungibile da utenti di Teams o numeri di telefono esterni
-- Almeno un [numero di servizio Microsoft](getting-service-phone-numbers.md), un numero di connessione operatore, un numero di routing diretto o un numero ibrido per ogni account di risorsa che desideri sia direttamente componibile da numeri di telefono esterni
-  - Il numero di servizio può essere un numero a pagamento o numero verde
+- Un [account di risorsa](manage-resource-accounts.md) per ogni operatore automatico e ogni coda di chiamata.
+- Una [licenza gratuita Telefono di Microsoft Teams Account risorse](teams-add-on-licensing/virtual-user.md) per ogni account di risorsa che sarà direttamente raggiungibile da utenti di Teams o numeri di telefono esterni.
+- Almeno un [numero di servizio Microsoft](getting-service-phone-numbers.md), [numero di connessione operatore](operator-connect-plan.md), [numero di routing diretto](direct-routing-plan.md) o un numero ibrido per ogni account di risorsa che desideri sia direttamente raggiungibile da numeri di telefono esterni.
+  - Il numero di servizio può essere un numero a pagamento o verde.
 
 > [!NOTE]
 > Gli account delle risorse sono disabilitati per l'accesso e devono rimanere tali. La chat e la presenza non sono disponibili per questi account.
 
 Gli agenti che ricevono chiamate dalle code di chiamata devono essere VoIP aziendale abilitati utenti online o locali. Inoltre, se le code di chiamata utilizzano numeri direct routing, gli agenti che devono effettuare conferenze o trasferire chiamate richiedono anche:
 
-- Un criterio di routing vocale online assegnato se la coda di chiamata usa la modalità di trasferimento
-- Una licenza per i servizi di audioconferenza o un criterio di routing vocale online assegnato se la coda di chiamata usa la modalità conferenza
+- Un [criterio di routing vocale online](manage-voice-routing-policies.md) assegnato se la coda di chiamata usa la modalità di trasferimento.
+- Una [licenza per i servizi di audioconferenza](set-up-audio-conferencing-in-teams.md) o [un criterio di routing vocale online](manage-voice-routing-policies.md) assegnato se la coda di chiamata usa la modalità conferenza.
 
 Se gli agenti usano l'app Microsoft Teams per le chiamate in coda di chiamata, devono essere in modalità TeamsOnly.
 
 Quando si usa un account di risorsa per scopi di ID riga di chiamata nelle code di chiamata, l'account della risorsa deve avere una licenza Account risorse di Teams Phone e una delle seguenti assegnate:
 
-- Una licenza [per un Piano per chiamate](calling-plans-for-office-365.md) e un numero di telefono assegnato
-- Numero di telefono [Operator Connect](operator-connect-plan.md) assegnato
-- Un [criterio di routing vocale online](manage-voice-routing-policies.md) (l'assegnazione del numero di telefono è facoltativa quando si usa l'instradamento diretto)
+- Una licenza [per il Piano per chiamate](calling-plans-for-office-365.md) e un numero di telefono assegnato.
+- Un numero di telefono [Operator Connect](operator-connect-plan.md) assegnato.
+- Un [criterio di routing vocale online](manage-voice-routing-policies.md).
+  - L'assegnazione del numero di telefono è facoltativa quando si usa l'instradamento diretto.
 
 Quando un operatore automatico o una coda di chiamata trasferisce le chiamate a un numero esterno, gli account di risorse specifici come descritto di seguito devono avere una licenza Account di risorse di Teams Phone e una delle seguenti assegnate:
 
-- Una licenza [per un Piano per chiamate](calling-plans-for-office-365.md) e un numero di telefono assegnato
-- Numero di telefono [Operator Connect](operator-connect-plan.md) assegnato
-- Un [criterio di routing vocale online](manage-voice-routing-policies.md) (l'assegnazione del numero di telefono è facoltativa quando si usa l'instradamento diretto)
+- Una licenza [per il Piano per chiamate](calling-plans-for-office-365.md) e un numero di telefono assegnato.
+- Un numero di telefono [Operator Connect](operator-connect-plan.md) assegnato.
+- Un [criterio di routing vocale online](manage-voice-routing-policies.md).
+  - L'assegnazione del numero di telefono è facoltativa quando si usa l'instradamento diretto.
 
 Quale account della risorsa assegnare in licenza:
-- Assegnare una licenza all'account della risorsa sul primo operatore automatico che riceve la chiamata quando l'operatore automatico si trasferisce ad altri operatori automatici o code di chiamata che trasferiscono chiamate esternamente
-- In tutti gli altri scenari di chiamata, assegna una licenza all'account della risorsa dell'operatore automatico o della coda di chiamata che esegue il trasferimento esterno
+
+- Assegnare una licenza all'account delle risorse sul primo operatore automatico che riceve la chiamata quando l'operatore automatico si trasferisce ad altri operatori automatici o code di chiamata che trasferiscono le chiamate esternamente.
+- In tutti gli altri scenari di chiamata, assegna una licenza all'account della risorsa dell'operatore automatico o della coda di chiamata che esegue il trasferimento esterno.
 
 > [!NOTE]
 > Se il Piano per chiamate assegnato all'account della risorsa viene disabilitato o rimosso, verranno utilizzati i [Crediti comunicazioni](what-are-communications-credits.md), se disponibili nel tenant (senza essere assegnati all'account della risorsa). Se non sono presenti Piani per chiamate o Crediti comunicazioni, la chiamata avrà esito negativo.
 >
-> I numeri di servizio routing diretto per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti di Microsoft Teams e gli agenti di chiamata.
+> I numeri di servizio Direct Routing per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti di Microsoft Teams e gli agenti di chiamata.
 > 
 > I trasferimenti tra i trunk Piano per chiamate, Connessione operatore e Routing diretto non sono supportati.
 > 
@@ -122,7 +125,8 @@ Documentare le risposte a queste domande e fornire le informazioni all'amministr
 - Vuoi consentire agli agenti in una coda di chiamata di rifiutare esplicitamente di effettuare chiamate?
 - Vuoi che gli agenti nelle tue code di chiamata o il tuo operatore abbiano un ID chiamante specifico se eseguono la chiamata in uscita?
 - Si desidera abilitare il [parcheggio e il recupero delle chiamate](call-park-and-retrieve.md) nell'organizzazione per facilitare le comunicazioni tra persone o reparti?
-- Per i comandi vocali, vuoi registrarne uno personale o usare la voce generata dal sistema? La voce generata dal sistema è facile da aggiornare.
+- Per i comandi vocali, vuoi registrarne uno personale o usare la voce generata dal sistema?
+  - La voce generata dal sistema è facile da aggiornare.
 
 ## <a name="technical-decisions"></a>Decisioni tecniche
 
@@ -143,8 +147,8 @@ Se hai già un operatore automatico e un'infrastruttura della coda di chiamata e
 
 **La modalità conferenza** è un'opzione nelle code di chiamata che riduce significativamente la quantità di tempo necessaria per connettere le chiamate VOIP e le chiamate PSTN di Teams a un agente. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono utilizzare uno dei client seguenti:
 
-- L'ultima versione del client desktop di Microsoft Teams, dell'app Android o dell'app iOS
-- Microsoft Phone System versione 1449/1.0.94.2020051601 o successiva
+- L'ultima versione del client desktop di Microsoft Teams, dell'app Android o dell'app iOS.
+- Microsoft Sistema telefonico versione 1449/1.0.94.2020051601 o successiva.
   
 Impostare gli account di Teams degli agenti sulla modalità solo teams. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate.
 
@@ -160,7 +164,7 @@ Dopo aver completato le attività di pianificazione in questo articolo, segui qu
 
 2. Ottenere una [licenza Account risorse di Teams Phone](teams-add-on-licensing/virtual-user.md) per ogni account di risorsa che si prevede di creare. Queste licenze sono gratuite, quindi è consigliabile ottenere alcuni extra nel caso in cui si decida di apportare modifiche agli account delle risorse in futuro.
 
-3. [Crea un account di risorsa](manage-resource-accounts.md) per ogni operatore automatico e coda di chiamata che vuoi creare. Assegnare a ogni account una licenza per l'account di risorse del telefono di Teams e, facoltativamente, un numero di servizio.
+3. [Crea un account di risorsa](manage-resource-accounts.md) per ogni operatore automatico e coda di chiamata che vuoi creare. Assegnare una licenza Account risorse di Teams Phone a ogni account di risorsa che sarà direttamente chiamabile e, facoltativamente, un numero di servizio.
 
 4. [Crea le festività](set-up-holidays-in-teams.md) per le quali desideri disporre di routing delle chiamate separato negli operatori automatici.
 
@@ -168,7 +172,7 @@ Dopo aver completato le attività di pianificazione in questo articolo, segui qu
 
 6. Creare i gruppi da usare per contenere gli agenti di chiamata per le code di chiamata.
 
-7. Se si prevede di consentire la chiamata per estensione, assicurarsi di aver aggiunto il numero di interno degli utenti al profilo di Azure Active Directory.
+7. Se si prevede di consentire la chiamata per estensione, assicurarsi di aver aggiunto il numero di interno degli utenti al profilo di Azure Active Directory (Azure AD).
 
 Dopo aver completato i passaggi precedenti, sei pronto per creare gli operatori automatici e le code di chiamata. Poiché gli operatori automatici e le code di chiamata possono reindirizzare le chiamate reciprocamente, fare riferimento al diagramma del flusso di lavoro creato per determinare quale operatore automatico o coda di chiamata deve essere creato per primo. Nell'esempio riportato nel diagramma precedente, è necessario creare le code di chiamata di vendita e supporto prima di creare l'operatore automatico principale Contoso perché l'operatore automatico principale deve indirizzare i chiamanti alle code di chiamata di vendita e di supporto.
 
@@ -178,14 +182,14 @@ Vedi gli articoli seguenti per informazioni su come creare operatori automatici 
 - [Creare una coda di chiamata](create-a-phone-system-call-queue.md)
 
 > [!IMPORTANT]
-> Il token GUID di Azure Active Directory (AAD) di un utente viene archiviato come parte della configurazione dell'operatore automatico o della coda di chiamata quando l'utente è configurato come:
+> Il token GUID di Azure AD di un utente viene archiviato come parte della configurazione dell'operatore automatico o della coda di chiamata quando l'utente è configurato come:
 >
 >  - un operatore automatico o una coda di chiamata **Utente autorizzato**.
 >  - un **operatore** operatore automatico.
 >  - una Persona nel punto di trasferimento **dell'organizzazione** .
 >  - un singolo membro di una coda di chiamata.
 > 
-> Le configurazioni dell'operatore automatico e della coda di chiamata non vengono sincronizzate con gli eventi del ciclo di vita di AAD.  Gli amministratori di Teams devono aggiornare manualmente le configurazioni dell'operatore automatico e della coda di chiamata per rimuovere questi dati personali quando un utente incluso nella configurazione lascia l'organizzazione.
+> Le configurazioni dell'operatore automatico e della coda di chiamata non vengono sincronizzate con gli eventi del ciclo di vita di Azure AD.  Gli amministratori di Teams devono aggiornare manualmente le configurazioni dell'operatore automatico e della coda di chiamata per rimuovere questi dati personali quando un utente incluso nella configurazione lascia l'organizzazione.
 >
 > Ciò non vale per le appartenenze agli agenti della coda di chiamata configurate tramite liste di distribuzione o canali. Inoltre, non si applica agli utenti raggiunti tramite la funzionalità Chiamata per **nome** o **Chiamata per numero** degli operatori automatici.
 
