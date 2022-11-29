@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni sui criteri di messaggistica e su come possono essere usati per controllare la messaggistica chat in Teams.
-ms.openlocfilehash: 2b428f39624ce7e6fb82815c7cbba3872b2113c2
-ms.sourcegitcommit: 8005e7953fcb6dcc78ba406925aeaaa49f08d3d9
+ms.openlocfilehash: 83ee815651a0e08dc01d25639570c69f03edc588
+ms.sourcegitcommit: e9718ad7e23317d490b238b3801267cb2e6b26e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67609444"
+ms.lasthandoff: 11/28/2022
+ms.locfileid: "69176683"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in Teams
 
@@ -88,6 +88,7 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 <a name="bkchat"> </a>
 
 - **Chat**  Attivare questa impostazione se si vuole che gli utenti dell'organizzazione possano usare l'app Teams per chattare con altre persone.
+- **Chattare con i gruppi** Gli utenti possono avviare una chat con gruppi di distribuzione, gruppi di sicurezza abilitati alla posta elettronica e gruppi di Microsoft 365.
 - *Usare Giphy nelle conversazioni** Se si attiva Giphy, gli utenti possono includere Giphy nelle conversazioni in chat con altre persone. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una classificazione dei contenuti. Oltre ad attivare questa impostazione, è necessario abilitare [esperienze connesse facoltative](/deployoffice/privacy/manage-privacy-controls#policy-setting-for-optional-connected-experiences) per consentire giphy nelle conversazioni.
 - **Valutazione del contenuto Giphy**
   - **Nessuna restrizione** Ciò significa che gli utenti saranno in grado di inserire qualsiasi Giphy in chat indipendentemente dalla classificazione del contenuto.

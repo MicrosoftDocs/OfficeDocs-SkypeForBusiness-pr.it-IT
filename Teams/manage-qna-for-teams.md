@@ -14,12 +14,12 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 description: Informazioni su come gli amministratori IT possono configurare, usare e gestire le domande&A in Q&A di Teams per un approccio strutturato alla raccolta di domande, all'organizzazione delle discussioni, all'eliminazione di singoli messaggi, all'uso delle lingue disponibili e alla comprensione del ciclo di vita dei dati, nonché dei criteri di conservazione ed eliminazione dei dati.
-ms.openlocfilehash: edcf1578b70bf39ccf330b7a328b7d0de7558263
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 3d85dbe4c9035a9de0ccb47557735bb797bdf244
+ms.sourcegitcommit: 94e3f5e8dcfe8b3098ed8de2e4397e2338038f03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268631"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "69177722"
 ---
 # <a name="manage-qa-in-teams-meetings"></a>Gestire domande&A nelle riunioni di Teams
 
@@ -39,14 +39,16 @@ Questo articolo descrive come gestire i criteri Q&A e a livello utente, che dete
 
 D&A può essere utilizzata dai tipi di utente seguenti:
 
-- Utente normale: utente con credenziali Microsoft 365 nel tuo tenant.
-- Utente federato: utente con credenziali Microsoft 365 in un tenant diverso.
-- Utente guest: qualsiasi guest aggiunto a Microsoft Teams, SharePoint o Azure Active Directory.
+- Utente normale: utente con credenziali di Microsoft 365 nel tenant.
+- Utente federato: utente con Microsoft 365 credenziali in un tenant diverso.
+- Utente guest: qualsiasi guest aggiunto al tuo Microsoft Teams, SharePoint o Azure Active Directory.
 
 > [!NOTE]
-> D&A non sarà disponibile per i partecipanti solo in visualizzazione che partecipano oltre la capacità della riunione.
+> D&A non è disponibile in GCC.
 
 Quando gli amministratori abilitano Q&A, gli utenti con [il ruolo organizzatore](https://aka.ms/GetQnA) possono attivare Q&A durante la creazione o l'aggiornamento di riunioni. Tramite le opzioni delle riunioni di Teams e Outlook, gli organizzatori possono anche rimuovere Q&A dalle riunioni in cui è stato precedentemente aggiunto per impedire ai partecipanti di usare la funzionalità.
+> [!NOTE]
+> D&A non sarà disponibile per i partecipanti solo in visualizzazione che partecipano oltre la capacità della riunione.
 
 ## <a name="use-the-teams-admin-center-to-manage-qa"></a>Usare l'interfaccia di amministrazione di Teams per gestire le domande&A
 
@@ -133,7 +135,7 @@ Il ciclo di vita dei dati generati da Q&A in Teams dipende dalle impostazioni di
 La conservazione del contenuto segue i criteri di conservazione impostati per Yammer, indipendentemente dal fatto che siano impostati criteri diversi per Yammer e Teams.
 
 > [!NOTE]
-> Se la rete Yammer non è in modalità nativa, i criteri creati qui verranno applicati solo ai dati Q&A di Teams. In modalità nativa, tutti gli utenti di Yammer si trovano in Azure Active Directory (Azure AD), tutti i gruppi sono gruppi di Microsoft 365 e tutti i file vengono archiviati in SharePoint Online.
+> Se la rete Yammer non è in modalità nativa, i criteri creati qui verranno applicati solo ai dati Q&A di Teams. In modalità nativa, tutti gli utenti di Yammer si trovano in Azure Active Directory (Azure AD), tutti i gruppi sono Microsoft gruppi 365 e tutti i file vengono archiviati in SharePoint Online.
 
 ## <a name="faq"></a>Domande frequenti
 
@@ -141,9 +143,9 @@ La conservazione del contenuto segue i criteri di conservazione impostati per Ya
 
 **Un:** D&Un contenuto viene archiviato nel Centro conformità Microsoft 365 e accessibile tramite eDiscovery. Le iterazioni future includeranno un report di evidenziazioni delle riunioni e la funzionalità di esportazione per gli organizzatori delle riunioni.
 
-**D: Q&A supporta le funzionalità Multi-Geo di Microsoft 365?**
+**D: Q&A supporta Microsoft 365 funzionalità Multi-Geo?**
 
-**Un:** Q&A attualmente non supporta le funzionalità Multi-Geo di Microsoft 365. D&I dati A verranno archiviati in America del Nord o unione europea per impostazione predefinita, a seconda del percorso di rete di Yammer del cliente.
+**Un:** Q&A attualmente non supporta le funzionalità multi-geo di Microsoft 365. D&I dati A verranno archiviati in America del Nord o unione europea per impostazione predefinita, a seconda del percorso di rete di Yammer del cliente.
 
 **D: Dove posso trovare altre informazioni sulle riunioni strutturate?**
 
