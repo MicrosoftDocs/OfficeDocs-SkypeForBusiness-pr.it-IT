@@ -1,5 +1,5 @@
 ---
-title: Come usare i dispositivi dei pannelli di Microsoft Teams
+title: Come usare Microsoft dispositivi dei pannelli di Teams
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -17,22 +17,22 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Questo articolo fornisce indicazioni su come usare i dispositivi dei pannelli di Teams.
-ms.openlocfilehash: fff3df797e043b83662aacc9a67ef1af45b733a4
-ms.sourcegitcommit: ab8f8e101e41774668b5e607fa72442105ca796e
+ms.openlocfilehash: b5dbe92b1c2c3f08683ca58a403fdbb4e318efca
+ms.sourcegitcommit: 75b29de261b4de652c7f2e89da4ad7158da773f1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/01/2022
-ms.locfileid: "68801777"
+ms.lasthandoff: 11/29/2022
+ms.locfileid: "69183005"
 ---
-# <a name="how-to-use-microsoft-teams-panels"></a>Come usare i pannelli di Microsoft Teams
+# <a name="how-to-use-microsoft-teams-panels"></a>Come usare i pannelli Microsoft Teams
 
-I pannelli di Microsoft Teams sono dispositivi di visualizzazione digitali compatti montati direttamente all'esterno degli spazi delle riunioni, in genere accanto agli ingressi. Questi pannelli touchscreen sono dispositivi microsoft teams dedicati che offrono una visualizzazione immediata dell'area riunioni e della riunione pianificata. Con i vivaci indicatori led codificati a colori e schermata home, puoi determinare se lo spazio è disponibile o riservato da una distanza. È possibile usare i pannelli di Teams per riservare uno spazio disponibile per una riunione ad hoc, sul posto.
+Microsoft i pannelli di Teams sono dispositivi di visualizzazione digitali compatti montati direttamente all'esterno degli spazi delle riunioni, in genere accanto agli ingressi. Questi pannelli touchscreen sono dedicati Microsoft dispositivi Teams che offrono una visualizzazione immediata dell'area riunioni e della riunione pianificata. Con i vivaci indicatori led codificati a colori e schermata home, puoi determinare se lo spazio è disponibile o riservato da una distanza. È possibile usare i pannelli di Teams per riservare uno spazio disponibile per una riunione ad hoc, sul posto.
 
 I dispositivi dei pannelli di Teams sono preinstallati con Microsoft Teams e visualizzano i dettagli delle riunioni pianificati tramite i calendari di Outlook o Teams.
 
 Questo articolo fornisce indicazioni su come usare i dispositivi dei pannelli teams sia per gli utenti finali che per gli amministratori. Fornisce inoltre le risposte alle [domande frequenti](#frequently-asked-questions) sull'uso di questi dispositivi.
 
-Per una panoramica dei dispositivi con pannelli e le indicazioni su come pianificarli, recapitarli e gestirli nell'organizzazione, vedere [Distribuire i pannelli di Microsoft Teams](teams-panels.md).
+Per una panoramica dei dispositivi con pannelli e le indicazioni su come pianificarli, recapitarli e gestirli nell'organizzazione, vedere [Distribuire Microsoft i pannelli di Teams](teams-panels.md).
 
 Per una guida introduttiva, vedere [Introduzione ai pannelli di Teams](https://support.microsoft.com/office/get-started-with-teams-panels-fa5e85d1-7ff3-4f11-b0b0-277e2302c8be).
 
@@ -125,7 +125,7 @@ Il riquadro destro nella schermata home ora viene visualizzato in viola e mostra
     :::image type="content" source="../media/panels-right-tile-reserved-adhoc.png" alt-text="Schermata iniziale che mostra che l'area riunioni è riservata per una riunione ad hoc.":::
 
     > [!NOTE]
-    > Se l'area riunioni è una sala riunioni di Microsoft Teams, è possibile _partecipare a_ questa riunione di Teams con i dispositivi Microsoft Teams Room o Surface Hub nella sala riunioni.
+    > Se l'area riunioni è una Microsoft Teams Room, è possibile _partecipare a_ questa riunione di Teams con il Microsoft dispositivi Teams Room o Surface Hub.
 
 ### <a name="report-a-problem"></a>Segnala un problema
 
@@ -186,7 +186,7 @@ Per accedere all'opzione **delle impostazioni di amministrazione di Teams** :
 > [!NOTE]
 > Alcuni OEM possono sostituire l'opzione **delle impostazioni di amministratore di Teams** con un'opzione personalizzata. Se l'opzione **Impostazioni amministratore di Teams** non è visualizzata, consultare la documentazione del dispositivo per istruzioni su come accedere alle impostazioni di amministrazione del pannello.
 
-#### <a name="pair-a-teams-panel-with-a-microsoft-teams-room-on-android"></a>Associare un Pannello di Teams a una sala riunioni di Microsoft Teams su Android
+#### <a name="pair-a-teams-panel-with-a-microsoft-teams-room-on-android"></a>Associare un Pannello di Teams a una Microsoft Teams Room su Android
 
 Per associare un Pannello di Teams e Teams Room su Android, entrambi i dispositivi devono essere connessi allo stesso account di risorsa.
 
@@ -200,7 +200,7 @@ Nel Pannello di Teams accedere con le credenziali di amministratore.
 
 Le impostazioni di check-in e di rilascio della sala consentono agli utenti di accedere a una riunione nei pannelli di Teams nella sala che hanno prenotato all'inizio della riunione. Se un utente non esegue l'archiviazione entro un determinato periodo di tempo dopo l'ora di inizio della riunione, la sala viene rilasciata e diventa disponibile per la prenotazione da parte di altri utenti.
 
-Quando i pannelli teams sono associati a una sala riunioni di Microsoft Teams su Android, le notifiche di check-in possono essere abilitate per essere visualizzate sullo schermo della sala quando le riunioni sono in ritardo.
+Quando Teams Panels è associato a una Microsoft Teams Room su Android, le notifiche di check-in possono essere abilitate per essere visualizzate sullo schermo front-of-room quando le riunioni sono in ritardo.
 
 Per abilitare il check-in e il rilascio della sala, vedere [Check-in e rilascio della sala nei pannelli di Microsoft Teams](check-in-and-room-release.md).
 
@@ -209,6 +209,9 @@ Per abilitare il check-in e il rilascio della sala, vedere [Check-in e rilascio 
 Quando l'estrazione è abilitata, gli utenti finali possono usare un Pannello di Teams per rilasciare manualmente una chat room. Il rilascio di una stanza termina la prenotazione corrente e rende la stanza disponibile per gli altri.
 
 Questa funzionalità è disabilitata per impostazione predefinita, ma può essere abilitata per ogni dispositivo. Per abilitare la funzionalità, passare a **Impostazioni > Impostazioni dispositivo > impostazioni di amministrazione di Teams > Riunioni** e quindi attivare **Estrai**.
+
+> [!NOTE]
+> Se un club viene rilasciato prima del termine di una prenotazione pianificata, l'organizzatore riceverà un messaggio di posta elettronica dalla chat room che la rifiuta. Questo accade perché la stanza rimuove la prenotazione dalla sua pianificazione in modo che possa essere prenotata da altri utenti. Il messaggio che rifiuta la prenotazione può essere ignorato.
 
 > [!NOTE]
 > Non è possibile usare un Pannello di Teams per rilasciare una sala se il dispositivo Teams Rooms a cui è associato è in una chiamata attiva.
@@ -231,7 +234,7 @@ I pannelli di Teams associati a Teams Room su Android possono visualizzare un me
 
 Gli avvisi sulla capacità della sala sono disabilitati per impostazione predefinita, ma possono essere abilitati per ogni dispositivo. Per abilitare la funzionalità, eseguire le operazioni seguenti:
 
-1. Segui i passaggi descritti in [Associare un Pannello di Teams a una sala riunioni di Microsoft Teams su Android](#pair-a-teams-panel-with-a-microsoft-teams-room-on-android). Il pannello e il dispositivo Teams Room devono essere connessi allo stesso account di risorsa.
+1. Seguire la procedura descritta in [Associare un Pannello di Teams a un Microsoft Teams Room su Android](#pair-a-teams-panel-with-a-microsoft-teams-room-on-android). Il pannello e il dispositivo Teams Room devono essere connessi allo stesso account di risorsa.
 2. Passare a **Impostazioni > Impostazioni dispositivo > impostazioni di amministrazione di Teams > Riunioni** e attivare la **notifica sull'occupazione massima della sala**.
 
 #### <a name="enable-or-disable-viewing-of-room-equipment"></a>Abilitare o disabilitare la visualizzazione dell'attrezzatura della sala
