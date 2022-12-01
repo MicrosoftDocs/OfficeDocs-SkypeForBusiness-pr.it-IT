@@ -18,13 +18,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.deploymentadvisor.overview
+- chat-teams-channels-revamp
 description: Usare Advisor per Teams per pianificare e completare la distribuzione di Microsoft Teams.
-ms.openlocfilehash: 795765459c7796449379fe4c8fb327140a19e9e2
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
-ms.translationtype: HT
+ms.openlocfilehash: e691a224679b8026ec91ecf3b1b5c16f6016c20e
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268821"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198328"
 ---
 # <a name="use-advisor-for-teams-to-help-you-roll-out-microsoft-teams"></a>Usare Advisor per Teams per distribuire Microsoft Teams
 
@@ -212,7 +213,7 @@ Come contatto per le domande pratiche degli utenti, l'help desk e i promotori po
 
 Dopo aver personalizzato il sito e riunito i piani di apprendimento, prendere in considerazione come favorire la consapevolezza tra gli utenti per incoraggiarli a usare i percorsi di apprendimento per un apprendimento continuo.
 
-Usare i canali di comunicazione per promuovere il sito e generare consapevolezza. Ad esempio, includere uno slogan standard come "Consulta il sito di formazione e supporto per scoprire come ottimizzare la produttività con Teams" nelle comunicazioni con gli utenti.
+Use your communication channels to promote the site and generate awareness. For example, include a standard tagline such as “Check out our training and support site for how to get productive with Teams” in communications to your users.
 
 Coinvolgere gli utenti mettendo in evidenza le modalità di collaborazione in Teams e indirizzarli verso il sito dei percorsi di apprendimento per scoprire come.
 
@@ -258,7 +259,7 @@ Advisor per Teams richiede il consenso per la raccolta di informazioni diverse d
 
 ### <a name="can-i-use-advisor-for-teams-with-fasttrack"></a>È possibile usare Assistente per Teams con FastTrack?
 
-Sì, FastTrack supporta Advisor per Teams per tutti i clienti che vogliono distribuire Teams. Possono fornire assistenza per la configurazione iniziale del team di distribuzione con Advisor per Teams, se necessario, e forniscono inoltre supporto su misura per argomenti specifici durante l'implementazione di Teams.
+Yes, FastTrack leverages Advisor for Teams for all customers looking to deploy Teams. They can assist with the initial setup of your Deployment team using Advisor for Teams (if required) and also provide as-needed support on specific topics during your Teams rollout.
 
 ### <a name="can-i-use-advisor-for-teams-with-a-partner"></a>È possibile usare Assistente per Teams con un partner?
 

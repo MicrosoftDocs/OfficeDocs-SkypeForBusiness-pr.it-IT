@@ -12,26 +12,27 @@ description: Informazioni su come usare un modello di team esistente per creare 
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
+ms.custom: chat-teams-channels-revamp
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1cbfb516d07232d86782b8469956631d3b026300
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: 45401bfba39121498fd7b0d581d10759448312d4
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675228"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198938"
 ---
 # <a name="create-a-new-team-template-from-an-existing-team-template-in-microsoft-teams"></a>Creare un nuovo modello di team da un modello di team esistente in Microsoft Teams
 
 **I modelli personalizzati non sono ancora supportati per i clienti EDU.**
 
-Microsoft Teams offre modelli predefiniti che possono essere salvati e modificati in base alle specifiche esigenze dell'organizzazione.
+Microsoft Teams fornisce modelli predefiniti che possono essere salvati e modificati in base alle specifiche esigenze dell'organizzazione.
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro espandere **Teams** >  **Modelli diTeam**.
+2. Nel riquadro di spostamento sinistro espandere **Modelli team di** **Teams** > .
 
 3. Nella sezione **Modelli di** team selezionare accanto a un modello di team da duplicare per evidenziarlo.
 
@@ -75,6 +76,6 @@ In alternativa, puoi selezionare **Aggiungi** >  **Iniziare con un modello esist
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Attività iniziali con i modelli di team nell'interfaccia di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
+- [Introduzione ai modelli di team nell'interfaccia di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
 - [Creare un modello da un team esistente](create-template-from-existing-team.md)
 - [Creare un modello di team](create-a-team-template.md)

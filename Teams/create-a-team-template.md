@@ -12,16 +12,17 @@ description: Informazioni su come creare un modello di team personalizzato in Mi
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
+ms.custom: chat-teams-channels-revamp
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6b313df288488de22e99943120ffd0fd94d34210
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: c99fc2ebedac1372beff283ccbcf057c0bfdf78b
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65675568"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198518"
 ---
 # <a name="create-a-custom-team-template-in-microsoft-teams"></a>Creare un modello di team personalizzato in Microsoft Teams
 
@@ -38,7 +39,7 @@ Per iniziare:
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro espandere **Teams** >  **Modelli diTeam**.
+2. Nel riquadro di spostamento sinistro espandere **Modelli team di** **Teams** > .
 
 3. Selezionare **Aggiungi**.
 
@@ -106,10 +107,10 @@ Stiamo lavorando a una correzione per i team futuri creati da modelli personaliz
 
 ![messaggio di errore del browser.](media/browser-error-message.png)
 
-**Soluzione**: se hai problemi a visualizzare il contenuto della scheda del sito Web, verrai reindirizzato ad aprire la scheda in una pagina Web separata o ad aprire Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
+**Soluzione**: se hai problemi a visualizzare il contenuto della scheda del sito Web, verrai reindirizzato ad aprire la scheda in una pagina Web separata o ad aprire Teams nell'app desktop per visualizzare l'app della scheda del tuo sito Web.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Attività iniziali con i modelli di team nell'interfaccia di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
+- [Introduzione ai modelli di team nell'interfaccia di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
 - [Creare un modello da un team esistente](create-template-from-existing-team.md)
 - [Creare un modello di team da un modello di team esistente](create-template-from-existing-template.md)

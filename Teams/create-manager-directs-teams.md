@@ -12,27 +12,28 @@ f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
 search.appverid: MET150
+ms.custom: chat-teams-channels-revamp
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bd880e58b2c6818b8738afd5fb4e5efaf78642d4
-ms.sourcegitcommit: ff783fad2fb5d412e864e3af2ceaa8fedcd9da07
+ms.openlocfilehash: 89a820a1b828621df2a129b7a972408e7280b3da
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66562585"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198928"
 ---
 # <a name="create-people-manager-teams-in-microsoft-teams"></a>Creare team di responsabili delle persone in Microsoft Teams
 
 
-Quando si implementa Microsoft Teams, invece di lanciare con una "lista vuota" (nessun team o canale), si consiglia vivamente di configurare un framework di base di team e canali. Questo aiuta a prevenire "team tentacolare", in cui gli utenti creano numerosi team quando dovrebbero creare canali in team esistenti. Per aiutarti a iniziare con una struttura ben progettata di team e canali, abbiamo creato uno script di PowerShell che crea un team per ogni responsabile della prima e seconda riga, con i dipendenti diretti di ogni manager come membri del team. Questo è uno script "point-in-time" (non aggiorna automaticamente i team o i canali quando le persone vengono aggiunte o rimosse da un'organizzazione). Ma è uno strumento prezioso che puoi usare per imporre un certo ordine sulla struttura di Teams fin dall'inizio. Questo script legge Azure AD, ottiene un elenco di responsabili e i relativi dipendenti diretti. Usa questo elenco per creare un team per ogni responsabile delle persone. 
+Quando si distribui Microsoft Teams, invece di avviarsi con una "lista vuota" (nessun team o canale), si consiglia vivamente di configurare un framework di base di team e canali. Questo aiuta a prevenire "team tentacolare", in cui gli utenti creano numerosi team quando dovrebbero creare canali in team esistenti. Per aiutarti a iniziare con una struttura ben progettata di team e canali, abbiamo creato uno script di PowerShell che crea un team per ogni responsabile della prima e seconda riga, con i dipendenti diretti di ogni manager come membri del team. Questo è uno script "point-in-time" (non aggiorna automaticamente i team o i canali quando le persone vengono aggiunte o rimosse da un'organizzazione). Ma è uno strumento prezioso che puoi usare per imporre un certo ordine sulla struttura di Teams fin dall'inizio. Questo script legge Azure AD, ottiene un elenco di responsabili e i relativi dipendenti diretti. Usa questo elenco per creare un team per ogni responsabile delle persone. 
 
 ## <a name="how-to-use-the-powershell-script"></a>Come usare lo script di PowerShell 
 
-Per iniziare, eseguire lo [script Export manager e il relativo script directs](scripts/powershell-script-create-teams-from-managers-export-managers.md) ( che presuppone che siano già stati eseguiti i moduli [Connect-AzureAd](/powershell/module/azuread/connect-azuread?view=azureadps-2.0) e [Connect-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams?view=teams-ps) PowerShell). Lo script *Export manager e i relativi directs* crea un file con valori delimitati da tabulazioni (ExportedManagerDirects.txt) che elenca tutti i responsabili con i propri dipendenti diretti. 
+Per iniziare, eseguire lo [script Export manager e il relativo script directs](scripts/powershell-script-create-teams-from-managers-export-managers.md) ( che presuppone che siano già stati eseguiti i moduli [Connect-AzureAd](/powershell/module/azuread/connect-azuread) e [Connect-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams) PowerShell). Lo script *Export manager e i relativi directs* crea un file con valori delimitati da tabulazioni (ExportedManagerDirects.txt) che elenca tutti i responsabili con i propri dipendenti diretti. 
 
-Quindi, eseguire lo [script Crea nuovi team di gestione persone](scripts/powershell-script-create-teams-from-managers-new-teams.md). Questo script legge nel file ExportedManagerDirects.txt e crea un team per ogni responsabile, con i dipendenti diretti di quel responsabile come membri. Se un manager o un diretto non è abilitato per Teams, lo script li ignora e non crea un team. (Rivedere il report, quindi eseguire di nuovo lo script dopo aver attivato Teams per chiunque ne abbia bisogno. Lo script non crea un secondo team per nessun responsabile per cui ha già creato un team.
+Quindi, eseguire lo [script Crea nuovi team di gestione persone](scripts/powershell-script-create-teams-from-managers-new-teams.md). Questo script legge nel file ExportedManagerDirects.txt e crea un team per ogni responsabile, con i dipendenti diretti di quel responsabile come membri. Se un manager o un diretto non è abilitato per Teams, lo script li ignora e non crea un team. (Rivedere il report, quindi eseguire di nuovo lo script dopo aver attivato Teams per chiunque ne abbia bisogno. Lo script non crea un secondo team per nessun responsabile per cui è già stato creato un team.
 
 Per ogni team, lo script crea un canale Generale e "Solo per divertimento". 
 

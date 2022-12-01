@@ -1,5 +1,5 @@
 ---
-title: Attività iniziali con i modelli di team di produzione nell'interfaccia di amministrazione
+title: Introduzione ai modelli di team di produzione nell'interfaccia di amministrazione
 author: LanaChin
 ms.author: v-lanachin
 manager: samanro
@@ -17,14 +17,15 @@ f1.keywords:
 ms.custom:
 - NewAdminCenter_Update
 - seo-marvel-apr2020
+- chat-teams-channels-revamp
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cd2f7329e293d8b3b20747382686599d18d47bea
-ms.sourcegitcommit: 9532eb79310cd653010565607fa394f2b8dd182d
+ms.openlocfilehash: 5d159605af5050b8b874fb7b1c077ce9f2d639fc
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65646325"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198898"
 ---
 # <a name="use-manufacturing-team-templates-in-the-admin-center"></a>Usare i modelli del team di produzione nell'interfaccia di amministrazione
 
@@ -36,7 +37,7 @@ In questo articolo, presentiamo ognuno dei modelli di team e consigliamo come us
 
 Questo articolo è rivolto agli utenti responsabili della pianificazione, della distribuzione e della gestione di più team nell'intera organizzazione di produzione. Il servizio Teams è già stato implementato nell'organizzazione. Se Teams non è ancora stato implementato, per iniziare, leggere [Come implementare Microsoft Teams](./deploy-overview.md).
 
-Per altre informazioni sui modelli di team in generale, vedere [Attività iniziali con i modelli di team](get-started-with-teams-templates-in-the-admin-console.md).
+Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli di team](get-started-with-teams-templates-in-the-admin-console.md).
 
 ## <a name="quality-and-safety"></a>Qualità e sicurezza
 

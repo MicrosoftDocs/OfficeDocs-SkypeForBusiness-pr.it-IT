@@ -9,6 +9,7 @@ ms.service: msteams
 ms.reviewer: abgupta
 ms.localizationpriority: medium
 search.appverid: MET150
+ms.custom: chat-teams-channels-revamp
 ms.collection:
 - M365-collaboration
 description: Informazioni sulla scadenza e il rinnovo del team e su come usare i criteri di scadenza dei gruppi di Microsoft 365 per pulire automaticamente i team inutilizzati in Microsoft Teams.
@@ -16,18 +17,18 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b1a322e07df81727c75c05ebb16c4cdabc0916a4
-ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
+ms.openlocfilehash: b4f56c8cbb2d25b05d6c87fa2862e56244d6b9c8
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66564174"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198798"
 ---
 # <a name="team-expiration-and-renewal-in-microsoft-teams"></a>Scadenza e rinnovo del team in Microsoft Teams
 
 Le organizzazioni con un numero elevato di team spesso hanno team che non vengono mai effettivamente utilizzati. Ciò può verificarsi a causa di diversi motivi, tra cui sperimentazione del prodotto, collaborazione in team a breve termine o proprietari di team che lasciano l'organizzazione. Nel corso del tempo, tali team possono accumularsi e creare un carico sulle risorse del tenant.  
 
-Per limitare il numero di team inutilizzati, gli amministratori possono usare i criteri di [scadenza dei gruppi di Microsoft 365](/microsoft-365/admin/create-groups/office-365-groups-expiration-policy) per pulire automaticamente i team non utilizzati. Poiché i team sono supportati dai gruppi, i criteri di scadenza dei gruppi si applicano automaticamente anche ai team.
+Per limitare il numero di team inutilizzati, gli amministratori possono usare [i criteri di scadenza dei gruppi di Microsoft 365](/microsoft-365/admin/create-groups/office-365-groups-expiration-policy) per pulire automaticamente i team inutilizzati. Poiché i team sono supportati dai gruppi, i criteri di scadenza dei gruppi si applicano automaticamente anche ai team.
 
 Quando si applicano criteri di scadenza a un team, il proprietario del team riceve una notifica per il rinnovo del team 30, 15 giorni e 1 giorno prima della data di scadenza del team. Quando il proprietario del team riceve la notifica, può fare clic su **Rinnova ora** nelle impostazioni del team per rinnovare il team.
 

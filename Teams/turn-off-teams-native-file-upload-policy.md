@@ -12,14 +12,15 @@ audience: admin
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
+ms.custom: chat-teams-channels-revamp
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: 1993371099d0712d21106987f21575e85e181ad7
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 6c7d5c89c780fa5c9286f5d7f7d2304f2e6c6220
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67268928"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198528"
 ---
 # <a name="turn-off-teams-native-file-upload-policy"></a>Disattivare i criteri di caricamento di file nativi di Teams
 
@@ -38,11 +39,11 @@ Questo articolo illustra come creare, impostare, assegnare e rimuovere il `Nativ
 
 Attualmente, questo criterio non può essere modificato nell'interfaccia di amministrazione di Teams. L'amministratore del tenant di Microsoft 365 dell'organizzazione dovrà apportare le modifiche usando i cmdlet di PowerShell descritti più avanti in questo articolo.
 
-Informazioni su come installare il modulo Di Teams di PowerShell usando PowerShell Gallery leggendo [Installare il modulo PowerShell di Microsoft Teams](teams-powershell-install.md).
+Per informazioni su come installare il modulo Di Teams di PowerShell con PowerShell Gallery, vedere [Installare Microsoft modulo PowerShell di Teams](teams-powershell-install.md).
 
 Per installare o scaricare il modulo PowerShell di Teams, vedere [PowerShell Gallery per Microsoft Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/3.0.0).
 
-Per altre informazioni su come configurare PowerShell per la gestione di Teams, vedere [Gestire Teams con Microsoft Teams PowerShell](teams-powershell-managing-teams.md).
+Per altre informazioni su come configurare PowerShell per la gestione di Teams, vedere [Gestire Teams con Microsoft PowerShell di Teams](teams-powershell-managing-teams.md).
 
 ### <a name="allow-third-party-apps-in-teams-admin-center"></a>Consentire app di terze parti in Teams Amministrazione Center
 

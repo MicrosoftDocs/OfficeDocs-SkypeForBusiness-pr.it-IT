@@ -23,12 +23,12 @@ ms.collection:
 - m365initiative-meetings
 - highpri
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 3faff1779830539470ae3d04cc73e58da65a637c
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: e5cacfb81cf3bf1ef768051d2094b0a70af93927
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68583877"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198338"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -55,7 +55,7 @@ Per apportare tali modifiche, è necessario essere un amministratore di Teams. V
 
     ![Screenshot delle impostazioni dei partecipanti per le riunioni nell'interfaccia di amministrazione.](media/meeting-settings-participants.png "Screenshot delle impostazioni dei partecipanti per le riunioni di Teams nell'interfaccia di amministrazione di Microsoft Teams")
 
-> [!CAUTION]
+> [!Important]
 > Se non si vuole consentire agli utenti anonimi di partecipare alle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
 
 ### <a name="using-powershell-to-configure-per-organizer-policy"></a>Uso di PowerShell per configurare i criteri per organizzatore
@@ -99,7 +99,7 @@ Per accedere a questa impostazione è necessario essere un amministratore del se
 
 3. In **Partecipanti**, l'impostazione per **Gli utenti anonimi possono interagire con le app nelle riunioni** può essere modificata.
 
-> [!CAUTION]
+> [!Important]
 > Se non si vuole consentire agli utenti anonimi di interagire con le app nelle riunioni pianificate dagli utenti dell'organizzazione, disattivare questa impostazione.
 
 ## <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni

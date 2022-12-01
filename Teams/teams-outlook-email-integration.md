@@ -12,18 +12,19 @@ search.appverid: MET150
 description: Informazioni su come abilitare e disabilitare le e-mail di attività su cui è possibile eseguire azioni delle conversazioni di Microsoft Teams
 ms.collection:
 - M365-collaboration
+ms.custom: chat-teams-channels-revamp
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 43435c436685c53e0ad077887a9fe9d991cf2d61
-ms.sourcegitcommit: f5480d0ca34b3160980a4b46b5afa34271293a26
+ms.openlocfilehash: de1bd12a0f079154a37156e3a01c3e5791bef10c
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "68899690"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198508"
 ---
 # <a name="manage-actionable-activity-emails"></a>Gestire i messaggi di posta elettronica delle attività su cui è possibile eseguire azioni
 
-I messaggi di posta elettronica sulle attività su cui è possibile intervenire sono abilitati per impostazione predefinita e notificano agli utenti dell'organizzazione le conversazioni perse in Microsoft Teams.
+I messaggi di posta elettronica sulle attività su cui è possibile eseguire azioni sono abilitati per impostazione predefinita e notificano agli utenti dell'organizzazione le conversazioni perse su Microsoft Teams.
 
 Un messaggio e-mail di attività persa mostra le risposte più recenti a una conversazione, inclusi i messaggi inviati dopo il messaggio perso. Questa caratteristica consente agli utenti di rispondere direttamente da Outlook selezionando **Rispondi**.
 

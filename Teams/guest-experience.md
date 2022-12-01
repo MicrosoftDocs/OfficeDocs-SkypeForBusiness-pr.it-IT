@@ -17,31 +17,33 @@ ms.collection:
 - m365initiative-externalcollab
 appliesto:
 - Microsoft Teams
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- chat-teams-channels-revamp
 description: Questo articolo descrive la funzionalità Microsoft Teams disponibile per gli utenti guest.
-ms.openlocfilehash: c7052eb22a68b146c3ee998b57ba877da82e11b4
-ms.sourcegitcommit: 640f55fe6144ff867b41b57e52f45b8a64cf779e
+ms.openlocfilehash: 960688d49f634ff5665fe4e1da2436e9bad669ac
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63556632"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198908"
 ---
 # <a name="guest-experience-in-teams"></a>Esperienza guest in Teams
 
 Quando un utente guest è invitato a unirsi a un team, riceve un messaggio di posta elettronica di benvenuto. Questo messaggio include alcune informazioni sul team e su cosa aspettarsi ora che si è membri. L'utente guest deve accettare l'invito selezionando **Apri Microsoft Teams** nel messaggio di posta elettronica prima di poter accedere al team e ai relativi canali.
 
 > [!NOTE]
-> Dopo l'aggiunta di un guest a un team, l'accesso potrebbe richiedere alcune ore.
+> Dopo l'aggiunta di un guest a un team, potrebbero essere necessarie alcune ore prima che abbia accesso.
     
 ![Screenshot che mostra un esempio di messaggio di posta elettronica di benvenuto.](media/guest-experience-image1.png)
     
 Tutti i membri del team visualizzano un messaggio nel thread del canale che annuncia che il proprietario del team ha aggiunto un utente guest e fornisce il nome di tale utente. Tutti i membri del team possono identificare facilmente chi è un utente guest. Un tag nell'angolo in alto a destra del thread del canale indica il numero di utenti guest nel team e un'etichetta **(Guest)** viene visualizzata accanto al nome di ogni utente guest.
 
-![Screenshot che mostra il contrassegno che indica il numero di guest nel team.](media/guest-experience-image2.png)
+![Screenshot che mostra un tag che indica il numero di guest nel team.](media/guest-experience-image2.png)
 
 Guardare questi video sull'esperienza guest in Teams:
-- [Partecipare a Teams riunione come guest](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Collaborare con ospiti esterni in una riunione Teams riunione](https://support.microsoft.com/office/work-with-external-guests-180ed260-d3ef-4247-9f24-1984fc76d5f0)
+- [Partecipare a una riunione di Teams come guest](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)
+- [Lavorare con guest esterni in una riunione di Teams](https://support.microsoft.com/office/work-with-external-guests-180ed260-d3ef-4247-9f24-1984fc76d5f0)
 
 ## <a name="comparison-of-team-member-and-guest-capabilities"></a>Confronto tra le funzionalità dei membri del team e degli utenti guest
 

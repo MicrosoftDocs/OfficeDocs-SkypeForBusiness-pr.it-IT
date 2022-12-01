@@ -17,14 +17,15 @@ f1.keywords:
 ms.custom:
 - NewAdminCenter_Update
 - seo-marvel-apr2020
+- chat-teams-channels-revamp
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 05e540ea968f04724d5d644f6ad7640b1f46df89
-ms.sourcegitcommit: ceba5fd8f098c8d0eafaffe5c5301c845a3ae7ab
+ms.openlocfilehash: 01621d73f1f16fa23a6b4c9042e7d0cecdc2f366
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67837346"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198348"
 ---
 # <a name="use-general-team-templates-in-the-admin-center"></a>Usare i modelli di team generali nell'interfaccia di amministrazione
 
@@ -39,7 +40,7 @@ Teams include modelli predefiniti creati per esigenze e progetti aziendali speci
 Per altre informazioni sui modelli di team in generale, vedere Introduzione ai modelli [di team nell'Teams di amministrazione.](get-started-with-teams-templates-in-the-admin-console.md)
 
 > [!NOTE]
-> Un asterisco (*) indica che il modello è *connesso a Microsoft 365*. Quando gli utenti creano un team usando il modello, il modello di SharePoint connesso viene applicato al sito e al team. I componenti di SharePoint, ad esempio pagine, elenchi e integrazioni Power Platform, vengono aggiunti e aggiunti automaticamente come schede al canale Generale nel team. Gli utenti possono modificare queste pagine ed elenchi direttamente da Teams.
+> Un asterisco (*) indica che il modello è un *Microsoft 365 modello connesso*. Quando gli utenti creano un team usando il modello, il modello di SharePoint connesso viene applicato al sito e al team. I componenti di SharePoint, ad esempio pagine, elenchi e integrazioni Power Platform, vengono aggiunti e aggiunti automaticamente come schede al canale Generale nel team. Gli utenti possono modificare queste pagine ed elenchi direttamente da Teams.
 >
 > Per altre informazioni sui modelli di SharePoint, vedere [Applicare e personalizzare modelli di sito di SharePoint](https://support.microsoft.com/office/apply-and-customize-sharepoint-site-templates-39382463-0e45-4d1b-be27-0e96aeec8398#ID0EDBJ=Team_site_templates).
 

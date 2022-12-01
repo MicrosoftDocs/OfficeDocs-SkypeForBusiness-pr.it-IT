@@ -12,14 +12,15 @@ audience: admin
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
+ms.custom: chat-teams-channels-revamp
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: dc4e7e88e855432f17c7daed9584e20e0e4739f1
-ms.sourcegitcommit: fcbbc197e43bcd63bf95cb329df9cb52e06ee356
+ms.openlocfilehash: 93b8b06238b0f6e15ab5fac5dcb0caeece819d9e
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2022
-ms.locfileid: "68842114"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198358"
 ---
 # <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
@@ -150,7 +151,7 @@ Los Angeles Store,West Regional Zone,204a1287-2efb-4a8a-88e0-56fbaf5a2389,Large,
 ## <a name="apply-your-hierarchy"></a>Applicare la gerarchia
 
 > [!NOTE]
-> Per eseguire questo passaggio, è necessario usare i cmdlet di Microsoft Teams PowerShell. È consigliabile usare la versione 4.6.0 o successiva dei cmdlet di Microsoft Teams. Questo requisito si applica anche ai clienti di Government Community Cloud (GCC).
+> Per eseguire questo passaggio, è necessario usare Microsoft cmdlet di PowerShell di Teams. È consigliabile usare la versione 4.6.0 o successiva dei cmdlet di Microsoft Teams. Questo requisito si applica anche ai clienti di Government Community Cloud (GCC).
 
 Dopo aver definito la gerarchia nel file CSV dello schema, è possibile caricarla in Teams. A questo scopo, eseguire il comando seguente. Per eseguire questo passaggio, è necessario essere un amministratore globale o un amministratore dei servizi di Teams.
 
@@ -198,11 +199,11 @@ Quando si conferma l'eliminazione, il messaggio di stato continuerà a visualizz
 ### <a name="install-the-teams-powershell-module"></a>Installare il modulo Di Teams PowerShell
 
 > [!IMPORTANT]
-> Per eseguire questo passaggio, è necessario installare e usare il modulo Di Teams PowerShell dal [PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftTeams/). Per la procedura di installazione del modulo, vedere [Installare il modulo PowerShell di Microsoft Teams](teams-powershell-install.md).
+> Per eseguire questo passaggio, è necessario installare e usare il modulo Di Teams PowerShell dal [PowerShell Gallery](https://www.powershellgallery.com/packages/MicrosoftTeams/). Per la procedura di installazione del modulo, vedere [Installare Microsoft modulo PowerShell di Teams](teams-powershell-install.md).
 
 ### <a name="sample-script"></a>Script di esempio
 
-Lo script seguente può essere usato per creare i team e caricare un file .csv nel tenant di Microsoft Teams. Se si dispone di una gerarchia esistente, questo script la sostituirà.
+Lo script seguente può essere usato per creare i team e caricare un file di .csv nel tenant di Microsoft Teams. Se si dispone di una gerarchia esistente, questo script la sostituirà.
 
 #### <a name="create-teams-for-a-simple-hierarchy"></a>Creare team per una gerarchia semplice
 
@@ -266,9 +267,9 @@ Error: InvalidTeamId
 Description: TeamID in row # doesn't match a valid Group ID. Please view our documentation to learn how to get the proper GroupID for each team.
 ```
 
-Verificare di usare l'ID Team corretto per il team nel file CSV dello schema. L'ID team deve essere uguale all'ID gruppo del gruppo di Microsoft 365 a supporto del team. È possibile cercare l'ID gruppo del team nell'interfaccia di amministrazione di Microsoft Teams.
+Verificare di usare l'ID Team corretto per il team nel file CSV dello schema. L'ID team deve essere uguale all'ID gruppo del gruppo di Microsoft 365 che esegue il backup del team. È possibile cercare l'ID gruppo del team nell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nella barra di spostamento sinistra [dell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com/), passare a **Gestione team di Teams** > .
+1. Nel riquadro di spostamento sinistro [dell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com/), passare a **Gestisci team di** **Teams** > .
 2. Se la colonna **ID gruppo** non è visualizzata nella tabella, selezionare **Modifica colonne** nell'angolo in alto a destra della tabella e quindi attivare **ID gruppo**.
 3. Trovare il team nell'elenco e quindi individuare l'ID gruppo.
 

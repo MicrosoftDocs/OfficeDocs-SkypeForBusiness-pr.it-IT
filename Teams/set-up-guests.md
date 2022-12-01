@@ -16,18 +16,19 @@ ms.custom:
 - NewAdminCenter_Update
 - seo-marvel-apr2020
 - ms.teamsadmincenter.orgwidesettings.guestaccess.turnonguestaccessarticle
+- chat-teams-channels-revamp
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
 description: Informazioni su come gli amministratori di Office 365 possono attivare o disattivare la funzionalità di accesso guest in Microsoft Teams.
-ms.openlocfilehash: 935fac44863ef2c3da4a9fc4f07fcd7e34265024
-ms.sourcegitcommit: cd9a1f7afaaf053741c81022e7052bf6f8008fcc
+ms.openlocfilehash: 906a5554d4dbcb03efabb2300a5a900ad3c8dc21
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65370809"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69199098"
 ---
 # <a name="turn-guest-access-in-microsoft-teams-on-or-off"></a>Attivare o disattivare l'accesso guest in Microsoft Teams
 
@@ -43,9 +44,9 @@ Questo articolo descrive come configurare le impostazioni di accesso guest, incl
 
 1. Accedere all'[interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com/).
 
-2. Selezionare **UtentiAccesso** >  **in ingresso**.
+2. Selezionare Accesso **guest** **utenti** > .
 
-3. Impostare **Consenti accesso guest in Teams** su **Attivato**.
+3. Impostare **Consenti l'accesso guest in Teams** su **Attivato**.
 
     ![Consenti l'opzione di accesso guest impostata su Attivato.](media/guest-access-setting.png)
 
@@ -57,7 +58,7 @@ Questo articolo descrive come configurare le impostazioni di accesso guest, incl
           - Passare questa impostazione su **Disattivato** per rimuovere la possibilità agli utenti guest di condividere i propri schermi in Teams.
           - Passare questa impostazione su **Singola applicazione** per consentire la condivisione di singole applicazioni.
           - Passare questa impostazione su **Schermo interno** per consentire la condivisione dello schermo completa.
-      - **Riunione immediata**: attivare **questa impostazione per** consentire agli utenti guest di usare la funzionalità Riunione immediata in Microsoft Teams.
+      - **Riunione immediata** - Attivare **questa impostazione per** consentire agli utenti guest di usare la funzionalità Riunione immediata in Microsoft Teams.
       - **Modifica messaggi inviati**: passare questa impostazione su **Attivato** per consentire agli utenti guest di modificare i messaggi inviati in precedenza.
       - **Elimina i messaggi inviati** : attiva **questa impostazione per** consentire agli utenti guest di eliminare i messaggi che hanno inviato in precedenza.
       - **Elimina chat** - Attiva **questa impostazione per** consentire agli utenti guest di eliminare un'intera conversazione di chat.
@@ -69,7 +70,7 @@ Questo articolo descrive come configurare le impostazioni di accesso guest, incl
           - **Strict** - Gli ospiti possono inserire Giphy nelle chat, ma sarà limitato dall'inserimento di contenuti per adulti.
       - **Memi nelle conversazioni** - Attiva **questa impostazione per** consentire agli utenti guest di usare memi nelle conversazioni.
       - **Adesivi nelle conversazioni** : attivare **questa impostazione per** consentire agli ospiti di usare adesivi nelle conversazioni.
-      - **Strumento di lettura immersiva per i messaggi**: attivare **questa impostazione per** consentire agli utenti guest di usare lo [strumento di lettura immersiva in Teams](https://support.microsoft.com/topic/a700c0d0-bc53-4696-a94d-4fbc86ac7a9a).
+      - **Strumento di lettura immersiva per i messaggi** - Attivare **questa impostazione per** consentire agli utenti guest di usare lo [strumento di lettura immersiva in Teams](https://support.microsoft.com/topic/a700c0d0-bc53-4696-a94d-4fbc86ac7a9a).
 
     ![Impostazioni delle autorizzazioni guest in Teams.](media/manage-guest-access-image1.png)
 

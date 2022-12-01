@@ -16,13 +16,15 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 06fc3d0bdf0e4741918e380d13acd1b7391bd6ef
-ms.sourcegitcommit: 50ae550b738424b35df1636590831e6c124ca0c1
+ms.custom:
+- seo-marvel-mar2020
+- chat-teams-channels-revamp
+ms.openlocfilehash: fddf4b5cf80c51977b2a57ceceac8a07e529c51f
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2022
-ms.locfileid: "68576402"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69199078"
 ---
 # <a name="manage-large-teams-in-microsoft-teams---best-practices"></a>Gestire team di grandi dimensioni in Microsoft Teams - Procedure consigliate
 
@@ -44,13 +46,13 @@ Usare gruppi di contatti, gruppi di sicurezza o gruppi di Office per avviare rap
 
 **Importare un gruppo per creare un team**: quando si importa un gruppo con un massimo di 3.500 membri in Teams, Teams calcola automaticamente il numero totale di membri del gruppo. Si tratta di un'importazione unica e le modifiche future nel gruppo non verranno aggiornate automaticamente in Teams.
 
-**Creare un team da un gruppo di Microsoft 365 di grandi dimensioni**: quando si crea un team da un gruppo di Microsoft 365 di grandi dimensioni, i membri fanno automaticamente parte del gruppo di Microsoft 365 **e** del team. In futuro, quando i membri del team si uniranno o abbandonano il gruppo di Microsoft 365, verranno automaticamente aggiunti o rimossi dal team.
+**Creare un team da un gruppo di Microsoft 365 di grandi dimensioni**: quando si crea un team da un gruppo di Microsoft 365 di grandi dimensioni, i membri fanno automaticamente parte del gruppo di Microsoft 365 **e** del team. In futuro, quando i membri del team si uniranno o abbandonano il gruppo di Microsoft 365, verranno aggiunti o rimossi automaticamente dal team.
 
 ## <a name="bulk-importexportremove-members-in-a-team"></a>Importazione/esportazione/rimozione in blocco di membri in un team
 
 Il portale di Azure consente agli utenti di importare/esportare/rimuovere in blocco membri in un gruppo di Microsoft 365. Per altre informazioni, vedere [Per importare in blocco i membri del gruppo](/azure/active-directory/enterprise-users/groups-bulk-import-members#to-bulk-import-group-members).
 
-Poiché ogni team è supportato da un gruppo di Microsoft 365, è possibile usare il portale di Azure per eseguire queste operazioni nel gruppo corrispondente al team. Le operazioni dei membri si rifletteranno nel team entro 24 ore.
+Poiché ogni team è supportato da un gruppo Microsoft 365, è possibile usare il portale di Azure per eseguire queste operazioni nel gruppo corrispondente al team. Le operazioni dei membri si rifletteranno nel team entro 24 ore.
 
 ## <a name="create-channels-to-focus-discussions"></a>Creare canali per concentrarsi sulle discussioni
 

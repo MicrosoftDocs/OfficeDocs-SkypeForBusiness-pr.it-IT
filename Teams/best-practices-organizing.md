@@ -16,13 +16,15 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 959a2936a762584ceee8c3292cc9ced343d33fc5
-ms.sourcegitcommit: ff783fad2fb5d412e864e3af2ceaa8fedcd9da07
+ms.custom:
+- seo-marvel-mar2020
+- chat-teams-channels-revamp
+ms.openlocfilehash: bfaf40e383f5690641b28e833bf03e6f12c0023a
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66562755"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198538"
 ---
 # <a name="best-practices-for-organizing-teams-in-microsoft-teams"></a>Procedure consigliate per l'organizzazione dei team in Microsoft Teams
 

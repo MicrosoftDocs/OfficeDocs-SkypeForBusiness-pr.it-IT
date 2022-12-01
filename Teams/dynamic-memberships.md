@@ -8,25 +8,27 @@ ms.topic: conceptual
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-description: Scopri come Microsoft Teams supporta i team associati ai gruppi di Microsoft 365 usando l'appartenenza dinamica.
+description: Informazioni su come Microsoft Teams supporta i team associati ai gruppi di Microsoft 365 usando l'appartenenza dinamica.
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-ms.custom: seo-marvel-apr2020
+ms.custom:
+- seo-marvel-apr2020
+- chat-teams-channels-revamp
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ff6a71978873d723f39a534f876696a0def2f756
-ms.sourcegitcommit: ff783fad2fb5d412e864e3af2ceaa8fedcd9da07
+ms.openlocfilehash: 65c747fea2b33f2fd18b004e9a16a2302702ec59
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66562575"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198728"
 ---
 # <a name="overview-of-dynamic-membership-for-teams"></a>Panoramica sull'appartenenza dinamica per i team
 
-Microsoft Teams supporta i team associati ai gruppi di Microsoft 365 usando *l'appartenenza dinamica*. L'appartenenza dinamica consente di definire l'appartenenza di un team in base a una o più regole che verificano la presenza di determinati attributi utente in Azure Active Directory (Azure AD). Gli utenti vengono aggiunti o rimossi automaticamente ai team corretti quando gli attributi degli utenti cambiano o gli utenti si aggiungono e lasciano il tenant.
+Microsoft Teams supporta i team associati a Microsoft 365 gruppi usando *l'appartenenza dinamica*. L'appartenenza dinamica consente di definire l'appartenenza di un team in base a una o più regole che verificano la presenza di determinati attributi utente in Azure Active Directory (Azure AD). Gli utenti vengono aggiunti o rimossi automaticamente ai team corretti quando gli attributi degli utenti cambiano o gli utenti si aggiungono e lasciano il tenant.
 
 Con l'appartenenza dinamica è possibile configurare team per determinate coorti di utenti dell'organizzazione. Gli scenari possibili includono:
 - Un ospedale può creare team distinti per infermieri, medici e chirurghi per trasmettere comunicazioni. Ciò è particolarmente importante se l'ospedale si affida a dipendenti temporanei.
@@ -43,7 +45,7 @@ Quando si usano team con gruppi dinamici:
 - I proprietari non potranno aggiungere o rimuovere utenti come membri del team, poiché i membri sono definiti da regole di gruppo dinamiche.
 - I client di Teams non consentono la gestione dei membri per il team. Le opzioni per aggiungere membri, modificare i ruoli dei membri, inviare e approvare richieste di partecipazione e lasciare il team sono tutte nascoste.
 
-Per creare un team che usa l'appartenenza dinamica, iniziare creando [un gruppo dinamico di Microsoft 365](/azure/active-directory/users-groups-roles/groups-create-rule) e quindi [creare un team da tale gruppo](https://support.microsoft.com/en-us/office/create-a-team-from-an-existing-group-24ec428e-40d7-4a1a-ab87-29be7d145865).
+Per creare un team che usa l'appartenenza dinamica, iniziare creando [un gruppo dinamico Microsoft 365](/azure/active-directory/users-groups-roles/groups-create-rule) e quindi [creare un team da tale gruppo](https://support.microsoft.com/en-us/office/create-a-team-from-an-existing-group-24ec428e-40d7-4a1a-ab87-29be7d145865).
 
 È possibile modificare un team esistente in modo che abbia un'appartenenza dinamica. Per informazioni, vedere [Modificare l'appartenenza statica ai gruppi in dinamica in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type) .
 

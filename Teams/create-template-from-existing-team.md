@@ -12,16 +12,17 @@ description: Informazioni su come usare un team esistente per creare un nuovo mo
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
+ms.custom: chat-teams-channels-revamp
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: df92a9f43481c394f0d6566bc1a3dfe49e134df1
-ms.sourcegitcommit: 296862e02b548f0212c9c70504e65b467d459cc3
+ms.openlocfilehash: c6a908b360f64a62b44d160ad1abe9dc5ccc3bb0
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65674358"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198948"
 ---
 # <a name="create-a-team-template-from-an-existing-team-in-microsoft-teams"></a>Creare un modello di team da un team esistente in Microsoft Teams
 
@@ -33,7 +34,7 @@ Microsoft Teams consente di creare un modello da un team esistente che può esse
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro espandere **Teams** >  **Modelli diTeam**.
+2. Nel riquadro di spostamento sinistro espandere **Modelli team di** **Teams** > .
 
 3. Selezionare **Aggiungi**.
 
@@ -68,6 +69,6 @@ Il nuovo modello viene visualizzato nell'elenco **Modelli di team** . Il modello
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Attività iniziali con i modelli di team nell'interfaccia di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
+- [Introduzione ai modelli di team nell'interfaccia di amministrazione](get-started-with-teams-templates-in-the-admin-console.md)
 - [Creare un modello da un modello di team esistente](create-template-from-existing-template.md)
 - [Creare un modello di team](create-a-team-template.md)

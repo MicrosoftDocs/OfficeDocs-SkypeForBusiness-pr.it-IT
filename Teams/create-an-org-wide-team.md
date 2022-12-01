@@ -18,13 +18,15 @@ ms.collection:
 - ContentEnagagementFY23
 appliesto:
 - Microsoft Teams
-ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee17d482c311a4bdd92ebad55e29058104a89b98
-ms.sourcegitcommit: e5f5a1a164576b317e89340e233c9b67f082d19c
+ms.custom:
+- seo-marvel-apr2020
+- chat-teams-channels-revamp
+ms.openlocfilehash: 5acc918c4fbe3994a93020e7b4b09db4ab1671f3
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "68890055"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198918"
 ---
 # <a name="use-organization-wide-teams-in-microsoft-teams-to-help-everyone-collaborate"></a>Usare i team a livello di organizzazione in Microsoft Teams per aiutare tutti a collaborare
 
@@ -46,7 +48,7 @@ Esistono due modi per creare un team a livello di organizzazione:
 
 Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali e gli amministratori di Teams vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. I membri del team non possono lasciare un team a livello di organizzazione, ma i proprietari del team possono aggiungere o rimuovere manualmente gli utenti, se necessario. Quando Teams aggiunge o rimuove automaticamente qualcuno, viene inviata una notifica al canale Generale.
 
-Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a Teams, gli viene assegnata una licenza esplorativa di Microsoft Teams. Per altre informazioni sulla licenza esplorativa, vedere [Gestire la licenza esplorativa di Microsoft Teams](teams-exploratory.md).
+Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a Teams, gli viene assegnata una licenza di Microsoft Teams Exploratory. Per altre informazioni sulla licenza esplorativa, vedere [Gestire la licenza esplorativa di Microsoft Teams](teams-exploratory.md).
 
 I tipi di account seguenti non verranno aggiunti al team a livello di organizzazione:
 

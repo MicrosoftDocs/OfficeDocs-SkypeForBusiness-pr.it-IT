@@ -23,21 +23,22 @@ ms.custom:
 - ms.teamsadmincenter.teamsandchannelpolicies.overview
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.discover
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.create
-description: Informazioni su come usare e gestire i criteri dei canali di Teams nell'organizzazione per controllare le attività che gli utenti possono eseguire in team e canali.
-ms.openlocfilehash: 5acac362485b1004e1db61229c437810fdbcbc6d
-ms.sourcegitcommit: fcac607fb4ad342a0936527f848e04c85f153ba5
+- chat-teams-channels-revamp
+description: Informazioni su come usare e gestire i criteri dei canali dei team nell'organizzazione per controllare le operazioni che gli utenti possono eseguire in team e canali.
+ms.openlocfilehash: 1223f191550675d5edd7b99a1cf9820fa14c9992
+ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63711780"
+ms.lasthandoff: 11/30/2022
+ms.locfileid: "69198558"
 ---
 # <a name="manage-channel-policies-in-microsoft-teams"></a>Gestire i criteri dei canali in Microsoft Teams
 
-Gli amministratori possono usare i criteri in Microsoft Teams controllare le attività che gli utenti dell'organizzazione possono eseguire in team e canali. Ad esempio, è possibile impostare se gli utenti sono autorizzati a creare canali privati o condivisi.
+Gli amministratori possono usare i criteri in Microsoft Teams per controllare cosa possono fare gli utenti dell'organizzazione in team e canali. Ad esempio, è possibile specificare se gli utenti sono autorizzati a creare canali privati o condivisi.
 
-Per gestire i criteri dei team, accedere **Teams** >  **Teams criteri nell'Microsoft Teams** di amministrazione. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
+È possibile gestire i criteri dei team passando ai **criteri di Teams**  >  nell'interfaccia di amministrazione di Microsoft Teams. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
 
-È possibile modificare i criteri globali o creare e assegnare criteri personalizzati. Dopo aver modificato i criteri globali o aver assegnato un criterio, l'applicazione delle modifiche potrebbe richiedere 24 ore.
+È possibile modificare il criterio globale o creare e assegnare criteri personalizzati. Dopo aver modificato il criterio globale o assegnato un criterio, potrebbero essere necessarie 24 ore prima che le modifiche vengano applicate.
 
 ## <a name="channel-policies"></a>Criteri per i canali
 
@@ -45,14 +46,14 @@ Per i canali dei team sono disponibili i criteri seguenti:
 
 |Criterio|Descrizione|
 |:-----|:----------|
-|**Creare canali privati**|Se **l'è**, i proprietari e i membri del team possono creare canali privati. I proprietari del team possono controllare se i membri possono creare canali privati in ogni team.|
-|**Creare canali condivisi**|Quando **è on**, i proprietari del team possono creare canali condivisi. Teams le app disponibili per l'organizzazione sono disponibili anche nei canali condivisi.|
-|**Invitare utenti esterni a canali condivisi**|Quando **è questa** impostazione, i proprietari e i membri dei canali condivisi possono invitare partecipanti esterni da organizzazioni in cui è stato configurato un trust tra organizzazioni. Teams criteri per l'organizzazione si applicano a questi canali.|
-|**Partecipare a canali condivisi esterni**|Quando **è on**, gli utenti possono partecipare a canali condivisi creati da altre organizzazioni in cui è stato configurato un trust tra organizzazioni. Teams criteri per l'altra organizzazione si applicano a questi canali.|
+|**Creare canali privati**|Quando **attivato**, i proprietari e i membri del team possono creare canali privati. I proprietari del team possono controllare se i membri possono creare canali privati in ogni team.|
+|**Creare canali condivisi**|Quando **attivato**, i proprietari del team possono creare canali condivisi. Le app di Teams disponibili per l'organizzazione sono disponibili anche nei canali condivisi.|
+|**Invitare utenti esterni a canali condivisi**|Quando **attivato**, i proprietari e i membri dei canali condivisi possono invitare partecipanti esterni da organizzazioni in cui è stata configurata un'attendibilità tra organizzazioni. I criteri di Teams per l'organizzazione si applicano a questi canali.|
+|**Partecipare a canali condivisi esterni**|Quando **attivato**, gli utenti possono partecipare ai canali condivisi creati da altre organizzazioni in cui è stata configurata un'attendibilità tra organizzazioni. I criteri di Teams per l'altra organizzazione si applicano a questi canali.|
 
-## <a name="create-a-custom-teams-policy"></a>Creare criteri di team personalizzati
+## <a name="create-a-custom-teams-policy"></a>Creare criteri personalizzati per i team
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione **passare a** >  Teams **Teams criteri**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare a **Criteri di Teams** > .
 2. Fare clic su **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio.
 
@@ -61,11 +62,11 @@ Per i canali dei team sono disponibili i criteri seguenti:
 
 5. Fare clic su **Salva**.
 
-## <a name="edit-a-teams-policy"></a>Modificare un criterio di Teams
+## <a name="edit-a-teams-policy"></a>Modificare i criteri di un team
 
-È possibile modificare i criteri globali o i criteri personalizzati creati dall'utente.
+È possibile modificare i criteri globali o i criteri personalizzati creati.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione **passare a** >  Teams **Teams criteri**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare a **Criteri di Teams** > .
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
 3. Attivare o disattivare le impostazioni desiderate e quindi fare clic su **Salva**.
 
@@ -75,7 +76,7 @@ Per i canali dei team sono disponibili i criteri seguenti:
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Gestire Teams siti connessi e siti di canale](/SharePoint/teams-connected-sites)
+[Gestire i siti e i siti dei canali connessi a Teams](/SharePoint/teams-connected-sites)
 
 [Canali privati in Teams](private-channels.md)
 
