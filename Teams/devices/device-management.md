@@ -16,23 +16,23 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.managedevices.overview
 - ms.teamsadmincenter.devicemanagement.overview
-description: Informazioni su come gestire i dispositivi usati con Teams nell'organizzazione.
+description: Gestire i dispositivi usati con Microsoft Teams nell'organizzazione.
 ms.localizationpriority: medium
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5dc65025ed255dff1685f7aa30a555facdd3f11c
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: b34d554c0930efa622e60a695203e5fa35bd48ab
+ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67270841"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "69245653"
 ---
-# <a name="microsoft-teams-managing-your-devices"></a>Microsoft Teams: Gestione dei dispositivi 
+# <a name="manage-devices-in-teams"></a>Gestire i dispositivi in Teams 
 
 È possibile gestire i dispositivi usati con Microsoft Teams nell'organizzazione dall'interfaccia di amministrazione di Microsoft Teams. È possibile visualizzare e gestire l'inventario dei dispositivi per l'organizzazione ed eseguire attività come l'aggiornamento, il riavvio e il monitoraggio della diagnostica per i dispositivi. È anche possibile creare e assegnare profili di configurazione a un dispositivo o a gruppi di dispositivi.
 
-Per gestire i dispositivi, ad esempio modificare la configurazione dei dispositivi, riavviare i dispositivi, gestire gli aggiornamenti o visualizzare l'integrità dei dispositivi e delle periferiche, è necessario essere assegnati a uno dei ruoli di amministratore di Microsoft 365 seguenti:
+Per gestire i dispositivi, ad esempio modificare la configurazione dei dispositivi, riavviare i dispositivi, gestire gli aggiornamenti o visualizzare l'integrità dei dispositivi e delle periferiche, è necessario essere assegnati uno dei ruoli di amministratore di Microsoft 365 seguenti:
 
 - Amministratore globale di Microsoft 365
 - Amministratore del servizio Teams
@@ -50,13 +50,13 @@ Puoi gestire qualsiasi dispositivo certificato per Teams e registrato. Un dispos
 - [Visualizzazioni di Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/across-devices/devices/category?devicetype=34)
 - [Pannelli di Teams](teams-panels.md)
 
-Per gestire i dispositivi, nel riquadro di spostamento sinistro [dell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com) passare a **Dispositivi di Teams** e quindi selezionare il tipo di dispositivo. Ogni tipo di dispositivo ha la rispettiva sezione, che consente di gestirli separatamente.
+Per gestire i dispositivi, nel riquadro di spostamento sinistro [dell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com), passare a **Dispositivi di Teams** e quindi selezionare il tipo di dispositivo. Ogni tipo di dispositivo ha la rispettiva sezione, che consente di gestirli separatamente.
 
 ## <a name="manage-teams-rooms-on-windows-devices"></a>Gestire Teams Rooms nei dispositivi Windows
 
 È possibile usare l'interfaccia di amministrazione di Teams per visualizzare e gestire in remoto i Teams Rooms nei dispositivi Windows dell'intera organizzazione. L'interfaccia di amministrazione di Teams consente di vedere a colpo d'occhio quali dispositivi sono integri e che richiedono attenzione e consente di concentrarsi su dispositivi specifici per visualizzare informazioni dettagliate sull'integrità dei dispositivi, sulle prestazioni delle riunioni, sulla qualità delle chiamate e sulle periferiche. 
 
-Ecco alcune operazioni che puoi eseguire per gestire i dispositivi Teams Rooms. Teams Rooms dispositivi sono disponibili [nell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com) in **Dispositivi** >  di Teams **Teams Rooms in Windows**.
+Ecco alcune operazioni che puoi eseguire per gestire i dispositivi Teams Rooms. Teams Rooms dispositivi sono disponibili [nell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com) in **Dispositivi di** >  Teams **Teams Rooms in Windows**.
 
 Per informazioni dettagliate su come gestire i dispositivi Teams Rooms, vedere [Gestire Microsoft Teams Rooms](../rooms/rooms-manage.md).
 

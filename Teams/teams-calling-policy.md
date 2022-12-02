@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: jastark
 audience: admin
 search.appverid: MET150
-description: Informazioni su come creare, modificare e aggiungere utenti a criteri di chiamata personalizzati in Microsoft Teams, nonché a varie impostazioni dei criteri di chiamata.
+description: Informazioni su come creare, modificare e aggiungere utenti a criteri di chiamata personalizzati in Microsoft Teams, oltre a varie impostazioni dei criteri di chiamata.
 ms.localizationpriority: medium
 ms.collection:
 - M365-voice
@@ -20,16 +20,16 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d8efff8e93dd95ef2b1199b6a766f175e9b2afa4
-ms.sourcegitcommit: e5f5a1a164576b317e89340e233c9b67f082d19c
+ms.openlocfilehash: a02df903574c7e7db796294ad90c9e05ab732eb0
+ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/09/2022
-ms.locfileid: "68892608"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "69245730"
 ---
-# <a name="calling-and-call-forwarding-in-teams"></a>Chiamate e inoltro di chiamata in Teams
+# <a name="calling-policies-calling-and-call-forwarding-features-in-teams"></a>Criteri per le chiamate: Funzionalità di chiamata e inoltro di chiamata in Teams
 
-In Microsoft Teams, i criteri di chiamata controllano le funzionalità di chiamata e inoltro di chiamata disponibili per gli utenti. I criteri per le chiamate determinano se un utente può effettuare chiamate private, usare l'inoltro di chiamata o lo squillo simultaneo ad altri utenti o numeri di telefono esterni, instradare le chiamate alla segreteria telefonica, inviare chiamate a gruppi di chiamate, usare la delega per le chiamate in ingresso e in uscita e così via.
+In Microsoft Teams, i criteri di chiamata controllano le funzionalità di inoltro di chiamata e chiamata disponibili per gli utenti. I criteri per le chiamate determinano se un utente può effettuare chiamate private, usare l'inoltro di chiamata o lo squillo simultaneo ad altri utenti o numeri di telefono esterni, instradare le chiamate alla segreteria telefonica, inviare chiamate a gruppi di chiamate, usare la delega per le chiamate in ingresso e in uscita e così via.
 
 È possibile usare il criterio globale (predefinito a livello di organizzazione) creato automaticamente o creare e assegnare criteri personalizzati.
 
@@ -47,7 +47,7 @@ Seguire questa procedura per creare criteri di chiamata personalizzati.
 
 Seguire questa procedura per modificare un criterio di chiamata esistente.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams selezionare **Criteri per le chiamate** **vocali** > .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, selezionare **Criteri per le chiamate** **vocali** > .
 2. Fare clic accanto al criterio da modificare e quindi selezionare **Modifica**.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva**.
 
