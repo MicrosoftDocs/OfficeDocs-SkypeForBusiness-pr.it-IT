@@ -27,19 +27,19 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Scopri come ottenere e gestire i numeri di telefono degli utenti (abbonati) e dei servizi (a pagamento e a numero verde) per Microsoft Teams per la tua organizzazione.
-ms.openlocfilehash: 699631d4408ebdf1ce9a3851651704539317644d
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: 5356fc0f3cdfd42d6ef3f06eea58f6ef77d59b83
+ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68583857"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "69242440"
 ---
 # <a name="manage-phone-numbers-for-calling-plan"></a>Gestire i numeri di telefono per il piano per chiamate
 
 Esistono quattro modi per ottenere i numeri di telefono dell'utente (abbonato) e del servizio (a pagamento e a numero verde) per il Piano per chiamate:
 
-- [Ottenere nuovi numeri di telefono utente nell'interfaccia di amministrazione di Microsoft Teams](../getting-phone-numbers-for-your-users.md#get-new-phone-numbers-for-your-users).
-- [Ottenere nuovi numeri di telefono di servizio in Microsoft Teams Amministrazione Center](../getting-service-phone-numbers.md#get-new-service-numbers).
+- [Recupero di nuovi numeri di telefono utente nell'interfaccia di amministrazione di Microsoft Teams](../getting-phone-numbers-for-your-users.md#get-new-phone-numbers-for-your-users).
+- [Recupero di nuovi numeri di telefono di servizio in Microsoft Teams Amministrazione Center](../getting-service-phone-numbers.md#get-new-service-numbers).
 - [Trasferisci o _trasferisci_ i tuoi numeri di telefono esistenti con noi](../phone-number-calling-plans/transfer-phone-numbers-to-teams.md#create-a-port-order-and-transfer-your-phone-numbers-to-teams).
 - Usare un modulo di richiesta per i nuovi numeri di telefono non elencati nell'interfaccia di amministrazione di Microsoft Teams.
 
@@ -70,6 +70,7 @@ Se si conosce il tipo di moduli cercati, usare l'elenco a discesa per selezionar
 > - [Lettonia](phone-number-management-for-latvia.md)
 > - [Lituania](phone-number-management-for-lithuania.md)
 > - [Lussemburgo](phone-number-management-for-luxembourg.md)
+> - [Messico](phone-number-management-for-mexico.md)
 > - [Nuova Zelanda](phone-number-management-for-new-zealand.md)
 > - [Norvegia](phone-number-management-for-norway.md)
 > - [Polonia](phone-number-management-for-poland.md)
@@ -94,9 +95,9 @@ Le sezioni seguenti descrivono i moduli di richiesta per i nuovi numeri e per il
 
 ### <a name="request-forms-for-new-phone-numbers"></a>Moduli di richiesta per nuovi numeri telefonici
 
-Ogni paese o area geografica ha istruzioni diverse, diversi tipi di numeri di telefono (geografici/non geografici e di servizio (a pagamento/numero verde)) e regole/normative per ottenere i numeri di telefono in modo che possano essere usati in Microsoft Teams.
+Ogni paese o area geografica ha istruzioni diverse, diversi tipi di numeri di telefono (geografici/non geografici e di servizio (a pagamento/numero verde)) e regole/normative per ottenere numeri di telefono in modo che possano essere usati in Microsoft Teams.
 
-A volte (a seconda del paese o dell'area geografica) non potrai ottenere nuovi numeri di telefono utente (abbonato) o di servizio (a pagamento o numero verde) tramite l'interfaccia di amministrazione di Microsoft Teams oppure potresti aver bisogno di numeri di telefono _specifici_ (richieste di località) o di codici di area _specifici_ .
+A volte (a seconda del paese o dell'area geografica) non sarai in grado di ottenere nuovi numeri di telefono utente (abbonato) o di servizio (a pagamento o numero verde) utilizzando l'interfaccia di amministrazione di Microsoft Teams oppure potresti aver bisogno di numeri di telefono _specifici_ (richieste di località _) o specifici_ prefisso.
 
 In tal caso, dovrai scaricare il modulo LOA PDF corretto (per paese o area geografica e tipo di numeri di telefono) e inviarlo a Microsoft. Il nostro service desk lo prenderà da lì e inizierà a elaborare la tua richiesta.
 
@@ -109,7 +110,7 @@ Inviaci un **LOA** se attualmente hai quanto segue con un altro gestore telefoni
 - Numeri utente (abbonato).
 - Numeri di servizio (a pagamento) per bridge dei servizi di audioconferenza, operatori automatici o code di chiamata.
 - Toll-Free numeri di telefono.
-- Più di 999 numeri di telefono utente che è necessario trasferire/trasferire, ma che non possono essere trasferiti nell'interfaccia di amministrazione di Microsoft Teams usando la procedura guidata di portabilità del numero locale.
+- Più di 999 numeri di telefono utente che è necessario trasferire/trasferire, ma che non è possibile usare nell'interfaccia di amministrazione di Microsoft Teams con la procedura guidata di portabilità del numero locale.
 
 Dopo aver **compilato e firmato** loa, [contatta il nostro Service Desk TNS](./contact-tns-service-desk.md) per consentirti di aiutarti.
 
@@ -121,7 +122,7 @@ Se hai bisogno di assistenza, [contatta il TNS Service Desk](./contact-tns-servi
 
 - Per sapere _se_ e quali piani per chiamate sono disponibili nel tuo paese o nella tua area geografica, consulta [Paesi e area geografica disponibili per i piani per audioconferenze e chiamate](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 - Per aiutarti a scegliere il tipo corretto di numeri di telefono, leggi [Diversi tipi di numeri di telefono utilizzati per i Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md).
-- Per ottenere assistenza per la configurazione dei numeri di telefono per l'organizzazione, vedere: [Supporto tecnico - Prodotti per le aziende - Amministrazione Guida](/microsoft-365/admin/contact-support-for-business-products?tabs=online&view=o365-worldwide).
+- Per ottenere assistenza per la configurazione dei numeri di telefono per l'organizzazione, vedere: [Supporto tecnico - Prodotti per le aziende - Amministrazione Guida](/microsoft-365/admin/contact-support-for-business-products?tabs=online).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

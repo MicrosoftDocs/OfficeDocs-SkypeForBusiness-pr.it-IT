@@ -1,5 +1,5 @@
 ---
-title: Migrazione da Skype for Business Online Connector al modulo Teams PowerShell
+title: Migrazione da Skype for Business Online Connector al modulo di PowerShell di Teams
 author: pupara
 ms.author: pupara
 ms.reviewer: pupara
@@ -9,40 +9,40 @@ audience: admin
 ms.service: msteams
 ms.collection:
 - M365-collaboration
-description: Informazioni su come passare da Skype for Business Online Connector al modulo Teams PowerShell per gestire le Teams.
+description: Informazioni su come passare da Skype for Business Online Connector al modulo PowerShell di Teams per gestire Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cdd6460e6a17a15193104a0871a57fa6dbff8105
-ms.sourcegitcommit: 70c07a6b1be81681eec32a89872e2218d70c514d
+ms.openlocfilehash: 648ce1fb69f9e1641840f2e4b92acc1b98f4bbe8
+ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "58866358"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "69242290"
 ---
-# <a name="migrating-from-skype-for-business-online-connector-to-the-teams-powershell-module"></a>Migrazione da Skype for Business Online Connector al modulo Teams PowerShell
+# <a name="migrating-from-skype-for-business-online-connector-to-the-teams-powershell-module"></a>Migrazione da Skype for Business Online Connector al modulo di PowerShell di Teams
 
-Teams Il modulo di PowerShell offre un set completo di cmdlet per la gestione Teams direttamente dalla riga di comando di PowerShell. Gli amministratori non richiedono Skype For Business Online Connector per l'amministrazione Teams utenti.
+Il modulo PowerShell di Teams fornisce un set completo di cmdlet per la gestione di Teams direttamente dalla riga di comando di PowerShell. Gli amministratori non richiedono Skype For Business Online Connector per l'amministrazione di Teams.
 
 > [!NOTE]
-> Teams amministratore è stato avvisato tramite post del Centro messaggi (MC244740, datato 16 marzo 2021; MC250940, datato 16 aprile 2021) su questa modifica.
+> L'amministratore di Teams ha ricevuto una notifica tramite il post del Centro messaggi (MC244740, datato 16 marzo 2021; MC250940, datata 16 aprile 2021) su questo cambiamento.
 >
-> Teams Il modulo di PowerShell usa l'autenticazione moderna, ma il client Windows gestione remota (WinRM) sottostante deve essere configurato per consentire l'autenticazione di base. Vedere [Scaricare e installare Windows PowerShell](/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-windows-powershell-5-1) per istruzioni su come abilitare Gestione remota Windows per l'autenticazione di base.
+> Il modulo PowerShell di Teams usa l'autenticazione moderna, ma il client Gestione remota Windows sottostante (WinRM) deve essere configurato per consentire l'autenticazione di base. Vedi [Scaricare e installare Windows PowerShell](/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-windows-powershell-5-1) per istruzioni su come abilitare WinRM per l'autenticazione di base.
 
 ## <a name="how-to-migrate"></a>Come eseguire la migrazione
 
-La migrazione dall'uso Skype for Business Online Connector Teams modulo di PowerShell è semplice e semplice. La procedura seguente spiega come eseguire questa operazione.
+La migrazione dall'uso di Skype for Business Online Connector al modulo PowerShell di Teams è semplice e semplice. La procedura seguente illustra come eseguire questa operazione.
 
-1. Installare il modulo di PowerShell Teams più recente. Per la procedura, vedere [Installare Microsoft Teams PowerShell.](teams-powershell-install.md)
+1. Installare il modulo PowerShell di Teams più recente. Per la procedura, vedere [Installare Microsoft PowerShell di Teams](teams-powershell-install.md).
 
-2. Disinstallare Skype For Business Online Connector. A questo scopo, nel Pannello di controllo passare a Programmi e **funzionalità,** selezionare Skype for Business **Online, Windows PowerShell modulo** e quindi selezionare **Disinstalla**.
+2. Disinstallare Skype for Business Online Connector. A tale scopo, in Pannello di controllo vai a **Programmi e funzionalità**, seleziona **Skype for Business Online, Windows PowerShell Modulo** e quindi **seleziona Disinstalla**.
 
-3. Negli script di PowerShell modificare il nome del modulo a cui si fa riferimento ```Import-Module``` da
+3. Negli script di PowerShell modificare il nome del modulo a ```Import-Module``` cui si fa riferimento da
 
-    `SkypeOnlineConnector` o `LyncOnlineConnector` su `MicrosoftTeams` .
+    `SkypeOnlineConnector` o `LyncOnlineConnector` a `MicrosoftTeams`.
 
-    Ad esempio, passare `Import-Module -Name SkypeOnlineConnector` a `Import-Module -Name MicrosoftTeams` .
+    Ad esempio, passare `Import-Module -Name SkypeOnlineConnector` a `Import-Module -Name MicrosoftTeams`.
 
-4. Quando si Teams modulo di PowerShell 2.0 o versione successiva, aggiornare gli script che fanno riferimento `New-CsOnlineSession` a `Connect-MicrosoftTeams` . `Import-PsSession`non è più necessario stabilire una sessione remota di PowerShell Skype for Business online come viene eseguita in modo implicito quando si usa `Connect-MicrosoftTeams` .
+4. Quando si usa Teams PowerShell Module 2.0 o versione successiva, aggiornare gli script che fanno riferimento `New-CsOnlineSession` a `Connect-MicrosoftTeams`. `Import-PsSession`non è più necessario per stabilire una sessione di PowerShell remota di Skype for Business Online in quanto viene eseguita implicita quando si utilizza `Connect-MicrosoftTeams`.
 
     ```powershell
        # When using the Skype for Business online connector
@@ -75,12 +75,12 @@ La migrazione dall'uso Skype for Business Online Connector Teams modulo di Power
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Installare Microsoft Teams PowerShell](teams-powershell-install.md)
+[Installare Microsoft PowerShell di Teams](teams-powershell-install.md)
 
-[Gestire Teams con Teams PowerShell](teams-powershell-managing-teams.md)
+[Gestire Teams con PowerShell di Teams](teams-powershell-managing-teams.md)
 
-[Teams Note sulla versione di PowerShell](teams-powershell-release-notes.md)
+[Note sulla versione di Teams PowerShell](teams-powershell-release-notes.md)
 
-[Microsoft Teams cmdlet](/powershell/teams/?view=teams-ps)
+[Riferimento per i cmdlet di Microsoft Teams](/powershell/teams/)
 
-[Skype for Business cmdlet](/powershell/skype/intro?view=skype-ps)
+[riferimento ai cmdlet di Skype for Business](/powershell/skype/intro)

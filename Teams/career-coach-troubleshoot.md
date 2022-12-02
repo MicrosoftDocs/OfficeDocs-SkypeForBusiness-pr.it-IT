@@ -1,7 +1,7 @@
 ---
 title: Risolvere i problemi di Career Coach per Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+author: DaniEASmith
+ms.author: danismith
 ms.reviewer: alaina.creager
 manager: serdars
 ms.topic: article
@@ -15,16 +15,16 @@ ms.collection:
 - m365initiative-edu
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a5ebda4324f7cc46d69b882a53684b21b4fa2932
-ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
+ms.openlocfilehash: 4c00837c40fe405ab4d9d608326a12567843c8bb
+ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67024171"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "69242450"
 ---
 # <a name="troubleshoot-career-coach-for-microsoft-teams"></a>Risolvere i problemi di Career Coach per Microsoft Teams
 
-Questo articolo è rivolto agli amministratori IT dell'istruzione superiore che devono risolvere i problemi di Assistente alla carriera per Microsoft Teams.
+Questo articolo è rivolto agli amministratori IT dell'istruzione che devono risolvere i problemi di Career Coach per Microsoft Teams.
 
 Di seguito sono riportati i problemi comuni e i passaggi di risoluzione che gli amministratori IT possono eseguire con Career Coach.
 
@@ -32,12 +32,7 @@ Di seguito sono riportati i problemi comuni e i passaggi di risoluzione che gli 
 
 Se vedi "Assistente alla carriera è in fase di configurazione per l'uso futuro" nell'esperienza Assistente alla carriera, **non sono stati aggiunti tutti i dati di configurazione necessari**.
 
-Le **sezioni seguenti devono essere completate** prima di poter utilizzare Assistente alla carriera:
-
-- [Marchio e preferenze](career-coach-set-up-steps.md#brand-and-preferences)
-- [Connessione LinkedIn](career-coach-set-up-steps.md#linkedin-connection)
-- [Catalogo dei corsi](career-coach-set-up-steps.md#course-catalog)
-- [Campi di studio](career-coach-set-up-steps.md#fields-of-study)
+L'istituto deve avere la [connessione LinkedIn](career-coach-set-up-steps.md#linkedin-connection-required) completamente configurata.
 
 Fare riferimento allo [stato di configurazione di Assistente alla carriera](career-coach-set-up-steps.md#configuration-status) per vedere quali impostazioni devono essere completate.
 
@@ -59,16 +54,16 @@ L'invio ha esito positivo quando viene visualizzato un banner verde nella parte 
 
 ## <a name="setup-policy-changes-arent-complete"></a>Le modifiche ai criteri di installazione non sono complete
 
-Se Assistente alla carriera non viene visualizzato in Microsoft Teams per gli utenti, le modifiche ai criteri di configurazione potrebbero non essere ancora applicate. Career Coach non verrà installato e aggiunto per gli utenti in Microsoft Teams finché i criteri di configurazione non saranno applicati. L'applicazione delle modifiche ai criteri può richiedere alcune ore.
+Se Assistente alla carriera non viene visualizzato in Microsoft Teams per gli utenti, le modifiche ai criteri di configurazione potrebbero non essere ancora applicate. Career Coach non verrà installato e aggiunto per gli utenti in Microsoft Teams finché le modifiche ai criteri di configurazione non saranno effettive. L'applicazione delle modifiche ai criteri può richiedere alcune ore.
 
-Tuttavia, Assistente alla carriera può essere installato direttamente dall'app store di Microsoft Teams.
+Tuttavia, Assistente alla carriera può essere installato direttamente dall'app store Microsoft Teams.
 
-- Se gli utenti non riescono a trovare Assistente alla carriera nell'app Store di Microsoft Teams, esamina i criteri di autorizzazione delle app e assicurati che Assistente alla carriera non sia un'app bloccata.
-- Career Coach è un'app Microsoft ed è consigliabile consentire le app Microsoft in base ai criteri di autorizzazione. Altre informazioni sulla [configurazione dei criteri di autorizzazione](teams-app-permission-policies.md).
+- Se gli utenti non riescono a trovare Career Coach nell'app store di Microsoft Teams, esamina i criteri di autorizzazione delle app e assicurati che Assistente alla carriera non sia un'app bloccata.
+- Career Coach è un'app Microsoft ed è consigliabile consentire Microsoft app in base a criteri di autorizzazione. Altre informazioni sulla [configurazione dei criteri di autorizzazione](teams-app-permission-policies.md).
 
 ## <a name="career-coach-initialization-isnt-complete"></a>L'inizializzazione di Assistente alla carriera non è completa
 
-Potrebbe essere visualizzato l'errore seguente: "Non è possibile recuperare le impostazioni dell'app. Riprovare. Se continui ad avere problemi, contatta il supporto tecnico Microsoft".
+Potrebbe essere visualizzato l'errore seguente: "Non è possibile recuperare le impostazioni dell'app. Riprovare. Se continui ad avere problemi, contatta Microsoft supporto tecnico".
 
 Controlla **lo stato di provisioning dei servizi** nella [pagina delle impostazioni di Assistente alla carriera](career-coach-set-up-steps.md#career-coach-settings-status).
 

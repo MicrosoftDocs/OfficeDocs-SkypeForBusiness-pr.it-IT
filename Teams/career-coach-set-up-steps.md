@@ -1,14 +1,14 @@
 ---
 title: Configurare Assistente alla carriera per Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+author: DaniEASmith
+ms.author: danismith
 ms.reviewer: alaina.creager
 manager: serdars
 ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
-description: Scopri come configurare, configurare e rendere Assistente alla carriera disponibile per Microsoft Teams.
+description: Informazioni su come configurare e rendere Assistente alla carriera disponibile per Microsoft Teams.
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
@@ -18,16 +18,16 @@ ms.custom:
 - admindeeplinkMAC
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f162b4dc15a2c0b776ba3c9c3b0df8ac0ed2ce87
-ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
+ms.openlocfilehash: e0edb6d1028a3e2143b13b24649745379b514592
+ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67024176"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "69242560"
 ---
 # <a name="set-up-and-configure-career-coach-for-microsoft-teams"></a>Configurare Assistente alla carriera per Microsoft Teams
 
-Questo articolo è rivolto agli amministratori IT dell'istruzione superiore per informazioni su come configurare Assistente alla carriera per Microsoft Teams.
+Questo articolo è rivolto agli amministratori IT dell'istruzione per informazioni su come configurare Assistente alla carriera per Microsoft Teams.
 
 I passaggi principali per configurare, configurare e rilasciare Career Coach sono:
 
@@ -94,7 +94,7 @@ Prima di configurare Assistente alla carriera, segui questi passaggi di preparaz
 
 Esistono due modi in cui le connessioni dell'account LinkedIn vengono usate da Assistente alla carriera:
 
-- Per consentire a studenti, docenti e personale didattico di connettere il proprio account Microsoft 365 al proprio account LinkedIn e [inviare inviti a LinkedIn da Assistente alla carriera](https://support.microsoft.com/topic/career-coach-quick-start-guide-for-students-c419db47-9290-4961-9684-c3f86a9b3708#bkmk_connect_your_linkedin_account).
+- Per consentire a studenti, docenti e personale didattico di connettere il proprio account di Microsoft 365 al proprio account LinkedIn e [inviare inviti a LinkedIn da Assistente alla carriera](https://support.microsoft.com/topic/career-coach-quick-start-guide-for-students-c419db47-9290-4961-9684-c3f86a9b3708#bkmk_connect_your_linkedin_account).
 - Per attivare le funzionalità [Crea la tua rete](https://support.microsoft.com/topic/career-coach-quick-start-guide-for-students-c419db47-9290-4961-9684-c3f86a9b3708#bkmk_build_your_network) ed [Esplora le professioni](https://support.microsoft.com/topic/career-coach-quick-start-guide-for-students-c419db47-9290-4961-9684-c3f86a9b3708#bkmk_discover_your_career_path) usando i dati degli ex studenti pubblici di LinkedIn.
 
 Per attivare le connessioni dell'account LinkedIn:
@@ -115,16 +115,16 @@ Per altre informazioni, vedere [Connessioni all'account LinkedIn in Azure Active
 > [!NOTE]
 > Nessun dato viene condiviso senza il consenso dell'utente.
 
-#### <a name="allow-microsoft-apps-in-teams"></a>Consentire le app Microsoft in Teams
+#### <a name="allow-microsoft-apps-in-teams"></a>Consentire Microsoft app in Teams
 
-Career Coach è un'applicazione Microsoft e quindi deve essere consentita nei criteri di autorizzazione dell'app Teams.
+Career Coach è un'applicazione Microsoft e quindi deve essere consentita all'interno dei criteri di autorizzazione dell'app Teams.
 
 1. Accedere **[all'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2066851)**.
 
 2. Nella barra di spostamento sinistra selezionare Criteri **[di autorizzazione](https://admin.teams.microsoft.com/policies/manage-apps)** **per le app** >  di Teams.
 
 3. Selezionare i criteri preferiti.
-    1. Se non si è certi dei criteri da usare, fare riferimento alla documentazione  relativa alla gestione dei criteri di [Microsoft Teams](policy-packages-edu.md)o usare la [procedura guidata](easy-policy-setup-edu.md) Criteri per l'istruzione per configurare un criterio per Microsoft Teams.
+    1. Se non si è certi dei criteri da usare, consultare la documentazione   [relativa alla gestione dei criteri di Teams Microsoft](policy-packages-edu.md)o usare la [procedura guidata](easy-policy-setup-edu.md) Criteri per l'istruzione per configurare un criterio per Microsoft Teams.
 
 Altre informazioni sulla [configurazione dei criteri di autorizzazione](teams-app-permission-policies.md).
 
@@ -135,17 +135,17 @@ Questo passaggio assicura che Assistente alla carriera sia configurato correttam
 1. Accedere [all'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2066851).
 
 2. Selezionare **Criteri di configurazione**  **delle app** > di Teams e selezionare i criteri preferiti.
-    1. Se non si è certi dei criteri da usare, fare riferimento alla documentazione  relativa alla gestione dei criteri di [Microsoft Teams](policy-packages-edu.md)o usare la [procedura guidata](easy-policy-setup-edu.md) Criteri per l'istruzione per configurare un criterio per Microsoft Teams.
+    1. Se non si è certi dei criteri da usare, consultare la documentazione   [relativa alla gestione dei criteri di Teams Microsoft](policy-packages-edu.md)o usare la [procedura guidata](easy-policy-setup-edu.md) Criteri per l'istruzione per configurare un criterio per Microsoft Teams.
 
 3. In **App installate** seleziona  **+ Aggiungi app**.
 
-4. Nel riquadro **Aggiungi app installate** cercare le app che si vogliono installare automaticamente per gli utenti quando avviano Teams. Puoi anche filtrare le app in base ai criteri di autorizzazione delle app.
+4. Nel riquadro **Aggiungi app installate** cercare le app che si vogliono installare automaticamente per gli utenti quando avviano Teams. È anche possibile filtrare le app in base ai criteri di autorizzazione delle app.
 
 5. Dopo aver scelto l'elenco di app, seleziona **Aggiungi**.
 
 6. Seleziona  **Salva** > **Conferma**.
 
-La modifica o l'assegnazione di un criterio può richiedere alcune ore prima che le modifiche diano effetto. Assistente alla carriera sarà disponibile in Microsoft Teams solo dopo il completamento delle modifiche.
+La modifica o l'assegnazione di un criterio può richiedere alcune ore prima che le modifiche diano effetto. Assistente alla carriera non sarà disponibile in Microsoft Teams finché le modifiche non saranno completate.
 
 ### <a name="step-2-purchase-career-coach-licenses"></a>Passaggio 2: Acquistare licenze di Career Coach
 
@@ -161,9 +161,9 @@ Sono disponibili due tipi di licenza.
 
 #### <a name="purchase-licenses"></a>Acquistare licenze
 
-Career Coach è disponibile in tutto il mondo (ad eccezione della Cina e della Russia) per gli istituti di istruzione superiore qualificati come licenza per i componenti aggiuntivi tramite Enrollment for Education Solutions (EES), Cloud Service Provider (CSP) e interfaccia di amministrazione di Microsoft 365 (web direct).
+Career Coach è disponibile in tutto il mondo (ad eccezione di Cina e Russia) per gli istituti di istruzione qualificati come licenza per i componenti aggiuntivi tramite Enrollment for Education Solutions (EES), Cloud Service Provider (CSP) e interfaccia di amministrazione di Microsoft 365 (web direct).
 
-Come app Microsoft Teams, il tenant deve avere Microsoft 365 A3/A5 o Office 365 A1/A3/A5 per acquistare la licenza di Assistente alla carriera per il componente aggiuntivo. Sono disponibili licenze separate per studenti e utenti di istituti di istruzione.
+Come Microsoft'app Teams, il tenant deve avere Microsoft 365 A3/A5 o Office 365 A1/A3/A5 per acquistare la licenza di Assistente alla carriera per il componente aggiuntivo. Sono disponibili licenze separate per studenti e utenti di istituti di istruzione.
 
 #### <a name="sign-up-for-a-free-trial"></a>Iscriviti per ottenere una versione di valutazione gratuita
 
@@ -191,53 +191,15 @@ Per configurare le impostazioni di Assistente alla carriera e consentirle agli u
 
 ### <a name="step-4-configure-career-coach-settings"></a>Passaggio 4: Configurare le impostazioni di Assistente alla carriera
 
-Per configurare Assistente alla carriera per studenti, docenti e personale didattico, sono necessarie le impostazioni seguenti.
+Le seguenti impostazioni di Assistente alla carriera possono essere configurate per studenti, docenti e personale didattico.
 
-- [Marchio e preferenze](#brand-and-preferences)
-- [Connessione LinkedIn](#linkedin-connection)
-- [Catalogo dei corsi](#course-catalog)
-- [Campi di studio](#fields-of-study)
+- [Connessione LinkedIn](#linkedin-connection-required) (obbligatorio)
+- [Marchio e preferenze](#brand-and-preferences-optional) (facoltativo)
+- [Catalogo dei corsi](#course-catalog-optional) (facoltativo)
+- [Campi di studio](#fields-of-study-optional) (facoltativi)
+- [Opzioni di personalizzazione](#customization-options-optional) (facoltativo)
 
-È anche possibile impostare impostazioni di [personalizzazione](#customization-options) facoltative.
-
-#### <a name="brand-and-preferences"></a>Marchio e preferenze
-
-Personalizza Assistente alla carriera in base al marchio del tuo istituto di istruzione. L'utente è tenuto a rispettare i diritti altrui, inclusi i diritti di copyright e marchio.
-
-> [!IMPORTANT]
-> Questa è una sezione obbligatoria. Assistente alla carriera non può essere attivato senza **marchio e preferenze** inviate.
-
-1. Accedere **[all'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2066851)**.
-
-2. Selezionare **le app** >  di Teams **Gestire le app** > **Impostazioni** > **assistente alla** >  carriera **Modificare il marchio e le preferenze**.
-
-3. In **Personalizzazione** aggiungere **Nome organizzazione**.
-
-4. Caricare **l'icona Organizzazione**. L'icona viene usata in Assistente alla carriera per identificare i contenuti specifici dell'istituto di istruzione, le risorse del catalogo dei corsi in tutta l'app e la sezione esperienze reali del dashboard.
-
-    L'icona è formattata in modo ottimale come:
-
-    - Un PNG trasparente
-    - Proporzioni di 1:1
-    - Dimensione massima di 64 px x 64 px
-
-5. Carica **l'immagine di anteprima del contenuto di apprendimento**. L'anteprima verrà usata per le risorse di apprendimento del catalogo del corso in tutta l'app quando non è specificata un'immagine specifica per un corso offerto dal tuo istituto di istruzione.
-
-    L'anteprima è formattata in modo ottimale come:
-
-    - Un PNG
-    - Proporzioni di 16:9
-    - Dimensione massima di 360 px x 200 px
-
-6. Questo passaggio è facoltativo. Aggiungere **l'URL dell'informativa sulla privacy dell'organizzazione**. Se aggiunta, l'informativa sulla privacy dell'istituto sarà disponibile per la revisione da parte degli studenti in Assistente alla carriera.
-
-7. Seleziona **Invia**.
-
-8. Per verificare che le impostazioni siano state inviate correttamente, controlla [lo stato di configurazione di Assistente alla carriera](#configuration-status) per **Il completamento**.
-
-![Screenshot che mostra la sezione personalizzazione di Assistente alla carriera dell'interfaccia di amministrazione.](media/career-coach-brand-updated.png)
-
-#### <a name="linkedin-connection"></a>Connessione LinkedIn
+#### <a name="linkedin-connection-required"></a>Connessione LinkedIn (obbligatorio)
 
 L'impostazione di connessione di LinkedIn collega Assistente alla carriera con i dati degli ex studenti pubblici della pagina linkedin dell'istituto.
 
@@ -245,6 +207,8 @@ Questo passaggio può essere completato solo se [le connessioni dell'account Lin
 
 > [!IMPORTANT]
 > Questa è una sezione obbligatoria. Assistente alla carriera non può essere attivato senza che sia stata verificata la connessione alla pagina dell'istituto di istruzione linkedin.
+>
+> La connessione LinkedIn supporta più tenant.
 
 ##### <a name="add-the-linkedin-school-page-url"></a>Aggiungere l'URL della pagina dell'istituto di istruzione linkedin
 
@@ -292,14 +256,45 @@ La verifica della pagina linkedin dell'istituto di istruzione deve essere comple
 
    ![Screenshot che mostra la verifica della pagina di LinkedIn nel portale di sviluppo di LinkedIn.](media/career-coach-linkedin-verification-updated.png)
 
-#### <a name="course-catalog"></a>Catalogo dei corsi
+#### <a name="brand-and-preferences-optional"></a>Marchio e preferenze (facoltativo)
+
+Personalizza Assistente alla carriera in base al marchio del tuo istituto di istruzione. L'utente è tenuto a rispettare i diritti altrui, inclusi i diritti di copyright e marchio.
+
+1. Accedere **[all'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2066851)**.
+
+2. Selezionare **le app** >  di Teams **Gestire le app** > **Impostazioni** > **assistente alla** >  carriera **Modificare il marchio e le preferenze**.
+
+3. In **Personalizzazione** aggiungere **Nome organizzazione**.
+
+4. Caricare **l'icona Organizzazione**. L'icona viene usata in Assistente alla carriera per identificare i contenuti specifici dell'istituto di istruzione, le risorse del catalogo dei corsi in tutta l'app e la sezione esperienze reali del dashboard.
+
+    L'icona è formattata in modo ottimale come:
+
+    - Un PNG trasparente
+    - Proporzioni di 1:1
+    - Dimensione massima di 64 px x 64 px
+
+5. Carica **l'immagine di anteprima del contenuto di apprendimento**. L'anteprima verrà usata per le risorse di apprendimento del catalogo del corso in tutta l'app quando non è specificata un'immagine specifica per un corso offerto dal tuo istituto di istruzione.
+
+    L'anteprima è formattata in modo ottimale come:
+
+    - Un PNG
+    - Proporzioni di 16:9
+    - Dimensione massima di 360 px x 200 px
+
+6. Questo passaggio è facoltativo. Aggiungere **l'URL dell'informativa sulla privacy dell'organizzazione**. Se aggiunta, l'informativa sulla privacy dell'istituto sarà disponibile per la revisione da parte degli studenti in Assistente alla carriera.
+
+7. Seleziona **Invia**.
+
+8. Per verificare che le impostazioni siano state inviate correttamente, controlla [lo stato di configurazione di Assistente alla carriera](#configuration-status) per **Il completamento**.
+
+![Screenshot che mostra la sezione personalizzazione di Assistente alla carriera dell'interfaccia di amministrazione.](media/career-coach-brand-updated.png)
+
+#### <a name="course-catalog-optional"></a>Catalogo dei corsi (facoltativo)
 
 Il catalogo dei corsi registra i corsi e i corsi offerti dal tuo istituto di istruzione.
 
 Assistente alla carriera usa i dati del catalogo dei corsi per identificare le competenze di uno studente dalla sua trascrizione e per suggerire corsi da seguire.
-
-> [!IMPORTANT]
-> Questa è una sezione obbligatoria. Assistente alla carriera non può essere attivato senza un catalogo di corsi.
 
 Questi corsi vengono utilizzati all'interno di Assistente alla carriera in due aree:
 
@@ -329,7 +324,7 @@ Iniziare con il documento di catalogo  del [corso di esempio](https://aka.ms
 
 7. Per verificare che le impostazioni siano state inviate correttamente, verifica che [lo stato di configurazione di Assistente alla carriera](#configuration-status) sia contrassegnato come **Completato**.
 
-Per caricare un nuovo file, assicurarsi che l'ultimo file sia deselezionato selezionando (X) per chiudere l'anteprima del documento. Questa azione consentirà di visualizzare di nuovo il pulsante **Carica** .
+Per caricare un nuovo file, assicurarsi che l'ultimo file sia deselezionato selezionando (**X**) per chiudere l'anteprima del documento. Questa azione consentirà di visualizzare di nuovo il pulsante **Carica** .
 
 ![Screenshot che mostra la sezione del catalogo dei corsi dell'app Assistente alla carriera.](media/course-catalog-updated.png)
 
@@ -377,16 +372,14 @@ Durante l'elaborazione, Assistente alla carriera analizzerà il documento per in
 
 Se una colonna nello stato del catalogo del corso è vuota, il documento è in fase di elaborazione e tali valori non sono disponibili. Questo processo può richiedere fino a 6 ore, a seconda delle dimensioni del catalogo. Una volta elaborato il documento, i valori verranno popolati. È possibile aggiornare la pagina per verificare la disponibilità di aggiornamenti.
 
-#### <a name="fields-of-study"></a>Campi di studio
+#### <a name="fields-of-study-optional"></a>Campi di studio (facoltativi)
 
 I campi di studio sono sinonimo di importanti aree di interesse, discipline accademiche e corsi di laurea. Questi campi di studio vengono indicati dagli studenti quando iniziano a usare Assistente alla carriera e iniziano a configurare il loro profilo personalizzato.
 
 L'elenco dei campi consente agli studenti di individuare i campi di studio che potrebbero interessarli e di aggiungere la loro attenzione accademica pianificata al loro profilo in Assistente alla carriera.
 
 > [!IMPORTANT]
-> Questa è una sezione obbligatoria. Assistente alla carriera non può essere attivato senza un elenco di campi di studio.
->
-> Aggiungere tutti i campi di studio disponibili per gli studenti, ad esempio Ingegneria, Inglese, Business e così via
+> Se si stanno configurando campi di studio per Assistente alla carriera, aggiungere tutti i campi di studio disponibili per gli studenti, ad esempio Ingegneria, Inglese, Business e così via.
 
 ##### <a name="add-the-fields-of-study"></a>Aggiungere i campi di studio
 
@@ -410,7 +403,7 @@ La tabella seguente mostra gli elementi da includere nei campi di studio:
 |---------------|----------|--------|--------------------------------|
 | campiDiStudy | Obbligatorio | Stringa | Il nome del campo di studio |
 
-#### <a name="customization-options"></a>Opzioni di personalizzazione
+#### <a name="customization-options-optional"></a>Opzioni di personalizzazione (facoltativo)
 
 L'impostazione Personalizzazione supporta l'aggiunta di opportunità per acquisire esperienze reali nel dashboard che l'istituto di istruzione offre agli studenti.
 
@@ -444,20 +437,20 @@ Nella sezione dello stato di configurazione della pagina delle impostazioni dell
 | --------------------------- | --------------------------------------------- | ----------------------------------------------------------- |
 | Stato provisioning del servizio | Assistente alla carriera sta inizializzando il tuo tenant.     | Il provisioning dei servizi viene eseguito automaticamente quando si accede alla pagina delle impostazioni di Assistente alla carriera. Le modifiche alla configurazione non verranno accettate fino al completamento della configurazione iniziale. Il tempo stimato per il provisioning del servizio può essere di 15 minuti. |
 | Stato provisioning del servizio | Career Coach è pronto per essere configurato.       | La pagina delle impostazioni di Assistente alla carriera è pronta per l'amministratore IT per l'invio delle impostazioni. |
-| Marchio e preferenze       | Non avviato                                   | Le impostazioni devono essere inviate. |
-| Marchio e preferenze       | Mancante: icona Apprendimento                        | Carica l'immagine di anteprima del contenuto di apprendimento mancante. |
-| Marchio e preferenze       | Mancante: Logo                                 | Carica l'icona dell'istituto mancante. |
-| Marchio e preferenze       | Mancante: nome dell'istituto                     | Caricare il nome dell'istituto mancante. |
-| Marchio e preferenze       | Completo                                      | Non sono necessarie altre azioni. L'impostazione è stata completata. |
-| Caricamento catalogo corsi       | Non avviato                                   | Il file CSV del catalogo del corso deve essere inviato. |
+| Marchio e preferenze       | Non avviato                                   | Impostazioni non inviate. Si tratta di un passaggio facoltativo che non impedisce il completamento della configurazione. |
+| Marchio e preferenze       | Mancante: icona Apprendimento                        | Carica un'immagine di anteprima del contenuto di apprendimento. |
+| Marchio e preferenze       | Mancante: Logo                                 | Icona Carica un istituto. |
+| Marchio e preferenze       | Mancante: nome dell'istituto                     | Caricare il nome di un istituto. |
+| Marchio e preferenze       | Completo                                      | L'impostazione è stata completata. |
+| Caricamento catalogo corsi       | Non avviato                                   | Catalogo dei corsi non inviato. Si tratta di un passaggio facoltativo che non impedisce il completamento della configurazione. |
 | Caricamento catalogo corsi       | Mancante: caricamento corretto del catalogo dei corsi   | Controllare lo stato del catalogo del corso per informazioni dettagliate sull'elaborazione del catalogo del corso. |
-| Caricamento catalogo corsi       | Completo                                      | Non sono necessarie altre azioni. L'impostazione è stata completata. |
-| Connessione dell'istituto di istruzione di LinkedIn  | Non avviato                                   | L'URL della pagina dell'istituto di istruzione LinkedIn deve essere inviato. |
+| Caricamento catalogo corsi       | Completo                                      | L'impostazione è stata completata. |
+| Connessione dell'istituto di istruzione di LinkedIn  | Non avviato                                   | URL della pagina dell'istituto di istruzione LinkedIn non inviato. |
 | Connessione dell'istituto di istruzione di LinkedIn  | Mancante: URL della pagina dell'istituto di istruzione LinkedIn approvato | In attesa dell'approvazione della verifica da parte dell'amministratore della pagina LinkedIn School. |
 | Connessione dell'istituto di istruzione di LinkedIn  | Completo                                      | Non sono necessarie altre azioni. L'impostazione è stata completata. |
-| Caricamento di campi di studio      | Non avviato                                   | Campo di studio CSV deve essere inviato. |
+| Caricamento di campi di studio      | Non avviato                                   | Csv del campo di studio non inviato. Si tratta di un passaggio facoltativo che non impedisce il completamento della configurazione. |
 | Caricamento di campi di studio      | Mancanti: aree di interesse                    | Verificare se il caricamento nel campo di studio ha esito positivo. |
-| Caricamento di campi di studio      | Completo                                      | Non sono necessarie altre azioni. L'impostazione è stata completata. |
+| Caricamento di campi di studio      | Completo                                      | L'impostazione è stata completata. |
 
 Una volta segnati come completati tutti i passaggi necessari, Assistente alla carriera può essere rilasciato correttamente nel tuo tenant.
 
@@ -473,7 +466,7 @@ Per istruzioni dettagliate, vedere [Assegnare licenze agli utenti](/microsoft-
 
 ### <a name="set-up-policies-and-pin-the-app"></a>Configurare i criteri e aggiungere l'app
 
-L'assistente alla carriera lo aggiungerà alla barra sinistra della finestra di Microsoft Teams per renderlo più accessibile e visibile per gli studenti. Se preferisci aggiungere Assistente alla carriera per un sottoinsieme dei tuoi utenti, dovrai implementare un [criterio di configurazione](teams-app-setup-policies.md) con quel gruppo incluso.
+L'aggiunta di Assistente alla carriera lo aggiungerà alla barra sinistra della finestra di Microsoft Teams per renderlo più accessibile e visibile per gli studenti. Se preferisci aggiungere Assistente alla carriera per un sottoinsieme dei tuoi utenti, dovrai implementare un [criterio di configurazione](teams-app-setup-policies.md) con quel gruppo incluso.
 
 1. Accedere **[all'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2066851)**.
 

@@ -22,12 +22,12 @@ description: L'amministratore IT o di Teams può configurare riunioni esterne e 
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: d1cb230b362ca3c38c9986d54f222a903cb06eed
-ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
+ms.openlocfilehash: d3396c9982cfe4de9eacc085bfe3a572fdc4b667
+ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2022
-ms.locfileid: "69198568"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "69242430"
 ---
 # <a name="manage-external-meetings-and-chat-in-microsoft-teams"></a>Gestire riunioni esterne e chattare in Microsoft Teams
 
@@ -55,7 +55,9 @@ L'interfaccia di amministrazione di Teams controlla l'accesso esterno a livello 
 > [!NOTE]
 > Gli utenti Teams possono aggiungere app quando tengono riunioni o chat con persone di altre organizzazioni. Possono inoltre usare app condivise da componenti di altre organizzazioni quando prendono parte a riunioni o chat tenute da quelle organizzazioni. Si applicano i criteri sui dati dell’organizzazione dell’utente ospitante, così come le pratiche di condivisione dei dati di tutte le app di terze parti condivise da quell’organizzazione.
 
-## <a name="allow-or-block-domains"></a>Consentire o bloccare domini
+## <a name="specify-trusted-organizations"></a>Specificare le organizzazioni attendibili
+
+È possibile consentire o bloccare determinati domini per definire quali organizzazioni sono attendibili per le riunioni esterne e la chat. Tenere presente che anche le altre organizzazioni dovranno consentire il dominio dell'organizzazione.
 
 Se si aggiungono domini bloccati, verranno consentiti tutti gli altri domini. Se si aggiungono domini consentiti, tutti gli altri domini verranno bloccati. L'eccezione a questa regola è se alle riunioni sono consentiti partecipanti anonimi. Esistono tre scenari per la configurazione dell'accesso esterno nell'interfaccia di amministrazione di Teams (**Utenti** > **Accesso esterno**):
 
@@ -70,7 +72,7 @@ Se si aggiungono domini bloccati, verranno consentiti tutti gli altri domini. Se
 - **Bloccare tutti i domini esterni:** impedisce agli utenti dell'organizzazione di trovare, chiamare, chattare e configurare riunioni con persone esterne all'organizzazione in qualsiasi dominio.
 
 > [!NOTE]
-> I domini consentiti o bloccati si applicano alle riunioni solo se l'accesso anonimo alle riunioni è disattivato.
+> Persone da domini bloccati possono comunque partecipare alla riunione in modalità anonima se è consentito l'accesso anonimo.
 
 ![Screenshot delle impostazioni per l'accesso esterno.](./media/external-access-domain-settings.png)
 

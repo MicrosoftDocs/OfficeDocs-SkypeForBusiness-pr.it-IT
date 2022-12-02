@@ -11,20 +11,20 @@ ms.collection:
 ms.reviewer: ''
 search.appverid: MET150
 f1keywords: ''
-description: Scopri le misure di privacy, conformità e purview adottate da Microsoft per quanto riguarda l'istruzione o l'Assistente alla carriera di EDU.
+description: Scopri le misure di privacy, conformità e estensione adottate da Microsoft per quanto riguarda l'istruzione o l'assistente alla carriera dell'EDU.
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 0f28381aad61cbe7fecf21e189bc5ab278ce3008
-ms.sourcegitcommit: 9ea1ed450ba89e9cbc094018a832bd25c08e92e4
+ms.openlocfilehash: 1a21f3337ca9255572c25fd152f928c6444dc317
+ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/02/2022
-ms.locfileid: "68825684"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "69242490"
 ---
 # <a name="career-coach-data-and-compliance"></a>Dati e conformità di Career Coach
 
-Questo articolo descrive come usare le funzionalità in-app, oltre ad altri strumenti che consentono di trovare e agire sui dati personali o sulle informazioni personali per rispondere alle richieste dell'interessato (DSR) in conformità agli obblighi del GDPR. Career Coach classifica ampiamente i dati in due categorie: contenuto del cliente e log generati dal sistema. In Assistente alla carriera, il contenuto dei clienti include dati utente, dati di configurazione del tenant e dati sulle attività degli studenti, mentre i log generati dal sistema includono log e dati correlati generati da Microsoft che consentono a Microsoft di fornire servizi aziendali agli utenti.
+Questo articolo descrive come usare le funzionalità in-app, oltre ad altri strumenti che consentono di trovare e agire sui dati personali o sulle informazioni personali per rispondere alle richieste dell'interessato (DSR) in conformità agli obblighi del GDPR. Career Coach classifica ampiamente i dati in due categorie: contenuto del cliente e log generati dal sistema. In Assistente alla carriera, il contenuto dei clienti include dati utente, dati di configurazione del tenant e dati sulle attività degli studenti, mentre i log generati dal sistema includono log e dati correlati generati da Microsoft che aiutano Microsoft fornire servizi aziendali agli utenti.
 
 ## <a name="customer-content"></a>Contenuto del cliente
 
@@ -41,7 +41,7 @@ Segui questi passaggi per eliminare i dati utente da Career Coach:
     1. Tutti i dati utente per il tenant.
     2. Dati utente per un utente specifico. Includere l'OID dell'utente (identificatori di oggetto) come parte della richiesta di eliminazione.
 3. Una volta archiviato, il ticket di supporto verrà risolto dopo una settimana per soddisfare i criteri di conservazione minimi della conformità. È possibile annullare l'operazione durante questo periodo.
-4. Dopo una settimana, il team assistente alla carriera elimina tutti i dati correlati al tenant. Il supporto Microsoft monitora il ticket e ti avviserà una volta completato il processo  **di eliminazione, entro non più di 30 giorni**.
+4. Dopo una settimana, il team assistente alla carriera elimina tutti i dati correlati al tenant. Microsoft supporto monitora il ticket e ti avviserà una volta completato il processo di eliminazione **, entro non più di 30 giorni**.
 
 #### <a name="exporting-user-data"></a>Esportazione dei dati degli utenti
 
@@ -61,7 +61,7 @@ Segui questi passaggi per eliminare i dati di configurazione del tenant da Caree
 
 1. Un amministratore globale deve [aprire un ticket di supporto](https://edusupport.microsoft.com/support?product_id=career_coach) indicando chiaramente la richiesta di eliminare i dati di configurazione per il tenant.  **Non è possibile limitare il set di dati o l'intervallo di tempo dell'eliminazione**.
 1. Una volta archiviato, il ticket di supporto verrà risolto dopo una settimana per soddisfare i criteri di conservazione minimi della conformità. È possibile annullare l'operazione durante questo periodo.
-1. Dopo una settimana, il team assistente alla carriera elimina tutti i dati correlati al tenant. Il supporto Microsoft monitora il ticket e ti avviserà una volta completato il processo  **di eliminazione, entro non più di 30 giorni**.
+1. Dopo una settimana, il team assistente alla carriera elimina tutti i dati correlati al tenant. Microsoft supporto monitora il ticket e ti avviserà una volta completato il processo di eliminazione **, entro non più di 30 giorni**.
 
 ### <a name="student-activity-data"></a>Dati delle attività degli studenti
 
@@ -73,22 +73,22 @@ Per rimuovere i dati delle attività degli studenti per una persona o un tenant,
 
 ## <a name="system-generated-logs"></a>Log generati dal sistema
 
-I log generati dal sistema includono log e dati correlati generati da Microsoft che consentono a Microsoft di fornire servizi aziendali agli utenti. I log generati dal sistema contengono principalmente dati con pseudonimi, ad esempio identificatori univoci (in genere un numero generato dal sistema) che non possono identificare autonomamente una persona ma vengono utilizzati per fornire i servizi aziendali agli utenti. Esempi di questi dati includono:
+I log generati dal sistema includono log e dati correlati generati da Microsoft che aiutano Microsoft fornire servizi aziendali agli utenti. I log generati dal sistema contengono principalmente dati con pseudonimi, ad esempio identificatori univoci (in genere un numero generato dal sistema) che non possono identificare autonomamente una persona ma vengono utilizzati per fornire i servizi aziendali agli utenti. Esempi di questi dati includono:
 
 - Dati sull'utilizzo di prodotti e servizi, ad esempio i log attività degli utenti.
 - Richieste di ricerca utente e dati di query.
 - Dati generati da prodotti e servizi come prodotto della funzionalità di sistema e dell'interazione da parte di utenti o altri sistemi.
 
 > [!NOTE]
-> La possibilità di limitare o rettificare i dati nei log generati dal sistema non è supportata. I dati nei log generati dal sistema costituiscono azioni reali eseguite all'interno dei dati di diagnostica e cloud Microsoft e le modifiche apportate a tali dati compromettono la cronologia delle azioni e aumentano i rischi di frode e sicurezza. Career Coach conserva i registri generati dal sistema per 30 giorni.
+> La possibilità di limitare o rettificare i dati nei log generati dal sistema non è supportata. I dati nei log generati dal sistema costituiscono azioni fattuali condotte all'interno del Microsoft dati cloud e diagnostici e le modifiche a tali dati compromettono la cronologia delle azioni e aumentano i rischi di frode e sicurezza. Career Coach conserva i registri generati dal sistema per 30 giorni.
 
 ### <a name="exporting-and-deleting-system-generated-logs"></a>Esportazione ed eliminazione di log generati dal sistema
 
-L'amministratore globale tenant è l'unica persona all'interno dell'organizzazione che può accedere ai log generati dal sistema associati all'uso da parte di un utente specifico di servizi e applicazioni Office 365. Career Coach si allinea con [il processo di accesso ed esportazione dei log generati dal sistema forniti da Office 365](https://learn.microsoft.com/compliance/regulatory/gdpr-dsr-Office365#accessing-and-exporting-system-generated-logs).
+L'amministratore globale tenant è l'unica persona all'interno dell'organizzazione che può accedere ai log generati dal sistema associati all'uso da parte di un utente specifico di servizi e applicazioni Office 365. Career Coach si allinea con [il processo di accesso ed esportazione dei log generati dal sistema forniti da Office 365](/compliance/regulatory/gdpr-dsr-Office365#accessing-and-exporting-system-generated-logs).
 
 ## <a name="more-information"></a>Altre informazioni
 
 - [Introduzione a Career Coach per Microsoft Teams](career-coach.md)
 - [Domande frequenti sulla privacy](https://privacy.microsoft.com/faq)
-- [Prodotti Microsoft e dati - Privacy Microsoft](https://privacy.microsoft.com/privacy-in-our-products)
-- [Impostazioni di privacy dell'account Microsoft](https://account.microsoft.com/account/privacy?refd=privacy.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy%2F%3Frefd%3Dprivacy.microsoft.com&destrt=privacy-dashboard)
+- [Microsoft prodotti e dati - Microsoft Privacy](https://privacy.microsoft.com/privacy-in-our-products)
+- [impostazioni di privacy dell'account Microsoft](https://account.microsoft.com/account/privacy?refd=privacy.microsoft.com&ru=https%3A%2F%2Faccount.microsoft.com%2Fprivacy%2F%3Frefd%3Dprivacy.microsoft.com&destrt=privacy-dashboard)

@@ -1,32 +1,32 @@
 ---
 title: Introduzione a Career Coach per Microsoft Teams
-author: SerdarSoysal
-ms.author: serdars
+author: DaniEASmith
+ms.author: danismith
 ms.reviewer: alaina.creager
 manager: serdars
 ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
-description: Scopri come iniziare a usare Assistente alla carriera per Microsoft Teams, incluse le lingue e i requisiti supportati.
+description: Informazioni su come iniziare a usare Career Coach per Microsoft Teams, incluse le lingue e i requisiti supportati.
 ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365initiative-edu
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f85e257e42abace7d39c9fa13fc81a7a76cd0c4f
-ms.sourcegitcommit: 3266fde54b92a18865d666b98e4e7e8322b9dedc
+ms.openlocfilehash: 149a23de49cacc0f7c345f2c9e1de4e29a4ba165
+ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67023969"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "69242280"
 ---
 # <a name="get-started-with-career-coach-for-microsoft-teams"></a>Introduzione a Career Coach per Microsoft Teams
 
-Assistente alla carriera è un'app Microsoft Teams per l'istruzione basata su LinkedIn che fornisce indicazioni personalizzate agli studenti dell'istruzione superiore per esplorare il loro percorso professionale. Con Assistente alla carriera, gli istituti di istruzione possono aiutare gli studenti a scoprire il loro percorso professionale, sviluppare competenze reali e costruire la propria rete in un unico posto.
+Assistente alla carriera è un'app Microsoft Teams per l'istruzione basata su LinkedIn che fornisce agli studenti indicazioni personalizzate per esplorare il loro percorso professionale. Con Assistente alla carriera, gli istituti di istruzione possono aiutare gli studenti a scoprire il loro percorso professionale, sviluppare competenze reali e costruire la propria rete in un unico posto.
 
-Questo articolo è rivolto agli amministratori IT dell'istruzione superiore per iniziare a configurare Career Coach per il proprio istituto.
+Questo articolo è rivolto agli amministratori IT dell'istruzione per iniziare a configurare Assistente alla carriera per il proprio istituto.
 
 Ecco le risorse di Assistente alla carriera per responsabili dell'istruzione, educatori e studenti:
 
@@ -63,10 +63,10 @@ Esamina i requisiti seguenti per configurare Assistente alla carriera per il tuo
 
 ### <a name="data-and-files-from-your-educational-institution"></a>Dati e file dell'istituto di istruzione
 
-- Logo e risorse grafiche dell'istituto di istruzione [nel formato richiesto](career-coach-set-up-steps.md#brand-and-preferences).
-- Dati del catalogo dei corsi. [Visualizzare il formato di file](https://aka.ms/career-coach/docs/it-admins/sample-catalog) e [documento](career-coach-set-up-steps.md#course-catalog-document-format-and-schema) di esempio.
-- Elenco dei campi di studio offerti. [Visualizzare un file di esempio](https://aka.ms/career-coach/docs/it-admins/sample-fieldsofstudy).
-- [URL della pagina linkedin](https://www.linkedin.com/help/linkedin/answer/40133/differences-between-a-linkedin-page-for-a-school-and-company?lang=en) dell'istituto di istruzione.
+- [URL della pagina linkedin](https://www.linkedin.com/help/linkedin/answer/40133/differences-between-a-linkedin-page-for-a-school-and-company?lang=en) dell'istituto di istruzione (obbligatorio).
+- Logo e risorse grafiche dell'istituto di istruzione [nel formato richiesto](career-coach-set-up-steps.md#brand-and-preferences-optional) (facoltativo).
+- Dati del catalogo dei corsi. [Visualizzare il formato di file](https://aka.ms/career-coach/docs/it-admins/sample-catalog) e [documento](career-coach-set-up-steps.md#course-catalog-document-format-and-schema) di esempio (facoltativo).
+- Elenco dei campi di studio offerti. [Visualizzare il file di esempio](https://aka.ms/career-coach/docs/it-admins/sample-fieldsofstudy) (facoltativo).
 - URL dell'informativa sulla privacy dell'istituto di istruzione (facoltativo).
 - Gli istituti di istruzione sono collegati a risorse correlate alla carriera, ad esempio un sito Web di servizi professionali e post di lavoro per studenti (facoltativo).
 

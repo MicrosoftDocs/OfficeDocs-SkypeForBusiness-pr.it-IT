@@ -1,5 +1,5 @@
 ---
-title: Configurare un operatore automatico per Microsoft Teams
+title: Configurare un operatore automatico di Microsoft Teams
 author: DaniEASmith
 ms.author: danismith
 manager: serdars
@@ -20,15 +20,15 @@ appliesto:
 ms.localizationpriority: medium
 ms.custom:
 - Phone System
-description: Informazioni su come configurare e gestire gli operatori automatici in Microsoft Teams.
-ms.openlocfilehash: 68a3364130fa344786cffbc642fe77e0b7a6a2cd
-ms.sourcegitcommit: 0a13f96663c7466b08d654bedcb6206f302189a1
+description: Informazioni su come configurare un operatore automatico di Microsoft Teams.
+ms.openlocfilehash: 7f90aa2d61540895601d09c2f7eab9b133a6ee1a
+ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2022
-ms.locfileid: "69139140"
+ms.lasthandoff: 12/02/2022
+ms.locfileid: "69242420"
 ---
-# <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
+# <a name="set-up-a-microsoft-teams-auto-attendant"></a>Configurare un operatore automatico di Microsoft Teams
 
 Gli operatori automatici consentono alle persone di chiamare la tua organizzazione e di navigare in un sistema di menu per parlare con il reparto, la coda di chiamata, la persona o un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'interfaccia di amministrazione di Microsoft Teams o con PowerShell.
 
@@ -39,7 +39,7 @@ Gli operatori automatici possono reindirizzare le chiamate, in base all'input de
 - **Operatore** - l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. L'operatore può essere definito come una qualsiasi delle altre destinazioni in questo elenco.
 - **Persona dell'organizzazione** : una persona dell'organizzazione che può ricevere chiamate vocali. Questa persona può essere un utente online o un utente ospitato in locale usando Skype for Business Server.
 - **App vocale** : un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato all'operatore automatico o alla coda di chiamata quando si sceglie questa destinazione.
-- **Segreteria telefonica** : la cassetta postale vocale associata a un gruppo di Microsoft 365 specificata. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lascia un messaggio dopo il tono". richiesta di sistema.
+- **Segreteria telefonica**: cassetta postale vocale associata a un gruppo di Microsoft 365 specificato. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lascia un messaggio dopo il tono". richiesta di sistema.
   - In M365 Amministrazione Center abilitare l'opzione "Consenti agli utenti esterni all'organizzazione di inviare un messaggio di posta elettronica al team" per il gruppo di Microsoft 365 specificato
 - **Numero di telefono esterno** : qualsiasi numero di telefono. Vedere [i dettagli tecnici sul trasferimento esterno](create-a-phone-system-auto-attendant.md?tabs=general-info#external-phone-number-transfers---technical-details).
 - **Annuncio (file audio):** riprodurre un file audio. Messaggio di annuncio registrato che viene caricato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere di dimensioni superiori a 5 MB. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
