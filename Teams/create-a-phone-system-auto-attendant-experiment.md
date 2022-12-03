@@ -1,5 +1,5 @@
 ---
-title: Configurare un operatore automatico di Microsoft Teams
+title: Configurare un operatore automatico per Microsoft Teams
 author: DaniEASmith
 ms.author: danismith
 manager: serdars
@@ -20,19 +20,16 @@ appliesto:
 ms.localizationpriority: medium
 ms.custom:
 - Phone System
-adobe-target: true
-adobe-target-activity: ''
-adobe-target-experience: Experience B
-adobe-target-content: ./create-a-phone-system-auto-attendant-experiment
+robots: noindex
 description: Informazioni su come configurare e gestire gli operatori automatici in Microsoft Teams.
-ms.openlocfilehash: 1908ccb02fa3aadc0bb906f718e5493eb8ff8e2f
+ms.openlocfilehash: cafbe1594666f156801f83b7944e4ecce4887752
 ms.sourcegitcommit: 54c691bd34980a47a5ebf58555529a618a8cada7
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/03/2022
-ms.locfileid: "69251759"
+ms.locfileid: "69252001"
 ---
-# <a name="set-up-a-microsoft-teams-auto-attendant"></a>Configurare un operatore automatico di Microsoft Teams
+# <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
 Gli operatori automatici consentono alle persone di chiamare la tua organizzazione e di navigare in un sistema di menu per parlare con il reparto, la coda di chiamata, la persona o un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'interfaccia di amministrazione di Microsoft Teams o con PowerShell.
 
@@ -52,7 +49,7 @@ Gli operatori automatici possono reindirizzare le chiamate, in base all'input de
 > [!NOTE]
 > Quando si reindirizzano le chiamate a una **Persona nell'organizzazione**, tale persona deve essere abilitata per la voce. Per informazioni dettagliate sull'abilitazione della voce, vedere [Assegnare licenze per i componenti aggiuntivi di Teams agli utenti](teams-add-on-licensing/assign-teams-add-on-licenses.md).
 >
-> Durante la definizione di un **operatore** è facoltativo, è consigliabile.  Gli operatori automatici reindirizzano le chiamate all'operatore in caso di errore nella configurazione dell'operatore automatico a causa dell'eliminazione di un account di un utente o di un account di segreteria telefonica condivisa.  Se non è definito un operatore, l'operatore automatico rilascerà la chiamata.
+> Durante la definizione di un **operatore** è facoltativo, è consigliabile.  Gli operatori automatici reindirizzano le chiamate all'operatore se il chiamante non effettua una selezione sui menu, seleziona ripetutamente le opzioni non valide o le chiamate per nome o numero ripetutamente non riescono.  Se non è definito un operatore, l'operatore automatico rilascerà la chiamata.
 
 ## <a name="whats-new-for-auto-attendants-in-the-past-6-months"></a>Novità per gli operatori automatici degli ultimi 6 mesi
 
@@ -75,9 +72,7 @@ I passaggi descritti nell'articolo creano operatori automatici con l'interfaccia
 
 ## <a name="follow-these-steps-to-set-up-your-auto-attendant"></a>Segui questi passaggi per configurare l'operatore automatico
 
-## <a name="step-1-general-info"></a>[Passaggio 1: Informazioni generali](#tab/general-info)
-
-## <a name="step-1-set-the-auto-attendants-general-information"></a>Passaggio 1: impostare le informazioni generali dell'operatore automatico
+### <a name="step-1-set-the-auto-attendants-general-information"></a>Passaggio 1: impostare le informazioni generali dell'operatore automatico
 
 Per configurare un operatore automatico, [nell'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2066851) espandi **Voce**, seleziona **Operatori automatici** e quindi **aggiungi**.
 
@@ -96,23 +91,21 @@ Per configurare un operatore automatico, [nell'interfaccia di amministrazione di
 
 Dopo aver impostato le informazioni generali dell'operatore automatico, seleziona **Avanti**.
 
-## <a name="step-2-basic-call-flow"></a>[Passaggio 2: Flusso delle chiamate di base](#tab/call-flow)
+### <a name="step-2-set-up-the-basic-call-flow"></a>Passaggio 2: Configurare il flusso delle chiamate di base
 
-## <a name="step-2-set-up-the-basic-call-flow"></a>Passaggio 2: Configurare il flusso delle chiamate di base
-
-### <a name="set-a-greeting"></a>Impostare un messaggio di saluto
+#### <a name="set-a-greeting"></a>Impostare un messaggio di saluto
 
 - Se si seleziona **Riproduci file audio** , è possibile usare il pulsante **Carica file** per caricare un messaggio di saluto registrato salvato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere di dimensioni superiori a 5 MB.
 
 - Se selezioni **Digita un messaggio di saluto** , il sistema leggerà il testo digitato (fino a 1000 caratteri) quando l'operatore automatico risponde a una chiamata.
 
-### <a name="route-the-call"></a>Instradare la chiamata
+#### <a name="route-the-call"></a>Instradare la chiamata
 
 - Se selezioni **Disconnetti**, l'operatore automatico riaggancia la chiamata.
 - Se selezioni **Reindirizza chiamata**, puoi scegliere una delle destinazioni per il routing delle chiamate.
 - Se si seleziona **Riproduci opzioni menu**, è possibile scegliere **Riproduci file audio** o **Digitare un messaggio di saluto** e quindi scegliere tra le opzioni di menu e la ricerca nella directory.
 
-#### <a name="play-menu-options"></a>Opzioni del menu Riproduci
+##### <a name="play-menu-options"></a>Opzioni del menu Riproduci
 
 *Nuovo: è possibile abilitare l'opzione Forza ascolto che richiede ai chiamanti di ascoltare tutte le opzioni di menu prima di effettuare la selezione.*
  *I tasti Nuovi - \* (asterisco) e \# (cancelletto) ora possono essere utilizzati nelle opzioni di menu.*
@@ -131,7 +124,7 @@ Per ogni opzione di menu, specificare le impostazioni seguenti:
 
 - **Reindirizza a** : la destinazione di instradamento delle chiamate usata quando i chiamanti scelgono questa opzione. Se stai reindirizzando a un operatore automatico o a una coda di chiamata, scegli l'account della risorsa associato.
 
-##### <a name="directory-search"></a>Ricerca nella directory
+###### <a name="directory-search"></a>Ricerca nella directory
 
 Se si assegnano tasti di chiamata alle destinazioni, è **consigliabile scegliere Nessuno** per **la ricerca nella directory**. Se un chiamante tenta di comporre un nome o un'estensione usando chiavi assegnate a destinazioni specifiche, potrebbe essere instradato in modo imprevisto a una destinazione prima di completare l'immissione del nome o dell'estensione. Ti consigliamo di creare un operatore automatico separato per la ricerca in elenco e di disporre del collegamento principale dell'operatore automatico con un tasto di chiamata.
 
@@ -148,9 +141,7 @@ Per ulteriori informazioni, consulta Il riferimento di [chiamata e la voce](dial
 
 Dopo aver impostato le opzioni di base per il flusso delle chiamate, selezionare **Avanti**.
 
-## <a name="step-3-after-hours-call-flow"></a>[Passaggio 3: Flusso delle chiamate fuori orario](#tab/after-hours)
-
-## <a name="step-3-set-up-call-flow-for-after-hours-optional"></a>Passaggio 3: Configurare il flusso delle chiamate per fuori orario (facoltativo)
+### <a name="step-3-set-up-call-flow-for-after-hours-optional"></a>Passaggio 3: Configurare il flusso delle chiamate per fuori orario (facoltativo)
 
 L'orario di ufficio può essere impostato per ogni operatore automatico.
 
@@ -168,9 +159,7 @@ Se si vuole separare il routing delle chiamate per i chiamanti in orario di chiu
 
 Dopo aver aggiunto il flusso delle chiamate fuori orario, seleziona **Avanti**.
 
-## <a name="step-4-holiday-call-flow"></a>[Passaggio 4: Flusso delle chiamate natalizie](#tab/holidays)
-
-## <a name="step-4-set-up-call-flows-for-holidays-optional"></a>Passaggio 4: Configurare i flussi delle chiamate per le festività (facoltativo)
+### <a name="step-4-set-up-call-flows-for-holidays-optional"></a>Passaggio 4: Configurare i flussi delle chiamate per le festività (facoltativo)
 
 L'operatore automatico può avere un flusso delle chiamate per ogni [festività configurata](set-up-holidays-in-teams.md). È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
 
@@ -197,9 +186,7 @@ Ripetere la procedura in base alle esigenze per ogni festività aggiuntiva.
 
 Dopo aver aggiunto tutte le ore di festività, selezionare **Avanti**.
 
-## <a name="step-5-dial-scope"></a>[Passaggio 5: Ambito di chiamata](#tab/dial-scope)
-
-## <a name="step-5-set-up-dial-scope-optional"></a>Passaggio 5: Configurare l'ambito di chiamata (facoltativo)
+### <a name="step-5-set-up-dial-scope-optional"></a>Passaggio 5: Configurare l'ambito di chiamata (facoltativo)
 
 *L'ambito di chiamata* definisce quali utenti sono disponibili nella directory quando un chiamante usa l'opzione di chiamata per nome o dial-by-extension. Il valore predefinito **Tutti gli utenti online** include tutti gli utenti dell'organizzazione che sono utenti online o ospitati in locale tramite Skype for Business Server.
 
@@ -212,9 +199,7 @@ Se un utente è presente in entrambi gli elenchi, verrà escluso dalla directory
 
 Dopo aver selezionato le opzioni **dell'ambito di chiamata** , selezionare **Avanti**.
 
-## <a name="step-6-resource-accounts"></a>[Passaggio 6: Account delle risorse](#tab/resource-accounts)
-
-## <a name="step-6-set-up-resource-accounts-optional"></a>Passaggio 6: Configurare gli account delle risorse (facoltativo)
+### <a name="step-6-set-up-resource-accounts-optional"></a>Passaggio 6: Configurare gli account delle risorse (facoltativo)
 
 Tutti gli operatori automatici devono avere un account di risorse associato.  Gli operatori automatici di primo livello avranno bisogno di almeno un account di risorse con un numero di servizio associato. Se lo desideri, puoi assegnare diversi account di risorse a un operatore automatico, ognuno con un numero di servizio separato.
 
@@ -223,8 +208,6 @@ Per aggiungere un account della risorsa, selezionare **Aggiungi account** e cerc
 Dopo aver aggiunto gli account delle risorse, selezionare **Avanti**.
 
 Per altre informazioni, vedere [Gestire gli account delle risorse di Teams](manage-resource-accounts.md) .
-
----
 
 ## <a name="resources-for-complex-scenarios"></a>Risorse per scenari complessi
 

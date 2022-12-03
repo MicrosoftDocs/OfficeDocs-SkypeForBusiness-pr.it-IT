@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - chat-teams-channels-revamp
 description: Informazioni sui criteri di messaggistica e su come possono essere usati per controllare la messaggistica chat in Teams.
-ms.openlocfilehash: d819811ba39e3c0a8246e399977079aa15447934
-ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
+ms.openlocfilehash: e3925d76c66c324337982f37e704caded77b02a5
+ms.sourcegitcommit: 54c691bd34980a47a5ebf58555529a618a8cada7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2022
-ms.locfileid: "69198748"
+ms.lasthandoff: 12/03/2022
+ms.locfileid: "69251779"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in Teams
 
@@ -80,17 +80,18 @@ A un utente può essere assegnato un solo criterio di messaggistica alla volta.
 Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 
 - **I proprietari possono eliminare i messaggi inviati**  Usare questa impostazione per consentire ai proprietari di eliminare i messaggi o i post del canale inviati dall'utente.
-- **Eliminare i messaggi inviati** Usare questa impostazione per consentire agli utenti di eliminare i messaggi inviati in chat.
+- **Eliminare i messaggi inviati** Usare questa impostazione per consentire agli utenti di eliminare singoli messaggi inviati in chat.
+- **Eliminare una chat** Usare questa impostazione per consentire agli utenti di eliminare intere conversazioni dall'elenco chat. In questo modo verranno eliminati solo i contenuti della chat per l'utente che esegue l'azione; gli altri utenti nella chat potranno comunque vedere tutti i messaggi. L'utente che ha eliminato la chat non vedrà messaggi esistenti nel proprio feed attività o risultati della ricerca per la chat eliminata; anche questo utente verrà rimosso dalla chat eliminata. Agli utenti verrà chiesto di confermare la decisione di eliminare una chat. Questa impostazione è attivata per impostazione predefinita. Se questa impostazione è disattivata, gli utenti non vedranno più l'opzione di eliminazione per le loro chat.
 - **Modificare i messaggi inviati** Usare questa impostazione per consentire agli utenti di modificare i messaggi inviati in chat.
 - **Conferme di lettura** Le conferme di lettura consentono al mittente di un messaggio di chat di ricevere una notifica quando il messaggio è stato letto dal destinatario in 1:1 e in chat di gruppo almeno 20 persone. Le conferme di lettura dei messaggi eliminano l'incertezza sul fatto che un messaggio sia stato letto e migliorano le comunicazioni del team. Le conferme di lettura non vengono acquisite nei report di eDiscovery.  
-    - **Controllo dell'utente** Questo significa che gli utenti possono decidere se attivare o disattivare le conferme di lettura. L'impostazione predefinita all'interno dell'app è ATTIVATA. Gli utenti possono quindi disattivarla.
-    - **Attivato per tutti gli utenti** Questo significa che tutti gli utenti del tenant avranno la funzionalità attivata senza la possibilità di disattivarla. Quando si usa l'impostazione **Attivato per tutti** , l'unico modo per impostare le ricevute per l'intero tenant consiste nell'avere un solo criterio di messaggistica per l'intero tenant (il criterio predefinito denominato "Globale (impostazione predefinita a livello di organizzazione)") oppure fare in modo che tutti i criteri di messaggistica nel tenant utilizzino le stesse impostazioni per le conferme. La caratteristica conferme di lettura è più efficace se è **abilitata per tutti**.
-    - **Disattivato per tutti gli utenti** Questo significa che la caratteristica è disabilitata e nessuno nel tenant ha conferme di lettura né può attivarla.
+  - **Controllo dell'utente** Questo significa che gli utenti possono decidere se attivare o disattivare le conferme di lettura. L'impostazione predefinita all'interno dell'app è ATTIVATA. Gli utenti possono quindi disattivarla.
+  - **Attivato per tutti gli utenti** Questo significa che tutti gli utenti del tenant avranno la funzionalità attivata senza la possibilità di disattivarla. Quando si usa l'impostazione **Attivato per tutti** , l'unico modo per impostare le ricevute per l'intero tenant consiste nell'avere un solo criterio di messaggistica per l'intero tenant (il criterio predefinito denominato "Globale (impostazione predefinita a livello di organizzazione)") oppure fare in modo che tutti i criteri di messaggistica nel tenant utilizzino le stesse impostazioni per le conferme. La caratteristica conferme di lettura è più efficace se è **abilitata per tutti**.
+  - **Disattivato per tutti gli utenti** Questo significa che la caratteristica è disabilitata e nessuno nel tenant ha conferme di lettura né può attivarla.
 <a name="bkchat"> </a>
 
 - **Chat**  Attivare questa impostazione se si vuole che gli utenti dell'organizzazione possano usare l'app Teams per chattare con altre persone.
 - **Chattare con i gruppi** Gli utenti possono avviare una chat con gruppi di distribuzione, gruppi di sicurezza abilitati alla posta elettronica e gruppi di Microsoft 365.
-- *Usare Giphy nelle conversazioni** Se si attiva Giphy, gli utenti possono includere Giphy nelle conversazioni in chat con altre persone. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una classificazione dei contenuti. Oltre ad attivare questa impostazione, è necessario abilitare [esperienze connesse facoltative](/deployoffice/privacy/manage-privacy-controls#policy-setting-for-optional-connected-experiences) per consentire giphy nelle conversazioni.
+- **Usare Giphy nelle conversazioni**  Se si attiva Giphys, gli utenti possono includere Giphy nelle conversazioni in chat con altre persone. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una classificazione dei contenuti. Oltre ad attivare questa impostazione, è necessario abilitare [esperienze connesse facoltative](/deployoffice/privacy/manage-privacy-controls#policy-setting-for-optional-connected-experiences) per consentire giphy nelle conversazioni.
 - **Valutazione del contenuto Giphy**
   - **Nessuna restrizione** Ciò significa che gli utenti saranno in grado di inserire qualsiasi Giphy in chat indipendentemente dalla classificazione del contenuto.
   - **Moderata**  Questo significa che gli utenti saranno in grado di inserire Giphy in chat, ma sarà moderatamente limitato dal contenuto per adulti.

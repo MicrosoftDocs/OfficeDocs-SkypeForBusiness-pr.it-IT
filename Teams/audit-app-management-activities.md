@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 ms.subservice: teams-apps
 audience: admin
-ms.date: 08/24/2022
+ms.date: 12/02/2022
 ms.collection:
 - M365-collaboration
 search.appverid: MET150
@@ -16,48 +16,50 @@ description: Informazioni su come controllare le attività dell'app Teams di ute
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 0fd3feb73705a95e0729cb1819d9f355ce3ef711
-ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
+ms.openlocfilehash: 5aee5bf00d486586b4bc8e9583504be5e4a9b922
+ms.sourcegitcommit: 54c691bd34980a47a5ebf58555529a618a8cada7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "68912785"
+ms.lasthandoff: 12/03/2022
+ms.locfileid: "69251879"
 ---
-# <a name="audit-logs-of-app-management-activities-and-events"></a>Log di controllo delle attività e degli eventi di gestione delle app
+# <a name="search-audit-logs-for-app-management-activities-and-events"></a>Cercare nei log di controllo le attività e gli eventi di gestione delle app
 
 Microsoft Purview Audit (Standard) in Microsoft 365 consente di cercare i record di controllo delle attività eseguite nei vari servizi di Microsoft 365 da utenti finali e amministratori.
 
-Prima di eseguire una ricerca di controllo, assicurarsi di completare i prerequisiti seguenti:
+Prima di eseguire ricerche nei record di controllo, assicurarsi di aver completato i prerequisiti seguenti:
 
-* [Ottenere la sottoscrizione dell'organizzazione e le licenze utente](/microsoft-365/compliance/set-up-basic-audit).
+* [Ottenere la sottoscrizione dell'organizzazione e la licenza utente](/microsoft-365/compliance/set-up-basic-audit).
 * [Attivare il controllo nel Portale di conformità di Microsoft Purview](/microsoft-365/compliance/turn-audit-log-search-on-or-off).
 * [Assegnare autorizzazioni per la ricerca nel log di controllo](/microsoft-365/compliance/set-up-basic-audit).
 
 ## <a name="search-the-audit-logs-for-app-events-in-teams"></a>Cercare gli eventi dell'app nei log di controllo in Teams
 
-I log di controllo per gli eventi delle app in Teams consentono di analizzare azioni specifiche. Anche se è possibile cercare nei log un'ampia gamma di azioni, la tabella seguente elenca alcune delle azioni dell'app Teams registrate. È anche possibile eseguire ricerche in attività correlate a connettori, bot, schede e così via.
+I log di controllo per gli eventi delle app in Teams consentono di esaminare azioni specifiche relative alla gestione delle app da parte degli amministratori. Anche se è possibile cercare nei log un'ampia gamma di azioni, la tabella seguente elenca alcune azioni di questo tipo registrate.
 
-| Azione dell'app Teams                  | Nome attività                | Descrizione                                              |
-|-----------------------------------|------------------------------|:---------------------------------------------------------|
-| **App installata**                 | `AppInstalled`               | Viene installata un'app.                                     |
+| Azione dell'app Teams | Nome attività nel portale | Descrizione  |
+|-------|-------|:-------|
+| **App installata**                 | `AppInstalled`               | Un'app viene installata o aggiunta a un client di Teams. |
 | **App aggiornata**                  | `AppUpgraded`                | Un'app viene aggiornata alla versione più recente nel catalogo. |
-| **App disinstallata**               | `AppUninstalled`             | Un'app viene disinstallata.                                   |
+| **App disinstallata**               | `AppUninstalled`             | Un'app viene disinstallata o rimossa da un client di Teams.                                   |
 | **App pubblicata**                 | `AppPublishedToCatalog`      | Al catalogo viene aggiunta un'app.                          |
 | **App aggiornata**                   | `AppUpdatedInCatalog`        | Un'app viene aggiornata nel catalogo.                        |
 | **App eliminata**                   | `AppDeletedFromCatalog`      | Un'app viene eliminata dal catalogo.                      |
 | **Eliminate tutte le app dell'organizzazione** | `DeletedAllOrganizationApps` | Tutte le app dell'organizzazione sono state eliminate dal catalogo.          |
 
+<!--- organization apps = custom or 3p --->
+
 Per un elenco completo delle attività di Teams controllate, vedere [Attività di Teams](audit-log-events.md#teams-activities) e [Turni nelle attività di Teams](audit-log-events.md#shifts-in-teams-activities).
 
 > [!NOTE]
-> Anche gli eventi delle app dei canali privati vengono registrati come quelli per Teams e i canali standard.
+> Gli eventi delle app dei canali privati vengono registrati anche quando tali eventi vengono eseguiti in Teams e nei canali standard.
 
-Usare lo strumento di ricerca log di audit nel Centro conformità per cercare i record di controllo. Per cercare i log di controllo degli eventi dell'app, seguire questa procedura:
+Per eseguire ricerche nei log di controllo delle attività dell'app Teams, seguire questa procedura:
 
 1. Accedere a Portale di conformità di Microsoft Purview e passare a **Controllo** > **[ soluzioni](https://compliance.microsoft.com/auditlogsearch)**.
-1. Nella pagina di controllo, aggiornare i campi seguenti in base alle proprie esigenze:
+1. Nella pagina **Controllo** aggiornare i campi seguenti in base alle esigenze:
 
-   * **Intervallo di data e ora**: selezionare la data di inizio e di fine.
+   * **Intervallo di date e ore**: selezionare le date di inizio e di fine del periodo di tempo per il quale si desidera controllare i log di controllo.
    * **Attività**: immettere le attività di Microsoft Teams. Nell'elenco, selezionare una o più attività dell'app. Per trovare rapidamente le attività di Teams, è possibile cercare la parola `Teams activities` nel campo di ricerca **Attività**.
    * **File, cartella o sito**: immettere il nome del file o un URL o parte di esso.
    * **Utenti**: aggiungere gli utenti di cui si vuole eseguire la ricerca nel log di controllo.
@@ -66,7 +68,7 @@ Usare lo strumento di ricerca log di audit nel Centro conformità per cercare i 
 
    :::image type="content" source="media/compliance-search-teams-activities-trimmed.png" alt-text="Cercare le attività di Teams nel Portale di conformità di Microsoft Purview per controllare gli eventi di Teams." lightbox="media/compliance-search-teams-activities.png":::
 
-Dopo aver cercato il segno di controllo nel portale di conformità, è possibile esportare i record di controllo come file CSV. Per altre informazioni, vedere [Esportare, configurare e visualizzare i log di controllo](/microsoft-365/compliance/export-view-audit-log-records).
+È possibile esportare i record di controllo cercati come file CSV. Per altre informazioni, vedere [Esportare, configurare e visualizzare i log di controllo](/microsoft-365/compliance/export-view-audit-log-records).
 
 > [!NOTE]
 > Quando una delle attività precedenti viene eseguita da un utente o un amministratore, Teams genera e archivia un record di controllo. In Audit (Standard), i record vengono conservati per 90 giorni, quindi è possibile cercare le attività che si sono verificate negli ultimi tre mesi.

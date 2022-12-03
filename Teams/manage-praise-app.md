@@ -14,16 +14,16 @@ ms.collection:
 - m365-frontline
 - tier2
 - highpri
-ms.openlocfilehash: 31a185239607c2458636dd6cadc83b7462135112
-ms.sourcegitcommit: ff161779577ce9cc892f1b6b8861ad49ff4c3ca3
+ms.openlocfilehash: 9b1155560c0f901b88d3983e2ff3738e5ffa6e47
+ms.sourcegitcommit: 54c691bd34980a47a5ebf58555529a618a8cada7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2022
-ms.locfileid: "69131175"
+ms.lasthandoff: 12/03/2022
+ms.locfileid: "69251769"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimento nell'interfaccia di amministrazione di Microsoft Teams
 
-L'app Complimento in Microsoft Teams consente agli utenti di mostrare apprezzamento ai membri dell'organizzazione o della classe. I badge in Complimento sono progettati per riconoscere l'impegno che va nell'ampia gamma di lavoro svolto dagli utenti di Teams, dai docenti ai dipendenti in prima linea. Per altre informazioni, vedere [Inviare complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
+L'app Complimento in Microsoft Teams aiuta gli utenti a mostrare apprezzamento ai membri dell'organizzazione o della classe. I badge in Complimento sono progettati per riconoscere l'impegno che va nell'ampia gamma di lavoro svolto dagli utenti di Teams, dai docenti ai dipendenti in prima linea. Per altre informazioni, vedere [Inviare complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
 
 Gli amministratori devono avere una licenza di Teams per accedere a questa funzionalità. Se si prova ad accedere a questa funzionalità senza una licenza di Teams, viene visualizzato un messaggio di errore.
 
@@ -41,20 +41,17 @@ L'complimento è abilitato per impostazione predefinita per tutti gli utenti di 
 
 Tenere presente che questa impostazione influisce sia sull'app Complimento che sulla funzionalità Complimento nell'app Viva Insights in Teams.
 
-Se si imposta Stato su Bloccato, l'app Complimento viene bloccata entro pochi minuti per Teams. Tuttavia, un complimento in Viva Insights può richiedere da 7 a 9 giorni per essere bloccato.
+Se si imposta lo stato su **Bloccato**, l'app Complimento viene bloccata entro pochi minuti per Teams. Tuttavia, l'operazione Complimento in Viva Insights può richiedere da 7 a 9 giorni per essere bloccata.
 
 ## <a name="enable-or-disable-praise-for-specific-users-in-your-organization"></a>Abilitare o disabilitare Complimento per utenti specifici dell'organizzazione
 
 Per consentire o bloccare l'uso di Complimenti da parte di utenti specifici dell'organizzazione, verificare che l'opzione Complimento sia attivata per l'organizzazione nella pagina [Gestisci app](manage-apps.md) . Creare quindi un criterio personalizzato per le autorizzazioni per le app e assegnarlo a tali utenti. Per altre informazioni, vedere [Gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
 
-## <a name="badges"></a>Distintivi
+## <a name="composer"></a>Compositore
 
-Ecco il set predefinito di badge in Complimento. Gli utenti di Teams nell'organizzazione possono usare questi badge per riconoscere i loro colleghi per andare oltre con il loro lavoro.
+Gli utenti di Teams nella tua organizzazione possono usare il compositore di complimenti per riconoscere i loro colleghi per andare al di là del loro lavoro. Mentre realizzano il loro messaggio, possono scegliere tra 14 titoli&mdash;come **Courage**, **Optimism**, **Kind heart** e **Creative**&mdash;per riconoscere il contributo dei loro colleghi.
 
-:::image type="content" source="media/default-set-praise.png" alt-text="Immagine di badge nel set di notifiche predefinito.":::
-
-> [!NOTE]
-> A partire da febbraio 2022, gli utenti possono inviare e ricevere solo badge predefiniti. I badge personalizzati non sono più disponibili e le opzioni per i badge personalizzati sono state rimosse dall'interfaccia di amministrazione di Teams.
+:::image type="content" source="media/praise.png" alt-text="Screenshot del compositore di complimenti.":::
 
 ## <a name="related-articles"></a>Articoli correlati
 

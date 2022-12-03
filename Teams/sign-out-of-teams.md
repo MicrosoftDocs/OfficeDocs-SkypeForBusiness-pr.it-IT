@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 810e4a2c151284786092d664170388f17c0461e6
-ms.sourcegitcommit: 472e46b6eb907f41920516616683a61f0fc6f741
-ms.translationtype: HT
+ms.openlocfilehash: 93a338ef393c783c4fc2240b580f3cd316c354ee
+ms.sourcegitcommit: 54c691bd34980a47a5ebf58555529a618a8cada7
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66564114"
+ms.lasthandoff: 12/03/2022
+ms.locfileid: "69251889"
 ---
 # <a name="sign-out-of-microsoft-teams"></a>Disconnettersi da Microsoft Teams
 
@@ -50,7 +50,7 @@ Se sono stati aggiunti più account, è necessario disconnettersi da ogni singol
 
 ## <a name="sign-out-of-teams-on-mobile-devices"></a>Disconnettersi da Teams nei dispositivi mobili
 
-Nei dispositivi mobili, è possibile disconnettersi da Teams passando al menu, selezionando **Altro** e poi **Disconnetti**. Una volta disconnessi, sarà necessario reimmettere le credenziali per avviare l'app la volta successiva.
+Nei dispositivi mobili, è possibile disconnettersi da Teams facendo clic sull'icona dell'utente, selezionando **Impostazioni** e quindi **Disconnetti**. Dopo la disconnessione, dovrai immettere di nuovo le credenziali al successivo avvio dell'app.
 
 ### <a name="global-sign-in-and-sign-out-for-frontline-workers"></a>Accesso e disconnessione globali per gli operatori sul campo
 
