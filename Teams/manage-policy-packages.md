@@ -10,6 +10,7 @@ ms.service: msteams
 audience: Admin
 ms.collection:
 - M365-collaboration
+- m365initiative-meetings
 appliesto:
 - Microsoft Teams
 f1.keywords:
@@ -20,14 +21,16 @@ ms.custom:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare, gestire e personalizzare pacchetti di criteri in Microsoft Teams per semplificare, semplificare e garantire la coerenza durante la gestione dei criteri per gruppi di utenti.
-ms.openlocfilehash: 138b1cada469a71cf844c8a73b1cb12511fc68b2
-ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
+ms.openlocfilehash: c2c5884261a4e55c64f3164fd805f708ed42598d
+ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2022
-ms.locfileid: "69245639"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "69318422"
 ---
 # <a name="managing-policy-packages-in-teams"></a>Gestione di pacchetti di criteri in Teams
+
+[!INCLUDE[Teams Premium](includes/teams-premium-ecm.md)]
 
 Un Pacchetto di criteri in Microsoft Teams è una raccolta di criteri e impostazioni predefiniti da assegnare agli utenti con ruoli simili nell'organizzazione. I pacchetti di criteri sono stati creati per semplificare, semplificare e garantire la coerenza durante la gestione dei criteri per gruppi di utenti all'interno dell'organizzazione.  
 
@@ -81,7 +84,7 @@ Ad esempio, quando si assegna il pacchetto di criteri Istruzione (docenti) agli 
 ## <a name="custom-policy-packages"></a>Pacchetti di criteri personalizzati
 
 > [!NOTE]
-> La funzionalità pacchetti di criteri personalizzati è disponibile in anteprima. Per usare questa funzionalità dopo l'anteprima, ogni utente avrà bisogno della licenza Teams Premium.
+> I pacchetti di criteri personalizzati richiedono Teams Premium.
 
 I pacchetti di criteri personalizzati consentono di raggruppare un set di criteri personalizzato per gli utenti con ruoli simili nell'organizzazione. Creare pacchetti di criteri personalizzati aggiungendo i tipi di criteri e i criteri necessari.
 
