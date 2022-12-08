@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b34f22d5ef038eff44b5488588902d1a99af8676
-ms.sourcegitcommit: fcedb958bf555d870215ae84fb83752304944716
+ms.openlocfilehash: 5ae4adf9d803ea0b3482451a9ece5d3ceb0df598
+ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68486616"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "69307531"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -167,7 +167,7 @@ Per altre informazioni sugli eventi live, vedere [Eventi live di Teams](teams-li
 > [!IMPORTANT]
 > **Aumento del limite degli eventi live di Microsoft 365**
 >
-> **Per continuare a soddisfare le esigenze dei nostri clienti, estenderemo gli incrementi del limite temporaneo per gli eventi live, inclusi fino al 31 dicembre 2022, tra cui**:
+> **Per continuare a supportare le esigenze dei nostri clienti, estenderemo il limite temporaneo di aumento per gli eventi live fino al 30 giugno 2023, tra cui:**
 >
 >- Supporto agli eventi fino a 20.000 partecipanti
 >- 50 eventi possono avere luogo contemporaneamente in uno stesso tenant

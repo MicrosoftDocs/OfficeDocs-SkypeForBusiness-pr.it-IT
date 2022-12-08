@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 92d46cacd510f448943deba86a6ed25d4f4360ab
-ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
+ms.openlocfilehash: 3a3193b48559fdfc941181963e493d73668bef52
+ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67706513"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "69307751"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -84,7 +84,7 @@ Citrix Virtual Apps and Desktops (precedentemente noto come XenApp e XenDesktop)
 
 È possibile scaricare l'ultima versione di Citrix Virtual Apps e Desktop sul [sito download Citrix](https://www.citrix.com/downloads/citrix-virtual-apps-and-desktops/). (Dovrai eseguire l'accesso prima di tutto). I componenti necessari sono inclusi [nell'app Citrix Workspace (CWA)](https://www.citrix.com/downloads/workspace-app/) e nell'agente di recapito virtuale (VDA) per impostazione predefinita. Non è necessario installare componenti o plug-in aggiuntivi in CWA o VDA.
 
-Per i requisiti più recenti per server e client, vedere l'articolo [Ottimizzazione per Microsoft Teams](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/multimedia/opt-ms-teams.html) sul sito Web Citrix.
+Per i requisiti server e client più recenti, vedere l'articolo [Ottimizzazione per Microsoft Teams](https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/multimedia/opt-ms-teams.html) sul sito Web Citrix.
 
 ### <a name="vmware-horizon-workspace-and-desktop-requirements"></a>Requisiti per l'area di lavoro Horizon e desktop di VMware
 
@@ -200,7 +200,7 @@ Per altre informazioni su Teams e Microsoft 365 Apps for enterprise, vedere [Com
         msiexec /i <path_to_msi> /l*v <install_logfile_name> ALLUSER=1 ALLUSERS=1
         ```
 
-        Questo processo installa Teams nella `%ProgramFiles(x86)%` cartella in un sistema operativo a 32 bit e nella `%ProgramFiles%` cartella in un sistema operativo a 64 bit. A questo punto, la configurazione dell'immagine dorata è completa.
+        Questo processo installa Teams nella `%ProgramFiles(x86)%` cartella in un sistema operativo a 64 bit e nella `%ProgramFiles%` cartella in un sistema operativo a 32 bit. A questo punto, la configurazione dell'immagine dorata è completa.
 
         > [!IMPORTANT]
         >  L'installazione di Teams per computer è necessaria per le configurazioni non persistenti.
@@ -401,9 +401,9 @@ I criteri VDI di Teams sono disponibili nel modulo teams. Questi criteri sono at
 > [!NOTE]
 > Questo vale solo per gli ambienti non ottimizzati.
 
-### <a name="connect-to-microsoft-teams-powershell"></a>Connettersi a PowerShell di Microsoft Teams
+### <a name="connect-to-microsoft-teams-powershell"></a>Connettersi a Microsoft PowerShell di Teams
 
-Seguire le istruzioni in [Installare il modulo PowerShell di Microsoft Teams](/Teams/teams-powershell-install.md) per connettersi al modulo PowerShell di Microsoft Teams. Eseguire quindi il comando seguente per verificare che tutti i cmdlet VDI siano disponibili:
+Seguire le istruzioni in [Installare Microsoft modulo PowerShell di Teams](/Teams/teams-powershell-install.md) per connettersi al modulo powershell di teams di Microsoft. Eseguire quindi il comando seguente per verificare che tutti i cmdlet VDI siano disponibili:
 
 ```PowerShell
 Get-Command -Noun *VDI*
@@ -526,10 +526,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Citrix\CtxHook\AppInit_Dlls\SfrHook\Teams.exe
 
 ```
 
-Quindi, riavvia VDA. Per altre informazioni, vedere questo articolo del supporto citrix, [Risoluzione dei problemi di ottimizzazione HDX per Microsoft Teams](https://support.citrix.com/article/CTX253754).
+Quindi, riavvia VDA. Per ulteriori informazioni, vedi questo articolo del supporto citrix, [Risoluzione dei problemi di ottimizzazione HDX per Microsoft Teams](https://support.citrix.com/article/CTX253754).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Installare Teams in blocco con Windows Installer (MSI)](msi-deployment.md)
 - [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
-- [Usare Microsoft Teams su Desktop virtuale di Azure](/azure/virtual-desktop/teams-on-wvd)
+- [Usare Microsoft Teams su Azure Virtual Desktop](/azure/virtual-desktop/teams-on-wvd)

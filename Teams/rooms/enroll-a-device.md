@@ -17,16 +17,16 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Onboarding di dispositivi Teams Rooms nel portale di gestione di Pro
 f1keywords: ''
-ms.openlocfilehash: 808ef462f71e023ccec232942e780a53ea91e3b3
-ms.sourcegitcommit: 64c01699022b47fdfec8dc6e2ca279e57eae3baa
+ms.openlocfilehash: f5994c5ced6097104ee74044ee2441bc8388f5c3
+ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "68243787"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "69307961"
 ---
 # <a name="enroll-device-into-pro-management"></a>Registrare il dispositivo in Gestione pro
 
-La distribuzione richiede l'onboarding Microsoft Teams Rooms dispositivi al portale di gestione di Microsoft Teams Rooms Pro. L'agente del servizio di monitoraggio può essere usato con periferiche e sistemi Microsoft Teams Room (MTR) certificati.
+La distribuzione richiede l'onboarding Microsoft Teams Rooms dispositivi al portale di gestione Microsoft Teams Rooms Pro. L'agente del servizio di monitoraggio può essere usato con periferiche e sistemi certificati Microsoft Teams Room (MTR).
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -51,7 +51,7 @@ Seguire queste procedure per configurare l'hardware prima di tentare il processo
      *Esempio:*
 
      ```DOS
-     bitsadmin /Util /SetIEProxy LOCALSYSTEM AUTOSCRIPT `http://contosoproxy.corp.net/proxy.pac`
+     bitsadmin /Util /SetIEProxy LOCALSYSTEM AUTOSCRIPT http://contosoproxy.corp.net/proxy.pac
      ```
 
 ### <a name="enabling-tpm-settings"></a>Abilitazione delle impostazioni TPM
@@ -77,7 +77,7 @@ Alcune procedure di configurazione/installazione richiedono l'accesso al disposi
 Per accedere al dispositivo come amministratore (amministratore locale):
 
 1. Assicurati di riagganciare le chiamate in corso e torna alla schermata iniziale.
-1. Nell'interfaccia utente di Microsoft Teams Room, selezionare  **Altro**, quindi selezionare **Impostazioni**, in cui viene richiesta la password dell'amministratore locale nel dispositivo (la password predefinita è **_sfb_**).
+1. Nell'interfaccia utente di Microsoft Teams Room, selezionare **Altro**, quindi selezionare **Impostazioni**, in cui viene richiesta la password dell'amministratore locale nel dispositivo (la password predefinita è **_sfb_**).
 1. Seleziona **Impostazioni**, quindi  **Impostazioni di Windows**  per accedere a Windows come amministratore locale.
 
 1. Nell'elenco degli utenti visualizzato nella schermata di accesso di Windows seleziona  **Amministratore** (o il rispettivo amministratore locale del dispositivo).
@@ -96,7 +96,7 @@ Per tornare all'app Microsoft Teams Rooms dopo aver eseguito le attività ammini
 ## <a name="urls-required-for-communication"></a>URL necessari per la comunicazione
 
  > [!NOTE]
- > Tutto il traffico di rete tra l'agente dei dispositivi MTR e il portale di gestione di Microsoft Teams Rooms Pro è SSL sulla porta 443 *.*  Vedere [Office 365 URL e intervalli di indirizzi IP - Microsoft 365 Enterprise | Microsoft Docs](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
+ > Tutto il traffico di rete tra l'agente dei dispositivi MTR e il portale di gestione Microsoft Teams Rooms Pro è SSL sulla porta 443 *.*  Vedere [Office 365 URL e intervalli di indirizzi IP - Microsoft 365 Enterprise | Microsoft Docs](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true).
 
 Gli host seguenti devono essere consentiti se il **traffic allowlist** è abilitato all'interno dell'ambiente aziendale:
 
@@ -116,7 +116,7 @@ mmrprodnoamstor.blob.core.windows.net
 
 Il processo di registrazione prevede questi passaggi:
 
-1. Sulla barra di spostamento sinistra del portale [http://portal.rooms.microsoft.com](https://portal.rooms.microsoft.com/)di gestione di Microsoft Teams Rooms Pro espandere **Impostazioni** e selezionare **Generale**.
+1. Sulla barra di spostamento sinistra del portale [http://portal.rooms.microsoft.com](https://portal.rooms.microsoft.com/)di gestione Microsoft Teams Rooms Pro espandere **Impostazioni** e selezionare **Generale**.
 1. In *Registra una sala* selezionare **Scarica programma di installazione**  per scaricare il software dell'agente di monitoraggio.
 1. **Opzionale:** Configurare le impostazioni proxy per l'agente; vedere [Aggiunta di impostazioni proxy (facoltativo).](#adding-proxy-settings-optional)
 1. Installare il programma di installazione dell'agente (scaricato nel passaggio 2) nelle unità MTR, eseguendo il file MSI in locale su un dispositivo MTR o tramite il normale mezzo di pubblicazione di applicazioni MSI in massa nei dispositivi all'interno dell'ambiente (Criteri di gruppo e così via).
@@ -129,7 +129,7 @@ Il processo di registrazione prevede questi passaggi:
 
 ## <a name="installation"></a>Installazione
 
-Dopo aver scaricato il programma di installazione da Microsoft (dal portale o utilizzando l'URL AKA.ms indicato in precedenza), decomprimere il contenuto per accedere al file **ManagedRoomsInstaller.msi**.
+Dopo aver scaricato il programma di installazione da Microsoft (dal portale o utilizzando l'URL AKA.ms indicato sopra), decomprimerne il contenuto per accedere al file **ManagedRoomsInstaller.msi**.
 
 Esistono due modalità di installazione: 1) installazione singola macchina locale e 2) modalità di distribuzione di massa (in genere tramite Intune di metodo simile). È consigliabile l'installazione individuale per computer non appartenenti a un dominio o per computer in cui non è possibile eseguire i programmi di installazione MSI in remoto.
 
@@ -145,11 +145,11 @@ A causa dei vari modi in cui i clienti possono eseguire applicazioni MSI in moda
 
 1. Dopo aver letto il contratto, seleziona ***Accetto i termini del Contratto di licenza** _ e premi _*Installa**.
 
-    Viene avviata l'installazione del software di monitoraggio di Microsoft Teams Rooms Pro. Viene visualizzata una richiesta di elevazione (eseguita come amministratore).
+    Viene avviata l'installazione del software di monitoraggio Microsoft Teams Rooms Pro. Viene visualizzata una richiesta di elevazione (eseguita come amministratore).
 
 1. Seleziona **Sì**.
 
-    L'installazione continuerà. Durante la procedura di installazione, si apre una finestra della console e inizia la fase finale dell'installazione software di monitoraggio di Microsoft Teams Rooms Pro.
+    L'installazione continuerà. Durante la procedura di installazione, si apre una finestra della console e inizia la fase finale dell'installazione software di monitoraggio Microsoft Teams Rooms Pro.
 
     > [!NOTE]
     > Non chiudere la finestra. Una volta completata l'installazione, la procedura guidata visualizza un pulsante "Fine".
@@ -163,7 +163,7 @@ I componenti seguenti sono prerequisiti per il completamento dell'installazione:
 - **Gruppo di Azure AD con tutti i Teams Rooms dei dispositivi Windows come membri**: un gruppo creato in Azure AD che include tutti i Teams Rooms nei dispositivi Windows che devono far parte del servizio Microsoft Teams Rooms Premium. Questo gruppo verrà usato per la distribuzione dell'agente MTR Pro.
   
 > [!NOTE]
-> A questo scopo, è consigliabile usare i gruppi dinamici in Azure AD, per altre informazioni vedere [Registrazione di Microsoft Teams Rooms nei dispositivi Windows con Microsoft Endpoint Manager - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/intune-customer-success/enrolling-microsoft-teams-rooms-on-windows-devices-with/ba-p/3246986)
+> A questo scopo, è possibile usare i gruppi dinamici in Azure AD, per altre informazioni vedere [Registrazione di Microsoft Teams Rooms nei dispositivi Windows con Microsoft Endpoint Manager - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/intune-customer-success/enrolling-microsoft-teams-rooms-on-windows-devices-with/ba-p/3246986)
 - Scarica il **programma di installazione** **dell'agente MTR Pro**: scarica il file ZIP dell'agente ed <https://aka.ms/serviceportalagentmsi> estrae il contenuto del file ZIP (ManagedRoomsInstaller.msi) in una cartella temporanea locale.
 
 **Per eseguire l'installazione con Intune**
@@ -176,7 +176,7 @@ I componenti seguenti sono prerequisiti per il completamento dell'installazione:
    1. Nel riquadro File **pacchetto app** selezionare  **Sfoglia**. Seleziona quindi il **ManagedRoomsInstaller.msi** file scaricato in precedenza (fai riferimento alla sezione dei prerequisiti).
    1. Al termine, selezionare **OK** nel riquadro file del **pacchetto** dell'app per aggiungere l'app.
 1. Nella pagina **Informazioni app** eseguire le modifiche seguenti:
-   1. Editore: immettere **Microsoft Corporation**.
+   1. Publisher: immettere **Microsoft Corporation**.
    1. Ignora versione dell'app: seleziona **Sì**.
 
       > [!NOTE]
@@ -225,13 +225,13 @@ Per annullare la registrazione del dispositivo, rimuovi l'agente di monitoraggio
 
    Questo comando reimposta il dispositivo agli aggiornamenti MTR standard dell'utente e rimuove i file e l'agente di monitoraggio MTR Pro.
 
-1. Nel menu a sinistra nel portale di gestione di Microsoft Teams Rooms Pro selezionare **Sale**.
+1. Nel menu a sinistra nel portale di gestione Microsoft Teams Rooms Pro selezionare **Sale**.
 1. Nell'elenco delle sale fornite scegliere la chat room da annullare e selezionare **Annulla registrazione** per interrompere la ricezione di avvisi o ticket d'indagine oppure per segnalare un evento imprevisto per la sala.
 
 ## <a name="troubleshooting-table"></a>Tabella di risoluzione dei problemi
 
 > [!NOTE]
-> Tutti gli errori di monitoraggio di Microsoft Teams Rooms Pro vengono registrati in uno specifico file di registro eventi denominato **Microsoft Managed Rooms**.
+> Tutti gli errori di monitoraggio Microsoft Teams Rooms Pro vengono registrati in uno specifico file di registro eventi denominato **Microsoft Managed Rooms**.
 
 ***Percorso del file di log di runtime dell'applicazione*** =
 
@@ -243,6 +243,6 @@ C:\Windows\ServiceProfiles\LocalService\AppData\Local\ServicePortalAgent\ app-x.
 |||
 |Viene visualizzato un messaggio di errore che indica: </p><p> ***Impossibile trovare i dati TPM***|Assicurati che nel BIOS del dispositivo sia attivato TPM (Trusted Platform Module). Questo si trova in genere nelle impostazioni di sicurezza del BIOS del dispositivo.|
 |||
-|Viene visualizzato un messaggio di errore: </p><p> ***ERRORE: Account utente locale denominato "Amministrazione" o "Skype" non trovato***|Assicurarsi che gli account utente siano presenti nel dispositivo certificato Microsoft Teams Room Systems.|
+|Viene visualizzato un messaggio di errore: </p><p> ***ERRORE: Account utente locale denominato "Amministrazione" o "Skype" non trovato***|Verificare che gli account utente siano presenti nel dispositivo certificato Microsoft sistemi Teams Room.|
 |||
-|Vengono visualizzati messaggi di stato di errore non inclusi in precedenza.|Fornisci una copia del log di installazione all'agente di supporto di Sistema di Microsoft Teams.|
+|Vengono visualizzati messaggi di stato di errore non inclusi in precedenza.|Fornisci una copia del log di installazione all'agente di supporto di sistema di Microsoft Teams.|

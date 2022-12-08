@@ -8,6 +8,7 @@ ms.topic: article
 ms.service: msteams
 ms.collection:
 - M365-collaboration
+- m365initiative-meetings
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -15,12 +16,12 @@ ms.reviewer: mikedav
 description: Informazioni su come assegnare licenze per i componenti aggiuntivi di Teams agli utenti per funzionalità come Audioconferenza, Sistema telefonico e Piani per chiamate.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6c10ba390d906681434ae56272e4f112911bfcff
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: 635280582796f2b373efc0c763fea0887bcd6e42
+ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606055"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "69307781"
 ---
 # <a name="assign-teams-add-on-licenses-to-users"></a>Assegnare licenze per i componenti aggiuntivi di Teams agli utenti
 
@@ -37,7 +38,7 @@ Prima di iniziare, esaminare i requisiti seguenti:
 
 - Se si usa la connettività PSTN (Public Switched Telephone Network) locale per gli utenti, è necessario assegnare solo una licenza di Teams Phone Standard. NON assegnare una licenza per il Piano per chiamate.
 
-- Dopo aver assegnato un piano per chiamate Microsoft a un utente, possono essere necessarie fino a 24 ore prima che visualizzi la tastiera del telefono nel client di Teams. Se la tastiera del telefono non viene visualizzata tra 24 ore, verificare la [configurazione della tastiera del telefono](../dial-pad-configuration.md). Se necessario, è anche possibile [contattare il supporto tecnico](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+- Dopo aver assegnato un piano per chiamate Microsoft a un utente, possono essere necessarie fino a 24 ore prima che visualizzi la tastiera nel client teams. Se la tastiera del telefono non viene visualizzata tra 24 ore, verificare la [configurazione della tastiera del telefono](../dial-pad-configuration.md). Se necessario, è anche possibile [contattare il supporto tecnico](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
 - Se non hai acquistato il numero corretto di licenze, verrà visualizzato un messaggio di errore. Se devi acquistare altre licenze per il Piano per chiamate, scegli l'opzione per acquistarne altre.
 
@@ -131,7 +132,7 @@ Per altre informazioni, vedere [Visualizzare licenze e servizi con PowerShell](/
 | Microsoft Enterprise E1 | STANDARDPACK |
 | Microsoft 365 Business Basic | O365_BUSINESS_ESSENTIALS|
 | Microsoft 365 Business Standard | O365_BUSINESS_PREMIUM|
-| Microsoft 365 Business | Spb|
+| Microsoft 365 Business | SPB|
 | Audioconferenza | MCOMEETADV |
 | Audioconferenza con tariffa al minuto (pagamento a consumo) Richiede la configurazione e l'abilitazione dei Crediti comunicazioni.* | MCOMEETACPEA |
 | Teams Phone Standard | MCOEV |
@@ -143,10 +144,11 @@ Per altre informazioni, vedere [Visualizzare licenze e servizi con PowerShell](/
 | Credito per la comunicazione | MCOPSTNPP |
 | Piani per chiamate con pagamento in base al costo (zona 1 paesi) | MCOPSTN_PAYG_1 |
 | Piani per chiamate con pagamento in base al pagamento (paesi della zona 2) | MCOPSTN_PAYG_2 |
-| Microsoft Teams Rooms Di base | Microsoft_Teams_Rooms_Basic |
+| Microsoft Teams Rooms Basic | Microsoft_Teams_Rooms_Basic |
 | Microsoft Teams Rooms Basic senza audioconferenza | Microsoft_Teams_Rooms_Basic_without_Audio_Conferencing |
 | Microsoft Teams Rooms Pro | Microsoft_Teams_Rooms_Pro |
 | Microsoft Teams Rooms Pro senza audioconferenza | Microsoft_Teams_Rooms_Pro_without_Audio_Conferencing |
+| Microsoft Teams Premium | Microsoft_Teams_Premium |
 
 ## <a name="related-content"></a>Contenuti correlati
 

@@ -1,5 +1,5 @@
 ---
-title: Analisi e creazione di report di Microsoft Teams
+title: analisi e creazione di report di Microsoft Teams
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -14,20 +14,21 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
+- m365initiative-meetings
 description: In questo articolo vengono fornite informazioni sui report di Teams disponibili nell'interfaccia di amministrazione di Microsoft Teams.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b08e62a7ddee8298ff38846d8d254d10d3d6f681
-ms.sourcegitcommit: b2692b3f6c60d8df5ba0677c68ff9c90a75a0d72
+ms.openlocfilehash: 0a688a3356ce31dd478c35082195ace8f6be4d47
+ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68033834"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "69307661"
 ---
-# <a name="microsoft-teams-analytics-and-reporting"></a>Analisi e creazione di report di Microsoft Teams
+# <a name="microsoft-teams-analytics-and-reporting"></a>analisi e creazione di report di Microsoft Teams
 
-Nell'interfaccia di amministrazione di Microsoft Teams è disponibile una nuova esperienza di analisi e creazione di report per Microsoft Teams. È possibile eseguire report diversi per ottenere informazioni approfondite sul modo in cui gli utenti dell'organizzazione usano Teams. Ad esempio, è possibile vedere quanti utenti comunicano tramite messaggi di canale e chat e i tipi di dispositivi che usano per connettersi a Teams. L'organizzazione può usare le informazioni dei report per comprendere meglio i modelli di utilizzo, prendere decisioni aziendali e informare le attività di formazione e comunicazione.
+Una nuova esperienza di analisi e creazione di report per Microsoft Teams è disponibile nell'interfaccia di amministrazione di Microsoft Teams. È possibile eseguire report diversi per ottenere informazioni approfondite sul modo in cui gli utenti dell'organizzazione usano Teams. Ad esempio, è possibile vedere quanti utenti comunicano tramite messaggi di canale e chat e i tipi di dispositivi che usano per connettersi a Teams. L'organizzazione può usare le informazioni dei report per comprendere meglio i modelli di utilizzo, prendere decisioni aziendali e informare le attività di formazione e comunicazione.
 
 ## <a name="how-to-access-the-reports"></a>Come accedere ai report
 
@@ -36,7 +37,7 @@ Per accedere ai report, è necessario essere un amministratore globale in Micros
 Passare all'interfaccia di amministrazione di Microsoft Teams, nel riquadro di spostamento sinistro selezionare **Analisi & report** e quindi in **Visualizza report** scegliere il report da eseguire.
 
 > [!NOTE]
-> I report nell'interfaccia di amministrazione di Microsoft Teams sono separati dai report attività per Teams che fanno parte dei report di Microsoft 365 nella interfaccia di amministrazione di Microsoft 365. Per altre informazioni sui report attività nel interfaccia di amministrazione di Microsoft 365, vedere [Report di Microsoft 365 nell'interfaccia di amministrazione](/microsoft-365/admin/activity-reports/activity-reports).
+> I report nell'interfaccia di amministrazione di Microsoft Teams sono separati dai report attività per Teams che fanno parte dei report Microsoft 365 nel interfaccia di amministrazione di Microsoft 365. Per altre informazioni sui report attività nel interfaccia di amministrazione di Microsoft 365, vedere [Report di Microsoft 365 nell'interfaccia di amministrazione](/microsoft-365/admin/activity-reports/activity-reports).
 
 ## <a name="teams-reporting-reference"></a>Riferimento per la creazione di report di Teams
 
@@ -44,7 +45,7 @@ Ecco un elenco dei report di Teams disponibili nell'interfaccia di amministrazio
 
 Stiamo migliorando continuamente l'esperienza di creazione di report di Teams e l'aggiunta di funzionalità e funzionalità. Nel corso del tempo, verranno inserite funzionalità aggiuntive nei report e aggiunti nuovi report nell'interfaccia di amministrazione di Microsoft Teams.
 
-|Report  |Pubblico |Gcc |GCCH |Dod |Cosa viene misurato? |
+|Report  |Pubblico |GCC |GCCH |Dod |Cosa viene misurato? |
 |---------|---------|---------|---------|---------|---------|
 |[Report sull'utilizzo di Teams](teams-usage-report.md)  |Sì|Sì|Sì|Sì|  Utenti attivi<br/>Utenti attivi in team e canali<br/>Canali attivi<br/>Messaggi<br/>Impostazione della privacy dei team<br/>Guest attivi in un team  <br/>Utenti esterni attivi (nei canali condivisi)<br/>Dettagli specifici del canale condiviso all'interno di un team (nuovo)|
 |[Report sulle attività degli utenti di Teams](user-activity-report.md)  |Sì|Sì|Sì|Sì|Utenti interni ed esterni attivi (nei canali condivisi)<br/> Messaggi pubblicati da un utente in una chat del team<br/>Messaggi pubblicati da un utente in una chat privata<br/>  Chiamate 1:1 a cui ha partecipato un utente<br/> Numero di riunioni organizzate dall'utente <br/>Numero di riunioni a cui l'utente ha partecipato<br/>Tempo di condivisione audio, video e schermo per le riunioni<br/>   Data ultima attività di un utente  <br>Interazioni del canale condiviso di un utente (nuovo)</br>   |
@@ -56,7 +57,8 @@ Stiamo migliorando continuamente l'esperienza di creazione di report di Teams e 
 |[Report utilizzo PSTN di Teams - Piani per chiamate](pstn-usage-report.md#calling-plans)|Sì|Sì|No|No|  Indicatore data e ora<br>Nome utente<br>Numero di telefono<br>Tipo di chiamata <br>Chiamato a<br>Nel paese o nell'area geografica <br>Chiamato da <br>Da paese o area geografica<br>Carica<br>Valuta<br>Durata<br>Nazionali/Internazionali<br>ID chiamata<br>Tipo di numero<br>Paese o area geografica<br>ID conferenza<br>Funzionalità (licenza)|
 |[Report sull'utilizzo PSTN di Teams - Routing diretto](pstn-usage-report.md#direct-routing)  |Sì|Sì|No|No|  Indicatore data e ora<br>Nome visualizzato<br>Indirizzo SIP<br>Numero di telefono <br>Tipo di chiamata<br>Chiamato a<br>Ora di inizio<br>Ora invito<br>Ora errore<br>Ora di fine<br>Durata<br>Tipo di numero<br>Bypass multimediale<br>SBC FQDN<br>Area geografica di Azure<br>Tipo di evento<br>Codice SIP finale<br>Sottocodice Microsoft finale<br>Frase SIP finale<br>ID correlazione  |
 |[Report sulle licenze di Teams per la protezione delle informazioni](information-protection-license-report.md)  |Sì|Sì|No|No| <br>Se gli utenti hanno licenze valide per inviare i messaggi tramite notifiche di modifica</br><br>Numero totale di eventi di notifica di modifica generati da un utente<br><br>Quali app ascoltano gli eventi di notifica delle modifiche a livello di organizzazione<br>|
-|[Report sull'utilizzo delle visite virtuali di Teams](/microsoft-365/frontline/virtual-visits-usage-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json)  |Sì|Sì|No|No| Numero di appuntamenti virtuali<br>Numero di appuntamenti di Bookings<br>Numero di appuntamenti integrati con EHR (Electronic Health Records) di Teams<br>Durata media di un appuntamento<br>Tempo medio di attesa della sala di attesa dei partecipanti<br>Ora di inizio<br>ID riunione<br>Tempo di attesa nella sala d'attesa<br>Durata<br>Stato<br>Tipo di prodotto<br>Partecipanti<br>SMS inviato
+|[Report sull'utilizzo di Teams Appuntamenti virtuali](/microsoft-365/frontline/virtual-appointments-usage-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json)|Sì|Sì|No|No| Numero di appuntamenti virtuali<br>Numero di appuntamenti di Bookings<br>Numero di appuntamenti integrati con EHR (Electronic Health Records) di Teams<br>Durata media di un appuntamento<br>Tempo medio di attesa della sala di attesa dei partecipanti<br>Ora di inizio<br>ID riunione<br>Tempo di attesa nella sala d'attesa<br>Durata<br>Stato<br>Tipo di prodotto<br>Partecipanti<br>Reparto<br>SMS inviato<br>Se l'appuntamento ha usato una funzionalità di Appuntamenti virtuali avanzata|
+|[Report attività di Teams Advanced Appuntamenti virtuali](/microsoft-365/frontline/advanced-virtual-appointments-activity-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json) |Sì|Sì|No|No|Numero di utenti che usano funzionalità di Appuntamenti virtuali avanzate<br>Numero di utenti che utilizzano notifiche SMS<br>Numero di utenti che usano la chat della sala di attesa (presto disponibile)<br>Numero di utenti che conducono appuntamenti su richiesta|
 |[Report Appuntamenti virtuali connettore EHR di Teams](/microsoft-365/frontline/ehr-connector-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json) |Sì|Sì|No|No| Ora di inizio<br>Durata<br>Principale (nome dell'organizzatore della riunione)<br>E-mail principale (e-mail dell'organizzatore della riunione)<br>Reparto<br>Assistenti<br>Tempo di attesa nella sala d'attesa<br>Se l'appuntamento rientra nel limite di allocazione|
 [!INCLUDE [teams-reports-definitions](../includes/teams-reports-definitions.md)]
 

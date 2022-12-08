@@ -22,12 +22,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e da conferenza sono certificati per Microsoft Teams per produrre i migliori risultati.
-ms.openlocfilehash: c4c80840c56de3c9de1c7ca12782e0132e838029
-ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
+ms.openlocfilehash: f9012cd72807705f4f381b3443605b77c9d94000
+ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2022
-ms.locfileid: "69199108"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "69307941"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>dispositivi Android certificati per Microsoft Teams
 
@@ -407,6 +407,7 @@ Di seguito sono riportate le versioni più recenti dell'app e del firmware Micro
 
 |Versione del prodotto| Data di rilascio | Microsoft versione dell'app Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
+|2022 Aggiornamento n. 4  | 05 dicembre 2022 | `1449/1.0.97.2022747803` | `5.0.5484.0` | `361`|
 |Aggiornamento #3A 2022  | 16 settembre 2022 | `1449/1.0.97.2022739908` | `5.0.5304.0`  | `322` |
 |2022 Aggiornamento n. 3  | 12 luglio 2022 | `1449/1.0.97.2022739901` | `5.0.5304.0`  | `322` |
 |2022 Aggiornamento n. 2  | 25 aprile 2022 | `1449/1.0.97.2022733702` | `5.0.5304.0`  | `322` |

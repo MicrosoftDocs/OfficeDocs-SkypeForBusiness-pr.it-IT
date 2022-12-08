@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su operatori automatici e code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: acaa4d3e4db56b1b64869f92d27f2dfd73c4afee
-ms.sourcegitcommit: 0dfe48fde767d8d9ed7bfc93684af05534acad12
+ms.openlocfilehash: 5b5076ecd8ea521071124f5400ac5c2831b4fbfe
+ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/24/2022
-ms.locfileid: "69166732"
+ms.lasthandoff: 12/08/2022
+ms.locfileid: "69307621"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici di Teams e le code di chiamata
 
@@ -78,7 +78,7 @@ Per configurare gli operatori automatici e le code di chiamata, sono necessarie 
 > [!NOTE]
 > Gli account delle risorse sono disabilitati per l'accesso e devono rimanere tali. La chat e la presenza non sono disponibili per questi account.
 
-Gli agenti che ricevono chiamate dalle code di chiamata devono essere VoIP aziendale abilitati utenti online o locali. Inoltre, se le code di chiamata utilizzano numeri direct routing, gli agenti che devono effettuare conferenze o trasferire chiamate richiedono anche:
+Gli agenti che ricevono chiamate dalle code di chiamata devono essere VoIP aziendale abilitati utenti online o locali. Per altre informazioni, vedere [Assegnare, modificare o rimuovere un numero di telefono per un utente](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user) e [Abilitare gli utenti per il routing diretto](/microsoftteams/direct-routing-enable-users). Inoltre, se le code di chiamata utilizzano numeri direct routing, gli agenti che devono effettuare conferenze o trasferire chiamate richiedono anche:
 
 - Un [criterio di routing vocale online](manage-voice-routing-policies.md) assegnato se la coda di chiamata usa la modalità di trasferimento.
 - Una [licenza per i servizi di audioconferenza](set-up-audio-conferencing-in-teams.md) o [un criterio di routing vocale online](manage-voice-routing-policies.md) assegnato se la coda di chiamata usa la modalità conferenza.
