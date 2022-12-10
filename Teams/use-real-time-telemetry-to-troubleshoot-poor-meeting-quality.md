@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.users.activity.audioqualitycolumn
 - Reporting
 description: Usare la telemetria in tempo reale con dettagli su dispositivi, reti e connettività per risolvere i problemi degli utenti con le riunioni pianificate di Microsoft Teams.
-ms.openlocfilehash: 203f16d83d211a4a85f3217992d509bccba5dea3
-ms.sourcegitcommit: 2871c05e00458a0cc76d919ff822b0b354bd1f72
+ms.openlocfilehash: bbda6d34a990ad810b22ce1742ab60a886295a6a
+ms.sourcegitcommit: feb9b7d10e38f5a629ee9202b5aaec5beef4de9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66810178"
+ms.lasthandoff: 12/10/2022
+ms.locfileid: "69343284"
 ---
 # <a name="use-real-time-telemetry-to-troubleshoot-poor-meeting-quality"></a>Usare i dati di telemetria in tempo reale per risolvere problemi di scarsa qualità delle riunioni
 
@@ -54,6 +54,10 @@ Gli amministratori di Teams hanno accesso completo a tutti i dati di telemetria 
 Per visualizzare tutte le informazioni e i dati della riunione per un utente, passare [all'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com). In **Utenti** > **Gestisci utenti** selezionare un utente e aprire la scheda **Riunioni & chiamate** nella pagina del profilo dell'utente. In **Riunioni recenti** vedrai un elenco delle riunioni a cui l'utente ha partecipato nelle ultime 24 ore *, a cui è disponibile la telemetria in tempo reale*, incluse le riunioni in corso. Se la riunione non è in corso o non ha dati di telemetria in tempo reale, verrà visualizzata nelle **riunioni precedenti**.
 
 :::image type="content" alt-text="Screenshot della tabella delle riunioni recenti." source="media/recent-meetings.png" lightbox="media/recent-meetings.png":::
+
+> [!NOTE]
+> Affinché una riunione venga visualizzata in "Riunioni recenti", un amministratore di Teams deve aver fatto clic sulla riunione in Real-Time Analytics mentre la riunione era in corso per iniziare il flusso della telemetria client in tempo reale.
+
 
 Per ottenere informazioni aggiuntive sui partecipanti a una riunione in corso, incluse le statistiche sul dispositivo, sulla rete e sull'audio, trovare la riunione in **Riunioni recenti** e selezionare il collegamento sotto la colonna **Partecipanti** .
 
@@ -86,7 +90,7 @@ Per esaminare la telemetria di un determinato utente per una riunione in corso, 
 | Tipo di connettività | UDP o TCP | Protocollo di livello di trasporto in uso; UDP è preferito per i supporti in tempo reale | |
 
 ### <a name="user-signals"></a>Segnali utente
-I segnali dell'utente identificano quando un utente sta partecipando attivamente alla chiamata, non parla ma viene riattivato o è disattivato. Attualmente, i segnali utente sono disponibili solo per l'audio.
+I segnali dell'utente identificano quando un utente partecipa attivamente alla chiamata, non parla ma viene riattivato o è disattivato. Attualmente, i segnali utente sono disponibili solo per l'audio.
 
 | Modalità | Valori possibili | Descrizione |
 |:---|:---|:---|
@@ -148,6 +152,8 @@ I segnali dell'utente identificano quando un utente sta partecipando attivamente
 
 ## <a name="limitations"></a>Limitazioni
 
+- L'abbonamento alla telemetria in tempo reale non è automatico per tutte le riunioni e deve essere avviato da un amministratore di Teams mentre la riunione è in corso.
+- La telemetria in tempo reale sarà disponibile solo per gli endpoint supportati di una riunione, a partire dal momento in cui l'amministratore ha fatto clic per la prima volta sulla riunione in corso in Real-Time Analytics.
 - La telemetria in tempo reale è disponibile solo per le riunioni pianificate e riunione immediata. Per le chiamate PSTN, 1:1 e di gruppo, la telemetria in tempo reale non è disponibile.
 - La telemetria in tempo reale è disponibile solo per i relatori di eventi live pianificati. Attualmente non è disponibile per i partecipanti a eventi live.
 - I dati di telemetria in tempo reale sono disponibili per una riunione in **Riunioni recenti** per 24 ore dopo la fine della riunione. Dopo 24 ore, non è possibile accedere ai dati e la riunione passa alle **riunioni passate**. Se una riunione dura più di 3 ore, la telemetria in tempo reale sarà disponibile solo per le *ultime 3 ore*.

@@ -18,14 +18,14 @@ description: Informazioni su come impostare Adobe Acrobat come visualizzatore PD
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 4776b2928ee734c1b37856e44d184c53bfc0dd90
-ms.sourcegitcommit: 54c691bd34980a47a5ebf58555529a618a8cada7
+ms.openlocfilehash: 67be332ee916f30b0341dc3ac03e047558cead0c
+ms.sourcegitcommit: feb9b7d10e38f5a629ee9202b5aaec5beef4de9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2022
-ms.locfileid: "69251899"
+ms.lasthandoff: 12/10/2022
+ms.locfileid: "69343290"
 ---
-# <a name="set-adobe-acrobat-as-the-default-pdf-viewer-in-microsoft-teams"></a>Impostare Adobe Acrobat come visualizzatore PDF predefinito in Microsoft Teams
+# <a name="set-adobe-acrobat-as-the-default-pdf-viewer-in-microsoft-teams"></a>Impostare Adobe Acrobat come visualizzatore pdf predefinito in Microsoft Teams
 
 Gli amministratori possono impostare Adobe Acrobat come app predefinita per visualizzare e modificare i file PDF in Microsoft Teams. Gli utenti finali possono visualizzare ed eseguire ricerche nei file PDF. Gli utenti possono anche commentare e annotare gratuitamente i file PDF dopo l'accesso.
 
@@ -66,7 +66,9 @@ Per assegnare e rendere disponibile l'app di Adobe Acrobat per tutti gli utenti,
 
 1. Selezionare **Salva**.
 
-Dopo aver selezionato Salva, Teams utilizza Adobe Acrobat app come gestore predefinito per i file PDF.
+1. Facoltativamente, è possibile consentire SSO con Microsoft Azure Active Directory identità se si dispone di una licenza di Adobe Acrobat. È consigliabile configurare SSO usando le istruzioni in [Configurare l'identità e Single Sign-On](https://helpx.adobe.com/enterprise/using/set-up-identity.html).
+
+Dopo aver completato la configurazione, Teams usa l'app Adobe Acrobat come gestore di file predefinito per i file PDF.
 
 Se si vuole consentire in modo selettivo l'app Adobe Acrobat per alcuni utenti o per un gruppo, usare i [criteri di autorizzazione dell'app](teams-app-permission-policies.md).
 
@@ -81,4 +83,5 @@ Conoscere le informazioni seguenti su tale funzionalità:
 * Per disinstallare l'app, gli utenti finali possono rimuovere l'app dal client teams. Amministrazione possibile rimuovere l'app Adobe Acrobat usando i criteri di configurazione.
 * Se blocchi l'app Adobe Acrobat, rimuovi l'app dai criteri di configurazione. Assicura che l'esperienza dell’utente finale torni a all’uso del visualizzatore nativo di file PDF.
 * Se si verificano problemi di accesso all'app Adobe Acrobat nel client desktop di Teams, usare [Teams nel browser](https://teams.microsoft.com/) per accedere.
-* Per aggiungere commenti o aggiungere annotazioni ai file PDF, è necessario accedere a un [account Adobe](https://acrobat.adobe.com/us/en/) gratuito.
+* Accedi a un [account Adobe](https://acrobat.adobe.com/us/en/) gratuito per aggiungere commenti o annotazioni sui file PDF. L'app in Teams può offrire funzionalità come l'aggiunta di annotazioni, l'organizzazione, la compressione e la protezione dei file PDF. Per un elenco completo delle funzionalità e dei prerequisiti, vedere [Gestire i file PDF nell'app Teams con Acrobat](https://www.adobe.com/content/dam/dx-dc/pdf/ue/acrobat-msft-teams-feature-comp-ue.pdf).
+* Quando si collabora a un documento PDF, questo viene temporaneamente archiviato (fino a 24 ore) nei server Adobe dell'area geografica in cui ci si trova. Questa memoria temporanea è per facilitare l'elaborazione transitoria. I documenti vengono crittografati end-to-end quando vengono trasferiti dal file system locale al server e rimangono crittografati anche sul server. vedi [sicurezza per Acrobat](https://aka.ms/Adobe_Acrobat_Security).

@@ -3,7 +3,7 @@ title: Configurare gateway SIP
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
-ms.date: 09/30/2021
+ms.date: 12/8/2022
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b785ffe1c9e08507c1d45a1e837cf7020ec1d711
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: c93aec7cb65cdd40c05a540b51a3da8ba268c7e9
+ms.sourcegitcommit: feb9b7d10e38f5a629ee9202b5aaec5beef4de9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68584308"
+ms.lasthandoff: 12/10/2022
+ms.locfileid: "69343292"
 ---
 # <a name="configure-sip-gateway"></a>Configurare gateway SIP
 
@@ -41,9 +41,9 @@ Prima di configurare il Gateway SIP, eseguire le operazioni seguenti:
 
 - **Verificare che i dispositivi SIP non siano dietro un proxy.** Assicurarsi che il traffico http/s bypassi qualsiasi proxy http/s aziendale.
 
-- **Aprire la porta UDP.** Aprire la porta UDP nell'intervallo da 49152 a 53247 per gli intervalli IP 52.112.0.0/14 e 52.120.0.0/14.
+- **Aprire la porta UDP.** Aprire la porta UDP nell'intervallo da 49152 a 53247 per gli intervalli IP 52.112.0.0/14 e 52.122.0.0/15.
 
-- **Aprire la porta TCP.** Aprire la porta TCP 5061 per gli intervalli IP 52.112.0.0/14 e 52.120.0.0/14.
+- **Aprire la porta TCP.** Aprire la porta TCP 5061 per gli intervalli IP 52.112.0.0/14 e 52.122.0.0/15.
 
 - **Aprire gli endpoint https seguenti (indirizzi IP e URL):**
 
@@ -104,7 +104,7 @@ Per abilitare gateway SIP nell'interfaccia di amministrazione di Teams, seguire 
 
 ### <a name="by-using-powershell"></a>Tramite PowerShell
 
-È anche possibile abilitare gateway SIP utilizzando il cmdlet [Set-CsTeamsCallingPolicy](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) di PowerShell. Per abilitare gli utenti per i dispositivi SIP, selezionare un criterio e impostare l'attributo `-AllowSIPDevicesCalling` su `True`. Il valore predefinito è `False`, quindi gli utenti non potranno usare i propri dispositivi SIP a meno che non vengano abilitati.
+È anche possibile abilitare gateway SIP utilizzando il cmdlet [Set-CsTeamsCallingPolicy](/powershell/module/skype/set-csteamscallingpolicy) di PowerShell. Per abilitare gli utenti per i dispositivi SIP, selezionare un criterio e impostare l'attributo `-AllowSIPDevicesCalling` su `True`. Il valore predefinito è `False`, quindi gli utenti non potranno usare i propri dispositivi SIP a meno che non vengano abilitati.
 
 > [!NOTE]
 > - La propagazione dei criteri può richiedere fino a 24 ore.

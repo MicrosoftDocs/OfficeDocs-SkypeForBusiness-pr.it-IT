@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Scopri come Microsoft Direct Routing consente di connettere un controller SBC (Session Border Controller) supportato dal cliente al sistema telefonico.
-ms.openlocfilehash: de829008a45e8f4c1095138ddc1b1dcc32cdb3eb
-ms.sourcegitcommit: c627bd1df17aefdc353bc4da6db169dfe169031e
+ms.openlocfilehash: e3da76d8fa3f848945607a7e27f6b162623951b3
+ms.sourcegitcommit: feb9b7d10e38f5a629ee9202b5aaec5beef4de9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68680519"
+ms.lasthandoff: 12/10/2022
+ms.locfileid: "69343186"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -218,7 +218,7 @@ L'inserimento di questi tre FQDN è necessario per:
 Gli FQDN, sip.pstnhub.microsoft.com, sip2.pstnhub.microsoft.com e sip3.pstnhub.microsoft.com, verranno risolti in indirizzi IP dalle subnet seguenti:
 
 - 52.112.0.0/14
-- 52.120.0.0/14
+- 52.122.0.0/15
 
 È necessario aprire le porte per tutti questi intervalli di indirizzi IP nel firewall per consentire il traffico in arrivo e in uscita da e verso gli indirizzi per la segnalazione.
 
@@ -257,8 +257,8 @@ Il sip.pstnhub.gov.teams.microsoft.us FQDN verrà risolto in un indirizzo IP dal
 
 |Traffico|Da|A|Porta di origine|Porta di destinazione|
 |:--- |:--- |:--- |:--- |:--- |
-|SIP/TLS|SIP Proxy|Sbc|1024 – 65535|Definito su SBC (per Office 365 deve essere usata solo la porta 5061 GCC High/DoD)|
-SIP/TLS|Sbc|SIP Proxy|Definito in SBC|5061|
+|SIP/TLS|SIP Proxy|SBC|1024 – 65535|Definito su SBC (per Office 365 deve essere usata solo la porta 5061 GCC High/DoD)|
+SIP/TLS|SBC|SIP Proxy|Definito in SBC|5061|
 ||||||
 
 ### <a name="failover-mechanism-for-sip-signaling"></a>Meccanismo di failover per il segnalazione SIP
@@ -269,8 +269,8 @@ La tabella seguente riepiloga le relazioni tra data center primario, secondario 
 
 |Se il data center principale è|EMEA|NOAM|ASIA|
 |:--- |:--- |:--- |:--- |
-|Data center secondario (sip2.pstnhub.microsoft.com)|Noi|Ue|Noi|
-|Data center terziario (sip3.pstnhub.microsoft.com)|ASIA|ASIA|Ue|
+|Data center secondario (sip2.pstnhub.microsoft.com)|NOI|UE|NOI|
+|Data center terziario (sip3.pstnhub.microsoft.com)|ASIA|ASIA|UE|
 |||||
 
 ## <a name="media-traffic-port-ranges"></a>Traffico multimediale: intervalli di porte
@@ -296,8 +296,8 @@ L'intervallo di porte dei processori multimediali è illustrato nella tabella se
 
 |Traffico|Da|A|Porta di origine|Porta di destinazione|
 |:--- |:--- |:--- |:--- |:--- |
-|UDP/SRTP|Media Processor|Sbc|3478-3481 e 49152 – 53247|Definito in SBC|
-|UDP/SRTP|Sbc|Media Processor|Definito in SBC|3478-3481 e 49152 – 53247|
+|UDP/SRTP|Media Processor|SBC|3478-3481 e 49152 – 53247|Definito in SBC|
+|UDP/SRTP|SBC|Media Processor|Definito in SBC|3478-3481 e 49152 – 53247|
 
   > [!NOTE]
   > Microsoft consiglia almeno due porte per chiamata simultanea in SBC.

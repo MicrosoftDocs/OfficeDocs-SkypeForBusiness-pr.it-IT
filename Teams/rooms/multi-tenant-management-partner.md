@@ -18,16 +18,16 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Gestione clienti Mult-tenant per partner.
 f1keywords: ''
-ms.openlocfilehash: 681efe6832a3829b54b23345f04e32151f130939
-ms.sourcegitcommit: baf29d244b428712052553f9e4484e72e727247e
+ms.openlocfilehash: 6a98ff56548dcefc48be41657b368a9634ad8123
+ms.sourcegitcommit: feb9b7d10e38f5a629ee9202b5aaec5beef4de9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2022
-ms.locfileid: "69046825"
+ms.lasthandoff: 12/10/2022
+ms.locfileid: "69343306"
 ---
 # <a name="multi-tenant-customer-management-for-partners"></a>Gestione clienti multi-tenant per partner
 
-La gestione multi-tenant (MTM) nel servizio di gestione Teams Rooms Pro consente alle organizzazioni partner di gestire più clienti in un'unica posizione, con le proprie credenziali di dominio. Gli utenti partner vedranno solo le chat room dei clienti a cui sono assegnate. È possibile applicare ruoli personalizzati per ogni cliente nel portale MTM, offrendo alle organizzazioni partner un controllo granulare delle autorizzazioni per le risorse del cliente. 
+La gestione multi-tenant (MTM) nel servizio Teams Rooms Pro Management consente alle organizzazioni partner di gestire più clienti in un'unica posizione, con le proprie credenziali di dominio. Gli utenti partner vedranno solo le chat room dei clienti a cui sono assegnate. È possibile applicare ruoli personalizzati per ogni cliente nel portale MTM, offrendo alle organizzazioni partner un controllo granulare delle autorizzazioni per le risorse del cliente. 
 
 Il portale MTM è accessibile tramite questo [collegamento](https://partner.rooms.microsoft.com/).
 
@@ -36,7 +36,7 @@ Il portale MTM è accessibile tramite questo [collegamento](https://partner.room
 
 ## <a name="pre-requisites-for-managing-your-customers-through-the-mtm-experience"></a>Prerequisiti per la gestione dei clienti tramite l'esperienza MTM
 
-Per accedere al portale MTM, la tua organizzazione deve essere integrata come Elite Partner per MTR Pro Management. Per diventare un contatto partner Elite askelite@microsoft.com.
+Il programma Elite che offriva l'accesso alla console di gestione Multitenant è stato interrotto e non stiamo onboarding di nuovi partner a questo programma. La comprensione e la pazienza sono molto apprezzate e presto verrà annunciato un nuovo formato. 
 
 ## <a name="on-boarding-customers"></a>Clienti on-boarding
 

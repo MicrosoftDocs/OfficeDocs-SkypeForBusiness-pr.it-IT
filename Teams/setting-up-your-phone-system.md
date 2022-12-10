@@ -25,12 +25,12 @@ ms.custom:
 - seo-marvel-apr2020
 - intro-get-started
 description: Guida dettagliata che illustra come configurare Il sistema telefonico di Teams per l'organizzazione in Microsoft 365.
-ms.openlocfilehash: beb82fd78fa58a4a3339dc1b7a5f54ceb5117479
-ms.sourcegitcommit: 401cee68d4f6f9470d614dda12b9cb023f382ff2
+ms.openlocfilehash: 974cabac0d02f30d9371114e0f6886fdbc9f9389
+ms.sourcegitcommit: feb9b7d10e38f5a629ee9202b5aaec5beef4de9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "67999541"
+ms.lasthandoff: 12/10/2022
+ms.locfileid: "69343176"
 ---
 # <a name="set-up-phone-system-in-your-organization"></a>Configurare Sistema telefonico nell'organizzazione
 
@@ -59,6 +59,8 @@ Per consentire agli utenti di effettuare e ricevere chiamate esterne, è necessa
 - Piano per chiamate. Una soluzione all-in-the-cloud con Microsoft come gestore PSTN.
 
 - Operator Connect. Se il gestore esistente partecipa al programma Microsoft Operator Connect, potrà gestire automaticamente le chiamate PSTN e i controller dei confini della sessione.
+
+- Teams Phone Mobile. Se il gestore telefonico esistente partecipa al programma Operatore di telefonia mobile di Microsoft Teams, può gestire il servizio per l'uso dei numeri di cellulare abilitati per la SIM con Teams.
 
 - Routing diretto. Usa il tuo gestore PSTN connettendo i tuoi SBC al sistema telefonico.
 
