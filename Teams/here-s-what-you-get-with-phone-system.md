@@ -23,12 +23,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: "Informazioni su funzionalità, disponibilità e su come pianificare e configurare Sistema telefonico Microsoft per l'azienda. "
-ms.openlocfilehash: ccc931bd15e511903715ca328a142eb4da313dea
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: 118f2d52193583149e881bf564fb1df616bf108c
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68584787"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69392246"
 ---
 # <a name="heres-what-you-get-with-phone-system"></a>Vantaggi offerti dal Sistema telefonico
 
@@ -72,7 +72,7 @@ Sistema telefonico fornisce le seguenti funzionalità.
 |[Modalità di linea condivisa](shared-line-appearance.md)  | Consente agli utenti di condividere la linea telefonica in modo che un altro utente possa effettuare e ricevere chiamate per suo conto.|
 |[Occupato su Occupato](teams-calling-policy.md) (solo Teams)  | Un criterio di chiamata che consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è: <ul><li>in una chiamata </li><li>in conferenza</li><li>una chiamata messa in attesa. </li></ul> Il chiamante riceverà una delle risposte seguenti: <ul><li>ascoltare un segnale di occupato quando il destinatario della chiamata è sul telefono</li> <li>verrà instradata di conseguenza alle impostazioni senza risposta dell'utente. Un'opzione consente al chiamante di lasciare un messaggio vocale per l'utente che è già in una chiamata.</li></ul> Il destinatario riceve una notifica di chiamata senza risposta, ma non è in grado di rispondere alle chiamate in arrivo. Questa funzionalità è disabilitata per impostazione predefinita, ma può essere attivata dall'amministratore del tenant.|
 |[Blocco delle chiamate](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f?ui=en-US&rs=en-US&ad=US)  | Consente agli utenti di aggiungere numeri di telefono (PSTN) a un elenco bloccato, in modo che alla successiva chiamata da quel numero venga impedito di far squillare l'utente.|
-|[Telefoni area comune](set-up-common-area-phones.md)  | Un telefono dell'area comune viene in genere inserito in un'area come una sala d'attesa o una sala riunioni che lo rende disponibile a più persone. I telefoni ad area comune sono configurati come dispositivi anziché come utenti e possono accedere automaticamente a una rete.|
+|[Telefoni dell'area comune](set-up-common-area-phones.md)  | Un telefono dell'area comune viene in genere inserito in un'area come una sala d'attesa o una sala riunioni che lo rende disponibile a più persone. I telefoni ad area comune sono configurati come dispositivi anziché come utenti e possono accedere automaticamente a una rete.|
 |[Supporto del bypass multimediale](direct-routing-plan-media-bypass.md) (solo per il routing diretto di Teams)  | Per migliorare le prestazioni, i supporti vengono mantenuti tra il controller dei confini della sessione (SBC) e il client invece di inviarli tramite sistema telefonico. |
 |[Routing dei numeri non assegnati](routing-calls-to-unassigned-numbers.md) | Consente il routing di numeri non assegnati a utenti, operatori automatici, code di chiamata o un annuncio personalizzato. |
 

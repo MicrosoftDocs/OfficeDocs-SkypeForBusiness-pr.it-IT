@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
 - seo-marvel-apr2020
 description: In questo articolo imparerai a creare, modificare e gestire gli account delle risorse in Microsoft Teams.
-ms.openlocfilehash: cde570c23b6d2e6b673f6cc0f49c9905c3b45fd1
-ms.sourcegitcommit: 55d2f515f5040b4c083f529d7b818c84d42378a0
+ms.openlocfilehash: 3ac03e8531457d21d2988db0a86ca8bdca367f0a
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2022
-ms.locfileid: "69147433"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69392206"
 ---
 # <a name="manage-resource-accounts-in-microsoft-teams"></a>Gestire gli account di risorsa in Microsoft Teams
 
@@ -35,7 +35,7 @@ ms.locfileid: "69147433"
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver completato la configurazione dell'account delle risorse e aver assegnato un numero di servizio, se necessario, sei pronto per usare l'account della risorsa con un operatore automatico o una coda di chiamata.
+Dopo aver completato la configurazione dell'account delle risorse e aver assegnato un numero di telefono, se necessario, sei pronto per usare l'account della risorsa con un operatore automatico o una coda di chiamata.
 
 Per altre informazioni, vedere i riferimenti seguenti:
 
@@ -73,7 +73,7 @@ Per le implementazioni ibride con Skype for Business Server:
 
 ## <a name="delete-a-resource-account"></a>Eliminare un account di risorsa
 
-Assicurarsi di dissociare il numero di telefono dall'account della risorsa prima di eliminarlo, per evitare che il numero di servizio rimanga bloccato in modalità in sospeso.
+Assicurarsi di dissociare il numero di telefono dall'account della risorsa prima di eliminarlo, per evitare che il numero di telefono rimanga bloccato in modalità in sospeso.
 
 Dopo aver eseguito questa operazione, è possibile eliminare l'account della risorsa nel interfaccia di amministrazione di Microsoft 365, nella scheda **Utenti**.
 

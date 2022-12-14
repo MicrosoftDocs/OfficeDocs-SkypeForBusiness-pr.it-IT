@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 872d2f904919186d631fbfbd913ee500ea6421d9
-ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
+ms.openlocfilehash: c7a608132af2807c1fc59e25f7dac39433fe5dc5
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67706833"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69392096"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di sola visualizzazione nelle riunioni di Teams
 
@@ -30,6 +30,9 @@ ms.locfileid: "67706833"
 
 > [!Note]
 > Se la riunione raggiunge piena capacità, Teams si ridimensionerà senza problemi per offrire un'esperienza di trasmissione in modalità di sola visualizzazione per 10.000 persone. Inoltre, durate questo periodo di maggiore telelavoro, si possono organizzare trasmissioni ancora più grandi, per 20.000 persone, fino alla fine di quest'anno. I webinar attualmente non supportano l'esperienza di trasmissione di sola visualizzazione.
+
+> [!Note]
+> Una riunione di Teams non è un evento live di Teams (TLE) e non sfrutterà Microsoft eCDN. Per ulteriori informazioni, vedi [Elenco di controllo per l'onboarding di Microsoft eCDN](/ecdn/integration/onboarding-checklist-for-tle-customers).
 
 Microsoft Teams consente fino a 10.000 partecipanti alle riunioni. Una volta raggiunta la piena capacità della riunione principale (ovvero quando vi accedono 1000 utenti), il resto dei partecipanti potrà accedere a un'esperienza di sola visualizzazione.
 
@@ -44,7 +47,7 @@ I partecipanti potranno unirsi all'esperienza di sola visualizzazione tramite la
 
 ## <a name="teams-view-only-experience-controls"></a>Controlli dell'esperienza di sola visualizzazione di Teams
 
-È possibile abilitare l'esperienza di sola visualizzazione usando il [`Set-CsTeamsMeetingPolicy`](/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) cmdlet dal [modulo PowerShell di SkypeForBusiness](/powershell/module/skype/?view=skype-ps) o dalla versione 2.0.0 del [ modulo MicrosoftTeams](https://www.powershellgallery.com/packages/MicrosoftTeams).
+È possibile abilitare l'esperienza di sola visualizzazione usando il [`Set-CsTeamsMeetingPolicy`](/powershell/module/skype/set-csteamsmeetingpolicy) cmdlet dal [modulo PowerShell di SkypeForBusiness](/powershell/module/skype/) o dalla versione 2.0.0 del [ modulo MicrosoftTeams](https://www.powershellgallery.com/packages/MicrosoftTeams).
 
 Per usare il modulo `MicrosoftTeams` consigliato:
 
@@ -130,6 +133,6 @@ I partecipanti nella sala di sola visualizzazione non potranno usare le seguenti
 - I partecipanti nella sala di sola visualizzazione hanno un'esperienza video singola. Possono accedere l'altoparlante attivo o i contenuti che vengono condivisi, ma non entrambi.
 - Al momento non supportiamo i layout **Galleria**, **Galleria estesa**, o **Modalità Insieme** per gli utenti nella sala di sola visualizzazione.
 - I partecipanti in sola visualizzazione sono supportati esclusivamente dai criteri seguenti di sala di attesa: "Persone nella mia organizzazione e utenti guest", "Persone nella mia organizzazione, organizzazioni attendibili e utenti guest" e "Tutti". Se si usano criteri di sala di attesa che non supportano i partecipanti di sola visualizzazione, ai partecipanti di sola visualizzazione saranno espulsi dalla riunione. 
-- I partecipanti nella sala di sola visualizzazione non avranno la stessa latenza dei partecipanti normali. <sup>1</sup>
+- Gli utenti nella sala di sola visualizzazione non avranno la stessa latenza degli utenti regolari. <sup>1</sup>
 
   <sup>1</sup> I partecipanti nella sala di sola visualizzazione avrannno un ritardo audio e video di 30 secondi durante la riunione.  

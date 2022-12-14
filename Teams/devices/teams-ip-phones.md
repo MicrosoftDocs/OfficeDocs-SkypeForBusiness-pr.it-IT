@@ -22,19 +22,19 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e da conferenza sono certificati per Microsoft Teams per produrre i migliori risultati.
-ms.openlocfilehash: f9012cd72807705f4f381b3443605b77c9d94000
-ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
+ms.openlocfilehash: 0055529d7bc0344faeb04e7d35bf0c9ed457510d
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2022
-ms.locfileid: "69307941"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69392356"
 ---
-# <a name="microsoft-teams-certified-android-devices"></a>dispositivi Android certificati per Microsoft Teams
+# <a name="microsoft-teams-certified-android-devices"></a>Dispositivi Android certificati da Microsoft Teams
 
-Il programma di certificazione per dispositivi di Microsoft Teams garantisce che i dispositivi certificati soddisfino uno standard elevato, con obiettivi di prestazioni e metriche di qualità più elevati nell'intera esperienza di Teams (audio, video, interfaccia utente). Microsoft e i partner OEM stanno lavorando attivamente per garantire che i dispositivi soddisfino tutti i requisiti di certificazione, tra cui sicurezza, qualità audio e video, esperienza di Teams e accessibilità.
+Il programma di certificazione per i dispositivi di Microsoft Teams garantisce che i dispositivi certificati soddisfino uno standard elevato, con obiettivi di prestazioni e metriche di qualità più elevati nell'intera esperienza di Teams (audio, video, interfaccia utente). Microsoft e i partner OEM stanno lavorando attivamente per garantire che i dispositivi soddisfino tutti i requisiti di certificazione, tra cui sicurezza, qualità audio e video, esperienza di Teams e accessibilità.
 
 > [!IMPORTANT]
-> Il programma di certificazione per dispositivi di Microsoft Teams garantisce che i dispositivi certificati soddisfino requisiti specifici solo per la progettazione e le prestazioni hardware. Il programma di certificazione non valuta il supporto a livello di funzionalità o di ambiente cloud.
+> Il programma di certificazione per dispositivi di Microsoft Teams garantisce che i dispositivi certificati soddisfino requisiti specifici solo per la progettazione e le prestazioni dell'hardware. Il programma di certificazione non valuta il supporto a livello di funzionalità o di ambiente cloud.
 >
 > Per informazioni sulle funzionalità supportate in Teams Rooms per Windows e Teams Rooms per Android, incluso il supporto dell'ambiente cloud, vedere confronto delle funzionalità di [Teams Rooms per Windows e Android](../rooms/teams-devices-feature-comparison.md).
 
@@ -47,7 +47,7 @@ Oltre il periodo di certificazione, Microsoft si impegna a sostenere la versione
 
 ## <a name="certified-teams-phones"></a>Telefoni certificati di Teams
 
-I seguenti dispositivi sono certificati nell'ambito del programma di certificazione per telefoni Microsoft Teams:
+I seguenti dispositivi sono certificati nell'ambito del programma di certificazione per i telefoni di Microsoft Teams:
 
 |Modello di dispositivo    | Versione firmware    | Data di fine certificazione corrente | Versione del sistema operativo Android                               |
 |:---------------------------------------|:-----------------------------------------|:-----------------------------|-----------------------------------|
@@ -88,7 +88,7 @@ I seguenti dispositivi sono certificati ai sensi del programma di certificazione
 | Logitech Tap IP VR0029     | `1.6.762`  |   3 settembre 2024  | Compatibile con Logitech Rally Bar e Rally Bar Mini | 10 |
 | Neat Bar Pro   | `NFD1.20220914.1210 ` | 3 settembre 2024  |  Camera di medie dimensioni (4,5 m x 6 m) | 10|
 | Barra ordinata | `NFF1.20220914.1210` |3 settembre 2024|    Camera di medie dimensioni (4,5 m x 6 m) | 10 |
-| Console touch neat pad | `NFA1.20220914.1206`  | 3 settembre 2024 | Compatibile solo con Neat Bar | 9 |
+| Console touch neat pad | `NFA1.20220914.1206`  | 3 settembre 2024 | Compatibile con Neat Bar & Neat Bar Pro | 9 |
 | Neat Board | `NFC1.20220914.1210 ` | 3 settembre 2024 |    Sala riunioni piccola (4,5 m x 4,5 m) | 10 |
 | Logitech Roommate | `1.4.71` | 3 settembre 2024  | Sala riunioni di grandi dimensioni (4,5 m x 8,5 m)  |   10  |
 | EPOS EXPAND 80T | `1.2.2.21182.10` | 5 agosto 2023 | In dotazione con EPOS Vision 3T | 9 |
@@ -106,7 +106,7 @@ I seguenti dispositivi sono certificati ai sensi del programma di certificazione
 
 ## <a name="certified-teams-displays"></a>Schermi teams certificati
 
-I seguenti dispositivi sono certificati nell'ambito del programma di certificazione Android di Microsoft Teams:
+I seguenti dispositivi sono certificati nell'ambito del programma di certificazione Microsoft Teams Displays Android:
 
 | Modello di dispositivo | Versione firmware | Data di fine certificazione corrente  | Versione del sistema operativo Android |
 |:------------------------|:-----------------|:--------------|----------------------------------|
@@ -116,7 +116,7 @@ I seguenti dispositivi sono certificati nell'ambito del programma di certificazi
 |Lenovo ThinkSmart View|`CD-18781Y.201006.099`| 5 dicembre 2022 |  8.1  |
 
 ## <a name="certified-teams-panels"></a>Pannelli di Teams certificati
-I seguenti dispositivi sono certificati nell'ambito del programma di certificazione per i pannelli Microsoft Teams:
+I seguenti dispositivi sono certificati nell'ambito del programma di certificazione per i pannelli Di Microsoft Teams:
 
 | Modello di dispositivo| Versione firmware | Data di fine certificazione corrente | Versione del sistema operativo Android |                                         
 |:------------------------|:-----------------|:--------------|-----------------------|
@@ -133,7 +133,7 @@ Di seguito sono riportate le versioni più recenti dell'app e del firmware del t
 
 #### <a name="app-versions"></a>Versioni delle app
 
-| Versione del prodotto | Data di rilascio  | Microsoft versione dell'app Teams | versione Portale aziendale | versione agente di Amministrazione |
+| Versione del prodotto | Data di rilascio  | Versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:--------------|:----------------------------|:-----------------------|:--------------------|
 | Aggiornamento 2022 #4A | 30 novembre 2022 | `1449/1.0.94.2022110803` | `5.0.5484.0` | `382`|
 | 2022 Aggiornamento n. 4  | 22 settembre 2022| `1449/1.0.94.2022090705` |`5.0.5484.0` | `361` |
@@ -165,6 +165,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware  | Versione del prodotto inclusa  |
 |:----------------|:--------------|:----------------------------|
+|Poly CCX350 | `8.0.2.2643` | Aggiornamento 2022 #4A |
 |Yealink CP965  | `143.15.0.27`     | Aggiornamento 2022 #4A  |
 |Yealink MP54/MP56/MP58  | `122.15.0.107`     | Aggiornamento 2022 #4A  |
 |Yealink MP52  | `145.15.0.59`     | Aggiornamento 2022 #4A  |
@@ -260,9 +261,9 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 | Yealink VP59        | `91.15.0.54`         | Aggiornamento 2020 7           |
 | Yealink CP960       | `73.15.0.115`      | Aggiornamento 2020 7           |
 
-Vedere [Microsoft set di funzionalità dei telefoni di Teams](phones-for-teams.md) per informazioni sulle funzionalità supportate da questi dispositivi.
+Vedere [Set di funzionalità dei telefoni di Microsoft Teams](phones-for-teams.md) per informazioni sulle funzionalità supportate da questi dispositivi.
 
-Vedere [Microsoft schermi di Teams](teams-displays.md).
+Vedere [Schermi di Microsoft Teams](teams-displays.md).
 
 ### <a name="product-release-information-for-teams-rooms-on-android"></a>Informazioni sulla versione del prodotto per Teams Rooms su Android
 
@@ -270,8 +271,9 @@ Di seguito sono riportati i Teams Rooms più recenti sulle versioni del firmware
 
 #### <a name="app-versions"></a>Versioni delle app
 
-| Versione del prodotto| Data di rilascio | Microsoft versione dell'app Teams | versione Portale aziendale | versione agente di Amministrazione |
+| Versione del prodotto| Data di rilascio | Versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
+| 2022 Aggiornamento n. 3  | 13 dicembre 2022 |`1449/1.0.96.2022120503`| `5.0.5484.0` | `1.0.0.202205230848.product version code : 361` |
 | Aggiornamento 2022 #2B  | 15 settembre 2022 |`1449/1.0.96.2022090606`| `5.0.5304.0` | `1.0.0.202112100118.product version code : 322` |
 | Aggiornamento 2022 #2A  | 8 agosto 2022 |`1449/1.0.96.2022072103`| `5.0.5304.0` | `1.0.0.202112100118.product version code : 322` |
 | 2022 Aggiornamento n. 2  | 25 maggio 2022 |`1449/1.0.96.2022051102`| `5.0.5304.0` | `1.0.0.202112100118.product version code : 322` |
@@ -286,10 +288,18 @@ Di seguito sono riportati i Teams Rooms più recenti sulle versioni del firmware
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni corrispondenti Microsoft app Teams, Portale aziendale e Amministrazione Agent installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
+Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni dell'app Microsoft Teams corrispondente, Portale aziendale e Amministrazione Agent installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Versione del prodotto inclusa |
 |:--------------|:-----------------|:-------------------------|
+| Yealink MeetingBoard 86" | `155.15.0.17` | Aggiornamento 2022 #2B |
+| Barra ordinata | `NFB1.20220914.1215` | Aggiornamento 2022 #2B |
+| Neat Bar Pro| `NFD1.20220914.1215` | Aggiornamento 2022 #2B |
+| Neat Board | `NFC1.20220914.1215` |  Aggiornamento 2022 #2B |
+| Console touch neat pad | `NFA1.20220914.1215`  |  Aggiornamento 2022 #2B |
+| Logi Rallybar  | `1.8.290`     | Aggiornamento 2022 #2B  |
+| Logi Rallybar Mini  | `1.8.290`     | Aggiornamento 2022 #2B  |
+| Logi Console  | `1.8.177`    | Aggiornamento 2022 #2B  |
 | Logi Rallybar  | `1.7.300`     | Aggiornamento 2022 #2B  |
 | Logi Rallybar Mini  | `1.7.300`     | Aggiornamento 2022 #2B  |
 | Logi RoomMate  | `1.7.202`   | Aggiornamento 2022 #2B  |
@@ -373,11 +383,11 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 ### <a name="product-release-information-for-teams-displays"></a>Informazioni sulla versione del prodotto per i display di Teams
 
-Di seguito sono riportate le versioni più recenti Microsoft Teams Displays dell'app e del firmware.
+Di seguito sono riportate le versioni più recenti di Microsoft Teams Display per l'app e il firmware.
 
 #### <a name="app-versions"></a>Versioni delle app
 
-|Versione del prodotto| Data di rilascio | Microsoft versione dell'app Teams | versione Portale aziendale | versione agente di Amministrazione |
+|Versione del prodotto| Data di rilascio | Versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
 |2022 Aggiornamento n. 1  |14 novembre 2022 |`1449/1.0.95.2022102603`    |`5.0.5484.0`            |  `1.0.0.202205230848.product (361)` |
 |2021 Aggiornamento n. 4  |5 gennaio 2022 |`1449/1.0.95.2021736401`    |`5.0.5304.0`            |  `1.0.0.202110130735.product (298)` |
@@ -388,7 +398,7 @@ Di seguito sono riportate le versioni più recenti Microsoft Teams Displays dell
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni corrispondenti Microsoft app Teams, Portale aziendale e Amministrazione Agent installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
+Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni dell'app Microsoft Teams corrispondente, Portale aziendale e Amministrazione Agent installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Versione del prodotto inclusa|
 |:--------------|:-----------------|:-------------------------|
@@ -401,11 +411,11 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 ### <a name="product-release-information-for-teams-panels"></a>Informazioni sulla versione del prodotto per i pannelli di Teams
 
-Di seguito sono riportate le versioni più recenti dell'app e del firmware Microsoft Teams Panels.
+Di seguito sono riportate le versioni più recenti dell'app e del firmware dei pannelli di Microsoft Teams.
 
 #### <a name="app-versions"></a>Versioni delle app
 
-|Versione del prodotto| Data di rilascio | Microsoft versione dell'app Teams | versione Portale aziendale | versione agente di Amministrazione |
+|Versione del prodotto| Data di rilascio | Versione dell'app Microsoft Teams | versione Portale aziendale | versione agente di Amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
 |2022 Aggiornamento n. 4  | 05 dicembre 2022 | `1449/1.0.97.2022747803` | `5.0.5484.0` | `361`|
 |Aggiornamento #3A 2022  | 16 settembre 2022 | `1449/1.0.97.2022739908` | `5.0.5304.0`  | `322` |
@@ -417,7 +427,7 @@ Di seguito sono riportate le versioni più recenti dell'app e del firmware Micro
 
 #### <a name="firmware-versions"></a>Versioni del firmware
 
-Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni corrispondenti Microsoft app Teams, Portale aziendale e Amministrazione Agent installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
+Quando si installa una nuova versione del firmware nel dispositivo, è possibile determinare le versioni dell'app Microsoft Teams corrispondente, Portale aziendale e Amministrazione Agent installate individuando il rilascio del prodotto nella colonna **Rilascio prodotto incluso**. Cerca quindi il rilascio del prodotto nella tabella **delle versioni delle app** riportata sopra.
 
 | Modello di dispositivo  | Versione firmware | Versione del prodotto inclusa|
 |:--------------|:-----------------|:-------------------------|
@@ -440,16 +450,16 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 ## <a name="more-resources"></a>Altre risorse
 
-Vedere [Microsoft set di funzionalità dei telefoni di Teams](phones-for-teams.md) per informazioni sulle funzionalità supportate da questi dispositivi.
+Vedere [Set di funzionalità dei telefoni di Microsoft Teams](phones-for-teams.md) per informazioni sulle funzionalità supportate da questi dispositivi.
 
 Vedi [Trovare la versione del firmware in un dispositivo mobile](phones-for-teams.md) per determinare la versione del firmware del dispositivo nel dispositivo mobile.
 
-Microsoft licenze di Teams possono essere acquistate nell'ambito di [abbonamenti a Microsoft 365 o Office 365](/office365/servicedescriptions/teams-service-description). Per altre informazioni sulle licenze necessarie per l'uso di Microsoft Teams sui telefoni, vedere Licenze disponibili per il [sistema telefonico](https://products.office.com/microsoft-teams/voice-calling).
+Le licenze di Microsoft Teams possono essere acquistate come parte di [Microsoft 365 o Office 365 abbonamenti](/office365/servicedescriptions/teams-service-description). Per altre informazioni sulle licenze necessarie per l'uso di Microsoft Teams nei telefoni, vedere Licenze disponibili per il [sistema telefonico](https://products.office.com/microsoft-teams/voice-calling).
 
-Per altre informazioni su come ottenere Teams, vedere [Ricerca per categorie accedere a Microsoft Teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
+Per altre informazioni su come ottenere Teams, vedere [Ricerca per categorie ottenere l'accesso a Microsoft Teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
 
 Se sei un fornitore che cerca di partecipare al programma di certificazione, vedi [Come iscriversi per](/skypeforbusiness/certification/how-to-join) i requisiti e i programmi disponibili.
 
-[Esplora Microsoft telefoni e dispositivi certificati di Teams.](https://products.office.com/microsoft-teams/across-devices/devices)
+[Esplora i telefoni e i dispositivi certificati di Microsoft Teams.](https://products.office.com/microsoft-teams/across-devices/devices)
 
 [Interoperabilità di Teams e Skype](../teams-skype-interop.md)

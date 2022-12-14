@@ -16,12 +16,12 @@ description: Questo articolo fornisce una panoramica delle attività e dei passa
 ms.collection:
 - M365-voice
 - Teams_ITAdmin_Devices
-ms.openlocfilehash: fb9b560f56ece49ddae9f15899a118596a31c38f
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: 4ba5c1a9ab59765a5a0af2ac145baf69fc4a8a9a
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606845"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69392516"
 ---
 # <a name="plan-your-deployment-for-teams-phone-devices-and-displays"></a>Pianificare la distribuzione per i dispositivi telefonici e gli schermi di Teams
 
@@ -56,7 +56,7 @@ I dispositivi personali e condivisi hanno ruoli e usi diversi.
 - Eseguire una funzione specifica, ad esempio un telefono dell'area comune o un dispositivo della sala riunioni e richiedere un account dedicato e una licenza di funzionalità per accedere al servizio.
 - I dispositivi condivisi hanno una relazione uno-a-molti: un dispositivo condiviso da molti utenti.
 - Distribuito in spazi condivisi come sale riunioni, aree di ricevimento o pavimenti di produzione. 
-- Le interfacce utente sono specifiche per la loro funzione, ad esempio l'interfaccia utente del telefono area comune o l'interfaccia utente della sala riunioni dipendono dalla funzione e dal posizionamento del dispositivo condiviso.
+- Le interfacce utente sono specifiche per la loro funzione, ad esempio l'interfaccia utente del telefono dell'area comune o l'interfaccia utente della sala riunioni dipendono dalla funzione e dal posizionamento del dispositivo condiviso.
 - Richiedere la configurazione e la protezione avanzata facoltativa per assicurarsi che le impostazioni non vengano modificate o per impedire all'account di disconnettersi. 
 - Altre funzionalità nei dispositivi di spazio condiviso includono la ricerca nei telefoni dell'area comune e l'hot desking con timeout di inattività
 
@@ -76,7 +76,7 @@ Ora che hai identificato i personaggi del dispositivo, devi determinare quali di
 
 Ora che sai quanti dispositivi ti servono, il passaggio successivo consiste nel determinare quante licenze sono necessarie. I telefoni e gli schermi di Teams richiedono licenze per accedere a Microsoft Teams e Microsoft 365.
 
-I dispositivi condivisi e personali richiedono licenze diverse. Per i dispositivi personali, è possibile usare le licenze assegnate agli account utente. I dispositivi condivisi devono avere licenze specifiche per la loro funzione. Per telefoni e schermi, le licenze applicabili sono [la licenza Common Area Phone per Microsoft Teams](../set-up-common-area-phones.md#step-1---buy-the-licenses) e una [licenza di Microsoft Teams Rooms](../rooms/rooms-licensing.md).
+I dispositivi condivisi e personali richiedono licenze diverse. Per i dispositivi personali, è possibile usare le licenze assegnate agli account utente. I dispositivi condivisi devono avere licenze specifiche per la loro funzione. Per telefoni e schermi, le licenze applicabili sono [la licenza Dispositivi condivisi di Microsoft Teams](/microsoftteams/teams-add-on-licensing/teams-shared-device-license) e una [licenza di Microsoft Teams Rooms](../rooms/rooms-licensing.md).
 
 Per altre informazioni e per confrontare le opzioni di licenza, vedere [Piani di licenza di Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1).
 
@@ -155,9 +155,9 @@ Usare Teams Amministrazione Center per gestire
 - Firmware
 - Risoluzione dei problemi e download dei log
 
-#### <a name="endpoint-manager-admin-center-if-you-use-intune-for-device-management"></a>Centro Endpoint Manager Amministrazione (se usi Intune per la gestione dei dispositivi)
+#### <a name="endpoint-manager-admin-center-if-you-use-intune-for-device-management"></a>Endpoint Manager Amministrazione Center (se si usa Intune per la gestione dei dispositivi)
 
-Usare il Centro Endpoint Manager Amministrazione per gestire: 
+Usare Endpoint Manager Amministrazione Center per gestire: 
 
 - Criteri di conformità dei dispositivi
 - Restrizioni di registrazione

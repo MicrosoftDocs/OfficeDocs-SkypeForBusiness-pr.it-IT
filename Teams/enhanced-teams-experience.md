@@ -19,12 +19,12 @@ ms.localizationpriority: medium
 ms.custom:
 - Licensing
 description: Informazioni su Microsoft Teams Premium per amministratori e professionisti IT.
-ms.openlocfilehash: 2d7c43f6dd46a635d7aceaaa95548b8c4f31f590
-ms.sourcegitcommit: 81b3403a1a77ba202690c2d88bd8d1d5257048e5
+ms.openlocfilehash: 9e7af9c777ba5fec8ca8b68da7f1069737702617
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 12/14/2022
-ms.locfileid: "69379463"
+ms.locfileid: "69392476"
 ---
 # <a name="microsoft-teams-premium---overview-for-administrators"></a>Microsoft Teams Premium - Panoramica per gli amministratori
 
@@ -63,8 +63,6 @@ Teams Premium offre altri modi per salvaguardare le riunioni con le seguenti fun
 - **Crittografia end-to-end** : applicata tramite un'etichetta di riservatezza. La crittografia end-to-end offre una maggiore sicurezza per le riunioni che richiedono un livello di protezione superiore.
 
 
-
-
 | Caratteristica/attività  | Documentazione per gli amministratori | Documentazione per gli utenti finali
 | -------------------- | ----------- | ------------ |
 | Etichette di riservatezza | [Configurare le riunioni di Teams con tre livelli di protezione](configure-meetings-three-tiers-protection.md) | |
@@ -82,16 +80,17 @@ Teams Premium offre le seguenti funzionalità aggiuntive per la personalizzazion
 
 - **Temi delle riunioni** : consente all'organizzazione di estendere le proprie identità visive nell'intera esperienza di riunione. È possibile configurare e creare temi di riunione per diverse business unit e reparti all'interno di un singolo tenant.
 
-- **Sfondi personalizzati per le riunioni** : è possibile creare e definire sfondi personalizzati per le riunioni, che sono quindi disponibili per gli utenti finali. 
+- **Sfondi personalizzati per le riunioni per le organizzazioni** - È possibile creare e definire sfondi personalizzati per le riunioni che sono quindi disponibili per gli utenti finali con una licenza Teams Premium.
 
-- **Personalizzare le scene in modalità insieme** - Un'app Teams che consente agli sviluppatori dell'organizzazione di definire e personalizzare scene video per le riunioni.  
+- Scene personalizzate in **modalità insieme per le organizzazioni** - È possibile creare, personalizzare o accettare scene personalizzate in modalità insieme per le riunioni che sono poi disponibili per gli utenti finali con una licenza Teams Premium.
+
 
 | Caratteristica/attività | Documentazione per gli amministratori | Documentazione per gli utenti finali
 | -------------------- | ----------- | ------------ |
 | Modelli di riunione | - [Panoramica](custom-meeting-templates-overview.md)<br>- [Creare un modello di riunione personalizzato](create-custom-meeting-template.md)| [Usare modelli personalizzati](https://support.microsoft.com/office/use-custom-templates-for-teams-meetings-78279be9-3283-4999-b24e-96fb0da2fb4f)
 | Temi delle riunioni | [Temi per le riunioni di Teams](meeting-themes.md) | [Usare i temi della riunione](https://support.microsoft.com/office/use-meeting-themes-for-teams-meetings-fbfd826d-1112-4790-918a-5a82cac8250e) |
-| Sfondi personalizzati per le riunioni | [Sfondi delle riunioni](custom-meeting-backgrounds.md)| |
-| Personalizzare le scene della modalità insieme | [Contenuto per te e i tuoi sviluppatori](/microsoftteams/platform/apps-in-teams-meetings/teams-together-mode)| |
+| Sfondi delle riunioni personalizzati per le organizzazioni | [Sfondi delle riunioni](custom-meeting-backgrounds.md)| |
+| Personalizzare le scene della modalità insieme per le organizzazioni | [Contenuto per te e i tuoi sviluppatori](/microsoftteams/platform/apps-in-teams-meetings/teams-together-mode)| |
 
 
 

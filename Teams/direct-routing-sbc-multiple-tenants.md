@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un controller dei confini di sessione (SBC) per servire più tenant per i partner Microsoft e/o i gestori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3789270bc9826c11dee338b5221bc019191f50f2
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.openlocfilehash: 570709730f7563b30b98626395f6b0a72fc1ac48
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68614409"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69392296"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -141,8 +141,8 @@ Dopo aver registrato un nome di dominio, è necessario attivarlo aggiungendo alm
 - Account utente con Office 365 F3 o Microsoft 365 F1/F3.
 - Account utente con Office 365 G1/G3/G5 o Microsoft 365 G3/G5.
 - Account utente con Microsoft 365 Business Basic/Standard/Premium.
-- Account utente con Common Area Phone.
-- Account della risorsa con **Telefono di Microsoft Teams licenza Account risorsa**.
+- Account utente con una licenza **per dispositivi condivisi di Microsoft Teams** .
+- Account della risorsa con licenza **Account risorsa Telefono di Microsoft Teams**.
 
 Inoltre, l'UPN dell'account (nome dell'entità utente) o Skype for Business'indirizzo SIP locale deve usare lo stesso FQDN del dominio appena creato.
 
@@ -206,7 +206,7 @@ Dopo aver registrato un nome di sottodominio, è necessario attivarlo aggiungend
 -   Account utente con Office 365 E1/E3/E5/A3/A5 o Microsoft 365 E3/E5/A3/A5
 -   Account utente con Office 365 F1/F3 o Microsoft 365 F1/F3
 -   Account utente con piani Microsoft 365 Business Basic/Standard/Premium e G3/G5
--   Account utente con telefono area comune
+-   Account utente con una licenza **per dispositivi condivisi di Microsoft Teams**
 -   Account della risorsa con licenza **Account risorse Telefono di Microsoft Teams**
 
 Inoltre, l'UPN dell'account (nome dell'entità utente) o Skype for Business'indirizzo SIP locale deve usare lo stesso FQDN del sottodominio appena creato.

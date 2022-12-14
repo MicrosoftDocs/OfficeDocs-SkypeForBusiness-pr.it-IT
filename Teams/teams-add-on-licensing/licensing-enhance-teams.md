@@ -1,5 +1,5 @@
 ---
-title: licenze Microsoft Teams Premium
+title: Licenze di Microsoft Teams Premium
 author: DaniEASmith
 ms.author: danismith
 manager: serdars
@@ -17,19 +17,19 @@ ms.localizationpriority: medium
 ms.custom:
 - Licensing
 description: Informazioni su come migliorare l'esperienza di Microsoft Teams con la licenza del componente aggiuntivo Microsoft Teams Premium
-ms.openlocfilehash: e650c5c40623e3748deb9275d439dfd5328a317b
-ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
+ms.openlocfilehash: ec0f71e252a38beca0613a546ef9ddd990f6a53d
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2022
-ms.locfileid: "69308027"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69392346"
 ---
-# <a name="microsoft-teams-premium-licensing"></a>licenze Microsoft Teams Premium
+# <a name="microsoft-teams-premium-licensing"></a>Licenze di Microsoft Teams Premium
 
 > [!NOTE]
 > Teams Premium è attualmente disponibile come versione di anteprima, consentendo alle organizzazioni di sperimentare e pianificare la versione generalmente disponibile di Teams Premium. Non tutte le funzionalità di Teams Premium sono disponibili in questa versione di anteprima, ma altre funzionalità verranno rilasciate per tutto il periodo di anteprima. Per provare le funzionalità di anteprima di Teams Premium, vedere [È possibile provare Teams Premium prima di acquistare le licenze?](#can-i-experience-teams-premium-before-buying-licenses)
 
-Microsoft Teams Premium è una licenza per i componenti aggiuntivi di Teams che consente alle organizzazioni con Microsoft 365 abbonamenti di migliorare l'esperienza di Teams con vantaggi come:
+Microsoft Teams Premium è una licenza per i componenti aggiuntivi di Teams che consente alle organizzazioni con abbonamenti a Microsoft 365 di migliorare l'esperienza di Teams con vantaggi come:
 
 - Webinar e riunioni più personalizzati e intelligenti.
 - Maggiore protezione per le riunioni.
@@ -41,12 +41,11 @@ Questo articolo è rivolto agli amministratori IT che desiderano comprendere le 
 - [Quali sono le differenze tra Teams Premium e Teams?](#how-does-teams-premium-compare-to-teams)
 - [Ci sono funzionalità correnti di Teams che verranno spostate in Teams Premium?](#are-there-current-teams-features-that-will-move-to-teams-premium)
 - [Quali sono i requisiti per acquistare Teams Premium?](#what-are-the-requirements-to-purchase-teams-premium)
-- [In che modo Teams applica l'accesso alle funzionalità di Teams Premium?](#how-does-teams-enforce-access-to-teams-premium-features)
 - [Qual è la differenza tra Teams Premium e Teams Rooms Pro?](#how-does-teams-premium-differ-from-teams-rooms-pro)
 - [È possibile provare Teams Premium prima di acquistare le licenze?](#can-i-experience-teams-premium-before-buying-licenses)
 - [Ricerca per categorie acquistare licenze Di Teams Premium?](#how-do-i-purchase-teams-premium-licenses)
 
-Per informazioni su come configurare le funzionalità di Teams Premium, vedere [Microsoft Teams Premium - Panoramica per gli amministratori](/microsoftteams/enhanced-teams-experience), che includerà anche collegamenti alla documentazione dell'utente finale non appena disponibile.
+Per informazioni su come configurare le funzionalità di Teams Premium, vedere [Microsoft Teams Premium - Panoramica per gli amministratori](/microsoftteams/enhanced-teams-experience), che includerà anche collegamenti alla documentazione dell'utente finale non appena sarà disponibile.
 
 ## <a name="how-does-teams-premium-compare-to-teams"></a>Quali sono le differenze tra Teams Premium e Teams?
 
@@ -60,7 +59,7 @@ La tabella seguente confronta le funzionalità principali tra Teams e Teams Prem
 |---------|:-----:|:-------------:|
 | Ospitare e partecipare alle riunioni di Teams | X | X |
 | Esperienza dell'aspetto standard di Teams | X | X |
-| Usare gli sfondi standard delle riunioni di Teams | X | X |
+| Usare sfondi standard e personalizzati per le riunioni a livello di utente| X | X |
 | Leggere i sottotitoli in tempo reale durante le riunioni | X | X |
 | Personalizzare i modelli di riunione per l'organizzazione |  | X |
 | Aggiungere il branding dell'organizzazione alle lobby delle riunioni |  | X |
@@ -177,30 +176,11 @@ Il **requisito per l'utente** è:
 
 - Un abbonamento a Office 365 o Microsoft 365 con Teams.
 
-## <a name="how-does-teams-enforce-access-to-teams-premium-features"></a>In che modo Teams applica l'accesso alle funzionalità di Teams Premium?
-
-L'esperienza di Teams di un utente dipende dalla licenza di Teams e dal ruolo di Teams. Teams controlla la licenza e la funzione di un utente per funzionalità per offrire l'esperienza appropriata.
-
-Ad esempio, in una riunione di Teams, Teams controlla la licenza di Teams di ogni utente e se è un organizzatore o un partecipante della riunione. Questi fattori determinano l'esperienza di un utente e potenzialmente quella di altri partecipanti alla riunione.
-
-- **Basato sull'organizzatore:** Alcune funzionalità controllano le licenze a livello di organizzatore. Se un organizzatore della riunione ha la licenza giusta per una funzionalità, anche tale funzionalità verrà condivisa e resa accessibile ai partecipanti alla riunione durante la riunione.
-- **Basato sui partecipanti:** Alcune funzionalità controllano le licenze a livello di partecipante. L'esperienza di Teams non verrà condivisa e resa accessibile agli altri partecipanti durante la riunione.
-
-La tabella seguente mostra i controlli delle licenze per ogni funzionalità di Teams Premium.
-
-|  | Controllo licenza basata sull'organizzatore | Verifica della licenza basata su partecipanti |
-|--|-------------------------------|------------------------------|
-| **Riunioni** | &#10004; Usare modelli di riunione personalizzati </br> &#10004; Usare riunioni con tema personalizzato </br> &#10004; Usare Microsoft eCDN per gli eventi live | &#10004; Usare scene personalizzate in modalità Insieme </br> &#10004; Usare sfondi e lobby personalizzati |
-| **Webinar** | &#10004; Configurare le sale verdi del webinar </br> &#10004; Gestire la modalità Webinar </br> &#10004; Usare RTMP-In </br> &#10004; Approvare manualmente le registrazioni del webinar </br> &#10004; Creare una lista di attesa di registrazione </br> &#10004; Limita data e ora di registrazione |  |
-| **Protezione delle riunioni** | &#10004; Usare la crittografia end-to-end per riunioni con un massimo di 50 partecipanti </br> &#10004; Aggiungere filigrane alle riunioni </br> &#10004; Applicare etichette di riservatezza alle riunioni </br> &#10004; Impedisci copia/incolla nelle chat delle riunioni </br> &#10004; Controllare chi può registrare una riunione </br> pacchetti di criteri utente personalizzati &#10004; |  |
-| **Riunioni intelligenti** | &#10004; Leggi i sottotitoli tradotti in tempo reale </br> &#10004; Esplorare le riunioni con i capitoli generati automaticamente | &#10004; Tradurre trascrizioni successive alla riunione </br></br> *Funzionalità di intelligenza artificiale di riepilogo delle riunioni:* </br> &#10004; Vedere i timestamp per quando si partecipa e si lascia una riunione </br> &#10004; Ricevere attività suggerite dopo una riunione </br> &#10004; Cerca con l'altoparlante suggerito </br> &#10004; Visualizzare @mentions |
-| **Appuntamenti virtuali** | &#10004; Configurare le notifiche SMS </br> app Appuntamenti virtuali di Access Premium &#10004; </br> &#10004; Usare sfondi personalizzati per appuntamenti e lobby | &#10004; Configurare le notifiche SMS </br> app Appuntamenti virtuali di Access Premium &#10004; </br> &#10004; Visualizzare e gestire la coda di appuntamenti pianificata e su richiesta </br> &#10004; Visualizza analisi Appuntamenti virtuali avanzate </br> &#10004; Inviare follow-up post-appuntamento |
-
 ## <a name="how-does-teams-premium-differ-from-teams-rooms-pro"></a>Qual è la differenza tra Teams Premium e Teams Rooms Pro?
 
-Le licenze Di Teams Premium sono assegnate agli utenti dell'organizzazione e Teams Rooms Pro licenze devono essere assegnate solo a Microsoft Teams Rooms dispositivi. Queste due licenze non dipendono l'una dall'altra, non si sovrappongono alle funzionalità e non causano conflitti di applicazione delle licenze.
+Le licenze Di Teams Premium vengono assegnate agli utenti dell'organizzazione e le licenze di Teams Rooms Pro devono essere assegnate solo a Microsoft Teams Rooms dispositivi. Queste due licenze non dipendono l'una dall'altra, non si sovrappongono alle funzionalità e non causano conflitti di applicazione delle licenze.
 
-Prima del rilascio di Teams Rooms Pro, Microsoft offerto una licenza Teams Rooms denominata Teams Rooms Premium. Teams Rooms Premium è stato ritirato e non è correlato a Teams Premium.
+Prima del rilascio di Teams Rooms Pro, Microsoft offriva una licenza Teams Rooms denominata Teams Rooms Premium. Teams Rooms Premium è stato ritirato e non è correlato a Teams Premium.
 
 ## <a name="can-i-experience-teams-premium-before-buying-licenses"></a>È possibile provare Teams Premium prima di acquistare le licenze?
 

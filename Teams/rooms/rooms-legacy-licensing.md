@@ -22,12 +22,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni sulle licenze disponibili in precedenza per i diversi tipi di funzionalità per chiamate e riunioni in Microsoft Teams Rooms.
-ms.openlocfilehash: bc1874a91aee3096c37e6b4c95774a3c8e3c1b7d
-ms.sourcegitcommit: 30429a67cf477afa97fb09aa3b301443d989f8eb
+ms.openlocfilehash: a452267c789baa374f8bc5ade3fe050c4269831f
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/04/2022
-ms.locfileid: "68384785"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69392393"
 ---
 # <a name="microsoft-teams-rooms-legacy-licenses"></a>Microsoft Teams Rooms licenze legacy
 
@@ -70,9 +70,9 @@ La tabella seguente elenca le funzionalità disponibili per Teams Rooms con le l
 | Avviare una riunione ad hoc                                                                                             | Microsoft Teams Rooms Standard o Premium                                                                                                                                                                      | Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Enterprise                |
 | Avviare una riunione ad hoc e effettuare chiamate in uscita da una riunione a numeri di telefono                                                | Microsoft Teams Rooms Standard o Premium                                                                                                                                                                      | Skype for Business Licenza CAL Standard  <br/> Skype for Business Licenza CAL per server Enterprise                       |
 | Assegnare un numero di telefono alla sala ed effettuare o ricevere una chiamata dalla sala oppure partecipare a un'audioconferenza utilizzando un numero di telefono | Con Direct Routing e/o Operator Connect: Microsoft Teams Rooms Standard o Premium<br/>Senza routing diretto o connessione con l'operatore: piano per chiamate nazionali o internazionali<br/>Microsoft 365 Business Voice | Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Plus                      |
-| Gestire il dispositivo della chat room con Microsoft Intune                                                                          | Microsoft Teams Rooms Standard o Premium                                                                                                                                                                      | Microsoft Intune abbonamento con [MDM locale](/configmgr/mdm/plan-design/plan-on-premises-mdm) |
+| Gestire il dispositivo della chat room con Microsoft Intune                                                                          | Microsoft Teams Rooms Standard o Premium                                                                                                                                                                      | Abbonamento a Microsoft Intune con [MDM locale](/configmgr/mdm/plan-design/plan-on-premises-mdm) |
 | Servizi gestiti Microsoft Teams Rooms                                                                                 | Microsoft Teams Rooms Premium                                                                                                                                                                                  |                                                                                                       |
 
  Vedere anche [Ottime esperienze con le sale riunioni: Scopri le nuove Microsoft Teams Rooms Standard e Premium](https://www.microsoft.com/microsoft-365/blog/2020/07/21/microsoft-teams-meetings-hybrid-workplace-options/).
 
- Per informazioni sulle licenze dei telefoni area comune, vedere [Configurare la licenza Common Area Phone per Microsoft Teams](../set-up-common-area-phones.md) .
+ Per informazioni sulle licenze per i telefoni ad area comune [, vedere Configurare telefoni ad area comune per Microsoft Teams](../set-up-common-area-phones.md) .

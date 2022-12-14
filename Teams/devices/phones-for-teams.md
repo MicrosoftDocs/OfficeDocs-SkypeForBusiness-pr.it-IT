@@ -18,12 +18,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: Questo articolo illustra l'elenco dei telefoni certificati per Microsoft Teams e le funzionalità supportate nei telefoni certificati per Microsoft Teams.
-ms.openlocfilehash: d62832c8feb69d3492eed7d2f1e2fc80b6e1e1ea
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 05283550190b1ed2498993ff80712b4894038f31
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269911"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69392406"
 ---
 # <a name="phones-for-microsoft-teams"></a>Telefoni per Microsoft Teams
 
@@ -50,7 +50,7 @@ I telefoni certificati per Teams hanno un'ampia gamma di funzionalità che conse
     > [!IMPORTANT]
     > Se un telefono non è connesso o non dispone di una connessione Internet, non è possibile effettuare 911 chiamate. In questo caso, sul telefono viene visualizzata una notifica.
 
-Oltre alle funzionalità precedenti, è possibile controllare le funzionalità disponibili a seconda del tipo di licenza e dei criteri del telefono assegnati all'utente che accede al telefono. Ad esempio, gli utenti che accedono a un telefono con il proprio account personale possono accedere alla gamma completa di funzionalità: chiamate, riunioni, segreteria telefonica e così via. Gli account a cui è assegnata una licenza Common Area Phone che accede a un telefono, tuttavia, possono accedere solo a una gamma limitata di funzionalità; La cronologia delle chiamate e le pianificazioni delle riunioni potrebbero non essere mantenute, ad esempio, per proteggere la privacy degli utenti.
+Oltre alle funzionalità precedenti, è possibile controllare le funzionalità disponibili a seconda del tipo di licenza e dei criteri del telefono assegnati all'utente che accede al telefono. Ad esempio, gli utenti che accedono a un telefono con il proprio account personale possono accedere alla gamma completa di funzionalità: chiamate, riunioni, segreteria telefonica e così via. Gli account assegnati a una licenza **Dispositivi condivisi di Microsoft Teams** che accedono a un telefono, tuttavia, possono avere accesso solo a una gamma limitata di funzionalità; La cronologia delle chiamate e le pianificazioni delle riunioni potrebbero non essere mantenute, ad esempio, per proteggere la privacy degli utenti.
 
 ## <a name="required-licenses"></a>Licenze necessarie
 
@@ -60,7 +60,7 @@ Per altre informazioni su come ottenere Teams, vedere [Ricerca per categorie ott
 
 ## <a name="deploy-your-phones-using-intune"></a>Distribuire i telefoni con Intune
 
-Per altre informazioni su come distribuire gli schermi di Teams usando Intune, vedere [Distribuire i telefoni e gli schermi di Teams](phones-displays-deploy.md).
+Per altre informazioni su come distribuire gli schermi di Teams con Intune, vedere [Distribuire i telefoni e gli schermi di Teams](phones-displays-deploy.md).
 
 ## <a name="manage-your-phones"></a>Gestire i telefoni
 

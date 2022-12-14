@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Devices
 description: Informazioni su come impostare l'interfaccia utente nei dispositivi Teams Android.
-ms.openlocfilehash: 830609d1bf02c38a2301c0d5a1b9e62ac836c908
-ms.sourcegitcommit: 75dfc3cd9b59282d68e35e4d7185da572eb3795c
+ms.openlocfilehash: 0efabef522a791a56ac187da9a63fab10e4ab3e9
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "67606835"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69392435"
 ---
 # <a name="set-microsoft-teams-android-devices-user-interface"></a>Impostare l'interfaccia utente dei dispositivi Android di Microsoft Teams
 
@@ -33,9 +33,9 @@ Esistono tre tipi di interfacce utente nei dispositivi Teams Android:
 
 Se si [assegna una licenza utente](/microsoftteams/user-access) a un account, ad esempio una licenza E3 o E5, il dispositivo Teams visualizzerà l'interfaccia utente finale predefinita, che è completamente in primo piano per la maggior parte degli scenari utente. Tuttavia, se un dispositivo esegue una funzione specifica, ad esempio un telefono ad area comune o una sala riunioni, esistono interfacce utente specifiche per questi utilizzi.
 
-Le tre immagini seguenti mostrano come cambia l'interfaccia utente in base alla licenza assegnata all'account utente. 
+Le tre immagini seguenti mostrano come cambia l'interfaccia utente in base alla licenza assegnata all'account utente.
 
-## <a name="end-user-interface"></a>Interfaccia utente finale 
+## <a name="end-user-interface"></a>Interfaccia utente finale
 
 All'account utente è assegnata una licenza E5. Si tratta di una licenza utente, quindi il dispositivo mostra l'interfaccia utente finale predefinita:
 
@@ -43,7 +43,7 @@ All'account utente è assegnata una licenza E5. Si tratta di una licenza utente,
 
 ## <a name="common-area-interface"></a>Interfaccia area comune
 
-In questa immagine all'account utente è stata assegnata una [licenza common area phone](/microsoftteams/set-up-common-area-phones). I telefoni ad area comune vengono utilizzati principalmente per effettuare e ricevere chiamate telefoniche. Di conseguenza, la tastiera del telefono viene visualizzata sullo schermo:
+In questa immagine, all'account utente è stata assegnata una [licenza Dispositivi condivisi di Microsoft Teams](/microsoftteams/teams-add-on-licensing/teams-shared-device-license). I telefoni ad area comune vengono utilizzati principalmente per effettuare e ricevere chiamate telefoniche. Di conseguenza, la tastiera del telefono viene visualizzata sullo schermo:
 
 :::image type="content" source="../media/teams-android-devices-cap1.jpg" alt-text="Interfaccia del telefono area comune.":::
 
@@ -64,7 +64,7 @@ Questa immagine mostra un account utente con una [licenza Microsoft Teams Rooms]
 In alcuni casi, è possibile scegliere di assegnare una licenza a un account che non corrisponde all'uso previsto. Ad esempio, è possibile assegnare una licenza utente a un account destinato ad accedere a Teams Rooms su Android. Per impostazione predefinita, viene visualizzata l'interfaccia utente finale invece dell'interfaccia della sala riunioni. Per ignorare l'interfaccia predefinita, creare un nuovo [criterio telefonico IP di Teams](/powershell/module/skype/new-csteamsipphonepolicy) e applicarlo a tale account.
 
 > [!NOTE]
-> La licenza assegnata all'account utente deve avere almeno gli stessi diritti di licenza dell'interfaccia utente desiderata. La licenza Common Area Phone consente solo l'interfaccia utente del telefono area comune. La licenza della sala riunioni consente le interfacce utente della sala riunioni e del telefono dell'area comune. Una licenza E3 o E5 supporta tutte le modalità di accesso.
+> La licenza assegnata all'account utente deve avere almeno gli stessi diritti di licenza dell'interfaccia utente desiderata. La licenza **Dispositivi condivisi di Microsoft Teams** consente solo l'interfaccia utente del telefono dell'area comune. La licenza **Teams Rooms** consente le interfacce utente delle sale riunioni e del telefono dell'area comune. Una licenza E3 o E5 supporta tutte le modalità di accesso.
 
 Di seguito è riportato un esempio di come ignorare il rilevamento automatico delle licenze. In questo esempio si presuppone che a un account di risorse della sala riunioni denominato conf-adams@contoso.com sia stata assegnata una licenza E3. Quando l'account è connesso, si vuole che gli utenti vedano l'interfaccia utente della sala riunioni.
 
@@ -95,11 +95,10 @@ Dopo aver concesso il criterio all'account delle risorse della sala riunioni, è
 
 L'interfaccia di amministrazione di Microsoft Teams consente di gestire i dispositivi di Microsoft Teams. Per altre informazioni sulla gestione dei dispositivi tramite l'interfaccia di amministrazione di Teams, vedere [Gestire i dispositivi in Microsoft Teams](device-management.md).
 
-
-L'interfaccia di amministrazione di Teams offre la possibilità di gestire i telefoni di Teams. I telefoni sono filtrati in una delle tre schede in base alla loro funzione: telefoni utente, telefoni dell'area comune e telefono da conferenza. 
+L'interfaccia di amministrazione di Teams offre la possibilità di gestire i telefoni di Teams. I telefoni sono filtrati in una delle tre schede in base alla loro funzione: telefoni utente, telefoni dell'area comune e telefono da conferenza.
 
  :::image type="content" source="../media/teams-admin-center-phones-header.png" alt-text="Intestazione telefoni nell'interfaccia di amministrazione di Teams.":::
 
-Come per il rilevamento dell'interfaccia utente, i telefoni di Teams sono categorizzati in base alla licenza assegnata all'account che accede al telefono. Ad esempio, se un account a cui è assegnata una licenza di area geografica comune accede a un telefono, il telefono verrà visualizzato sia nella sezione predefinita **Tutti i telefoni** che nella sezione **Telefoni dell'area comune** .
+Come per il rilevamento dell'interfaccia utente, i telefoni di Teams sono categorizzati in base alla licenza assegnata all'account che accede al telefono. Ad esempio, se un account a cui è assegnata una licenza **Dispositivi condivisi di Microsoft Teams** accede a un telefono, il telefono verrà visualizzato sia nella sezione predefinita **Tutti i telefoni** che nella sezione **Telefoni dell'area comune** .
 
 Se si vuole che un telefono venga visualizzato in una sezione diversa, è possibile assegnare una licenza diversa al telefono oppure creare e assegnare criteri per il telefono IP di Teams come [descritto in precedenza](#override-automatic-user-interface-detection).

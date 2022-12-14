@@ -23,14 +23,16 @@ ms.localizationpriority: high
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 982730f7c839eeab2a55bc8997eade8aec31bebc
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.openlocfilehash: 45148768d023b3cb6b609c1f315fe8d71031a573
+ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68614269"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69392196"
 ---
 # <a name="meetings-webinars-and-live-events"></a>Riunioni, webinar ed eventi live
+
+[!INCLUDE[Teams Premium](includes/teams-premium-ecm.md)]
 
 Esistono più modi per incontrarsi in Microsoft Teams: riunioni, webinar ed eventi live.
 
@@ -44,7 +46,7 @@ La tabella seguente riepiloga i tre tipi di riunioni, il numero di partecipanti 
 
 | Tipo di riunione | Numero di partecipanti | Interazione | Registrazione supportata |
 |----------|--------|--------|-----|
-| Riunioni  | Fino a 20,000* | - I partecipanti fino a 1.000 persone hanno la possibilità di partecipare a riunioni paritarie completamente interattive. <br> - I partecipanti con più di 1.000 fino a 20.000 hanno funzionalità [di sola visualizzazione](view-only-meeting-experience.md).  | No |
+| Riunioni  | Fino a 20,000* | - I partecipanti fino a 1.000 persone hanno la possibilità di partecipare a riunioni paritarie completamente interattive. <br> - I partecipanti con più di 1.000 fino a 20.000 hanno funzionalità [di sola visualizzazione](view-only-meeting-experience.md).  | Sì, con riunioni con registrazione (webinar 1.0) |
 | Webinar | - Fino a 1.000<br>- Maggiori limiti con le funzionalità [di sola visualizzazione](view-only-meeting-experience.md) presto disponibili. |- I partecipanti fino a 1.000 hanno funzionalità completamente interattive.<br> - Interazione del gruppo di destinatari configurabile.<br> - Può specificare i relatori. | Sì |
 | Eventi live | Fino a 20,000** |- Trasmettere a un pubblico di grandi dimensioni. <br>- Domande e risposte moderate per l'interazione con i destinatari. <br> - Può specificare producer e relatori, inclusi i relatori esterni.<br>- Supporta funzionalità di produzione più avanzate. | No |
 
@@ -95,7 +97,30 @@ Nella tabella seguente sono elencati i corsi di formazione disponibili per gli u
 
 ## <a name="webinars"></a>Webinar
 
-I **webinar** sono riunioni strutturate in cui relatori e partecipanti hanno ruoli chiari. Una differenza fondamentale tra webinar e riunioni di Teams è che i webinar supportano la registrazione e forniscono i dati di engagement dei partecipanti. Per abilitare i webinar nell'organizzazione, vedere [Configurare i webinar in Teams](set-up-webinars.md).
+I **webinar** sono riunioni strutturate in cui relatori e partecipanti hanno ruoli chiari. Una differenza fondamentale tra webinar e riunioni di Teams è che i webinar supportano una gestione affidabile delle registrazioni, un sito di registrazione e un evento personalizzabile e opzioni di riunione predefinite orientate agli eventi.
+
+Se l'organizzazione usa già webinar, si ha familiarità con i criteri delle riunioni di Teams e le impostazioni seguenti che consentono di supportare la registrazione delle riunioni e tenere traccia dei dati sul coinvolgimento:
+
+- AllowMeetingRegistration (abilitato o disabilitato)
+- WhoCanRegister (tutti gli utenti dell'azienda esclusi i guest o tutti)
+
+Con il rilascio della nuova esperienza di webinar, ci saranno nuovi criteri eventi di Teams con le impostazioni seguenti:
+
+- AllowWebinar (abilitato o disabilitato)
+- EventAccessType (tutti gli utenti dell'azienda esclusi i guest o tutti)
+
+I nuovi criteri continueranno a supportare la registrazione e il monitoraggio e forniranno funzionalità aggiuntive all'esperienza del webinar. Inizialmente, saranno disponibili i seguenti elementi:
+
+- Domande personalizzate relative a termini e condizioni
+- Bio del relatore
+- Banner, logo e colore predefinito
+- Funzionalità di registrazione avanzate: approvazione manuale, lista di attesa, data di registrazione e limite di tempo
+- Panoramica e gestione delle registrazioni: per ogni evento, un riepilogo dello stato di registrazione con elenchi di partecipanti in diversi stati di registrazione, a seconda delle funzionalità di registrazione abilitate.
+
+È consigliabile iniziare a usare il nuovo criterio per sfruttare le nuove funzionalità non appena diventano disponibili.
+
+Per altre informazioni sulle funzionalità e su come configurare webinar, vedere [Configurare webinar](set-up-webinars.md).
+
 
 ### <a name="key-training-for-end-users"></a>Formazione chiave per gli utenti finali
 
@@ -152,6 +177,8 @@ La tabella seguente elenca gli articoli contenenti altre informazioni:
 Chiunque può partecipare gratuitamente a una riunione dei team, a un webinar o a un evento pubblico dal vivo, senza bisogno di alcuna licenza.
 
 Le persone che organizzano, pianificano o conducono riunioni o eventi live devono aver acquistato una delle licenze di Microsoft 365 elencate nella [descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description). Se usi già Teams, è probabile che tu abbia la licenza necessaria per organizzare e condurre riunioni, webinar ed eventi live.
+
+Per informazioni sulle licenze di Teams Premium, vedi [Licenze Di Teams Premium](teams-add-on-licensing/licensing-enhance-teams.md).
 
 Per consentire alle persone di accedere a una riunione telefonicamente, è necessario configurare il servizio di audioconferenza. Per saperne di più sull’audioconferenza, consulta [Audioconferenza in Teams](deploy-audio-conferencing-teams-landing-page.md).
 
