@@ -3,129 +3,37 @@
 
 
 
-## <a name="week-of-september-19-2022"></a>Settimana del 19 settembre 2022
+## <a name="week-of-december-05-2022"></a>Settimana del 5 dicembre 2022
 
 
 | Data pubblicazione |Titolo dell'argomento | Cambiare |
 |------|------------|--------|
-| 9/19/2022 | [Sistema telefonico Microsoft 365 Teams con documentazione relativa al piano per chiamate # < 60 caratteri](/MicrosoftTeams/business-voice/index) | Volta |
-| 9/19/2022 | [Microsoft Teams Chalk Talks](/MicrosoftTeams/chalk-talks-landing-page) | Volta |
-| 9/19/2022 | [Documentazione per amministratori di Microsoft Teams # < 60 caratteri](/MicrosoftTeams/index) | Volta |
-| 9/19/2022 | [Formazione per utenti finali per Microsoft Teams # < 60 caratteri](/MicrosoftTeams/instructor-led-training-teams-landing-page) | Volta |
-| 9/19/2022 | [formazione Amministrazione per Microsoft Teams](/MicrosoftTeams/teams-admin-training-landing-page) | Volta |
-| 9/19/2022 | [Pianificare l'aggiornamento da Skype for Business a Microsoft Teams](/MicrosoftTeams/upgrade-skype-teams) | Volta |
-| 9/20/2022 | [Usare la personalizzazione delle app per personalizzare le app in base alle esigenze dell'organizzazione](/MicrosoftTeams/customize-apps) | Volta |
-| 9/20/2022 | [Usare i modelli di team generali nell'interfaccia di amministrazione](/MicrosoftTeams/general-teams-templates-in-the-admin-console) | Volta |
-| 9/20/2022 | [Usare i modelli di team di vendita al dettaglio](/MicrosoftTeams/get-started-with-retail-teams-templates) | Volta |
-| 9/20/2022 | [Introduzione ai modelli di team nell'interfaccia Teams di amministrazione](/MicrosoftTeams/get-started-with-teams-templates-in-the-admin-console) | Volta |
-
-
-## <a name="week-of-september-12-2022"></a>Settimana del 12 settembre 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 9/12/2022 | [Usare la personalizzazione delle app per personalizzare le app in base alle esigenze dell'organizzazione](/MicrosoftTeams/customize-apps) | Volta |
-| 9/12/2022 | [Richieste degli utenti per gli amministratori di consentire le app](/MicrosoftTeams/user-requests-approve-apps) | Volta |
-| 9/13/2022 | [Monitorare l'instradamento diretto](/MicrosoftTeams/direct-routing-monitor-and-troubleshoot) | Volta |
-| 9/13/2022 | [Richieste degli utenti per gli amministratori](/MicrosoftTeams/user-requests-approve-apps) | Volta |
-| 9/13/2022 | [Trasferire i numeri di telefono nel sistema telefonico di Teams con il piano per chiamate](/MicrosoftTeams/business-voice/port-phone-numbers) | Volta |
-| 9/13/2022 | [Contattare il team di Telephone Number Services](/MicrosoftTeams/manage-phone-numbers-for-your-organization/contact-tns-service-desk) | Volta |
-| 9/14/2022 | [Dispositivi Teams per l'istruzione](/MicrosoftTeams/devices-for-education) | Volta |
-| 9/14/2022 | [Ritiro di Skype for Business Online](/MicrosoftTeams/skype-for-business-online-retirement) | Volta |
-| 9/14/2022 | [Comprendere Microsoft Teams e coesistenza e interoperabilità di Skype for Business](/MicrosoftTeams/teams-and-skypeforbusiness-coexistence-and-interoperability) | Volta |
-| 9/14/2022 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | Volta |
-| 9/14/2022 | [Portale di Microsoft Teams Rooms](/MicrosoftTeams/rooms/managed-meeting-rooms-portal) | Volta |
-| 9/14/2022 | [Gestire Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-manage). | Volta |
-| 9/14/2022 | [Microsoft Teams Rooms la manutenzione e le operazioni](/MicrosoftTeams/rooms/rooms-operations) | Volta |
-| 9/15/2022 | [Autenticazione basata su applicazioni nel modulo di Teams PowerShell](/MicrosoftTeams/teams-powershell-application-authentication) | Aggiunto |
-| 9/15/2022 | [In che modo le diverse tecnologie hanno effetto sull'accesso a Microsoft Teams, inclusa la limitazione dell'accesso e i comportamenti di accesso.](/MicrosoftTeams/sign-in-teams) | Volta |
-| 9/16/2022 | [Autenticazione basata su applicazioni nel modulo di Teams PowerShell](/MicrosoftTeams/teams-powershell-application-authentication) | Volta |
-
-
-## <a name="week-of-september-05-2022"></a>Settimana del 5 settembre 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 9/6/2022 | [Assegnare, modificare o rimuovere il numero di telefono di un utente](/MicrosoftTeams/assign-change-or-remove-a-phone-number-for-a-user) | Volta |
-| 9/6/2022 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | Volta |
-| 9/6/2022 | [Pianificare la distribuzione per i dispositivi telefonici e gli schermi di Teams](/MicrosoftTeams/devices/plan-device-deployment) | Volta |
-| 9/6/2022 | [Schermi di Microsoft Teams](/MicrosoftTeams/devices/teams-displays) | Volta |
-| 9/6/2022 | [Gestire i criteri per le chiamate di emergenza in Microsoft Teams](/MicrosoftTeams/manage-emergency-calling-policies) | Volta |
-| 9/6/2022 | [Configurare Operator Connect](/MicrosoftTeams/operator-connect-configure) | Volta |
-| 9/6/2022 | [Configurare Connessione con operatore di telefonia mobile](/MicrosoftTeams/operator-connect-mobile-configure) | Aggiunto |
-| 9/6/2022 | [Pianificare Connessione con operatore di telefonia mobile](/MicrosoftTeams/operator-connect-mobile-plan) | Aggiunto |
-| 9/6/2022 | [Pianificare Operator Connect](/MicrosoftTeams/operator-connect-plan) | Volta |
-| 9/6/2022 | [Opzioni di connettività PSTN](/MicrosoftTeams/pstn-connectivity) | Volta |
-| 9/6/2022 | [Panoramica della licenza Microsoft Teams Rooms nell'interfaccia di amministrazione di Teams](/MicrosoftTeams/rooms/admin-center-license-overview) | Aggiunto |
-| 9/6/2022 | [licenze Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-licensing) | Volta |
-| 9/6/2022 | [Piano per Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-plan) | Volta |
-| 9/6/2022 | [sicurezza Microsoft Teams Rooms](/MicrosoftTeams/rooms/security) | Volta |
-| 9/6/2022 | [Creare account di risorse per sale e dispositivi teams condivisi](/MicrosoftTeams/rooms/with-office-365) | Volta |
-| 9/6/2022 | [Pianificare e gestire le chiamate di emergenza](/MicrosoftTeams/what-are-emergency-locations-addresses-and-call-routing) | Volta |
-| 9/6/2022 | [Esperienza di aggiornamento delle app in Microsoft Teams](/MicrosoftTeams/apps-update-experience) | Volta |
-| 9/6/2022 | [Note sulla versione per Microsoft Teams Rooms (Windows)](/MicrosoftTeams/rooms/rooms-release-note) | Volta |
-| 9/9/2022 | [Richieste degli utenti per gli amministratori di consentire le app](/MicrosoftTeams/user-requests-approve-apps) | Aggiunto |
-| 9/9/2022 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | Volta |
-| 9/9/2022 | [Domande ricorrenti sulle audioconferenze](/MicrosoftTeams/audio-conferencing-common-questions) | Volta |
-| 9/9/2022 | [Audioconferenza in Microsoft 365](/MicrosoftTeams/audio-conferencing-in-office-365) | Volta |
-| 9/9/2022 | [Lingue supportate per i servizi di audioconferenza](/MicrosoftTeams/audio-conferencing-supported-languages) | Volta |
-| 9/9/2022 | [Audioconferenza con routing diretto, GCCH e DoD](/MicrosoftTeams/audio-conferencing-with-direct-routing-for-gcch-and-dod) | Volta |
-| 9/9/2022 | [Modificare le impostazioni per un bridge per audioconferenza](/MicrosoftTeams/change-the-settings-for-an-audio-conferencing-bridge) | Volta |
-| 9/9/2022 | [Periodo di accesso gratuito](/MicrosoftTeams/complimentary-dial-out-period) | Volta |
-| 9/9/2022 | [Disponibilità paese/area geografica - Audioconferenza, Piani per chiamate](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans) | Volta |
-| 9/9/2022 | Uso dei gruppi di lavoro in Teams | Rimosso |
-
-
-## <a name="week-of-august-29-2022"></a>Settimana del 29 agosto 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 8/29/2022 | [Failover trunk sulle chiamate in uscita](/MicrosoftTeams/direct-routing-trunk-failover-on-outbound-call) | Volta |
-| 8/29/2022 | [Pianificare il passaggio da Kaizala a Microsoft Teams](/MicrosoftTeams/plan-your-move-kaizala) | Volta |
-| 8/29/2022 | [Gestione dei numeri di telefono per il Messico](/MicrosoftTeams/manage-phone-numbers-for-your-organization/phone-number-management-for-mexico) | Aggiunto |
-| 8/30/2022 | [Store di dispositivi di Teams](/MicrosoftTeams/devices/device-store) | Volta |
-| 8/30/2022 | [licenze dell'account risorse di Telefono di Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/virtual-user) | Volta |
-| 8/30/2022 | [Gestire chi può avviare riunioni immediate e pianificare riunioni](/MicrosoftTeams/manage-who-can-schedule-meetings) | Aggiunto |
-| 8/30/2022 | [Registrazione delle riunioni di Teams nel cloud](/MicrosoftTeams/cloud-recording) | Volta |
-| 8/30/2022 | Criteri per le riunioni e scadenza delle riunioni in Microsoft Teams | Rimosso |
-| 8/30/2022 | [Gestire i criteri delle riunioni per la registrazione e la trascrizione](/MicrosoftTeams/meetings-policies-recording-and-transcription) | Volta |
-| 8/30/2022 | [Usare OneDrive for Business e SharePoint per le registrazioni delle riunioni](/MicrosoftTeams/tmr-meeting-recording-change) | Volta |
-| 8/31/2022 | [risorse di formazione Amministrazione - Microsoft Teams](/MicrosoftTeams/itadmin-readiness) | Volta |
-| 8/31/2022 | [Risorse per l'integrazione di Assistente alla carriera in Microsoft Teams](/MicrosoftTeams/career-coach-resources) | Volta |
-| 8/31/2022 | [Personalizzare l'app store in Teams](/MicrosoftTeams/customize-your-app-store) | Volta |
-| 9/1/2022 | [Gestire Microsoft 365 per l'organizzazione con l'app Amministrazione in Microsoft Teams](/MicrosoftTeams/manage-admin-app) | Aggiunto |
-| 9/2/2022 | [Note sulla versione per Microsoft Teams Rooms (Windows)](/MicrosoftTeams/rooms/rooms-release-note) | Volta |
-| 9/2/2022 | [Gestire in remoto le impostazioni del dispositivo di Microsoft Teams Rooms](/MicrosoftTeams/rooms/xml-config-file) | Volta |
-
-
-## <a name="week-of-august-22-2022"></a>Settimana del 22 agosto 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 8/22/2022 | [Gestire l'app Turni per l'organizzazione](/MicrosoftTeams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams) | Volta |
-| 8/22/2022 | [Gestire i tag in Microsoft Teams](/MicrosoftTeams/manage-tags) | Volta |
-| 8/22/2022 | [Creare account di risorse per sale e dispositivi teams condivisi](/MicrosoftTeams/rooms/with-office-365) | Volta |
-| 8/23/2022 | [Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione](/MicrosoftTeams/communicate-with-users-from-other-organizations) | Volta |
-| 8/23/2022 | [Gestire i criteri delle riunioni per la condivisione del contenuto](/MicrosoftTeams/meeting-policies-content-sharing) | Volta |
-| 8/23/2022 | [Teams: gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-in-teams) | Volta |
-| 8/24/2022 | [Guida introduttiva - Configurare Microsoft Teams per l'istruzione](/MicrosoftTeams/teams-quick-start-guide-edu) | Aggiunto |
-| 8/24/2022 | Guida introduttiva - amministratori Microsoft Teams per l'istruzione | Rimosso |
-| 8/24/2022 | [Risolvere i problemi relativi agli scenari con bassa larghezza di banda per Teams](/MicrosoftTeams/edu-remote-low-bandwidth) | Volta |
-| 8/24/2022 | [Teams per l'istruzione](/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page) | Volta |
-| 8/24/2022 | [Domande frequenti su Microsoft Education per amministratori IT](/MicrosoftTeams/plan-teams-governance-edu) | Volta |
-| 8/24/2022 | [Gestire i criteri e i pacchetti di criteri di Microsoft Teams per l'istruzione](/MicrosoftTeams/policy-packages-edu) | Volta |
-| 8/24/2022 | [Introduzione a Microsoft Teams per l'apprendimento a distanza](/MicrosoftTeams/remote-learning-edu) | Volta |
-| 8/24/2022 | [Condividere le risorse per l'adozione di Teams](/MicrosoftTeams/resources-teams-edu) | Volta |
-| 8/24/2022 | [Assegnare licenze di Microsoft Teams per l'istruzione](/MicrosoftTeams/teams-edu-licensing) | Volta |
-| 8/24/2022 | [Gestire l'uso di un numero di telefono](/MicrosoftTeams/manage-the-usage-of-a-phone-number) | Aggiunto |
-| 8/25/2022 | [risorse di formazione Amministrazione - Microsoft Teams](/MicrosoftTeams/itadmin-readiness) | Volta |
-| 8/26/2022 | [Report cronologico della coda di chiamata & operatore automatico](/MicrosoftTeams/aa-cq-cqd-historical-reports) | Volta |
-| 8/26/2022 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant-smb) | Volta |
-| 8/26/2022 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant) | Volta |
-| 8/26/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue-smb) | Volta |
-| 8/26/2022 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
-| 8/26/2022 | [Pianificare gli operatori automatici di Teams e le code di chiamata](/MicrosoftTeams/plan-auto-attendant-call-queue) | Volta |
+| 12/5/2022 | [Gestire l'app Bookings in Microsoft Teams](/MicrosoftTeams/bookings-app-admin) | Volta |
+| 12/5/2022 | [Configurare la sala di attesa delle riunioni di Microsoft Teams per le riunioni sensibili](/MicrosoftTeams/configure-lobby-sensitive-meetings) | Aggiunto |
+| 12/5/2022 | [Configurare le riunioni di Teams con la protezione di base](/MicrosoftTeams/configure-meetings-baseline-protection) | Aggiunto |
+| 12/5/2022 | [Configurare le riunioni di Teams con protezione per i dati altamente sensibili](/MicrosoftTeams/configure-meetings-highly-sensitive-protection) | Aggiunto |
+| 12/5/2022 | [Configurare le riunioni di Teams con la protezione dei dati sensibili](/MicrosoftTeams/configure-meetings-sensitive-protection) | Aggiunto |
+| 12/5/2022 | [Configurare le riunioni di Teams con tre livelli di protezione](/MicrosoftTeams/configure-meetings-three-tiers-protection) | Aggiunto |
+| 12/5/2022 | [Creare un modello di riunione personalizzato in Microsoft Teams](/MicrosoftTeams/create-custom-meeting-template) | Aggiunto |
+| 12/5/2022 | [Sfondi delle riunioni personalizzate per le riunioni di Teams](/MicrosoftTeams/custom-meeting-backgrounds) | Aggiunto |
+| 12/5/2022 | [Panoramica dei modelli di riunione personalizzati in Microsoft Teams](/MicrosoftTeams/custom-meeting-templates-overview) | Aggiunto |
+| 12/5/2022 | [Richiedere la crittografia end-to-end per le riunioni sensibili di Teams](/MicrosoftTeams/end-to-end-encrypted-meetings) | Aggiunto |
+| 12/5/2022 | [Microsoft Teams Premium - Panoramica per gli amministratori](/MicrosoftTeams/enhanced-teams-experience) | Aggiunto |
+| 12/5/2022 | [Gestire le chat per le riunioni sensibili di Teams](/MicrosoftTeams/manage-chat-sensitive-meetings) | Aggiunto |
+| 12/5/2022 | [Gestire l'esperienza di presentazione della riunione per riunioni sensibili di Teams](/MicrosoftTeams/manage-meeting-presentation-experience) | Aggiunto |
+| 12/5/2022 | [Gestire le opzioni di registrazione delle riunioni di Microsoft Teams per le riunioni sensibili](/MicrosoftTeams/manage-meeting-recording-options) | Aggiunto |
+| 12/5/2022 | [Gestire i modelli di riunione in Microsoft Teams](/MicrosoftTeams/manage-meeting-templates) | Aggiunto |
+| 12/5/2022 | [Gestire l'app Appuntamenti virtuali in Microsoft Teams](/MicrosoftTeams/manage-virtual-appointments-app) | Aggiunto |
+| 12/5/2022 | [Gestire i criteri delle riunioni generali](/MicrosoftTeams/meeting-policies-in-teams-general) | Volta |
+| 12/5/2022 | [Usare i modelli di riunione di Teams, le etichette di riservatezza e i criteri di amministrazione insieme per le riunioni riservate](/MicrosoftTeams/meeting-templates-sensitivity-labels-policies) | Aggiunto |
+| 12/5/2022 | [Temi delle riunioni per le riunioni di Teams](/MicrosoftTeams/meeting-themes) | Aggiunto |
+| 12/5/2022 | [Riunioni, webinar ed eventi live](/MicrosoftTeams/quick-start-meetings-live-events) | Volta |
+| 12/5/2022 | [Configurare webinar](/MicrosoftTeams/set-up-webinars) | Volta |
+| 12/5/2022 | [Licenze di Microsoft Teams Premium](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams) | Aggiunto |
+| 12/5/2022 | [Licenze per i componenti aggiuntivi di Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/microsoft-teams-add-on-licensing) | Volta |
+| 12/5/2022 | [Richiedere una filigrana per le riunioni sensibili di Teams](/MicrosoftTeams/watermark-meeting-content-video) | Aggiunto |
+| 12/7/2022 | [Guida introduttiva a Microsoft Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | Volta |
+| 12/7/2022 | [Gestisci Microsoft Teams gratuito (classico)](/MicrosoftTeams/manage-freemium) | Volta |
+| 12/7/2022 | [Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams](/MicrosoftTeams/policy-control-diagnostic-data-mobile) | Volta |
+| 12/7/2022 | [Eseguire l'aggiornamento Microsoft Teams gratuito (classico) all'abbonamento](/MicrosoftTeams/upgrade-freemium) | Volta |
+| 12/8/2022 | [Usare i dati di telemetria in tempo reale per risolvere problemi di scarsa qualità delle riunioni](/MicrosoftTeams/use-real-time-telemetry-to-troubleshoot-poor-meeting-quality) | Volta |
