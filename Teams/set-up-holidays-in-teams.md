@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.orgwidesettings.holidays.overview
 - seo-marvel-apr2020
 description: Informazioni su come configurare le festività in Microsoft Teams per l'uso con gli operatori automatici.
-ms.openlocfilehash: e3d23c3d289f3ce2698d9bd0b774c40a46d69004
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.openlocfilehash: 6ed508f9060ff6ab5e0fb427c500b9e1cd8a707f
+ms.sourcegitcommit: 81b3403a1a77ba202690c2d88bd8d1d5257048e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68614399"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69379332"
 ---
 # <a name="set-up-holidays-in-microsoft-teams"></a>Configurare le festività in Microsoft Teams
 
@@ -56,7 +56,7 @@ Per creare una festività
    > [!NOTE]
    > Se il periodo di festività è di un giorno intero, ad esempio un periodo di 24 ore, **l'ora di fine** deve essere impostata sul giorno successivo e l'ora alle 12:00. Ad esempio, se l'organizzazione è chiusa il 1° gennaio per il giorno di Capodanno, impostare **l'ora di inizio** su 12:00 gennaio e impostare l'ora di **fine** su 2 gennaio alle 12:00.
 
-9. Facoltativamente, aggiungere altre date per le festività ricorrenti.
+9. Facoltativamente, aggiungere altre date per le festività ricorrenti. È possibile aggiungere fino a 10 intervalli di date separati a una singola festività.  
 
 10. Selezionare **Salva**.
 

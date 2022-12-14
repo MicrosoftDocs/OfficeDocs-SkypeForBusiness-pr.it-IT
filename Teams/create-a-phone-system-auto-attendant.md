@@ -25,12 +25,12 @@ adobe-target-activity: DocsExp–480823–A/B–Docs/TeamsSteps–HowToTabs–FY
 adobe-target-experience: Experience B
 adobe-target-content: ./create-a-phone-system-auto-attendant-experiment
 description: Informazioni su come configurare e gestire gli operatori automatici in Microsoft Teams.
-ms.openlocfilehash: 1484b70dca4ffe1e148522cf6e907f79be732702
-ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
+ms.openlocfilehash: 1294559d1fcca7b1dace8f12cd3203b7effa4c80
+ms.sourcegitcommit: 81b3403a1a77ba202690c2d88bd8d1d5257048e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2022
-ms.locfileid: "69307541"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69379392"
 ---
 # <a name="set-up-a-microsoft-teams-auto-attendant"></a>Configurare un operatore automatico di Microsoft Teams
 
@@ -43,7 +43,7 @@ Gli operatori automatici possono reindirizzare le chiamate, in base all'input de
 - **Operatore** - l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. L'operatore può essere definito come una qualsiasi delle altre destinazioni in questo elenco.
 - **Persona dell'organizzazione** : una persona dell'organizzazione che può ricevere chiamate vocali. Questa persona può essere un utente online o un utente ospitato in locale usando Skype for Business Server.
 - **App vocale** : un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato all'operatore automatico o alla coda di chiamata quando si sceglie questa destinazione.
-- **Segreteria telefonica**: cassetta postale vocale associata a un gruppo di Microsoft 365 specificato. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lascia un messaggio dopo il tono". richiesta di sistema.
+- **Segreteria telefonica** : la cassetta postale vocale associata a un gruppo di Microsoft 365 specificata. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lascia un messaggio dopo il tono". richiesta di sistema.
   - In M365 Amministrazione Center abilitare l'opzione "Consenti agli utenti esterni all'organizzazione di inviare un messaggio di posta elettronica al team" per il gruppo di Microsoft 365 specificato
 - **Numero di telefono esterno** : qualsiasi numero di telefono. Vedere [i dettagli tecnici sul trasferimento esterno](create-a-phone-system-auto-attendant.md?tabs=general-info#external-phone-number-transfers---technical-details).
 - **Annuncio (file audio):** riprodurre un file audio. Messaggio di annuncio registrato che viene caricato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere di dimensioni superiori a 5 MB. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
@@ -172,7 +172,7 @@ Dopo aver aggiunto il flusso delle chiamate fuori orario, seleziona **Avanti**.
 
 ## <a name="step-4-set-up-call-flows-for-holidays-optional"></a>Passaggio 4: Configurare i flussi delle chiamate per le festività (facoltativo)
 
-L'operatore automatico può avere un flusso delle chiamate per ogni [festività configurata](set-up-holidays-in-teams.md). È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
+L'operatore automatico può avere un flusso delle chiamate per ogni [festività configurata](set-up-holidays-in-teams.md). Puoi aggiungere fino a 20 set di festività a ogni operatore automatico. Ogni set di festività può contenere fino a 10 intervalli di date univoci. Le date delle festività devono essere univoche in tutti i set di festività aggiunti all'operatore automatico.
 
 *Nuovo: è possibile abilitare l'opzione Forza ascolto che richiede ai chiamanti di ascoltare tutte le opzioni di menu prima di effettuare la selezione.*
  *I tasti Nuovi - \* (asterisco) e \# (cancelletto) ora possono essere utilizzati nelle opzioni di menu.*

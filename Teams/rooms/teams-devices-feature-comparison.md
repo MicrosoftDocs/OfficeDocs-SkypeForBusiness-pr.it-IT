@@ -18,12 +18,12 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8b2173a68951286aa8ea96cdd805971b9d5b5dcb
-ms.sourcegitcommit: 401cee68d4f6f9470d614dda12b9cb023f382ff2
+ms.openlocfilehash: ef7675881448597e8f20717c679fe1eabce11323
+ms.sourcegitcommit: 81b3403a1a77ba202690c2d88bd8d1d5257048e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "67999581"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69379453"
 ---
 # <a name="teams-rooms-for-windows-and-android-feature-comparison"></a>confronto delle funzionalità di Teams Rooms per Windows e Android
 
@@ -66,6 +66,7 @@ Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puo
 |                                          | Condivisione wireless                                                                                             | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Trasmissione da dispositivo mobile                                                                                             | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Risoluzione di video e contenuti: 1080p, 30 FPS                                                                  | Disponibile                                                                                                                                      | Disponibile                                           |
+|                                          | Controllo zoom inclinazione panoramica (PTZ) per fotocamere con controlli PTZ meccanici                                         | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Elenco dei partecipanti alla riunione                                                                                  | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Funzionalità vocali di Cortana                                                                                         | Disponibile                                                                                                                                      | Prossimamente                                         |
 |                                          | Supporto per il doppio schermo                                                                                          | Disponibile                                                                                                                                      | Disponibile                                           |
@@ -87,4 +88,3 @@ Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puo
 |                                          | Medio (6-12 persone)                                                                                         | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Grande (12-16 persone)                                                                                         | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Stanza multiuso (più di 16 persone)                                                                              | Disponibile                                                                                                                                      | Non disponibile                                       |
-

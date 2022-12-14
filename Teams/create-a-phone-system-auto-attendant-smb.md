@@ -21,12 +21,12 @@ ms.localizationpriority: medium
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e gestire gli operatori automatici in Microsoft Teams.
-ms.openlocfilehash: 97f298e03a6495dda4ec7568f3e3b022548bba08
-ms.sourcegitcommit: 0a13f96663c7466b08d654bedcb6206f302189a1
+ms.openlocfilehash: 0acdbacb9899184aaf21003193d62b3dcc4eab3a
+ms.sourcegitcommit: 81b3403a1a77ba202690c2d88bd8d1d5257048e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2022
-ms.locfileid: "69139260"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69379362"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -170,7 +170,7 @@ Dopo aver aggiunto il flusso delle chiamate fuori orario, seleziona **Avanti**.
 
 ## <a name="step-4-set-up-call-flows-for-holidays-optional"></a>Passaggio 4: Configurare i flussi delle chiamate per le festività (facoltativo)
 
-L'operatore automatico può avere un flusso delle chiamate per ogni [festività configurata](set-up-holidays-in-teams.md). È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
+L'operatore automatico può avere un flusso delle chiamate per ogni [festività configurata](set-up-holidays-in-teams.md). Puoi aggiungere fino a 20 set di festività a ogni operatore automatico. Ogni set di festività può contenere fino a 10 intervalli di date univoci. Le date delle festività devono essere univoche in tutti i set di festività aggiunti all'operatore automatico.
 
 *Nuovo: è possibile abilitare l'opzione Forza ascolto che richiede ai chiamanti di ascoltare tutte le opzioni di menu prima di effettuare la selezione.*
  *I tasti Nuovi - \* (asterisco) e \# (cancelletto) ora possono essere utilizzati nelle opzioni di menu.*

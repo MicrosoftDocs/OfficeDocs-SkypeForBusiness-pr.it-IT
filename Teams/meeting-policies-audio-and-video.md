@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.audioandvideo
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per audio e video.
-ms.openlocfilehash: 111b91a26a3c1058c6fb574f5feb7b6a6d8c00b2
-ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
+ms.openlocfilehash: 9e4e4ac9e2c1c63b9f45a71c5e006bba48ebbfc8
+ms.sourcegitcommit: 81b3403a1a77ba202690c2d88bd8d1d5257048e5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2022
-ms.locfileid: "69307891"
+ms.lasthandoff: 12/14/2022
+ms.locfileid: "69379372"
 ---
 # <a name="meeting-policy-settings-for-audio--video"></a>Impostazioni dei criteri riunione per audio & video
 
@@ -205,21 +205,21 @@ I partecipanti alla riunione vedranno una selezione di immagini di sfondo che po
 
 ## <a name="far-end-camera-control-fecc-for-pan-tilt-zoom-ptz-cameras"></a>Controllo della fotocamera estremi (FECC) per le fotocamere con zoom con inclinazione panoramica (PTZ)
 
-Il controllo della fotocamera estremo è un criterio che può essere assegnato a Teams Rooms sugli account delle risorse di Windows. Consente alle videocamere PTZ connesse a una sala riunioni di Teams di essere controllate dai partecipanti alla riunione nell'app client di Teams durante le riunioni.
+Il controllo della fotocamera all'estremita' è un criterio che può essere assegnato a Teams Rooms account delle risorse. Consente alle videocamere PTZ connesse a una sala riunioni di Teams di essere controllate dai partecipanti alla riunione nell'app client di Teams durante le riunioni.
 
 Per usare il controllo della fotocamera lontano, i partecipanti alla riunione dovranno ottenere l'app **Controlli fotocamera PTZ** .  Vedere [Consentire e bloccare app](manage-apps.md#allow-and-block-apps) per informazioni su come rendere l'app disponibile nell'app store dell'organizzazione.
 
-Per specificare chi può utilizzare il controllo della fotocamera di estremi in una riunione, creare e assegnare un nuovo criterio a un account di risorse Teams Rooms utilizzando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy?view=skype-ps) o utilizzare [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) per modificarne uno esistente. Impostare il `TeamsCameraFarEndPTZMode` parametro su uno dei valori seguenti:
+Per specificare chi può utilizzare il controllo della fotocamera di estremi in una riunione, creare e assegnare un nuovo criterio a un account di risorse Teams Rooms utilizzando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) o utilizzare [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) per modificarne uno esistente. Impostare il `TeamsCameraFarEndPTZMode` parametro su uno dei valori seguenti:
 
 |Valore dell'impostazione|Comportamento|
 |---|---|
-|Disattiva|Questa è l'impostazione predefinita. Quando è impostata su "disabilitata", nessuno può utilizzare i controlli della fotocamera PTZ.|
-|AutoAcceptAll|I controlli della fotocamera PTZ sono automaticamente disponibili per qualsiasi partecipante alla riunione.|
-|AutoAcceptInTenant|I controlli della fotocamera PTZ sono disponibili automaticamente solo per i partecipanti nella stessa organizzazione della sala riunioni di Teams.|
+|`Disabled`|Questa è l'impostazione predefinita. Se impostato su `Disabled`, nessuno può utilizzare i controlli della fotocamera PTZ.|
+|`AutoAcceptAll`|I controlli della fotocamera PTZ sono automaticamente disponibili per qualsiasi partecipante alla riunione.|
+|`AutoAcceptInTenant`|I controlli della fotocamera PTZ sono disponibili automaticamente solo per i partecipanti nella stessa organizzazione della sala riunioni di Teams.|
 
 Quando `TeamsCameraFarEndPTZMode` è impostato su `AutoAcceptAll` o `AutoAcceptInTenant`, il controllo della fotocamera può comunque essere disattivato manualmente dalla sala di Teams in qualsiasi momento durante una riunione. Il controllo della fotocamera non è disponibile anche quando la fotocamera è disattivata.
 
-È supportata qualsiasi fotocamera con controlli meccanici PTZ e UVC. Per un elenco delle fotocamere certificate per Teams, incluse le fotocamere PTZ e non PTZ, vedi [Versioni certificate del firmware per periferiche audio e video USB](rooms/requirements.md#certified-firmware-versions-for-usb-audio-and-video-peripherals). Questa funzionalità non è ancora supportata nelle fotocamere con controlli PTZ digitali o su Teams Rooms su Android.  
+È supportata qualsiasi fotocamera con controlli meccanici PTZ e UVC. Per un elenco delle fotocamere certificate per Teams, incluse le fotocamere PTZ e non PTZ, vedi [Versioni certificate del firmware per periferiche audio e video USB](rooms/requirements.md#certified-firmware-versions-for-usb-audio-and-video-peripherals). Questa funzionalità non è ancora supportata nelle fotocamere con controlli PTZ digitali.  
 
 > [!NOTE]
 > Aggiorna il firmware della fotocamera prima di testare i controlli PTZ. Vedi la documentazione dell'OEM (Original Equipment Manufacturer) per aggiornare il firmware.
