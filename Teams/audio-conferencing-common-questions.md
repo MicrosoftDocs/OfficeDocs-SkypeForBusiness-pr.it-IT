@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Ecco alcune delle principali domande che riceviamo dai nostri clienti che vogliono usare le audioconferenze.
-ms.openlocfilehash: 84d8ab22cd30d11dc15867bd3de67109bc245a17
-ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
+ms.openlocfilehash: e7ea0d02e258d7a6fa47b53c4a13f2af1ae45189
+ms.sourcegitcommit: 7104222e5d379d1338fa8bf2555754d3ac5eeb82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67641737"
+ms.lasthandoff: 12/15/2022
+ms.locfileid: "69412239"
 ---
 # <a name="audio-conferencing-common-questions"></a>Domande ricorrenti sulle audioconferenze
 
@@ -126,11 +126,13 @@ Per i partecipanti alla riunione e gli organizzatori:
 
 Solo per gli organizzatori delle riunioni:
 
-| Nome comando                   | Tasti comando | Descrizione                                                 |
-|--------------------------------|--------------|-------------------------------------------------------------|
-| Ammetti tutto                      | \*21         | Premere \*21 per ammettere tutti i partecipanti in attesa nella sala di attesa.  |
-| Disattiva l'audio di tutti                       | \*22         | Premere \*22 per disattivare l'audio di tutti i partecipanti (eccetto l'organizzatore). |
-| Attivare/disattivare l'annuncio | \*23         | Premere \*23 per abilitare o disabilitare Invio/Uscita annuncio.    |
+| Nome comando                     | Tasti comando | Descrizione                                                   |
+|----------------------------------|--------------|---------------------------------------------------------------|
+| Ammetti tutto                        | \*21         | Premere \*21 per ammettere tutti i partecipanti in attesa nella sala di attesa.    |
+| Disattiva l'audio di tutti                         | \*22         | Premere \*22 per disattivare l'audio di tutti i partecipanti (eccetto l'organizzatore).   |
+| Attivare/disattivare l'annuncio   | \*23         | Premere \*23 per abilitare o disabilitare Invio/Uscita annuncio.      |
+| Ascoltare il numero dei partecipanti nella sala di attesa  | \*24         | Premere \*24 per ascoltare il numero di partecipanti in attesa nella sala di attesa.|
+
 
 ## <a name="can-attendees-dial-out-to-international-phone-numbers-when-they-are-in-a-teams-meeting"></a>I partecipanti possono effettuare chiamate in uscita con numeri di telefono internazionali durante una riunione di Teams?
 

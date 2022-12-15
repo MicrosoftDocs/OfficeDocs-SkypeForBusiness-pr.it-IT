@@ -22,12 +22,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e da conferenza sono certificati per Microsoft Teams per produrre i migliori risultati.
-ms.openlocfilehash: 0055529d7bc0344faeb04e7d35bf0c9ed457510d
-ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
+ms.openlocfilehash: e6e857539b47fdb991b92e90e7c9f2f1d609143c
+ms.sourcegitcommit: 7104222e5d379d1338fa8bf2555754d3ac5eeb82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2022
-ms.locfileid: "69392356"
+ms.lasthandoff: 12/15/2022
+ms.locfileid: "69412229"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Dispositivi Android certificati da Microsoft Teams
 
@@ -402,7 +402,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware | Versione del prodotto inclusa|
 |:--------------|:-----------------|:-------------------------|
-|Neat Frame nf21f1 | `NFF1.20220914.1215` | 30 novembre 2022 |
+|Neat Frame nf21f1 | `NFF1.20220914.1215` | Aggiornamento 2022 #3B |
 |Crestron UC-P10-TD     |1.0.0.57 |Aggiornamento #3A 2022|
 |Crestron UC-P8-TD     |1.0.0.57 |Aggiornamento #3A 2022|
 |Lenovo ThinkSmart View| `CD-18781Y.211116.114` |2021 Aggiornamento n. 3  |
