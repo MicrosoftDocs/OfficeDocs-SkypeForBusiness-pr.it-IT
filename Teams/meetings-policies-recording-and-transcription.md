@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.recordingandtranscription
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per la registrazione e la trascrizione.
-ms.openlocfilehash: fd0dc824f380fb9a001442267445340944e055c4
-ms.sourcegitcommit: 2d1bb69e0d6bc35be0b57c7c5d87f58ab013dafb
+ms.openlocfilehash: 06a05d2eb8a8c1542b79fa4c37b68ea4a3aa6d32
+ms.sourcegitcommit: 00a526c5b9829302f7c4e0631d0c2dac50b7d004
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/14/2022
-ms.locfileid: "68928312"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "69436765"
 ---
 # <a name="meeting-policy-settings-for-recording--transcription"></a>Impostazioni dei criteri riunione per la registrazione & trascrizione
 
@@ -98,11 +98,11 @@ Non è consigliabile affidarsi alle impostazioni di scadenza delle riunioni per 
 
 #### <a name="recording-expiration-settings-and-microsoft-365-retention-policies-in-microsoft-purview"></a>Impostazioni di scadenza della registrazione e criteri di conservazione di Microsoft 365 in Microsoft Purview
 
-La conservazione dei file ha la precedenza sull'eliminazione dei file. La registrazione di una riunione di Teams con un criterio di conservazione Purview non può essere eliminata dai criteri di scadenza della registrazione delle riunioni di Teams fino al termine del periodo di conservazione. Ad esempio, se si ha un criterio di conservazione Purview che indica che un file verrà conservato per cinque anni e un criterio di scadenza della registrazione delle riunioni di Teams impostato per 60 giorni, i criteri di scadenza della registrazione delle riunioni di Teams elimineranno la registrazione dopo cinque anni.
+La conservazione dei file ha la precedenza sull'eliminazione dei file. La registrazione di una riunione di Teams con un criterio di conservazione Purview non può essere eliminata dai criteri di scadenza della registrazione delle riunioni di Teams fino al termine del periodo di conservazione. Ad esempio, se si ha un criterio di conservazione Purview che indica che un file verrà conservato per cinque anni e un criterio di scadenza della registrazione delle riunioni di Teams impostato per 60 giorni, i criteri di scadenza della registrazione delle riunioni di Teams elimineranno definitivamente la registrazione dopo cinque anni.
 
 Se hai un criterio di scadenza della registrazione delle riunioni di Teams e i criteri di eliminazione Purview con date di eliminazione diverse, il file verrà eliminato al più presto delle due date. Ad esempio, se hai un criterio di eliminazione Purview che indica che un file verrà eliminato dopo un anno e una scadenza della registrazione della riunione di Teams impostata per 120 giorni, i criteri di scadenza della registrazione delle riunioni di Teams elimineranno il file dopo 120 giorni.
 
-Gli utenti possono eliminare manualmente le registrazioni prima della data di scadenza, a meno che non siano presenti criteri di conservazione Purview che ne impediscono la visualizzazione.
+Gli utenti possono eliminare manualmente le registrazioni prima della data di scadenza, a meno che non siano presenti criteri di conservazione Purview che ne impediscono la visualizzazione. Se una registrazione ancora nel periodo di conservazione viene eliminata manualmente da un utente, la registrazione verrà mantenuta nella raccolta di archiviazione. Tuttavia, la registrazione verrà visualizzata come eliminata per l'utente finale. Per altre informazioni, vedere [Informazioni sulla conservazione per SharePoint e OneDrive](/microsoft-365/compliance/retention-policies-sharepoint#how-retention-works-for-sharepoint-and-onedrive).
 
 ### <a name="deletion-of-recordings"></a>Eliminazione delle registrazioni
 

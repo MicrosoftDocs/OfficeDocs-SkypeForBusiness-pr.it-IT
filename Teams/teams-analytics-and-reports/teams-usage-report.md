@@ -17,12 +17,12 @@ description: Informazioni su come usare il report sull'utilizzo di Teams nell'in
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3e280a32c765c989ef5d6081388ad76701be6ab1
-ms.sourcegitcommit: b2692b3f6c60d8df5ba0677c68ff9c90a75a0d72
+ms.openlocfilehash: ef5011ebbfbcbb62332c1fd9a43b19ce2b25b0ff
+ms.sourcegitcommit: 00a526c5b9829302f7c4e0631d0c2dac50b7d004
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68033794"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "69436692"
 ---
 # <a name="microsoft-teams-usage-report"></a>Report sull'utilizzo di Microsoft Teams
 
@@ -32,7 +32,7 @@ Con altre informazioni aggiuntive sugli utenti interni ed esterni, è ora possib
 
 ## <a name="view-the-usage-report"></a>Visualizzare il report sull'utilizzo
 
-Per visualizzare i report nell'interfaccia di amministrazione di Teams, è necessario essere un amministratore globale, un lettore globale o un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](../using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
+Per visualizzare i report nell'interfaccia di amministrazione di Teams, è necessario essere un amministratore globale, un lettore globale e un lettore di report o un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](../using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams fare clic su **Analisi & report** > **utilizzo**. Nella scheda **Visualizza report** , in **Report**, selezionare **Uso di Teams**.
 2. In **Intervallo di date** selezionare un intervallo e quindi fare clic su **Esegui report**.
