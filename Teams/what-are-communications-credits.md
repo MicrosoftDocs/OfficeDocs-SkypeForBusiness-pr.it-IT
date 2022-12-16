@@ -24,12 +24,12 @@ ms.custom:
 - Licensing
 - admindeeplinkMAC
 description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
-ms.openlocfilehash: 6d64c89aa62d7209a1135234e975f492e7c182a9
-ms.sourcegitcommit: 0a13f96663c7466b08d654bedcb6206f302189a1
+ms.openlocfilehash: e66edfcb63b7569b02268b355c7b851c61763810
+ms.sourcegitcommit: 321de0e5d8846caaaab944826f6ca06394e707ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2022
-ms.locfileid: "69139160"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "69414694"
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
@@ -106,11 +106,11 @@ Le notifiche importanti relative al saldo dei Crediti comunicazioni della tua or
 
 - Amministratore fatturazione
 - amministratore Skype for Business
-- Amministratore della società
-- Amministratore account utente
+- Amministratore globale
+- Amministratore utente
 - Amministratore helpdesk
 - Amministratore del supporto tecnico
-- Amministratori di dispositivi
+- Amministratore locale dispositivo aggiunto ad Azure AD
 - Amministratore applicazione
 - Amministratore licenze
 - Amministratore del dispositivo cloud

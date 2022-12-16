@@ -20,12 +20,12 @@ description: Informazioni su come usare e gestire i criteri per le chiamate di e
 ms.custom:
 - seo-marvel-apr2020
 - ms.teamsadmincenter.voice.emergencycallingpolicies.overview
-ms.openlocfilehash: a6fa08808c9ef5fc258236735cc043e4bde366b1
-ms.sourcegitcommit: 179713dd2b22736c0d63060a6351eb69ec4abff2
+ms.openlocfilehash: 4b5d293cbbd588a564ff1a0118ab4d56f96c17a2
+ms.sourcegitcommit: 321de0e5d8846caaaab944826f6ca06394e707ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68551520"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "69414643"
 ---
 # <a name="manage-emergency-calling-policies-in-microsoft-teams"></a>Gestire i criteri per le chiamate di emergenza in Microsoft Teams
 
@@ -54,8 +54,8 @@ Se hai assegnato un criterio di chiamata di emergenza a un sito di rete e a un u
 5. Imposta la modalità di notifica alle persone dell'organizzazione, in genere il security desk, quando viene effettuata una chiamata di emergenza. A tale scopo, in **Modalità di notifica** seleziona una delle opzioni seguenti:
 
     - **Invia solo notifica**: viene inviato un messaggio di chat di Teams agli utenti e ai gruppi specificati.
-    - **Con conferenza disattivata e non è possibile riattivare l'audio**: un messaggio di chat di Teams viene inviato agli utenti e ai gruppi specificati e possono ascoltare (ma non partecipare) alla conversazione tra il chiamante e l'operatore PSAP.
-    - **Con conferenza disattivata ma in grado di riattivare l'audio**: un messaggio di chat di Teams viene inviato agli utenti e ai gruppi specificati e possono riattivare l'audio per ascoltare e partecipare alla conversazione tra il chiamante e l'operatore PSAP.
+    - **Con conferenze ma disattivate**: viene inviato un messaggio di chat di Teams agli utenti e ai gruppi specificati e questi possono ascoltare (ma non partecipare) alla conversazione tra il chiamante e l'operatore PSAP.
+    - **Conferenze in corso e riattivate**: un messaggio di chat di Teams viene inviato agli utenti e ai gruppi specificati e possono riattivare l'audio per ascoltare e partecipare alla conversazione tra il chiamante e l'operatore PSAP.
 
 6.  Imposta la **dichiarazione di non responsabilità per i servizi di emergenza** per visualizzare un banner per ricordare agli utenti finali di confermare la loro posizione per gli interventi di emergenza.
 

@@ -20,12 +20,12 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Scopri in che modo le modifiche alle licenze possono influire sulla gestione dei numeri di telefono.
-ms.openlocfilehash: e023c1606157a5beeafedfa358e470555ba7f653
-ms.sourcegitcommit: f0e2a5928e9b959daf45202b9f256f65c2087195
+ms.openlocfilehash: f75c5aeea577163e9f3ee6d1d4302836de0d1e7e
+ms.sourcegitcommit: 321de0e5d8846caaaab944826f6ca06394e707ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/20/2022
-ms.locfileid: "68614319"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "69414673"
 ---
 # <a name="how-licensing-affects-phone-number-management"></a>Influenza delle licenze sulla gestione dei numeri di telefono
 
@@ -71,12 +71,4 @@ Si supponga, ad esempio, di voler assegnare una licenza di Microsoft 365 E5 a un
 
 Se rimuovi la vecchia licenza e salvi la modifica, quindi aggiungi la nuova licenza e salvi la modifica, il numero di telefono non sarà assegnato e l'utente potrebbe perdere la possibilità di effettuare e ricevere chiamate PSTN in Microsoft Teams. Dopo aver assegnato la nuova licenza, dovrai riassire il numero di telefono all'utente.
 
-
-
-
-
-
-
-
-
-
+Per informazioni su come modificare la licenza contemporaneamente alle licenze basate su gruppo, vedere [Modificare le assegnazioni delle licenze per un utente o un gruppo in Azure Active Directory](/azure/active-directory/enterprise-users/licensing-groups-change-licenses).

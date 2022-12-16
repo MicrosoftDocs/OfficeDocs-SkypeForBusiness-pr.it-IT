@@ -16,12 +16,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 00df395ab67ea3e268cb31f202dd59cba4d4148b
-ms.sourcegitcommit: 46dbff43eec9631863b74b2b49c9a29c6497d8e8
+ms.openlocfilehash: a5a05dbc6519c4f90cf0cc0d49e996467bf10230
+ms.sourcegitcommit: 321de0e5d8846caaaab944826f6ca06394e707ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67396317"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "69414724"
 ---
 # <a name="direct-routing---sip-protocol"></a>Direct Routing - Protocollo SIP
 
@@ -60,7 +60,7 @@ Di seguito è riportato un esempio del messaggio Invito SIP in una chiamata in a
 | Da intestazione | Da intestazione da: <sip:+17168712781@sbc1.adatum.biz;transport=udp;tag=1c747237679 |
 | All'intestazione | A: sip:+183338006777@sbc1.adatum.biz | 
 | Intestazione CSeq | CSeq: 1 INVITO | 
-| Intestazione contatto | Contattare: <sip: 68712781@sbc1.adatum.biz:5058;transport=tls> | 
+| Intestazione contatto | Contattare: <sip:+17168712781@sbc1.adatum.biz:5058;transport=tls> | 
 
 Alla ricezione dell'invito, il proxy SIP esegue la procedura seguente:
 
@@ -299,7 +299,7 @@ L'intestazione REFERRED-BY è un URI SIP con mri transferor codificati al suo in
 
 | Parametro | Valore | Descrizione |  
 |:---------------------  |:---------------------- |:---------------------- |
-| x-m | Mri | MrI completo di destinazione trasferimento/trasferimento come popolato da CC |
+| x-m | MRI | MrI completo di destinazione trasferimento/trasferimento come popolato da CC |
 | x-t | ID tenant | X-t ID tenant ID tenant facoltativo popolato da CC |
 | x-ti | ID di correlazione del transferor | ID di correlazione della chiamata al cedente |
 | x-tt | URI trasferimento chiamata di destinazione | URI di sostituzione delle chiamate codificate |

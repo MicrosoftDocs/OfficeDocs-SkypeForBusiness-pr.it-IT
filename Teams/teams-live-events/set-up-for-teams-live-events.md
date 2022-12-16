@@ -21,12 +21,12 @@ description: Configurare gli eventi live in Teams, tra cui configurare la rete, 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a6fff8443899431176c904bf5a253ceed38d44f4
-ms.sourcegitcommit: 73b13cd8a79ba1724b9fb79c8356a7cacafb7dd3
+ms.openlocfilehash: 899229e5acfdbd5864cc055672f4ae7ac16e6dee
+ms.sourcegitcommit: 321de0e5d8846caaaab944826f6ca06394e707ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2022
-ms.locfileid: "68965102"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "69414714"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi live in Microsoft Teams
 
@@ -104,7 +104,7 @@ Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate pe
 
 - **Kollective** è una piattaforma di distribuzione smart peering basata sul cloud che sfrutta l'infrastruttura di rete esistente per offrire contenuti in molte forme (live streaming video, video su richiesta, aggiornamenti software, patch di sicurezza e altro ancora) più velocemente, in modo più affidabile e con meno larghezza di banda. La nostra piattaforma sicura è considerata attendibile dagli istituti finanziari più grandi del mondo e, senza bisogno di ulteriore hardware, la configurazione e la manutenzione sono facili. [Altre informazioni](https://kollective.com/microsoft-pilot/).
 
-- **Ramp OmniCache** offre distribuzione in rete di nuova generazione e assicura la trasmissione ininterrotta di contenuti video nelle WAN globali, aiutando i produttori di eventi a ottimizzare la larghezza di banda della rete e supportare lo streaming di eventi live e on demand. Il supporto di Ramp OmniCache per gli eventi live prodotti in Teams sarà disponibile a breve. [Altre informazioni](https://rampecdn.com).
+- **Ramp** offre una soluzione eCDN universale per una distribuzione video sicura e impeccabile. Scelto dalle principali istituzioni finanziarie, sanitarie e governative, Ramp distribuisce in locale, nel cloud o ibrido ed è perfetto per ambienti Zero Trust. La nostra licenza universale include tutti e tre i metodi di recapito eCDN (P2P, Multicast e Cache), assicurando che lo streaming live e i video su richiesta siano forniti alla massima qualità con il minore impatto sulla larghezza di banda per proteggere le applicazioni aziendali critiche che condividono la rete aziendale. [Altre informazioni](https://rampecdn.com/).
 
 - **Riverbed**, lo standard di settore nell'ottimizzazione della rete, sta estendendo le sue soluzioni di accelerazione a Microsoft Teams e Stream.  Ora i clienti di Microsoft 365 possono accelerare il traffico di 365 persone, tra cui Teams e Stream, insieme a un'ampia gamma di altri servizi SaaS aziendali leader per aumentare la produttività della forza lavoro ovunque ci si trovi. L'accelerazione di Teams e Stream può essere abilitata attraverso una configurazione senza sforzo che viene fornita con tutta la garanzia del supporto di livello mondiale di Riverbed e degli investimenti continuativi.
 
