@@ -15,18 +15,18 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d861b5ec9b5b70ca18032462b042f10cd4f5b75a
-ms.sourcegitcommit: ffcc4c7d5688fee28f5fdc8bb8e6b78afb1ee626
+ms.openlocfilehash: 6c6416115d65f223b3785be050520548c2e69ba4
+ms.sourcegitcommit: 23224d983ae027c4923e52ed8e31953ae0f84807
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/31/2022
-ms.locfileid: "68795438"
+ms.lasthandoff: 12/16/2022
+ms.locfileid: "69422815"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
 Questo articolo descrive i miglioramenti cumulativi in Microsoft Teams Rooms.
 
-Esistono due tipi di aggiornamenti per Teams Rooms: aggiornamenti delle app Teams Rooms e client Web di Teams. 
+Esistono due tipi di aggiornamenti per Teams Rooms: aggiornamenti delle app Teams Rooms e client Web di Teams.
 
 Teams Rooms gli aggiornamenti delle app avvengono tramite Microsoft Store o tramite [l'aggiornamento manuale](manual-update.md). Aggiornamenti vengono applicati all'applicazione piattaforma UWP (Universal Windows Platform) (UWP) installata localmente nel dispositivo.
 
@@ -40,6 +40,7 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 
 |Rilascio |Pubblicato su <br/> Microsoft Store |
 |--- |--- |
+|4.15.54.0 | 12/15/2022 |
 |4.14.24.0 |9/2/2022 |
 |4.13.132.0 |8/2/2022 |
 |4.12.139.0 |7/14/2022 |
@@ -47,8 +48,8 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 |4.12.126.0 |4/27/2022 |
 |4.11.17.0 |3/3/2022 |
 |4.11.12.0 |1/24/2022 |
-|Versione di Teams Web-Client | Dicembre 2021 |
-|Versione di Teams Web-Client | Ottobre 2021 |
+|Versione client Web di Teams | Dicembre 2021 |
+|Versione client Web di Teams | Ottobre 2021 |
 |4.10.10.0 |10/1/2021 |
 |4.9.12.0 |07/28/2021 |
 |4.8.31.0 |05/12/2021 |
@@ -96,19 +97,33 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Microsoft Teams Rooms introduzione delle funzionalità e risoluzione dei problemi
 
+### <a name="415540-12152022"></a>4.15.54.0 (12/15/2022)
+
+Introdotto in questo aggiornamento:
+
+- Miglioramento delle notifiche durante le riunioni
+- Chat della riunione nella raccolta, nella raccolta di grandi dimensioni e nella modalità Insieme <sup>1</sup>
+- Avviare la lavagna nelle riunioni di Teams
+- Controllo dell'elenco dei video della sala da cornice
+- Supporto per riunioni overflow
+- Partecipare alla riunione Zoom tramite ID (partecipazione guest diretta)
+- Correzioni di qualità per le riunioni di terze parti (partecipazione guest diretta)
+- Correzione per le informazioni sulla licenza nelle impostazioni che non mostrano alcuna licenza quando Teams non ha eseguito l'accesso
+- Un nuovo sfondo predefinito (Vivid Flag) e altri quattro nuovi sfondi
+
+<sup>1 La</sup> configurazione dell'amministratore per nascondere la chat della riunione da tutti i layout della riunione tramite XML è disponibile in [Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML](xml-config-file.md).
+
 ### <a name="414240-922022"></a>4.14.24.0 (9/2/2022)
 
 Introdotto in questo aggiornamento:
 
-- Aggiornamento <sup>dell'esperienza</sup> di layout front row 1 
-- Aggiungere e nascondere il video <sup>della sala 1</sup> 
-- Configurazione dell'amministratore per disattivare la raccolta divisa in doppio schermo Teams Rooms <sup>2</sup>
-- La Teams Rooms a doppio schermo può ora visualizzare fino a 18 flussi video partecipanti <sup>1</sup>
-- Supporto per Microsoft Teams Rooms Pro e licenze room Room Basic di Microsoft Teams <sup>1</sup>
+- Aggiornamento dell'esperienza di layout prima riga
+- Aggiungere e nascondere il video della sala
+- Configurazione dell'amministratore per disattivare la raccolta divisa in dual display Teams Rooms <sup>1</sup>
+- La Teams Rooms a doppio schermo ora può visualizzare fino a 18 flussi video partecipanti
+- Supporto per le licenze per le sale di Microsoft Teams Rooms Pro e Microsoft Teams Room Basic
 
-<sup>1</sup> Questa funzionalità è in fase di distribuzione al client Web di Teams e richiederà circa due settimane dalla data di rilascio dell'aggiornamento. Per altre informazioni, vedere [Aggiornamenti di Teams](../teams-client-update.md).
-
-<sup>2 La</sup> configurazione dell'amministratore per disattivare la raccolta divisa tramite XML è disponibile in [Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML](../rooms/xml-config-file.md).
+<sup>1 La</sup> configurazione dell'amministratore per disattivare la raccolta divisa tramite XML è disponibile in [Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML](../rooms/xml-config-file.md).
 
 ### <a name="4131320-822022"></a>4.13.132.0 (8/2/2022)
 
