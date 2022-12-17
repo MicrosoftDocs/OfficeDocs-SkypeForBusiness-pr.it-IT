@@ -22,12 +22,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni sulle licenze disponibili in precedenza per i diversi tipi di funzionalità per chiamate e riunioni in Microsoft Teams Rooms.
-ms.openlocfilehash: a452267c789baa374f8bc5ade3fe050c4269831f
-ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
+ms.openlocfilehash: e02dd830f9d356400fa153305209dc59f48a765b
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2022
-ms.locfileid: "69392393"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438431"
 ---
 # <a name="microsoft-teams-rooms-legacy-licenses"></a>Microsoft Teams Rooms licenze legacy
 
@@ -38,7 +38,7 @@ Questo articolo viene fornito ai clienti che hanno acquistato Microsoft Teams Ro
 
 ## <a name="licensing-solutions-for-shared-communication-devices"></a>Soluzioni di gestione delle licenze per i dispositivi di comunicazione condivisi
 
-Le licenze seguenti erano disponibili per i clienti che hanno acquistato Teams Rooms dispositivi (ad esempio Microsoft Teams Rooms, Microsoft Surface Hub e Teams Rooms per Android) prima del 6 settembre 2022.
+Le licenze seguenti erano disponibili per i clienti che acquistavano Teams Rooms dispositivi (ad esempio Microsoft Teams Rooms, Microsoft Surface Hub e Teams Rooms su Android) prima del 6 settembre 2022.
 
 |&nbsp;|Microsoft Teams Rooms Standard |Microsoft Teams Rooms Premium |
 |:--- |:---: |:---: |

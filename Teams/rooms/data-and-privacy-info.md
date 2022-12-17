@@ -18,12 +18,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Dati e informazioni sulla privacy
 f1keywords: Microsoft Teams Rooms Managed Service Data and Privacy Information
-ms.openlocfilehash: ec28dcafa7825e7f754d3631d2c21400a08c9b83
-ms.sourcegitcommit: baf29d244b428712052553f9e4484e72e727247e
+ms.openlocfilehash: dd80718da862be02b42a5cf18334c89e86c3807c
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2022
-ms.locfileid: "69046785"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438420"
 ---
 # <a name="approach"></a>Approccio
 
@@ -98,8 +98,8 @@ I servizi gestiti forniscono supporto regionale per la residenza dei dati tramit
 
 ## <a name="more-resources"></a>Altre risorse
 
-Microsoft Teams Rooms per la sicurezza di Windows: [[Sicurezza di Microsoft Teams per Windows](/microsoftteams/rooms/security-windows) \
-sicurezza di Microsoft Teams Rooms per Android: [sicurezza di Microsoft Teams per Android](/microsoftteams/rooms/security-android) \
+Microsoft Teams Rooms sulla sicurezza di Windows: [Sicurezza di [Microsoft Teams per Windows](/microsoftteams/rooms/security-windows) \
+Microsoft Teams Rooms sulla sicurezza android: [sicurezza di Microsoft Teams per Android](/microsoftteams/rooms/security-android) \
 Informativa sulla privacy di Microsoft: https://aka.ms/privacy \
 Gestione dei dati presso Microsoft: https://www.microsoft.com/trust-center/privacy/data-management \
 Descrizione del servizio Servizi gestiti: [Servizio gestito da sala di Microsoft Teams](rooms-pro-management.md)

@@ -20,19 +20,19 @@ ms.collection:
 - m365initiative-meetings
 - highpri
 description: Informazioni su come gestire i criteri di registrazione di webinar e riunioni in Teams.
-ms.openlocfilehash: 37983f8597b9e1a0ed511c2d767c503494447481
-ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
+ms.openlocfilehash: 5493104b93a74dad6763e0a5ba6c9e6fd57575de
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2022
-ms.locfileid: "69307581"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438474"
 ---
 # <a name="set-up-webinars-in-microsoft-teams"></a>Configurare webinar in Microsoft Teams
 
 > [!NOTE]
 > Questo articolo descrive alcune funzionalità dei webinar che sono in anteprima e richiedono una licenza Di Teams Premium.
 
-Microsoft offre ora una nuova esperienza di webinar. Questo articolo descrive come aggiornare le impostazioni per usare queste funzionalità.
+Microsoft offre ora una nuova esperienza di webinar; in questo articolo viene descritto come aggiornare le impostazioni per l'uso di queste funzionalità.
 
 Se si prevede di usare webinar, è consigliabile usare la nuova esperienza webinar.
 
@@ -53,6 +53,9 @@ La nuova esperienza webinar è configurata in PowerShell. Ecco alcuni esempi su 
 
 Per altre informazioni sulle differenze tra riunioni, webinar ed eventi live, vedere [Riunioni, webinar ed eventi live](quick-start-meetings-live-events.md).
 
+> [!NOTE]
+> La nuova esperienza di webinar non è disponibile per Microsoft 365 GCC, Microsoft 365 GCC High o Microsoft 365 DoD. L'esperienza di webinar esistente non è disponibile per Microsoft 365 GCC High o Microsoft 365 DoD.
+
 > [!IMPORTANT]
 > Per consentire agli utenti di configurare webinar, è necessario configurare Elenchi Microsoft in SharePoint abilitando la creazione di elenchi personali per scopi di eDiscovery. Per altre informazioni, vedere [Controllare le impostazioni per Elenchi Microsoft](/sharepoint/control-lists).
 
@@ -71,7 +74,7 @@ Per configurare la nuova esperienza webinar, utilizzare gli attributi seguenti a
 |AllowWebinar|Abilitata|Questa impostazione determina se un utente può creare webinar.|
 |EventAccessType|Tutti|Questa impostazione determina quali utenti possono accedere alla pagina di registrazione dell'evento o al sito dell'evento da registrare, nonché al tipo di utente consentito di partecipare alle sessioni dell'evento.|
 
-Prima di eseguire questi cmdlet, è necessario essere connessi a Microsoft PowerShell di Teams. Per altre informazioni, vedere [Gestire Teams con Microsoft PowerShell di Teams](/microsoftteams/teams-powershell-managing-teams).
+Prima di eseguire questi cmdlet, è necessario essere connessi a PowerShell di Microsoft Teams. Per altre informazioni, vedere [Gestire Teams con Microsoft Teams PowerShell](/microsoftteams/teams-powershell-managing-teams).
 
 1. Attivare la registrazione della riunione.
 

@@ -11,12 +11,12 @@ manager: serdars
 ms.collection:
 - M365-collaboration
 ROBOTS: NOINDEX
-ms.openlocfilehash: 1dc9c743c6d122b55b69efffca5e9b9d110f2f18
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 1d7a94ea803a240955d3ea20d461c2a533f5d854
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67269901"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438504"
 ---
 # <a name="teams-sessions-at-ignite-2020"></a>Sessioni di Teams a Ignite 2020
 
@@ -46,7 +46,7 @@ ms.locfileid: "67269901"
 |---|----------|---|---|
 |[Innovazione nelle riunioni e nei dispositivi di Teams con l'intelligenza](https://aka.ms/PR104) |Stiamo continuamente rinnovando e reinventando le riunioni. Scopri come stiamo portando più intelligenza nelle riunioni e le nostre ultime innovazioni nei dispositivi che portano intelligenza in vita.  |200|Shalendra Chhabra|
 |[Funzionalità di chiamata avanzate](https://aka.ms/IG20-OD265)|Approfondire l'analisi delle chiamate mentre esploriamo la nuova esperienza di chiamata. Ricevi ulteriori informazioni su Chiamate collaborative, e911, routing Location-Based e altre funzionalità. Scopri come le chiamate sono pronte per i tuoi scenari avanzati, indipendentemente dalle dimensioni dell'azienda. |200|Alan Xie, Roy Kuntz|
-|[Dispositivi Microsoft Teams per gli spazi condivisi](https://aka.ms/IG20-OD261) |I dispositivi Microsoft Teams sono progettati per aiutare le persone a massimizzare la potenza di Teams e colmare il divario tra aree di lavoro remote e condivise. Con le funzionalità per le riunioni di Teams, le esperienze delle sale incentrate sui clienti e l'hardware leader del settore, gli utenti beneficiano di riunioni interattive, inclusive e a basso attrito. Le funzionalità per le riunioni sono disponibili sia che gli utenti partecipino in remoto o nella sala riunioni. Informazioni su come i dispositivi per lo spazio condiviso, come Microsoft Teams Rooms, barre di collaborazione e Surface Hub, possono aiutare i team a rimanere connessi e collaborativi nell'ambiente di lavoro ibrido.|200|Greg Baribault, Kendra Baker, Sandhya Rao|
+|[Dispositivi Microsoft Teams per gli spazi condivisi](https://aka.ms/IG20-OD261) |I dispositivi Microsoft Teams sono progettati per aiutare le persone a massimizzare la potenza di Teams e colmare il divario tra aree di lavoro remote e condivise. Con le funzionalità per le riunioni di Teams, le esperienze delle sale incentrate sui clienti e l'hardware leader del settore, gli utenti beneficiano di riunioni interattive, inclusive e a basso attrito. Le funzionalità per le riunioni sono disponibili sia che gli utenti partecipino in remoto o nella sala riunioni. Informazioni su come i dispositivi di spazio condiviso come Microsoft Teams Rooms, barre di collaborazione (ora chiamate Teams Rooms su Android) e Surface Hub possono aiutare i team a rimanere connessi e collaborativi nell'ambiente di lavoro ibrido.|200|Greg Baribault, Kendra Baker, Sandhya Rao|
 |[In Skype for Business? Progettare il percorso verso Microsoft Teams](https://aka.ms/OD251)|Partecipa a questa sessione per imparare e determinare l'approccio più adatto in base ai tuoi attuali obiettivi di implementazione Skype for Business e di business. Che tu sia un cliente di Skype for Business Online o Server, condivideremo suggerimenti, risorse e indicazioni per accedere a Microsoft Teams oggi stesso. |200|Lisa McKee, Laszlo Somi
 |[Innovazione moderna nei dispositivi personali di Teams](https://aka.ms/PR108)  |I clienti stanno cercando i dispositivi personali giusti per Teams, soprattutto perché molti dei loro dipendenti lavorano in remoto. Unisciti a noi per scoprire nuove innovazioni nei dispositivi personali di Teams. Condivideremo il nostro momento nelle funzionalità e nei dispositivi certificati e i nostri suggerimenti per il lavoro remoto. |200|Sandhya Rao, Arash Ghanaie-Sichanie, Kruthika Ponnusamy|
 |[Gestire i gruppi di lavoro virtuali nelle riunioni di Microsoft Teams](https://aka.ms/PR109) |Unisciti a noi per conoscere le ultime innovazioni con i gruppi di lavoro virtuali in Teams. In questa sessione verranno evidenziati i casi di utilizzo e le procedure consigliate per facilitare idee per piccoli gruppi, brainstorming, apprendimento e discussioni con i gruppi di lavoro virtuali. |200|James Skay, Nakul Madaan|
@@ -76,7 +76,7 @@ ms.locfileid: "67269901"
 | Titolo | Astratto | Livello| Altoparlanti|
 |---|----------|---|---|
 |[App Microsoft Teams per dispositivi mobili: novità & Novità](https://aka.ms/OD255)|Scopri le novità e le novità in arrivo per i client mobili di Microsoft Teams.|100|Marissa Salazar|
-|[Favorire il benessere e l'inclusione con Microsoft Teams](https://aka.ms/PR140)|Le persone devono sentirsi incluse. Le persone devono essere incoraggiate a essere presenti durante il loro tempo personale. Le persone devono avere gli strumenti giusti per configurarle per il successo nel loro ruolo. Scopri come Teams supporta il lavoro in team inclusivo assicurando che tutti collaborino nel modo più adatto per loro e bilanciano lavoro e vita privata. |100|Chris Bryan, Ali Oberg|
+|[Favorire il benessere e l'inclusione con Microsoft Teams](https://aka.ms/PR140)|Persone bisogno di sentirsi inclusi. Persone devono essere incoraggiati ad essere presenti durante il loro tempo personale. Persone bisogno di disporre degli strumenti giusti per configurarli per il successo del loro ruolo. Scopri come Teams supporta il lavoro in team inclusivo assicurando che tutti collaborino nel modo più adatto per loro e bilanciano lavoro e vita privata. |100|Chris Bryan, Ali Oberg|
 |[Collaborare all'interno e all'esterno dell'organizzazione con chat e canali in Microsoft Teams](https://aka.ms/PR142) |La messaggistica istantanea rimane uno dei mezzi di comunicazione più efficienti. Senza una pianificazione appropriata, la messaggistica istantanea può limitare le persone che possono partecipare. Informazioni su come applicare conversazioni di chat e canali per favorire una collaborazione più aperta con persone interne ed esterne all'organizzazione. Verranno illustrate le differenze, le procedure consigliate e le prossime funzionalità in quest'area.|200|Karuana Gatimu, Luis Escobar Reyes, Somak Bhattacharyya|
 
 

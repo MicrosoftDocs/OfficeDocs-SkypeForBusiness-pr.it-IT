@@ -1,5 +1,5 @@
 ---
-title: confronto delle funzionalità di Teams Rooms per Windows e Android
+title: confronto delle funzionalità di Teams Rooms in Windows e Android
 author: dstrome
 ms.author: dstrome
 manager: jsarrasin
@@ -18,14 +18,14 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ef7675881448597e8f20717c679fe1eabce11323
-ms.sourcegitcommit: 81b3403a1a77ba202690c2d88bd8d1d5257048e5
+ms.openlocfilehash: 6648502d9b6a3e727ef30f1e94289f1428d8a4e2
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2022
-ms.locfileid: "69379453"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438520"
 ---
-# <a name="teams-rooms-for-windows-and-android-feature-comparison"></a>confronto delle funzionalità di Teams Rooms per Windows e Android
+# <a name="teams-rooms-on-windows-and-android-feature-comparison"></a>confronto delle funzionalità di Teams Rooms in Windows e Android
 
 Microsoft Teams Rooms esperienze sono progettate pensando ai clienti. Ogni cliente ha esigenze specifiche ed è per questo che Microsoft offre un'ampia gamma di opzioni, tra cui Teams Rooms su Windows e Android. 
 

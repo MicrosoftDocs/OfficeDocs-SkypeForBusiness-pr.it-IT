@@ -1,5 +1,5 @@
 ---
-title: sicurezza di Microsoft Teams Rooms per Windows
+title: Microsoft Teams Rooms sicurezza di Windows
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -15,19 +15,19 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Rooms
-description: Scopri come proteggere il tuo Microsoft Teams Rooms per i dispositivi Windows.
-ms.openlocfilehash: b35d856afb7ca044388802aa514039bd9b8d40d3
-ms.sourcegitcommit: 8dd36e1e30a47316c15c99e964d0464715bcd742
+description: Scopri come proteggere il tuo Microsoft Teams Rooms nei dispositivi Windows.
+ms.openlocfilehash: f7774b43542885118bd66eb09cf1d30049b84425
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68532425"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438461"
 ---
-# <a name="microsoft-teams-rooms-for-windows-security"></a>sicurezza di Microsoft Teams Rooms per Windows
+# <a name="microsoft-teams-rooms-on-windows-security"></a>Microsoft Teams Rooms sicurezza di Windows
 
-Microsoft collabora con i propri partner per offrire una soluzione sicura e non richiede ulteriori azioni per proteggere Microsoft Teams Rooms per Windows. Questo articolo descrive molte delle funzionalità di sicurezza disponibili in Teams Rooms per Windows.
+Microsoft collabora con i propri partner per offrire una soluzione sicura e non richiede ulteriori azioni per proteggere Microsoft Teams Rooms in Windows. Questo articolo descrive molte delle funzionalità di sicurezza disponibili in Teams Rooms in Windows.
 
-Per informazioni sulla sicurezza in Teams Rooms per dispositivi Android, vedere [Microsoft Teams Rooms per la sicurezza di Android](security-android.md).
+Per informazioni sulla sicurezza su Teams Rooms nei dispositivi Android, vedi [Microsoft Teams Rooms sulla sicurezza di Android](security-android.md).
 
 > [!NOTE]
 > Microsoft Teams Rooms non devono essere trattate come una tipica workstation per l'utente finale. Non solo i casi d'uso sono molto diversi, ma anche i profili di sicurezza predefiniti sono molto diversi.
@@ -95,7 +95,7 @@ Non concedere autorizzazioni di amministratore locale all'account utente Skype.
 
 Progettazione configurazione di Windows può essere usato per creare pacchetti di provisioning Windows 10. Oltre a modificare la password Amministrazione locale, è anche possibile eseguire operazioni come la modifica del nome del computer e la registrazione in Azure Active Directory. Per altre informazioni sulla creazione di un pacchetto di provisioning di Progettazione configurazione di Windows, vedi [Pacchetti di provisioning per Windows 10](/windows/configuration/provisioning-packages/provisioning-packages).
 
-È necessario creare un account di risorsa per ogni dispositivo Teams Rooms in modo che possa accedere a Teams. Con questo account non è possibile usare l'autenticazione a due fattori o a più fattori. Richiedere un secondo fattore impedirebbe all'account di accedere automaticamente all'app Teams Rooms dopo un riavvio. Tuttavia, è possibile abilitare l'autenticazione moderna per una maggiore sicurezza per questo account. È anche possibile distribuire criteri di accesso condizionale di Azure Active Directory e criteri di conformità Intune per proteggere l'account delle risorse. Per altre informazioni, vedere [Accesso condizionale supportato e criteri di conformità dei dispositivi Intune per Microsoft Teams Rooms](supported-ca-and-compliance-policies.md) e [accesso condizionale e conformità Intune per Microsoft Teams Rooms](conditional-access-and-compliance-for-devices.md)
+È necessario creare un account di risorsa per ogni dispositivo Teams Rooms in modo che possa accedere a Teams. Con questo account non è possibile usare l'autenticazione a due fattori o a più fattori. Richiedere un secondo fattore impedirebbe all'account di accedere automaticamente all'app Teams Rooms dopo un riavvio. Tuttavia, è possibile abilitare l'autenticazione moderna per una maggiore sicurezza per questo account. Inoltre, i criteri di accesso condizionale di Azure Active Directory e i criteri di conformità di Intune possono essere distribuiti per proteggere l'account delle risorse. Per altre informazioni, vedere [Criteri di conformità dei dispositivi supportati per l'accesso condizionale e Intune per Microsoft Teams Rooms](supported-ca-and-compliance-policies.md) e [l'accesso condizionale e conformità di Intune per Microsoft Teams Rooms](conditional-access-and-compliance-for-devices.md)
 
 Se possibile, è consigliabile creare l'account delle risorse in Azure AD. Anche se un account sincronizzato può funzionare con Teams Rooms nelle distribuzioni ibride, questi account sincronizzati spesso hanno difficoltà ad accedere a Teams Rooms e possono essere difficili da risolvere. Se si sceglie di usare un servizio federativo di terze parti per autenticare le credenziali per l'account della risorsa, assicurarsi che l'IDP di terze parti risponda con l'attributo `wsTrustResponse` impostato su `urn:oasis:names:tc:SAML:1.0:assertion`.
 
@@ -106,7 +106,7 @@ In generale, Teams Rooms ha gli stessi requisiti di rete di qualsiasi client di 
 - **Microsoft Teams** [Office 365 URL e intervalli di indirizzi IP](/microsoft-365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 - **Windows Update** [Configurare WSUS](/windows-server/administration/windows-server-update-services/deploy/2-configure-wsus#211-connection-from-the-wsus-server-to-the-internet)
 - Prerequisiti di **Microsoft Store** [per Microsoft Store per le aziende e formazione](/microsoft-store/prerequisites-microsoft-store-for-business#proxy-configuration)
-- **endpoint di** [rete Microsoft Intune per Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
+- Endpoint di rete **di Microsoft Intune** [per Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
 
 Se si usa il componente Microsoft Teams Rooms servizi gestiti di Microsoft Teams Rooms Pro, è anche necessario assicurarsi che Teams Rooms possano accedere agli URL seguenti:
 

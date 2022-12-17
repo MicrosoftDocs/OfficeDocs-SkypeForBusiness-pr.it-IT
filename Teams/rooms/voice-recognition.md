@@ -17,16 +17,16 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d7b74ecb85f6081533f5139b6f8f083b8958d47f
-ms.sourcegitcommit: 31fe510550ac1f5f8e53b2395014cb909a6eb723
+ms.openlocfilehash: 478e739be2787eb2758a2070a441f68c7da727ba
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/03/2022
-ms.locfileid: "68350749"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438304"
 ---
 # <a name="manage-voice-recognition-technology-controls-for-an-intelligent-speaker"></a>Gestire i controlli della tecnologia di riconoscimento vocale per un altoparlante intelligente
 
-Un altoparlante intelligente usa le informazioni del profilo vocale per riconoscere chi ha detto cosa nella trascrizione in tempo reale. Quando una sala riunioni di Microsoft Teams Rooms per Windows è dotata di un altoparlante intelligente, durante la riunione è possibile usare la trascrizione in tempo reale. Questo articolo spiega in che modo un amministratore tenant controlla la profilatura vocale usata per il riconoscimento vocale per generare la trascrizione in tempo reale. Puoi controllare in quale misura l'organizzazione usa il riconoscimento vocale e le seguenti funzionalità:
+Un altoparlante intelligente usa le informazioni del profilo vocale per riconoscere chi ha detto cosa nella trascrizione in tempo reale. Quando una Microsoft Teams Rooms nella sala riunioni di Windows è dotata di un altoparlante intelligente, è possibile usare la trascrizione in tempo reale durante la riunione. Questo articolo spiega in che modo un amministratore tenant controlla la profilatura vocale usata per il riconoscimento vocale per generare la trascrizione in tempo reale. Puoi controllare in quale misura l'organizzazione usa il riconoscimento vocale e le seguenti funzionalità:
 
 - Modificare il nome del relatore nelle trascrizioni.
 - Cambiare l'altoparlante di una singola espressione nella trascrizione o cambiare l'altoparlante in tutte le frasi nella trascrizione (ma non nelle trascrizioni future).

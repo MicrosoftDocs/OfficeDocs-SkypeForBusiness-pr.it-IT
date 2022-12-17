@@ -22,12 +22,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni su e confrontare le licenze disponibili per i diversi tipi di funzionalità per chiamate e riunioni in Microsoft Teams Rooms.
-ms.openlocfilehash: af5f30f1a4ae0d34421629ffec3c67a619798b50
-ms.sourcegitcommit: fc87f4300f53abf7a049936944abb21d0cade0d9
+ms.openlocfilehash: e999ec208aee8493c7b04fbe2d435e8852259070
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/06/2022
-ms.locfileid: "68480486"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438454"
 ---
 # <a name="microsoft-teams-rooms-licenses"></a>licenze Microsoft Teams Rooms
 
@@ -41,12 +41,12 @@ Microsoft offre due licenze per i sistemi di Teams Rooms che partecipano alle ri
 
     È possibile usare una licenza Teams Rooms Basic per assegnare una licenza a un singolo sistema di Teams Rooms certificato in una stanza. Se si vuole accedere a più di un sistema di Teams Rooms in una chat room usando lo stesso account di risorsa, è necessario usare una licenza di Teams Rooms Pro.
 
-    È possibile assegnare fino a 25 licenze di base Microsoft Teams Rooms a sistemi Teams Rooms dell'organizzazione. Se è necessario assegnare una licenza a più di 25 sistemi Teams Rooms, tali licenze aggiuntive devono essere Teams Rooms licenze Pro. Teams Rooms licenze Di base possono essere usate solo per licenze di Teams Rooms sistemi e non per i pannelli teams.
+    È possibile assegnare fino a 25 licenze Microsoft Teams Rooms Basic a sistemi Teams Rooms dell'organizzazione. Se è necessario assegnare una licenza a più di 25 sistemi Teams Rooms, tali licenze aggiuntive devono essere Teams Rooms licenze Pro. Teams Rooms licenze Di base possono essere usate solo per licenze di Teams Rooms sistemi e non per i pannelli teams.
 
 Un sistema Teams Room può essere uno dei seguenti:
 
-- Un Teams Rooms per il modulo di calcolo di Windows e la console touch collegata
-- Un Teams Rooms per dispositivi Android e console touch connessi tramite una connessione USB o basata su IP
+- Un Teams Rooms nel modulo di calcolo di Windows e nella console touch collegata
+- Un Teams Rooms su dispositivo Android e console touch connessi tramite una connessione USB o basata su IP
 - Un Surface Hub
 
 Le attività di amministrazione remota eseguite in un sistema o un dispositivo Teams Rooms nell'interfaccia di amministrazione di Teams dipendono dalla licenza assegnata al sistema o al dispositivo. Per altre informazioni, vedere [Microsoft Teams Rooms panoramica delle licenze nell'interfaccia di amministrazione di Teams](admin-center-license-overview.md).
@@ -57,7 +57,7 @@ Le attività di amministrazione remota eseguite in un sistema o un dispositivo T
 
 La tabella seguente mostra i servizi inclusi in ogni licenza Teams Rooms.
 
-|                                           | Microsoft Teams Rooms Di base                                          | Microsoft Teams Rooms Pro                                              |
+|                                           | Microsoft Teams Rooms Basic                                          | Microsoft Teams Rooms Pro                                              |
 |:------------------------------------------|:--------------------------------------------------------------------:|:----------------------------------------------------------------------:|
 | **Numero massimo di licenze**            | 25                                                                   | Illimitato                                                              |
 | **Microsoft Teams**                       | &#x2714;                                                             | &#x2714;                                                               |
@@ -96,7 +96,7 @@ Le tabelle seguenti confrontano le licenze Teams Rooms Basic e Teams Rooms Pro e
 
 ### <a name="meeting-join"></a>Partecipare a una riunione
 
-|                                                                 | Microsoft Teams Rooms Di base | Microsoft Teams Rooms Pro |
+|                                                                 | Microsoft Teams Rooms Basic | Microsoft Teams Rooms Pro |
 |:----------------------------------------------------------------|:---------------------------:|:-------------------------:|
 | **Partecipare a riunioni di Teams con 1-touch, prossimità e ID riunione** | &#x2714;                    | &#x2714;                  |
 | **Avviare riunioni ad hoc dalla sala**                         | &#x2714;                    | &#x2714;                  |
@@ -106,14 +106,14 @@ Le tabelle seguenti confrontano le licenze Teams Rooms Basic e Teams Rooms Pro e
 
 ### <a name="share-and-collaborate"></a>Condividere e collaborare
 
-|                                                  | Microsoft Teams Rooms Di base | Microsoft Teams Rooms Pro |
+|                                                  | Microsoft Teams Rooms Basic | Microsoft Teams Rooms Pro |
 |:-------------------------------------------------|:---------------------------:|:-------------------------:|
 | **Condividere e visualizzare tutti i tipi di contenuto di Teams**       | &#x2714;                    | &#x2714;                  |
 | **Condividere la lavagna con la fotocamera di Acquisizione contenuto** |                             | &#x2714;                  |
 
 ### <a name="meeting-engagement"></a>Coinvolgimento della riunione
 
-|                                                      | Microsoft Teams Rooms Di base | Microsoft Teams Rooms Pro |
+|                                                      | Microsoft Teams Rooms Basic | Microsoft Teams Rooms Pro |
 |:-----------------------------------------------------|:---------------------------:|:-------------------------:|
 | **Raccolta video di Teams con più opzioni di layout** | &#x2714;                    | &#x2714;                  |
 | **Prima riga**                                        |                             | &#x2714;                  |
@@ -123,14 +123,14 @@ Le tabelle seguenti confrontano le licenze Teams Rooms Basic e Teams Rooms Pro e
 
 ### <a name="calling"></a>Chiamate
 
-|                                                   | Microsoft Teams Rooms Di base | Microsoft Teams Rooms Pro |
+|                                                   | Microsoft Teams Rooms Basic | Microsoft Teams Rooms Pro |
 |:--------------------------------------------------|:---------------------------:|:-------------------------:|
 | **Effettuare e ricevere chiamate peer-to-peer e di gruppo** | &#x2714;                    | &#x2714;                  |
 | **Sistema telefonico Microsoft 365**                    |                             | &#x2714;                  |
 
 ### <a name="intelligent-audio-and-video"></a>Audio e video intelligenti
 
-|                                                                                 | Microsoft Teams Rooms Di base | Microsoft Teams Rooms Pro |
+|                                                                                 | Microsoft Teams Rooms Basic | Microsoft Teams Rooms Pro |
 |:--------------------------------------------------------------------------------|:---------------------------:|:-------------------------:|
 | **Supporto per la trascrizione in tempo reale dell'altoparlante intelligente con identificazione dell'altoparlante** |                             | &#x2714;                  |
 | **Supporto per più fotocamere**                                                        |                             | &#x2714;                  |
@@ -140,7 +140,7 @@ Le tabelle seguenti confrontano le licenze Teams Rooms Basic e Teams Rooms Pro e
 
 ### <a name="security-and-compliance"></a>Sicurezza e conformità
 
-|                                                                     | Microsoft Teams Rooms Di base | Microsoft Teams Rooms Pro |
+|                                                                     | Microsoft Teams Rooms Basic | Microsoft Teams Rooms Pro |
 |:--------------------------------------------------------------------|:---------------------------:|:-------------------------:|
 | **Sistema operativo sicuro**                                         | &#x2714;                    | &#x2714;                  |
 | **Sicurezza a livello di sistema (avvio protetto, modalità di accesso assegnata e così via)** | &#x2714;                    | &#x2714;                  |
@@ -148,7 +148,7 @@ Le tabelle seguenti confrontano le licenze Teams Rooms Basic e Teams Rooms Pro e
 
 ### <a name="device-management"></a>Gestione dispositivi
 
-|                                                   | Microsoft Teams Rooms Di base | Microsoft Teams Rooms Pro |
+|                                                   | Microsoft Teams Rooms Basic | Microsoft Teams Rooms Pro |
 |:--------------------------------------------------|:---------------------------:|:-------------------------:|
 | **Registrazione e inventario di Teams Amministrazione Center**   | &#x2714;                    | &#x2714;                  |
 | **Aggiornamenti automatici del software**                    | &#x2714;                    | &#x2714;                  |

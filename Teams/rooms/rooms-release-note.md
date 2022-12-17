@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6c6416115d65f223b3785be050520548c2e69ba4
-ms.sourcegitcommit: 23224d983ae027c4923e52ed8e31953ae0f84807
+ms.openlocfilehash: 256ab81b195d5a758e07c24741b1dc8a7ff13218
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2022
-ms.locfileid: "69422815"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438364"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -106,8 +106,8 @@ Introdotto in questo aggiornamento:
 - Avviare la lavagna nelle riunioni di Teams
 - Controllo dell'elenco dei video della sala da cornice
 - Supporto per riunioni overflow
-- Partecipare alla riunione Zoom tramite ID (partecipazione guest diretta)
-- Correzioni di qualità per le riunioni di terze parti (partecipazione guest diretta)
+- Partecipa alle riunioni zoom tramite ID tramite Direct Guest Join. In questa versione è stato aggiunto il supporto per partecipare alle riunioni zoom per ID e verrà abilitato nelle prossime settimane.
+- Correzioni di qualità per le riunioni di terze parti (partecipazione diretta guest)
 - Correzione per le informazioni sulla licenza nelle impostazioni che non mostrano alcuna licenza quando Teams non ha eseguito l'accesso
 - Un nuovo sfondo predefinito (Vivid Flag) e altri quattro nuovi sfondi
 

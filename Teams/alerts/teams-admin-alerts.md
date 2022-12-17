@@ -16,16 +16,16 @@ description: Informazioni sulle funzionalità di avvisi e notifiche di Teams dis
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 452bcbebeffa3936b9d05270626e11923caf5cda
-ms.sourcegitcommit: 72b6f7ab2a44dec395622bfe64119a48094960bd
+ms.openlocfilehash: 18279954a9bd71932422bd60519977288ae30ca6
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67283087"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438254"
 ---
 # <a name="microsoft-teams-monitoring-and-alerting"></a>Monitoraggio e avvisi di Microsoft Teams
 
-Nell'interfaccia di amministrazione di Teams sono disponibili nuove funzionalità di monitoraggio e avviso per Microsoft Teams. Usare diversi set di regole disponibili nella sezione **Notifiche & avvisi** nell'interfaccia di amministrazione di Teams per monitorare le funzionalità di Teams e ricevere avvisi. Ad esempio, è possibile monitorare attivamente l'integrità dei dispositivi di Teams, ad esempio telefoni IP, barre di collaborazione e altri, se si disconnettono in modo imprevisto.  
+Nell'interfaccia di amministrazione di Teams sono disponibili nuove funzionalità di monitoraggio e avviso per Microsoft Teams. Usare diversi set di regole disponibili nella sezione **Notifiche & avvisi** nell'interfaccia di amministrazione di Teams per monitorare le funzionalità di Teams e ricevere avvisi. Ad esempio, è possibile monitorare attivamente l'integrità dei dispositivi di Teams, ad esempio telefoni IP, Teams Rooms su Android e altri, se passano offline in modo imprevisto.  
 
 L'organizzazione può usare il monitoraggio e gli avvisi di Teams per eseguire le operazioni seguenti:
 

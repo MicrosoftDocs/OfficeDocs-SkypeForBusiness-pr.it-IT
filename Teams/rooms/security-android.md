@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Rooms
 description: Informazioni su come proteggere Microsoft Teams per dispositivi Android.
-ms.openlocfilehash: 6d17cc68af8ef4a879d5de3b17d27f20b281ddf8
-ms.sourcegitcommit: 8dd36e1e30a47316c15c99e964d0464715bcd742
+ms.openlocfilehash: 044ff85a39058df85a1f132aaac08bb1d87c6c95
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2022
-ms.locfileid: "68532436"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438560"
 ---
 # <a name="microsoft-teams-for-android-security"></a>Sicurezza di Microsoft Teams per Android
 
@@ -32,7 +32,7 @@ Microsoft collabora con i propri partner OEM per offrire una soluzione sicura da
 > [!NOTE]
 > I dispositivi Android di Microsoft Teams non devono essere trattati come un tipico dispositivo Android. I dispositivi Teams Android sono accessori appositamente progettati per l'uso con Teams e i rispettivi casi d'uso. Questo articolo si applica solo ai dispositivi certificati e dedicati di Microsoft Teams che eseguono il sistema operativo Android. I dispositivi certificati per Teams possono essere acquistati solo da fornitori OEM certificati. Per informazioni sui dispositivi Android certificati da Microsoft Teams, vedere [Dispositivi Android certificati da Microsoft Teams](/microsoftteams/devices/teams-ip-phones).
 
-Per informazioni sulla sicurezza in Teams Rooms per dispositivi Windows, vedi [Microsoft Teams Rooms per la sicurezza di Windows](security-windows.md).
+Per informazioni sulla sicurezza in Teams Rooms nei dispositivi Windows, vedi [Microsoft Teams Rooms sulla sicurezza di Windows](security-windows.md).
 
 ## <a name="software-security"></a>Sicurezza del software
 
@@ -63,7 +63,7 @@ Il bridge di debug Android (ADB) è disabilitato dalla progettazione in tutti i 
 
 ### <a name="file-system-encryption"></a>Crittografia del file system
 
-I dispositivi Teams Android devono supportare la crittografia basata su Android e possono essere applicati usando criteri di conformità di Microsoft Endpoint Manager. Per informazioni sui criteri di conformità Endpoint Manager [Usare i criteri di conformità Endpoint Manager per impostare le regole per i dispositivi gestiti con Intune](/mem/intune/protect/device-compliance-get-started).
+I dispositivi Android di Teams devono supportare la crittografia basata su Android e possono essere applicati usando i criteri di conformità di Microsoft Endpoint Manager. Per informazioni sui criteri di conformità di Endpoint Manager [Usare i criteri di conformità di Endpoint Manager per impostare le regole per i dispositivi gestiti con Intune](/mem/intune/protect/device-compliance-get-started).
 
 ### <a name="android-os-version"></a>Versione del sistema operativo Android
 
@@ -112,7 +112,7 @@ I dispositivi Teams Android hanno gli stessi requisiti di rete di qualsiasi clie
 
 - Microsoft Teams, Exchange Online, SharePoint Online, Microsoft 365 Common e Office Online [Office 365 URL e intervallo di indirizzi IP](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
-- [endpoint di rete Microsoft Intune per Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
+- Endpoint di rete di Microsoft Intune [per Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)
 
 I dispositivi Android di Teams funzionano con la maggior parte dei protocolli di sicurezza 802.1X e di altri protocolli di sicurezza basati sulla rete. Tuttavia, non è possibile testare i dispositivi Teams Android con tutte le configurazioni di sicurezza di rete. Pertanto, se si verificano problemi di prestazioni che possono essere rilevati da problemi di prestazioni di rete, potrebbe essere necessario disabilitare questi protocolli se sono configurati nell'organizzazione o contattare il partner OEM per assistenza.
 
@@ -127,7 +127,7 @@ I dispositivi Android di Teams non devono connettersi a una LAN interna. Valutar
 
 Si consiglia vivamente di connettere i dispositivi Teams Android a una rete cablata. L'uso di reti wireless richiede un'attenta pianificazione e valutazione per un'esperienza ottimale.
 
-L'unione in prossimità, Better Together, Teams Cast e l'associazione dei pannelli di Teams si basano sul Bluetooth. L'uso della tecnologia Bluetooth su Teams Rooms per dispositivi Android è attualmente limitato agli annunci beacon e alle connessioni proximal richieste. Il `ADV_NONCONN_INT` tipo di unità di dati del protocollo (PDU) viene utilizzato nel advertising beacon. Questo tipo di PDU è per le informazioni pubblicitarie sui dispositivi non collegabili al dispositivo di ascolto. Non esiste alcuna associazione di dispositivi Bluetooth nell'ambito di queste funzionalità. Ulteriori dettagli sui protocolli Bluetooth sono disponibili sul sito Web Bluetooth SIG.
+L'unione in prossimità, Better Together, Teams Cast e l'associazione dei pannelli di Teams si basano sul Bluetooth. L'uso della tecnologia Bluetooth su Teams Rooms nei dispositivi Android è attualmente limitato agli annunci beacon e alle connessioni proximal richieste. Il `ADV_NONCONN_INT` tipo di unità di dati del protocollo (PDU) viene utilizzato nel advertising beacon. Questo tipo di PDU è per le informazioni pubblicitarie sui dispositivi non collegabili al dispositivo di ascolto. Non esiste alcuna associazione di dispositivi Bluetooth nell'ambito di queste funzionalità. Ulteriori dettagli sui protocolli Bluetooth sono disponibili sul sito Web Bluetooth SIG.
 
 I telefoni e i display di Teams offrono la funzionalità di associazione Bluetooth per l'associazione con le cuffie tramite il profilo Bluetooth Hands-Free.
 

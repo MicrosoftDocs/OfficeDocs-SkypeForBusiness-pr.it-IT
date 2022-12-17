@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni sulla distribuzione di Microsoft Teams Rooms in Android.
-ms.openlocfilehash: f5f49a7e461153d24837d28d7160a475e4992eba
-ms.sourcegitcommit: 173bdbaea41893d39a951d79d050526b897044d5
+ms.openlocfilehash: 52b865879db3941b5631d7b22c25bd8f6e4d3ce6
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67267811"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438414"
 ---
 # <a name="deploy-microsoft-teams-rooms-on-android"></a>Distribuire Microsoft Teams Rooms in Android
 
@@ -37,7 +37,7 @@ Per gestire Teams Rooms, è necessario essere un amministratore globale, un ammi
 
 Mentre i dispositivi ordinati vengono distribuiti all'organizzazione, collaborare con la rete, le strutture e i team audio visivi per assicurarsi che i requisiti di distribuzione siano soddisfatti e che ogni sito e sala sia pronto in termini di alimentazione, rete e visualizzazione.
 
-I nostri suggerimenti per i siti della barra di collaborazione sono:
+I nostri consigli per Teams Rooms sui siti Android sono:
 
 - Camere con dimensioni fino a 5 persone
 - Account delle risorse dedicati
@@ -54,8 +54,8 @@ Per considerazioni relative all'installazione fisica, vedere la documentazione d
 
 |&nbsp;|&nbsp;|
 |-----------|------------|
-| ![Icona che descrive i punti decisionali.](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Verificare che i siti soddisfino i requisiti di conformità del sito per le barre di collaborazione per Microsoft Teams.</li><li>Verificare di aver fornito larghezza di banda sufficiente per ogni sito.</li></ul>|
-| ![Icona che illustra i passaggi successivi.](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Iniziare a pianificare la distribuzione e la configurazione della barra di collaborazione.</li></ul>|
+| ![Icona che descrive i punti decisionali.](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Verificare che i siti soddisfino i requisiti di conformità del sito per Teams Rooms in Android.</li><li>Verificare di aver fornito larghezza di banda sufficiente per ogni sito.</li></ul>|
+| ![Icona che illustra i passaggi successivi.](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Inizia a pianificare il tuo Teams Rooms su configurazione e distribuzione Android.</li></ul>|
 
 ## <a name="service-readiness"></a>Prontezza del servizio
 
@@ -90,9 +90,9 @@ La pianificazione della configurazione e dell'implementazione riguarda le seguen
 
 ### <a name="account-provisioning"></a>Provisioning dell'account
 
-Se si prevede di usare gli account delle risorse di Microsoft 365 per consentire agli utenti di prenotare barre di collaborazione, seguire le istruzioni in [Creare un account di risorsa usando la interfaccia di amministrazione di Microsoft 365](resource-account-ui.md) per creare un account di risorse di Microsoft 365 per ogni barra di collaborazione che ne richiede una. È anche qui che è necessario aggiungere una licenza per la sala riunioni all'account della risorsa e, se si desidera effettuare o ricevere chiamate da o verso numeri di telefono esterni, una licenza Piano per chiamate o Business Voice se l'organizzazione non usa l'instradamento diretto.
+Se si prevede di usare gli account delle risorse di Microsoft 365 per consentire agli utenti di prenotare Teams Rooms su dispositivi Android, seguire le istruzioni in [Creare un account di risorse usando il interfaccia di amministrazione di Microsoft 365](resource-account-ui.md) per creare un account di risorse di Microsoft 365 per ogni Teams Rooms in un dispositivo Android che ne richiede uno. È anche qui che è necessario aggiungere una licenza per la sala riunioni all'account della risorsa e, se si desidera effettuare o ricevere chiamate da o verso numeri di telefono esterni, una licenza Piano per chiamate o Business Voice se l'organizzazione non usa l'instradamento diretto.
 
-Se si vuole assegnare Teams Rooms a singoli utenti per uso privato, non è necessario configurare altri account. Gli utenti possono accedere alle barre di collaborazione usando i propri account personali.
+Se si vuole assegnare Teams Rooms a singoli utenti per uso privato, non è necessario configurare altri account. Gli utenti possono accedere a Teams Rooms su dispositivi Android usando il proprio account personale.
 
 > [!TIP]
 > Creare nomi visualizzati descrittivi e di facile comprensione per gli account delle risorse di Microsoft 365. Questi sono i nomi che gli utenti vedranno quando cercano e aggiungono Teams Rooms alle riunioni. È possibile usare una convenzione come *Site*-*Room Name*(*Max Room Capacity*), quindi, ad esempio, Curie, una sala riunioni di 4 persone a Londra, potrebbe avere il nome visualizzato LON-CURIE(4).
@@ -113,7 +113,7 @@ Successivamente, è necessario creare il piano per consegnare i dispositivi e le
 
 ### <a name="testing"></a> Test
 
-Dopo aver distribuito Teams Rooms, è consigliabile testarli. Accedi a Teams Rooms e verifica che le funzionalità previste funzionino. È consigliabile verificare che vengano visualizzate nella sezione **Barre di collaborazione** nella scheda **Dispositivi di Teams** dell'interfaccia di amministrazione di Microsoft Teams. È anche importante effettuare una serie di chiamate e riunioni di test per controllare la qualità e le prestazioni.
+Dopo aver distribuito Teams Rooms, è consigliabile testarli. Accedi a Teams Rooms e verifica che le funzionalità previste funzionino. Ti consigliamo vivamente di verificare che vengano visualizzati nella sezione **Teams Rooms su Android** nella scheda **Dispositivi di Teams** dell'interfaccia di amministrazione di Microsoft Teams. È anche importante effettuare una serie di chiamate e riunioni di test per controllare la qualità e le prestazioni.
 
 Nell'ambito dell'implementazione generale di Microsoft Teams, è consigliabile configurare la creazione di file per Call Quality Dashboard (CQD), monitorare le tendenze della qualità e partecipare al processo di verifica della qualità dell'esperienza. Per altre informazioni, vedere la [Guida alla revisione della qualità dell'esperienza](../quality-of-experience-review-guide.md).
 

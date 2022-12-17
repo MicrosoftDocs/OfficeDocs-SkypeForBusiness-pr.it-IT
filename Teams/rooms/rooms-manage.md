@@ -16,16 +16,16 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Informazioni su come sviluppare ed eseguire interventi di manutenzione e operazioni continuativi per garantire che i sistemi Microsoft Teams Rooms siano disponibili per gli utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9ce5a3ac479bc16526bb044bbc3e4c34d3b1d0e
-ms.sourcegitcommit: 424b14534aa269bb408c97c368102a193b481656
+ms.openlocfilehash: 977987cf0283008235a12fdfdda2ffc792c2e289
+ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67706823"
+ms.lasthandoff: 12/17/2022
+ms.locfileid: "69438274"
 ---
 # <a name="manage-microsoft-teams-rooms"></a>Gestire Microsoft Teams Rooms.
 
-Se nell'organizzazione sono presenti Microsoft Teams Rooms, sono disponibili opzioni di gestione flessibili.  È possibile gestire i dispositivi autonomamente nella stessa posizione centrale in cui si gestiscono tutte le soluzioni Teams, l'interfaccia di amministrazione di Microsoft Teams. In alternativa, è possibile trasferire la responsabilità di gestione a esperti dedicati usando [Microsoft Teams Rooms Servizi gestiti](https://portal.rooms.microsoft.com).  È anche possibile delegare l'accesso di gestione a un partner di propria scelta per una delle opzioni.
+Se nell'organizzazione sono presenti Microsoft Teams Rooms, sono disponibili opzioni di gestione flessibili.  È possibile gestire i dispositivi autonomamente nella stessa posizione centrale in cui si gestiscono tutte le soluzioni Teams, l'interfaccia di amministrazione di Microsoft Teams.
 
 Con l'interfaccia di amministrazione di Microsoft Teams è possibile:
 
