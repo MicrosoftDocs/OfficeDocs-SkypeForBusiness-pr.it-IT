@@ -3,6 +3,28 @@
 
 
 
+## <a name="week-of-december-12-2022"></a>Settimana del 12 dicembre 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 12/14/2022 | [Licenze per dispositivi condivisi di Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/teams-shared-device-license) | Aggiunto |
+| 12/14/2022 | [Controllare chi può ignorare la sala di attesa della riunione in Microsoft Teams](/MicrosoftTeams/who-can-bypass-meeting-lobby) | Aggiunto |
+| 12/14/2022 | [Impostare l'interfaccia utente dei dispositivi Android di Microsoft Teams](/MicrosoftTeams/devices/teams-android-devices-user-interface) | Volta |
+| 12/14/2022 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | Volta |
+| 12/14/2022 | [Pianificare Instradamento diretto](/MicrosoftTeams/direct-routing-plan) | Volta |
+| 12/14/2022 | [Microsoft Teams Premium - Panoramica per gli amministratori](/MicrosoftTeams/enhanced-teams-experience) | Volta |
+| 12/14/2022 | [Configurare i telefoni dell'area comune per Microsoft Teams](/MicrosoftTeams/set-up-common-area-phones) | Volta |
+| 12/14/2022 | [Licenze di Microsoft Teams Premium](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams) | Volta |
+| 12/15/2022 | [Domande ricorrenti sulle audioconferenze](/MicrosoftTeams/audio-conferencing-common-questions) | Volta |
+| 12/15/2022 | [Numeri di telefono e modifiche alle licenze](/MicrosoftTeams/phone-numbers-licensing-changes) | Volta |
+| 12/15/2022 | [Note sulla versione per Microsoft Teams Rooms (Windows)](/MicrosoftTeams/rooms/rooms-release-note) | Volta |
+| 12/16/2022 | [Server proxy per Teams o Skype for Business Online](/MicrosoftTeams/proxy-servers-for-skype-for-business-online) | Volta |
+| 12/16/2022 | [Distribuire Microsoft Teams Rooms in Android](/MicrosoftTeams/devices/collab-bar-deploy) | Volta |
+| 12/16/2022 | [Aggiornare i dispositivi Microsoft Teams in remoto](/MicrosoftTeams/devices/remote-update) | Volta |
+| 12/16/2022 | [Microsoft Teams Rooms sicurezza di Windows](/MicrosoftTeams/rooms/security-windows) | Volta |
+
+
 ## <a name="week-of-december-05-2022"></a>Settimana del 5 dicembre 2022
 
 
