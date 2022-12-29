@@ -18,19 +18,19 @@ f1.keywords:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire l'accesso alle app personalizzate create con Microsoft Power Platform nell'interfaccia di amministrazione di Teams.
-ms.openlocfilehash: c4ac0bd3551bb53da06de3301447c6bf4842540c
-ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
+ms.openlocfilehash: cf47cb5a2441676aba706b2353837d51997d9b4f
+ms.sourcegitcommit: 339a35e461c84ee309ade1a53299ba12231df7a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "68912585"
+ms.lasthandoff: 12/29/2022
+ms.locfileid: "69677396"
 ---
 # <a name="manage-microsoft-power-platform-apps-in-the-teams-admin-center"></a>Gestire le app di Microsoft Power Platform nell'interfaccia di amministrazione di Teams
 
 Questo articolo offre una panoramica su come gestire le app personalizzate create con le app [Microsoft Power Platform](https://powerplatform.microsoft.com/) nell'interfaccia di amministrazione di Microsoft Teams. Le app personalizzate vengono create dagli sviluppatori all'interno dell'organizzazione per gli utenti interni.
 
 > [!NOTE]
-> Questo articolo non riguarda le app di Power Apps o Power Virtual Agents installate dalla pagina App o aggiunte a Teams tramite un criterio di configurazione dell'app. È possibile gestire le app dello Store tramite i [criteri di autorizzazione](teams-app-permission-policies.md) e i [criteri di configurazione](teams-app-setup-policies.md) delle app.
+> Questo articolo non si applica all'app `Power Apps` o `Power Virtual Agents` all'app installata dall'App Store o aggiunta a Teams tramite un criterio di configurazione dell'app. È possibile gestire le app dello Store tramite i [criteri di autorizzazione](teams-app-permission-policies.md) e i [criteri di configurazione](teams-app-setup-policies.md) delle app.
 
 [Power Apps](https://powerapps.microsoft.com) è un ambiente di sviluppo di applicazioni a basso o senza codice che i creatori di app nell'organizzazione possono usare per creare app personalizzate che si connettono ai dati aziendali. [Power Virtual Agents](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) è un ambiente di creazione di bot senza codice che consente agli sviluppatori di app di creare bot efficaci. Con l'integrazione delle app di Microsoft Power Platform in Teams, le organizzazioni possono semplificare i processi aziendali, rispondere alle mutevoli esigenze aziendali più rapidamente per aumentare la collaborazione e creare e condividere soluzioni personalizzate per una maggiore produttività.  
 
@@ -81,7 +81,7 @@ Ad esempio, per impedire a utenti specifici di accedere alle app create in Power
 
 :::image type="content" source="media/manage-power-platform-apps-app-permission-policy.png" alt-text="Screenshot dei criteri personalizzati di esempio per le autorizzazioni delle app con Le app di alimentazione condivise sono bloccate.":::
 
-### <a name="use-audit-logs-to-investigate-microsoft-power-platform-installation-activity"></a>Utilizzare i registri di audit per indagare sull'attività di installazione di Microsoft Power Platform
+### <a name="use-audit-logs-to-check-microsoft-power-platform-installation-activity"></a>Usare i log di controllo per controllare l'attività di installazione di Microsoft Power Platform
 
 È possibile usare i log di controllo di Teams per analizzare gli eventi in cui gli utenti hanno installato le app di Microsoft Power Platform dalla sezione **Creato con Power Platform** della pagina App in Teams. A tale scopo, [cercare il log di controllo](./audit-log-events.md) per l'evento di Teams **App installata** (nell'operazione **AppInstalled**) per un utente o un set di utenti. Per trovare le app installate da **Creato con Power Platform**, cercare il valore **TemplatedInstance** nella proprietà **AppDistributionMode** nei dettagli di un determinato record.
 

@@ -18,16 +18,16 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0f01942dcee0ed5f2696c7e6ab5b31d67a98856
-ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
+ms.openlocfilehash: e86f5e372bc1c03c2dc75b09f5e26b8fb5d98241
+ms.sourcegitcommit: 339a35e461c84ee309ade1a53299ba12231df7a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "68912875"
+ms.lasthandoff: 12/29/2022
+ms.locfileid: "69677496"
 ---
-# <a name="find-teams-apps-that-undergo-microsoft-365-app-compliance-program-for-security-compliance-and-privacy"></a>Trovare le app di Teams soggette al programma di conformità delle app di Microsoft 365 per la sicurezza, la conformità e la privacy
+# <a name="know-about-apps-that-undergo-app-compliance-program-for-security-data-handling-and-privacy"></a>Informazioni sulle app sottoposte a un programma di conformità delle app per la sicurezza, la gestione dei dati e la privacy
 
-Il programma di conformità Microsoft controlla e verifica un'app in base ai controlli derivati dai framework leader del settore. Il certificato dimostra che vengono implementate procedure di sicurezza e conformità complesse per proteggere i dati dei clienti quando l'app viene attivata in un'organizzazione. Il programma prevede le fasi seguenti:
+Il programma di conformità delle app di Microsoft 365 controlla e controlla un'app in base ai controlli derivati dai framework standard leader del settore. Il certificato dimostra che vengono implementate procedure di sicurezza e conformità complesse per proteggere i dati dei clienti quando l'app viene attivata in un'organizzazione. Il programma prevede le fasi seguenti:
 
 * [Verifica dell'autore](#publisher-verification).
 * [Attestazione dell'autore](#publisher-attestation).
@@ -121,7 +121,7 @@ Per accedere alle informazioni MCAS per un'app:
 
 1. Selezionare la scheda **Sicurezza e conformità**.
 
-   :::image type="content" source="media/mcas.png" alt-text="Screenshot della scheda Sicurezza e conformità dell'interfaccia di amministrazione di Teams":::
+   :::image type="content" source="media/mcas.png" alt-text="Screenshot della scheda Sicurezza e conformità dell'interfaccia di amministrazione di Teams" lightbox="media/mcas.png":::
 
    Per altri dettagli sulle funzionalità supportate per l'app, selezionare l'elenco a discesa per ogni categoria.
 

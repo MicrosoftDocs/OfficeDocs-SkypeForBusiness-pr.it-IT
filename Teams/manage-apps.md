@@ -22,12 +22,12 @@ description: Informazioni su come gestire le app di Teams. Informazioni su come 
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: a38bbab856a71d46cab5af471ac2f75743e21d40
-ms.sourcegitcommit: ff161779577ce9cc892f1b6b8861ad49ff4c3ca3
+ms.openlocfilehash: c88f8c4424cb82ea1482c5f6e1b90fd792279450
+ms.sourcegitcommit: 339a35e461c84ee309ade1a53299ba12231df7a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2022
-ms.locfileid: "69130875"
+ms.lasthandoff: 12/29/2022
+ms.locfileid: "69677406"
 ---
 # <a name="overview-of-app-management-and-governance-in-teams-admin-center"></a>Panoramica della gestione e della governance delle app nell'interfaccia di amministrazione di Teams
 
@@ -126,7 +126,7 @@ Usare le impostazioni delle app a livello di organizzazione per controllare se g
 
 Nell'ambito della distribuzione di Microsoft 365 Government - GCC, GCCH e DoD di Teams, tutte le app di terze parti vengono bloccate per impostazione predefinita. Nei Cloud GCCH e DOD le app di terze parti non sono disponibili. In GCC viene inoltre visualizzata la nota seguente sulla gestione delle app di terze parti nella pagina dei criteri di autorizzazione delle app nell'interfaccia di amministrazione di Microsoft Teams.
 
-:::image type="content" source="media/app-permission-policies-gcc.png" alt-text="Screenshot dei criteri di autorizzazione app in GCCH e DoD.":::
+:::image type="content" source="media/app-permission-policies-gcc.png" alt-text="Screenshot dei criteri di autorizzazione app in GCCH e DoD." lightbox="media/app-permission-policies-gcc.png":::
 
 Usare le impostazioni app a livello di organizzazione per controllare se gli utenti possono installare le app di terze parti. Le impostazioni app a livello di organizzazione disciplinano il comportamento di tutti gli utenti e sostituiscono qualsiasi criterio di autorizzazione app assegnato agli utenti.
 
@@ -135,7 +135,7 @@ Usare le impostazioni app a livello di organizzazione per controllare se gli ute
 
 ### <a name="for-gcc-clouds"></a>Per i Cloud GCC
 
-1. Nella pagina **[Gestisci app](https://admin.teams.microsoft.com/policies/manage-apps)** **di** >  Teams selezionare **Impostazioni app a livello di organizzazione**. È possibile quindi configurare le impostazioni desiderate nel pannello.
+1. Nella pagina **Gestisci app** **di** >  Teams selezionare **Impostazioni app a livello di organizzazione**. È possibile quindi configurare le impostazioni desiderate nel pannello.
 
    :::image type="content" source="media/app-permission-policies-gcc-org-wide.png" alt-text="Screenshot che mostra le impostazioni dell'app a livello di organizzazione in GCC.":::
 
@@ -152,7 +152,7 @@ Per consentire le app di terze parti, modificare e usare il criterio globale (im
 
 ### <a name="for-gcch-and-dod-clouds"></a>Per i Cloud GCCH e DoD
 
-1. Accedere all'interfaccia di amministrazione di Teams e accedere ai **[criteri di autorizzazione](https://admin.teams.microsoft.com/policies/app-permission)** **per le app** >  di Teams.
+1. Accedere all'interfaccia di amministrazione di Teams e accedere ai **criteri di autorizzazione** **per le app** >  di Teams.
 
 1. Seleziona **Impostazioni app a livello di organizzazione**. In **App bloccate**, aggiungere le app che si desidera bloccare nell'organizzazione. Nell'ambito della distribuzione di Microsoft 365 Government - GCC, GCCH e DoD di Teams, tutte le app di terze parti vengono aggiunte a questo elenco per impostazione predefinita. Quando si blocca un'app a livello di organizzazione, l'app viene bloccata automaticamente per tutti gli utenti, indipendentemente dal fatto che sia consentita da altri criteri di autorizzazione app.
 

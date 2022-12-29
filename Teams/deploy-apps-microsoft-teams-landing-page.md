@@ -22,16 +22,16 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020; intro-overview; intro-hub-or-landing
-ms.openlocfilehash: 7713f1f2bf1f3a4866751d02ba702cb2d3d244f0
-ms.sourcegitcommit: d95a3408e31d3dec37c534c110b09a8847bec724
+ms.openlocfilehash: 7ded369ab991a37e711c416a7448447f148c069c
+ms.sourcegitcommit: 339a35e461c84ee309ade1a53299ba12231df7a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/23/2022
-ms.locfileid: "69156842"
+ms.lasthandoff: 12/29/2022
+ms.locfileid: "69677416"
 ---
-# <a name="understand-microsoft-teams-apps-and-their-capabilities"></a>Comprendere Microsoft app Teams e le relative funzionalità
+# <a name="understand-microsoft-teams-apps-and-their-capabilities"></a>Comprendere le app di Microsoft Teams e le relative funzionalità
 
-Le app in Teams aiutano gli utenti a riunire gli strumenti e i servizi del luogo di lavoro e a collaborare con altri utenti. Esempi sono l'utilizzo da parte degli utenti finali di un'app Calendario in Teams per collaborare rapidamente con gli altri, un'app con funzionalità bot che informa gli utenti sulla qualità di un servizio web in un canale Teams e un'app per condividere e assegnare compiti a vari utenti finali in un canale. Microsoft app Teams sono app SaaS basate sul Web che non devono essere distribuite localmente.
+Le app in Teams aiutano gli utenti a riunire gli strumenti e i servizi del luogo di lavoro e a collaborare con altri utenti. Esempi sono l'utilizzo da parte degli utenti finali di un'app Calendario in Teams per collaborare rapidamente con gli altri, un'app con funzionalità bot che informa gli utenti sulla qualità di un servizio web in un canale Teams e un'app per condividere e assegnare compiti a vari utenti finali in un canale. Le app di Microsoft Teams sono app SaaS basate sul Web che non devono essere distribuite localmente.
 
 Gli amministratori impostano un processo di governance delle app che bilancia i requisiti ad ampio raggio degli utenti finali con i criteri, gli standard e i profili di rischio dell'organizzazione.
 
@@ -62,7 +62,7 @@ Teams include un set di app predefinite, tra cui Elenchi, Tasks, Complimento, Ap
 
 ## <a name="third-party-apps-created-by-independent-app-developers"></a>App di terze parti create da sviluppatori di app indipendenti
 
-Oltre alle app fornite Microsoft, è possibile usare app di terze parti. Microsoft convalida rigorosamente la funzionalità e la sicurezza di tutte queste app. I test manuali e automatizzati elaborati vengono eseguiti prima di rendere queste app disponibili in Teams Store e molti test continuano a una cadenza regolare anche dopo la pubblicazione delle app in tempo reale. Per informazioni sui vantaggi della convalida delle app, vedere [Convalida di app di terze parti](overview-of-app-validation.md). Alcune app sottoscrivono il programma di [conformità Microsoft](overview-of-app-certification.md) per sottoporsi a più livelli di ulteriori controlli oltre la convalida.
+Oltre alle app fornite da Microsoft, è possibile usare app di terze parti. Microsoft convalida in modo rigoroso la funzionalità e la sicurezza di tutte queste app. I test manuali e automatizzati elaborati vengono eseguiti prima di rendere queste app disponibili in Teams Store e molti test continuano a una cadenza regolare anche dopo la pubblicazione delle app in tempo reale. Per informazioni sui vantaggi della convalida delle app, vedere [Convalida di app di terze parti](overview-of-app-validation.md). Alcune app sottoscrivono il programma di [conformità Microsoft](overview-of-app-certification.md) per essere sottoposte a più livelli di ulteriori controlli oltre la convalida.
 
 :::image type="content" source="media/3p-apps-in-teams.png" alt-text="Screenshot di un esempio di app di terze parti presenti nello store di Teams.":::
 
@@ -92,7 +92,7 @@ Per altre informazioni, vedere [Modelli di app di Microsoft Teams](https://adopt
 
 Gli utenti possono visualizzare tutte le app disponibili in Teams dallo store delle app di Teams in un desktop o un client Web di Teams. Gli utenti possono cercare per nome, per categoria ed esplorare in base alle app create per la tua organizzazione e create con Power Platform per individuare e installare app in Teams.
 
-Le app possono essere aggiunte a Teams per un facile accesso. Gli utenti possono [aggiungere app autonomamente](https://support.microsoft.com/office/pin-an-app-for-easy-access-3045fd44-6604-4ba7-8ecc-1c0d525e89ec) se i criteri di configurazione lo consentono e se l'app è consentita dall'amministratore di Teams. Gli amministratori possono aggiungere app e controllare il comportamento delle app aggiunte. Per altre informazioni, vedere [Criteri di configurazione delle app](/teams-app-setup-policies).
+Le app possono essere aggiunte a Teams per un facile accesso. Gli utenti possono [aggiungere app autonomamente](https://support.microsoft.com/office/pin-an-app-for-easy-access-3045fd44-6604-4ba7-8ecc-1c0d525e89ec) se i criteri di configurazione lo consentono e se l'app è consentita dall'amministratore di Teams. Gli amministratori possono aggiungere app e controllare il comportamento delle app aggiunte. Per altre informazioni, vedere [Criteri di configurazione delle app](/microsoftteams/teams-app-setup-policies).
 
 :::image type="content" source="media/user-app-experience-find-apps.png" alt-text="Screenshot che mostra tutti i luoghi in cui gli utenti possono esplorare le app in Microsoft Teams." lightbox="media/user-app-experience-find-apps-full.png":::
 
@@ -113,7 +113,7 @@ Le funzionalità dell'app Teams sono le funzionalità principali che gli svilupp
 
 * **Bot**: i bot sono anche chiamati chatbot o bot conversazionali. Si tratta di un'app che esegue attività semplici e ripetitive. L'interazione con un bot può essere una domanda e una risposta rapide oppure una conversazione complessa che fornisce accesso a servizi o assistenza. Gli utenti possono avere una conversazione con un bot in una chat personale, un canale o una chat di gruppo. Per altre informazioni, vedere [Bot in Microsoft Teams](/microsoftteams/platform/bots/what-are-bots).
 
-* **Schede**: Le schede sono pagine Web con supporto per Teams aggiunte nella parte superiore di un canale o di una chat. Le schede consentono di interagire con contenuti e servizi con un'esperienza simile al Web. Si tratta di semplici tag HTML `iframe` che possono essere aggiunti come parte di un canale all'interno di un team, una chat di gruppo o un'app personale per un singolo utente. Per altre informazioni, vedere [Microsoft schede di Teams](/microsoftteams/platform/tabs/what-are-tabs).
+* **Schede**: Le schede sono pagine Web con supporto per Teams aggiunte nella parte superiore di un canale o di una chat. Le schede consentono di interagire con contenuti e servizi con un'esperienza simile al Web. Si tratta di semplici tag HTML `iframe` che possono essere aggiunti come parte di un canale all'interno di un team, una chat di gruppo o un'app personale per un singolo utente. Per altre informazioni, vedere [le schede di Microsoft Teams](/microsoftteams/platform/tabs/what-are-tabs).
 
 * **Webhook e connettori**: Webhook e connettori consentono di connettere vari servizi Web a canali e team in Microsoft Teams. I webhook sono callback HTTP definiti dall'utente che notificano agli utenti qualsiasi azione eseguita nel canale Teams. È un modo per un'app di ottenere dati in tempo reale. I connettori consentono agli utenti di abbonarsi per ricevere notifiche e messaggi dai servizi Web. Per altre informazioni, vedere [Webhook e connettori](/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors).
 
