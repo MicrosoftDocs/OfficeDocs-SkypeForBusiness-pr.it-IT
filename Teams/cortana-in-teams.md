@@ -20,19 +20,19 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 502f09891942796a326deba35e29fab234e6548a
-ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
+ms.openlocfilehash: f8070644139ebd32157693e941e3206a4e90cdad
+ms.sourcegitcommit: 84a832330c0a9f9fb818bbfb22e534fe035c1837
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2022
-ms.locfileid: "69198498"
+ms.lasthandoff: 01/03/2023
+ms.locfileid: "69693399"
 ---
 # <a name="cortana-voice-assistance-in-teams"></a>Assistenza vocale di Cortana in Teams
 
 > [!NOTE]
-> L'assistenza vocale di Cortana è supportata nelle app per dispositivi mobili di Microsoft Teams per iOS e Android, Microsoft schermi di Teams e Microsoft Teams Rooms su Windows per gli utenti di Stati Uniti, Regno Unito, Canada, India e Australia. L'assistenza vocale di Cortana nell'app Teams per dispositivi mobili è ora disponibile per i clienti EDU negli Stati Uniti. L'espansione di altre lingue e aree geografiche verrà eseguita nelle versioni future. L'assistenza vocale di Cortana non è attualmente disponibile per i tenant GCC, GCC-High, DoD e EDU non statunitensi.
+> L'assistenza vocale di Cortana è supportata nelle app per dispositivi mobili Microsoft Teams per iOS e Android, negli schermi di Microsoft Teams e nei Microsoft Teams Rooms su Windows per gli utenti di Stati Uniti, Regno Unito, Canada, India e Australia. L'assistenza vocale di Cortana nell'app Teams per dispositivi mobili è ora disponibile per i clienti EDU negli Stati Uniti. L'espansione di altre lingue e aree geografiche verrà eseguita nelle versioni future. L'assistenza vocale di Cortana non è attualmente disponibile per i tenant GCC, GCC-High, DoD e EDU non statunitensi.
 
-L'assistenza vocale di Cortana nell'app Teams per dispositivi mobili, nei Microsoft Teams Rooms in Windows e nei dispositivi di visualizzazione di Microsoft Teams consente agli utenti Microsoft 365 Enterprise di semplificare le attività di comunicazione, collaborazione e riunioni usando il linguaggio naturale parlato. Gli utenti possono parlare con Cortana selezionando il pulsante del microfono nell'angolo in alto a destra dell'app Teams per dispositivi mobili o pronunciando "Cortana" nella Microsoft Teams Room o quando usano una Microsoft visualizzazione di Teams. Per connettersi rapidamente con il team in vivavoce e quando si è in viaggio, gli utenti possono pronunciare query come "chiama Megan" o "inviare un messaggio alla riunione successiva". Gli utenti possono anche partecipare alle riunioni pronunciando "Partecipa alla riunione successiva" e usando l'assistenza vocale per condividere file, controllare il calendario e altro ancora. Queste esperienze di assistenza vocale vengono fornite tramite [servizi di livello aziendale di Cortana](/microsoft-365/admin/misc/cortana-integration) che soddisfano pienamente le promesse di privacy, sicurezza e conformità di Office 365, come indicato nelle [Condizioni per i servizi online](https://www.microsoft.com/licensing/product-licensing/products?rtc=1&preserve-view=true).
+L'assistenza vocale di Cortana nell'app Teams per dispositivi mobili, nei Microsoft Teams Rooms in Windows e nei dispositivi di visualizzazione di Microsoft Teams consente agli utenti Microsoft 365 Enterprise di semplificare le attività di comunicazione, collaborazione e riunioni usando il linguaggio naturale parlato. Gli utenti possono parlare con Cortana selezionando il pulsante del microfono nell'angolo in alto a destra dell'app Teams per dispositivi mobili o pronunciando "Cortana" in Microsoft Teams Room o quando usano uno schermo di Microsoft Teams. Per connettersi rapidamente con il team in vivavoce e quando si è in viaggio, gli utenti possono pronunciare query come "chiama Megan" o "inviare un messaggio alla riunione successiva". Gli utenti possono anche partecipare alle riunioni pronunciando "Partecipa alla riunione successiva" e usando l'assistenza vocale per condividere file, controllare il calendario e altro ancora. Queste esperienze di assistenza vocale vengono fornite tramite [servizi di livello aziendale di Cortana](/microsoft-365/admin/misc/cortana-integration) che soddisfano pienamente le promesse di privacy, sicurezza e conformità di Office 365, come indicato nelle [Condizioni per i servizi online](https://www.microsoft.com/licensing/product-licensing/products?rtc=1&preserve-view=true).
 
 ## <a name="admin-control-and-limitations"></a>Amministrazione controllo e limitazioni
 
@@ -40,7 +40,7 @@ L'assistenza vocale di Cortana in Teams viene fornita utilizzando servizi comple
 
 Gli amministratori tenant possono controllare chi nel proprio tenant può usare l'assistenza vocale di Cortana in Teams usando un criterio (TeamsCortanaPolicy). Questo criterio è impostato a livello di account utente o di tenant. Gli amministratori possono usare il campo CortanaVoiceInvocationMode all'interno di questo controllo dei criteri per determinare se Cortana è disabilitata, abilitata solo con la chiamata tramite pulsante di scelta rapida o anche con chiamata di parola di attivazione (applicabile ai dispositivi che la supportano, come la visualizzazione di Microsoft Teams).
 
-Gli amministratori possono usare i cmdlet di PowerShell seguenti per gestire questo criterio (il criterio non è attualmente disponibile nell Microsoft interfaccia di amministrazione di Teams).
+Gli amministratori possono usare i cmdlet di PowerShell seguenti per gestire questo criterio (il criterio non è attualmente disponibile nell'interfaccia di amministrazione di Microsoft Teams).
 
 - [New-CsTeamsCortanaPolicy](/powershell/module/skype/New-CsTeamsCortanaPolicy)
 
@@ -64,17 +64,11 @@ Questo esempio mostra l'aggiornamento di un criterio esistente con il nome "Empl
 PS C:\> Set-CsTeamsCortanaPolicy -Identity EmployeeCortanaPolicy -CortanaVoiceInvocationMode PushToTalkUserOverride
 ```
 
-Questo esempio mostra l'aggiornamento dei criteri e l'abilitazione dell'assistenza vocale di Cortana sia con il pulsante di scelta rapida che con la chiamata di parola di attivazione.
+Questo esempio mostra l'aggiornamento dei criteri e l'abilitazione dell'assistenza vocale di Cortana sia con il pulsante di scelta rapida che con la chiamata di parola di attivazione. L'attivazione di parole di attivazione è supportata per Microsoft 365 Enterprise utenti negli Stati Uniti per l'app Teams per dispositivi mobili, Microsoft Teams Rooms su Windows e Microsoft Teams Display con la lingua impostata su inglese.
 
 ```PowerShell
 PS C:\> Set-CsTeamsCortanaPolicy -Identity EmployeeCortanaPolicy -CortanaVoiceInvocationMode WakeWordPushToTalkUserOverride
 ```
-
-Al momento, della versione iniziale per Microsoft 365 Enterprise utenti negli Stati Uniti in inglese, sono disponibili le seguenti funzioni:
-
-- L'app Teams per dispositivi mobili non supporta l'attivazione delle parole di attivazione, ma sarà supportata in futuro.
-
-- Microsoft Teams Rooms in Windows e nei dispositivi di visualizzazione di Microsoft Teams supporteranno l'attivazione di parole di attivazione.
 
 ## <a name="user-control"></a>Controllo utente
 

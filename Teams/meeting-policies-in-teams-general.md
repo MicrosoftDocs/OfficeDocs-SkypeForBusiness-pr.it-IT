@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.general
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri generali delle riunioni in Teams.
-ms.openlocfilehash: 97ba1da0301f1a5515caf88d5f428578b653653a
-ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
+ms.openlocfilehash: cc0d704c5a78d09da4c1332d48f795cdb611d134
+ms.sourcegitcommit: 84a832330c0a9f9fb818bbfb22e534fe035c1837
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2022
-ms.locfileid: "69307511"
+ms.lasthandoff: 01/03/2023
+ms.locfileid: "69693379"
 ---
 # <a name="meeting-policy-settings---general"></a>Impostazioni dei criteri di riunione - Generale
 
@@ -37,8 +37,6 @@ Questo articolo descrive le seguenti impostazioni dei criteri generali per le ri
 - [Componente aggiuntivo di Outlook](#outlook-add-in)
 - [Pianificazione delle riunioni di canale](#channel-meeting-scheduling)
 - [Pianificazione riunione privata](#private-meeting-scheduling)
-- [Riunione immediata in riunioni private](#meet-now-in-private-meetings)
-- [Modalità ruolo relatore designato](#designated-presenter-role-mode)
 - [Report sull'impegno](#engagement-report)
 - [Registrazione riunione](#meeting-registration)
 - [Webinar](#webinars)
@@ -48,7 +46,7 @@ Questo articolo descrive le seguenti impostazioni dei criteri generali per le ri
 
 ## <a name="meet-now-in-channels"></a>Riunione immediata nei canali
 
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione ad hoc in un canale di Teams. Se si attiva questa opzione, gli utenti possono fare clic sul pulsante **Riunione** per avviare una riunione ad hoc o pianificare una riunione nel canale. Il valore predefinito è True.
+Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione non pianificata in un canale di Teams. Se si attiva questa impostazione, gli utenti possono fare clic sul pulsante **Riunione** per avviare una riunione non pianificata o pianificare una riunione nel canale. Questa impostazione è attivata per impostazione predefinita.
 
 [![Screenshot che mostra l'icona Riunione immediata sotto un messaggio.](media/meeting-policies-meet-now.png)](media/meeting-policies-meet-now.png#lightbox)
 
@@ -58,7 +56,7 @@ Questo è un criterio per utente e si applica prima dell'inizio di una riunione.
 
 ![Screenshot che mostra la possibilità di pianificare una nuova riunione.](media/meeting-policies-outlook-add-in.png)
 
-Se si disattiva questa impostazione, gli utenti non potranno pianificare riunioni di Teams durante la creazione di una nuova riunione in Outlook. In Outlook per Windows, ad esempio, l'opzione **Nuova riunione di Teams** non comparirà sulla barra multifunzione.
+Se si disattiva questa impostazione, gli utenti non sono in grado di pianificare le riunioni di Teams quando creano una nuova riunione in Outlook. In Outlook per Windows, ad esempio, l'opzione **Nuova riunione di Teams** non comparirà sulla barra multifunzione.
 
 ## <a name="channel-meeting-scheduling"></a>Pianificazione delle riunioni di canale
 
@@ -74,7 +72,7 @@ La selezione del canale è disabilitata.
 
 [![Screenshot che mostra l'opzione del calendario per selezionare un canale in cui pianificare una riunione.](media/meeting-policies-select-a-channel-to-meet-in.png)](media/meeting-policies-select-a-channel-to-meet-in.png#lightbox)
 
-Nella pagina dei post del canale verranno disabilitati gli elementi seguenti:
+Nella pagina dei post del canale verranno disabilitate le funzionalità seguenti:
 
 - Pulsante **Pianifica una riunione** nella casella per comporre una risposta del canale.
   ![Screenshot che mostra l'opzione del calendario per selezionare un canale in cui si vuole pianificare una riunione.](media/schedule-meeting-disabled-in-chat2.png)
@@ -87,7 +85,7 @@ Nel calendario del canale:
 - Il pulsante **Aggiungi nuovo evento** nell'intestazione del calendario del canale sarà disabilitato.
   ![Screenshot che mostra l'opzione del calendario per selezionare un canale che consente di pianificare una riunione.](media/add-new-event-disabled.png)
 
-- Gli utenti non potranno trascinare e selezionare un intervallo di tempo nel calendario del canale per creare una riunione del canale.
+- Gli utenti non saranno in grado di trascinare e selezionare un intervallo di tempo nel calendario del canale per creare una riunione di canale.
 
 - Gli utenti non possono usare le scelte rapide da tastiera per creare una riunione nel calendario del canale.
 
@@ -99,29 +97,9 @@ L'app del calendario del canale sarà visualizzata nella sezione **App Microsoft
 
 ## <a name="private-meeting-scheduling"></a>Pianificazione riunione privata
 
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare riunioni private in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
+Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare riunioni private in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team. **La pianificazione delle riunioni private** è attivata per impostazione predefinita.
 
-Si noti che, disattivando **Consenti la pianificazione di riunioni private** e **Consenti la pianificazione delle riunioni di canale**, le opzioni **Aggiungi partecipanti obbligatori** e **Aggiungi canale** vengono disabilitate per gli utenti in Teams. Per impostazione predefinita, questa impostazione è attivata.
-
-## <a name="meet-now-in-private-meetings"></a>Riunione immediata in riunioni private
-
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione privata ad hoc.  Per impostazione predefinita, questa impostazione è attivata.
-
-## <a name="designated-presenter-role-mode"></a>Modalità ruolo relatore designato
-
-Questo è un criterio per utente. Questa impostazione consente di modificare il valore predefinito dell'impostazione **Chi può essere un relatore?** in **Opzioni riunione** nel client di Teams. Questa impostazione di criteri influisce su tutte le riunioni, incluse quelle immediate.
-
-L'impostazione **Chi può essere un relatore?** consente agli organizzatori di scegliere chi può essere un relatore in una riunione. Per altre informazioni, vedere [Modificare le impostazioni dei partecipanti per una riunione Teams](https://support.microsoft.com/article/change-participant-settings-for-a-teams-meeting-53261366-dbd5-45f9-aae9-a70e6354f88e) e [Ruoli in una riunione di Teams](https://support.microsoft.com/article/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019).
-
-Attualmente, è possibile usare solo PowerShell per configurare questa impostazione di criteri. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
-
-Per specificare il valore predefinito dell'impostazione **Chi può essere un relatore?** in Teams, impostare il parametro **DesignatedPresenterRoleMode** su uno dei parametri seguenti:
-
-- **EveryoneUserOverride**: tutti i partecipanti alla riunione possono essere relatori. Questo è il valore predefinito. Questo parametro corrisponde all'impostazione **Tutti** in Teams.
-- **EveryoneInCompanyUserOverride**: gli utenti autenticati nell'organizzazione, inclusi gli utenti guest, possono essere relatori. Questo parametro corrisponde all'impostazione **Persone dell'organizzazione** in Teams.
-- **OrganizerOnlyUserOverride**: solo l'organizzatore della riunione può essere un relatore, mentre tutti gli altri partecipanti alla riunione sono designati come partecipanti. Questo parametro corrisponde all'impostazione **Solo io** in Teams.
-
-Dopo aver impostato il valore predefinito, gli organizzatori delle riunioni possono ancora modificare questa impostazione in Teams e scegliere chi può essere un relatore nelle riunioni pianificate.
+Se si disattivano sia le impostazioni **di pianificazione delle riunioni private** che di **quella del canale** , le opzioni **Aggiungi partecipanti obbligatori** e **Aggiungi canale** sono disabilitate per gli utenti in Teams.
 
 ## <a name="engagement-report"></a>Report sull'impegno
 
@@ -142,7 +120,7 @@ Per altre informazioni, inclusi i limiti del report sull'impegno, vedere [Visual
 
 ## <a name="meeting-registration"></a>Registrazione riunione
 
-Questo è un criterio per utente. Se si attiva questa opzione, gli utenti dell'organizzazione possono aggiungere la registrazione a una riunione. Questo criterio è abilitato per impostazione predefinita.
+Questo è un criterio per utente. Se si attiva questa impostazione, gli utenti dell'organizzazione possono aggiungere la registrazione a una riunione. Questo criterio è abilitato per impostazione predefinita.
 
 Per altre informazioni sulla registrazione della riunione, vedere [Configurare la registrazione della riunione](set-up-webinars.md#configure-meeting-registration).
 
@@ -164,7 +142,7 @@ Attualmente, è possibile usare solo PowerShell per impostare questo criterio. �
 
 Per specificare il componente aggiuntivo per le riunioni da rendere disponibile per gli utenti, impostare il parametro **PreferredMeetingProviderForIslandsMode** come indicato di seguito:
 
-- Impostare il parametro su **TeamsAndSfB** per abilitare il componente aggiuntivo Riunione di Teams e il componente aggiuntivo Skype for Business in Outlook. Questo è il valore predefinito.
+- Impostare il parametro su **TeamsAndSfB** per abilitare il componente aggiuntivo Riunione di Teams e il componente aggiuntivo Skype for Business in Outlook. **TeamsAndSfB** è il valore predefinito.
 - Impostare il parametro su **Teams** per abilitare solo il componente aggiuntivo Riunione di Teams in Outlook. Questa impostazione dei criteri garantisce che tutte le riunioni future abbiano un collegamento per accedere a una riunione di Teams. Non viene eseguita la migrazione dei collegamenti di accesso alle riunioni di Skype for Business esistenti in Teams. Questa impostazione dei criteri non influisce su presenza, chat, chiamate PSTN o altre funzionalità di Skype for Business, il che significa che gli utenti continueranno a usare Skype for Business per queste funzioni.
 
   Se si imposta il parametro su **Teams** e poi di nuovo su **TeamsAndSfB**, entrambi i componenti aggiuntivi per le riunioni saranno abilitati. Tuttavia, i collegamenti di accesso alle riunioni di Teams esistenti non verranno migrati in Skype for Business. Solo le riunioni di Skype for Business pianificate dopo la modifica avranno un collegamento di accesso a una riunione di Skype for Business.
@@ -177,7 +155,7 @@ Nell'interfaccia di amministrazione di Teams, le reazioni alle riunioni possono 
 
 Per configurare l'impostazione in PowerShell, utilizzare il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) . Per disattivarlo, impostare **AllowMeetingReactions** **su False**.
 
-Se si disattivano le reazioni di un utente non significa che un altro utente non può usare le reazioni nelle riunioni pianificate. L'organizzatore della riunione può comunque attivare le reazioni dalla pagina delle opzioni della riunione, indipendentemente dall'impostazione predefinita.
+Disattivare le reazioni per un utente non significa che un utente non può usare le reazioni nelle riunioni pianificate. L'organizzatore della riunione può comunque attivare le reazioni dalla pagina delle opzioni della riunione, indipendentemente dall'impostazione predefinita.
 
 ## <a name="speaker-coach"></a>Speaker Coach
 

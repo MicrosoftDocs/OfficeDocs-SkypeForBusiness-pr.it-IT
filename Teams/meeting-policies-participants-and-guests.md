@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri riunione in Teams per partecipanti e guest.
-ms.openlocfilehash: 42321eb1edadeda928ab0cb9e78e166478b73ed9
-ms.sourcegitcommit: 00a526c5b9829302f7c4e0631d0c2dac50b7d004
+ms.openlocfilehash: 26d2fd24d8b241b8f79276148ed27abd3e5412b1
+ms.sourcegitcommit: 84a832330c0a9f9fb818bbfb22e534fe035c1837
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2022
-ms.locfileid: "69436672"
+ms.lasthandoff: 01/03/2023
+ms.locfileid: "69693389"
 ---
 # <a name="meeting-policy-settings---participants--guests"></a>Impostazioni dei criteri di riunione - Partecipanti e ospiti
 
@@ -61,14 +61,14 @@ Questa impostazione è un criterio per organizzatore che consente le riunioni di
 
 ## <a name="who-can-present-in-meetings"></a>Chi può partecipare alle riunioni
 
-Questo è un criterio per utente. Questa impostazione consente di modificare il valore predefinito dell'impostazione **Chi può essere un relatore?** in **Opzioni riunione** nel client di Teams. Questa impostazione di criteri influisce su tutte le riunioni, incluse quelle immediate.
+Questa impostazione è un criterio per utente che consente di modificare il valore predefinito dell'impostazione **Chi può presentare?** nelle **opzioni riunione** nel client teams. L'impostazione dei criteri **Chi può partecipare alle riunioni** influisce su tutte le riunioni, incluse quelle riunione immediata.
 
 L'impostazione **Chi può essere un relatore?** consente agli organizzatori di scegliere chi può essere un relatore in una riunione. Per altre informazioni, vedere [Modificare le impostazioni dei partecipanti per una riunione Teams](https://support.microsoft.com/office/53261366-dbd5-45f9-aae9-a70e6354f88e) e [Ruoli in una riunione di Teams](https://support.microsoft.com/office/c16fa7d0-1666-4dde-8686-0a0bfe16e019).
 
-Per specificare il valore predefinito dell'impostazione **Chi può presentare?** in Teams, impostare una delle impostazioni seguenti nel criterio:
+Per specificare il valore predefinito dell'impostazione **Chi può presentare?** in Teams, impostare su una delle impostazioni seguenti nel criterio **Chi può presentare in riunione** :
 
 - **Organizzatori, ma gli utenti possono ignorare**: solo l'organizzatore della riunione può essere un relatore e tutti i partecipanti alla riunione vengono designati come partecipanti. Questo parametro corrisponde all'impostazione **Solo io** in Teams.
-- **Tutti gli utenti dell'organizzazione, ma l'utente può eseguire l'override**: gli utenti autenticati nell'organizzazione, inclusi gli utenti guest, possono essere relatori. Questa impostazione corrisponde alla **Persone dell'organizzazione** in Teams.
+- **Tutti gli utenti dell'organizzazione, ma l'utente può eseguire l'override**: gli utenti autenticati dell'organizzazione, inclusi gli utenti guest, possono essere relatori. Questa impostazione corrisponde alla **Persone dell'organizzazione** in Teams.
 - **Tutti, ma l'utente può ignorare**: tutti i partecipanti alla riunione possono essere relatori. Questo è il valore predefinito. Questa impostazione corrisponde all'impostazione **Tutti** in Teams.
 
 Dopo aver impostato il valore predefinito, gli organizzatori delle riunioni possono ancora modificare questa impostazione in Teams e scegliere chi può essere un relatore nelle riunioni pianificate.
@@ -123,7 +123,7 @@ Per altre informazioni su come gli utenti finali possono attivare **i sottotitol
 ### <a name="live-translated-captions"></a>Sottotitoli tradotti in tempo reale
 
 > [!NOTE]
-> Questa funzionalità è temporaneamente disponibile nell'anteprima pubblica. Dopo l'anteprima, l'organizzatore della riunione deve avere una licenza Teams Premium per consentire ai partecipanti di usare i sottotitoli tradotti in tempo reale.
+> Questa funzionalità è temporaneamente disponibile nell'anteprima pubblica. Dopo l'anteprima, l'organizzatore della riunione deve avere una licenza di Teams Premium per consentire ai partecipanti di usare i sottotitoli tradotti in tempo reale.
 
 Per impostazione predefinita, **i sottotitoli in tempo** reale vengono visualizzati nella lingua pronunciata durante una riunione. **I sottotitoli tradotti in tempo** reale consentono agli utenti di vedere i sottotitoli tradotti nella lingua con cui sono più a loro agio.
 
@@ -156,7 +156,7 @@ Questo è un criterio per organizzatore. Questa impostazione attiva o disattiva 
 
 L'impostazione viene applicata quando una riunione viene creata o aggiornata dagli organizzatori. Per impostazione predefinita, questa impostazione è disattivata. Altre informazioni su [Q&A nelle riunioni di Teams](/manage-qna-for-teams).
 
-Il parametro QnAEngagementMode controlla questo criterio in PowerShell. Q&A possono essere modificati anche nell'interfaccia di amministrazione di Teams.
+La Q&A di Teams può essere modificata all'interno dell'interfaccia di amministrazione di Teams in **Criteri riunione** >  nella sezione **Partecipanti & guest**. Il parametro `-QnAEngagementMode` controlla questo criterio in PowerShell.
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
@@ -169,7 +169,7 @@ Le reazioni alle riunioni sono attivate per impostazione predefinita. Se si disa
 
 ## <a name="enable-meeting-policy-settings"></a>Abilitare le impostazioni dei criteri riunione
 
-Per abilitare le impostazioni dei criteri di riunione, è possibile utilizzare [l'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com/policies/meetings) (**Criteri riunione** > **Modifica un criterio** > **Partecipanti & guest**) o il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) in PowerShell di Teams. 
+Per abilitare le impostazioni dei criteri di riunione, è possibile utilizzare [l'interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com/policies/meetings) (**Criteri riunione** > **Modifica un criterio** > **Partecipanti & guest**) o il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) in PowerShell di Teams.
 
 In questo esempio viene usato PowerShell per modificare i criteri globali per le riunioni e consentire a chiunque di avviare o partecipare a una riunione.
 
@@ -178,7 +178,6 @@ Set-CsTeamsMeetingPolicy -Identity Global -AutoAdmittedUsers "Everyone" -AllowAn
 ```
 
 Dopo aver configurato un criterio, è necessario applicarlo agli utenti. Se è stato modificato il criterio globale (impostazione predefinita a livello di organizzazione), verrà applicato automaticamente agli utenti. Per applicare le modifiche ai criteri è necessario attendere almeno 4 ore, ma possono essere necessarie fino a 24 ore.
-
 
 ## <a name="related-topics"></a>Argomenti correlati
 
