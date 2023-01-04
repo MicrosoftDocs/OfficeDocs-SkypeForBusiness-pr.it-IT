@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sulla gestione Microsoft Teams Rooms Pro.
 f1keywords: ''
-ms.openlocfilehash: d6644308f5c9de9b92c3d25df2595a036c232c7b
-ms.sourcegitcommit: baf29d244b428712052553f9e4484e72e727247e
+ms.openlocfilehash: cadf078c4d56c518acda73a44b62c55f346f189c
+ms.sourcegitcommit: 0e4e5b9933970827ea4be137ca98eab6994e2301
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2022
-ms.locfileid: "69046888"
+ms.lasthandoff: 01/04/2023
+ms.locfileid: "69696891"
 ---
 # <a name="microsoft-teams-rooms-pro-management"></a>Gestione Microsoft Teams Rooms Pro
 
@@ -68,11 +68,11 @@ Per mantenere la qualità del servizio gestito Microsoft Teams Rooms, le sale re
 
 ## <a name="supported-regions"></a>Aree geografiche supportate
 
-La licenza Microsoft Teams Rooms Pro è disponibile nei seguenti paesi con audioconferenza:
+La licenza Microsoft Teams Rooms Pro è disponibile nei paesi e nelle aree geografiche seguenti con audioconferenza:
 
 - Argentina, Australia, Austria, Belgio, Bosnia & Erzegovina, Brasile, Bulgaria, Canada, Cile, Colombia, Costa Rica, Croazia, Cipro, Danimarca, Repubblica dominicana, Ecuador, Egitto, Estonia, Finlandia, Francia, Germania, Grecia, Guernsey, Hong Kong - R.A.S., Ungheria, Indonesia, Irlanda, Israele, Italia, Giappone, Jersey, Giordania, Kenya, Corea, Lettonia, Lituania, Lussemburgo, Malaysia, Malta, Messico, Monaco, Paesi Bassi, Nuova Zelanda, Norvegia, Panama, Paraguay, Perù, Filippine,  Polonia, Portogallo, PortoRico, Qatar, Romania, Russia, Serbia, Singapore, Slovacchia, Slovenia, Sudafrica, Spagna, Sri Lanka, Svezia, Svizzera, Taiwan, Thailandia, Trinidad & Tobago, Turchia, Isole Vergini Americane, Ucraina, Emirati Arabi Uniti, Regno Unito, Stati Uniti, Uruguay, Venezuela, Vietnam
 
-La licenza Microsoft Teams Rooms Pro è disponibile nei paesi seguenti senza audioconferenza:
+La licenza Microsoft Teams Rooms Pro è disponibile nei paesi e nelle aree geografiche seguenti senza audioconferenza:
 
 - Afghanistan, Isole Åland, Albania, Algeria, Samoa americane, Hawaii, Angola, Anguilla, Antartide, Antigua & Barbuda, Argentina, Armenia, Aruba, Australia, Austria, Azerbaijan, Bahamas, Bahrain, Bangladesh, Barbados, Belarus, Belgio, Belize, Benin, Bermuda, Bermuda, Bolivia, Bonaire, Sint Eustatius e Saba, Bosnia & Erzegovina, Bengala, Isola Bouvet, Brasile, Territorio britannico dell'Oceano Indiano, Isole Vergini Britanniche, Brunei, Bulgaria, Bulgaria, Belgio, Cambogia,  Camerun, Canada, Capo Verde, Isole Cayman, Repubblica Centrafricana, Ciad, Cile, Cina, Isola christmas, Isole Cocos (Keeling), Colombia, Comoros, Congo, Congo (RDC), Isole Cook, Costa Rica, Costa Rica, Costa Rica, Croazia, Curaçao, Cipro, Repubblica Ceca, Danimarca, Djibouti, Dominica, Repubblica dominicana, Ecuador, Egitto, El Salvador, Inglese (Territori meridionali francesi), Guinea Equatoriale, Estonia, Eswatini, Etiopia, Isole Falkland, Isole Faroe, Figi,  Finlandia, Francia, Guyana francese, Polinesia francese, Explorer, Gambia, Georgia, Germania, Ghana, Gibilterra, Grecia, Groenlandia, Route, Guadeloupe, Guam, Guatemala, Guernsey, Guinea, Guinea-Binstall, Guyana, Haiti, Heard And Mc Donald Islands, Santa Sede (Città del Vaticano), Honduras, Hong Kong , R.A.S., Islanda, India, Indonesia, Iraq, Irlanda, Isola di Man, Israele, Italia, Giamaica, Giappone, Jersey, Giordania, Kazakhstan, Kenya, Kiribati, Corea, Kosovo,  Kuwait, Kirghizistan, Laos, Lettonia, Libano, Lesotho, Liberia, Libia, Liechtenstein, Lituania, Lussemburgo, Macao, R.A.S., Madagascar, Malawi, Malaysia, Maldive, Mali, Malta, Isole Marshall, Martinica, Mauritius, Mayotte, Messico, Micronesia, Moldavia, Monaco, Mongolia, Montenegro, Montserrat, Marocco, Mozambico, Myanmar, Namibia, Nauru, Nepal, Paesi Bassi, Nuova Zelanda, Nicaragua, Nigeria, Niue, Isola Norfolk, Macedonia del Nord, Isole Marianne settentrionali, Norvegia,  Oman, Pakistan, Palau, Territorio Palestinese, Occupato, Panama, Papua Nuova Guinea, Paraguay, Perù, Filippine, Isole Pitcairn, Polonia, Portogallo, Porto Rico, Qatar, Réunion, Romania, Russia, Ruanda, Samoa, San Marino, São Tomé & Príncipe, Arabia Saudita, Arabia Saudita, Senegal, Serbia, Seychelles, Sierra Leone, Singapore, Sint Maarten, Slovacchia, Slovenia, Isole Salomone, Somalia, Sudafrica, Sudafrica, Georgia del Sud e Isole Sandwich Meridionali,  Sud Sudan, Spagna, Sri Lanka, Sant'Elena, Ascensione, Tristan da Cunha, St. Barthélemy, St. Kitts & Nevis, St. Lucia, St. Lucia Martin, St. Pierre & Miquelon, St. Vincent & Grenadine, Suriname, Svalbard & Jan Mayen, Svezia, Svizzera, Taiwan, Tagikistan, Tanzania, Thailandia, Timor-Leste, Togo, Tokelau, Tonga, Trinidad & Tobago, Tunisia, Turchia, Turk & Isole Caicos, Tuvalu, Isole Outlying degli Stati Uniti,  Isole Vergini Americane, Uganda, Ucraina, Emirati Arabi Uniti, Regno Unito, Stati Uniti, Uruguay, Uzbekistan, Vanuatu, Venezuela, Vietnam, Wallis & Futuna, Yemen, Zambia, Zimbabwe
 

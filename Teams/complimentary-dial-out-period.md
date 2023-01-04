@@ -22,12 +22,12 @@ ms.custom:
 - Legal
 - seo-marvel-mar2020
 description: Informazioni sul periodo di chiamata in uscita gratuito per un piano di chiamata Microsoft 365 e sui servizi di audioconferenza in Microsoft Teams.
-ms.openlocfilehash: 72ec36eb99a4a0eb2358195a52db00b26bb591e5
-ms.sourcegitcommit: 5abfb6f1abe10b6d32cf6eb97a890cf3138ed0e6
+ms.openlocfilehash: 472482f49109932dded4594bf0381ebd93febab3
+ms.sourcegitcommit: 0e4e5b9933970827ea4be137ca98eab6994e2301
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2022
-ms.locfileid: "67641897"
+ms.lasthandoff: 01/04/2023
+ms.locfileid: "69696851"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 
@@ -39,7 +39,7 @@ I clienti possono utilizzare un piano per chiamate Microsoft 365 e le audioconfe
 
 La funzionalità gratuita di chiamata in uscita è terminata il 1° dicembre 2019. Per ulteriori informazioni, consulta [Chiamata in uscita con abbonamento Audioconferenza e chiamami a vantaggio](audio-conferencing-subscription-dial-out.md).
 
-Questa modifica non è stata apportata ai paesi in cui è disponibile l'abbonamento per i servizi di audioconferenza, ma attualmente non è possibile configurare i Crediti comunicazioni. Questi paesi specifici sono la Russia, la Corea del Sud e Taiwan.
+Questa modifica non è stata apportata ai paesi e alle aree geografiche in cui è disponibile l'abbonamento per i servizi di audioconferenza, ma attualmente non è possibile configurare i Crediti comunicazioni. Questi paesi e aree geografiche specifici sono la Russia, la Corea del Sud e Taiwan.
 
 ### <a name="complimentary-dial-out-period-details"></a>Dettagli del periodo di chiamata gratuita
 
@@ -47,7 +47,7 @@ Per i clienti che adottano il servizio Di audioconferenza di Microsoft 365, Micr
 
 Inoltre, durante il periodo di chiamata gratuita è previsto un limite di 900 minuti:
 
-Gli utenti con una posizione di utilizzo della licenza (la località è la località del paese utente definita nell'area di licenza del interfaccia di amministrazione di Microsoft 365) in _qualsiasi_ _ paese possono effettuare chiamate in uscita da una conferenza in uno qualsiasi dei 44 [paesi e aree geografiche della Zona A](audio-conferencing-zones.md). Ogni utente riceve 900 minuti al mese per utente in _uno_ qualsiasi dei [paesi e delle aree geografiche della Zona A](audio-conferencing-zones.md), raggruppati a livello di tenant. Ad esempio, un cliente ha acquistato 115 licenze di abbonamento per i servizi di audioconferenza e ha 10 utenti negli Stati Uniti, 100 utenti nel Regno Unito e 5 utenti in India, tutti con licenze di abbonamento per audioconferenza assegnate agli utenti.
+Gli utenti con una posizione di utilizzo della licenza (la località è il paese utente o la località dell'area geografica definita nell'area di licenza del interfaccia di amministrazione di Microsoft 365) in _qualsiasi_ _ paese o area geografica possono effettuare chiamate in uscita da una conferenza a uno qualsiasi dei 44 [paesi e aree geografiche della Zona A](audio-conferencing-zones.md). Ogni utente riceve 900 minuti al mese per utente in _uno_ qualsiasi dei [paesi e delle aree geografiche della Zona A](audio-conferencing-zones.md), raggruppati a livello di tenant. Ad esempio, un cliente ha acquistato 115 licenze di abbonamento per i servizi di audioconferenza e ha 10 utenti negli Stati Uniti, 100 utenti nel Regno Unito e 5 utenti in India, tutti con licenze di abbonamento per audioconferenza assegnate agli utenti.
 
 - Tutti e 115 utenti condividono un pool di (115 utenti x 900 min) = 103.500 minuti di accesso esterno in uscita per mese di calendario, che possono essere utilizzati per effettuare chiamate in uscita verso uno dei [paesi e delle aree geografiche della Zona A](audio-conferencing-zones.md).
 
