@@ -3,6 +3,14 @@
 
 
 
+## <a name="week-of-december-26-2022"></a>Settimana del 26 dicembre 2022
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 12/27/2022 | [Sessioni di Teams a Ignite 2020](/MicrosoftTeams/ignite-2020-landing-page) | Volta |
+
+
 ## <a name="week-of-december-19-2022"></a>Settimana del 19 dicembre 2022
 
 
@@ -24,7 +32,7 @@
 | 12/14/2022 | [Pianificare Instradamento diretto](/MicrosoftTeams/direct-routing-plan) | Volta |
 | 12/14/2022 | [Microsoft Teams Premium - Panoramica per gli amministratori](/MicrosoftTeams/enhanced-teams-experience) | Volta |
 | 12/14/2022 | [Configurare i telefoni dell'area comune per Microsoft Teams](/MicrosoftTeams/set-up-common-area-phones) | Volta |
-| 12/14/2022 | [Licenze di Microsoft Teams Premium](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams) | Volta |
+| 12/14/2022 | [licenze di Microsoft Teams Premium](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams) | Volta |
 | 12/15/2022 | [Domande ricorrenti sulle audioconferenze](/MicrosoftTeams/audio-conferencing-common-questions) | Volta |
 | 12/15/2022 | [Numeri di telefono e modifiche alle licenze](/MicrosoftTeams/phone-numbers-licensing-changes) | Volta |
 | 12/15/2022 | [Note sulla versione per Microsoft Teams Rooms (Windows)](/MicrosoftTeams/rooms/rooms-release-note) | Volta |
@@ -60,7 +68,7 @@
 | 12/5/2022 | [Temi delle riunioni per le riunioni di Teams](/MicrosoftTeams/meeting-themes) | Aggiunto |
 | 12/5/2022 | [Riunioni, webinar ed eventi live](/MicrosoftTeams/quick-start-meetings-live-events) | Volta |
 | 12/5/2022 | [Configurare webinar](/MicrosoftTeams/set-up-webinars) | Volta |
-| 12/5/2022 | [Licenze di Microsoft Teams Premium](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams) | Aggiunto |
+| 12/5/2022 | [licenze di Microsoft Teams Premium](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams) | Aggiunto |
 | 12/5/2022 | [Licenze per i componenti aggiuntivi di Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/microsoft-teams-add-on-licensing) | Volta |
 | 12/5/2022 | [Richiedere una filigrana per le riunioni sensibili di Teams](/MicrosoftTeams/watermark-meeting-content-video) | Aggiunto |
 | 12/7/2022 | [Guida introduttiva a Microsoft Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | Volta |
