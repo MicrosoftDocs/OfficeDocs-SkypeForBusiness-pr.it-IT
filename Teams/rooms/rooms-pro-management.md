@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sulla gestione Microsoft Teams Rooms Pro.
 f1keywords: ''
-ms.openlocfilehash: cadf078c4d56c518acda73a44b62c55f346f189c
-ms.sourcegitcommit: 0e4e5b9933970827ea4be137ca98eab6994e2301
+ms.openlocfilehash: 9ef0db845e9eb0778bc53cbcf9e0998531daf6e0
+ms.sourcegitcommit: 2363af0ed4de97f1ec836ca2ad9e3854cf9fa601
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 01/04/2023
-ms.locfileid: "69696891"
+ms.locfileid: "69702089"
 ---
 # <a name="microsoft-teams-rooms-pro-management"></a>Gestione Microsoft Teams Rooms Pro
 
@@ -58,7 +58,7 @@ Ecco una panoramica delle funzionalità di gestione Microsoft Teams Rooms Pro.
 |**Gestione degli aggiornamenti**    |Configurazione e recapito automatizzati dell'applicazione Microsoft Teams Rooms in base agli anelli di distribuzione preconfigurati.         |
 |**Approfondimenti e consigli**     |Informazioni approfondite sull'integrità, l'utilizzo e l'affidabilità delle apparecchiature della sala.         |
 |**Conformità e certificazioni**   |Soddisfa tutti gli standard applicabili per i Servizi online Microsoft.         |
-|**Dispositivi supportati**    |Sistemi di Microsoft Teams Rooms certificati e relative periferiche.<br>*Supporto per Surface Hub e MTR Per Android in arrivo nella seconda metà del 2022*        |
+|**Dispositivi supportati**    |Sistemi di Microsoft Teams Rooms certificati e relative periferiche.<br>*Supporto per Surface Hub e MTR per Android in arrivo nel 2023*        |
 |**Aree geografiche supportate**    |Vedere [Aree geografiche supportate](#supported-regions).        |
 |**Integrazione**    |Integrazione di base disponibile con Service Now ospitato dal cliente per il coordinamento degli eventi imprevisti.         |
 
