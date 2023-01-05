@@ -16,18 +16,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f97b2aea15fe626c7780f022e2d024729ad02589
-ms.sourcegitcommit: 8cda22925ccddb612f91351a7593b521eee10f0e
-ms.translationtype: HT
+ms.openlocfilehash: 7203c9bda1a6e5c2bf9d90b490492fe7bbc3f64c
+ms.sourcegitcommit: 78fbfcf4a1aafce5d39eea79c9461a9fc1bb3d38
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "62363182"
+ms.lasthandoff: 01/05/2023
+ms.locfileid: "69707808"
 ---
 # <a name="manage-user-access-to-education-insights"></a>Gestire l'accesso degli utenti a Dati analitici per l'istruzione
 
 Questo documento illustra la procedura necessaria per gestire l'accesso degli utenti a [Dati analitici per l'istruzione in Microsoft Teams](class-insights.md).
 
-È necessario fornire le autorizzazioni per i responsabili dell'istruzione, i dirigenti di distretto, i responsabili scolastici, i docenti responsabili, i consulenti, i responsabili delle aree di apprendimento, i responsabili del programma, gli assistenti sociali e gli psicologi. I docenti vengono autorizzati *automaticamente* quando sono titolari di un team di classe.
+You need to provide permissions for education leaders, district leaders, school principals, head teachers, counselors, heads of learning areas, program directors, social workers, and psychologists. Educators are *automatically* given permission when they own a class team.
 
 Per fornire Dati analitici a livello di organizzazione, è necessario [importare i dati dal sistema informativo degli studenti (SIS)](education-insights-sis-data-sync.md) in modo che la struttura gerarchica del sistema didattico di Dati analitici sia mappata correttamente.
 
@@ -37,7 +37,7 @@ Per fornire Dati analitici a livello di organizzazione, è necessario [importare
 > [!TIP]
 > È consigliabile abilitare Dati analitici per tutti i responsabili della didattica in modo che abbiano a disposizione i dati per conoscere ogni istituto e possano identificare rapidamente i problemi, nonché fornire supporto ai docenti. Anche se si esegue un progetto pilota, può comunque essere utile mantenere Dati analitici abilitato per tutti i responsabili della didattica, impostando però come destinatari delle comunicazioni solo il gruppo pilota di utenti.
 
-## <a name="manange-permissions"></a>Gestire le autorizzazioni
+## <a name="manage-permissions"></a>Gestione autorizzazioni
 
 * Aprire l'app Dati analitici, fare clic su **Impostazioni** e selezionare **Autorizzazioni utente**
 
@@ -48,15 +48,17 @@ Per fornire Dati analitici a livello di organizzazione, è necessario [importare
 > 
 > Fornire l'autorizzazione solo ai responsabili della didattica che ne hanno bisogno e solo alle unità organizzative di cui sono responsabili. Se non si è certi che sia necessaria l'autorizzazione dell'utente per una specifica organizzazione, consultare gli esperti in materia di privacy dell'istituto, ad esempio il personale legale o delle risorse umane.
 
+> [!IMPORTANT]
+> Dopo aver assegnato le autorizzazioni per la prima volta, gli utenti potranno visualizzare i dati all'interno dell'app solo se almeno **due** utenti hanno eseguito l'accesso all'app. Questo requisito garantisce che il fuso orario per i dati sia configurato correttamente e che i dati vengano visualizzati in modo accurato per tutti gli utenti. Se gli utenti hanno problemi ad accedere ai dati dopo aver concesso le autorizzazioni, verificare se almeno due utenti hanno eseguito l'accesso all'app.
+
 ## <a name="role-based-permissions"></a>Autorizzazioni basate sui ruoli
 
-Se si utilizza il [formato di file SDS V2.1](/schooldatasync/sds-v2.1-csv-file-format) o il [formato di file SDS V2](/schooldatasync/sds-v2-csv-file-format), è possibile importare tutti i ruoli e l'intera gerarchia degli istituti di istruzione all'interno del sistema didattico. Questa mappatura completa consente di assegnare autorizzazioni ai ruoli. 
+If you use [SDS V2.1 file format](/schooldatasync/sds-v2.1-csv-file-format) or [SDS V2 file format](/schooldatasync/sds-v2-csv-file-format), you can import all roles and the full hierarchy of schools within the education system. This complete mapping enables you to assign permissions to roles. 
 
 > [!NOTE]
 > Quando a un utente viene assegnato un ruolo, riceve automaticamente le giuste autorizzazioni per visualizzare i dati rilevanti.
 >
 > Se un utente non ha più un ruolo, la sua autorizzazione per quel ruolo viene automaticamente revocata (sebbene possa ancora disporre di autorizzazioni individuali).
-
 
 * Se necessario, fare clic sulla scheda **Autorizzazioni basate sui ruoli**.
 
@@ -92,14 +94,14 @@ Utilizzare le autorizzazioni individuali per modificare l'autorizzazione per un 
 * Fare clic su **Concedi autorizzazione individuale** nella parte superiore sinistra dello schermo.
 * Immettere il nome utente o l'indirizzo di posta elettronica di ogni utente.
 * Selezionare il livello di autorizzazione:
-  * **Tutti** indica che l'utente può visualizzare tutte le unità organizzative a tutti i livelli. Viene usato molto raramente.
+  * **Tutti** indica che l'utente può visualizzare tutte le unità organizzative a tutti i livelli. Questo livello viene usato molto raramente.
   * **Organizzazione specifica** indica che l'utente vede l'unità organizzativa selezionata e tutte le unità organizzative sottostanti. Iniziare a digitare e selezionare l'unità organizzativa nell'elenco.
 * Fare clic su **Concedi autorizzazione** per salvare.
 
 ### <a name="change-the-individual-permission-of-a-user"></a>Modificare l'autorizzazione individuale di un utente
 * Per l'utente pertinente, fare clic sull'icona a forma di matita per selezionare il livello di autorizzazione individuale.
 * Selezionare il livello di autorizzazione:
-  * **Tutti** indica che l'utente può visualizzare tutte le unità organizzative a tutti i livelli. Viene usato molto raramente.
+  * **Tutti** indica che l'utente può visualizzare tutte le unità organizzative a tutti i livelli. Questo livello viene usato molto raramente.
   * **Organizzazione specifica** indica che l'utente vede l'unità organizzativa selezionata e tutte le unità organizzative sottostanti. Iniziare a digitare e selezionare l'unità organizzativa nell'elenco.
   * **Nessuno** indica che l'utente vede solo le unità organizzative assegnate automaticamente dal proprio ruolo (se presenti).
   
