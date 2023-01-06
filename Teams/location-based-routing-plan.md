@@ -16,12 +16,12 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f7b6b360f51c803aef3eb7811b15c17a748df5f0
-ms.sourcegitcommit: 0bf44683f5263d7bf635689b4c1d813bd9842650
+ms.openlocfilehash: 354a3ae6ec4fb482b6ba0d5136597438c37acbe2
+ms.sourcegitcommit: eb0e754d7e2877f686021d3ab75b6d8d44db3a95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67705835"
+ms.lasthandoff: 01/06/2023
+ms.locfileid: "69727788"
 ---
 # <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -32,7 +32,6 @@ Questo articolo descrive cosa occorre sapere per usare Location-Based Routing pe
 Quando si è pronti per abilitare Location-Based Routing, vedere:
 
 - [Configurare le impostazioni di rete per l'instradamento basato sulla posizione](location-based-routing-configure-network-settings.md)
-- [Distribuire le impostazioni di rete per Location-Based Routing](location-based-routing-configure-network-settings.md)
 - [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-enable.md)
 
 > [!NOTE]
@@ -342,7 +341,7 @@ La tabella seguente mostra Location-Based Comportamento di routing per una chiam
 
 Le chiamate PSTN in ingresso da un gateway abilitato per il routing Location-Based possono connettersi a un operatore automatico o a una coda di chiamata. 
 
-Gli utenti abilitati per Location-Based Routing sono supportati per ricevere i trasferimenti di chiamata in ingresso per queste applicazioni quando si trovano nello stesso sito da cui proviene la chiamata PSTN in ingresso.
+Gli utenti abilitati per Location-Based Routing sono supportati per ricevere i trasferimenti di chiamata in ingresso per queste applicazioni quando si trovano nello stesso sito da cui proviene la chiamata PSTN in ingresso. Per supportare Ottimizzazione multimediale locale e Bypass multimediale in questi scenari, le code di chiamata devono essere configurate per la modalità di trasferimento (modalità conferenza = OFF).
  
 L'inoltro di chiamata e lo squillo simultaneo agli utenti e PSTN sono consentiti per i trasferimenti di app vocali. Il completamento della chiamata alla destinazione è soggetto alle stesse regole di routing Location-Based elencate in precedenza.  
  

@@ -20,12 +20,12 @@ description: Informazioni su come usare e gestire i criteri per le chiamate di e
 ms.custom:
 - seo-marvel-apr2020
 - ms.teamsadmincenter.voice.emergencycallingpolicies.overview
-ms.openlocfilehash: 4b5d293cbbd588a564ff1a0118ab4d56f96c17a2
-ms.sourcegitcommit: 321de0e5d8846caaaab944826f6ca06394e707ef
+ms.openlocfilehash: 1d2dc0e2213f6294e2c596722a4f5ab49bec8487
+ms.sourcegitcommit: eb0e754d7e2877f686021d3ab75b6d8d44db3a95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2022
-ms.locfileid: "69414643"
+ms.lasthandoff: 01/06/2023
+ms.locfileid: "69727748"
 ---
 # <a name="manage-emergency-calling-policies-in-microsoft-teams"></a>Gestire i criteri per le chiamate di emergenza in Microsoft Teams
 
@@ -61,7 +61,7 @@ Se hai assegnato un criterio di chiamata di emergenza a un sito di rete e a un u
 
 7.  Se è stata selezionata una delle opzioni conferenza in modalità di notifica **disattivata** , nella casella **Numeri per comporre le notifiche per le chiamate di emergenza** , è possibile immettere un numero di telefono PSTN di un utente o di un gruppo per chiamare e partecipare alla chiamata di emergenza. Ad esempio, immettere il numero del desk di sicurezza dell'organizzazione, che riceverà una chiamata quando viene effettuata una chiamata di emergenza e potrà quindi ascoltarla. Non è possibile riattivare l'audio del telefono PSTN anche se la modalità è impostata su **Con conferenza disattivata, ma è possibile riattivarla**.
 
-8. Cerca e seleziona uno o più utenti o gruppi, ad esempio il security desk dell'organizzazione, per avvisare quando viene effettuata una chiamata di emergenza.  La notifica può essere inviata a indirizzi di posta elettronica di utenti, gruppi di distribuzione e gruppi di sicurezza. È possibile ricevere una notifica a un massimo di 50 utenti.
+8. Imposta le persone a cui vuoi inviare una notifica quando viene effettuata una chiamata di emergenza, ad esempio il personale del security desk. È possibile definire un elenco di utenti, gruppi di distribuzione o gruppi di sicurezza. È possibile ricevere una notifica a un massimo di 50 utenti.
 
 9. Fare clic su **Applica**.
 

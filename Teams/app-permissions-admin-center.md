@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6a2c9244acfb3fdb08404f045c72860e0cd708c5
-ms.sourcegitcommit: 22f66e314e631b3c9262c5c7dc5664472f42971e
+ms.openlocfilehash: 3f47755a668516b505c4ff4dd0f54bf9e8a919c8
+ms.sourcegitcommit: eb0e754d7e2877f686021d3ab75b6d8d44db3a95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2022
-ms.locfileid: "68912805"
+ms.lasthandoff: 01/06/2023
+ms.locfileid: "69727778"
 ---
 # <a name="view-app-permissions-and-grant-admin-consent-in-teams-admin-center"></a>Visualizzare le autorizzazioni per le app e concedere il consenso di amministratore nell'interfaccia di amministrazione di Teams
 
@@ -91,7 +91,7 @@ La possibilità di rivedere le autorizzazioni e concedere il consenso non è dis
 
 ## <a name="related-articles"></a>Articoli correlati
 
-* [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
+* [Informazioni sul consenso di utenti e amministratori in Azure AD](/azure/active-directory/manage-apps/user-admin-consent-overview)
 * [Autorizzazioni e consenso nell'endpoint Microsoft Identity Platform](/azure/active-directory/develop/v2-permissions-and-consent)
 * [Consenso specifico delle risorse in Teams](resource-specific-consent.md)
 * [Consenso specifico delle risorse (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)

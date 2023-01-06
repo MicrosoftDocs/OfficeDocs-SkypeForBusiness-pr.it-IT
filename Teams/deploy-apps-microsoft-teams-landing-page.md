@@ -22,16 +22,16 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020; intro-overview; intro-hub-or-landing
-ms.openlocfilehash: 7ded369ab991a37e711c416a7448447f148c069c
-ms.sourcegitcommit: 339a35e461c84ee309ade1a53299ba12231df7a3
+ms.openlocfilehash: a41393f763c9d8ebb328d586f6ae12636e87b0b4
+ms.sourcegitcommit: eb0e754d7e2877f686021d3ab75b6d8d44db3a95
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/29/2022
-ms.locfileid: "69677416"
+ms.lasthandoff: 01/06/2023
+ms.locfileid: "69727738"
 ---
 # <a name="understand-microsoft-teams-apps-and-their-capabilities"></a>Comprendere le app di Microsoft Teams e le relative funzionalità
 
-Le app in Teams aiutano gli utenti a riunire gli strumenti e i servizi del luogo di lavoro e a collaborare con altri utenti. Esempi sono l'utilizzo da parte degli utenti finali di un'app Calendario in Teams per collaborare rapidamente con gli altri, un'app con funzionalità bot che informa gli utenti sulla qualità di un servizio web in un canale Teams e un'app per condividere e assegnare compiti a vari utenti finali in un canale. Le app di Microsoft Teams sono app SaaS basate sul Web che non devono essere distribuite localmente.
+Le app in Teams aiutano gli utenti a riunire gli strumenti e i servizi del luogo di lavoro e a collaborare con altri utenti. Esempi sono l'utilizzo da parte degli utenti finali di un'app Calendario in Teams per collaborare rapidamente con gli altri, un'app con funzionalità bot che informa gli utenti sulla qualità di un servizio web in un canale Teams e un'app per condividere e assegnare compiti a vari utenti finali in un canale. Le app di Microsoft Teams sono come le app SaaS basate sul Web che non devono essere distribuite in locale. L'aggiunta delle app al client di Teams da parte degli utenti finali non richiede l'installazione, ad esempio un file binario.
 
 Gli amministratori impostano un processo di governance delle app che bilancia i requisiti ad ampio raggio degli utenti finali con i criteri, gli standard e i profili di rischio dell'organizzazione.
 
