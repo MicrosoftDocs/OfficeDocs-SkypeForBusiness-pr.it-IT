@@ -15,13 +15,13 @@ ms.reviewer: vinbel
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Informazioni sull'esperienza di chat nativa di Teams per gli utenti con accesso esterno (federato) in Microsoft Teams, in cui entrambi gli utenti si trovano nella modalità di aggiornamento di TeamsOnly.
-ms.openlocfilehash: 134216364fdd7397d8a7d72a2ae6684cfa9f90b4
-ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
+description: Informazioni sull'esperienza di chat nativa di Teams per gli utenti con accesso esterno (federato) in Microsoft Teams, in cui entrambi gli utenti si trovano nella modalità di aggiornamento TeamsOnly.
+ms.openlocfilehash: 759ad4f03de099637df0e92a7a8925a7c18ae3fd
+ms.sourcegitcommit: 8f26bf0ff88f1f6881de32914be00d5f0cc7396a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2022
-ms.locfileid: "69198878"
+ms.lasthandoff: 01/09/2023
+ms.locfileid: "69740801"
 ---
 # <a name="native-chat-experience-for-external-federated-users-in-microsoft-teams"></a>Esperienza di chat nativa per utenti esterni (federati) in Microsoft Teams
 
@@ -30,6 +30,9 @@ Quando un utente di Microsoft Teams chatta con un utente esterno (federato), l'e
 L'esperienza di chat nativa per le persone di altre organizzazioni è attivata per tutti i tenant di Teams, ma non tutte le persone sono idonee. Per offrire un'esperienza di chat nativa, il mittente e il ricevitore devono essere configurati per la modalità di aggiornamento di TeamsOnly. Per altre informazioni sui criteri di aggiornamento, vedere [Impostazione delle impostazioni di coesistenza e aggiornamento](setting-your-coexistence-and-upgrade-settings.md).
 
 Per visualizzare un elenco di funzionalità per gli utenti con accesso esterno in Teams, vedere [Confrontare l'accesso esterno e guest](communicate-with-users-from-other-organizations.md#compare-external-and-guest-access).
+
+> [!NOTE]
+> L'esperienza di chat nativa non è disponibile per ambienti cloud Microsoft 365: Microsoft 365 WorldWide (incluso GCC) da/a GCC High, GCC High da/a DoD o WW da/a DoD.
 
 ## <a name="how-do-i-know-if-im-in-a-native-chat"></a>Ricerca per categorie sapere se è in una chat nativa?
 

@@ -16,12 +16,12 @@ f1.keywords:
 description: Ottimizzazione multimediale locale per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a86758d3376b2232126d095f9c9b1a1a28371481
-ms.sourcegitcommit: 9522d951700d19ab13c60a6452b3a8a4c824ee36
+ms.openlocfilehash: ce9d25e84c67f5ae8b3b4fec51535d53f7b0044f
+ms.sourcegitcommit: 8f26bf0ff88f1f6881de32914be00d5f0cc7396a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2022
-ms.locfileid: "68018112"
+ms.lasthandoff: 01/09/2023
+ms.locfileid: "69740811"
 ---
 # <a name="plan-for-local-media-optimization-for-direct-routing"></a>Pianificare Ottimizzazione multimediale locale per il routing diretto
 
@@ -338,4 +338,4 @@ Di seguito è riportato un elenco dei problemi noti attualmente presenti in Otti
 | Le riassegnazioni delle chiamate da 1 a 1 chiamata tra i clienti interni a una chiamata a più parti con cliente esterno/risorsa provocano chiamate interrotte | Lavora in corso per una correzione. In alternativa, disabilitare Ottimizzazione multimediale locale in Direct Routing SBC.|
 | L'utente di Teams mette la chiamata in attesa. La musica viene riprodotta da PSTN e Ottimizzazione multimediale locale funziona. L'utente di Teams riprende la chiamata. La chiamata a PSTN riprende ma Ottimizzazione multimediale locale non funziona e la chiamata continua tramite SBC centrale (proxy) | Quando un utente effettua una chiamata per avviare una musica in attesa (MoH), viene inoltrata da 1:1 a una chiamata multiparty da parte del controller di chiamata per richiamare Media Controller e Media Processor (che funge da mixer AVMCU) attraverso il quale MoH raggiunge un utente che è stato messo in attesa. L'escalation a una chiamata 1:1 dopo il curriculum della chiamata non avviene mai come da progettazione. Disabilitare Ottimizzazione multimediale locale in Direct Routing SBC.|
 |Mentre viene stabilita una chiamata per alcuni secondi, l'utente potrebbe sentire il silenzio.| A causa della complessità dell'architettura di Ottimizzazione multimediale locale, questo può verificarsi in alcuni casi.Due to the complexity of Local Media Optimization architecture, this might occur in some cases.|
-|Le app vocali (ad esempio Operatore automatico, Coda di chiamata) non funzionano.| LMO non supporta le app vocali, perché risiedono nel cloud e richiedono la connettività esterna. Per il momento non è disponibile alcuna soluzione alternativa.|
+|Le app vocali (ad esempio Operatore automatico, Coda di chiamata) non funzionano.| Ottimizzazione multimediale locale non supporta le app vocali perché risiedono nel cloud e richiedono la connettività esterna. Per Location-Based scenari di routing, vedi [App vocali (Operatore automatico o Coda di chiamata).For Location-Based Routing scenarios, see Voice apps (Auto Attendant or Call Queue)](location-based-routing-plan.md#inbound-calls-through-voice-apps-auto-attendant-or-call-queue).|
