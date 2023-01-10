@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Scopri quali periferiche e dispositivi USB (ad esempio cuffie, altoparlanti, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: 8a767eb2572012496dc5dba94e989f969f12df27
-ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
+ms.openlocfilehash: 88ea7be3fc27fadccb25cd173b0df5f7f618004f
+ms.sourcegitcommit: 1398c778e46b0d81c9710cd70d3818a2b7af995a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2022
-ms.locfileid: "69242310"
+ms.lasthandoff: 01/09/2023
+ms.locfileid: "69749072"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -36,14 +36,14 @@ Per altre informazioni sul supporto del controllo delle chiamate con Teams, vede
 
 ## <a name="understanding-certification-categories"></a>Informazioni sulle categorie di certificazione
 
-Gli utenti non devono sostituire i dispositivi certificati in precedenza quando eseguono l'aggiornamento a Teams da Skype for Business.  Tutti i dispositivi certificati sono supportati per Microsoft Teams e gli utenti Skype for Business, con poche differenze.  La certificazione fornisce anche un'ulteriore designazione per alcune categorie di dispositivi.
+Gli utenti non devono sostituire i dispositivi certificati in precedenza quando eseguono l'aggiornamento a Teams da Skype for Business.  Tutti i dispositivi certificati sono supportati da Microsoft Teams e Skype for Business utenti, con poche differenze.  La certificazione fornisce anche un'ulteriore designazione per alcune categorie di dispositivi.
 
 - **Skype for Business certificati con Dispositivi di aggiornamento di Teams** certificati a questo livello sono stati inizialmente certificati per Skype for Business. Microsoft ha collaborato con i produttori di dispositivi per offrire la migliore esperienza possibile di integrazione di Teams senza alcuna modifica dell'hardware originale. Il pulsante *hookswitch* funge da pulsante Teams quando non è in una chiamata e può includere più funzioni nel tempo.  I dispositivi in questa categoria possono portare il badge di certificazione teams sui materiali di marketing.
-- **Certificati per Microsoft dispositivi Teams** certificati a questo livello indicano i dispositivi più recenti certificati, per un'esperienza teams senza compromessi. Questi dispositivi offrono tutti i vantaggi della certificazione precedente e includono anche un pulsante Teams dedicato con indicatore LED. Con la maggior parte dei fattori di forma, il pulsante Teams sarà un pulsante tattile facile da trovare con il logo di Teams. Microsoft continua a collaborare con i produttori di dispositivi per offrire nuovi valori tramite gli aggiornamenti del firmware nel tempo.
+- **Certificato per Microsoft Teams** I dispositivi certificati a questo livello indicano i dispositivi più recenti certificati, per un'esperienza teams senza compromessi. Questi dispositivi offrono tutti i vantaggi della certificazione precedente e includono anche un pulsante Teams dedicato con indicatore LED. Con la maggior parte dei fattori di forma, il pulsante Teams sarà un pulsante tattile facile da trovare con il logo di Teams. Microsoft continua a collaborare con i produttori di dispositivi per offrire nuovi valori tramite gli aggiornamenti del firmware nel corso del tempo.
 
 ### <a name="special-usage-designations"></a>Designazioni d'uso speciali
 
-- **Periferiche audio certificate Bluetooth native**  La maggior parte degli auricolari e dei vivavoci Bluetooth certificati per Microsoft Teams è progettata per essere utilizzata con un adattatore USB per la connettività a PC e host Mac. Molti utenti hanno chiesto l'opzione per associare direttamente il dispositivo all'host, perché non dispongono di porte USB sufficienti o non vogliono ricordarsi di portare l'adattatore USB con loro quando lavorano in luoghi diversi.
+- **Periferiche audio certificate Bluetooth native**  La maggior parte degli auricolari e degli altoparlanti Bluetooth certificati per Microsoft Teams è progettata per essere utilizzata con un adattatore USB per la connettività a PC e host Mac. Molti utenti hanno chiesto l'opzione per associare direttamente il dispositivo all'host, perché non dispongono di porte USB sufficienti o non vogliono ricordarsi di portare l'adattatore USB con loro quando lavorano in luoghi diversi.
 
     I dispositivi certificati Per Bluetooth nativi, inclusi auricolari e vivavoci, sono supportati nei PC Windows (macOS potrebbe essere supportato in futuro). I dispositivi sono testati per prestazioni audio, controllo delle chiamate e integrazione dei pulsanti di Teams, sia con che senza l'uso di un adattatore USB.
 
@@ -81,13 +81,16 @@ Se sei un produttore e vuoi partecipare al programma di certificazione, vedi [Co
 
 ## <a name="certified-devices"></a>Dispositivi certificati
 
-*Tabella aggiornata a novembre 2022*
+*Tabella aggiornata a dicembre 2022*
 
 > [!NOTE]
 > Il formato della data è MM/GG/AAAA.
 
 | Produttore        | Modello                                                     | Qualificato      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|Lenovo               |T24mv-30 Monitor                                           |12/19/2022      |Certificato per Microsoft Teams                           |
+|Lenovo               |T27hv-30 Monitor                                           |12/19/2022      |Certificato per Microsoft Teams                           |
+|Lenovo               |Conference Call Base Speakerphone                          |12/19/2022      |Certificato per Microsoft Teams                           |
 |EPOS                 |Headset ADAPT 561 II                                       |10/20/2022      |Certificato per Microsoft Teams                           |
 |Jabra                |Evolve2 Boccioli                                               |10/17/2022      |Certificato per Microsoft Teams                           |
 |Cisco                |Fotocamera da tavolo 4K                                             |10/15/2022      |Certificato per Microsoft Teams                           |
