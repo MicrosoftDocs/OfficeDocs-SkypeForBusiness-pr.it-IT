@@ -3,6 +3,18 @@
 
 
 
+## <a name="week-of-january-02-2023"></a>Settimana del 2 gennaio 2023
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 1/3/2023 | [Gestire i criteri delle riunioni generali](/MicrosoftTeams/meeting-policies-in-teams-general) | Volta |
+| 1/3/2023 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | Volta |
+| 1/3/2023 | [Chiamata in uscita/Chiamata in uscita per i servizi di audioconferenza Al minuto](/MicrosoftTeams/audio-conferencing-subscription-dial-out) | Volta |
+| 1/4/2023 | [Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams](/MicrosoftTeams/class-insights) | Volta |
+| 1/5/2023 | Migliorare i gruppi di Microsoft 365 esistenti | Rimosso |
+
+
 ## <a name="week-of-december-26-2022"></a>Settimana del 26 dicembre 2022
 
 
