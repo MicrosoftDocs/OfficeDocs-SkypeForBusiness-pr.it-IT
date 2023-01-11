@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 256ab81b195d5a758e07c24741b1dc8a7ff13218
-ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
+ms.openlocfilehash: f6d600552c2f636618ff14a1ccf88be60df74879
+ms.sourcegitcommit: 66d8e3d7a29a03c5deba9780964bc03f6587017f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2022
-ms.locfileid: "69438364"
+ms.lasthandoff: 01/11/2023
+ms.locfileid: "69774731"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -40,7 +40,7 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 
 |Rilascio |Pubblicato su <br/> Microsoft Store |
 |--- |--- |
-|4.15.54.0 | 12/15/2022 |
+|4.15.58.0 | 12/15/2022 |
 |4.14.24.0 |9/2/2022 |
 |4.13.132.0 |8/2/2022 |
 |4.12.139.0 |7/14/2022 |
@@ -97,7 +97,7 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Microsoft Teams Rooms introduzione delle funzionalità e risoluzione dei problemi
 
-### <a name="415540-12152022"></a>4.15.54.0 (12/15/2022)
+### <a name="415580-12152022"></a>4.15.58.0 (12/15/2022)
 
 Introdotto in questo aggiornamento:
 
@@ -121,7 +121,7 @@ Introdotto in questo aggiornamento:
 - Aggiungere e nascondere il video della sala
 - Configurazione dell'amministratore per disattivare la raccolta divisa in dual display Teams Rooms <sup>1</sup>
 - La Teams Rooms a doppio schermo ora può visualizzare fino a 18 flussi video partecipanti
-- Supporto per le licenze per le sale di Microsoft Teams Rooms Pro e Microsoft Teams Room Basic
+- Supporto per licenze per sale room Microsoft Teams Rooms Pro e Microsoft Teams Room Basic
 
 <sup>1 La</sup> configurazione dell'amministratore per disattivare la raccolta divisa tramite XML è disponibile in [Gestire in remoto le impostazioni di una console Microsoft Teams Rooms con un file di configurazione XML](../rooms/xml-config-file.md).
 

@@ -28,12 +28,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Learn about Calling Plan (PSTN Calling plan) for Skype for business options and how to get licenses for your organization.
-ms.openlocfilehash: eaf08af459a5f6149b3068802b104c1458dfc727
-ms.sourcegitcommit: 0a13f96663c7466b08d654bedcb6206f302189a1
+ms.openlocfilehash: f09517572b27fb67ab9657dcfa4c7bd4c5c7867b
+ms.sourcegitcommit: 66d8e3d7a29a03c5deba9780964bc03f6587017f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2022
-ms.locfileid: "69139110"
+ms.lasthandoff: 01/11/2023
+ms.locfileid: "69774721"
 ---
 # <a name="calling-plans-for-microsoft-teams"></a>Piani per chiamate per Microsoft Teams
 
@@ -56,6 +56,9 @@ Ecco le opzioni dei Piani per chiamate:
 
   - **Zona 2 del piano per chiamate con pagamento in base al consumo**: acquistalo per gli utenti in Austria, Belgio, Croazia, Danimarca, Estonia, Finlandia, Francia, Germania, Irlanda, Italia, Lettonia, Lituania, Lussemburgo, Nuova Zelanda, Norvegia, Paesi Bassi, Polonia, Portogallo, Romania, Singapore, Slovacchia, Slovenia, Sudafrica, Spagna, Svezia e Svizzera.
     - Le licenze della Zona 2 non sono attualmente disponibili per la vendita nel Stati Uniti e a Portorico.
+
+> [!NOTE]
+> Il Messico ha un proprio piano per chiamate a pagamento. Non fa parte di alcuna zona. Devi acquistare il piano indipendente per le chiamate con pagamento in base al consumo.
 
 Tutti gli utenti nello stesso paese/area geografica (ossia la località del paese utente definita nell'area delle licenze del interfaccia di amministrazione di Microsoft 365) con lo stesso piano per chiamate condividono un pool di minuti. Ad esempio, se hai 100 utenti nello stesso paese/area geografica a cui è assegnato un Piano per chiamate nazionali di 120 minuti, condividono un pool di 12.000 minuti. Tutte le chiamate che superano questi minuti vengono fatturate al minuto.
 

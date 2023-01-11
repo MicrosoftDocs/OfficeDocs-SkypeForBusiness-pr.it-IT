@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza per l'organizzazione.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 39db920ccbb6edd71591ad5439b0a8475a0655fb
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: 99ab0821b8ccdb14664dc0a2aa37c959499ff8ac
+ms.sourcegitcommit: 66d8e3d7a29a03c5deba9780964bc03f6587017f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68584667"
+ms.lasthandoff: 01/11/2023
+ms.locfileid: "69774741"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
@@ -77,6 +77,9 @@ Vedi [New-CsOnlineLisCivicAddress](/powershell/module/skype/new-csonlineliscivic
 Vedi [Set-CsOnlineLisCivicAddress](/powershell/module/skype/set-csonlineliscivicaddress).
     
 ## <a name="remove-an-emergency-location"></a>Rimuovere una posizione per gli interventi di emergenza
+
+> [!NOTE]
+> Puoi rimuovere una posizione solo se non sono stati assegnati utenti o numeri di telefono. Se alla posizione sono assegnati numeri o utenti, è necessario prima rimuoverli.
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 

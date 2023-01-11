@@ -18,12 +18,12 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6648502d9b6a3e727ef30f1e94289f1428d8a4e2
-ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
+ms.openlocfilehash: 43026c80108adeff777e3a003fb93fece44d8c50
+ms.sourcegitcommit: 66d8e3d7a29a03c5deba9780964bc03f6587017f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2022
-ms.locfileid: "69438520"
+ms.lasthandoff: 01/11/2023
+ms.locfileid: "69774811"
 ---
 # <a name="teams-rooms-on-windows-and-android-feature-comparison"></a>confronto delle funzionalità di Teams Rooms in Windows e Android
 
@@ -50,7 +50,7 @@ Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puo
 |                                          | Partecipazione guest diretta                                                                                            | Disponibile                                                                                                                                      | Disponibile                                           |
 | **Coinvolgimento e collaborazione nelle riunioni** | Esperienza app intuitiva e appositamente costruita                                                                      | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Layout video e contenuto (ad esempio modalità Insieme, raccolta di grandi dimensioni, solo raccolta, raccolta e contenuto) | Disponibile                                                                                                                                      | Disponibile                                           |
-|                                          | Layout prima riga                                                                                             | Disponibile                                                                                                                                      | Non disponibile                                       |
+|                                          | Layout prima riga                                                                                             | Disponibile                                                                                                                                      | Prossimamente                                       |
 |                                          | Bolle di chat                                                                                                 | Disponibile                                                                                                                                      | Prossimamente                                         |
 |                                          | Alzare la mano, abbassare tutte le mani                                                                                  | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Aggiungere più partecipanti                                                                                    | Disponibile                                                                                                                                      | Prossimamente                                         |
@@ -83,6 +83,7 @@ Per guidarti su quali funzionalità sono disponibili su piattaforme diverse, puo
 |                                          | Aggiornamenti automatici delle app Teams                                                                                  | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Registrazione automatica dispositivi                                                                                       | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Analisi della qualità delle chiamate                                                                                       | Disponibile                                                                                                                                      | Disponibile                                           |
+|                                          | Tema personalizzato                                                                                       | Disponibile                                                                                                                                      | Non disponibile                                           |
 | **Buono per / Spazio**                     | Focus (2-4 persone)                                                                                           | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Piccola (4-6 persone)                                                                                           | Disponibile                                                                                                                                      | Disponibile                                           |
 |                                          | Medio (6-12 persone)                                                                                         | Disponibile                                                                                                                                      | Disponibile                                           |

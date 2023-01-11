@@ -15,16 +15,16 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 description: Installare Power BI Connector per usare i modelli di query Call Quality Dashboard (CQD)
-ms.openlocfilehash: 80d1b39c6fbe26f04998b06b22fb527b60bbb6a0
-ms.sourcegitcommit: 0dda332951df3b946097d90a4923eb191fd86b4c
+ms.openlocfilehash: 534103fc2bec48566a1d0a57eeb390ed6ae0606c
+ms.sourcegitcommit: 66d8e3d7a29a03c5deba9780964bc03f6587017f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66789871"
+ms.lasthandoff: 01/11/2023
+ms.locfileid: "69774751"
 ---
 # <a name="install-microsoft-call-quality-connector-for-power-bi-to-use-call-quality-dashboard-query-templates"></a>Installare Microsoft Call Quality Connector per Power BI per usare i modelli di query di Call Quality Dashboard
 
-Prima di usare i modelli di query Power BI (file PBIX) per Call Quality Dashboard (CQD) di Microsoft Teams, è necessario installare il connettore Microsoft Call Quality per Power BI, usando il file *MicrosoftCallQuality.pqx* incluso nel [download](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true).
+Prima di usare i modelli di query Power BI (file PBIX) per Call Quality Dashboard (CQD) di Microsoft Teams, è necessario installare il connettore Microsoft Call Quality per Power BI, usando il file *MicrosoftCallQuality.pqx* incluso nel [download](https://www.microsoft.com/download/details.aspx?id=102291).
 
 Per informazioni su questi modelli, vedere [Usare Power BI per analizzare i dati di Call Quality Dashboard per Teams](CQD-Power-BI-query-templates.md) .
 
@@ -120,7 +120,7 @@ Nonostante l'uso di Power BI, non tutte le funzionalità di Power BI sono suppor
 
 1. **Colonne calcolate –** I connettori DirectQuery in generale hanno un supporto limitato per le colonne calcolate in Power BI. Alcune colonne calcolate potrebbero funzionare con Il connettore, in quanto tali colonne sono eccezioni. Come regola generale, le colonne calcolate non funzionano.
 
-2. **Aggregazioni:** Il modello di dati Call Quality Dashboard è basato su un modello cubo, ovvero le aggregazioni sono già supportate sotto forma di misure. Se si prova ad aggiungere manualmente aggregazioni a dimensioni diverse o a modificare il tipo di aggregazione di una misura, il connettore non funziona e in genere si verifica un errore.
+2. **Aggregazioni–** Il modello di dati Call Quality Dashboard è basato su un modello cubo, ovvero le aggregazioni sono già supportate sotto forma di misure. Se si prova ad aggiungere manualmente aggregazioni a dimensioni diverse o a modificare il tipo di aggregazione di una misura, il connettore non funziona e in genere si verifica un errore.
 
 3. **Oggetti visivi personalizzati :** Anche se il connettore Microsoft Call Quality funziona con una gamma di oggetti visivi personalizzati, non siamo in grado di garantire la compatibilità con tutti gli oggetti visivi personalizzati. Molti oggetti visivi personalizzati si basano sull'uso di colonne calcolate o dati importati, nessuno dei quali è supportato dai connettori DirectQuery.
 
