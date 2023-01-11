@@ -21,18 +21,18 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f458aded53926fed8772de70af2a105cdf9e5fda
-ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
+ms.openlocfilehash: cde485a3cf290c105ae475e6f7733787ba6971a2
+ms.sourcegitcommit: 0d25efb3dae31d5199807a14baaf30e944f561ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2022
-ms.locfileid: "69307651"
+ms.lasthandoff: 01/11/2023
+ms.locfileid: "69767607"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
 Quando si pianificano eventi live di Teams per organizzare riunioni con numerosi partecipanti nell'organizzazione, è necessario considerare diversi fattori prima di procedere alla configurazione.
 
-> [!Note]
+> [!NOTE]
 > For details about Teams live events on different platforms, see [Teams features by platform](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3). See [prepare your organization](../prepare-network.md) to learn about bandwidth requirements for Teams live events.
 
 ## <a name="who-can-attend-create-and-schedule-live-events"></a>Chi può partecipare, creare e pianificare eventi live
@@ -43,15 +43,9 @@ Per la pianificazione di un evento live di Teams, sono necessari i prerequisiti 
 
 Ecco le licenze che devono essere assegnate per organizzare, produrre o presentare un evento live di Teams:  
 
-- **Per organizzare:** una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 **[oppure]** una licenza di Microsoft o Office 365 Education A3 o A5. 
+- **Per organizzare:** una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 **[oppure]** una licenza di Microsoft o Office 365 Education A3 o A5.
 - **To produce or present:** A Microsoft or Office 365 Enterprise E1, E3 or E5 license, **[or]** a Microsoft or Office 365 Education A1, A3 or A5 license. The exception to this requirement is guest users can present without a license if the other criteria for [guest users](plan-for-teams-live-events.md#guest-to-present) is met.
 - Una licenza di Microsoft Teams - questa licenza è inclusa nelle licenze indicate al primo e al secondo punto dell'elenco.
-- Una licenza di Microsoft Stream, necessaria se si prevede di condividere il contenuto in un'app o un dispositivo esterno. Vedere l'articolo sulla [gestione delle licenze di Microsoft Stream](/stream/license-overview). Non è necessaria una licenza di Stream se si utilizzano i servizi codificatori di Teams più recenti per produrre l'evento. 
-
-  Users won't need a Microsoft Stream license assigned if you want users to only record and download the recordings. This will mean that the recordings aren't stored in Microsoft Stream but are instead stored in Azure Media Services (AMS) with a 180-day limit before it's deleted. It's not something at this point that an admin can control or manage to include the ability to delete it.
-
->[!Note]
-> The change from using Microsoft Stream to [OneDrive for Business and SharePoint for meeting recordings](../tmr-meeting-recording-change.md) will be a phased approach. At launch you'll be able to opt-in to this experience, in November you'll have to opt-out if you want to continue using Stream, and some time in early 2021 we'll require all customers to OneDrive for Business and SharePoint for meeting recordings.
 
 > [!NOTE]
 > Attualmente non ci sono piani di Microsoft 365 Small Business che possono essere usati per creare e organizzare eventi live di Teams.
@@ -59,7 +53,6 @@ Ecco le licenze che devono essere assegnate per organizzare, produrre o presenta
 È importante tenere presente che è necessaria una licenza di Microsoft 365 o Office 365 per partecipare a un evento live come utente autenticato, ma questo requisito dipende dal metodo di produzione usato:
 
 - **Per gli eventi prodotti in Teams o utilizzando un codificatore basato su Teams**  All'utente deve essere assegnata una licenza di Teams.
-- **Per gli eventi prodotti in un'app o un dispositivo esterno,** all'utente deve essere assegnata una licenza di Stream.
 
 > [!NOTE]
 > Gli eventi live di Teams sono ora disponibili per le organizzazioni GCC (Government Cloud Community) degli Stati Uniti.
@@ -72,7 +65,6 @@ L'utente deve disporre di:
 - Condivisione video abilitata nelle riunioni di Teams (*parametro TeamsMeetingPolicy -AllowIPVideo = True*).
 - Condivisione schermo abilitata nelle riunioni di Teams (*parametro TeamsMeetingPolicy -ScreenSharingMode = EntireScreen*).
 - Pianificazione degli eventi live in Teams abilitata (*parametro TeamsMeetingBroadcastPolicy -AllowBroadcastScheduling = True*).
-- Autorizzazioni per la creazione di eventi live in Stream (per la produzione in app o dispositivi esterni).
 - La modalità di coesistenza viene configurata per riuscire a pianificare le riunioni di Teams (*Isole, riunioni al primo posto o solo Teams*).
 
 > [!IMPORTANT]
@@ -113,37 +105,37 @@ La tabella seguente evidenzia le funzionalità e le funzionalità di base offert
 >- 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
 >- Durata degli eventi fino a 16 ore per trasmissione
 >
-> Additionally, live events with up to 100,000 attendees can be planned through the Microsoft 365 live events assistance program. The team will assess each request and work with you to determine options that may be available. [Learn more](https://aka.ms/Stream/Blog/LiveEventOptions). 
+> Additionally, live events with up to 100,000 attendees can be planned through the Microsoft 365 live events assistance program. The team will assess each request and work with you to determine options that may be available. [Learn more](https://aka.ms/Stream/Blog/LiveEventOptions).
 
-| Funzionalità | Skype Meeting Broadcast | Eventi prodotti in Teams | Eventi prodotti in app o dispositivi esterni |
-|---------|---------|---------|---------|
-|Numero massimo di partecipanti |10.000 partecipanti |10.000 partecipanti<sup>1</sup> |10.000 partecipanti<sup>1</sup> |
-|Durata massima dell'evento live |4 ore |4 ore |4 ore |
-|Numero massimo di relatori e produttori in un evento live |10 <sup>2</sup> |10 <sup>2</sup> |10 <sup>2</sup> |
-|Numero massimo di eventi live concomitanti per l'organizzazione di Microsoft 365 o Office 365 |15  | 15  | 15  |
-|Creazione eventi live |   Portale di Skype Meeting Broadcast |Teams, Yammer tramite Teams | Teams, Yammer tramite Teams, Stream |
-|Coinvolgimento partecipanti - Yammer |&#x2714; |&#x2714; (esperienza integrata) |&#x2714; (esperienza integrata) |
-|Coinvolgimento partecipanti - Domande e risposte con moderatore |&#x2714;  |&#x2714; |&#x2714; |
-|Client del produttore in Windows |&#x2714; (Skype for Business) |&#x2714; (Teams) |&#x2714; (Stream, Teams tramite Stream incorporato) |
-|Client del produttore su Mac |&#x274C;  | &#x2714; (Teams) |&#x2714; (Stream, Teams tramite Stream incorporato) |
-|Numero di partecipanti nell'interfaccia utente del produttore |&#x274C;  |&#x2714; (Teams) |&#x2714; (Stream, Teams tramite Stream incorporato) |
-|Consente più relatori |&#x2714; (Skype for Business) |&#x2714; (Teams) |N/D  |
-|Invitare un relatore durante la riunione |&#x2714; (Skype for Business) |&#x274C; |N/D |
-|Partecipazione del relatore su Web e dispositivi mobili |&#x2714; (Skype for Business)  |&#x274C; |N/D |
-|Relatori/Partecipanti con accesso esterno (federazione) |&#x2714; (Skype for Business)  |  &#x2714; (Teams) |N/D |
-|Relatore - Accesso PSTN |&#x274C; |&#x2714; (Teams) |N/D |
-|Presentare una schermata |&#x274C; |&#x2714; (Teams) |N/D |
-|Condividere l'audio di sistema in Windows (disponibile solo in caso di condivisione dello schermo)|&#x274C; |&#x2714; (Teams) |&#x2714; |
-|Presentare una presentazione di PowerPoint (condivisione PPT) |&#x2714; |&#x274C; (attenuato tramite condivisione dello schermo) |N/D |
-|Registrazione delle riunioni basate sul cloud |&#x2714; |&#x2714; |&#x2714; |
-|Pubblicazione automatica delle registrazioni su Stream  |&#x274C; |&#x274C; |&#x2714; |
-|Didascalie e sottotitoli in tempo reale |&#x2714; |&#x2714; |&#x274C; |
-|Didascalie nelle registrazioni degli eventi live |&#x2714; |&#x2714; |&#x2714; |
-|Controlli DVR dei partecipanti (pausa, riavvolgimento) |&#x2714; |&#x2714; |&#x2714; |
-|Microsoft eCDN |&#x274C; |&#x2714; |&#x2714; |
-|Supporto eCDN per partner |&#x2714; (Kollective, Hive, Riverbed) |&#x2714; (Kollective, Hive, Ramp, Riverbed) |&#x2714; (Hive, Kollective, Ramp, Riverbed) |
-|Report presenze per i produttori dopo la trasmissione |&#x2714; |&#x2714; |&#x274C; |
-|Analisi delle valutazioni dei partecipanti - Votazioni e sondaggi in tempo reale |&#x2714; (Microsoft Pulse) |&#x274C; |&#x274C; |
+| Funzionalità | Eventi prodotti in Teams | Eventi prodotti in app o dispositivi esterni |
+|---------|---------|---------|
+|Numero massimo di partecipanti |10.000 partecipanti<sup>1</sup> |10.000 partecipanti<sup>1</sup> |
+|Durata massima dell'evento live |4 ore |4 ore |
+|Numero massimo di relatori e produttori in un evento live |10 <sup>2</sup> |10 <sup>2</sup> |
+|Numero massimo di eventi live concomitanti per l'organizzazione di Microsoft 365 o Office 365 | 15  | 15  |
+|Creazione eventi live |Teams, Yammer tramite Teams | Teams, Yammer tramite Teams, Stream |
+|Coinvolgimento partecipanti - Yammer |&#x2714; (esperienza integrata) |&#x2714; (esperienza integrata) |
+|Coinvolgimento partecipanti - Domande e risposte con moderatore |&#x2714; |&#x2714; |
+|Client del produttore in Windows |&#x2714; (Teams) |&#x2714; (Stream, Teams tramite Stream incorporato) |
+|Client del produttore su Mac |&#x2714; (Teams) |&#x2714; (Stream, Teams tramite Stream incorporato) |
+|Numero di partecipanti nell'interfaccia utente del produttore |&#x2714; (Teams) |&#x2714; (Stream, Teams tramite Stream incorporato) |
+|Consente più relatori |&#x2714; (Teams) |N/D  |
+|Invitare un relatore durante la riunione |&#x274C; |N/D |
+|Partecipazione del relatore su Web e dispositivi mobili |&#x274C; |N/D |
+|Relatori/Partecipanti con accesso esterno (federazione) |&#x2714; (Teams) |N/D |
+|Relatore - Accesso PSTN |&#x2714; (Teams) |N/D |
+|Presentare una schermata |&#x2714; (Teams) |N/D |
+|Condividere l'audio di sistema in Windows (disponibile solo in caso di condivisione dello schermo)|&#x2714; (Teams) |&#x2714; |
+|Presentare una presentazione di PowerPoint (condivisione PPT) |&#x274C; (attenuato tramite condivisione dello schermo) |N/D |
+|Registrazione delle riunioni basate sul cloud |&#x2714; |&#x2714; |
+|Pubblicazione automatica delle registrazioni su Stream  |&#x274C; |&#x2714; |
+|Didascalie e sottotitoli in tempo reale |&#x2714; |&#x274C; |
+|Didascalie nelle registrazioni degli eventi live |&#x2714; |&#x2714; |
+|Controlli DVR dei partecipanti (pausa, riavvolgimento) |&#x2714; |&#x2714; |
+|Microsoft eCDN |&#x2714; |&#x2714; |
+|Supporto eCDN per partner |&#x2714; (Kollective, Hive, Ramp, Riverbed) |&#x2714; (Hive, Kollective, Ramp, Riverbed) |
+|Report presenze per i produttori dopo la trasmissione |&#x2714; |&#x274C; |
+|Analisi delle valutazioni dei partecipanti - Votazioni e sondaggi in tempo reale |&#x274C; |&#x274C; |
 
 <sup>1</sup> The limits that are set might be changed. Check [Limits and specifications for Teams](../limits-specifications-teams.md).<br/>
 <sup>2</sup> È possibile avere fino a 100 relatori e produttori in un evento live, ma solo gli ultimi 10 che sono intervenuti vengono visualizzati nell'elenco.

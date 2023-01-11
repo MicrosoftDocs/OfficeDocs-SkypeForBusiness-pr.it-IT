@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su operatori automatici e code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 5b5076ecd8ea521071124f5400ac5c2831b4fbfe
-ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
+ms.openlocfilehash: 097d4d0e921e0481e4986cce6f599cbd55044138
+ms.sourcegitcommit: ae687f530d5505b96df7cb7ef4da3a36bd9afd29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2022
-ms.locfileid: "69307621"
+ms.lasthandoff: 01/10/2023
+ms.locfileid: "69763617"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici di Teams e le code di chiamata
 
@@ -71,8 +71,8 @@ Per ogni coda di chiamata, è possibile specificare se gli agenti in coda posson
 Per configurare gli operatori automatici e le code di chiamata, sono necessarie le risorse seguenti:
 
 - Un [account di risorsa](manage-resource-accounts.md) per ogni operatore automatico e ogni coda di chiamata.
-- Una [licenza gratuita Telefono di Microsoft Teams Account risorse](teams-add-on-licensing/virtual-user.md) per ogni account di risorsa che sarà direttamente raggiungibile da utenti di Teams o numeri di telefono esterni.
-- Almeno un [numero di servizio Microsoft](getting-service-phone-numbers.md), [numero di connessione operatore](operator-connect-plan.md), [numero di routing diretto](direct-routing-plan.md) o un numero ibrido per ogni account di risorsa che desideri sia direttamente raggiungibile da numeri di telefono esterni.
+- Una [licenza gratuita Telefono di Microsoft Teams Account risorse](teams-add-on-licensing/virtual-user.md) per ogni account di risorsa.
+- Almeno un [numero di servizio Microsoft](getting-service-phone-numbers.md), [un numero di connessione operatore](operator-connect-plan.md), un [numero di routing diretto](direct-routing-plan.md) o un numero ibrido per ogni account di risorsa che desideri sia direttamente raggiungibile da numeri di telefono esterni.
   - Il numero di servizio può essere un numero a pagamento o verde.
 
 > [!NOTE]
@@ -107,7 +107,7 @@ Quale account della risorsa assegnare in licenza:
 > [!NOTE]
 > Se il Piano per chiamate assegnato all'account della risorsa viene disabilitato o rimosso, verranno utilizzati i [Crediti comunicazioni](what-are-communications-credits.md), se disponibili nel tenant (senza essere assegnati all'account della risorsa). Se non sono presenti Piani per chiamate o Crediti comunicazioni, la chiamata avrà esito negativo.
 >
-> I numeri di servizio Direct Routing per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti di Microsoft Teams e gli agenti di chiamata.
+> I numeri di servizio routing diretto per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti di Microsoft Teams e gli agenti di chiamata.
 > 
 > I trasferimenti tra i trunk Piano per chiamate, Connessione operatore e Routing diretto non sono supportati.
 > 
@@ -148,11 +148,11 @@ Se hai già un operatore automatico e un'infrastruttura della coda di chiamata e
 **La modalità conferenza** è un'opzione nelle code di chiamata che riduce significativamente la quantità di tempo necessaria per connettere le chiamate VOIP e le chiamate PSTN di Teams a un agente. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono utilizzare uno dei client seguenti:
 
 - L'ultima versione del client desktop di Microsoft Teams, dell'app Android o dell'app iOS.
-- Microsoft Sistema telefonico versione 1449/1.0.94.2020051601 o successiva.
+- Microsoft Phone System versione 1449/1.0.94.2020051601 o successiva.
   
 Impostare gli account di Teams degli agenti sulla modalità solo teams. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate.
 
-È consigliabile abilitare la modalità conferenza per le code di chiamata se gli agenti usano tutti client compatibili.
+La modalità conferenza è abilitata per impostazione predefinita. Se ci sono agenti che non soddisfano i requisiti, la modalità conferenza deve essere disabilitata manualmente durante la configurazione della coda di chiamata.
 
 **I piani del flusso di instradamento delle chiamate** aiutano a determinare il routing più efficiente per le persone che chiamano l'organizzazione. Per informazioni su come pianificare il flusso di instradamento delle chiamate, vedere [Pianificare il flusso di instradamento delle chiamate](plan-your-call-routing-flow.md).
 

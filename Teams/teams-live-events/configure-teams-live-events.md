@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 449aaa73b42248661ec141bd8d004cf754379750
-ms.sourcegitcommit: 73b13cd8a79ba1724b9fb79c8356a7cacafb7dd3
+ms.openlocfilehash: 7ff5dada4c1f37c6afaf2948a5cef2b6169350d0
+ms.sourcegitcommit: 0d25efb3dae31d5199807a14baaf30e944f561ce
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/15/2022
-ms.locfileid: "68965778"
+ms.lasthandoff: 01/11/2023
+ms.locfileid: "69767617"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi live in Microsoft Teams
 
@@ -56,23 +56,26 @@ Esegui il seguente comando:
 ```PowerShell
 Set-CsTeamsMeetingBroadcastConfiguration -SupportURL “{your URL}”
 ```
-Per ulteriori informazioni, vedi [Set-CsTeamsMeetingBroadcastConfiguration](/powershell/module/skype/set-csteamsmeetingbroadcastconfiguration?view=skype-ps&preserve-view=true).
-## <a name="configure-a-third-party-video-distribution-provider"></a>Configurare un provider di distribuzione video di terze parti 
 
-Se hai acquistato e configurato una soluzione SDN (Software Defined Network) o una soluzione eCDN (Enterprise Content Delivery Network) tramite un partner per la distribuzione di video Microsoft, configura il provider per gli eventi live in Teams. 
+Per ulteriori informazioni, vedi [Set-CsTeamsMeetingBroadcastConfiguration](/powershell/module/skype/set-csteamsmeetingbroadcastconfiguration?view=skype-ps&preserve-view=true).
+
+## <a name="configure-a-third-party-video-distribution-provider"></a>Configurare un provider di distribuzione video di terze parti
+
+Se hai acquistato e configurato una soluzione SDN (Software Defined Network) o una soluzione eCDN (Enterprise Content Delivery Network) tramite un partner per la distribuzione di video Microsoft, configura il provider per gli eventi live in Teams.
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nel riquadro di spostamento sinistro passare a **Impostazioni evento riunioni** >  in tempo reale.
-2. In **Provider di distribuzione video di terze parti** completa quanto segue: 
+2. In **Provider di distribuzione video di terze parti** completa quanto segue:
 
     ![Impostazioni del provider di distribuzione video di terze parti nell'interfaccia di amministrazione.](../media/teams-live-events-settings-distribution-provider-new.png "Schermata delle impostazioni del provider di distribuzione video di terze parti per gli eventi live")
 
     - **Provider di distribuzione di terze parti** Attiva questa opzione per abilitare il provider di distribuzione di video di terze parti.
     - **Nome provider SDN** Scegli il provider che stai usando.
     - **Configurazione SDN** Immettere i dettagli sulla configurazione SDN.
-        
+
 ### <a name="using-windows-powershell"></a>Uso di Windows PowerShell
+
 Ottenere l'ID licenza o il modello di API e token API dal contatto del provider, quindi eseguire una delle operazioni seguenti, a seconda del provider in uso:
 
 **Microsoft eCDN**
@@ -99,15 +102,13 @@ Set-CsTeamsMeetingBroadcastConfiguration -AllowSdnProviderForBroadcastMeeting $T
 Per ulteriori informazioni, vedi [Set-CsTeamsMeetingBroadcastConfiguration](/powershell/module/skype/set-csteamsmeetingbroadcastconfiguration?view=skype-ps&preserve-view=true).
 
 > [!NOTE]
-> Se prevedi di creare eventi live usando un'app o un dispositivo esterno, dovrai anche [configurare il provider eCDN con Microsoft Stream](/stream/network-caching). 
-
->[!Note]
-> The change from using Microsoft Stream to [OneDrive for Business and SharePoint for meeting recordings](../tmr-meeting-recording-change.md) will be a phased approach. At launch you'll be able to opt-in to this experience, in November you'll have to opt-out if you want to continue using Stream, and some time in early 2021 we'll require all customers to use OneDrive for Business and SharePoint for new meeting recordings.
+> Se prevedi di creare eventi live usando un'app o un dispositivo esterno, dovrai anche [configurare il provider eCDN](../teams-stream-ecdn.md).
 
 >[!Note]
 > La soluzione eCDN scelta è soggetta alle condizioni del servizio e all'informativa sulla privacy del provider di terze parti selezionate, che regoleranno l'uso della soluzione del provider di eCDN. L'uso della soluzione del provider di eCDN non sarà soggetto alle condizioni dei contratti multilicenza o dei servizi online Microsoft. Se non accetti le condizioni del provider di terze parti, non abilitare la soluzione eCDN in Microsoft Teams.
 
 ### <a name="related-topics"></a>Argomenti correlati
+
 - [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)
 - [Pianificare gli eventi live di Teams](plan-for-teams-live-events.md)
 - [Configurare gli eventi live di Teams](set-up-for-teams-live-events.md)
