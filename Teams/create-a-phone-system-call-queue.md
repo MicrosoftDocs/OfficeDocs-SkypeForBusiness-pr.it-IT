@@ -28,12 +28,12 @@ adobe-target-activity: DocsExp–480823–A/B–Docs/TeamsSteps–HowToTabs–FY
 adobe-target-experience: Experience B
 adobe-target-content: ./create-a-phone-system-call-queue-experiment
 description: Informazioni su come configurare le code di chiamata in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: da0b94281619940a955a7ca7aa0b4127fbb93f3c
-ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
+ms.openlocfilehash: 4b12b1e89b11902299f973a97bdace44a841029e
+ms.sourcegitcommit: ae687f530d5505b96df7cb7ef4da3a36bd9afd29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2022
-ms.locfileid: "69392226"
+ms.lasthandoff: 01/10/2023
+ms.locfileid: "69763567"
 ---
 # <a name="create-a-call-queue-in-microsoft-teams"></a>Creare una coda di chiamata in Microsoft Teams
 
@@ -81,14 +81,14 @@ Digitare un nome per la coda di chiamata nella casella in alto.
 
 Per aggiungere un account di risorse esistente:
 
-1. In **Account risorsa** fare clic sul pulsante **Aggiungi** per aggiungere un account di risorsa per questa coda di chiamata.
+1. In **Account delle risorse** selezionare il pulsante **Aggiungi** per aggiungere un account di risorsa per questa coda di chiamata.
 1. Nel riquadro **Aggiungi account** cercare l'account della risorsa da aggiungere.
 1. Selezionare il pulsante **Aggiungi** accanto all'account della risorsa da assegnare a questa coda di chiamata.
 1. Nella parte inferiore del riquadro selezionare il pulsante **Aggiungi** .
 
 Se è necessario creare un account di risorsa:
 
-1. In **Account risorsa** fare clic sul pulsante **Aggiungi** per aggiungere un account di risorsa per questa coda di chiamata.
+1. In **Account delle risorse** selezionare il pulsante **Aggiungi** per aggiungere un account di risorsa per questa coda di chiamata.
 1. Nel riquadro **Aggiungi account** cercare un set di lettere per visualizzare l'elenco a discesa dei risultati.
 1. Selezionare il pulsante **+ Aggiungi un account risorsa** nella parte inferiore dei risultati.
 1. Nel riquadro **Aggiungi account risorse** :
@@ -106,7 +106,7 @@ Per altre informazioni, vedere [Gestire gli account delle risorse di Teams](mana
 
 **Disponibile per gli utenti desktop delle chiamate per canale/collaborazione di Teams e per gli utenti dei client mobili di Teams con code di chiamata standard.**
 
-È possibile assegnare numeri di ID chiamante in uscita agli agenti specificando uno o più account delle risorse con un numero di telefono. Gli agenti possono selezionare il numero ID chiamante in uscita da usare con ogni chiamata in uscita effettuata. All'interno dell'app Chiamate, gli agenti possono utilizzare il proprio numero di coda di chiamata (CQ) / Operatore automatico (AA) o il proprio direct inward dial personale (DID).
+Assegnare numeri di ID chiamante in uscita agli agenti specificando uno o più account delle risorse con un numero di telefono. Gli agenti possono selezionare il numero ID chiamante in uscita da usare con ogni chiamata in uscita effettuata. All'interno dell'app Chiamate, gli agenti possono utilizzare il proprio numero di coda di chiamata (CQ) / Operatore automatico (AA) o il proprio direct inward dial personale (DID).
 
 > [!NOTE]
 > L'account della risorsa usato per gli scopi dell'ID chiamante deve avere una licenza **account di Telefono di Microsoft Teams risorsa** e una delle seguenti assegnazioni:
@@ -122,7 +122,7 @@ Per altre informazioni, vedere [Gestire gli account delle risorse di Teams](mana
 
 Se non si ha un account della risorsa con un numero di telefono assegnato:
 
-1. In **Account risorse** fare clic sul pulsante **Aggiungi** per aggiungere un account di risorsa.
+1. In **Account risorse** selezionare il pulsante **Aggiungi** per aggiungere un account di risorsa.
 1. Nel riquadro **Aggiungi account** cercare un set di lettere per visualizzare l'elenco a discesa dei risultati.
 1. Selezionare il pulsante **+ Aggiungi un account risorsa** nella parte inferiore dei risultati.
 1. Nel riquadro **Aggiungi account risorse** :
@@ -134,7 +134,7 @@ Se non si ha un account della risorsa con un numero di telefono assegnato:
 
 Dopo aver creato questo nuovo account della risorsa per l'ID chiamante, sarà comunque necessario:
 
-- Assegnare una [licenza per l'account di risorse di Teams Phone](manage-resource-accounts.md#assign-a-license).
+- Assegnare una [licenza Telefono di Microsoft Teams Account risorse di sistema](manage-resource-accounts.md#assign-a-license).
 - Assegna una licenza per un piano per chiamate Microsoft, assegna un numero di telefono Operator Connect o assegna un criterio di routing vocale online per il routing diretto.
 - Assegna il [numero di telefono all'account della risorsa](manage-resource-accounts.md#assign-a-phone-number), se usi il Piano per chiamate Microsoft.
 
@@ -178,11 +178,11 @@ Esaminare i [prerequisiti per l'aggiunta di agenti a una coda di chiamata](plan-
 
 È possibile aggiungere fino a 200 agenti tramite un canale di Teams. Devi essere un membro del team o il creatore o il proprietario del canale per aggiungere un canale alla coda.
 
-Se si vuole [usare un canale di Teams per gestire la coda](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e):
+Per [usare un canale di Teams per gestire la coda](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e):
 
 1. Seleziona il pulsante **di opzione Scegli un team** e seleziona **Aggiungi un canale**.
 1. Cerca il team che vuoi usare, selezionalo e seleziona **Aggiungi**.
-1. Selezionare il canale da usare (sono supportati solo i canali standard) e selezionare **Applica**.
+1. Selezionare il canale da usare (sono supportati solo i canali standard o privati) e selezionare **Applica**.
 
 I client seguenti sono supportati quando si usa un canale di Teams per le code di chiamata:
 
@@ -193,6 +193,8 @@ I client seguenti sono supportati quando si usa un canale di Teams per le code d
 > Se si usa questa opzione, possono essere richieste fino a 24 ore prima che la coda di chiamata sia pienamente operativa.
 >
 > Se ci sono più di 200 membri nel team, solo i primi 200 membri, in ordine alfabetico, verranno aggiunti come agenti alla coda di chiamata.
+> 
+> Le chiamate verranno distribuite a tutti i membri del team anche se il canale privato ha solo un sottoinsieme di membri del team.
 
 ### <a name="users-and-groups"></a>Utenti e gruppi
 
@@ -204,11 +206,11 @@ Per aggiungere singoli utenti o gruppi alla coda:
 
 Per **aggiungere un utente** alla coda:
 
-1. Selezionare **Aggiungi utenti**, cercare l'utente, fare clic su **Aggiungi** e quindi su **Aggiungi**.
+1. Seleziona **Aggiungi utenti**, cerca l'utente, seleziona **Aggiungi** e quindi seleziona **Aggiungi**.
 
 Per **aggiungere un gruppo** alla coda:
 
-1. Selezionare **Aggiungi gruppi**, cercare il gruppo, fare clic su **Aggiungi** e quindi su **Aggiungi**. 
+1. Seleziona **Aggiungi gruppi**, cerca il gruppo, seleziona **Aggiungi** e quindi seleziona **Aggiungi**. 
     1. È possibile usare liste di distribuzione, gruppi di sicurezza e gruppi di Microsoft 365 o team di Microsoft Teams.
 
 > [!NOTE]
@@ -221,7 +223,7 @@ Per **aggiungere un gruppo** alla coda:
 **La modalità conferenza** riduce la quantità di tempo necessaria per la connessione di un chiamante a un agente dopo che l'agente accetta la chiamata. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono utilizzare uno dei client seguenti:
 
 - L'ultima versione del client desktop di Microsoft Teams, dell'app Android o dell'app iOS
-- Telefono di Microsoft Teams versione 1449/1.0.94.2020051601 o successiva
+- Telefono di Microsoft Teams Versione di sistema 1449/1.0.94.2020051601 o successiva
   
 Gli account di Teams degli agenti devono essere impostati sulla modalità TeamsOnly. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate. È consigliabile abilitare la modalità conferenza per le code di chiamata se gli agenti usano client compatibili.
 
@@ -229,9 +231,9 @@ Gli account di Teams degli agenti devono essere impostati sulla modalità TeamsO
 > L'impostazione consigliata è impostare la **modalità conferenza** su **Attivato** .
 
 > [!NOTE]
-> La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
+> La modalità conferenza non è supportata per le chiamate indirizzate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
 >
-> La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da Skype for Business Server.
+> La modalità conferenza non è supportata per le chiamate indirizzate alla coda da Skype for Business Server.
 > 
 > La modalità conferenza è necessaria se gli utenti di Teams devono consultare/trasferire chiamate con code di chiamata.
 >
@@ -399,7 +401,7 @@ Sono consigliate le impostazioni seguenti:
 3. Se si seleziona Inattività più lunga per il metodo di routing dell'agente, verrà automaticamente abilitato il routing basato sulla presenza.
 4. Non è possibile impostare l'ordine in cui verranno chiamati gli agenti.
 5. La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
-6. solo Telefono di Microsoft Teams.
+6. Telefono di Microsoft Teams Solo sistema.
 7. Tramite la pagina portale delle impostazioni utente all'indirizzo [https://aka.ms/vmsettings](https://aka.ms/vmsettings).
 8. Sono supportati solo i canali pubblici.
 9. Gli operatori automatici e le code di chiamata non possono trasferire le chiamate tra i metodi di connettività PSTN.
@@ -440,9 +442,9 @@ Se sei un amministratore, puoi usare il seguente strumento di diagnostica per ve
 
 3. I test restituiscono i passaggi successivi migliori per risolvere eventuali configurazioni di tenant, criteri e account delle risorse per verificare che la coda di chiamata sia in grado di ricevere chiamate.
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
-[Ecco cosa ottieni con Telefono di Microsoft Teams](here-s-what-you-get-with-phone-system.md)
+[Ecco cosa ottieni con Telefono di Microsoft Teams System](here-s-what-you-get-with-phone-system.md)
 
 [Ottenere numeri telefonici di servizio](getting-service-phone-numbers.md).
 

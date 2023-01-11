@@ -25,12 +25,12 @@ adobe-target-activity: DocsExp–480823–A/B–Docs/TeamsSteps–HowToTabs–FY
 adobe-target-experience: Experience B
 adobe-target-content: ./create-a-phone-system-auto-attendant-experiment
 description: Informazioni su come configurare e gestire gli operatori automatici in Microsoft Teams.
-ms.openlocfilehash: 1294559d1fcca7b1dace8f12cd3203b7effa4c80
-ms.sourcegitcommit: 81b3403a1a77ba202690c2d88bd8d1d5257048e5
+ms.openlocfilehash: 11fcf4016cd6ef8f2f4301c18c9362af6bed30ec
+ms.sourcegitcommit: ae687f530d5505b96df7cb7ef4da3a36bd9afd29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2022
-ms.locfileid: "69379392"
+ms.lasthandoff: 01/10/2023
+ms.locfileid: "69763547"
 ---
 # <a name="set-up-a-microsoft-teams-auto-attendant"></a>Configurare un operatore automatico di Microsoft Teams
 
@@ -44,7 +44,7 @@ Gli operatori automatici possono reindirizzare le chiamate, in base all'input de
 - **Persona dell'organizzazione** : una persona dell'organizzazione che può ricevere chiamate vocali. Questa persona può essere un utente online o un utente ospitato in locale usando Skype for Business Server.
 - **App vocale** : un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato all'operatore automatico o alla coda di chiamata quando si sceglie questa destinazione.
 - **Segreteria telefonica** : la cassetta postale vocale associata a un gruppo di Microsoft 365 specificata. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lascia un messaggio dopo il tono". richiesta di sistema.
-  - In M365 Amministrazione Center abilitare l'opzione "Consenti agli utenti esterni all'organizzazione di inviare un messaggio di posta elettronica al team" per il gruppo di Microsoft 365 specificato
+  - In interfaccia di amministrazione di Microsoft 365, abilitare **Consenti agli utenti esterni all'organizzazione di inviare un messaggio di posta elettronica al team** per il gruppo di Microsoft 365 specificato.
 - **Numero di telefono esterno** : qualsiasi numero di telefono. Vedere [i dettagli tecnici sul trasferimento esterno](create-a-phone-system-auto-attendant.md?tabs=general-info#external-phone-number-transfers---technical-details).
 - **Annuncio (file audio):** riprodurre un file audio. Messaggio di annuncio registrato che viene caricato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere di dimensioni superiori a 5 MB. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
 - **Annuncio (digitato):** digitare un messaggio. Testo che si desidera venga letto dal sistema. È possibile immettere fino a 1000 caratteri. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
@@ -54,11 +54,10 @@ Gli operatori automatici possono reindirizzare le chiamate, in base all'input de
 >
 > Durante la definizione di un **operatore** è facoltativo, è consigliabile.  Gli operatori automatici reindirizzano le chiamate all'operatore in caso di errore nella configurazione dell'operatore automatico a causa dell'eliminazione di un account di un utente o di un account di segreteria telefonica condivisa.  Se non è definito un operatore, l'operatore automatico rilascerà la chiamata.
 
-## <a name="whats-new-for-auto-attendants-in-the-past-6-months"></a>Novità per gli operatori automatici degli ultimi 6 mesi
+## <a name="whats-new-for-auto-attendants-in-the-past-six-months"></a>Novità per gli operatori automatici degli ultimi sei mesi
 
 - Settembre - **L'opzione Forza ascolto** è ora disponibile con **l'opzione del menu Riproduci** per Flusso delle chiamate, Flusso delle chiamate per fuori orario e Flusso delle chiamate durante le festività.
 - Agosto - **Riproduci le opzioni del menu** in Flusso delle chiamate, Flusso delle chiamate per fuori orario e Flusso delle chiamate durante le festività ora supportano \* i tasti (asterisco) e \# (cancelletto).
-- Luglio - Il flusso delle chiamate durante le festività ora supporta le **opzioni del menu Riproduci**.
 
 ## <a name="steps-to-create-an-auto-attendant"></a>Procedura per creare un operatore automatico
 
@@ -87,7 +86,7 @@ Per configurare un operatore automatico, [nell'interfaccia di amministrazione di
 
 3. Specifica il fuso orario per questo operatore automatico. Il fuso orario viene usato per calcolare l'orario di ufficio se si [crea un flusso di chiamata separato per l'orario di chiusura](?tabs=after-hours).
 
-4. Specifica una [lingua supportata](create-a-phone-system-auto-attendant-languages.md) per questo operatore automatico. Questo è il linguaggio che verrà utilizzato per i comandi vocali generati dal sistema.
+4. Specifica una [lingua supportata](create-a-phone-system-auto-attendant-languages.md) per questo operatore automatico. Questo linguaggio verrà utilizzato per i comandi vocali generati dal sistema.
 
 5. Scegli se abilitare gli input vocali. Se abilitata, il nome di ogni opzione di menu diventa una parola chiave di riconoscimento vocale. Ad esempio, i chiamanti possono dire "Uno" per selezionare l'opzione di menu mappata al tasto 1 oppure "Vendite" per selezionare l'opzione di menu denominata "Vendite".
 
@@ -133,7 +132,7 @@ Per ogni opzione di menu, specificare le impostazioni seguenti:
 
 ##### <a name="directory-search"></a>Ricerca nella directory
 
-Se si assegnano tasti di chiamata alle destinazioni, è **consigliabile scegliere Nessuno** per **la ricerca nella directory**. Se un chiamante tenta di comporre un nome o un'estensione usando chiavi assegnate a destinazioni specifiche, potrebbe essere instradato in modo imprevisto a una destinazione prima di completare l'immissione del nome o dell'estensione. Ti consigliamo di creare un operatore automatico separato per la ricerca in elenco e di disporre del collegamento principale dell'operatore automatico con un tasto di chiamata.
+Se si assegnano tasti di chiamata alle destinazioni, è **consigliabile scegliere Nessuno** per **la ricerca nella directory**. Le chiavi di chiamata vengono confrontate prima di eseguire ricerche nella directory.  Se un chiamante inizia a immettere un nome o un'estensione usando i tasti di chiamata assegnati a destinazioni specifiche, verrà indirizzato a tale destinazione prima di completare l'immissione del nome o dell'estensione. Ti consigliamo di creare un operatore automatico separato per la ricerca in elenco e di disporre del collegamento principale dell'operatore automatico con un tasto di chiamata.
 
 Se non hai assegnato i tasti di chiamata, scegli un'opzione per **la ricerca nella directory**.
 
@@ -144,7 +143,7 @@ Se non hai assegnato i tasti di chiamata, scegli un'opzione per **la ricerca nel
 > [!NOTE]
 > Se desideri utilizzare sia le funzionalità **Chiamata per nome** che Chiamata per **estensione** , puoi assegnare un tasto di chiamata sull'operatore automatico principale per raggiungere un operatore automatico abilitato per **Chiamata per nome**. All'interno di quell'operatore automatico, puoi assegnare il tasto 1 (che non ha lettere associate) per raggiungere l'operatore automatico **Dial by extension** .
 
-Per ulteriori informazioni, consulta Il riferimento di [chiamata e la voce](dial-voice-reference.md).
+Per altre informazioni, vedere Il [riferimento di chiamata e della voce](dial-voice-reference.md).
 
 Dopo aver impostato le opzioni di base per il flusso delle chiamate, selezionare **Avanti**.
 
@@ -155,7 +154,7 @@ Dopo aver impostato le opzioni di base per il flusso delle chiamate, selezionare
 L'orario di ufficio può essere impostato per ogni operatore automatico.
 
 - Se l'orario di ufficio non è impostato, tutti i giorni e tutte le ore del giorno sono considerati orario di ufficio perché il programma 24/7 è impostato come predefinito.
-- L'orario di ufficio può essere impostato con interruzioni durante il giorno e tutti gli orari che non sono impostati come orario di ufficio vengono considerati fuori orario.
+- L'orario di ufficio può essere impostato con interruzioni di orario durante il giorno e tutti gli orari che non sono impostati come orario di ufficio vengono considerati fuori orario.
 - È possibile impostare diverse opzioni di gestione delle chiamate in arrivo e messaggi di saluto per l'orario di chiusura.
 
 A seconda di come hai configurato gli operatori automatici e le code di chiamata, potrebbe essere necessario specificare solo il routing delle chiamate fuori orario per gli operatori automatici con numeri di telefono diretti.
@@ -176,7 +175,6 @@ L'operatore automatico può avere un flusso delle chiamate per ogni [festività 
 
 *Nuovo: è possibile abilitare l'opzione Forza ascolto che richiede ai chiamanti di ascoltare tutte le opzioni di menu prima di effettuare la selezione.*
  *I tasti Nuovi - \* (asterisco) e \# (cancelletto) ora possono essere utilizzati nelle opzioni di menu.*
- *Nuovo : **le opzioni del menu Riproduci** sono ora disponibili nei flussi delle chiamate per le festività.*
 
 1. Nella pagina Impostazioni chiamata festività seleziona **Aggiungi**.
 
@@ -222,7 +220,7 @@ Per aggiungere un account della risorsa, selezionare **Aggiungi account** e cerc
 
 Dopo aver aggiunto gli account delle risorse, selezionare **Avanti**.
 
-Per altre informazioni, vedere [Gestire gli account delle risorse di Teams](manage-resource-accounts.md) .
+Per altre informazioni, vedere [Gestire gli account delle risorse di Teams](manage-resource-accounts.md).
 
 ---
 
@@ -230,7 +228,7 @@ Per altre informazioni, vedere [Gestire gli account delle risorse di Teams](mana
 
 ### <a name="external-phone-number-transfers---technical-details"></a>Trasferimenti di numeri di telefono esterni - dettagli tecnici
 
-Fai riferimento ai [Prerequisiti](plan-auto-attendant-call-queue.md#prerequisites) per consentire agli operatori automatici di trasferire le chiamate esternamente.  Inoltre:
+Fai riferimento ai [Prerequisiti](plan-auto-attendant-call-queue.md#prerequisites) per consentire agli operatori automatici di trasferire le chiamate esternamente.  Inoltre
 
 - Per un account di risorse con licenza [Piano per chiamate](calling-plans-for-office-365.md) o [Numero di connessione operatore](operator-connect-plan.md) , il numero di telefono di trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][prefisso][numero di telefono]).
 
@@ -240,7 +238,7 @@ Il numero di telefono in uscita visualizzato viene determinato nel modo seguente
 
 - Per i numeri del piano per chiamate e della connessione operatore, viene visualizzato il numero di telefono del chiamante originale.
 - Per i numeri di routing diretto, il numero inviato si basa sull'impostazione P-Asserted-Identity (PAI) in SBC, come indicato di seguito:
-  - Se impostato su Disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
+  - Se impostato su Disabilitato, viene visualizzato il numero di telefono del chiamante originale. Disabilitata è l'impostazione predefinita e consigliata.
   - Se è impostato su Abilitato, viene visualizzato il numero di telefono dell'account della risorsa.
 
 In un ambiente ibrido Skype for Business, per trasferire una chiamata di operatore automatico alla rete PSTN, creare un nuovo utente locale con l'inoltro di chiamata impostato sul numero PSTN. L'utente deve essere abilitato per VoIP aziendale e avere un criterio vocale assegnato. Per ulteriori informazioni, vedi [Trasferimento di chiamata operatore automatico a PSTN](/SkypeForBusiness/plan/exchange-unified-messaging-online-migration-support#auto-attendant-call-transfer-to-pstn).
@@ -256,9 +254,9 @@ Se sei un amministratore, puoi usare il seguente strumento di diagnostica per ve
 
 2. Nel riquadro Di diagnostica Esegui immettere l'account della risorsa nel campo **Nome utente o Email** e quindi selezionare **Esegui test**.
 
-3. I test identificheranno le configurazioni di tenant, criteri o account delle risorse che impediscono all'operatore automatico di ricevere chiamate e forniscono i passaggi per risolvere eventuali problemi identificati.
+3. I test identificheranno le configurazioni di tenant, criteri o account delle risorse che impediscono all'operatore automatico di ricevere chiamate e forniranno anche i passaggi per risolvere eventuali problemi identificati.
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
 [Ecco cosa ottieni con Teams Phone](./here-s-what-you-get-with-phone-system.md)
 

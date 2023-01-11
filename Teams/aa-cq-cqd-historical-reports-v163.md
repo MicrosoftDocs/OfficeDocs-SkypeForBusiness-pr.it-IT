@@ -23,12 +23,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come usare l'operatore automatico di Teams & report storico sulla coda di chiamata di Power BI per visualizzare i dati cronologici di Operatore automatico e Coda di chiamata per i clienti GCC High e DoD.
-ms.openlocfilehash: 619be6d7f0f78f67ef2db0f0693de82120d128c4
-ms.sourcegitcommit: e9718ad7e23317d490b238b3801267cb2e6b26e2
+ms.openlocfilehash: cde953bfd8e9c95c60c795f6de91488506c2addf
+ms.sourcegitcommit: ae687f530d5505b96df7cb7ef4da3a36bd9afd29
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/28/2022
-ms.locfileid: "69176756"
+ms.lasthandoff: 01/10/2023
+ms.locfileid: "69763677"
 ---
 # <a name="auto-attendant-and-call-queue-historical-reports-for-gcc-high-and-dod"></a>Report cronologici relativi all'operatore automatico e alla coda di chiamata per GCC High e DoD
 
@@ -66,15 +66,17 @@ Eseguire le operazioni seguenti:
 
 1. Scaricare e salvare il file zip dei [modelli di query di Power BI di Call Quality Dashboard](https://www.microsoft.com/download/details.aspx?id=102291) nel computer.
 
-1. Aprire il file ZIP.
+2. Aprire il file ZIP.
 
-1. Aprire il file modello `CQD Teams Auto Attendant & Call Queue Historical Report V1.60.pbit` . Power BI Desktop dovrebbe avviarsi.
+3. Aprire il file modello `CQD Teams Auto Attendant & Call Queue Historical Report V1.63.pbit` . Power BI Desktop dovrebbe avviarsi.
 
-1. Verrà richiesto di selezionare l'area della pipeline di dati di Call Quality Dashboard. Selezionare l'area geografica in cui si trova il tenant.
+4. Verrà richiesto di selezionare l'area della pipeline di dati di Call Quality Dashboard. Selezionare l'area geografica in cui si trova il tenant.
 
-  :::image type="content" source="media/aa-cq-historical-report-01-v163.png" alt-text="Screenshot che seleziona l'area della pipeline di dati di Call Quality Dashboard.":::
+     :::image type="content" source="media/aa-cq-historical-report-01-v163.png" alt-text="Screenshot che seleziona l'area della pipeline di dati di Call Quality Dashboard.":::
 
-1. L'area geografica in cui si trova il tenant può essere ottenuta utilizzando il cmdlet [Get-CsTenant](/powershell/module/skype/get-cstenant) .
+    Tenant cloud pubblici
+
+5. L'area geografica in cui si trova il tenant può essere ottenuta utilizzando il cmdlet [Get-CsTenant](/powershell/module/skype/get-cstenant) .
 
     ```powershell
     (Get-CsTenant).ServiceInstance
@@ -82,19 +84,27 @@ Eseguire le operazioni seguenti:
     microsoftcommunicationsonline/noam-4a-s7
     ```
 
-    1. L'area geografica verrà visualizzata dopo il **/** come nell'esempio precedente in cui l'area geografica è `noam`.
+    L'area geografica verrà visualizzata dopo il **/** come nell'esempio precedente in cui l'area geografica è `noam`.
 
- 1. Il report verrà avviato con dati di esempio.
+    Tenant GCC High e DoD
+
+6. Aggiornare il modello in modo da usare uno dei connettori seguenti:
+
+   - GCCH: `https://data.cqd.gov.teams.microsoft.us/RunQuery`
+   - Dod: `https://data.cqd.dod.teams.microsoft.us/RunQuery`
+
+
+7. Il report verrà avviato con dati di esempio.
  
- 1. Per visualizzare i propri dati, selezionare **Aggiorna** nella scheda **Home** in **Query** in Power BI Desktop.
+8. Per visualizzare i propri dati, selezionare **Aggiorna** nella scheda **Home** in **Query** in Power BI Desktop.
 
    :::image type="content" source="media/aa-cq-historical-report-02-v163.png" alt-text="Screenshot che seleziona l'opzione di aggiornamento.":::
 
-1. Verrà richiesto di eseguire l'accesso. Selezionare **Account aziendale** e quindi **selezionare Accedi**.
+9. Verrà richiesto di eseguire l'accesso. Selezionare **Account aziendale** e quindi **selezionare Accedi**.
 
-  :::image type="content" source="media/aa-cq-historical-report-03-v163.png" alt-text="Screenshot che mostra l'accesso per V1.63.":::
+   :::image type="content" source="media/aa-cq-historical-report-03-v163.png" alt-text="Screenshot che mostra l'accesso per V1.63.":::
 
-1. Seleziona **Connetti** per aggiornare i dati.
+10. Seleziona **Connetti** per aggiornare i dati.
 
 ## <a name="data-latency-for-aa-and-cq-analytics"></a>Latenza dei dati per l'analisi di AA e CQ
 
@@ -116,11 +126,11 @@ Eseguire le operazioni seguenti:
 
 1. Selezionare **la scheda Visualizza** sulla barra multifunzione.
 
-  :::image type="content" source="media/aa-cq-historical-report-04.png" alt-text="Screenshot che seleziona la scheda Visualizza per modificare la combinazione di colori.":::
+    :::image type="content" source="media/aa-cq-historical-report-04.png" alt-text="Screenshot che seleziona la scheda Visualizza per modificare la combinazione di colori.":::
 
 2. Selezionare lo schema colori nell'elenco a discesa.
 
-  :::image type="content" source="media/aa-cq-historical-report-05.png" alt-text="Screenshot che mostra varie combinazioni di colori.":::
+    :::image type="content" source="media/aa-cq-historical-report-05.png" alt-text="Screenshot che mostra varie combinazioni di colori.":::
   
 ## <a name="auto-attendant-and-call-queue-historical-reports-definitions"></a>Definizioni dei report cronologici dell'operatore automatico e della coda di chiamata
 
