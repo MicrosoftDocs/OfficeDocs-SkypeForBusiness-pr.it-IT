@@ -6,7 +6,7 @@ manager: samanro
 audience: Admin
 ms.topic: article
 ms.service: msteams
-ms.reviewer: phecda louie
+ms.reviewer: ''
 ms.collection:
 - M365-collaboration
 ms.localizationpriority: medium
@@ -20,22 +20,20 @@ ms.custom:
 - chat-teams-channels-revamp
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5d159605af5050b8b874fb7b1c077ce9f2d639fc
-ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
+ms.openlocfilehash: e2d6be964c29ca9133a5c52162c88f82e27424d7
+ms.sourcegitcommit: 387141880842c93ecf4a936aaa26342a3f996259
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2022
-ms.locfileid: "69198898"
+ms.lasthandoff: 01/12/2023
+ms.locfileid: "69778956"
 ---
 # <a name="use-manufacturing-team-templates-in-the-admin-center"></a>Usare i modelli del team di produzione nell'interfaccia di amministrazione
 
-I modelli di team consentono di creare team in modo semplice e rapido, fornendo un modello predefinito di impostazioni, canali e app preinstallate.
+I modelli di Microsoft Teams consentono di creare team in modo rapido e semplice fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 
-I modelli di team hanno definizioni predefinite di strutture di team progettate in base alle esigenze di produzione. È anche possibile estendere i modelli di team per creare team personalizzati in base alle specifiche esigenze dell'organizzazione.
+Usare i modelli di team per distribuire rapidamente team coerenti all'interno dell'organizzazione. I modelli aiutano anche il personale a orientarsi su come usare in modo efficace Teams.
 
-In questo articolo, presentiamo ognuno dei modelli di team e consigliamo come usarli.
-
-Questo articolo è rivolto agli utenti responsabili della pianificazione, della distribuzione e della gestione di più team nell'intera organizzazione di produzione. Il servizio Teams è già stato implementato nell'organizzazione. Se Teams non è ancora stato implementato, per iniziare, leggere [Come implementare Microsoft Teams](./deploy-overview.md).
+Teams include modelli predefiniti progettati per le esigenze di produzione. In questo articolo vengono presentati questi modelli.
 
 Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai modelli di team](get-started-with-teams-templates-in-the-admin-console.md).
 
@@ -43,7 +41,7 @@ Per altre informazioni sui modelli di team in generale, vedere [Introduzione ai 
 
 Centralizzare la comunicazione, l'accesso alle risorse e le operazioni di impianto con un team dello stabilimento di produzione. Includere documenti su criteri e procedure, video di formazione, avvisi di sicurezza, processi di consegna turno.
 
-| Tipologia di modello base|baseTemplateId| Proprietà del modello base |
-| ------------------|-- |----------------------------------------------------- |
-|Qualità e sicurezza|`com.microsoft.teams.template.QualitySafety` |Canali: <ul><li>Generale<li>Annunci</li><li>Linea 1</li><li>Linea 2</li><li>Linea 3</li><li>Sicurezza</li><li>Formazione</li><li>Manutenzione</li><li>Elementi divertenti</li></ul> App: <ul><li>Wiki</li><li>Planner</li></ul>|
-||||
+>[!div class="mx-tdBreakAll"]
+>|Tipo di modello|TemplateId| Proprietà del modello |
+>| ------------------|-- |----------------------------------------------------- |
+>|Qualità e sicurezza|`com.microsoft.teams.template.QualitySafety` |Canali: <ul><li>Generale</li><li>Leadership</li><li>Manutenzione</li><li>Linea di produzione 1</li><li>Linea di produzione 2</li><li>Linea di produzione 3</li><li>Salute e sicurezza</li><li>Formazione</li><li>Cose divertenti</li></ul> App: <ul><li>Approvazioni</li><li>Ispezione</li><li>Segnalazione problemi</li><li>Turni</li> <li>Attività per Planner e To Do</li> <li>Wiki</li> </ul>|

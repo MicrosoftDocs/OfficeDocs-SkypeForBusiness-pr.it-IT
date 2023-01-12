@@ -20,12 +20,12 @@ ms.custom:
 - chat-teams-channels-revamp
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b1818a4eee46cca88c873af35278453ab84b1341
-ms.sourcegitcommit: dc5b3870fd338f7e9ab0a602a44eaf9feb595b2f
+ms.openlocfilehash: cd5a1064c4a0104a4eab6d25a3adb0614c12d256
+ms.sourcegitcommit: 387141880842c93ecf4a936aaa26342a3f996259
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2022
-ms.locfileid: "69198958"
+ms.lasthandoff: 01/12/2023
+ms.locfileid: "69779056"
 ---
 # <a name="use-nonprofit-team-templates"></a>Usare i modelli no profit di team
 
@@ -35,7 +35,7 @@ Per le organizzazioni no profit, i modelli di team possono rivelarsi particolarm
 
 Teams include un modello di team Gestisci volontari progettato per semplificare le attività di gestione dei volontari. È possibile usare questo modello predefinito per creare rapidamente team che consentono al personale di comunicare e collaborare alle attività e alla gestione dei volontari.
 
-In questo articolo sono contenute tutte le informazioni riguardanti il modello di team Gestisci volontari e su come usarlo per creare un team. L’articolo offre anche una panoramica sulla gestione dei modelli di team nell'interfaccia di amministrazione di Teams.
+In questo articolo vengono fornite informazioni sul modello di team Gestisci volontari e su come usarlo per creare un team. L’articolo offre anche una panoramica sulla gestione dei modelli di team nell'interfaccia di amministrazione di Teams.
 
 ## <a name="manage-volunteers-team-template"></a>Modello di team Gestisci volontari
 
@@ -43,11 +43,12 @@ Riunire il personale per comunicare e collaborare alle attività e alla gestione
 
 Questo modello include app e canali progettati per semplificare le attività di gestione dei volontari. Il personale può organizzare e condividere i materiali di onboarding e i documenti usati più di frequente, visualizzare i report, rimanere aggiornati sugli annunci e gli eventi importanti del team e altro ancora. Il modello integra anche [Volunteer Management](/dynamics365/industry/nonprofit/volunteer-management-use), un'app che è parte di [Microsoft Cloud per le organizzazioni no profit](/industry/nonprofit/), e che permette al personale di gestire le opportunità di coinvolgimento dei volontari all'interno di Teams.
 
-Questi sono le app e i canali forniti con il modello di team Gestisci volontari.
+Ecco i canali e le app forniti con il modello di team Gestisci volontari.
 
-| Tipo di modello |TemplateId | Proprietà del modello |
-| ------------------|-- |----------------------------------------------------- |
-|Gestisci i volontari| `ManageVolunteers` |Canali: <ul><li>Generale<ul><li>Sito Web&sup1;</li></ul><li>Announcements</li><li>Reporting<ul><li>Power BI&sup1;</li></ul></li><li>Gestione dei volontari<ul><li>Power Apps&sup1;</li></ul></li><li>Opportunità di impegno<ul><li>Attività&sup1;</li></ul></li><li>Onboarding dei volontari<ul><li>SharePoint&sup1;</li><li>OneNote&sup1;</li></ul></li></ul> App: <ul><li>Sito Web</li><li>YouTube</li><li>Power BI</li><li>Power Apps</li><li>Attività</li><li>SharePoint</li><li>OneNote</li></ul>|
+>[!div class="mx-tdBreakAll"]
+>| Tipo di modello |TemplateId | Proprietà del modello |
+>| ------------------|-- |----------------------------------------------------- |
+>|Gestire i volontari| `com.microsoft.teams.template.ManageVolunteers` |Canali: <ul><li>Generale<ul><li>Sito Web&sup1;</li></ul><li>Announcements</li><li>Reporting<ul><li>Power BI&sup1;</li></ul></li><li>Gestione dei volontari<ul><li>Power Apps&sup1;</li></ul></li><li>Opportunità di impegno<ul><li>Attività di Planner e To Do&sup1;</li></ul></li><li>Onboarding dei volontari<ul><li>SharePoint&sup1;</li><li>OneNote&sup1;</li></ul></li></ul>App: <ul><li>OneNote</li><li>Power Apps</li><li>Power BI</li><li>SharePoint</li><li>Attività per Planner e To Do</li><li>Sito Web</li><li>YouTube</li></ul>|
 
 &sup1; App aggiunta al canale come scheda.
 

@@ -24,12 +24,12 @@ appliesto:
 ms.reviewer: yinchang
 description: Informazioni su come gestire e usare i modelli del team sanitario nell'interfaccia di amministrazione di Teams e con Microsoft Graph per creare rapidamente e facilmente team per l'organizzazione sanitaria.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a80d36b51d3f45ca906525d93e502dbfbba1cb6d
-ms.sourcegitcommit: ff161779577ce9cc892f1b6b8861ad49ff4c3ca3
+ms.openlocfilehash: 17f5ce2774dd163f5f244bea0e685623f64ed59f
+ms.sourcegitcommit: 387141880842c93ecf4a936aaa26342a3f996259
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2022
-ms.locfileid: "69131075"
+ms.lasthandoff: 01/12/2023
+ms.locfileid: "69778966"
 ---
 # <a name="use-healthcare-team-templates"></a>Usare i modelli di team per il settore sanitario
 
@@ -53,52 +53,52 @@ Gli amministratori possono gestire i modelli di team nell'interfaccia di amminis
 Per altre informazioni sui modelli di team in generale, vedere Introduzione ai modelli [di team nell'Teams di amministrazione.](../../get-started-with-teams-templates-in-the-admin-console.md)
 
 Attualmente sono disponibili i modelli di team sanitari predefiniti seguenti. Per visualizzarli, nel riquadro di spostamento sinistro dell'interfaccia Teams di amministrazione passare a modelli **Teams**  >  **team.**
-### <a name="patient-care"></a>Assistenza ai pazienti
 
- Questo modello è destinato alla comunicazione e alla collaborazione all'interno di un reparto, un dispensario o un dipartimento. È possibile usare questo modello per facilitare la gestione dei pazienti e le esigenze operative di un rione. Ad esempio, pubblicare annunci di rione nel *canale Annunci* e gestire i turni nel *canale Personale.*
+### <a name="patient-care"></a>Patient Care
 
-| Tipo di modello |TemplateId| Proprietà del modello |
-| ------------------ |---|----------------------------------------------------- |
-| Assistenza ai pazienti |`healthcareWard` | Canali:<ul><li>Generale</li><li>Annunci<ul><li>Bollettini&sup1;</li></ul></li><li>Riunioni informali<ul><li>Elenchi (elenco pazienti)&sup1;</li></ul></li><li>Arrotondamenti<ul><li>Ispezione&sup1;</li></ul></li><li>Personale</li><li>Formazione</li></ul> App: <ul><li>Wiki</li><li>Elenchi</li><li>Attività</li><li>Approvazioni</li><li>Turni</li><li>Bollettini</li><li>Revisione</li></ul>|
-||||
+Semplificare le comunicazioni e la collaborazione nell'assistenza sanitaria all'interno di un reparto, un dispensario o un dipartimento. Utilizzare questo modello per facilitare la gestione dei pazienti e le esigenze operative di un rione. Ad esempio, pubblicare annunci di rione nel *canale Annunci* e gestire i turni nel *canale Personale.*
 
-&sup1; App aggiunta al canale come scheda
+>[!div class="mx-tdBreakAll"]
+>| Tipo di modello |TemplateId| Proprietà del modello |
+>| ------------------ |---|----------------------------------------------------- |
+>| Patient Care |`healthcareWard` | Canali:<ul><li>Generale</li><li>Annunci</li><li>Briefing</li><li>Giri di visite</li><li>Personale</li><li>Formazione</li></ul> App: <ul><li>Approvazioni</li><li>Bollettini</li><li>Revisione</li><li>Elenchi</li><li>Turni</li><li>Attività per Planner e To Do</li><li>Wiki</li></ul>|
+
 ### <a name="hospital"></a>Ospedale
 
-Questo modello mira a semplificare le comunicazioni e la collaborazione tra più reparti, dispensari e dipartimenti all'interno di un ospedale. Questo modello include un set di canali di base per le operazioni ospedaliere e può essere esteso per essere personalizzato.
+Semplificare le comunicazioni e la collaborazione tra più reparti, dispensari e dipartimenti all'interno di un ospedale. Questo modello include un set di canali di base per le operazioni ospedaliere e può essere esteso per essere personalizzato.
 
-| Tipo di modello |TemplateId | Proprietà del modello |
-| ------------------|-- |----------------------------------------------------- |
-|Ospedale|`healthcareHospital`|Canali: <ul><li>Generale<ul><li>Elenchi&sup1;</li></ul></li><li>Announcements<ul><li>Bollettini&sup1;</li></ul></li><li>Conformità</li><ul><li>Ispezione&sup1;</li></ul></li><li>Pulizie</li><li>Risorse umane<ul><li>Idee&sup1;</li></ul></li><li>Farmacia</li></ul> App: <ul><li>Wiki</li><li>Attività</li><li>Elenchi</li><li>Approvazioni</li><li>Turni</li><li>Bollettini</li><li>Revisione</li><li>Idee</li></ul>|
-||||
+>[!div class="mx-tdBreakAll"]
+>| Tipo di modello |TemplateId | Proprietà del modello |
+>| ------------------|-- |----------------------------------------------------- |
+>|Ospedale|`healthcareHospital`|Canali: <ul><li>Generale</li><li>Annunci</li><li>Conformità</li></li><li>Pulizie</li><li>Risorse umane</li><li>Farmacia</li></ul>  App: <ul><li>Approvazioni</li><li>Bollettini</li><li>Idee per i dipendenti</li><li>Ispezione</li><li>Elenchi</li><li>Turni</li><li>Attività per Planner e To Do</li><li>Wiki</li></ul>|
 
-&sup1; App aggiunta al canale come scheda
 ## <a name="use-team-templates-with-microsoft-graph"></a>Usare i modelli di Teams con Microsoft Graph
 
 Developers can use Microsoft Graph to create teams from pre-built team templates. To learn more about using team templates with Microsoft Graph, see [Get started with team templates using Microsoft Graph](../../get-started-with-teams-templates.md), [Microsoft Teams API overview](/graph/teams-concept-overview), and [teamsTemplate resource type](/graph/api/resources/teamstemplate).
 
 Ecco i modelli predefiniti del team sanitario.
-### <a name="ward"></a>Reparto
 
-Il modello di reparto è destinato alla comunicazione e alla collaborazione all'interno di un reparto, un dispensario o un dipartimento. Il modello può essere usato per agevolare la gestione dei pazienti e le esigenze operative di un reparto. Ad esempio, gli annunci di reparto possono essere pubblicati nel canale *Annunci* e i turni possono essere gestiti in *Personale*. Questo modello è utile per semplificare l’operatività di reparto.
+### <a name="patient-care"></a>Patient Care
 
-|Tipo di modello |TemplateId |Canali del modello|
-|:--- |:---|:---|
-|Settore sanitario - Reparto | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareWard')`   | Generale<br>Annunci&sup2; <br> Riunioni informali&sup2; <br> Giri&sup2; <br> Personale&sup2; <br> Formazione&sup2; |
-|     | |         |
+Questo modello è destinato alla comunicazione e alla collaborazione all'interno di un reparto, un dispensario o un dipartimento. Utilizzare questo modello per facilitare la gestione dei pazienti e le esigenze operative di un rione. Ad esempio, gli annunci di reparto possono essere pubblicati nel canale *Annunci* e i turni possono essere gestiti in *Personale*. Questo modello è utile per semplificare l’operatività di reparto.
+
+>[!div class="mx-tdBreakAll"]
+>|Tipo di modello |TemplateId |Canali del modello|
+>|:--- |:---|:---|
+>|Settore sanitario - Reparto | `https://graph.microsoft.com/beta/teamsTemplates('healthcareWard')`   | Generale<br>Annunci&sup2; <br> Riunioni informali&sup2; <br> Giri&sup2; <br> Personale&sup2; <br> Formazione&sup2; |
 
 &sup2; Canali preferiti automaticamente
 
 ### <a name="hospital"></a>Ospedale
 
-Il modello ospedale mira a semplificare le comunicazioni e la collaborazione tra più reparti, dispensari e dipartimenti all'interno di un ospedale. Questo modello include diversi canali operativi, ad esempio *Annunci,* *Custodiale* e *Farmacia.* Microsoft fornisce anche uno script che è possibile usare per estendere il modello con altri reparti o canali specializzati. È possibile modificarlo in base alle proprie esigenze.
+Questo modello mira a semplificare le comunicazioni e la collaborazione tra più reparti, dispensari e dipartimenti all'interno di un ospedale. Include diversi canali operativi, ad esempio *Annunci*, *Custode* e *Farmacia*. È anche disponibile uno script che è possibile usare per estendere il modello con più reparti o canali specializzati. È possibile modificarlo in base alle proprie esigenze.
 
-Ad esempio, se si ha un reparto di *endocrinologia,* ma non è necessario un canale per *Oftalimologia,* lo script può essere adattato in modo da includere un canale *endocrinologico* e rimuovere il canale *oftalmologia.* Per evitare la saturazione delle notifiche, è consigliabile non aggiungere automaticamente ai Preferiti questi canali incentrati su specializzazioni o reparti. Gli utenti in genere aggiungono ai Preferiti i canali che trovano pertinenti.
+Ad esempio, se si dispone di un reparto *di endocrinologia* , ma non è necessario un canale per *l'oftalmologia*, è possibile adattare lo script per includere un canale *di endocrinologia* e rimuovere il canale *oftalmologia* . Per evitare la saturazione delle notifiche, è consigliabile non aggiungere automaticamente ai Preferiti questi canali incentrati su specializzazioni o reparti. Gli utenti in genere aggiungono ai Preferiti i canali che trovano pertinenti.
 
-|Tipo di modello |TemplateId |Canali del modello|
-|:--- |:---|:---|
-|Settore sanitario - Ospedale | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareHospital')`   | Generale<br>Annunci&sup2; <br> Conformità&sup2; <br> Pulizie <br> Risorse umane <br> Farmacia |
-| | |  |
+>[!div class="mx-tdBreakAll"]
+>|Tipo di modello |TemplateId |Canali del modello|
+>|:--- |:---|:---|
+>|Settore sanitario - Ospedale | `https://graph.microsoft.com/beta/teamsTemplates('healthcareHospital')`   | Generale<br>Annunci&sup2; <br> Conformità&sup2; <br> Pulizie <br> Risorse umane <br> Farmacia |
 
 &sup2; Canali preferiti automaticamente
 
