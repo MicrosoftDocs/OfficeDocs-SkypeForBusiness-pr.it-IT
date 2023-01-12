@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: jastark
 audience: admin
 search.appverid: MET150
-description: Informazioni su come creare, modificare e aggiungere utenti a criteri di chiamata personalizzati in Microsoft Teams, oltre a varie impostazioni dei criteri di chiamata.
+description: Informazioni su come creare, modificare e aggiungere utenti a criteri di chiamata personalizzati in Microsoft Teams, nonché a varie impostazioni dei criteri di chiamata.
 ms.localizationpriority: medium
 ms.collection:
 - M365-voice
@@ -20,16 +20,16 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a02df903574c7e7db796294ad90c9e05ab732eb0
-ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
+ms.openlocfilehash: a478e203ed973ff2199b4ad500de0441e200918d
+ms.sourcegitcommit: 387141880842c93ecf4a936aaa26342a3f996259
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2022
-ms.locfileid: "69245730"
+ms.lasthandoff: 01/12/2023
+ms.locfileid: "69781459"
 ---
 # <a name="calling-policies-calling-and-call-forwarding-features-in-teams"></a>Criteri per le chiamate: Funzionalità di chiamata e inoltro di chiamata in Teams
 
-In Microsoft Teams, i criteri di chiamata controllano le funzionalità di inoltro di chiamata e chiamata disponibili per gli utenti. I criteri per le chiamate determinano se un utente può effettuare chiamate private, usare l'inoltro di chiamata o lo squillo simultaneo ad altri utenti o numeri di telefono esterni, instradare le chiamate alla segreteria telefonica, inviare chiamate a gruppi di chiamate, usare la delega per le chiamate in ingresso e in uscita e così via.
+In Microsoft Teams, i criteri di chiamata controllano le funzionalità di chiamata e inoltro di chiamata disponibili per gli utenti. I criteri per le chiamate determinano se un utente può effettuare chiamate private, usare l'inoltro di chiamata o lo squillo simultaneo ad altri utenti o numeri di telefono esterni, instradare le chiamate alla segreteria telefonica, inviare chiamate a gruppi di chiamate, usare la delega per le chiamate in ingresso e in uscita e così via.
 
 È possibile usare il criterio globale (predefinito a livello di organizzazione) creato automaticamente o creare e assegnare criteri personalizzati.
 
@@ -47,7 +47,7 @@ Seguire questa procedura per creare criteri di chiamata personalizzati.
 
 Seguire questa procedura per modificare un criterio di chiamata esistente.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, selezionare **Criteri per le chiamate** **vocali** > .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams selezionare **Criteri per le chiamate** **vocali** > .
 2. Fare clic accanto al criterio da modificare e quindi selezionare **Modifica**.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva**.
 
@@ -61,7 +61,7 @@ Ecco le impostazioni che è possibile configurare per i criteri di chiamata.
 
 ### <a name="make-private-calls"></a>Effettuare chiamate private
 
-Questa impostazione controlla tutte le funzionalità di chiamata in Teams. Disattiva questa opzione per disattivare tutte le funzionalità di chiamata in Teams.
+Questa impostazione controlla tutte le funzionalità di chiamata in Teams. Disattivare questa impostazione per disattivare tutte le funzionalità di chiamata in Teams.
 
 ### <a name="cloud-recording-for-calling"></a>Registrazione cloud per le chiamate
 
@@ -73,11 +73,11 @@ Questa impostazione controlla se la trascrizione delle chiamate è disponibile p
 
 ### <a name="call-forwarding-and-simultaneous-ringing-to-people-in-your-organization"></a>Inoltro di chiamata e squillo simultaneo alle persone dell'organizzazione
 
-Questa impostazione controlla se le chiamate in arrivo possono essere inoltrate ad altri utenti o possono chiamare contemporaneamente un'altra persona dell'organizzazione. Questa opzione è attivata per impostazione predefinita.
+Questa impostazione controlla se le chiamate in arrivo possono essere inoltrate ad altri utenti o possono chiamare contemporaneamente un'altra persona dell'organizzazione. Questa impostazione è attivata per impostazione predefinita.
 
 ### <a name="call-forwarding-and-simultaneous-ringing-to-external-phone-numbers"></a>Inoltro di chiamata e squillo simultaneo a numeri di telefono esterni
 
-Questa impostazione controlla se le chiamate in arrivo possono essere inoltrate a un numero esterno o possono squillare contemporaneamente a un numero esterno. Questa opzione è attivata per impostazione predefinita.
+Questa impostazione controlla se le chiamate in arrivo possono essere inoltrate a un numero esterno o possono squillare contemporaneamente a un numero esterno. Questa impostazione è attivata per impostazione predefinita.
 
 ### <a name="voicemail-is-available-for-routing-inbound-calls"></a>La segreteria telefonica è disponibile per il routing delle chiamate in ingresso
 
@@ -89,7 +89,7 @@ Questa impostazione consente di inviare le chiamate in ingresso alla segreteria 
 
 ### <a name="inbound-calls-can-be-routed-to-call-groups"></a>Le chiamate in ingresso possono essere instradate ai gruppi di chiamate
 
-Questa impostazione controlla se le chiamate in arrivo possono essere inoltrate a un gruppo di chiamate. Questa opzione è attivata per impostazione predefinita.
+Questa impostazione controlla se le chiamate in arrivo possono essere inoltrate a un gruppo di chiamate. Questa impostazione è attivata per impostazione predefinita.
 
 ### <a name="delegation-for-inbound-and-outbound-calls"></a>Delega per le chiamate in ingresso e in uscita
 
@@ -97,7 +97,7 @@ Questa impostazione consente di instradare le chiamate in ingresso ai delegati, 
 
 ### <a name="prevent-toll-bypass-and-send-calls-through-the-pstn"></a>Evitare il bypass a pagamento e inviare chiamate tramite PSTN
 
-L'impostazione di questa opzione su **Attivato** invierà chiamate tramite PSTN e incorrerà in costi anziché inviarli attraverso la rete e bypassando i pedaggi. Questa opzione è disattivata per impostazione predefinita.
+L'attivazione di questa impostazione invierà chiamate tramite PSTN e incorrerà in costi anziché inviarli attraverso la rete e bypassando i pedaggi. Questa opzione è disattivata per impostazione predefinita.
 
 ### <a name="music-on-hold-for-pstn-calls"></a>Musica in attesa per le chiamate PSTN
 
@@ -110,14 +110,15 @@ Occupato quando è in una chiamata (chiamato anche "opzioni occupato") consente 
 - **Non abilitato** L'opzione Non occupato è abilitata e le chiamate nuove o in arrivo possono comunque passare all'utente mentre l'utente è già in una chiamata.
 - **Abilitato** Le chiamate nuove o in arrivo verranno rifiutate con un segnale di occupato.
 - **Senza risposta** Verranno usate le impostazioni senza risposta dell'utente, ad esempio il routing alla segreteria telefonica o l'inoltro a un altro utente.
+- **Controllo dell'utente** Questa opzione non è attualmente funzionante; se impostato, verrà letto come impostazione del valore **su Non abilitato**.
 
 ### <a name="web-pstn-calling"></a>Chiamate PSTN Web
 
-Questa impostazione consente agli utenti di chiamare numeri PSTN usando il client Web di Teams. Questa opzione è attivata per impostazione predefinita.
+Questa impostazione consente agli utenti di chiamare numeri PSTN usando il client Web di Teams. Questa impostazione è attivata per impostazione predefinita.
 
 ### <a name="real-time-captions-in-teams-calls"></a>Sottotitoli in tempo reale nelle chiamate di Teams
 
-Questa impostazione controlla se i sottotitoli in tempo reale nelle chiamate di Teams sono disponibili per gli utenti. Questa opzione è attivata per impostazione predefinita.
+Questa impostazione controlla se i sottotitoli in tempo reale nelle chiamate di Teams sono disponibili per gli utenti. Questa impostazione è attivata per impostazione predefinita.
 
 ### <a name="automatically-answer-incoming-meeting-invites"></a>Rispondere automaticamente agli inviti alle riunioni in arrivo
 
@@ -125,11 +126,11 @@ Questa impostazione controlla se gli inviti alle riunioni in arrivo ricevono aut
 
 ### <a name="spam-filtering"></a>Filtro della posta indesiderata
 
-Questa impostazione consente di controllare il tipo di filtro della posta indesiderata disponibile per le chiamate in arrivo. È possibile eseguire i controlli IVR (Basic) e Captcha Interactive Voice (IVR). Questa opzione è attivata per impostazione predefinita.
+Questa impostazione consente di controllare il tipo di filtro della posta indesiderata disponibile per le chiamate in arrivo. È possibile eseguire i controlli IVR (Basic) e Captcha Interactive Voice (IVR). Questa impostazione è attivata per impostazione predefinita.
 
 ### <a name="sip-devices-can-be-used-for-calls"></a>I dispositivi SIP possono essere utilizzati per le chiamate
 
-Questa impostazione consente agli utenti di utilizzare un dispositivo SIP per effettuare e ricevere chiamate. Questa opzione è disattivata per impostazione predefinita.
+Questa impostazione consente agli utenti di utilizzare un dispositivo SIP per effettuare e ricevere chiamate. Questa impostazione è disattivata per impostazione predefinita.
 
 ### <a name="open-apps-in-browser-for-incoming-pstn-calls"></a>Aprire app nel browser per le chiamate PSTN in arrivo
 
