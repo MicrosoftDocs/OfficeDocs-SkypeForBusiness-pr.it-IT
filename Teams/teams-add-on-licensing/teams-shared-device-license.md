@@ -9,6 +9,7 @@ search.appverid: MET150
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
+- highpri
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -19,12 +20,12 @@ ms.custom:
 - Licensing
 - admindeeplinkMAC
 description: Informazioni sulle licenze per i dispositivi condivisi di Microsoft Teams per i telefoni dell'area comune, gli schermi di Teams e i pannelli di Teams.
-ms.openlocfilehash: 5ab7f3dfae180d71abdcf51b0c33adc8abd0a9ab
-ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
+ms.openlocfilehash: bf43b7882b2e4cb97c987b6d820117d467dd9a7d
+ms.sourcegitcommit: ca4d1011f3d62af203145431f0b19065ad81601b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2022
-ms.locfileid: "69392721"
+ms.lasthandoff: 01/13/2023
+ms.locfileid: "69800212"
 ---
 # <a name="microsoft-teams-shared-devices-licensing"></a>Licenze per dispositivi condivisi di Microsoft Teams
 

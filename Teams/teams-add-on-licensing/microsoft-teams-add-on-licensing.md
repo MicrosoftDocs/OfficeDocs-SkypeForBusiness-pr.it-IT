@@ -10,6 +10,7 @@ search.appverid: MET150
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
+- highpri
 audience: Admin
 appliesto:
 - Microsoft Teams
@@ -21,12 +22,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni sulle licenze per i componenti aggiuntivi Microsoft per Microsoft Teams e sulle funzionalità disponibili con ogni licenza.
-ms.openlocfilehash: d4a1beadc5e4252795bdbb4eb15767f3ec94ca2c
-ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
+ms.openlocfilehash: cdda8211bb700683d94782a7db719e5860e7d6eb
+ms.sourcegitcommit: ca4d1011f3d62af203145431f0b19065ad81601b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2022
-ms.locfileid: "69392106"
+ms.lasthandoff: 01/13/2023
+ms.locfileid: "69799922"
 ---
 # <a name="microsoft-teams-add-on-licenses"></a>Licenze per i componenti aggiuntivi di Microsoft Teams
 
@@ -40,14 +41,14 @@ Ecco un elenco delle licenze per i componenti aggiuntivi di Teams e delle relati
 
 |Licenza|Descrizione|
 |-------|-----------|
-| **Microsoft Teams Premium** | Microsoft Teams Premium è una licenza per i componenti aggiuntivi di Teams che consente alle organizzazioni con abbonamenti a Microsoft 365 di migliorare l'esperienza di Teams con vantaggi come riunioni più personalizzate e intelligenti, protezione avanzata delle riunioni e funzionalità avanzate di gestione e creazione di report. Per altre informazioni sulla licenza del componente aggiuntivo Teams Premium, vedi [Licenze di Microsoft Teams Premium](licensing-enhance-teams.md). |
+| **Microsoft Teams Premium** | Microsoft Teams Premium è una licenza per i componenti aggiuntivi di Teams che consente alle organizzazioni con abbonamenti a Microsoft 365 di migliorare l'esperienza di Teams con vantaggi come riunioni più personalizzate e intelligenti, protezione avanzata delle riunioni e funzionalità avanzate di gestione e creazione di report. Per altre informazioni sulla licenza per i componenti aggiuntivi Teams Premium, vedere [Licenze di Microsoft Teams Premium](licensing-enhance-teams.md). |
 | **Microsoft 365 Business Voice** | Business Voice era il bundle di funzionalità vocali di Microsoft per le piccole e medie imprese, ma non è più disponibile per l'acquisto dal 1° marzo 2022. Gli attuali abbonati a Business Voice non possono più rinnovare le licenze Business Voice. <br/> <br/> Se sei una piccola o media impresa, ti consigliamo di acquistare la [licenza Teams Phone con piano per chiamate](../business-voice/whats-business-voice.md), se disponibile nella tua area geografica. <br/> <br/> In alternativa, è possibile acquistare una licenza di Teams Phone Standard che consenta di connettersi al provider PSTN di terze parti preferito. |
 | **Pacchetto Teams Phone with Calling Plan** | Teams Phone con licenza Piano per chiamate raggruppa le funzionalità PBX di Teams Phone System e un piano per chiamate nazionali per la connettività PSTN. |
 | **Teams Phone Standard** |[Teams Phone System](../what-is-phone-system-in-office-365.md) è un servizio telefonico ospitato che offre il controllo delle chiamate e le funzionalità PBX (Private Branch Exchange). Teams Phone Standard licenze offrono tutte le funzionalità di Sistema telefonico di Teams, come la segreteria telefonica cloud, l'ID chiamante, il parcheggio di chiamata, l'inoltro di chiamata, gli operatori automatici, le code di chiamata, il trasferimento delle chiamate e l'ID chiamante. <br/> <br/>Per altre informazioni sul Sistema telefonico, vedi [Ecco cosa ottieni con Sistema telefonico teams](../here-s-what-you-get-with-phone-system.md). |
 | **Piani per chiamate di Microsoft Teams** | Se gli utenti devono chiamare numeri di telefono esterni all'organizzazione, è possibile acquistare [Piani per chiamate di Microsoft Teams](../calling-plans-for-office-365.md) per connettersi ai numeri di telefono PSTN con Microsoft come provider PSTN. Sono disponibili piani per chiamate nazionali, piani per chiamate internazionali e piani per chiamate con pagamento in base al costo. <br/> <br/> Per scoprire se i piani per chiamate Di Teams sono disponibili nel tuo paese o nella tua area geografica, consulta [Disponibilità del paese e dell'area geografica per i servizi di audioconferenza e i piani per chiamate](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). |
 | **Crediti comunicazioni** | I Crediti comunicazioni offrono un pool mensile di minuti che possono essere utilizzati per le telefonate PSTN, se tutti i minuti del piano per chiamate vengono utilizzati prima dell'inizio del mese successivo. Se desideri numeri verdi per audioconferenze, operatori automatici o code di chiamata, dovrai [impostare i Crediti comunicazioni](../set-up-communications-credits-for-your-organization.md). |
 | **Audioconferenza** | A volte le persone dell'organizzazione dovranno usare un telefono per accedere a una riunione di Teams invece del computer. [Configurare le audioconferenze](../set-up-audio-conferencing-in-teams.md) per gli utenti che pianificano o conducono riunioni con i partecipanti che devono accedere tramite telefono. <br/> <br/>Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762).  <br/> <br/>Le organizzazioni possono ora usare un operatore di terze parti per i propri numeri di audioconferenza. Per altre informazioni, vedere [Pianificare Conferenze con connessione tramite operatore](../operator-connect-conferencing-plan.md). |
-| **Microsoft Teams Rooms** | Microsoft Teams Room è un prodotto aggiuntivo di Microsoft Teams che porta video, audio e condivisione di contenuti nelle sale riunioni. <br/> <br/>Teams Rooms Basic è una licenza gratuita per un massimo di 25 sale che offre funzionalità di gestione e riunione di base per tutti i dispositivi Teams Rooms. <br/> <br/>Teams Rooms Pro offre esperienze di riunione avanzate, gestione e sicurezza avanzate per consentire il funzionamento dei dispositivi su vasta scala e consentire riunioni ibride inclusive. <br/> <br/>Per altre informazioni, vedere [Licenze per le sale riunioni di Teams](../rooms/rooms-licensing.md). |
+| **Microsoft Teams Rooms** | Microsoft Teams Room è un prodotto aggiuntivo di Microsoft Teams che porta video, audio e condivisione di contenuti nelle sale riunioni. <br/> <br/>Teams Rooms Basic è una licenza gratuita per un massimo di 25 sale che offre funzionalità di gestione e riunione di base per tutti i dispositivi Teams Rooms. <br/> <br/>Teams Rooms Pro offre esperienze di riunione avanzate, gestione e sicurezza avanzate per aiutarti a gestire i tuoi dispositivi su vasta scala e abilitare riunioni ibride inclusive. <br/> <br/>Per altre informazioni, vedere [Licenze per le sale riunioni di Teams](../rooms/rooms-licensing.md). |
 | **Dispositivi condivisi di Microsoft Teams** | Molte organizzazioni richiedono soluzioni flessibili per l'ambiente di lavoro quando si spostano in scenari di lavoro ibrido. La licenza Dispositivi condivisi di Microsoft Teams è progettata per supportare il lavoro ibrido consentendo agli uffici di designare i dispositivi come dispositivi condivisi, inclusi i telefoni ad area comune, gli schermi di Teams per gli hot-desk e i pannelli di Teams per gli spazi per le riunioni. Per altre informazioni, vedere [Licenze per dispositivi condivisi di Microsoft Teams](teams-shared-device-license.md). |
 
 ## <a name="which-microsoft-capabilities-are-available-with-my-plan"></a>Quali funzionalità Microsoft sono disponibili con il mio piano?

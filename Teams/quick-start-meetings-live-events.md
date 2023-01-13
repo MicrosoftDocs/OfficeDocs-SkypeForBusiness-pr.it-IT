@@ -23,12 +23,12 @@ ms.localizationpriority: high
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 45148768d023b3cb6b609c1f315fe8d71031a573
-ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
+ms.openlocfilehash: e9fbd6e9075ee5680eaae4dc88dde96c842c5a7b
+ms.sourcegitcommit: ca4d1011f3d62af203145431f0b19065ad81601b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2022
-ms.locfileid: "69392196"
+ms.lasthandoff: 01/13/2023
+ms.locfileid: "69800052"
 ---
 # <a name="meetings-webinars-and-live-events"></a>Riunioni, webinar ed eventi live
 
@@ -50,9 +50,9 @@ La tabella seguente riepiloga i tre tipi di riunioni, il numero di partecipanti 
 | Webinar | - Fino a 1.000<br>- Maggiori limiti con le funzionalità [di sola visualizzazione](view-only-meeting-experience.md) presto disponibili. |- I partecipanti fino a 1.000 hanno funzionalità completamente interattive.<br> - Interazione del gruppo di destinatari configurabile.<br> - Può specificare i relatori. | Sì |
 | Eventi live | Fino a 20,000** |- Trasmettere a un pubblico di grandi dimensioni. <br>- Domande e risposte moderate per l'interazione con i destinatari. <br> - Può specificare producer e relatori, inclusi i relatori esterni.<br>- Supporta funzionalità di produzione più avanzate. | No |
 
-*Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 31 dicembre 2022.
+*I soliti 10.000 sono aumentati a 20.000 fino al 30 giugno 2023.
 
-**Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 31 dicembre 2022. È possibile pianificare numeri ancora maggiori con eventi live in Yammer e/o Microsoft Stream. Per altre informazioni, vedere [Eventi live in Microsoft 365](/stream/live-event-m365). Si noti che gli eventi che superano 20.000 partecipanti richiedono il [programma di assistenza per eventi live](/stream/live-events-assistance).
+**I soliti 10.000 sono aumentati a 20.000 fino al 30 giugno 2023. È possibile pianificare numeri ancora maggiori con eventi live in Yammer e/o Microsoft Stream. Per altre informazioni, vedere [Eventi live in Microsoft 365](/stream/live-event-m365). Si noti che gli eventi che superano 20.000 partecipanti richiedono il [programma di assistenza per eventi live](/stream/live-events-assistance).
 
 Note that NDI is fully supported in meetings, webinars, and live events, allowing you to produce the broadcast by using tools such as OBS and Wirecast. For more information, see [Use NDI® technology in Microsoft Teams](use-ndi-in-meetings.md).
 
@@ -178,7 +178,7 @@ Chiunque può partecipare gratuitamente a una riunione dei team, a un webinar o 
 
 Le persone che organizzano, pianificano o conducono riunioni o eventi live devono aver acquistato una delle licenze di Microsoft 365 elencate nella [descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description). Se usi già Teams, è probabile che tu abbia la licenza necessaria per organizzare e condurre riunioni, webinar ed eventi live.
 
-Per informazioni sulle licenze di Teams Premium, vedi [Licenze Di Teams Premium](teams-add-on-licensing/licensing-enhance-teams.md).
+Per informazioni sulle licenze di Teams Premium, vedere [licenze di Teams Premium](teams-add-on-licensing/licensing-enhance-teams.md).
 
 Per consentire alle persone di accedere a una riunione telefonicamente, è necessario configurare il servizio di audioconferenza. Per saperne di più sull’audioconferenza, consulta [Audioconferenza in Teams](deploy-audio-conferencing-teams-landing-page.md).
 
