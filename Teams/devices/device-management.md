@@ -21,18 +21,18 @@ ms.localizationpriority: medium
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b34d554c0930efa622e60a695203e5fa35bd48ab
-ms.sourcegitcommit: aef1ab47fb9cb4502cb49bc3c7ffafcd62e54c82
+ms.openlocfilehash: e545a6d4208e6f54abbf72327cf887d45b34e141
+ms.sourcegitcommit: 1934c4803b5b6ae9b9ccd49e695944446d5d5810
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2022
-ms.locfileid: "69245653"
+ms.lasthandoff: 01/14/2023
+ms.locfileid: "69807468"
 ---
 # <a name="manage-devices-in-teams"></a>Gestire i dispositivi in Teams 
 
 È possibile gestire i dispositivi usati con Microsoft Teams nell'organizzazione dall'interfaccia di amministrazione di Microsoft Teams. È possibile visualizzare e gestire l'inventario dei dispositivi per l'organizzazione ed eseguire attività come l'aggiornamento, il riavvio e il monitoraggio della diagnostica per i dispositivi. È anche possibile creare e assegnare profili di configurazione a un dispositivo o a gruppi di dispositivi.
 
-Per gestire i dispositivi, ad esempio modificare la configurazione dei dispositivi, riavviare i dispositivi, gestire gli aggiornamenti o visualizzare l'integrità dei dispositivi e delle periferiche, è necessario essere assegnati uno dei ruoli di amministratore di Microsoft 365 seguenti:
+Per gestire i dispositivi, ad esempio modificare la configurazione dei dispositivi, riavviare i dispositivi, gestire gli aggiornamenti o visualizzare l'integrità dei dispositivi e delle periferiche, è necessario essere assegnati a uno dei ruoli di amministratore di Microsoft 365 seguenti:
 
 - Amministratore globale di Microsoft 365
 - Amministratore del servizio Teams
@@ -50,13 +50,13 @@ Puoi gestire qualsiasi dispositivo certificato per Teams e registrato. Un dispos
 - [Visualizzazioni di Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/across-devices/devices/category?devicetype=34)
 - [Pannelli di Teams](teams-panels.md)
 
-Per gestire i dispositivi, nel riquadro di spostamento sinistro [dell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com), passare a **Dispositivi di Teams** e quindi selezionare il tipo di dispositivo. Ogni tipo di dispositivo ha la rispettiva sezione, che consente di gestirli separatamente.
+Per gestire i dispositivi, nel riquadro di spostamento sinistro [dell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com) passare a **Dispositivi di Teams** e quindi selezionare il tipo di dispositivo. Ogni tipo di dispositivo ha la rispettiva sezione, che consente di gestirli separatamente.
 
 ## <a name="manage-teams-rooms-on-windows-devices"></a>Gestire Teams Rooms nei dispositivi Windows
 
 È possibile usare l'interfaccia di amministrazione di Teams per visualizzare e gestire in remoto i Teams Rooms nei dispositivi Windows dell'intera organizzazione. L'interfaccia di amministrazione di Teams consente di vedere a colpo d'occhio quali dispositivi sono integri e che richiedono attenzione e consente di concentrarsi su dispositivi specifici per visualizzare informazioni dettagliate sull'integrità dei dispositivi, sulle prestazioni delle riunioni, sulla qualità delle chiamate e sulle periferiche. 
 
-Ecco alcune operazioni che puoi eseguire per gestire i dispositivi Teams Rooms. Teams Rooms dispositivi sono disponibili [nell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com) in **Dispositivi di** >  Teams **Teams Rooms in Windows**.
+Ecco alcune operazioni che puoi eseguire per gestire i dispositivi Teams Rooms. Teams Rooms dispositivi sono disponibili [nell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com) in **Dispositivi** >  di Teams **Teams Rooms in Windows**.
 
 Per informazioni dettagliate su come gestire i dispositivi Teams Rooms, vedere [Gestire Microsoft Teams Rooms](../rooms/rooms-manage.md).
 
@@ -86,6 +86,23 @@ Ecco alcuni esempi di come gestire telefoni, Teams Rooms su schermi Android, Tea
 | Filtrare i dispositivi usando i tag del dispositivo        | Seleziona l'icona del filtro, seleziona il campo **Tag** , specifica un tag dispositivo in base al quale filtrare e seleziona **Applica**. Per altre informazioni sul filtro dei dispositivi tramite tag di dispositivo, vedere [Usare i filtri per restituire i dispositivi con un tag specifico](manage-device-tags.md#use-filters-to-return-devices-with-a-specific-tag). |
 | Visualizzare la cronologia e la diagnostica dei dispositivi     | Nella colonna **Cronologia** fai clic sul collegamento **Visualizza** per un dispositivo per visualizzare la cronologia degli aggiornamenti e i dettagli diagnostici.                                                                                                                                                                                         |
 
+### <a name="view-android-device-sign-in-failures"></a>Visualizzare gli errori di accesso al dispositivo Android
+
+In caso di problemi di accesso a un dispositivo Android, puoi controllare la pagina dei dettagli del dispositivo per vedere quali errori di accesso potrebbero essersi verificati.
+
+1. Nella barra di spostamento sinistra, passare a **Dispositivi di Teams** > selezionare il tipo di dispositivo Teams. Ad esempio, se il dispositivo Android è un telefono, selezionare **Telefoni**.
+2. Fai clic sul nome visualizzato del telefono per cui vuoi visualizzare gli errori di accesso. Verrà aperta la pagina dei dettagli del dispositivo.
+3. Nella pagina dei dettagli del dispositivo seleziona la scheda **Attività** e quindi seleziona **Errore di accesso** nell'elenco a discesa **Tipo di attività** .
+
+> [!NOTE]
+> Se non vedi errori di accesso per un dispositivo a cui si verificano problemi di accesso, assicurati che il firmware del dispositivo si trovi nell'ultima versione fornita dal produttore.
+
+I risultati restituiti contengono le informazioni seguenti:
+
+- Ora in cui si è verificato l'errore di accesso.
+- L'account che ha tentato di accedere al dispositivo.
+- Il motivo dell'insuccesso.
+
 ### <a name="use-configuration-profiles-in-teams"></a>Usare i profili di configurazione in Teams
 
 Usare i profili di configurazione per gestire le impostazioni e le funzionalità per i diversi dispositivi Teams nell'organizzazione, tra cui Teams Rooms su Android, schermi di Teams, telefono Teams e pannelli teams. È possibile creare o caricare profili di configurazione per includere le impostazioni e le funzionalità da abilitare o disabilitare e quindi assegnare un profilo a un dispositivo o a un set di dispositivi. 
@@ -101,6 +118,7 @@ Per creare un profilo di configurazione per un tipo di dispositivo di Teams:
    Il profilo di configurazione appena creato viene visualizzato nell'elenco dei profili.
 
 #### <a name="assign-a-configuration-profile"></a>Assegnare un profilo di configurazione
+
 Dopo aver creato un profilo di configurazione per un tipo di dispositivo di Teams, assegnarlo a uno o più dispositivi.
 
 1. Nella barra di spostamento sinistra, passare a **Dispositivi di Teams** > selezionare il tipo di dispositivo di Teams. Ad esempio, per assegnare un profilo di configurazione a un dispositivo dei pannelli di Teams, selezionare **i pannelli Teams** **Dispositivi** >  di Teams.
