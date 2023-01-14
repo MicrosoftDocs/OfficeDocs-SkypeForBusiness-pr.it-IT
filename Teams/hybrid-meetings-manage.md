@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 2da5a097e98053ec60e6acd0ffa7133ddf732bac
-ms.sourcegitcommit: 957502f999512a32794a9f99e292588d66ed8a33
+ms.openlocfilehash: 1f406137d8cd3093ba968d47734f7019dfad63c6
+ms.sourcegitcommit: 1934c4803b5b6ae9b9ccd49e695944446d5d5810
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2022
-ms.locfileid: "67885706"
+ms.lasthandoff: 01/14/2023
+ms.locfileid: "69806391"
 ---
 # <a name="step-7---manage-and-monitor-your-teams-meeting-space"></a>Passaggio 7 - Gestire e monitorare l'area riunioni di Teams
 
@@ -31,7 +31,7 @@ ms.locfileid: "67885706"
 Dopo aver completato la configurazione dello spazio di Teams Rooms, è possibile passare alla gestione e al monitoraggio dei dispositivi in tale spazio. Puoi effettuare aggiornamenti di configurazione in remoto, inviare aggiornamenti a Teams Rooms console, monitorare la qualità delle chiamate e altro ancora. Usa le informazioni in questo articolo per gestire e monitorare le console Teams Rooms e le relative periferiche.
 
 > [!NOTE]
-> Questo articolo presuppone che sia stata acquistata una licenza Teams Rooms Pro per la console Teams Rooms. La licenza Teams Rooms Pro consente una gestione remota e un'analisi più avanzate per le console Teams Rooms. Se hai acquistato una licenza Teams Rooms Basic per la console, alcune funzionalità di gestione remota e analisi potrebbero non essere disponibili. Per una panoramica della disponibilità delle funzionalità per ogni licenza, vedere [Aggiornamento delle licenze per le sale riunioni di Teams](rooms/rooms-licensing.md).
+> Questo articolo presuppone che sia stata acquistata una licenza di Teams Rooms Pro per la console Teams Rooms. La licenza Teams Rooms Pro consente una gestione remota e un'analisi più avanzate per le console Teams Rooms. Se hai acquistato una licenza Teams Rooms Basic per la console, alcune funzionalità di gestione remota e analisi potrebbero non essere disponibili. Per una panoramica della disponibilità delle funzionalità per ogni licenza, vedere [Aggiornamento delle licenze per le sale riunioni di Teams](rooms/rooms-licensing.md).
 
 Con l'interfaccia di amministrazione di Microsoft Teams è possibile:
 
@@ -43,7 +43,7 @@ Con l'interfaccia di amministrazione di Microsoft Teams è possibile:
 
  :::image type="content" source="media/teams-admin-center-overview.png" alt-text="Pagina panoramica dell'interfaccia di amministrazione di Teams." lightbox="media/teams-admin-center-overview.png" border="false":::
 
-Per vedere quali Teams Rooms impostazioni della console è possibile modificare dall'interfaccia di amministrazione di Teams, vedere [Apportare modifiche ai dispositivi Teams Rooms](rooms/rooms-manage.md#make-changes-to-teams-rooms-devices).
+Per vedere quali Teams Rooms impostazioni della console è possibile modificare dall'interfaccia di amministrazione di Teams, vedere [Apportare modifiche ai dispositivi Teams Rooms](rooms/rooms-manage.md#make-changes-to-teams-rooms-devices-or-surface-hubs).
 
 Per visualizzare informazioni sulle console Teams Rooms, tra cui informazioni sull'integrità, i dettagli delle riunioni e i dettagli dei partecipanti, vedi [Visualizzare le informazioni sul dispositivo](rooms/rooms-manage.md#view-device-information).
 

@@ -16,16 +16,16 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Informazioni su come sviluppare ed eseguire interventi di manutenzione e operazioni continuativi per garantire che i sistemi Microsoft Teams Rooms siano disponibili per gli utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 977987cf0283008235a12fdfdda2ffc792c2e289
-ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
+ms.openlocfilehash: 36145202e12cd9b987b50efd6de3efe636c86ac2
+ms.sourcegitcommit: 1934c4803b5b6ae9b9ccd49e695944446d5d5810
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2022
-ms.locfileid: "69438274"
+ms.lasthandoff: 01/14/2023
+ms.locfileid: "69806371"
 ---
-# <a name="manage-microsoft-teams-rooms"></a>Gestire Microsoft Teams Rooms.
+# <a name="manage-microsoft-teams-rooms-and-surface-hubs"></a>Gestire Microsoft Teams Rooms e Surface Hub
 
-Se nell'organizzazione sono presenti Microsoft Teams Rooms, sono disponibili opzioni di gestione flessibili.  È possibile gestire i dispositivi autonomamente nella stessa posizione centrale in cui si gestiscono tutte le soluzioni Teams, l'interfaccia di amministrazione di Microsoft Teams.
+Se hai Microsoft Teams Rooms dispositivo o un Surface Hub nell'organizzazione, hai opzioni di gestione flessibili.  È possibile gestire i dispositivi autonomamente nella stessa posizione centrale in cui si gestiscono tutte le soluzioni Teams, l'interfaccia di amministrazione di Microsoft Teams.
 
 Con l'interfaccia di amministrazione di Microsoft Teams è possibile:
 
@@ -33,9 +33,9 @@ Con l'interfaccia di amministrazione di Microsoft Teams è possibile:
 - Applicare impostazioni specifiche di Teams
 - Controllare lo stato di integrità di Microsoft Teams Rooms e delle relative periferiche, incluse fotocamere, schermi, microfoni e così via
 - Esaminare le attività delle riunioni attuali e passate, ad esempio i dettagli sulla qualità delle chiamate, l'integrità e la connettività di rete e il numero di partecipanti.
-- Vedi le periferiche (ad esempio fotocamere e proiettori) collegate a Microsoft Teams Rooms
+- Vedi le periferiche (ad esempio fotocamere e proiettori) collegate a Microsoft Teams Rooms (solo per Teams Rooms in Windows)
 
-Per gestire Teams Rooms dispositivi, aprire [l'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com) e passare a **Dispositivi** >  di Teams **Teams Rooms in Windows**.
+Per gestire Teams Rooms dispositivi, aprire [l'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com) e passare a **Dispositivi** >  Teams **Teams Rooms su Windows** o **Surface Hub**.
 
 :::image type="content" source="../media/teams-rooms-summary2.png" alt-text="Teams Rooms pagina di riepilogo nell'interfaccia di amministrazione di Teams.":::
 
@@ -43,13 +43,13 @@ Per gestire Teams Rooms dispositivi, aprire [l'interfaccia di amministrazione di
 > [!IMPORTANT]
 > Per gestire i dispositivi usando l'interfaccia di amministrazione di Teams, è necessario avere il ruolo amministratore globale, amministratore di Teams o amministratore dei dispositivi di Teams.
 
-## <a name="make-changes-to-teams-rooms-devices"></a>Apportare modifiche ai dispositivi Teams Rooms
+## <a name="make-changes-to-teams-rooms-devices-or-surface-hubs"></a>Apportare modifiche ai dispositivi Teams Rooms o a Surface Hub
 
-Se hai più di un Teams Rooms, puoi eseguire la maggior parte delle azioni su più dispositivi contemporaneamente. Ad esempio, è possibile impostare contemporaneamente le impostazioni dell'app Teams in tutti i Teams Rooms.
+Se hai più di un dispositivo Teams Rooms o Surface Hub, puoi eseguire la maggior parte delle azioni su più dispositivi contemporaneamente. Ad esempio, è possibile impostare contemporaneamente le impostazioni dell'app Teams in tutti i Teams Rooms.
 
 ### <a name="device-settings"></a>Impostazioni dispositivo
 
-È possibile modificare le impostazioni in uno o più Teams Rooms dell'organizzazione. Per modificare le impostazioni, seleziona il dispositivo o i dispositivi che vuoi gestire, quindi seleziona **Modifica impostazioni**. Verrà aperto un nuovo riquadro con tutte le impostazioni modificabili. La tabella seguente elenca le impostazioni che è possibile modificare usando l'interfaccia di amministrazione di Teams. Alcune impostazioni sono disponibili solo quando si seleziona una singola Teams Rooms.
+Puoi modificare le impostazioni in uno o più Teams Rooms o Surface Hub nell'organizzazione. Per modificare le impostazioni, seleziona il dispositivo o i dispositivi che vuoi gestire, quindi seleziona **Modifica impostazioni**. Verrà aperto un nuovo riquadro con tutte le impostazioni modificabili. La tabella seguente elenca le impostazioni che è possibile modificare usando l'interfaccia di amministrazione di Teams. Alcune impostazioni sono disponibili solo quando si seleziona una singola Teams Rooms.
 
 Se si selezionano più impostazioni, le impostazioni che supportano la modifica in blocco mostrano le due opzioni seguenti.
 
@@ -60,51 +60,53 @@ Se si selezionano più impostazioni, le impostazioni che supportano la modifica 
     >
     > Se selezioni più Teams Rooms, l'impostazione in tutti i dispositivi selezionati verrà impostata sul valore specificato. Se Teams Rooms hanno valori diversi per un'impostazione, verranno tutti aggiornati allo stesso valore.
 
-| Impostazione                                                      | Valori accettati                                        | Supporta la modifica in blocco |
-|--------------------------------------------------------------|--------------------------------------------------------|--------------------|
-| *Account*                                                    |                                                        |                    |
-| **Email**                                                    | indirizzo Email                                          | No                 |
-| **Modalità riunione supportata**                                   | Solo Microsoft Teams<br>Skype for Business (impostazione predefinita) e Microsoft Teams<br>Skype for Business e Microsoft Teams (impostazione predefinita)<br>solo Skype for Business|Sì|
-| **Autenticazione moderna**                                    | Attivato<br>Disattivato                                              | Sì                |
-| **Indirizzo di Exchange**                                         | indirizzo Email                                          | No                 |
-| **Dominio\nomeutente (facoltativo)**                               | Dominio account e nome utente                           | No                 |
-| **Configurare il dominio**                                         | Elenco separato da virgole                                   | Sì                |
-| *Riunioni*                                                   |                                                        |                    |
-| **Condivisione automatica dello schermo**                                 | Attivato<br>Disattivato                                              | Sì                |
-| **Condivisione audio in ingresso HDMI**                                 | Attivato<br>Disattivato                                              | Sì                |
-| **Visualizzare i nomi delle riunioni**                                       | Attivato<br>Disattivato                                              | Sì                |
-| **Uscita automatica se tutti gli altri hanno lasciato la riunione**                 | Attivato<br>Disattivato                                              | Sì                |
-| **Partecipare a riunioni di terze parti**                 | Cisco Webex<br>Zoom                                              | Sì                |
-| **Partecipare con le informazioni sulla sala**                 | Selezionato<br>Deselezionata                                              | Sì                |
-| **Partecipa con info personalizzate**                 | Selezionato<br>Deselezionata                                              | Sì                |
-| **Nome (obbligatorio)**                 | Nome della stanza o dello spazio                                              | Sì                |
-| **Email (obbligatorio)**                 | indirizzo Email                                              | Sì                |
-| *Dispositivo*                                                     |                                                        |                    |
-| **Modalità doppio monitor**                                        | Attivato<br>Disattivato                                              | Sì                |
-| **Consentire la duplicazione del contenuto** | Selezionato<br>Deselezionata                                 | Sì                |
-| **Beaconing Bluetooth**                                      | Attivato<br>Disattivato                                              | Sì                |
-| **Accettare automaticamente inviti alle riunioni in base alla prossimità** | Selezionato<br>Deselezionata                                 | Sì                |
-| **Inviare log con feedback**                                  | Attivato<br>Disattivato                                              | Sì                |
-| **indirizzo Email per i log e il feedback**                      | indirizzo Email                                          | Sì                |
-| *Coordinare riunioni*                                                     |                                                        |                    |
-| **Riunioni coordinate** | Attivato<br>Disattivato                                 | No                |
-| **Attivare il microfono del dispositivo** | Attivato<br>Disattivato                                 | No                |
-| **Consentire agli utenti di abilitare l'accesso a una riunione** | Selezionato<br>Deselezionata                                 | No                |
-| **Attivare la fotocamera del dispositivo** | Attivato<br>Disattivato                                 | No                |
-| **Consentire agli utenti di abilitare l'accesso a una riunione** | Selezionato<br>Deselezionata                                 | No                |
-| **Attivare la lavagna per questo dispositivo** | Attivato<br>Disattivato                                 | No                |
-| **Account di dispositivo attendibili (separati da virgole)** | Elenco dei dispositivi                              | No                |
-| *Periferiche*                                                |                                                        |                    |
-| **Microfono per conferenze**                                  | Elenco dei microfoni disponibili                          | No                 |
-| **Altoparlante conferenza**                                     | Elenco degli altoparlanti disponibili                             | No                 |
-| **Volume predefinito**                                           | 0-100                                                  | No                 |
-| **Altoparlante predefinito**                                          | Elenco degli altoparlanti disponibili                             | No                 |
-| **Volume predefinito**                                           | 0-100                                                  | No                 |
-| **Fotocamera contenuto**                                           | Elenco delle fotocamere disponibili                              | No                 |
-| **Miglioramenti apportati alla fotocamera contenuto**                              | Attivato<br>Disattivato                                              | No                 |
-| **Ruotare la fotocamera del contenuto di 180 gradi**                        | Attivato<br>Disattivato                                              | No                 |
-| *Temi*                                                    |                                                        |                    |
-|                                                              | Predefinito<br>Nessun tema<br>Personalizzato<br>Elenco di temi predefiniti   | Sì                |
+| Impostazione                                                      | Valori accettati                                        | Supporta la modifica in blocco | Tipi di dispositivo supportati |
+|--------------------------------------------------------------|--------------------------------------------------------|--------------------|------------------------|
+| *Account*                                                    |                                                        |                    | Teams Rooms in Windows |
+| **Email**                                                    | indirizzo Email                                          | No                 | Teams Rooms in Windows |
+| **Modalità riunione supportata**                                   | Solo Microsoft Teams<br>Skype for Business (impostazione predefinita) e Microsoft Teams<br>Skype for Business e Microsoft Teams (impostazione predefinita)<br>solo Skype for Business|Sì| Teams Rooms in Windows |
+| **Autenticazione moderna**                                    | Attivato<br>Disattivato                                              | Sì                | Teams Rooms in Windows |
+| **Indirizzo di Exchange**                                         | indirizzo Email                                          | No                 | Teams Rooms in Windows |
+| **Dominio\nomeutente (facoltativo)**                               | Dominio account e nome utente                           | No                 | Teams Rooms in Windows |
+| **Configurare il dominio**                                         | Elenco separato da virgole                                   | Sì                | Teams Rooms in Windows |
+| *Riunioni*                                                   |                                                        |                    | Teams Rooms su Windows, Surface Hub |
+| **Condivisione automatica dello schermo**                                 | Attivato<br>Disattivato                                              | Sì                | Teams Rooms in Windows |
+| **Condivisione audio in ingresso HDMI**                                 | Attivato<br>Disattivato                                              | Sì                | Teams Rooms in Windows |
+| **Visualizzare i nomi delle riunioni**                                       | Attivato<br>Disattivato                                              | Sì                | Teams Rooms in Windows |
+| **Uscita automatica se tutti gli altri hanno lasciato la riunione**                 | Attivato<br>Disattivato                                              | Sì                | Teams Rooms in Windows |
+| **Partecipare a riunioni di terze parti**                 | Cisco Webex<br>Zoom                                              | Sì                | Teams Rooms su Windows, Surface Hub |
+| **Partecipare con le informazioni sulla sala**                 | Selezionato<br>Deselezionata                                              | Sì                | Teams Rooms su Windows, Surface Hub |
+| **Partecipa con info personalizzate**                 | Selezionato<br>Deselezionata                                              | Sì                | Teams Rooms in Windows |
+| **Nome (obbligatorio)**                 | Nome della stanza o dello spazio                                              | Sì                | Teams Rooms in Windows |
+| **Email (obbligatorio)**                 | indirizzo Email                                              | Sì                | Teams Rooms in Windows |
+| *Dispositivo*                                                     |                                                        |                    | Teams Rooms in Windows |
+| **Modalità doppio monitor**                                        | Attivato<br>Disattivato                                              | Sì                | Teams Rooms in Windows |
+| **Consentire la duplicazione del contenuto** | Selezionato<br>Deselezionata                                 | Sì                | Teams Rooms in Windows |
+| **Beaconing Bluetooth**                                      | Attivato<br>Disattivato                                              | Sì                | Teams Rooms su Windows, Surface Hub |
+| **Accettare automaticamente inviti alle riunioni in base alla prossimità** | Selezionato<br>Deselezionata                                 | Sì                | Teams Rooms su Windows, Surface Hub |
+| **Inviare log con feedback**                                  | Attivato<br>Disattivato                                              | Sì                | Teams Rooms in Windows |
+| **indirizzo Email per i log e il feedback**                      | indirizzo Email                                          | Sì                | Teams Rooms in Windows |
+| *Coordinare riunioni*                                                     |                                                        |                    | Teams Rooms in Windows |
+| **Riunioni coordinate** | Attivato<br>Disattivato                                 | No                | Teams Rooms su Windows, Surface Hub |
+| **Attivare il microfono del dispositivo** | Attivato<br>Disattivato                                 | No                | Teams Rooms su Windows, Surface Hub |
+| **Consentire agli utenti di abilitare l'accesso a una riunione** | Selezionato<br>Deselezionata                                 | No                | Teams Rooms su Windows, Surface Hub |
+| **Attivare la fotocamera del dispositivo** | Attivato<br>Disattivato                                 | No                | Teams Rooms su Windows, Surface Hub |
+| **Consentire agli utenti di abilitare l'accesso a una riunione** | Selezionato<br>Deselezionata                                 | No                | Teams Rooms su Windows, Surface Hub |
+| **Attivare la lavagna per questo dispositivo** | Attivato<br>Disattivato                                 | No                | Teams Rooms su Windows, Surface Hub |
+| **Account di dispositivo attendibili (separati da virgole)** | Elenco dei dispositivi                              | No                | Teams Rooms su Windows, Surface Hub |
+| *Periferiche*                                                |                                                        |                    | Teams Rooms in Windows |
+| **Microfono per conferenze**                                  | Elenco dei microfoni disponibili                          | No                 | Teams Rooms in Windows |
+| **Altoparlante conferenza**                                     | Elenco degli altoparlanti disponibili                             | No                 | Teams Rooms in Windows |
+| **Volume predefinito**                                           | 0-100                                                  | No                 | Teams Rooms in Windows |
+| **Altoparlante predefinito**                                          | Elenco degli altoparlanti disponibili                             | No                 | Teams Rooms in Windows |
+| **Volume predefinito**                                           | 0-100                                                  | No                 | Teams Rooms in Windows |
+| **Fotocamera contenuto**                                           | Elenco delle fotocamere disponibili                              | No                 | Teams Rooms in Windows |
+| **Miglioramenti apportati alla fotocamera contenuto**                              | Attivato<br>Disattivato                                              | No                 | Teams Rooms in Windows |
+| **Ruotare la fotocamera del contenuto di 180 gradi**                        | Attivato<br>Disattivato                                              | No                 | Teams Rooms in Windows |
+| *Temi*                                                    |                                                        |                    | Teams Rooms in Windows |
+|                                                              | Predefinito<br>Nessun tema<br>Personalizzato<br>Elenco di temi predefiniti   | Sì                | Teams Rooms in Windows |
+
+Vedi [Gestire la configurazione di Microsoft Teams su Surface Hub](surface-hub-manage-config.md) per altre opzioni di configurazione di Surface Hub.
 
 ### <a name="cortana-settings"></a>Impostazioni di Cortana
 
@@ -128,7 +130,7 @@ Per altre informazioni sulla gestione di Front Row, vedere [Problemi noti](known
 
 ## <a name="device-restart-options"></a>Opzioni di riavvio del dispositivo
 
-Le modifiche alle impostazioni del dispositivo avranno effetto solo dopo il riavvio di Teams Rooms. Quando apporti modifiche che richiedono un riavvio, puoi scegliere se riavviarlo immediatamente o pianificare un riavvio. Ecco le opzioni di riavvio disponibili:
+Le modifiche alle impostazioni del dispositivo avranno effetto solo dopo il riavvio del dispositivo. Quando apporti modifiche che richiedono un riavvio, puoi scegliere se riavviarlo immediatamente o pianificare un riavvio. Ecco le opzioni di riavvio disponibili:
 
 - **Riavvio immediato** Se scegli questa opzione, tutti i dispositivi a cui stai apportando modifiche verranno riavviate non appena selezioni questa opzione.
 - **Riavvio pianificato** Se scegli questa opzione, puoi riavviare i dispositivi a cui stai apportando modifiche in un momento meno fastidioso per l'organizzazione.
@@ -136,17 +138,17 @@ Le modifiche alle impostazioni del dispositivo avranno effetto solo dopo il riav
   - **Lascia l'aggiornamento per il riavvio notturno** I dispositivi vengono riavviati ogni notte per eseguire la manutenzione. Le modifiche apportate ai dispositivi verranno applicate durante questo riavvio.
 
 > [!CAUTION]
-> Teams Rooms in uso al momento del riavvio non saranno disponibili per la durata del processo di riavvio. Verranno disconnessi dalle riunioni in corso e non saranno disponibili per partecipare a nuove riunioni.
+> Teams Rooms e Surface Hub in uso al momento del riavvio non saranno disponibili per la durata del processo di riavvio. Verranno disconnessi dalle riunioni in corso e non saranno disponibili per partecipare a nuove riunioni durante il riavvio del dispositivo.
 
 ## <a name="remove-device"></a>Rimuovi dispositivo
 
-Quando si rimuove un dispositivo, il dispositivo viene rimosso dall'organizzazione e non viene più visualizzato nell'elenco di Teams Rooms in Windows nell'interfaccia di amministrazione di Teams.
+Quando si rimuove un dispositivo, il dispositivo viene rimosso dall'organizzazione e non viene più visualizzato nell'elenco di Teams Rooms su Windows o Surface Hub nell'interfaccia di amministrazione di Teams.
 
-Se rimuovi un dispositivo che è ancora configurato con un nome utente e una password validi, verrà aggiunto di nuovo all'elenco di Teams Rooms se si connette di nuovo a Microsoft 365.
+Se rimuovi un dispositivo che è ancora configurato con un nome utente e una password validi, verrà aggiunto di nuovo automaticamente all'elenco di Teams Rooms o Surface Hub se si connette di nuovo a Microsoft 365.
 
 Per rimuovere uno o più dispositivi, eseguire le operazioni seguenti:
 
-1. Passare a **Dispositivi** >  di Teams **Teams Rooms in Windows** e selezionare i dispositivi da rimuovere.
+1. Passare a **Dispositivi di** >  Teams **Teams Rooms su Windows** o **Surface Hub** e selezionare i dispositivi da rimuovere.
 2. Seleziona **Rimuovi**.
 
 ## <a name="download-device-logs"></a>Scaricare i log dei dispositivi
@@ -155,7 +157,7 @@ Se richiesto dal supporto tecnico Microsoft, è possibile scaricare una copia de
 
 Per scaricare i log da un dispositivo Teams Rooms nel computer, eseguire le operazioni seguenti:
 
-1. Vai a **Dispositivi** >  di Teams **Teams Rooms in Windows** e seleziona il nome del dispositivo da cui vuoi scaricare i log.
+1. Vai a **Dispositivi di** >  Teams **Teams Rooms su Windows** o **Surface Hub** e seleziona il nome del dispositivo da cui vuoi scaricare i log.
 1. Selezionare **Scarica registri dispositivi**. La disponibilità dei log dei dispositivi può richiedere alcuni minuti.
 1. Selezionare la scheda **Cronologia** e quindi selezionare il collegamento al file di log in **File di diagnostica**. Nella cartella Download predefinita del browser verrà scaricato un file ZIP contenente i file di log diagnostici del dispositivo.
 
@@ -171,18 +173,18 @@ Il dashboard di sistema Teams Rooms mostra a colpo d'occhio lo stato e l'integri
 
 Per visualizzare informazioni dettagliate su un dispositivo, selezionane il nome nell'elenco dei dispositivi. Nella visualizzazione dettagli, è possibile visualizzare le informazioni seguenti sul dispositivo:
 
-- **Stato di integrità** Mostra l'integrità generale del dispositivo Teams Rooms. Lo stato di integrità può essere **Sano** o **Non sano**.
+- **Stato di integrità** Mostra l'integrità complessiva del dispositivo Teams Rooms o Surface Hub. Lo stato di integrità può essere **Integro**, **Non urgente**, **Critico** o **Offline**.
 - **Offline da** Mostra l'ultima volta che Microsoft 365 è riuscito a comunicare con il dispositivo.
-- **Stato dispositivo** Mostra lo stato corrente del dispositivo: **Inattivo**, **Riunione di Teams**, **Riunione Skype** o **Ingest**.
-- **Periferiche** Mostra le periferiche connesse al dispositivo Teams Rooms e il loro stato di integrità. Lo stato di integrità può essere **Connesso** o **Disconnesso**.
+- **Stato utilizzo** Mostra lo stato corrente del dispositivo: **Inattivo**, **Occupato** o **Non disponibile**. Solo per Teams Rooms in Windows.
+- **Periferiche** Mostra le periferiche connesse al dispositivo Teams Rooms e il loro stato di integrità. Lo stato di integrità può essere **Connesso** o **Disconnesso**. Solo per Teams Rooms in Windows.
 - **Salute** Mostra informazioni dettagliate sulle periferiche connesse al dispositivo Teams Rooms, alla connettività di rete, allo stato di accesso ai servizi necessari e alle informazioni sulla versione del software.
 - **Dettagli** Mostra le informazioni sul produttore, l'indirizzo IP di rete e Teams Rooms indirizzo seriale/MAC del dispositivo.
 - **Attività** Mostra i dettagli della riunione passati, tra cui data e ora della riunione, numero di partecipanti, durata e qualità audio. Per altre informazioni sui dettagli delle riunioni, vedere la sezione [Dettagli attività riunione](#meeting-activity-details) più avanti in questo articolo.
-- **Storia** Mostra una cronologia delle attività di gestione nel dispositivo Teams Rooms, inclusi gli aggiornamenti di configurazione, i riavvii dei dispositivi e i collegamenti per il download dei log dei dispositivi.
+- **Storia** Mostra una cronologia delle attività di gestione nel dispositivo Teams Rooms o Surface Hub, inclusi gli aggiornamenti di configurazione, i riavvii dei dispositivi e i collegamenti per il download del log dei dispositivi.
 
 #### <a name="meeting-activity-details"></a>Dettagli attività riunione
 
-La scheda **Attività** in Teams Rooms dettagli del dispositivo mostra informazioni dettagliate e di alto livello su tutte le riunioni a cui il dispositivo ha partecipato nel tempo. Nella scheda **Attività** è possibile vedere quando si è tenuta una riunione, quanti partecipanti hanno partecipato alla riunione e la qualità dell'audio durante la riunione.
+La scheda **Attività** nei dettagli del dispositivo mostra informazioni dettagliate e di alto livello su tutte le riunioni a cui il dispositivo ha partecipato nel tempo. Nella scheda **Attività** è possibile vedere quando si è tenuta una riunione, quanti partecipanti hanno partecipato alla riunione e la qualità dell'audio durante la riunione.
 
 :::image type="content" source="../media/teams-rooms-meeting-activity-summary.png" alt-text="Teams Rooms elenco di riepilogo delle attività del dispositivo.":::
 
