@@ -28,12 +28,12 @@ adobe-target-activity: DocsExp–480823–A/B–Docs/TeamsSteps–HowToTabs–FY
 adobe-target-experience: Experience B
 adobe-target-content: ./create-a-phone-system-call-queue-experiment
 description: Informazioni su come configurare le code di chiamata in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: 4b12b1e89b11902299f973a97bdace44a841029e
-ms.sourcegitcommit: ae687f530d5505b96df7cb7ef4da3a36bd9afd29
+ms.openlocfilehash: b7bb107dc87ababd9c514655521525b6997fac29
+ms.sourcegitcommit: 95a56dab4e30f7ad6615ebd4a4a0f61996fdc20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2023
-ms.locfileid: "69763567"
+ms.lasthandoff: 01/17/2023
+ms.locfileid: "69812723"
 ---
 # <a name="create-a-call-queue-in-microsoft-teams"></a>Creare una coda di chiamata in Microsoft Teams
 
@@ -400,10 +400,10 @@ Sono consigliate le impostazioni seguenti:
 2. App Microsoft Teams per iPhone, app Microsoft Teams per Android.
 3. Se si seleziona Inattività più lunga per il metodo di routing dell'agente, verrà automaticamente abilitato il routing basato sulla presenza.
 4. Non è possibile impostare l'ordine in cui verranno chiamati gli agenti.
-5. La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
+5. La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per Location-Based Routing. Per l'implementazione della coda di chiamata con Location-Based Routing vedere [App vocali (Operatore automatico o Coda di chiamata).For call queue implementation with Location-Based Routing see, Voice apps (Auto Attendant or Call Queue)](location-based-routing-plan.md#inbound-calls-through-voice-apps-auto-attendant-or-call-queue).
 6. Telefono di Microsoft Teams Solo sistema.
 7. Tramite la pagina portale delle impostazioni utente all'indirizzo [https://aka.ms/vmsettings](https://aka.ms/vmsettings).
-8. Sono supportati solo i canali pubblici.
+8. Sono supportati solo i canali standard.
 9. Gli operatori automatici e le code di chiamata non possono trasferire le chiamate tra i metodi di connettività PSTN.
 10. Per GCCH/DOD, disponibile solo tramite il portale delle impostazioni utente all'indirizzo:
 - GCCH: [https://dialin.cpc.gov.teams.microsoft.us/usp](https://dialin.cpc.gov.teams.microsoft.us/usp)

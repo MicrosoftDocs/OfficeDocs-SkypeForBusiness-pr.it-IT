@@ -22,12 +22,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e da conferenza sono certificati per Microsoft Teams per produrre i migliori risultati.
-ms.openlocfilehash: 4117cffe61e10c968cb92777ab5158732a62df21
-ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
+ms.openlocfilehash: 26d5e0c4ec5255629183f4720fcfca6b816f86db
+ms.sourcegitcommit: 95a56dab4e30f7ad6615ebd4a4a0f61996fdc20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2022
-ms.locfileid: "69438284"
+ms.lasthandoff: 01/17/2023
+ms.locfileid: "69812833"
 ---
 # <a name="microsoft-teams-certified-android-devices"></a>Dispositivi Android certificati da Microsoft Teams
 
@@ -63,7 +63,6 @@ I seguenti dispositivi sono certificati nell'ambito del programma di certificazi
 | AudioCodes C435HD                      | `1.12.33`                                                  | 5 agosto 2023               | 9 |
 | AudioCodes C455HD                      | `1.14.404`                                                 | 5 agosto 2023               | 9 |
 | Crestron UC-2                          |`1.0.1.46`                                                  | 5 agosto 2023               | 9 |
-| Lenovo ThinkSmart View                 | `CD-18781Y.200410.067`                                     | 5 dicembre 2022             | 8.1 |
 | Poly Trio C60, Trio C60 NR, Trio C60 ND | `5.9.3.6155`                                              | 5 agosto 2023               | 9 |
 | Poly CCX400                            | `1.0.0.0200`                                               | 5 agosto 2023               | 9 |
 | Poly CCX600                            | `5.9.12.1122`                                              | 5 agosto 2023               | 9 |
@@ -113,7 +112,6 @@ I seguenti dispositivi sono certificati nell'ambito del programma di certificazi
 | Neat Frame nf21f1 | `NFF1.20220914.1210` | 3 settembre 2024 | 10 |
 | Crestron UC-P8-TD |`1.0.0.42`| 5 agosto 2023 |  9  |
 | Crestron UC-P10-TD |`1.0.0.42`| 5 agosto 2023 |  9  |
-|Lenovo ThinkSmart View|`CD-18781Y.201006.099`| 5 dicembre 2022 |  8.1  |
 
 ## <a name="certified-teams-panels"></a>Pannelli di Teams certificati
 I seguenti dispositivi sono certificati nell'ambito del programma di certificazione per i pannelli Di Microsoft Teams:

@@ -16,12 +16,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a5a05dbc6519c4f90cf0cc0d49e996467bf10230
-ms.sourcegitcommit: 321de0e5d8846caaaab944826f6ca06394e707ef
+ms.openlocfilehash: 6cf7bf4040a75e59518312edd32c9c4e77f11728
+ms.sourcegitcommit: 95a56dab4e30f7ad6615ebd4a4a0f61996fdc20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2022
-ms.locfileid: "69414724"
+ms.lasthandoff: 01/17/2023
+ms.locfileid: "69812713"
 ---
 # <a name="direct-routing---sip-protocol"></a>Direct Routing - Protocollo SIP
 
@@ -336,7 +336,7 @@ Se si invia, il History-Info è abilitato come indicato di seguito:
   > [!NOTE]
   > Le voci private (determinate dai meccanismi definiti nella sezione 3.3 della RFC 4244) verranno inoltrate così come sono perché il provider di trunk SIP è un peer attendibile.
 
-- I History-Info in ingresso vengono ignorati.
+- Il History-Info in ingresso viene mantenuto quando il parametro ForwardCallHistory è abilitato. Per la prevenzione dei cicli, è possibile preservare History-Info.
 
 Di seguito è riportato il formato dell'intestazione History-info inviata dal proxy SIP:
 

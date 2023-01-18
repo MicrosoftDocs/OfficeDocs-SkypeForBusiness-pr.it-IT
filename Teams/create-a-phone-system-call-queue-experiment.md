@@ -25,12 +25,12 @@ ms.custom:
 - Phone System - seo-marvel-apr2020
 robots: noindex
 description: Informazioni su come configurare le code di chiamata in Microsoft Teams. Le code di chiamata forniscono un messaggio di saluto, tengono musica, reindirizzamento chiamate e altre funzionalità.
-ms.openlocfilehash: 9750bfddbf43c1b0e103e6d6c31feaf4aa542590
-ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
+ms.openlocfilehash: fd7ebc4c2be9024ba1f83b3adc8d1cff8834a015
+ms.sourcegitcommit: 95a56dab4e30f7ad6615ebd4a4a0f61996fdc20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2022
-ms.locfileid: "69392526"
+ms.lasthandoff: 01/17/2023
+ms.locfileid: "69812853"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -384,7 +384,7 @@ Sono consigliate le impostazioni seguenti:
 5. La modalità conferenza non è supportata se le telefonate vengono instradate alla coda da un gateway di routing diretto abilitato per il routing basato sulla posizione.
 6. solo Telefono di Microsoft Teams.
 7. Tramite la pagina portale delle impostazioni utente all'indirizzo [https://aka.ms/vmsettings](https://aka.ms/vmsettings).
-8. Sono supportati solo i canali pubblici.
+8. Sono supportati solo i canali standard.
 9. Gli operatori automatici e le code di chiamata non possono trasferire le chiamate tra i metodi di connettività PSTN.
 10. Per GCCH/DOD, disponibile solo tramite il portale delle impostazioni utente all'indirizzo:
     - GCCH: [https://dialin.cpc.gov.teams.microsoft.us/usp](https://dialin.cpc.gov.teams.microsoft.us/usp)

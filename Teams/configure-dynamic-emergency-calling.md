@@ -19,12 +19,12 @@ description: Scopri come configurare la funzionalità chiamate di emergenza dina
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c3ad0b4af1ad32cf59673fe2e4f0eab3d1f83a18
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: 1061adf81b8e9ae84ad028a5047636b6fee7a959
+ms.sourcegitcommit: 052e4b3982b0b8ee7d4edc47da4d63b35518a757
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68583887"
+ms.lasthandoff: 01/18/2023
+ms.locfileid: "69814358"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -43,7 +43,7 @@ Per le chiamate di emergenza dinamiche, è necessario che si verifichi quanto se
    - Se esiste una corrispondenza del sito delle impostazioni di rete, i criteri per le chiamate di emergenza vengono restituiti al client Teams da quel sito. Per altre informazioni sui criteri, vedere [Configurare i criteri di emergenza](#configure-emergency-policies).
 
    - Se c'è una corrispondenza LIS: una posizione per gli interventi di emergenza dall'elemento di rete a cui è connesso il client Teams viene restituita al client teams. La corrispondenza viene eseguita nell'ordine seguente con il primo risultato corrispondente restituito:
-       - Wap
+       - WAP
        - Switch/porta Ethernet
        - Interruttore Ethernet
        - Subnet
@@ -248,9 +248,9 @@ La tabella seguente mostra il supporto per le chiamate di emergenza dinamiche ne
 | Cloud | Disponibilità |
 | :------------|:-------|
 | World Wide Multi Tenant | Disponibile in tutti i client di Teams |
-| Gcc | Disponibile in tutti i client di Teams |
+| GCC | Disponibile in tutti i client di Teams |
 | GCCH | -Disponibile su Teams desktop <br> -Disponibile nei client mobili di Teams <br> -Disponibile sui telefoni Teams, versione dell'app: 1449/1.0.94.2022061702 |
-| Dod | In sospeso |
+| Dod | -Disponibile su Teams desktop <br>-Disponibile nei client mobili di Teams <br>-In sospeso sui telefoni di Teams |
 
  ## <a name="related-topics"></a>Argomenti correlati
 

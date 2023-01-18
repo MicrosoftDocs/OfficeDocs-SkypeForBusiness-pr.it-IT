@@ -20,12 +20,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come configurare le impostazioni di rete per le funzionalità voce cloud in Microsoft Teams.
-ms.openlocfilehash: a75ce05a29df84bb46cb430016e1a3453e96b64e
-ms.sourcegitcommit: cbcf37f395832bed871fe709b87c6eecb1fdfd72
+ms.openlocfilehash: bdb81fa7f8dee559f7c47e276224ecb2333c7bb5
+ms.sourcegitcommit: 95a56dab4e30f7ad6615ebd4a4a0f61996fdc20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2022
-ms.locfileid: "68584247"
+ms.lasthandoff: 01/17/2023
+ms.locfileid: "69812693"
 ---
 # <a name="manage-your-network-topology-for-cloud-voice-features-in-microsoft-teams"></a>Gestire la topologia di rete per le funzionalità di voce cloud in Microsoft Teams
 
@@ -180,6 +180,12 @@ New-CsTenantTrustedIPAddress -IPAddress 198.51.100.0 -MaskBits 30 -Description "
 ```
 
 Vedere anche [Set-CsTenantTrustedIPAddress](/powershell/module/skype/set-cstenanttrustedipaddress).
+
+## <a name="enabling-network-roaming-policies"></a>Abilitazione dei criteri di roaming di rete
+
+Dopo aver configurato i criteri di roaming di rete, è necessario abilitare la **ricerca della configurazione** di rete in ognuno dei criteri _ *Meeting** nel Centro Amministrazione teams in **Criteri riunione > riunioni.**
+
+È possibile modificare il criterio globale oppure creare un nuovo criterio e assegnarlo a utenti specifici.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

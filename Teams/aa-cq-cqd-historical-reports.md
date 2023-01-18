@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 description: Informazioni su come usare l'operatore automatico di Teams aggiornato & report storico sulla coda di chiamata di Power BI per visualizzare i dati cronologici di Operatore automatico e Coda di chiamata.
-ms.openlocfilehash: ed267cf2d96f15236aa68339049d2c721249ec00
-ms.sourcegitcommit: ae687f530d5505b96df7cb7ef4da3a36bd9afd29
+ms.openlocfilehash: 0ff8e7d1b5a1b9901c5b8a5da49d67fbf8ac5275
+ms.sourcegitcommit: 95a56dab4e30f7ad6615ebd4a4a0f61996fdc20f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/10/2023
-ms.locfileid: "69763557"
+ms.lasthandoff: 01/17/2023
+ms.locfileid: "69812733"
 ---
 # <a name="auto-attendant-and-call-queue-historical-reports"></a>Report cronologici dell'operatore automatico e della coda di chiamata
 
@@ -302,9 +302,13 @@ Sarà necessario aggiornare i dati per visualizzare i nuovi dati.
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Le code di chiamata e gli operatori automatici sono mostrati dall'ID dell'account della risorsa invece che dai nomi della coda di chiamata/operatore automatico.  Per mostrare tutto il traffico per un operatore automatico o una coda di chiamata, è necessario selezionare tutti gli account delle risorse assegnati all'operatore automatico o alla coda di chiamata.
+- L'oggetto visivo **Risultati chiamata** nel report **Coda di chiamata** può segnalare un numero elevato di chiamate **_sconosciute_** . Ciò è dovuto a un problema di classificazione delle chiamate che il supporto sta lavorando per correggere.  Si tratta solo di un problema di classificazione delle chiamate e queste chiamate sono state elaborate correttamente dal sistema.
 
-- Solo 28 giorni di cronologia sono disponibili nel dashboard in quanto i dati della coda di chiamata/dell'operatore automatico sono considerati dati personali ed è soggetto a criteri di conservazione della privacy dei dati.
+- Vengono riportate solo le azioni di chiamate e chiamanti nel primo operatore automatico o coda di chiamata che risponde alla chiamata.  Le chiamate e le azioni del chiamante negli operatori automatici incatenato (quando un operatore automatico si trasferisce a un altro operatore automatico) o le code di chiamata incatenato (quando una coda di chiamata si trasferisce a un'altra coda di chiamata) non vengono segnalate. 
+
+- Le code di chiamata e gli operatori automatici sono mostrati dall'ID dell'account della risorsa invece che dai nomi della coda di chiamata o dell'operatore automatico.  Per mostrare tutto il traffico per un operatore automatico o una coda di chiamata, è necessario selezionare tutti gli account delle risorse assegnati all'operatore automatico o alla coda di chiamata.
+
+- Solo 28 giorni di cronologia sono disponibili nel dashboard come coda di chiamata e i dati dell'operatore automatico sono considerati dati personali ed è soggetto ai criteri di conservazione della privacy dei dati.
 
 - In alcuni scenari, l'agente ha risposto al numero di chiamate nel rapporto **Sequenza temporale agente coda di chiamata cloud** può essere diverso rispetto al numero di chiamate mostrate nella cronologia chiamate client di Teams. La cronologia delle chiamate del client di Teams è corretta. Il supporto è in fase di analisi, ma al momento non è disponibile alcun tempo stimato per la riparazione.
 
