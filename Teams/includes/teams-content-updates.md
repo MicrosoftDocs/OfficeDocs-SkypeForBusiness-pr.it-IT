@@ -3,6 +3,42 @@
 
 
 
+## <a name="week-of-january-09-2023"></a>Settimana del 9 gennaio 2023
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 1/9/2023 | [Ritirare Microsoft Teams gratuito (classico) per l'organizzazione](/MicrosoftTeams/teams-add-on-licensing/remove-assign-free-licenses) | Aggiunto |
+| 1/9/2023 | [Recuperare numeri di telefono per gli utenti](/MicrosoftTeams/getting-phone-numbers-for-your-users) | Volta |
+| 1/9/2023 | [Ottenere i numeri di telefono di servizio per i piani per chiamate](/MicrosoftTeams/getting-service-phone-numbers) | Volta |
+| 1/9/2023 | [Gestire i numeri di telefono per il piano per chiamate](/MicrosoftTeams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization) | Volta |
+| 1/9/2023 | [Inviare manualmente un ordine di portabilità](/MicrosoftTeams/phone-number-calling-plans/manually-submit-port-order) | Volta |
+| 1/9/2023 | [Trasferire numeri di telefono in Microsoft Teams](/MicrosoftTeams/phone-number-calling-plans/transfer-phone-numbers-to-teams) | Volta |
+| 1/10/2023 | [Report cronologici relativi all'operatore automatico e alla coda di chiamata per GCC High e DoD](/MicrosoftTeams/aa-cq-cqd-historical-reports-v163) | Volta |
+| 1/10/2023 | [Report cronologici aggiornati relativi all'operatore automatico e alla coda di chiamata](/MicrosoftTeams/aa-cq-cqd-historical-reports) | Volta |
+| 1/10/2023 | [Configurare un operatore automatico per Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant-smb) | Volta |
+| 1/10/2023 | [Configurare un operatore automatico di Microsoft Teams](/MicrosoftTeams/create-a-phone-system-auto-attendant) | Volta |
+| 1/10/2023 | [Creare una coda di chiamata di Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue-smb) | Volta |
+| 1/10/2023 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | Volta |
+| 1/10/2023 | [Gestire gli account delle risorse in Teams](/MicrosoftTeams/manage-resource-accounts) | Volta |
+| 1/10/2023 | [Configurazione del codificatore per lo streaming in Microsoft Teams](/MicrosoftTeams/teams-encoder-configuration) | Aggiunto |
+| 1/10/2023 | [Configurazione del codificatore per lo streaming in Microsoft Teams](/MicrosoftTeams/teams-encoder-setup) | Aggiunto |
+| 1/10/2023 | [Creazione di uno stream in Microsoft Teams](/MicrosoftTeams/teams-stream-create-event) | Aggiunto |
+| 1/10/2023 | [Ridimensionare la distribuzione video in Microsoft Teams](/MicrosoftTeams/teams-stream-ecdn) | Aggiunto |
+| 1/10/2023 | [Panoramica del codificatore per lo streaming in Microsoft Teams](/MicrosoftTeams/teams-stream-overview) | Aggiunto |
+| 1/10/2023 | [Risoluzione dei problemi relativi allo streaming live in Microsoft Teams](/MicrosoftTeams/teams-stream-troubleshooting) | Aggiunto |
+| 1/10/2023 | [Configurare gli eventi live in Microsoft Teams](/MicrosoftTeams/teams-live-events/set-up-for-teams-live-events) | Volta |
+| 1/10/2023 | [Cosa sono gli eventi live di Microsoft Teams?](/MicrosoftTeams/teams-live-events/what-are-teams-live-events) | Volta |
+| 1/11/2023 | [Usare i modelli di team per il settore sanitario](/MicrosoftTeams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console) | Volta |
+| 1/11/2023 | [Usa i modelli di team finanziari](/MicrosoftTeams/financial-teams-templates-in-the-admin-console) | Volta |
+| 1/11/2023 | [Introduzione ai modelli di team nell'interfaccia Teams di amministrazione](/MicrosoftTeams/get-started-with-teams-templates-in-the-admin-console) | Volta |
+| 1/11/2023 | [Introduzione ai modelli di team di produzione nell'interfaccia di amministrazione](/MicrosoftTeams/manufacturing-teams-templates-in-the-admin-console) | Volta |
+| 1/11/2023 | [Usare i modelli no profit di team](/MicrosoftTeams/team-templates-nonprofit) | Volta |
+| 1/11/2023 | [Criteri per le chiamate in Microsoft Teams: funzionalità di chiamata e inoltro di chiamata](/MicrosoftTeams/teams-calling-policy) | Volta |
+| 1/13/2023 | [Gestire i dispositivi in Microsoft Teams](/MicrosoftTeams/devices/device-management) | Volta |
+| 1/13/2023 | [Gestire Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-manage). | Volta |
+
+
 ## <a name="week-of-january-02-2023"></a>Settimana del 2 gennaio 2023
 
 
@@ -52,39 +88,3 @@
 | 12/16/2022 | [Distribuire Microsoft Teams Rooms in Android](/MicrosoftTeams/devices/collab-bar-deploy) | Volta |
 | 12/16/2022 | [Aggiornare i dispositivi Microsoft Teams in remoto](/MicrosoftTeams/devices/remote-update) | Volta |
 | 12/16/2022 | [Microsoft Teams Rooms sicurezza di Windows](/MicrosoftTeams/rooms/security-windows) | Volta |
-
-
-## <a name="week-of-december-05-2022"></a>Settimana del 5 dicembre 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 12/5/2022 | [Gestire l'app Bookings in Microsoft Teams](/MicrosoftTeams/bookings-app-admin) | Volta |
-| 12/5/2022 | [Configurare la sala di attesa delle riunioni di Microsoft Teams per le riunioni sensibili](/MicrosoftTeams/configure-lobby-sensitive-meetings) | Aggiunto |
-| 12/5/2022 | [Configurare le riunioni di Teams con la protezione di base](/MicrosoftTeams/configure-meetings-baseline-protection) | Aggiunto |
-| 12/5/2022 | [Configurare le riunioni di Teams con protezione per i dati altamente sensibili](/MicrosoftTeams/configure-meetings-highly-sensitive-protection) | Aggiunto |
-| 12/5/2022 | [Configurare le riunioni di Teams con la protezione dei dati sensibili](/MicrosoftTeams/configure-meetings-sensitive-protection) | Aggiunto |
-| 12/5/2022 | [Configurare le riunioni di Teams con tre livelli di protezione](/MicrosoftTeams/configure-meetings-three-tiers-protection) | Aggiunto |
-| 12/5/2022 | [Creare un modello di riunione personalizzato in Microsoft Teams](/MicrosoftTeams/create-custom-meeting-template) | Aggiunto |
-| 12/5/2022 | [Sfondi delle riunioni personalizzate per le riunioni di Teams](/MicrosoftTeams/custom-meeting-backgrounds) | Aggiunto |
-| 12/5/2022 | [Panoramica dei modelli di riunione personalizzati in Microsoft Teams](/MicrosoftTeams/custom-meeting-templates-overview) | Aggiunto |
-| 12/5/2022 | [Richiedere la crittografia end-to-end per le riunioni sensibili di Teams](/MicrosoftTeams/end-to-end-encrypted-meetings) | Aggiunto |
-| 12/5/2022 | [Microsoft Teams Premium - Panoramica per gli amministratori](/MicrosoftTeams/enhanced-teams-experience) | Aggiunto |
-| 12/5/2022 | [Gestire le chat per le riunioni sensibili di Teams](/MicrosoftTeams/manage-chat-sensitive-meetings) | Aggiunto |
-| 12/5/2022 | [Gestire l'esperienza di presentazione della riunione per riunioni sensibili di Teams](/MicrosoftTeams/manage-meeting-presentation-experience) | Aggiunto |
-| 12/5/2022 | [Gestire le opzioni di registrazione delle riunioni di Microsoft Teams per le riunioni sensibili](/MicrosoftTeams/manage-meeting-recording-options) | Aggiunto |
-| 12/5/2022 | [Gestire i modelli di riunione in Microsoft Teams](/MicrosoftTeams/manage-meeting-templates) | Aggiunto |
-| 12/5/2022 | [Gestire l'app Appuntamenti virtuali in Microsoft Teams](/MicrosoftTeams/manage-virtual-appointments-app) | Aggiunto |
-| 12/5/2022 | [Gestire i criteri delle riunioni generali](/MicrosoftTeams/meeting-policies-in-teams-general) | Volta |
-| 12/5/2022 | [Usare i modelli di riunione di Teams, le etichette di riservatezza e i criteri di amministrazione insieme per le riunioni riservate](/MicrosoftTeams/meeting-templates-sensitivity-labels-policies) | Aggiunto |
-| 12/5/2022 | [Temi delle riunioni per le riunioni di Teams](/MicrosoftTeams/meeting-themes) | Aggiunto |
-| 12/5/2022 | [Riunioni, webinar ed eventi live](/MicrosoftTeams/quick-start-meetings-live-events) | Volta |
-| 12/5/2022 | [Configurare webinar](/MicrosoftTeams/set-up-webinars) | Volta |
-| 12/5/2022 | [licenze di Microsoft Teams Premium](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams) | Aggiunto |
-| 12/5/2022 | [Licenze per i componenti aggiuntivi di Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/microsoft-teams-add-on-licensing) | Volta |
-| 12/5/2022 | [Richiedere una filigrana per le riunioni sensibili di Teams](/MicrosoftTeams/watermark-meeting-content-video) | Aggiunto |
-| 12/7/2022 | [Guida introduttiva a Microsoft Teams Essentials per le piccole imprese](/MicrosoftTeams/get-started-with-teams-essentials) | Volta |
-| 12/7/2022 | [Gestisci Microsoft Teams gratuito (classico)](/MicrosoftTeams/manage-freemium) | Volta |
-| 12/7/2022 | [Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams](/MicrosoftTeams/policy-control-diagnostic-data-mobile) | Volta |
-| 12/7/2022 | [Eseguire l'aggiornamento Microsoft Teams gratuito (classico) all'abbonamento](/MicrosoftTeams/upgrade-freemium) | Volta |
-| 12/8/2022 | [Usare i dati di telemetria in tempo reale per risolvere problemi di scarsa qualità delle riunioni](/MicrosoftTeams/use-real-time-telemetry-to-troubleshoot-poor-meeting-quality) | Volta |
