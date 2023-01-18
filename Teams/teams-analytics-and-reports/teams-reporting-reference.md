@@ -1,5 +1,5 @@
 ---
-title: analisi e creazione di report di Microsoft Teams
+title: Analisi e creazione di report di Microsoft Teams
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -19,25 +19,31 @@ description: In questo articolo vengono fornite informazioni sui report di Teams
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0a688a3356ce31dd478c35082195ace8f6be4d47
-ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
+ms.openlocfilehash: e93a34f19ecf53e05a51fe36983a9f46f741e67e
+ms.sourcegitcommit: 40cba40b1babdb3fbfc1a416b7eeb0118f8353df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2022
-ms.locfileid: "69307661"
+ms.lasthandoff: 01/18/2023
+ms.locfileid: "69820321"
 ---
-# <a name="microsoft-teams-analytics-and-reporting"></a>analisi e creazione di report di Microsoft Teams
+# <a name="microsoft-teams-analytics-and-reporting"></a>Analisi e creazione di report di Microsoft Teams
 
-Una nuova esperienza di analisi e creazione di report per Microsoft Teams è disponibile nell'interfaccia di amministrazione di Microsoft Teams. È possibile eseguire report diversi per ottenere informazioni approfondite sul modo in cui gli utenti dell'organizzazione usano Teams. Ad esempio, è possibile vedere quanti utenti comunicano tramite messaggi di canale e chat e i tipi di dispositivi che usano per connettersi a Teams. L'organizzazione può usare le informazioni dei report per comprendere meglio i modelli di utilizzo, prendere decisioni aziendali e informare le attività di formazione e comunicazione.
+Nell'interfaccia di amministrazione di Microsoft Teams è disponibile una nuova esperienza di analisi e creazione di report per Microsoft Teams. È possibile eseguire report diversi per ottenere informazioni approfondite sul modo in cui gli utenti dell'organizzazione usano Teams. Ad esempio, è possibile vedere quanti utenti comunicano tramite messaggi di canale e chat e i tipi di dispositivi che usano per connettersi a Teams. L'organizzazione può usare le informazioni dei report per comprendere meglio i modelli di utilizzo, prendere decisioni aziendali e informare le attività di formazione e comunicazione.
 
 ## <a name="how-to-access-the-reports"></a>Come accedere ai report
 
-Per accedere ai report, è necessario essere un amministratore globale in Microsoft 365 o Office 365, un lettore globale in Microsoft 365 o Office 365, un amministratore del servizio Teams o un amministratore Skype for Business. Per altre informazioni sui ruoli di amministratore di Teams e sui report a cui può accedere ogni ruolo di amministratore, vedere [Usare i ruoli di amministratore di Teams per gestire Teams](../using-admin-roles.md).
+Per accedere ai report, è necessario essere assegnati a uno dei ruoli seguenti:
+
+- amministratore globale.
+- Teams o amministratore Skype for Business.
+- Lettore globale (solo dati aggregati a livello di tenant e nessun dato per utente o team).
+
+Per altre informazioni sui ruoli di amministratore di Teams e sui report a cui può accedere ogni ruolo di amministratore, vedere [Usare i ruoli di amministratore di Teams per gestire Teams](../using-admin-roles.md).
 
 Passare all'interfaccia di amministrazione di Microsoft Teams, nel riquadro di spostamento sinistro selezionare **Analisi & report** e quindi in **Visualizza report** scegliere il report da eseguire.
 
 > [!NOTE]
-> I report nell'interfaccia di amministrazione di Microsoft Teams sono separati dai report attività per Teams che fanno parte dei report Microsoft 365 nel interfaccia di amministrazione di Microsoft 365. Per altre informazioni sui report attività nel interfaccia di amministrazione di Microsoft 365, vedere [Report di Microsoft 365 nell'interfaccia di amministrazione](/microsoft-365/admin/activity-reports/activity-reports).
+> I report nell'interfaccia di amministrazione di Microsoft Teams sono separati dai report attività per Teams che fanno parte dei report di Microsoft 365 nella interfaccia di amministrazione di Microsoft 365. Per altre informazioni sui report attività nel interfaccia di amministrazione di Microsoft 365, vedere [Report di Microsoft 365 nell'interfaccia di amministrazione](/microsoft-365/admin/activity-reports/activity-reports).
 
 ## <a name="teams-reporting-reference"></a>Riferimento per la creazione di report di Teams
 
@@ -64,7 +70,7 @@ Stiamo migliorando continuamente l'esperienza di creazione di report di Teams e 
 
 ## <a name="make-the-user-specific-data-anonymous"></a>Rendere anonimi i dati specifici dell'utente
 
-Per rendere anonimi i dati nel report attività degli utenti di Teams, è necessario essere un amministratore globale. L'amministratore globale può nascondere le informazioni identificabili (usando gli hash MD5), ad esempio il nome visualizzato, il nome del gruppo, la posta elettronica e l'ID AAD nel report e nella relativa esportazione.
+Per rendere anonime le informazioni identificabili nei report sull'utilizzo, è necessario essere un amministratore globale. Il amministratore globale può nascondere le informazioni identificabili (usando hash MD5), ad esempio il nome visualizzato, il nome del gruppo, la posta elettronica e l'ID AAD nel report e nella relativa esportazione.
 
 1. In interfaccia di amministrazione di Microsoft 365 passare a **Impostazioni** \> **impostazioni organizzazione** e, nella scheda **Servizi**, scegliere **Report**.
     
