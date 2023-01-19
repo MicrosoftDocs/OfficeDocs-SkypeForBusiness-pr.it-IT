@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: ''
 audience: admin
 search.appverid: MET150
-description: Informazioni su come eseguire facilmente l'aggiornamento da Microsoft Teams gratuito (classico) alla versione completa acquistando un piano di abbonamento Microsoft 365 o Office 365 per gli utenti.
+description: Informazioni su come eseguire facilmente l'aggiornamento da Microsoft Teams gratuito (classico) alla versione completa acquistando un piano di abbonamento a Microsoft 365 o Office 365 per gli utenti.
 ms.localizationpriority: medium
 f1.keywords:
 - CSH
@@ -20,16 +20,19 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8fadec9c28eae01f28be2e8c61f865b9d2004480
-ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
+ms.openlocfilehash: f2b9a76cd5f202a0c7d9805e7c5742bc0a470c06
+ms.sourcegitcommit: ff5411084dc34754462d5fd67b64db7a7e76f1e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2022
-ms.locfileid: "69307631"
+ms.lasthandoff: 01/19/2023
+ms.locfileid: "69823255"
 ---
 # <a name="upgrade-microsoft-teams-free-classic-to-subscription-version"></a>Eseguire l'aggiornamento Microsoft Teams gratuito (classico) alla versione in abbonamento
 
-Se l'organizzazione usa Microsoft Teams gratuito (classico), è possibile eseguire facilmente l'aggiornamento alla versione completa acquistando un piano di abbonamento Microsoft 365 o Office 365 per gli utenti. La versione completa fornisce altre funzionalità di Teams, come le audioconferenze, l'amministrazione avanzata e le funzionalità di sicurezza, che la versione gratuita non fornisce. Microsoft 365 e Office 365 combinano la familiare famiglia di prodotti desktop Microsoft Office con le versioni basate sul cloud dei servizi di comunicazione e collaborazione di nuova generazione di Microsoft, tra cui Exchange Online, SharePoint Online e Office, per consentire agli utenti di essere produttivi ovunque tramite Internet. Quando si aggiorna Teams, i dati esistenti di Teams non andranno persi; tutti i team, i canali, le chat, i file e le autorizzazioni vengono forniti con te.
+> [!IMPORTANT]
+> È necessario eseguire l'aggiornamento da Microsoft Teams gratuito (classico) a una versione in abbonamento di Teams perché la licenza di Microsoft Teams gratuito (classico) sarà deprecata e non disponibile a partire da metà aprile 2023. Questo articolo verrà aggiornato presto con le istruzioni su come aggiornare gli utenti alle licenze a pagamento di Teams.
+
+Se l'organizzazione usa Microsoft Teams gratuito (classico), è possibile eseguire facilmente l'aggiornamento alla versione completa acquistando un piano di abbonamento a Microsoft 365 o Office 365 per gli utenti. La versione completa fornisce altre funzionalità di Teams, come le audioconferenze, l'amministrazione avanzata e le funzionalità di sicurezza, che la versione gratuita non fornisce. Microsoft 365 e Office 365 combinare la famiglia di prodotti desktop Microsoft Office familiare con le versioni basate sul cloud dei servizi di comunicazione e collaborazione di nuova generazione di Microsoft, tra cui Exchange Online, SharePoint Online e Office, per aiutare gli utenti a essere produttivi ovunque tramite Internet. Quando si aggiorna Teams, i dati esistenti di Teams non andranno persi; tutti i team, i canali, le chat, i file e le autorizzazioni vengono forniti con te.
 
 > [!NOTE]
 > Se hai già un abbonamento a Microsoft 365 o Office 365, hai diritto alla versione di valutazione di Teams (con la tua identità aziendale), non alla versione gratuita. La versione di valutazione di Teams fornisce la versione completa di Teams per un periodo di tempo limitato. Per altre informazioni, vedere [Gestire l'offerta di valutazione cloud commerciale di Microsoft Teams](./teams-exploratory.md).
@@ -47,16 +50,16 @@ Teams Free (classico) è progettato per le piccole e medie imprese e ha le segue
 - Riunioni di canale
 - Condivisione dello schermo.
 
-La versione completa di Teams inclusa in un abbonamento a Microsoft 365 o Office 365 include le seguenti funzionalità oltre alle funzionalità che Microsoft Teams gratuito (classico) offre:
+La versione completa di Teams inclusa in un abbonamento a Microsoft 365 o Office 365 offre le seguenti funzionalità oltre alle funzionalità che Microsoft Teams gratuito (classico) fornisce:
 
 - Nessun limite utente (con una licenza aziendale)
 - Hosting di posta elettronica di Exchange e dominio di posta elettronica personalizzato
-- Servizi di OneDrive, SharePoint, Planner, Yammer e altri Microsoft 365 e Office 365
+- OneDrive, SharePoint, Planner, Yammer e altri servizi di Microsoft 365 e Office 365
 - 1 TB di spazio di archiviazione per utente
 - Riunioni pianificate
 - Audioconferenza
 - Funzionalità avanzate di sicurezza e conformità, tra cui l'autenticazione a più fattori, il Single Sign-On e il controllo (Premium) e la creazione di report
-- Controlli amministrativi e funzionalità di supporto, tra cui supporto telefonico e Web 24 x 7, strumenti di amministrazione per la gestione di utenti e app, report sull'utilizzo per servizi Microsoft 365 o Office 365, contratto a livello di servizio e impostazioni e criteri configurabili per l'utente
+- Controlli amministrativi e funzionalità di supporto, tra cui supporto telefonico e Web 24 x 7, strumenti di amministrazione per la gestione di utenti e app, report sull'utilizzo per i servizi di Microsoft 365 o Office 365, contratto a livello di servizio e impostazioni e criteri configurabili per l'utente
 
 Per un confronto dettagliato tra le funzionalità di Teams Free (classico) e Teams, vedere [Confrontare i piani di Teams](https://products.office.com/microsoft-teams/free).
 
@@ -65,7 +68,7 @@ Per un confronto dettagliato tra le funzionalità di Teams Free (classico) e Tea
 È possibile eseguire l'aggiornamento alla versione completa di Teams se si soddisfano i requisiti seguenti:
 
 - Sei la persona che ha effettuato l'iscrizione all'abbonamento Microsoft Teams gratuito (classico) esistente.
-- Se si sta portando il proprio dominio, non è già associato ad Azure Active Directory (tramite versione di valutazione o acquistato Microsoft 365 o Office 365 abbonamento).
+- Se si sta portando il proprio dominio, non è già associato ad Azure Active Directory (tramite la versione di valutazione o l'acquisto di Microsoft 365 o Office 365 abbonamento).
 
 > [!NOTE]
 > Per aggiornare e trasferire i dati, è necessario acquistare l'abbonamento tramite il processo di aggiornamento nell'applicazione Teams. Se hai acquistato Microsoft 365 o Office 365 con Teams senza dover eseguire il processo di aggiornamento, non puoi trasferire i dati perché avrai già un tenant separato.
@@ -89,7 +92,7 @@ Immetti l'indirizzo e-mail che usi per accedere a Teams e quindi acquista un pia
 
 ## <a name="whats-next"></a>Cosa c'è dopo?
 
-Una volta completato l'aggiornamento, vedere [Introduzione a Microsoft Teams](get-started-with-teams-quick-start.md) per i primi passaggi e [Adottare Microsoft Teams](adopt-microsoft-teams-landing-page.md) per un approccio a fasi all'adozione di Teams nell'intera organizzazione.
+Una volta completato l'aggiornamento, vedere [Introduzione a Microsoft Teams](get-started-with-teams-quick-start.md) per i primi passaggi e [Adottare Microsoft Teams](adopt-microsoft-teams-landing-page.md) per un approccio in fasi all'adozione di Teams nell'intera organizzazione.
 
 ## <a name="more-information"></a>Altre informazioni
 
