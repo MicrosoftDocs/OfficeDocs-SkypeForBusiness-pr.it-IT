@@ -20,12 +20,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare la procedura guidata di portabilità per trasferire il numero di telefono dal provider di servizi corrente a Microsoft Teams.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 20c4caf97c5344d48f93feed47dc181495dd318d
-ms.sourcegitcommit: 1398c778e46b0d81c9710cd70d3818a2b7af995a
+ms.openlocfilehash: dd296bcf987016cf77af538edcb2e04328ab525b
+ms.sourcegitcommit: fd56fb16ed60b027d3f8de96711d143825f9c184
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2023
-ms.locfileid: "69749042"
+ms.lasthandoff: 01/20/2023
+ms.locfileid: "69835479"
 ---
 # <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire numeri di telefono in Microsoft Teams
 
@@ -39,9 +39,6 @@ Prima di iniziare, ti consigliamo di esaminare le informazioni in [Che cos'è un
   > La disponibilità per la portabilità dei numeri verdi può variare in base al paese e all'area geografica. Per saperne di più, fai riferimento ai documenti specifici del paese o dell'area geografica per vedere il supporto disponibile per il servizio di trasferimento.
 
 ## <a name="create-a-port-order-and-transfer-your-phone-numbers-to-teams"></a>Creare un ordine di trasferimento e trasferire i numeri di telefono in Teams
-
-> [!NOTE]
-> Se si verificano problemi con il processo di trasferimento nell'interfaccia di amministrazione di Teams, è possibile [inviare manualmente un ordine di portabilità](manually-submit-port-order.md) al TNS Service Desk. Per ottenere il modulo necessario per inviare manualmente un ordine di trasferimento, seleziona il paese o l'area geografica nell'elenco a discesa in [Gestisci numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passare a **Numeri di telefono** **vocale** > . Selezionare **Numeri** e quindi **Porta** per avviare la procedura guidata di portabilità.
 2. Esaminare le informazioni nella pagina **Informazioni di base** e quindi, quando si è pronti, selezionare **Avanti**.
@@ -84,6 +81,10 @@ Prima di iniziare, ti consigliamo di esaminare le informazioni in [Che cos'è un
 
     > [!NOTE]
     > Dopo aver caricato il loa, invia il tuo ordine. Il solo caricamento della LOA non è sufficiente. Devi anche inviare l'ordine per l'elaborazione.
+    >
+    > Per ulteriori informazioni sulle LOA per trasferire/trasferire numeri di telefono esistenti e ulteriori requisiti di documentazione, vedi [Gestire i numeri di telefono per il piano per chiamate](/microsoftteams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization).
+    >
+    > Per trasferire più di 999 numeri di telefono o se si verificano problemi con il processo di trasferimento nell'interfaccia di amministrazione di Microsoft Teams, è possibile [inviare manualmente un ordine di trasferimento](/microsoftteams/phone-number-calling-plans/manually-submit-port-order) al TNS Service Desk per la propria area geografica.
 
 7. Controlla i dettagli dell'ordine e quindi seleziona **Invia**.
 

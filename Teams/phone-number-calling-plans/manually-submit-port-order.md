@@ -18,16 +18,16 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Scopri come inviare manualmente una richiesta di ordine di trasferimento.
-ms.openlocfilehash: a1a333b70f717e83df5743e2532bf0092c262054
-ms.sourcegitcommit: 1398c778e46b0d81c9710cd70d3818a2b7af995a
+ms.openlocfilehash: f00f8e31055e20dc39dbee9a5809adad566bc4b0
+ms.sourcegitcommit: fd56fb16ed60b027d3f8de96711d143825f9c184
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/09/2023
-ms.locfileid: "69749032"
+ms.lasthandoff: 01/20/2023
+ms.locfileid: "69835469"
 ---
 # <a name="manually-submit-a-port-order"></a>Inviare manualmente un ordine di portabilità
 
-Per la maggior parte dei clienti, gli ordini di trasferimento possono essere completati nell'interfaccia di amministrazione di Microsoft Teams. Per istruzioni su questo processo, vedere [Trasferire numeri di telefono a Microsoft Teams](transfer-phone-numbers-to-teams.md).
+Per la maggior parte dei clienti, gli ordini di trasferimento di un massimo di 999 numeri di telefono possono essere completati nell'interfaccia di amministrazione di Microsoft Teams. Per istruzioni su questo processo, vedere [Trasferire numeri di telefono a Microsoft Teams](transfer-phone-numbers-to-teams.md).
 
 In alcune situazioni, potrebbe essere necessario inviare manualmente una richiesta di servizio per ottenere numeri di telefono, trasferire numeri di telefono, rilasciare numeri di telefono o cambiare indirizzo. Per informazioni sui requisiti per ogni paese e area geografica o per altre informazioni sulla portabilità dei numeri, vedi [Gestire i numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
@@ -40,6 +40,9 @@ Per inviare manualmente un nuovo ordine di trasferimento, carica il modulo di le
 1. Scarica la [LOA](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per il tuo paese o area geografica.
 2. Completare il modulo.
 4. Inviarlo al [service desk TNS](../manage-phone-numbers-for-your-organization/contact-tns-service-desk.md).
+
+> [!NOTE]
+> Per ulteriori informazioni sulle LOA per trasferire/trasferire numeri di telefono esistenti e ulteriori requisiti di documentazione, vedi [Gestire i numeri di telefono per il piano per chiamate](/microsoftteams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization).
 
 ## <a name="what-else-should-you-know-about-number-porting"></a>Altre informazioni utili sulla portabilità del numero
 

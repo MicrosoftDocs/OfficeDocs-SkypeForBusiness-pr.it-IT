@@ -3,7 +3,7 @@ title: licenze di Microsoft Teams Premium
 author: DaniEASmith
 ms.author: danismith
 manager: serdars
-ms.reviewer: ''
+ms.reviewer: jogruszc
 ms.topic: conceptual
 ms.service: msteams
 search.appverid: MET150
@@ -18,12 +18,12 @@ ms.localizationpriority: medium
 ms.custom:
 - Licensing
 description: Informazioni su come migliorare l'esperienza di Microsoft Teams con la licenza per i componenti aggiuntivi Microsoft Teams Premium
-ms.openlocfilehash: d9307bc9b26421f4930c4355f42c274b5aad12a3
-ms.sourcegitcommit: ca4d1011f3d62af203145431f0b19065ad81601b
+ms.openlocfilehash: 36cc97d1eca47f94276c26ec7d8aeefb1e244d17
+ms.sourcegitcommit: fd56fb16ed60b027d3f8de96711d143825f9c184
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2023
-ms.locfileid: "69800066"
+ms.lasthandoff: 01/20/2023
+ms.locfileid: "69835569"
 ---
 # <a name="microsoft-teams-premium-licensing"></a>licenze di Microsoft Teams Premium
 
@@ -42,9 +42,11 @@ Questo articolo è rivolto agli amministratori IT che desiderano comprendere Tea
 - [Quali sono le differenze tra Teams Premium e Teams?](#how-does-teams-premium-compare-to-teams)
 - [Ci sono funzionalità correnti di Teams che verranno spostate in Teams Premium?](#are-there-current-teams-features-that-will-move-to-teams-premium)
 - [Quali sono i requisiti per acquistare Teams Premium?](#what-are-the-requirements-to-purchase-teams-premium)
+- [Quali utenti devono essere assegnati Teams Premium licenze?](#which-users-should-be-assigned-teams-premium-licenses)
 - [Qual è la differenza tra Teams Premium e Teams Rooms Pro?](#how-does-teams-premium-differ-from-teams-rooms-pro)
 - [È possibile provare Teams Premium prima di acquistare licenze?](#can-i-experience-teams-premium-before-buying-licenses)
 - [Ricerca per categorie acquistare licenze Teams Premium?](#how-do-i-purchase-teams-premium-licenses)
+- [Dopo l'assegnazione delle licenze agli utenti è necessaria la configurazione dell'amministratore?](#is-admin-configuration-required-after-assigning-users-licenses)
 
 Per informazioni su come configurare le caratteristiche di Teams Premium, vedere [Microsoft Teams Premium - Panoramica per gli amministratori](/microsoftteams/enhanced-teams-experience), che includerà anche collegamenti alla documentazione dell'utente finale non appena disponibile.
 
@@ -69,7 +71,9 @@ La tabella seguente confronta le funzionalità principali tra Teams e Teams Prem
 | Leggere i sottotitoli tradotti in tempo reale durante le riunioni |  | X |
 | Tradurre trascrizioni successive alla riunione (*presto disponibili*) |  | X |
 | Attivare l'archiviazione dei dati in tempo reale |  | X |
-| Attivare eCDN per gli eventi live |  | X |
+| Attivare eCDN per gli eventi live\* |  | X |
+
+\**ECDN può essere acquisito come licenza autonoma e altre licenze possono essere acquistate al di fuori di Teams Premium, se necessario. Per informazioni sulle licenze autonome di eCDN, vedi [Microsoft eCDN](https://www.microsoft.com/microsoft-teams/ecdn).*
 
 ### <a name="webinars"></a>Webinar
 
@@ -106,7 +110,7 @@ La tabella seguente confronta le funzionalità principali tra Teams e Teams Prem
 | Pacchetti di criteri utente personalizzati |  | X |
 | Attivare il monitoraggio e gli avvisi avanzati delle riunioni |  | X |
 
-\**Questa funzionalità è disponibile solo per Teams Premium utenti con un abbonamento Microsoft 365 E5. Per altre informazioni sui requisiti di licenza, vedere [Quali sono i requisiti per l'acquisto di Teams Premium?](#what-are-the-requirements-to-purchase-teams-premium)*
+\**Questa funzionalità è disponibile solo per Teams Premium gli utenti con un abbonamento a Microsoft 365 E5 o Microsoft E3 oltre alla licenza Advanced Compliance. Per altre informazioni sui requisiti di licenza, vedere [Quali sono i requisiti per l'acquisto di Teams Premium?](#what-are-the-requirements-to-purchase-teams-premium)*
 
 ### <a name="meetings-reporting"></a>Report sulle riunioni
 
@@ -147,35 +151,51 @@ Con il rilascio generale di Teams Premium, alcune funzionalità di Teams passera
 Le caratteristiche in fase di transizione a Teams Premium sono:
 
 - Sottotitoli tradotti in tempo reale.
+  - Disponibile per tutti gli abbonati a Teams fino a 60 giorni dopo Teams Premium disponibilità generale.
 - Indicatori della sequenza temporale nelle registrazioni delle riunioni di Teams per quando un utente si è lasciato o si è unito alle riunioni.
+  - Disponibile per tutti gli abbonati a Teams fino a 30 giorni dopo Teams Premium disponibilità generale.
 - Scene della modalità Insieme dell'organizzazione personalizzata.
+  - Disponibile per tutti gli abbonati a Teams fino a 30 giorni dopo Teams Premium disponibilità generale.
 - Appuntamenti virtuali: notifiche SMS.
+  - Disponibile per tutti gli abbonati a Teams fino a 30 giorni dopo Teams Premium disponibilità generale.
 - Appuntamenti virtuali: analisi dell'organizzazione nell'interfaccia di amministrazione di Teams.
+  - Disponibile per tutti gli abbonati a Teams fino a 30 giorni dopo Teams Premium disponibilità generale.
 - Appuntamenti virtuali: visualizzazione coda pianificata.
+  - Disponibile per tutti gli abbonati a Teams fino a 30 giorni dopo Teams Premium disponibilità generale.
 
 ### <a name="is-there-a-grace-period-to-switch-to-team-premium-before-my-users-lose-functionality"></a>Esiste un periodo di prova per passare a Team Premium prima che gli utenti perdano la funzionalità?
 
-Quando Teams Premium diventa generalmente disponibile per l'acquisto, ci sarà un periodo di tolleranza di 30 giorni per gli amministratori per acquistare Teams Premium.
+Quando Teams Premium diventa generalmente disponibile per l'acquisto, ci sarà un periodo di tolleranza di 60 giorni per gli amministratori per acquistare Teams Premium.
 
-Dopo il periodo di prova di 30 giorni, gli utenti perderanno l'accesso alle funzionalità precedentemente disponibili in Teams senza il componente aggiuntivo Teams Premium, a meno che l'amministratore non acquisti e non assegni Teams Premium licenze agli utenti.
+Dopo il periodo di prova di 60 giorni, gli utenti perderanno l'accesso alle funzionalità precedentemente disponibili in Teams senza il componente aggiuntivo Teams Premium, a meno che l'amministratore non acquisti e non assegni Teams Premium licenze agli utenti.
 
 Alcuni tenant potrebbero avere licenze di valutazione Teams Premium. Una volta scadute le licenze di valutazione, gli utenti perderanno immediatamente Teams Premium funzionalità. Le risorse associate a Teams Premium funzionalità come modelli personalizzati e sfondi delle riunioni rimarranno nel tenant, ma saranno in grigio e inutilizzabili.
 
 ## <a name="what-are-the-requirements-to-purchase-teams-premium"></a>Quali sono i requisiti per acquistare Teams Premium?
 
-Al momento del rilascio, Teams Premium sarà disponibile per l'acquisto in tutto il mondo tramite tutti i canali di acquisto Microsoft, tra cui EA, EAS, EES, CSP, Web Direct, NCE - Guidata dal cliente e NCE - Partner guidato.
+Al momento del rilascio, Teams Premium sarà disponibile per l'acquisto in tutto il mondo tramite tutti i canali di acquisto Microsoft, tra cui EA, EAS, CSP, Web Direct, NCE - Avviato dal cliente e NCE - Partner guidato.
 
 Prima di poter acquistare licenze di Teams Premium per gli utenti, assicurarsi che il tenant e gli utenti soddisfino i requisiti.
 
 Il **requisito del tenant** è:
 
-- Deve essere un settore pubblico commerciale, mondiale, EDU, GCC o un tenant no profit.
+- Deve essere un settore pubblico commerciale, mondiale, EDU o un tenant senza scopo di lucro.
   - Al rilascio generale, Microsoft non offrirà sconti per Teams Premium specifici di EDU o licenze EDU.
-  - I tenant GCC High e DoD non potranno acquistare Teams Premium licenze con la versione generale.
+  - Le licenze GCC, GCC High e DoD diventeranno disponibili dopo il rilascio generale.
 
 Il **requisito per l'utente** è:
 
 - Un abbonamento a Office 365 o Microsoft 365 con Teams.
+
+### <a name="can-i-acquire-teams-premium-features-without-the-teams-premium-license"></a>È possibile acquisire funzionalità di Teams Premium senza la licenza di Teams Premium?
+
+Teams Premium raggruppa un ampio set di funzionalità di Teams con una singola licenza. In alcuni casi è possibile acquisire una singola funzionalità di Teams Premium tramite altri scenari di gestione delle licenze. Tuttavia, la licenza Teams Premium è progettata per essere la via più olistica e più semplice per migliorare l'esperienza di Teams dell'organizzazione e degli utenti.
+
+## <a name="which-users-should-be-assigned-teams-premium-licenses"></a>Quali utenti devono essere assegnati Teams Premium licenze?
+
+Teams Premium è una licenza mensile per utente in cui a qualsiasi utente che dispone di Teams Premium funzionalità deve essere assegnata una licenza Teams Premium.
+
+Non sono previsti requisiti di licenza per Appuntamenti virtuali partecipanti esterni.
 
 ## <a name="how-does-teams-premium-differ-from-teams-rooms-pro"></a>Qual è la differenza tra Teams Premium e Teams Rooms Pro?
 
@@ -208,3 +228,26 @@ Se il tenant e gli utenti soddisfano i requisiti per Teams Premium, è possibile
 Dopo aver acquistato le licenze di Teams Premium, le licenze verranno assegnate agli utenti nel [interfaccia di amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=834822).
 
 Per istruzioni sull'assegnazione di licenze nel interfaccia di amministrazione di Microsoft 365, vedere [Assegnare licenze di Microsoft 365 agli utenti](/microsoft-365/admin/manage/assign-licenses-to-users).
+
+## <a name="is-admin-configuration-required-after-assigning-users-licenses"></a>Dopo l'assegnazione delle licenze agli utenti è necessaria la configurazione dell'amministratore?
+
+Molte caratteristiche Teams Premium richiedono che un amministratore IT configuri la caratteristica prima che gli utenti possano accedervi.
+
+L'elenco seguente indica Teams Premium caratteristiche che richiedono la configurazione amministrativa prima che gli utenti possano accedervi:
+
+- Utilizzo della crittografia end-to-end per riunioni con un massimo di 50 partecipanti
+- Aggiunta di filigrane alle riunioni
+- Aggiunta di etichette di riservatezza
+- Evitare di copiare e incollare nelle chat delle riunioni
+- Uso di sfondi personalizzati dell'organizzazione
+- Uso delle scene personalizzate dell'organizzazione in modalità Insieme
+- Assegnazione di un pacchetto di criteri personalizzato
+- Uso di modelli di riunione personalizzati per l'organizzazione
+- Visualizzazione delle personalizzazioni dell'organizzazione
+- Uso di eCDN per gli eventi live
+- Uso di RTMP-In
+- Invio di notifiche SMS per Appuntamenti virtuali
+- Accesso all'app Appuntamenti virtuali Premium
+- Accesso ai dati di Appuntamenti virtuali nell'interfaccia di amministrazione di Teams
+
+Per i collegamenti alle istruzioni, vedere [Microsoft Teams Premium - Panoramica per gli amministratori](/microsoftteams/enhanced-teams-experience).

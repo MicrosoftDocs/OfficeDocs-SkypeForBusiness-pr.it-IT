@@ -23,12 +23,12 @@ ms.custom:
 - Calling Plans
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quando si ottengono numeri di telefono o numeri di portabilità (trasferimento) per l'organizzazione, potrebbe essere necessario richiedere assistenza e supporto al service desk TNS.
-ms.openlocfilehash: b490552b9f6f06a70e017b13f120bbb777cb9131
-ms.sourcegitcommit: 46b5dc0519d487e264b1386e5074085c2d090e9a
+ms.openlocfilehash: 9984775a05458592fe1789c0dd8b173a08783220
+ms.sourcegitcommit: fd56fb16ed60b027d3f8de96711d143825f9c184
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2022
-ms.locfileid: "67674407"
+ms.lasthandoff: 01/20/2023
+ms.locfileid: "69835559"
 ---
 # <a name="telephone-number-services-tns---service-desk"></a>Telephone Number Services (TNS) - Service Desk
 
@@ -38,7 +38,7 @@ ms.locfileid: "67674407"
 Esiste un nuovo processo per interagire con il service desk TNS (Telephone Number Services) del nostro nuovo **[centro di assistenza per i numeri di telefono](https://pstnsd.powerappsportals.com)**. È ora possibile aprire i ticket, visualizzare i ticket e tenere traccia delle comunicazioni in un'unica posizione integrata con l'interfaccia di amministrazione di Teams. Ogni area è descritta in modo dettagliato nelle sezioni seguenti.
 
 
-- **[Creare un nuovo caso](#create-a-new-case)** : inviare una nuova richiesta o richiesta generale.
+- **[Creare un nuovo caso](#create-a-new-case)** : inviare una nuova richiesta o una richiesta generale.
 
 - **[Visualizzare i casi esistenti](#view-and-manage-existing-cases)** : consente di tenere traccia e monitorare i casi esistenti.
 
@@ -83,7 +83,7 @@ Un caso può avere una delle due categorie seguenti:
 
 - **Inviare una nuova richiesta**- Scegliere questa opzione se si vuole inviare una nuova richiesta. Ad esempio, si vuole inviare una richiesta di porta o acquistare numeri di telefono da Microsoft.
 
-- **Richiesta generale**- Scegliere questa opzione se si hanno domande utili per determinare la richiesta. Ad esempio, è necessario sapere se è possibile trasferire i numeri wireless a Microsoft o se Microsoft supporta numeri verdi vanity.
+- **Richiesta generale** : scegliere questa opzione se si hanno domande che consentono di determinare la richiesta. Ad esempio, è necessario sapere se è possibile trasferire i numeri wireless a Microsoft o se Microsoft supporta numeri verdi vanity.
 
 #### <a name="country-or-region"></a>Paese o area geografica
 
@@ -148,6 +148,13 @@ Il tipo di caso può essere uno dei seguenti:
   - **Elenco dei numeri di portabilità** - Elenco dei numeri di telefono da convertire in Microsoft. Caricare un file CSV con l'elenco dei numeri di telefono.
 
   - **Lettera di autorizzazione (LOA)** : allegare qui una lettera di autorizzazione firmata e compilata. Microsoft non può elaborare una richiesta di portabilità senza una lettera di autorizzazione..
+
+    > [!NOTE]
+    > Per ulteriori informazioni sulle LOA per trasferire/trasferire numeri di telefono esistenti e ulteriori requisiti di documentazione, vedi [Gestire i numeri di telefono per il piano per chiamate](/microsoftteams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization).
+    >
+    >Per trasferire o trasferire un massimo di 999 numeri di telefono per gli utenti, caricare le LOA completate e firmate nell'interfaccia di amministrazione di Microsoft Teams per un'ulteriore elaborazione.
+    >
+    > Per trasferire più di 999 numeri di telefono o se si verificano problemi con il processo di trasferimento nell'interfaccia di amministrazione di Microsoft Teams, è possibile [inviare manualmente un ordine di trasferimento](/microsoftteams/phone-number-calling-plans/manually-submit-port-order) al TNS Service Desk per la propria area geografica.
 
 - **Aggiornamento indirizzo**– Aggiornare l'indirizzo per le chiamate di emergenza. Si noti che questo campo si applica solo a determinati paesi.
 
