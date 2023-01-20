@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 description: Informazioni su come usare l'operatore automatico di Teams aggiornato & report storico sulla coda di chiamata di Power BI per visualizzare i dati cronologici di Operatore automatico e Coda di chiamata.
-ms.openlocfilehash: 0ff8e7d1b5a1b9901c5b8a5da49d67fbf8ac5275
-ms.sourcegitcommit: 95a56dab4e30f7ad6615ebd4a4a0f61996fdc20f
+ms.openlocfilehash: dad1fa07d476aa5bcfa1e39818d9d7a01b7fdc56
+ms.sourcegitcommit: 776820a6c927fafabdfad9f50654fe7648d77bf3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/17/2023
-ms.locfileid: "69812733"
+ms.lasthandoff: 01/20/2023
+ms.locfileid: "69845913"
 ---
 # <a name="auto-attendant-and-call-queue-historical-reports"></a>Report cronologici dell'operatore automatico e della coda di chiamata
 
@@ -537,11 +537,9 @@ L'API VAAC è accessibile da qualsiasi applicazione in grado di accedere alle ap
 
 ### <a name="preparation"></a>Preparazione
 
-Scarica [Postman](https://www.postman.com/).
-
-Scarica il repository: [sync_pstn_avs-analytics](https://skype.visualstudio.com/SBS/_git/sync_pstn_avs-analytics) e decomprimerlo.
-
-Importare la cartella in Postman. 
+1. Scarica [Postman](https://www.postman.com/).
+1. Decomprimere il `sync_pstn_avs-analytics.zip` file nelle [istruzioni scaricate per il file ZIP](#v3xx-installation).
+1. Importare la cartella in Postman. 
 
 :::image type="content" source="media/aa-cq-historical-report-postman-01.png" alt-text="Screenshot che mostra l'importazione completata":::
 
@@ -555,7 +553,6 @@ Importare la cartella in Postman.
 6. Fare clic su **Salva**.
 
 :::image type="content" source="media/aa-cq-historical-report-postman-02.png" alt-text="Screenshot che mostra i campi nome utente, password e ID tenant configurati":::
-
 
 7. Seleziona **Raccolte** nel menu della barra di sinistra.
 8. Selezionare **Config API Access Token - Prod** e passare alla scheda **Corpo** .
@@ -585,7 +582,6 @@ Dopo aver inviato il tuo input, ci saranno un paio di possibili risultati:
 :::image type="content" source="media/aa-cq-historical-report-postman-04.png" alt-text="Screenshot che mostra il risultato della query con il campo dataResult":::
 
 In questo caso, i dati saranno nel campo "dataResult" nello stesso ordine richiesto negli attributi dimensioni della query e misure.
-
 
 ### <a name="compress-the-json-query"></a>Comprimere la query JSON
 

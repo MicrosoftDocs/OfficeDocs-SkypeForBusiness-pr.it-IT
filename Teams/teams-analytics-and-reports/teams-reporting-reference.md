@@ -19,12 +19,12 @@ description: In questo articolo vengono fornite informazioni sui report di Teams
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e93a34f19ecf53e05a51fe36983a9f46f741e67e
-ms.sourcegitcommit: 40cba40b1babdb3fbfc1a416b7eeb0118f8353df
+ms.openlocfilehash: 1062afeebfde89835330fbc4f367e0fccbe01513
+ms.sourcegitcommit: 776820a6c927fafabdfad9f50654fe7648d77bf3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/18/2023
-ms.locfileid: "69820321"
+ms.lasthandoff: 01/20/2023
+ms.locfileid: "69845923"
 ---
 # <a name="microsoft-teams-analytics-and-reporting"></a>Analisi e creazione di report di Microsoft Teams
 
@@ -66,6 +66,7 @@ Stiamo migliorando continuamente l'esperienza di creazione di report di Teams e 
 |[Report sull'utilizzo di Teams Appuntamenti virtuali](/microsoft-365/frontline/virtual-appointments-usage-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json)|Sì|Sì|No|No| Numero di appuntamenti virtuali<br>Numero di appuntamenti di Bookings<br>Numero di appuntamenti integrati con EHR (Electronic Health Records) di Teams<br>Durata media di un appuntamento<br>Tempo medio di attesa della sala di attesa dei partecipanti<br>Ora di inizio<br>ID riunione<br>Tempo di attesa nella sala d'attesa<br>Durata<br>Stato<br>Tipo di prodotto<br>Partecipanti<br>Reparto<br>SMS inviato<br>Se l'appuntamento ha usato una funzionalità di Appuntamenti virtuali avanzata|
 |[Report attività di Teams Advanced Appuntamenti virtuali](/microsoft-365/frontline/advanced-virtual-appointments-activity-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json) |Sì|Sì|No|No|Numero di utenti che usano funzionalità di Appuntamenti virtuali avanzate<br>Numero di utenti che utilizzano notifiche SMS<br>Numero di utenti che usano la chat della sala di attesa (presto disponibile)<br>Numero di utenti che conducono appuntamenti su richiesta|
 |[Report Appuntamenti virtuali connettore EHR di Teams](/microsoft-365/frontline/ehr-connector-report?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json) |Sì|Sì|No|No| Ora di inizio<br>Durata<br>Principale (nome dell'organizzatore della riunione)<br>E-mail principale (e-mail dell'organizzatore della riunione)<br>Reparto<br>Assistenti<br>Tempo di attesa nella sala d'attesa<br>Se l'appuntamento rientra nel limite di allocazione|
+|[Report sull'utilizzo e le prestazioni di Walkie-talkie](walkie-talkie-usage-report.md) |Sì|Sì|No|No| Le metriche includono il numero di trasmissioni push-to-talk (PTT) effettuate e ricevute, l'attività del canale, la durata della trasmissione e i dettagli di dispositivo e partecipante.|
 [!INCLUDE [teams-reports-definitions](../includes/teams-reports-definitions.md)]
 
 ## <a name="make-the-user-specific-data-anonymous"></a>Rendere anonimi i dati specifici dell'utente

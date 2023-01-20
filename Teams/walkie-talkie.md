@@ -22,12 +22,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 ms.date: 11/17/2022
-ms.openlocfilehash: abb14f937064b394106e0cf2d58f756371a7c04e
-ms.sourcegitcommit: ff161779577ce9cc892f1b6b8861ad49ff4c3ca3
+ms.openlocfilehash: c4184e82e99fa4f3169fea14c62f3a892750bf8c
+ms.sourcegitcommit: 776820a6c927fafabdfad9f50654fe7648d77bf3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2022
-ms.locfileid: "69131275"
+ms.lasthandoff: 01/20/2023
+ms.locfileid: "69845893"
 ---
 # <a name="walkie-talkie-app-in-microsoft-teams"></a>App Walkie-talkie in Microsoft Teams
 
@@ -131,6 +131,10 @@ Gli operatori in prima linea spesso devono parlare e ricevere chiamate Walkie-ta
 > Se gli utenti usano accessori Bluetooth, assicurati che la soluzione di gestione dei dispositivi mobili (MDM) non blocchi i dispositivi Bluetooth.
 
 Nei dispositivi che eseguono Android OS versione 12 o successiva, sono necessarie le autorizzazioni Bluetooth e non sono più necessarie le autorizzazioni di posizione per connettersi usando lo stack BLE. Se le "autorizzazioni nelle vicinanze" non vengono concesse a livello di Teams, un utente riceverà una richiesta di autorizzazioni Bluetooth. Viene visualizzata questa richiesta, indipendentemente dal fatto che un accessorio Bluetooth, ad esempio un auricolare, sia collegato al suo dispositivo. Se è collegato un accessorio Bluetooth, tocca **Consenti** connessione Walkie-talkie all'accessorio Bluetooth.
+
+## <a name="get-insight-into-walkie-talkie-usage-and-performance"></a>Ottenere informazioni dettagliate sull'utilizzo e le prestazioni di Walkie-talkie
+
+Il [report sull'utilizzo e sulle prestazioni di Walkie-talkie](teams-analytics-and-reports/walkie-talkie-usage-report.md) nell'interfaccia di amministrazione di Teams offre una panoramica delle attività e delle prestazioni di Walkie-talkie nell'organizzazione. Il rapporto fornisce informazioni quali il numero di trasmissioni PTT effettuate e ricevute, l'attività del canale, la durata della trasmissione e i dettagli sul dispositivo e sui partecipanti.
 
 ## <a name="more-information"></a>Altre informazioni
 

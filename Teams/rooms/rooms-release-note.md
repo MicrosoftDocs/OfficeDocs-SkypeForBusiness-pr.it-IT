@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Amministrazione possibile leggere le note sulla versione per Microsoft Teams Rooms, che elencano i miglioramenti cumulativi in Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f6d600552c2f636618ff14a1ccf88be60df74879
-ms.sourcegitcommit: 66d8e3d7a29a03c5deba9780964bc03f6587017f
+ms.openlocfilehash: 5e6a0c85453d1613a5d3841a8511feea487937d7
+ms.sourcegitcommit: 776820a6c927fafabdfad9f50654fe7648d77bf3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2023
-ms.locfileid: "69774731"
+ms.lasthandoff: 01/20/2023
+ms.locfileid: "69845903"
 ---
 # <a name="release-notes-for-microsoft-teams-rooms"></a>Note sulla versione per Microsoft Teams Rooms
 
@@ -40,7 +40,7 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 
 |Rilascio |Pubblicato su <br/> Microsoft Store |
 |--- |--- |
-|4.15.58.0 | 12/15/2022 |
+|4.15.58.0 | 1/10/2023 |
 |4.14.24.0 |9/2/2022 |
 |4.13.132.0 |8/2/2022 |
 |4.12.139.0 |7/14/2022 |
@@ -97,7 +97,7 @@ Teams Rooms è disciplinato dai criteri moderni relativi al ciclo di vita. Per a
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Microsoft Teams Rooms introduzione delle funzionalità e risoluzione dei problemi
 
-### <a name="415580-12152022"></a>4.15.58.0 (12/15/2022)
+### <a name="415580-1102023"></a>4.15.58.0 (1/10/2023)
 
 Introdotto in questo aggiornamento:
 
