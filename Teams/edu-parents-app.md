@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkTEAMS
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f2d0d916028a026d7706fd317ba25d16af213a81
-ms.sourcegitcommit: 55d2f515f5040b4c083f529d7b818c84d42378a0
+ms.openlocfilehash: 32ef76aeff228bc9386917cb2214965942b8be4e
+ms.sourcegitcommit: 1f4a0b7cf03f63438bb37668d053853494c92168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/22/2022
-ms.locfileid: "69147483"
+ms.lasthandoff: 01/23/2023
+ms.locfileid: "69948573"
 ---
 # <a name="set-up-parent-connection-in-microsoft-teams-for-education"></a>Configurare la connessione padre in Microsoft Teams per l'istruzione
 
@@ -36,8 +36,8 @@ Questo articolo fornisce indicazioni ai professionisti IT del settore didattico 
 
 Ecco alcune risorse che gli amministratori IT possono condividere con tutori e docenti su come iniziare a usare la connessione padre.
 
-- Per indicazioni su come configurare i tutori, vedere [Connettersi con i docenti in Teams](https://support.microsoft.com/topic/connect-with-educators-in-teams-ec2430c3-952a-4ba4-9891-1d1cab577960).
-- Per indicazioni su come configurare i docenti, vedere [Comunicare con i tutori in Microsoft Teams](https://support.microsoft.com/topic/communicate-with-guardians-in-microsoft-teams-01471ecd-eb5d-4eda-9c5d-0064d672960e?ui=en-us&rs=en-us&ad=us).
+- Per indicazioni su come configurare i tutori, vedere [Comunicare con i tutori in Microsoft Teams](https://support.microsoft.com/topic/communicate-with-guardians-in-microsoft-teams-01471ecd-eb5d-4eda-9c5d-0064d672960e?ui=en-us&rs=en-us&ad=us).
+- Per indicazioni su come configurare i docenti, vedere [Connettersi con i docenti in Teams](https://support.microsoft.com/topic/connect-with-educators-in-teams-ec2430c3-952a-4ba4-9891-1d1cab577960).
 
 ## <a name="benefits-of-parent-connection"></a>Vantaggi della connessione padre
 

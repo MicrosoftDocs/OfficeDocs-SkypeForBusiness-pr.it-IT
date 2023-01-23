@@ -17,13 +17,15 @@ appliesto:
 ms.localizationpriority: medium
 ms.custom:
 - Licensing
+- admindeeplinkTEAMS
+- admindeeplinkMAC
 description: Informazioni su come migliorare l'esperienza di Microsoft Teams con la licenza per i componenti aggiuntivi Microsoft Teams Premium
-ms.openlocfilehash: 36cc97d1eca47f94276c26ec7d8aeefb1e244d17
-ms.sourcegitcommit: fd56fb16ed60b027d3f8de96711d143825f9c184
+ms.openlocfilehash: 1d85c5d601dc74d7c308f05fa07bd99a2f274791
+ms.sourcegitcommit: 1f4a0b7cf03f63438bb37668d053853494c92168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2023
-ms.locfileid: "69835569"
+ms.lasthandoff: 01/23/2023
+ms.locfileid: "69948563"
 ---
 # <a name="microsoft-teams-premium-licensing"></a>licenze di Microsoft Teams Premium
 
@@ -146,30 +148,24 @@ La tabella seguente confronta le funzionalità principali tra Teams e Teams Prem
 
 ## <a name="are-there-current-teams-features-that-will-move-to-teams-premium"></a>Ci sono funzionalità correnti di Teams che verranno spostate in Teams Premium?
 
-Con il rilascio generale di Teams Premium, alcune funzionalità di Teams passeranno dalle licenze di Teams alle licenze Teams Premium. Per consentire agli utenti di continuare a usare queste funzionalità, è necessario acquistare e assegnare Teams Premium licenze.
+Con il rilascio generale di Teams Premium, alcune funzionalità di Teams passeranno dalle licenze di Teams alle licenze Teams Premium. Ognuna di queste caratteristiche ha un periodo di tolleranza di 30 o 60 giorni dopo la disponibilità generale. Quando scade il periodo di prova, gli utenti perderanno l'accesso alla funzionalità.
+
+Per consentire agli utenti di continuare a usare queste funzionalità, è necessario acquistare e assegnare Teams Premium licenze.
 
 Le caratteristiche in fase di transizione a Teams Premium sono:
 
 - Sottotitoli tradotti in tempo reale.
-  - Disponibile per tutti gli abbonati a Teams fino a 60 giorni dopo Teams Premium disponibilità generale.
+  - Disponibile per tutti gli abbonati a Teams per un periodo di tolleranza di 60 giorni dopo Teams Premium disponibilità generale.
 - Indicatori della sequenza temporale nelle registrazioni delle riunioni di Teams per quando un utente si è lasciato o si è unito alle riunioni.
-  - Disponibile per tutti gli abbonati a Teams fino a 30 giorni dopo Teams Premium disponibilità generale.
+  - Disponibile per tutti gli abbonati a Teams per un periodo di tolleranza di 60 giorni dopo Teams Premium disponibilità generale.
 - Scene della modalità Insieme dell'organizzazione personalizzata.
-  - Disponibile per tutti gli abbonati a Teams fino a 30 giorni dopo Teams Premium disponibilità generale.
+  - Disponibile per tutti gli abbonati a Teams per un periodo di tolleranza di 30 giorni dopo Teams Premium disponibilità generale.
 - Appuntamenti virtuali: notifiche SMS.
-  - Disponibile per tutti gli abbonati a Teams fino a 30 giorni dopo Teams Premium disponibilità generale.
+  - Disponibile per tutti gli abbonati a Teams per un periodo di tolleranza di 30 giorni dopo Teams Premium disponibilità generale.
 - Appuntamenti virtuali: analisi dell'organizzazione nell'interfaccia di amministrazione di Teams.
-  - Disponibile per tutti gli abbonati a Teams fino a 30 giorni dopo Teams Premium disponibilità generale.
+  - Disponibile per tutti gli abbonati a Teams per un periodo di tolleranza di 30 giorni dopo Teams Premium disponibilità generale.
 - Appuntamenti virtuali: visualizzazione coda pianificata.
-  - Disponibile per tutti gli abbonati a Teams fino a 30 giorni dopo Teams Premium disponibilità generale.
-
-### <a name="is-there-a-grace-period-to-switch-to-team-premium-before-my-users-lose-functionality"></a>Esiste un periodo di prova per passare a Team Premium prima che gli utenti perdano la funzionalità?
-
-Quando Teams Premium diventa generalmente disponibile per l'acquisto, ci sarà un periodo di tolleranza di 60 giorni per gli amministratori per acquistare Teams Premium.
-
-Dopo il periodo di prova di 60 giorni, gli utenti perderanno l'accesso alle funzionalità precedentemente disponibili in Teams senza il componente aggiuntivo Teams Premium, a meno che l'amministratore non acquisti e non assegni Teams Premium licenze agli utenti.
-
-Alcuni tenant potrebbero avere licenze di valutazione Teams Premium. Una volta scadute le licenze di valutazione, gli utenti perderanno immediatamente Teams Premium funzionalità. Le risorse associate a Teams Premium funzionalità come modelli personalizzati e sfondi delle riunioni rimarranno nel tenant, ma saranno in grigio e inutilizzabili.
+  - Disponibile per tutti gli abbonati a Teams per un periodo di tolleranza di 30 giorni dopo Teams Premium disponibilità generale.
 
 ## <a name="what-are-the-requirements-to-purchase-teams-premium"></a>Quali sono i requisiti per acquistare Teams Premium?
 
@@ -233,21 +229,20 @@ Per istruzioni sull'assegnazione di licenze nel interfaccia di amministrazione d
 
 Molte caratteristiche Teams Premium richiedono che un amministratore IT configuri la caratteristica prima che gli utenti possano accedervi.
 
-L'elenco seguente indica Teams Premium caratteristiche che richiedono la configurazione amministrativa prima che gli utenti possano accedervi:
+L'elenco seguente indica Teams Premium funzionalità che richiedono la configurazione dell'amministratore [nell'interfaccia di amministrazione di Teams](https://go.microsoft.com/fwlink/p/?linkid=2066851) prima che gli utenti possano accedere alla funzionalità:
 
-- Utilizzo della crittografia end-to-end per riunioni con un massimo di 50 partecipanti
-- Aggiunta di filigrane alle riunioni
-- Aggiunta di etichette di riservatezza
-- Evitare di copiare e incollare nelle chat delle riunioni
-- Uso di sfondi personalizzati dell'organizzazione
-- Uso delle scene personalizzate dell'organizzazione in modalità Insieme
-- Assegnazione di un pacchetto di criteri personalizzato
-- Uso di modelli di riunione personalizzati per l'organizzazione
-- Visualizzazione delle personalizzazioni dell'organizzazione
-- Uso di eCDN per gli eventi live
-- Uso di RTMP-In
-- Invio di notifiche SMS per Appuntamenti virtuali
-- Accesso all'app Appuntamenti virtuali Premium
-- Accesso ai dati di Appuntamenti virtuali nell'interfaccia di amministrazione di Teams
+- Uso della crittografia end-to-end per riunioni con un massimo di 50 partecipanti.
+- Aggiunta di filigrane alle riunioni.
+- Aggiunta di etichette di riservatezza.
+- Impedire di copiare e incollare nelle chat della riunione.
+- Uso di sfondi personalizzati dell'organizzazione.
+- Uso delle scene della modalità Insieme personalizzate dall'organizzazione.
+  - Amministrazione deve creare la scena della modalità Insieme personalizzata.
+- Viene assegnato un pacchetto di criteri personalizzato.
+- Uso di modelli di riunione personalizzati per l'organizzazione.
+- Visualizzazione delle personalizzazioni dell'organizzazione.
+- Uso di eCDN per gli eventi live.
+- Uso di RTMP-In.
+- Personalizzazione delle sale di attesa dell'appuntamento virtuale con il marchio.
 
 Per i collegamenti alle istruzioni, vedere [Microsoft Teams Premium - Panoramica per gli amministratori](/microsoftteams/enhanced-teams-experience).

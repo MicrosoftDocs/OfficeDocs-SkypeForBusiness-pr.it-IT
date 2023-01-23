@@ -14,16 +14,20 @@ appliesto:
 - Microsoft Teams
 ms.collection:
 - M365-voice
-ms.openlocfilehash: 6d2496ef355df7a935dbf45321a8b8fd63b8e8de
-ms.sourcegitcommit: fc1787ad74a8c454f750a294def188b532cbadd5
+ms.openlocfilehash: 85a700faf37044c97c432707b07b6d6699c6692b
+ms.sourcegitcommit: 1f4a0b7cf03f63438bb37668d053853494c92168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2022
-ms.locfileid: "67854432"
+ms.lasthandoff: 01/23/2023
+ms.locfileid: "69948583"
 ---
 # <a name="whats-new-for-direct-routing"></a>Novità per il routing diretto
 
 Questo articolo descrive le novità di Direct Routing. Ricontrollare spesso per verificare la disponibilità di aggiornamenti.
+
+## <a name="new-direct-routing-sip-endpoints"></a>Nuovi endpoint SIP routing diretto 
+
+Microsoft introdurrà nuovi IP di segnalazione agli endpoint SIP routing diretto di Teams. Per assicurarsi che questa modifica non influirà sulla disponibilità del servizio, verificare che il controller dei confini della sessione e il firewall siano configurati per l'uso delle subnet consigliate 52.112.0.0/14 e 52.120.0.0/14 per le regole di classificazione e ACL. Per altre informazioni, vedere [Ambienti Microsoft 365, Office 365 e Office 365 GCC](direct-routing-plan.md#microsoft-365-office-365-and-office-365-gcc-environments).  
 
 ## <a name="trunk-demoting-logic-based-on-sip-options"></a>Logica di abbassare di livello trunk in base alle opzioni SIP
 

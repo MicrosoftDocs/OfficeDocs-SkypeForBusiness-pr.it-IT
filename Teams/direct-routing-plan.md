@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Scopri come Microsoft Direct Routing consente di connettere un controller SBC (Session Border Controller) supportato dal cliente al sistema telefonico.
-ms.openlocfilehash: 811115c23d88ff3ce1b7fa6af8f8757afb33fecf
-ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
+ms.openlocfilehash: ba0db105d94fef7c81d79929c5cc7f9371f0fc6c
+ms.sourcegitcommit: 1f4a0b7cf03f63438bb37668d053853494c92168
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2022
-ms.locfileid: "69392326"
+ms.lasthandoff: 01/23/2023
+ms.locfileid: "69948513"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -220,8 +220,8 @@ L'inserimento di questi tre FQDN è necessario per:
 Gli FQDN, sip.pstnhub.microsoft.com, sip2.pstnhub.microsoft.com e sip3.pstnhub.microsoft.com, verranno risolti in indirizzi IP dalle subnet seguenti:
 
 - 52.112.0.0/14
-- 52.122.0.0/15
-
+- 52.120.0.0/14
+  
 È necessario aprire le porte per tutti questi intervalli di indirizzi IP nel firewall per consentire il traffico in arrivo e in uscita da e verso gli indirizzi per la segnalazione.
 
 ### <a name="office-gcc-dod-environment"></a>Ambiente DoD GCC di Office
