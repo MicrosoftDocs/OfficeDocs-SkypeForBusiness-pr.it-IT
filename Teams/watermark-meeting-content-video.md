@@ -17,20 +17,22 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come abilitare o richiedere filigrane sul video dei partecipanti e sui contenuti condivisi nelle riunioni sensibili di Teams.
-ms.openlocfilehash: 199ba2d84ca4187a7d8e3c4f9a4d471bb9251598
-ms.sourcegitcommit: ca4d1011f3d62af203145431f0b19065ad81601b
+ms.openlocfilehash: 6037bc6e9dbe79d9ecee10666f4c34e4e778216a
+ms.sourcegitcommit: 5e0900ed7a21ed4e854cc00dbfb4ae4ff2372262
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2023
-ms.locfileid: "69800244"
+ms.lasthandoff: 01/23/2023
+ms.locfileid: "69950503"
 ---
 # <a name="require-a-watermark-for-sensitive-teams-meetings"></a>Richiedere una filigrana per le riunioni sensibili di Teams
 
 [!INCLUDE[Teams Premium ECM](includes/teams-premium-ecm.md)]
 
-È possibile abilitare la visualizzazione di una filigrana nelle riunioni di Teams sia per il contenuto condiviso sullo schermo che per il video dei partecipanti. La filigrana visualizza l'indirizzo di posta elettronica del partecipante alla riunione. I partecipanti alla riunione non possono disattivare la filigrana. 
+È possibile abilitare la visualizzazione di una filigrana nelle riunioni di Teams sia per il contenuto condiviso sullo schermo che per il video dei partecipanti. La filigrana visualizza l'indirizzo di posta elettronica del partecipante alla riunione. I partecipanti alla riunione non possono disattivare la filigrana.
 
-Le filigrane sono supportate in Teams desktop, Teams mobile, Microsoft Teams Rooms in Windows e Microsoft Teams Rooms su Surface Hub. Le filigrane non sono supportate in Microsoft Teams Rooms in Android. Persone partecipare alle riunioni da piattaforme non supportate, tra cui [Cloud Video Interop (CVI)](cloud-video-interop.md), sarà in grado di visualizzare il contenuto senza filigrane.
+Le filigrane sono supportate in Teams per desktop e dispositivi mobili. Persone partecipare a riunioni da piattaforme non supportate avrà un'esperienza solo audio.
+
+I partecipanti che partecipano da [Cloud Video Interop (CVI)](cloud-video-interop.md) potranno vedere il contenuto senza filigrane.
 
 I partecipanti seguenti hanno un'esperienza solo audio quando una filigrana è in uso:
 
@@ -38,6 +40,10 @@ I partecipanti seguenti hanno un'esperienza solo audio quando una filigrana è i
 - partecipanti Virtual Desktop Infrastructure (VDI)
 - Partecipanti anonimi
 - Partecipanti in overflow
+- Microsoft Teams Rooms in Windows e Microsoft Teams Rooms su Surface Hub
+- Microsoft Teams Rooms su Android
+- Client di Teams meno recenti
+- [Partecipazione guest diretta su dispositivi Microsoft Teams Rooms](/microsoftteams/rooms/third-party-join)
 
 > [!Note]
 > Le impostazioni delle riunioni in etichette di riservatezza, modelli di riunione personalizzati e filigrane richiedono Teams Premium.

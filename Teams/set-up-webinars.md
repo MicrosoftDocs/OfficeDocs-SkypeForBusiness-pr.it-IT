@@ -20,17 +20,17 @@ ms.collection:
 - m365initiative-meetings
 - highpri
 description: Informazioni su come gestire i criteri di registrazione di webinar e riunioni in Teams.
-ms.openlocfilehash: 5493104b93a74dad6763e0a5ba6c9e6fd57575de
-ms.sourcegitcommit: b710fc61558a0e031d4e3e4000f234c495e2c4c6
+ms.openlocfilehash: 097f4c385261ba1aea96990751d208b99d4d8b93
+ms.sourcegitcommit: 5e0900ed7a21ed4e854cc00dbfb4ae4ff2372262
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2022
-ms.locfileid: "69438474"
+ms.lasthandoff: 01/23/2023
+ms.locfileid: "69950433"
 ---
 # <a name="set-up-webinars-in-microsoft-teams"></a>Configurare webinar in Microsoft Teams
 
 > [!NOTE]
-> Questo articolo descrive alcune funzionalità dei webinar che sono in anteprima e richiedono una licenza Di Teams Premium.
+> Questo articolo descrive alcune funzionalità dei webinar in anteprima che richiedono una licenza di Teams Premium.
 
 Microsoft offre ora una nuova esperienza di webinar; in questo articolo viene descritto come aggiornare le impostazioni per l'uso di queste funzionalità.
 
@@ -47,13 +47,15 @@ Per altre informazioni sulle nuove funzionalità disponibili per gli utenti fina
 
 Se l'organizzazione ha abilitato la registrazione delle riunioni, tutti i webinar appena creati avranno la nuova esperienza. I webinar pianificati in precedenza utilizzeranno l'esperienza webinar precedente. La nuova esperienza usa TeamsEventsPolicy. Se i webinar sono disattivati, rimarranno disattivati durante l'esecuzione della nuova esperienza.
 
-Attualmente, l'esperienza di base del webinar è controllata dalla registrazione delle riunioni utilizzando i criteri di riunione di Teams (Set-CsTeamsMeetingPolicy). In futuro, l'impostazione di registrazione della riunione non controllarà i webinar; i webinar stanno passando a essere controllati dal criterio Eventi di Teams (Set-CsTeamsEventsPolicy).
+Attualmente, l'esperienza di base del webinar è controllata dalla registrazione delle riunioni utilizzando i criteri di riunione di Teams (Set-CsTeamsMeetingPolicy). In futuro, l'impostazione di registrazione della riunione non controlla i webinar; i webinar stanno passando a essere controllati dal criterio Eventi di Teams (Set-CsTeamsEventsPolicy).
 
 La nuova esperienza webinar è configurata in PowerShell. Ecco alcuni esempi su [come configurare la nuova esperienza di webinar](#set-up-new-webinar-experience).
 
 Per altre informazioni sulle differenze tra riunioni, webinar ed eventi live, vedere [Riunioni, webinar ed eventi live](quick-start-meetings-live-events.md).
 
 > [!NOTE]
+> Per gli utenti locali, il nuovo webinar non è ancora disponibile.
+>
 > La nuova esperienza di webinar non è disponibile per Microsoft 365 GCC, Microsoft 365 GCC High o Microsoft 365 DoD. L'esperienza di webinar esistente non è disponibile per Microsoft 365 GCC High o Microsoft 365 DoD.
 
 > [!IMPORTANT]
@@ -113,7 +115,7 @@ Se si desidera utilizzare webinar, la registrazione della riunione deve essere a
 
 ### <a name="meeting-registration"></a>Registrazione riunione
 
-Se si attiva **la registrazione delle riunioni**, gli utenti dell'organizzazione possono pianificare webinar e riunioni che richiedono la registrazione. Per impostazione predefinita, questa opzione è attivata. Se si desidera disattivare la registrazione delle riunioni e i webinar, impostare questo criterio su **Disattivato**.
+Se si attiva **la registrazione delle riunioni**, gli utenti dell'organizzazione possono pianificare webinar e riunioni che richiedono la registrazione. Per impostazione predefinita, questa impostazione è attivata. Se si desidera disattivare la registrazione delle riunioni e i webinar, impostare questo criterio su **Disattivato**.
 
 **La pianificazione della riunione privata** deve essere attivata perché la registrazione della riunione funzioni. Altre informazioni sulla [pianificazione di riunioni private](meeting-policies-in-teams-general.md).
 
@@ -126,7 +128,7 @@ Per gli studenti nei tenant per istituti di istruzione, questo criterio è disat
 
 Questo criterio controlla quali utenti possono registrarsi e partecipare ai webinar solo con la registrazione delle riunioni. Questo criterio include due opzioni, che sono disponibili solo se la **registrazione riunione** è attivata. Per impostazione predefinita, **Chi può registrarsi** è impostato su **Tutti**.
 
-Se si seleziona **Tutti**, tutti gli utenti, inclusi gli utenti anonimi, possono registrarsi e partecipare ai webinar. Se si seleziona **Tutti gli utenti dell'organizzazione**, solo gli utenti dell'organizzazione possono registrarsi per i webinar e parteciparvi. Se la registrazione alla riunione è disattivata, l'impostazione **Chi può registrarsi** non sarà disponibile e nessuno potrà registrarsi per i webinar.
+Se si seleziona **Tutti**, tutti gli utenti, inclusi gli utenti anonimi, possono registrarsi e partecipare ai webinar. Se si seleziona **Tutti gli utenti dell'organizzazione**, solo gli utenti dell'organizzazione possono registrarsi per i webinar e parteciparvi. Se la registrazione alla riunione è disattivata, l'impostazione **Chi può registrare** non sarà disponibile e nessuno potrà registrarsi per i webinar.
 
 Il valore predefinito per **Chi può registrarsi** è **Tutti gli utenti dell'organizzazione** nei tenant per istituti di istruzione. Per altre informazioni, vedere [Creazione guidata Criteri di Teams per l'istruzione](easy-policy-setup-edu.md).
 
@@ -134,7 +136,7 @@ Il valore predefinito per **Chi può registrarsi** è **Tutti gli utenti dell'or
 
 È possibile usare l'interfaccia di amministrazione di Teams in **Criteri** > **riunione** per attivare il **report sull'impegno**.
 
-Quando questa opzione è attivata, gli organizzatori possono visualizzare i report degli utenti che hanno registrato e partecipato ai webinar o alle riunioni configurate. Questo criterio è attivato per impostazione predefinita. Per altre informazioni, vedere [Criteri delle riunioni in Teams - Report sul coinvolgimento](meeting-policies-in-teams-general.md#engagement-report). Per informazioni sull'esperienza utente finale, vedere [Visualizzare e scaricare report sulla partecipazione alle riunioni](https://support.microsoft.com/office/ae7cf170-530c-47d3-84c1-3aedac74d310).
+Quando questa impostazione è attivata, gli organizzatori possono vedere i report degli utenti che hanno registrato e partecipato ai webinar o alle riunioni configurate. Questo criterio è attivato per impostazione predefinita. Per altre informazioni, vedere [Criteri delle riunioni in Teams - Report sul coinvolgimento](meeting-policies-in-teams-general.md#engagement-report). Per informazioni sull'esperienza utente finale, vedere [Visualizzare e scaricare report sulla partecipazione alle riunioni](https://support.microsoft.com/office/ae7cf170-530c-47d3-84c1-3aedac74d310).
 
 In PowerShell è possibile usare il parametro **AllowEngagementReport** per attivare questa opzione. Questo criterio è attivato per impostazione predefinita. Per disattivarlo, eseguire il comando seguente in PowerShell:
 

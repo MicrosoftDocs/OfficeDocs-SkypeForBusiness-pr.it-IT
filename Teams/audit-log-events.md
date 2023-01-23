@@ -18,12 +18,12 @@ ms.reviewer: anwara
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f82b9b77422f4f8aca8da3333e81f9b5e4c2cf35
-ms.sourcegitcommit: 507e186972bcbc56c1547a1b9f357bfd38170b5a
+ms.openlocfilehash: f7219ee11f6818890b8be34f42f76dfa26ef0d12
+ms.sourcegitcommit: 5e0900ed7a21ed4e854cc00dbfb4ae4ff2372262
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/27/2022
-ms.locfileid: "68046646"
+ms.lasthandoff: 01/23/2023
+ms.locfileid: "69950443"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Cercare eventi in Microsoft Teams nel log di controllo
 
@@ -87,8 +87,8 @@ Guardare [questo video](https://www.youtube.com/embed/UBxaRySAxyE) per informazi
 
 Ecco un elenco di tutti gli eventi registrati per le attività di utenti e amministratori in Teams nel log di controllo di Microsoft 365. La tabella include il nome descrittivo visualizzato nella colonna **Attività** e il nome dell'operazione corrispondente visualizzato nelle informazioni dettagliate di un record di controllo e nel file CSV quando si esportano i risultati della ricerca.
 
-|Nome descrittivo|Operazione|Descrizione|
-|---|---|---|
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:----------------|:------------|:--------------|
 |Aggiunto bot al team|BotAddedToTeam|Un utente aggiunge un bot a un team.|
 |Canale aggiunto|ChannelAdded|Un utente aggiunge un canale a un team.|
 |Connettore aggiunto|ConnectorAdded|Un utente aggiunge un connettore a un canale.|
@@ -96,10 +96,12 @@ Ecco un elenco di tutti gli eventi registrati per le attività di utenti e ammin
 |Aggiunta di informazioni sui partecipanti <sup>alla riunione 2</sup>|MeetingParticipantDetail|Teams ha aggiunto informazioni sui partecipanti a una riunione, tra cui l'ID utente di ogni partecipante, l'ora in cui un partecipante si è unito alla riunione e l'ora in cui un partecipante ha lasciato la riunione.|
 |Membri aggiunti|MemberAdded|Un proprietario del team aggiunge membri a un team, un canale o una chat di gruppo.|
 |Scheda aggiunta|TabAdded|Un utente aggiunge una scheda a un canale.|
+| Etichetta di riservatezza applicata | SensitivityLabelApplied | Un utente o un organizzatore della riunione ha applicato un'etichetta di riservatezza a una riunione di Teams. |
 |Impostazione del canale modificata|ChannelSettingChanged|L'operazione ChannelSettingChanged viene registrata quando le attività seguenti vengono eseguite da un membro del team. Per ognuna di queste attività, una descrizione dell'impostazione modificata (tra parentesi viene visualizzata nella colonna **Elemento** nei risultati della ricerca nel log di controllo. <ul><li>Cambia il nome di un canale del team (**nome del canale**)</li><li>Modifica della descrizione di un canale del team (**descrizione del canale**)</li> </ul>|
 |Impostazione dell'organizzazione modificata|TeamsTenantSettingChanged|L'operazione TeamsTenantSettingChanged viene registrata quando le attività seguenti vengono eseguite da un amministratore globale nel interfaccia di amministrazione di Microsoft 365. Queste attività influiscono sulle impostazioni di Teams a livello di organizzazione. Per altre informazioni, vedere [Gestire le impostazioni di Teams per l'organizzazione](enable-features-office-365.md). <br>Per ognuna di queste attività, viene visualizzata una descrizione dell'impostazione modificata (tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo.<ul><li>Abilita o disabilita Teams per l'organizzazione (**Microsoft Teams**).</li><li>Abilita o disabilita l'interoperabilità tra Microsoft Teams e Skype for Business per l'organizzazione (**interoperabilità Skype for Business**).</li><li>Abilita o disabilita la visualizzazione organigramma nei client di Microsoft Teams (**visualizzazione organigramma**).</li><li>Consente o impedisce ai membri del team di pianificare riunioni private (**pianificazione di riunioni private**).</li><li>Consente o impedisce ai membri del team di pianificare riunioni di canale (**pianificazione delle riunioni di canale**).</li><li>Abilita o disabilita le videochiamate nelle riunioni di Teams (**Video per riunioni Skype**).</li><li>Abilita o disabilita la condivisione dello schermo nelle riunioni di Microsoft Teams per l'organizzazione (**condivisione dello schermo per le riunioni Skype**).</li><li>Abilita o impedisce l'aggiunta di immagini animate (chiamate Giphy) alle conversazioni di Teams (**immagini animate**).</li><li>Modifica l'impostazione di classificazione del contenuto per l'organizzazione (**classificazione del contenuto**). La classificazione del contenuto limita il tipo di immagine animata che può essere visualizzata nelle conversazioni.</li><li>Consente o impedisce ai membri del team di aggiungere immagini personalizzabili (chiamate meme personalizzati) da Internet alle conversazioni del team (**immagini personalizzabili da Internet**).</li><li>Consente o impedisce ai membri del team di aggiungere immagini modificabili (dette adesivi) alle conversazioni del team (**immagini modificabili**).</li><li>Consente o impedisce ai membri del team di usare bot nelle chat e nei canali di Microsoft Teams (**bot a livello di organizzazione).**</li><li>Abilita bot specifici per Microsoft Teams. Questo non include il T-Bot, ovvero il bot della Guida di Teams disponibile quando i bot sono abilitati per l'organizzazione (**singoli bot**).</li><li>Consente o impedisce ai membri del team di aggiungere estensioni o schede (**estensioni o schede**).</li><li>Abilita o disabilita il caricamento laterale dei bot proprietari per Microsoft Teams (**caricamento laterale dei bot**).</li><li>Consente o impedisce agli utenti di inviare messaggi di posta elettronica a un canale di Microsoft Teams (**e-mail di canale**).</li></ul>|
 |Ruolo cambiato dei membri del team|MemberRoleChanged|Il proprietario di un team cambia il ruolo dei membri di un team. I valori seguenti indicano il tipo di ruolo assegnato all'utente. <br><br>**1** - Indica il ruolo Membro.<br>**2** - Indica il ruolo Proprietario.<br>**3** - Indica il ruolo Guest.<br><br>La proprietà Members include anche il nome dell'organizzazione e l'indirizzo di posta elettronica del membro.|
 |Impostazione del team modificata|TeamSettingChanged|L'operazione TeamSettingChanged viene registrata quando le attività seguenti vengono eseguite da un proprietario del team. Per ognuna di queste attività, viene visualizzata una descrizione dell'impostazione modificata (tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo.<ul><li>Cambia il tipo di accesso per un team. I team possono essere impostati come privati o pubblici (**tipo di accesso team**). Quando un team è privato (impostazione predefinita), gli utenti possono accedere al team solo su invito. Quando un team è pubblico, è individuabile da chiunque.</li><li>Modifica la classificazione delle informazioni di un team (**classificazione del team**). Ad esempio, i dati del team possono essere classificati come ad alto impatto aziendale, medio o basso impatto aziendale.</li><li>Modifica il nome di un team (**nome del team**).</li><li>Modifica la descrizione del team (**descrizione del team**).</li><li>Modifiche apportate alle impostazioni del team. Per accedere a queste impostazioni, un proprietario del team può fare clic con il pulsante destro del mouse su un team, selezionare **Gestisci team** e quindi fare clic sulla scheda **Impostazioni** . Per queste attività, il nome dell'impostazione modificata viene visualizzato nella colonna **Elemento** nei risultati della ricerca nel log di controllo.</li></ul>|
+| Etichetta di riservatezza modificata | SensitivityLabelChanged | Un utente ha modificato un'etichetta di riservatezza in una riunione di Teams. |
 |Creato una chat <sup>1, </sup> <sup>2</sup>|ChatCreata|È stata creata una chat di Teams.|
 |Team creato|TeamCreato|Un utente crea un team.|
 |È stato eliminato un messaggio|MessageDeleted|Un messaggio in una chat o in un canale è stato eliminato.|
@@ -121,6 +123,7 @@ Ecco un elenco di tutti gli eventi registrati per le attività di utenti e ammin
 |Bot rimosso dal team|BotRemovedFromTeam|Un utente rimuove un bot da un team.|
 |Connettore rimosso|Connettoreremoto|Un utente rimuove un connettore da un canale.|
 |Membri rimossi|MembroRemoved|Un proprietario del team rimuove i membri da un team, un canale o una chat di gruppo.|
+| Etichetta di riservatezza rimossa | SensitivityLabelRemoved | Un utente ha rimosso un'etichetta di riservatezza da una riunione di Teams. |
 |Rimozione della condivisione del canale<sup>del team 3</sup>|TerminatedSharing|Il proprietario di un team o di un canale ha disabilitato la condivisione per un canale condiviso.|
 |Condivisione ripristinata del canale del team<sup>3</sup>|SharingRestored|Il proprietario di un team o di un canale ha riattivata la condivisione per un canale condiviso.|
 |Scheda Rimossa|TabRimuovere|Un utente rimuove una scheda da un canale.|
