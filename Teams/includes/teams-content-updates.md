@@ -3,6 +3,23 @@
 
 
 
+## <a name="week-of-january-16-2023"></a>Settimana del 16 gennaio 2023
+
+
+| Data pubblicazione |Titolo dell'argomento | Cambiare |
+|------|------------|--------|
+| 1/18/2023 | [Analisi e creazione di report di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/teams-reporting-reference) | Volta |
+| 1/19/2023 | [Recuperare numeri di telefono per gli utenti](/MicrosoftTeams/getting-phone-numbers-for-your-users) | Volta |
+| 1/19/2023 | [Contattare il team di Telephone Number Services](/MicrosoftTeams/manage-phone-numbers-for-your-organization/contact-tns-service-desk) | Volta |
+| 1/19/2023 | [licenze di Microsoft Teams Premium](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams) | Volta |
+| 1/20/2023 | [Report sull'utilizzo e le prestazioni di Walkie-talkie](/MicrosoftTeams/teams-analytics-and-reports/walkie-talkie-usage-report) | Aggiunto |
+| 1/18/2023 | [Analisi e creazione di report di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/teams-reporting-reference) | Volta |
+| 1/19/2023 | [Recuperare numeri di telefono per gli utenti](/MicrosoftTeams/getting-phone-numbers-for-your-users) | Volta |
+| 1/19/2023 | [Contattare il team di Telephone Number Services](/MicrosoftTeams/manage-phone-numbers-for-your-organization/contact-tns-service-desk) | Volta |
+| 1/19/2023 | [licenze di Microsoft Teams Premium](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams) | Volta |
+| 1/20/2023 | [Report sull'utilizzo e le prestazioni di Walkie-talkie](/MicrosoftTeams/teams-analytics-and-reports/walkie-talkie-usage-report) | Aggiunto |
+
+
 ## <a name="week-of-january-09-2023"></a>Settimana del 9 gennaio 2023
 
 
@@ -66,25 +83,3 @@
 |------|------------|--------|
 | 12/19/2022 | [Gestire gli accessi alle app di Teams in Microsoft 365](/MicrosoftTeams/manage-third-party-teams-apps) | Volta |
 | 12/21/2022 | [Modello di riunione appuntamento virtuale in Microsoft Teams](/MicrosoftTeams/virtual-appointment-meeting-template) | Aggiunto |
-
-
-## <a name="week-of-december-12-2022"></a>Settimana del 12 dicembre 2022
-
-
-| Data pubblicazione |Titolo dell'argomento | Cambiare |
-|------|------------|--------|
-| 12/14/2022 | [Licenze per dispositivi condivisi di Microsoft Teams](/MicrosoftTeams/teams-add-on-licensing/teams-shared-device-license) | Aggiunto |
-| 12/14/2022 | [Controllare chi può ignorare la sala di attesa della riunione in Microsoft Teams](/MicrosoftTeams/who-can-bypass-meeting-lobby) | Aggiunto |
-| 12/14/2022 | [Impostare l'interfaccia utente dei dispositivi Android di Microsoft Teams](/MicrosoftTeams/devices/teams-android-devices-user-interface) | Volta |
-| 12/14/2022 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | Volta |
-| 12/14/2022 | [Pianificare Instradamento diretto](/MicrosoftTeams/direct-routing-plan) | Volta |
-| 12/14/2022 | [Microsoft Teams Premium - Panoramica per gli amministratori](/MicrosoftTeams/enhanced-teams-experience) | Volta |
-| 12/14/2022 | [Configurare i telefoni dell'area comune per Microsoft Teams](/MicrosoftTeams/set-up-common-area-phones) | Volta |
-| 12/14/2022 | [licenze di Microsoft Teams Premium](/MicrosoftTeams/teams-add-on-licensing/licensing-enhance-teams) | Volta |
-| 12/15/2022 | [Domande ricorrenti sulle audioconferenze](/MicrosoftTeams/audio-conferencing-common-questions) | Volta |
-| 12/15/2022 | [Numeri di telefono e modifiche alle licenze](/MicrosoftTeams/phone-numbers-licensing-changes) | Volta |
-| 12/15/2022 | [Note sulla versione per Microsoft Teams Rooms (Windows)](/MicrosoftTeams/rooms/rooms-release-note) | Volta |
-| 12/16/2022 | [Server proxy per Teams o Skype for Business Online](/MicrosoftTeams/proxy-servers-for-skype-for-business-online) | Volta |
-| 12/16/2022 | [Distribuire Microsoft Teams Rooms in Android](/MicrosoftTeams/devices/collab-bar-deploy) | Volta |
-| 12/16/2022 | [Aggiornare i dispositivi Microsoft Teams in remoto](/MicrosoftTeams/devices/remote-update) | Volta |
-| 12/16/2022 | [Microsoft Teams Rooms sicurezza di Windows](/MicrosoftTeams/rooms/security-windows) | Volta |
