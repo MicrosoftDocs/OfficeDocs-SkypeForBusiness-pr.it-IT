@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Scopri come Microsoft Direct Routing consente di connettere un controller SBC (Session Border Controller) supportato dal cliente al sistema telefonico.
-ms.openlocfilehash: 3dcdc52e736f6eef1d77a8e2120a5fc6470437d7
-ms.sourcegitcommit: e09591a0df9848b50bfeda29650e91e9d35724af
+ms.openlocfilehash: 5d7912adf0c97bd0d26e6000efdd42d745e55dc3
+ms.sourcegitcommit: 1cb5f7129562eb2b228da23497c0e09e53da3872
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/24/2023
-ms.locfileid: "69981781"
+ms.lasthandoff: 01/25/2023
+ms.locfileid: "69983694"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -189,6 +189,11 @@ Altre informazioni: [Requisiti del programma - Microsoft Trusted Root Program](/
 
 > [!NOTE]
 > Se per la connessione Teams su SBC è abilitato il supporto MTLS (Mutual TLS), è necessario installare i certificati Baltimore CyberTrust Root e DigiCert Global Root G2 nell'archivio radice attendibile SBC del contesto TLS di Teams. Il motivo è che i certificati del servizio Microsoft usano uno di questi due certificati radice. Per scaricare questi certificati radice, vedere [catene di crittografia Office 365](/microsoft-365/compliance/encryption-office-365-certificate-chains). Per altre informazioni, vedere [Modifiche al certificato TLS di Office](/microsoft-365/compliance/encryption-office-365-tls-certificates-changes).
+  
+Per verificare che la connessione MTLS provenga dall'infrastruttura di Teams, sbc deve essere configurato per implementare i seguenti controlli sul certificato lato server di Teams:
+- Verificare che la catena di emissione dei certificati provenga da una delle seguenti CA radice: [Baltimore CyberTrust Root](/microsoft-365/compliance/encryption-office-365-certificate-chains.md#baltimore-cybertrust-root)
+-- [DigiCert Global Root G2](/microsoft-365/compliance/encryption-office-365-certificate-chains.md#digicert-global-root-g2)
+- Verificare che il certificato "Nome alternativo oggetto" includa "sip.pstnhub.microsoft.com"
 
 ## <a name="sip-signaling-fqdns"></a>Segnalazione SIP: FQDN
 

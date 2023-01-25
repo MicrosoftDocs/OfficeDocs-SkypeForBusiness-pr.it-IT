@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Scopri come pianificare il bypass multimediale con il routing diretto del sistema telefonico, che consente di abbreviare il percorso del traffico multimediale e migliorare le prestazioni.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 638a39a843648ab8fab770c28d92b196201e20f5
-ms.sourcegitcommit: c627bd1df17aefdc353bc4da6db169dfe169031e
+ms.openlocfilehash: ea92103789927d35ae8bdd317987f32863d4d74e
+ms.sourcegitcommit: e09591a0df9848b50bfeda29650e91e9d35724af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2022
-ms.locfileid: "68680509"
+ms.lasthandoff: 01/24/2023
+ms.locfileid: "69981791"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -151,7 +151,7 @@ La tabella seguente riepiloga la differenza tra processori multimediali e relè 
 
 Gli intervalli IP sono:
 - 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
-- 52.120.0.0/14 (indirizzi IP da 52.120.0.1 a 52.123.255.254)
+- 52.122.0.0/15 (indirizzi IP da 52.122.0.1 a 52.123.255.254)
 
 \* Spiegazione della transcodifica: 
 
@@ -199,7 +199,7 @@ I punti di connessione per il routing diretto sono i seguenti tre FQDN:
 
 Gli FQDN **sip.pstnhub.microsoft.com**, **sip2.pstnhub.microsoft.com** e **sip3.pstnhub.microsoft.com** verranno risolti in indirizzi IP dalle subnet seguenti:
 - 52.112.0.0/14
-- 52.120.0.0/14
+- 52.122.0.0/15
 
 È necessario aprire le porte per tutti questi intervalli IP nel firewall per consentire il traffico in arrivo e in uscita da e verso gli indirizzi per il traffico di segnalazione.
 
@@ -239,8 +239,8 @@ I requisiti delle porte sono gli stessi per tutti gli ambienti Office 365 in cui
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
 | :-------- | :-------- |:-----------|:--------|:---------|
-| SIP/TLS| SIP Proxy | Sbc | 1024 - 65535 | Definito in SBC |
-| SIP/TLS | Sbc | SIP Proxy | Definito in SBC | 5061 |
+| SIP/TLS| SIP Proxy | SBC | 1024 - 65535 | Definito in SBC |
+| SIP/TLS | SBC | SIP Proxy | Definito in SBC | 5061 |
 
 
 ## <a name="media-traffic-ip-and-port-ranges"></a>Traffico multimediale: ip e intervalli di porte
@@ -256,8 +256,8 @@ Il client deve avere accesso alle porte specificate (vedere la tabella) nell'ind
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
 | :-------- | :-------- |:-----------|:--------|:---------|
-| UDP/SRTP | Client | Sbc | 50000-50019| Definito in SBC |
-| UDP/SRTP | Sbc | Client | Definito in SBC | 50000-50019  |
+| UDP/SRTP | Client | SBC | 50000-50019| Definito in SBC |
+| UDP/SRTP | SBC | Client | Definito in SBC | 50000-50019  |
 
 
 > [!NOTE]
@@ -285,8 +285,8 @@ L'intervallo di porte dei Teams Transport Relays (applicabile a tutti gli ambien
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
 | :-------- | :-------- |:-----------|:--------|:---------|
-| UDP/SRTP | Transport Relay | Sbc | 50 000 -59 999    | Definito in SBC |
-| UDP/SRTP | Sbc | Transport Relay | Definito in SBC | 50 000 – 59 999, 3478-3481     |
+| UDP/SRTP | Transport Relay | SBC | 50 000 -59 999    | Definito in SBC |
+| UDP/SRTP | SBC | Transport Relay | Definito in SBC | 50 000 – 59 999, 3478-3481     |
 
 
 > [!NOTE]
@@ -323,8 +323,8 @@ L'intervallo di porte dei processori multimediali (applicabile a tutti gli ambie
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
 | :-------- | :-------- |:-----------|:--------|:---------|
-| UDP/SRTP | Media Processor | Sbc | 3478-3481 e 49 152 – 53 247    | Definito in SBC |
-| UDP/SRTP | Sbc | Media Processor | Definito in SBC | 3478-3481 e 49 152 – 53 247     |
+| UDP/SRTP | Media Processor | SBC | 3478-3481 e 49 152 – 53 247    | Definito in SBC |
+| UDP/SRTP | SBC | Media Processor | Definito in SBC | 3478-3481 e 49 152 – 53 247     |
 
 ## <a name="configure-separate-trunks-for-media-bypass-and-non-media-bypass"></a>Configurare trunk separati per bypass multimediale e bypass non multimediale  
 
