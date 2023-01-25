@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c7a608132af2807c1fc59e25f7dac39433fe5dc5
-ms.sourcegitcommit: 0d97dc6616b3d633564409e39c08311af1522705
+ms.openlocfilehash: 0c2ca0a88f17f3493bfbbcff727321c45a04fdea
+ms.sourcegitcommit: 3056f95e9f654b78636949f43eacdde297e52c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2022
-ms.locfileid: "69392096"
+ms.lasthandoff: 01/25/2023
+ms.locfileid: "69990381"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di sola visualizzazione nelle riunioni di Teams
 
@@ -29,7 +29,7 @@ ms.locfileid: "69392096"
 > Le trasmissioni nella modalità di sola visualizzazione sono disponibili in Microsoft 365 E3/E5 e Microsoft 365 A3/A5. Questa caratteristica sarà introdotta il 1° marzo 2021, ma risulterà disattivata per impostazione predefinita. La distribuzione di questa funzionalità in Microsoft 365 Government Community Cloud (GCC) inizierà alla fine di marzo 2021. Government Community Cloud High (GCCH) e Department of Defense (DoD) saranno distribuiti in seguito. È necessario modificare i criteri predefiniti dopo tale data se si attivare la funzionalità. Usare PowerShell per abilitare i criteri `Set-CsTeamsMeetingPolicy -Identity Global -StreamingAttendeeMode Enabled`.
 
 > [!Note]
-> Se la riunione raggiunge piena capacità, Teams si ridimensionerà senza problemi per offrire un'esperienza di trasmissione in modalità di sola visualizzazione per 10.000 persone. Inoltre, durate questo periodo di maggiore telelavoro, si possono organizzare trasmissioni ancora più grandi, per 20.000 persone, fino alla fine di quest'anno. I webinar attualmente non supportano l'esperienza di trasmissione di sola visualizzazione.
+> Se la riunione raggiunge piena capacità, Teams si ridimensionerà senza problemi per offrire un'esperienza di trasmissione in modalità di sola visualizzazione per 10.000 persone. Inoltre, durante questo periodo di maggiore lavoro remoto, sfrutta le trasmissioni di 20.000 persone ancora più grandi fino al 30 giugno 2023. I webinar attualmente non supportano l'esperienza di trasmissione di sola visualizzazione.
 
 > [!Note]
 > Una riunione di Teams non è un evento live di Teams (TLE) e non sfrutterà Microsoft eCDN. Per ulteriori informazioni, vedi [Elenco di controllo per l'onboarding di Microsoft eCDN](/ecdn/integration/onboarding-checklist-for-tle-customers).

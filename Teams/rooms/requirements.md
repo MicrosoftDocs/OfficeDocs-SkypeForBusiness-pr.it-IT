@@ -16,12 +16,12 @@ ms.collection:
 - Teams_ITAdmin_Rooms
 description: Informazioni sui requisiti per il supporto di Microsoft Teams Rooms, inclusa la scelta del dispositivo, dei microfoni, degli altoparlanti, delle fotocamere e degli schermi appropriati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 62e1ca6b2254047a14a11cf4c4c9ffb10477a0e3
-ms.sourcegitcommit: ed7d3b12d4bfe48863de873360c2ae90bbb15530
+ms.openlocfilehash: c5b1c9adda541926b48a943f796380fa8730a4a5
+ms.sourcegitcommit: 3056f95e9f654b78636949f43eacdde297e52c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/30/2022
-ms.locfileid: "69194927"
+ms.lasthandoff: 01/25/2023
+ms.locfileid: "69990401"
 ---
 # <a name="microsoft-teams-rooms-requirements"></a>Requisiti per Microsoft Teams Rooms
 
@@ -36,7 +36,7 @@ Fare riferimento a:
 - [Opzioni di licenza basate sul tuo piano: Microsoft Teams Rooms](rooms-licensing.md)
 
 > [!NOTE]
-> Microsoft Teams Rooms accedere a Microsoft Teams, Skype for Business Server 2019 o Skype for Business Server 2015 e partecipare a riunioni ospitate da uno di questi servizi.
+> Microsoft Teams Rooms accedere a Microsoft Teams, Skype for Business Server 2019 o Skype for Business Server 2015 e può partecipare a riunioni ospitate da uno di questi servizi.
 >
 > Le piattaforme precedenti, come Lync Server 2013, non sono supportate da Microsoft Teams Rooms. Microsoft Teams Rooms non è supportato in Microsoft 365 o Office 365 gestito da ambienti 21Vianet o DoD.
 >
@@ -97,6 +97,7 @@ Tutti i dispositivi e i bundle Microsoft Teams Rooms correnti sono disponibili n
   |[Poly G85-T Kit con Poly Eagle Eye Director II, con Lenovo](https://www.poly.com/us/en/support/products/video-conferencing/poly-room-solutions/g85) |Core i5| 8 GB | 128 GB|
   |Poly GC8 Console con Lenovo Thinksmart Core|Core i5|8 GB|128 GB|
   |Console Poly GC8 con Dell Optiplex 7080|Core i5|8 GB|128 GB|
+  |[Console Poly GC8 con HP 800 G9 Compute -MTR-W](https://www.poly.com/us/en/solutions/platform/microsoft/video/teams-rooms-windows)|Core i5|8 GB|128 GB|
   |[Yealink MVC300 con Intel NUC](https://www.yealink.com/products_154.html)|Core i5|8 GB |128 GB |
   |[Yealink MVC500 con Intel NUC](https://www.yealink.com/products_126.html)|Core i5|8 GB |128 GB |
   |[Yealink MVC800 con Intel NUC](https://www.yealink.com/products_125.html)|Core i5|8 GB|128 GB|

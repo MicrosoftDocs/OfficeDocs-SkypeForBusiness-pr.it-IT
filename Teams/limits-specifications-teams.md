@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5ae4adf9d803ea0b3482451a9ece5d3ceb0df598
-ms.sourcegitcommit: aa398950cc2f10b268c72a2b25caa0cf893e8230
+ms.openlocfilehash: ee791259b938345876e9761344616fac7d1d9e45
+ms.sourcegitcommit: 3056f95e9f654b78636949f43eacdde297e52c6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2022
-ms.locfileid: "69307531"
+ms.lasthandoff: 01/25/2023
+ms.locfileid: "69990411"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -123,16 +123,14 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 
 |Funzionalità     | Limite massimo |
 |------------|---------------|
-|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 1000, include GCC, GCCH e DoD, ma non A1 (300). **Solo visualizzazione** consente a un massimo di 20.000 persone di partecipare in solo ascolto a una riunione in cui l'organizzatore ha una licenza per lo SKU E3/E5/A3/A5, oltre al Governo (GCC, GCC High, DoD). L'esperienza di sola visualizzazione sarà disponibile prossimamente anche per i webinar. Altre informazioni sull'[esperienza di sola visualizzazione](view-only-meeting-experience.md).<sup>1,2</sup>|
+|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 1000, include GCC, GCCH e DoD, ma non A1 (300).|
 |Numero di persone in un video o una chiamata audio dalla chat | 20 |
 |Dimensione massima file di PowerPoint | 2 GB|
 |Teams conserva le [registrazioni delle riunioni](cloud-recording.md) che non vengono caricate in Microsoft Stream, disponibili per il download locale | 20 giorni |
 | Lunghezza massima registrazione riunione | 4 ore o 1,5 GB. Quando viene raggiunto questo limite, la registrazione terminerà e verrà riavviato automaticamente.
+
+Per altre informazioni, vedere [Riunioni, webinar ed eventi live](/microsoftteams/quick-start-meetings-live-events).  
   
-<sup>1</sup> Per un'esperienza ottimale nei webinar, negli eventi live e nelle riunioni di grandi dimensioni, Microsoft consiglia di usare l'ultima versione del client desktop di Teams o dei client per dispositivi mobili di Teams.
-
-<sup>2</sup> Nelle riunioni di grandi dimensioni, nei webinar e negli eventi live, i relatori dovrebbero usare il client desktop di Teams. Per altri suggerimenti su come ospitare riunioni di grandi dimensioni, vedere [Procedure consigliate per le riunioni di grandi dimensioni in Teams](https://support.microsoft.com/office/best-practices-for-a-large-teams-meeting-ce2cdb9a-0546-43a4-bb55-34ab98ab6b16).
-
 > [!NOTE]
 > I gruppi di lavoro possono essere creati esclusivamente nelle riunioni con meno di 300 partecipanti. Inoltre, la creazione di gruppi di lavoro in una riunione limita automaticamente il numero di partecipanti alla riunione a 300. Consigliare agli utenti finali di non avviare gruppi di lavoro in riunioni in cui si prevede la partecipazione di oltre 300 partecipanti. Per altre informazioni sulle riunioni di grandi dimensioni in Teams, condividere le linee guida [Best practice per riunioni di grandi dimensioni in Teams](https://support.microsoft.com/office/best-practices-for-a-large-teams-meeting-ce2cdb9a-0546-43a4-bb55-34ab98ab6b16) con gli utenti finali.
 
@@ -152,15 +150,19 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 > [!NOTE]
 > Le riunioni di Microsoft Teams hanno un limite di tempo di 30 ore.
 
-## <a name="teams-live-events"></a>Eventi live in Teams
+## <a name="live-events"></a>Eventi live
+  
+Gli eventi live sono riunioni strutturate che consentono all'organizzazione di pianificare e produrre eventi in streaming a un pubblico online di grandi dimension—fino a 20.000 persone. Con gli eventi live, l'interazione con il pubblico è un'esperienza di domande e risposte con moderatore.
 
 |Funzionalità     | Limite massimo |
 |------------|---------------|
-|Dimensioni del gruppo di destinatari | 10.000 partecipanti |
+|Dimensioni del gruppo di destinatari | Fino a 20.000 partecipanti <sup>1</sup> |
 |Durata dell'evento | 4 ore |
-|Eventi live simultanei eseguiti in un'organizzazione di Microsoft 365 o Office 365<sup>1</sup> | 15 |
+|Eventi live simultanei in esecuzione in un'organizzazione di Microsoft 365 o Office 365 <sup>2</sup> | 15 |
 
-<sup>1</sup> You can schedule as many Live Events as you want, but you can only run 15 at a time. As soon as the producer joins a live event, it's considered to be running. The producer who attempts to join the 16th live event gets an error.
+<sup>1</sup> I soliti 10.000 sono aumentati a 20.000 fino al 30 giugno 2023. È possibile pianificare numeri ancora maggiori con eventi live in Yammer e/o Microsoft Stream. Per altre informazioni, vedere [Eventi live in Microsoft 365](/stream/live-event-m365). Si noti che gli eventi che superano 20.000 partecipanti richiedono il [programma di assistenza per eventi live](/stream/live-events-assistance).  
+  
+<sup>2</sup> È possibile pianificare tutti gli eventi live desiderati, ma è possibile eseguirne solo 15 alla volta. Non appena il produttore partecipa a un evento live, questo è considerato in esecuzione. Il produttore che prova a partecipare al sedicesimo evento live riceve un messaggio di errore.
 
 Per altre informazioni sugli eventi live, vedere [Eventi live di Teams](teams-live-events/plan-for-teams-live-events.md#teams-live-events). Vedere anche [Pianificare un evento live di Teams](https://support.microsoft.com/office/schedule-a-teams-live-event-7a9ce97c-e1cd-470f-acaf-e6dfc179a0e2).
 

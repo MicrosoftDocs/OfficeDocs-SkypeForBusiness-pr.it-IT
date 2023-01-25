@@ -19,12 +19,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Scopri come Microsoft Direct Routing consente di connettere un controller SBC (Session Border Controller) supportato dal cliente al sistema telefonico.
-ms.openlocfilehash: ba0db105d94fef7c81d79929c5cc7f9371f0fc6c
-ms.sourcegitcommit: 1f4a0b7cf03f63438bb37668d053853494c92168
+ms.openlocfilehash: 3dcdc52e736f6eef1d77a8e2120a5fc6470437d7
+ms.sourcegitcommit: e09591a0df9848b50bfeda29650e91e9d35724af
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/23/2023
-ms.locfileid: "69948513"
+ms.lasthandoff: 01/24/2023
+ms.locfileid: "69981781"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -284,7 +284,7 @@ Il traffico multimediale scorre da e verso un servizio separato in Microsoft Clo
 ### <a name="microsoft-365-office-365-and-office-365-gcc-environments"></a>Ambienti Microsoft 365, Office 365 e Office 365 GCC
 
 - 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254).
-- 52.120.0.0/14 (indirizzi IP da 52.120.0.1 a 52.123.255.254).
+- 52.122.0.0/15 (indirizzi IP da 52.122.0.1 a 52.123.255.254).
 
 ### <a name="office-365-dod-environment"></a>Office 365 ambiente DoD
 
